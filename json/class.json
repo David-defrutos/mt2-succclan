@@ -1,0 +1,149 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+    "classes": [
+        {
+            "id": "ClassSuccubus",
+            "titles": {
+                "english": "Succubus",
+                "chinese": "魅影"
+            },
+            "descriptions": {
+                "english": "As primary class",
+                "chinese": "作为主种族选择"
+            },
+            "subclass_descriptions": {
+                "english": "As subclass",
+                "chinese": "作为副种族选择"
+            },
+            "icons": {
+                "small": "@ClanLogo_48",
+                "medium": "@ClanLogo_92_Outline",
+                "large": "@ClanLogo_128",
+                "silhouette": "@ClanLogo_Silhouette"
+            },
+            "card_draft_icon": "@ClanCardDraftIcon",
+            "card_style": "@SuccubusClanCardStyle",
+            "ui_color": {
+                "r": 1.0,
+                "g": 0.525,
+                "b": 0.7
+            },
+            "ui_color_dark": {
+                "r": 0.55,
+                "g": 0.1,
+                "b": 0.5
+            },
+            "ui_gradient": [
+                {
+                    "time": 0.0,
+                    "color": {
+                        "r": 0.55,
+                        "g": 0.1,
+                        "b": 0.5
+                    }
+                },
+                {
+                    "time": 1.0,
+                    "color": {
+                        "r": 1.0,
+                        "g": 0.525,
+                        "b": 0.7
+                    }
+                }
+            ],
+            "champions": [],
+            "is_crew": false
+        }
+    ],
+    "subtypes": [
+        {
+            "id": "Sub_Cubus",
+            "names": {
+                "english": "SuccUnits",
+                "chinese": "魅影单位"
+            }
+        },
+        {
+            "id": "Sub_Ghost",
+            "names": {
+                "english": "Ghost",
+                "chinese": "幽魂"
+            }
+        }
+    ],
+    "class_card_styles": [
+        {
+            "id": "SuccubusClanCardStyle",
+            "unit_card_frame_sprite": "@ClanCardBorderUnit",
+            "spell_card_frame_sprite": "@ClanCardBorderSpell",
+            "room_card_frame_sprite": "@ClanCardBorderRoom",
+            "equipment_card_frame_sprite": "@ClanCardBorderEquipment"
+        }
+    ],
+    "sprites": [
+        {
+            "id": "ClanLogo_48",
+            "path": "textures/ClanAssets/ClanLogo_48.png"
+        },
+        {
+            "id": "ClanLogo_92",
+            "path": "textures/ClanAssets/ClanLogo_92.png"
+        },
+        {
+            "id": "ClanLogo_92_Outline",
+            "path": "textures/ClanAssets/ClanLogo_92_Outline.png"
+        },
+        {
+            "id": "ClanLogo_128",
+            "path": "textures/ClanAssets/ClanLogo_128.png"
+        },
+        {
+            "id": "ClanLogo_Silhouette",
+            "path": "textures/ClanAssets/ClanLogo_Silhouette.png"
+        },
+        {
+            "id": "ClanCardDraftIcon",
+            "path": "textures/ClanAssets/ClanCardDraftIcon.png"
+        },
+        {
+            "id": "ClanCardBorderUnit",
+            "path": "textures/ClanAssets/ClanBorderUnit.png"
+        },
+        {
+            "id": "ClanCardBorderSpell",
+            "path": "textures/ClanAssets/ClanBorderSpell.png"
+        },
+        {
+            "id": "ClanCardBorderRoom",
+            "path": "textures/ClanAssets/ClanBorderRoom.png"
+        },
+        {
+            "id": "ClanCardBorderEquipment",
+            "path": "textures/ClanAssets/ClanBorderEquipment.png"
+        },
+        {
+            "id": "Succubus_Disabled",
+            "path": "textures/ClanAssets/Succubus_Disabled.png"
+        },
+        {
+            "id": "Succubus_Enabled",
+            "path": "textures/ClanAssets/Succubus_Enabled.png"
+        },
+        {
+            "id": "Succubus_Frozen",
+            "path": "textures/ClanAssets/Succubus_Frozen.png"
+        },
+        {
+            "id": "Succubus_VisitedDisabled",
+            "path": "textures/ClanAssets/Succubus_VisitedDisabled.png"
+        },
+        {
+            "id": "icon_KnightMare",
+            "path": "textures/ClanAssets/icon_KnightMare.png"
+        },
+        {
+            "id": "icon_ShadowLady",
+            "path": "textures/ClanAssets/icon_ShadowLady.png"
+        }
+    ]
+}

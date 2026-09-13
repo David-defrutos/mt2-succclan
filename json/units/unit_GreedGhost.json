@@ -1,0 +1,138 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+    "cards": [
+        {
+            "id": "SpawnGreedGhost",
+            "names": {
+                "english": "Greed Ghost",
+                "chinese": "贪婪幽魂"
+            },
+            "card_type": "monster",
+            "rarity": "uncommon",
+            "class": "@ClassSuccubus",
+            "card_art": "@GreedGhostCardArt",
+            "cost": 0,
+            "targets_room": true,
+            "pools": [
+                "MegaPool"
+            ],
+            "effects": [
+                "@SpawnGreedGhost"
+            ]
+        }
+    ],
+    "characters": [
+        {
+            "id": "GreedGhost",
+            "names": {
+                "english": "Greed Ghost",
+                "chinese": "贪婪幽魂"
+            },
+            "size": 1,
+            "attack_damage": 0,
+            "health": 2,
+            "character_art": "@GreedGhostCharacterArt",
+            "subtypes": [
+                "@Sub_Ghost"
+            ],
+            "triggers": [
+                "@GreedGhostOnSpawn",
+                "@GreedGhostAccursed"
+            ]
+        }
+    ],
+    "character_triggers": [
+        {
+            "id": "GreedGhostOnSpawn",
+            "trigger": "on_spawn",
+            "descriptions": {
+                "english": "Add 2 <b>Obsessing Spark</b> with [exhaust] to your hand.",
+                "chinese": "将 2 张带有[exhaust]的<b>欲望碎片</b>加入手牌。"
+            },
+            "effects": [
+                "@GreedGhostAddShards"
+            ]
+        },
+        {
+            "id": "GreedGhostAccursed",
+            "trigger": {
+                "id": "@Accursed",
+                "mod_reference": "Conductor"
+            },
+            "descriptions": {
+                "english": "Gain [effect0.power][coin].",
+                "chinese": "获得 [effect0.power][coin]。"
+            },
+            "effects": [
+                "@GreedGhostGold"
+            ]
+        }
+    ],
+    "effects": [
+        {
+            "id": "SpawnGreedGhost",
+            "name": "CardEffectSpawnMonster",
+            "target_mode": "drop_target_character",
+            "param_character": "@GreedGhost"
+        },
+        {
+            "id": "GreedGhostAddShards",
+            "name": "CardEffectAddBattleCard",
+            "target_mode": "room",
+            "target_team": "none",
+            "param_int": 3,
+            "param_int_2": 2,
+            "param_card_pool": "@ObsessingShardPool",
+            "param_upgrade": "@ConsumeUpgrade"
+        },
+        {
+            "id": "GreedGhostGold",
+            "name": "CardEffectRewardGold",
+            "target_mode": "room",
+            "target_team": "none",
+            "param_int": 5
+        }
+    ],
+    "sprites": [
+        {
+            "id": "GreedGhostCardArt",
+            "path": "textures/GreedGhostCardArt.png"
+        },
+        {
+            "id": "GreedGhostCharacterArt",
+            "path": "textures/GreedGhostCharacterArt.png"
+        }
+    ],
+    "game_objects": [
+        {
+            "id": "GreedGhostCardArt",
+            "type": "card_art",
+            "extensions": {
+                "card_art": {
+                    "sprite": "@GreedGhostCardArt"
+                }
+            }
+        },
+        {
+            "id": "GreedGhostCharacterArt",
+            "type": "character_art",
+            "extensions": {
+                "character_art": {
+                    "sprite": "@GreedGhostCharacterArt",
+                    "transform": {
+                        "position": {
+                            "x": 0,
+                            "y": 0.4,
+                            "z": 0.1
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

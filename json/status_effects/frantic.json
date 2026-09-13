@@ -1,0 +1,51 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+    "status_effects": [
+        {
+            "id": "frantic",
+            "class_name": "@StatusEffectMarkerState",
+            "names": {
+                "english": "Frantic",
+                "chinese": "疯狂"
+            },
+            "stackable_names": {
+                "english": "<nobr>Frantic {0}</nobr>",
+                "chinese": "<nobr>疯狂 {0}</nobr>"
+            },
+            "card_tooltips": {
+                "english": "Unit is out of its mind: it cannot attack and it wounds those beside it.",
+                "chinese": "单位陷入疯狂：无法攻击，并伤及身旁的单位。"
+            },
+            "character_tooltips": {
+                "english": "Cannot attack and wounds the units beside it.",
+                "chinese": "无法攻击，并伤及身旁的单位。"
+            },
+            "replacement_texts": {
+                "english": "<b>Frantic</b>",
+                "chinese": "<b>疯狂</b>"
+            },
+            "notifications": {
+                "english": "Frantic",
+                "chinese": "疯狂"
+            },
+            "display_category": "negative",
+            "trigger_stage": "none",
+            "is_stackable": true,
+            "remove_stack_at_end_of_turn": true,
+            "exclude_monster_propagation": true,
+            "icon": "@Frantic"
+        }
+    ],
+    "sprites": [
+        {
+            "id": "Frantic",
+            "path": "textures/status_frantic.png"
+        }
+    ],
+    "atlas_icons": [
+        {
+            "id": "Frantic",
+            "path": "textures/status_frantic_tooltip.png"
+        }
+    ]
+}

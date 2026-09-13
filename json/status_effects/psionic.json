@@ -1,0 +1,50 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+    "status_effects": [
+        {
+            "id": "psionic",
+            "class_name": "@StatusEffectMarkerState",
+            "names": {
+                "english": "Psionic",
+                "chinese": "灵能"
+            },
+            "stackable_names": {
+                "english": "<nobr>Psionic {0}</nobr>",
+                "chinese": "<nobr>灵能 {0}</nobr>"
+            },
+            "card_tooltips": {
+                "english": "Trigger additional effects for KnightMare.",
+                "chinese": "用于触发梦魇骑士的额外能力。"
+            },
+            "character_tooltips": {
+                "english": "Trigger additional effects for KnightMare.",
+                "chinese": "用于触发梦魇骑士的额外能力。"
+            },
+            "replacement_texts": {
+                "english": "<b>Psionic</b>",
+                "chinese": "<b>灵能</b>"
+            },
+            "notifications": {
+                "english": "Psionic",
+                "chinese": "灵能"
+            },
+            "display_category": "persistent",
+            "trigger_stage": "none",
+            "is_stackable": true,
+            "remove_stack_at_end_of_turn": false,
+            "icon": "@Psionic"
+        }
+    ],
+    "sprites": [
+        {
+            "id": "Psionic",
+            "path": "textures/status_psionic.png"
+        }
+    ],
+    "atlas_icons": [
+        {
+            "id": "Psionic",
+            "path": "textures/status_psionic_tooltip.png"
+        }
+    ]
+}

@@ -1,0 +1,40 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+    "card_pools": [
+        {
+            "id": "ObsessingShardPool",
+            "cards": [
+                "@ObsessingShard"
+            ]
+        }
+    ],
+    "traits": [
+        {
+            "id": "Consume",
+            "name": "CardTraitExhaustState"
+        }
+    ],
+    "upgrades": [
+        {
+            "id": "ConsumeUpgrade",
+            "trait_upgrades": [
+                "@Consume"
+            ]
+        }
+    ],
+    "additional_tooltips": [
+        {
+            "id": "PsionicBurstTooltip",
+            "titles": {
+                "english": "Psionic Burst",
+                "chinese": "灵能爆破"
+            },
+            "descriptions": {
+                "english": "Reduce <b>Psionic</b> for additional ability.",
+                "chinese": "消耗相应层数的 <b>灵能</b> 以触发额外效果。"
+            },
+            "style": "keyword",
+            "allow_secondary_placement": true
+        }
+    ]
+}

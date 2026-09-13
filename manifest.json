@@ -1,0 +1,13 @@
+{
+  "namespace": "David",
+  "name": "SuccClan_David",
+  "description": "Adds the Succubus clan to Monster Train 2 (port of CodePointer's SuccClan)",
+  "version_number": "0.1.0",
+  "dependencies": [
+    "BepInEx-BepInExPack-5.4.2100",
+    "MT2-Trainworks_Reloaded-0.6.1",
+    "Conductor-Conductor-0.3.0"
+  ],
+  "website_url": "https://github.com/David-defrutos/mt2-succclan",
+  "FullName": "David-SuccClan_David"
+}

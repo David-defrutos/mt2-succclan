@@ -1,0 +1,65 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+    "cards": [
+        {
+            "id": "ObsessingShard",
+            "names": {
+                "english": "Obsessing Spark",
+                "chinese": "欲望碎片"
+            },
+            "card_type": "blight",
+            "rarity": "common",
+            "class": "@ClassSuccubus",
+            "card_art": "@ObsessingShardArt",
+            "cost": 1,
+            "targets_room": false,
+            "targetless": true,
+            "traits": [
+                "@Consume"
+            ],
+            "effect_triggers": [
+                "@ObsessingShardOnUnplayed"
+            ]
+        }
+    ],
+    "card_triggers": [
+        {
+            "id": "ObsessingShardOnUnplayed",
+            "trigger": "on_unplayed_negative",
+            "descriptions": {
+                "english": "Your Pyre takes [effect0.power] damage.",
+                "chinese": "对薪火造成 [effect0.power] 点伤害。"
+            },
+            "effects": [
+                "@ObsessingShardPyreDamage"
+            ]
+        }
+    ],
+    "effects": [
+        {
+            "id": "ObsessingShardPyreDamage",
+            "name": "CardEffectDamage",
+            "target_mode": "pyre",
+            "target_team": "both",
+            "param_int": 1,
+            "suppress_pyre_room_focus": true
+        }
+    ],
+    "sprites": [
+        {
+            "id": "ObsessingShardArt",
+            "path": "textures/ObsessingShardArt.png"
+        }
+    ],
+    "game_objects": [
+        {
+            "id": "ObsessingShardArt",
+            "type": "card_art",
+            "extensions": {
+                "card_art": {
+                    "sprite": "@ObsessingShardArt"
+                }
+            }
+        }
+    ]
+}
