@@ -1,0 +1,116 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+    "cards": [
+        {
+            "id": "SpawnShadowWarrior",
+            "names": {
+                "english": "Shadow Warrior",
+                "chinese": "暗影武者"
+            },
+            "card_art": "@ShadowWarriorCardArt",
+            "cost": 1,
+            "card_type": "monster",
+            "rarity": "rare",
+            "class": "@ClassSuccubus",
+            "targets_room": true,
+            "pools": [
+                "MegaPool"
+            ],
+            "effects": [
+                "@SpawnShadowWarrior"
+            ]
+        }
+    ],
+    "characters": [
+        {
+            "id": "ShadowWarrior",
+            "names": {
+                "english": "Shadow Warrior",
+                "chinese": "暗影武者"
+            },
+            "character_art": "@ShadowWarriorCharacterArt",
+            "size": 2,
+            "attack_damage": 5,
+            "health": 1,
+            "subtypes": [
+                "@Sub_Cubus"
+            ],
+            "triggers": [
+                "@ShadowWarriorAccursed"
+            ]
+        }
+    ],
+    "character_triggers": [
+        {
+            "id": "ShadowWarriorAccursed",
+            "trigger": {
+                "id": "@Accursed",
+                "mod_reference": "Conductor"
+            },
+            "descriptions": {
+                "english": "+[effect0.upgrade.bonusdamage][attack] permanently.",
+                "chinese": "永久获得 +[effect0.upgrade.bonusdamage][attack]。"
+            },
+            "effects": [
+                "@ShadowWarriorBuff"
+            ]
+        }
+    ],
+    "effects": [
+        {
+            "id": "SpawnShadowWarrior",
+            "name": "CardEffectSpawnMonster",
+            "target_mode": "drop_target_character",
+            "param_character": "@ShadowWarrior"
+        },
+        {
+            "id": "ShadowWarriorBuff",
+            "name": "CardEffectAddCardUpgradeToUnits",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_upgrade": "@ShadowWarriorPermanentAttack"
+        }
+    ],
+    "sprites": [
+        {
+            "id": "ShadowWarriorCardArt",
+            "path": "textures/ShadowWarriorCardArt.png"
+        },
+        {
+            "id": "ShadowWarriorCharacterArt",
+            "path": "textures/ShadowWarriorCharacterArt.png"
+        }
+    ],
+    "game_objects": [
+        {
+            "id": "ShadowWarriorCardArt",
+            "type": "card_art",
+            "extensions": {
+                "card_art": {
+                    "sprite": "@ShadowWarriorCardArt"
+                }
+            }
+        },
+        {
+            "id": "ShadowWarriorCharacterArt",
+            "type": "character_art",
+            "extensions": {
+                "character_art": {
+                    "sprite": "@ShadowWarriorCharacterArt",
+                    "transform": {
+                        "position": {
+                            "x": 0,
+                            "y": 0.5,
+                            "z": 0.1
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

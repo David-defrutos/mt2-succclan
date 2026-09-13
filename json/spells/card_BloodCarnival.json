@@ -1,0 +1,55 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+    "cards": [
+        {
+            "id": "BloodCarnival",
+            "names": {
+                "english": "Blood Carnival",
+                "chinese": "鲜血狂欢"
+            },
+            "descriptions": {
+                "english": "Give everyone +[effect0.power][attack].",
+                "chinese": "所有单位 +[effect0.power][attack]。"
+            },
+            "card_type": "spell",
+            "rarity": "common",
+            "class": "@ClassSuccubus",
+            "card_art": "@BloodCarnivalArt",
+            "cost": 0,
+            "targets_room": true,
+            "targetless": true,
+            "pools": [
+                "MegaPool"
+            ],
+            "effects": [
+                "@BloodCarnivalBuff"
+            ]
+        }
+    ],
+    "effects": [
+        {
+            "id": "BloodCarnivalBuff",
+            "name": "CardEffectBuffDamage",
+            "target_mode": "room",
+            "target_team": "both",
+            "param_int": 10
+        }
+    ],
+    "sprites": [
+        {
+            "id": "BloodCarnivalArt",
+            "path": "textures/BloodCarnivalArt.png"
+        }
+    ],
+    "game_objects": [
+        {
+            "id": "BloodCarnivalArt",
+            "type": "card_art",
+            "extensions": {
+                "card_art": {
+                    "sprite": "@BloodCarnivalArt"
+                }
+            }
+        }
+    ]
+}

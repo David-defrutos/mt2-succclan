@@ -1,0 +1,51 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+    "relics": [
+        {
+            "id": "ProfaneCrossbow",
+            "type": "collectable",
+            "names": {
+                "english": "Profane Crossbow",
+                "chinese": "亵渎手弩"
+            },
+            "descriptions": {
+                "english": "At the start of turn deal [effect0.power] damage to the front enemy unit on the floor.",
+                "chinese": "回合开始时，对本层前排敌方单位造成 [effect0.power] 点伤害。"
+            },
+            "disallow_in_deployment": false,
+            "relic_effects": [
+                "@ProfaneCrossbowEffect"
+            ],
+            "icon": "@ProfaneCrossbowIcon",
+            "icon_small": "@ProfaneCrossbowIcon",
+            "extensions": [
+                {
+                    "collectable": {
+                        "class": "@ClassSuccubus",
+                        "pools": [
+                            "MegaRelicPool"
+                        ],
+                        "rarity": "uncommon",
+                        "unlock_level": 0
+                    }
+                }
+            ]
+        }
+    ],
+    "relic_effects": [
+        {
+            "id": "ProfaneCrossbowEffect",
+            "name": "RelicEffectDamageEnemyOnFriendlyTrigger",
+            "source_team": "monsters",
+            "param_int": 30,
+            "target_mode": "front_in_room",
+            "param_trigger": "on_turn_begin"
+        }
+    ],
+    "sprites": [
+        {
+            "id": "ProfaneCrossbowIcon",
+            "path": "textures/ProfaneCrossbowArt.png"
+        }
+    ]
+}

@@ -1,0 +1,114 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+    "cards": [
+        {
+            "id": "SpawnEndlessShadow",
+            "names": {
+                "english": "Endless Shadow",
+                "chinese": "无尽幽影"
+            },
+            "card_art": "@EndlessShadowCardArt",
+            "cost": 1,
+            "card_type": "monster",
+            "rarity": "rare",
+            "class": "@ClassSuccubus",
+            "targets_room": true,
+            "pools": [
+                "MegaPool"
+            ],
+            "effects": [
+                "@SpawnEndlessShadow"
+            ]
+        }
+    ],
+    "characters": [
+        {
+            "id": "EndlessShadow",
+            "names": {
+                "english": "Endless Shadow",
+                "chinese": "无尽幽影"
+            },
+            "character_art": "@EndlessShadowCharacterArt",
+            "size": 2,
+            "attack_damage": 10,
+            "health": 15,
+            "subtypes": [
+                "@Sub_Cubus"
+            ],
+            "triggers": [
+                "@EndlessShadowOnDeath"
+            ]
+        }
+    ],
+    "character_triggers": [
+        {
+            "id": "EndlessShadowOnDeath",
+            "trigger": "on_death",
+            "descriptions": {
+                "english": "Create a copy of itself in this room with [effect0.upgrade.bonushp][health].",
+                "chinese": "在本层创造一个自身的复制品，[effect0.upgrade.bonushp][health]。"
+            },
+            "effects": [
+                "@EndlessShadowSpawn"
+            ]
+        }
+    ],
+    "effects": [
+        {
+            "id": "SpawnEndlessShadow",
+            "name": "CardEffectSpawnMonster",
+            "target_mode": "drop_target_character",
+            "param_character": "@EndlessShadow"
+        },
+        {
+            "id": "EndlessShadowSpawn",
+            "name": "CardEffectSpawnMonster",
+            "target_mode": "room",
+            "target_team": "monsters",
+            "param_character": "@EndlessShadow",
+            "param_upgrade": "@EndlessShadowWeaker"
+        }
+    ],
+    "sprites": [
+        {
+            "id": "EndlessShadowCardArt",
+            "path": "textures/EndlessShadowCardArt.png"
+        },
+        {
+            "id": "EndlessShadowCharacterArt",
+            "path": "textures/EndlessShadowCharacterArt.png"
+        }
+    ],
+    "game_objects": [
+        {
+            "id": "EndlessShadowCardArt",
+            "type": "card_art",
+            "extensions": {
+                "card_art": {
+                    "sprite": "@EndlessShadowCardArt"
+                }
+            }
+        },
+        {
+            "id": "EndlessShadowCharacterArt",
+            "type": "character_art",
+            "extensions": {
+                "character_art": {
+                    "sprite": "@EndlessShadowCharacterArt",
+                    "transform": {
+                        "position": {
+                            "x": 0,
+                            "y": 0.5,
+                            "z": 0.1
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

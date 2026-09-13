@@ -1,0 +1,66 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+    "cards": [
+        {
+            "id": "ShadowEmbrace",
+            "names": {
+                "english": "Shadow Embrace",
+                "chinese": "拥抱暗影"
+            },
+            "descriptions": {
+                "english": "Add [effect0.power_unmodified] <b>Obsessing Spark</b> with [exhaust] to the discard pile. Draw [effect1.power] cards.",
+                "chinese": "将 [effect0.power_unmodified] 张带有[exhaust]的<b>欲望碎片</b>加入弃牌堆。抽 [effect1.power] 张牌。"
+            },
+            "card_type": "spell",
+            "rarity": "uncommon",
+            "class": "@ClassSuccubus",
+            "card_art": "@ShadowEmbraceArt",
+            "cost": 0,
+            "targets_room": true,
+            "targetless": true,
+            "pools": [
+                "MegaPool"
+            ],
+            "effects": [
+                "@ShadowEmbraceShards",
+                "@ShadowEmbraceDraw"
+            ]
+        }
+    ],
+    "effects": [
+        {
+            "id": "ShadowEmbraceShards",
+            "name": "CardEffectAddBattleCard",
+            "target_mode": "room",
+            "target_team": "none",
+            "param_int": 1,
+            "param_int_2": 2,
+            "param_card_pool": "@ObsessingShardPool",
+            "param_upgrade": "@ConsumeUpgrade"
+        },
+        {
+            "id": "ShadowEmbraceDraw",
+            "name": "CardEffectDraw",
+            "target_mode": "self",
+            "target_team": "none",
+            "param_int": 2
+        }
+    ],
+    "sprites": [
+        {
+            "id": "ShadowEmbraceArt",
+            "path": "textures/ShadowEmbraceArt.png"
+        }
+    ],
+    "game_objects": [
+        {
+            "id": "ShadowEmbraceArt",
+            "type": "card_art",
+            "extensions": {
+                "card_art": {
+                    "sprite": "@ShadowEmbraceArt"
+                }
+            }
+        }
+    ]
+}

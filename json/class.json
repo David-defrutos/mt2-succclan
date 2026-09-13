@@ -206,5 +206,97 @@
             "id": "portrait_ShadowLady",
             "path": "textures/ClanAssets/portrait_ShadowLady.png"
         }
+    ],
+    "game_objects": [
+        {
+            "id": "SuccubusMapIcon",
+            "type": "map_node_icon",
+            "extensions": {
+                "map_node_icon": {
+                    "disabled_sprite": "@Succubus_Disabled",
+                    "enabled_sprite": "@Succubus_Enabled",
+                    "frozen_sprite": "@Succubus_Frozen",
+                    "visited_sprite_disabled": "@Succubus_VisitedDisabled",
+                    "visited_sprite_enabled": "@Succubus_VisitedDisabled"
+                }
+            }
+        }
+    ],
+    "map_nodes": [
+        {
+            "id": "RewardNodeUnitPackSuccubus",
+            "type": "reward",
+            "map_icon": "@ClanLogo_48",
+            "minimap_icon": "@ClanLogo_48",
+            "prefab": "@SuccubusMapIcon",
+            "titles": {
+                "english": "Succubus Banner",
+                "chinese": "魅影战旗"
+            },
+            "descriptions": {
+                "english": "Gain a Succubus unit",
+                "chinese": "获取一个魅影单位"
+            },
+            "pools": [
+                "RandomChosenMainClassUnit",
+                "RandomChosenSubClassUnit"
+            ],
+            "is_banner_node": true,
+            "extensions": [
+                {
+                    "reward": {
+                        "class": "@ClassSuccubus",
+                        "rewards": [
+                            "@SuccubusBannerReward"
+                        ]
+                    }
+                }
+            ]
+        }
+    ],
+    "card_pools": [
+        {
+            "id": "SuccubusBannerCardPool",
+            "cards": [
+                "@SpawnChaosCreation",
+                "@SpawnDemonPioneer",
+                "@SpawnIncubusButcher",
+                "@SpawnSuccbusTorturer",
+                "@SpawnVrolikai",
+                "@SpawnOolioddroo",
+                "@SpawnEndlessShadow",
+                "@SpawnShadowWarrior",
+                "@SpawnAbyssPrincess"
+            ]
+        }
+    ],
+    "rewards": [
+        {
+            "id": "SuccubusBannerReward",
+            "type": "draft",
+            "costs": [
+                100
+            ],
+            "titles": {
+                "english": "Succubus Unit Reward Draft",
+                "chinese": "魅影单位奖励"
+            },
+            "descriptions": {
+                "english": "Choose a card!",
+                "chinese": "选一个吧！"
+            },
+            "extensions": [
+                {
+                    "draft": {
+                        "draft_pool": "@SuccubusBannerCardPool",
+                        "class_type": "main|subclass|nonclass",
+                        "draft_options_count": 2,
+                        "rarity_floor": "uncommon",
+                        "ignore_relic_rarity_override": true,
+                        "is_service_merchant_reward": true
+                    }
+                }
+            ]
+        }
     ]
 }

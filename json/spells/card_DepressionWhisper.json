@@ -1,0 +1,63 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+    "cards": [
+        {
+            "id": "DepressionWhisper",
+            "names": {
+                "english": "Depression Whisper",
+                "chinese": "忧郁低语"
+            },
+            "descriptions": {
+                "english": "Remove all <b>buffs</b> from enemy units and double their <b>debuffs</b>.",
+                "chinese": "移除所有敌方单位的增益效果并使其减益效果翻倍。"
+            },
+            "card_type": "spell",
+            "rarity": "rare",
+            "class": "@ClassSuccubus",
+            "card_art": "@DepressionWhisperArt",
+            "cost": 1,
+            "targets_room": true,
+            "targetless": true,
+            "pools": [
+                "MegaPool"
+            ],
+            "effects": [
+                "@DepressionRemoveBuffs",
+                "@DepressionDoubleDebuffs"
+            ]
+        }
+    ],
+    "effects": [
+        {
+            "id": "DepressionRemoveBuffs",
+            "name": "CardEffectMultiplyAllPositiveStatusEffects",
+            "target_mode": "room",
+            "target_team": "heroes",
+            "param_multiplier": 0.0
+        },
+        {
+            "id": "DepressionDoubleDebuffs",
+            "name": "CardEffectMultiplyAllStatusEffects",
+            "target_mode": "room",
+            "target_team": "heroes",
+            "param_multiplier": 2.0
+        }
+    ],
+    "sprites": [
+        {
+            "id": "DepressionWhisperArt",
+            "path": "textures/DepressionWhisperArt.png"
+        }
+    ],
+    "game_objects": [
+        {
+            "id": "DepressionWhisperArt",
+            "type": "card_art",
+            "extensions": {
+                "card_art": {
+                    "sprite": "@DepressionWhisperArt"
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,97 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+    "cards": [
+        {
+            "id": "ProfaneAscending",
+            "names": {
+                "english": "Profane Ascending",
+                "chinese": "亵渎晋升"
+            },
+            "descriptions": {
+                "english": "<b>Descend</b> an enemy unit to the bottom floor. Apply <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b>, [dazed] [effect2.status0.power] and [witherbloom] [effect3.status0.power].",
+                "chinese": "使一个敌方单位<b>下降</b>到最底层，并施加 <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b>、[dazed] [effect2.status0.power] 和[witherbloom] [effect3.status0.power]。"
+            },
+            "card_type": "spell",
+            "rarity": "common",
+            "class": "@ClassSuccubus",
+            "card_art": "@ProfaneAscendingArt",
+            "cost": 1,
+            "targets_room": true,
+            "targetless": false,
+            "pools": [
+                "MegaPool"
+            ],
+            "traits": [
+                "@Consume"
+            ],
+            "effects": [
+                "@PABump",
+                "@PAFrantic",
+                "@PADazed",
+                "@PAWither"
+            ]
+        }
+    ],
+    "effects": [
+        {
+            "id": "PABump",
+            "name": "CardEffectBump",
+            "target_mode": "drop_target_character",
+            "target_team": "heroes",
+            "param_int": -100
+        },
+        {
+            "id": "PAFrantic",
+            "name": "CardEffectAddStatusEffect",
+            "target_mode": "last_targeted_characters",
+            "target_team": "both",
+            "param_status_effects": [
+                {
+                    "status": "@frantic",
+                    "count": 3
+                }
+            ]
+        },
+        {
+            "id": "PADazed",
+            "name": "CardEffectAddStatusEffect",
+            "target_mode": "last_targeted_characters",
+            "target_team": "both",
+            "param_status_effects": [
+                {
+                    "status": "dazed",
+                    "count": 3
+                }
+            ]
+        },
+        {
+            "id": "PAWither",
+            "name": "CardEffectAddStatusEffect",
+            "target_mode": "last_targeted_characters",
+            "target_team": "both",
+            "param_status_effects": [
+                {
+                    "status": "witherbloom",
+                    "count": 3
+                }
+            ]
+        }
+    ],
+    "sprites": [
+        {
+            "id": "ProfaneAscendingArt",
+            "path": "textures/ProfaneAscendingArt.png"
+        }
+    ],
+    "game_objects": [
+        {
+            "id": "ProfaneAscendingArt",
+            "type": "card_art",
+            "extensions": {
+                "card_art": {
+                    "sprite": "@ProfaneAscendingArt"
+                }
+            }
+        }
+    ]
+}

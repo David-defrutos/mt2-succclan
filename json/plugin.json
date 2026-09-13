@@ -12,6 +12,74 @@
         {
             "id": "Consume",
             "name": "CardTraitExhaustState"
+        },
+        {
+            "id": "SelfPurge",
+            "name": "CardTraitSelfPurge"
+        },
+        {
+            "id": "Piercing",
+            "name": "CardTraitIgnoreArmor"
+        },
+        {
+            "id": "Attuned",
+            "name": "CardTraitStrongerMagicPower",
+            "param_int": 5
+        },
+        {
+            "id": "Pyrebound",
+            "name": "CardTraitLimitedRange"
+        },
+        {
+            "id": "Frozen",
+            "name": "CardTraitFreeze"
+        },
+        {
+            "id": "CubusSpikeScaling",
+            "name": "CardTraitScalingAddStatusEffect",
+            "param_tracked_value": "played_cost",
+            "param_entry_duration": "this_battle",
+            "param_int": 2,
+            "param_team": "heroes",
+            "param_status_effects": [
+                {
+                    "status": "@frantic",
+                    "count": 0
+                }
+            ]
+        },
+        {
+            "id": "PlagueBoostScaling",
+            "name": "CardTraitScalingAddEnergy",
+            "param_tracked_value": "type_in_deck",
+            "param_card_type": "blight",
+            "param_int": 1
+        },
+        {
+            "id": "VitalityScalingRegen",
+            "name": "CardTraitScalingAddStatusEffect",
+            "param_tracked_value": "status_effect_count_in_target_room",
+            "param_int": 1,
+            "param_team": "monsters",
+            "param_status_effects": [
+                {
+                    "status": "regen",
+                    "count": 0
+                }
+            ]
+        },
+        {
+            "id": "VitalityScalingBuff",
+            "name": "CardTraitScalingAddStatusEffect",
+            "param_tracked_value": "status_effect_count_in_target_room",
+            "param_int": 1,
+            "param_team": "monsters",
+            "param_status_effects": [
+                {
+                    "status": "buff",
+                    "count": 0
+                }
+            ]
         }
     ],
     "upgrades": [
@@ -20,6 +88,23 @@
             "trait_upgrades": [
                 "@Consume"
             ]
+        },
+        {
+            "id": "IllusionTwinsFragile",
+            "status_effect_upgrades": [
+                {
+                    "status": "fragile",
+                    "count": 1
+                }
+            ]
+        },
+        {
+            "id": "EndlessShadowWeaker",
+            "bonus_hp": -5
+        },
+        {
+            "id": "ShadowWarriorPermanentAttack",
+            "bonus_damage": 2
         }
     ],
     "additional_tooltips": [

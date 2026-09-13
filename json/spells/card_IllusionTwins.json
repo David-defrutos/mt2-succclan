@@ -1,0 +1,59 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+    "cards": [
+        {
+            "id": "IllusionTwins",
+            "names": {
+                "english": "Illusion Twins",
+                "chinese": "幻影双生"
+            },
+            "descriptions": {
+                "english": "Create [effect0.power] copy of a friendly unit with [fragile].",
+                "chinese": "复制 [effect0.power] 个指定的友方单位并附加[fragile]。"
+            },
+            "card_type": "spell",
+            "rarity": "rare",
+            "class": "@ClassSuccubus",
+            "card_art": "@IllusionTwinsArt",
+            "cost": 2,
+            "targets_room": true,
+            "targetless": false,
+            "pools": [
+                "MegaPool"
+            ],
+            "traits": [
+                "@Consume"
+            ],
+            "effects": [
+                "@IllusionTwinsCopy"
+            ]
+        }
+    ],
+    "effects": [
+        {
+            "id": "IllusionTwinsCopy",
+            "name": "CardEffectCopyUnits",
+            "target_mode": "drop_target_character",
+            "target_team": "monsters",
+            "param_int": 1,
+            "param_upgrade": "@IllusionTwinsFragile"
+        }
+    ],
+    "sprites": [
+        {
+            "id": "IllusionTwinsArt",
+            "path": "textures/IllusionTwinsArt.png"
+        }
+    ],
+    "game_objects": [
+        {
+            "id": "IllusionTwinsArt",
+            "type": "card_art",
+            "extensions": {
+                "card_art": {
+                    "sprite": "@IllusionTwinsArt"
+                }
+            }
+        }
+    ]
+}

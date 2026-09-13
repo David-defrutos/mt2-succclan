@@ -1,0 +1,78 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+    "cards": [
+        {
+            "id": "VitalityExtraction",
+            "names": {
+                "english": "Vitality Extraction",
+                "chinese": "活力汲取"
+            },
+            "descriptions": {
+                "english": "Friendly units gain [regen] and [buff] equal to the number of <b>[mt2_succclan.Plugin_frantic]</b> in this room.",
+                "chinese": "友方单位获得等同于本层 <b>[mt2_succclan.Plugin_frantic]</b> 层数的[regen]和[buff]。"
+            },
+            "card_type": "spell",
+            "rarity": "rare",
+            "class": "@ClassSuccubus",
+            "card_art": "@VitalityExtractionArt",
+            "cost": 2,
+            "targets_room": true,
+            "targetless": true,
+            "pools": [
+                "MegaPool"
+            ],
+            "traits": [
+                "@Consume",
+                "@VitalityScalingRegen",
+                "@VitalityScalingBuff"
+            ],
+            "effects": [
+                "@VitalityRegen",
+                "@VitalityBuff"
+            ]
+        }
+    ],
+    "effects": [
+        {
+            "id": "VitalityRegen",
+            "name": "CardEffectAddStatusEffect",
+            "target_mode": "room",
+            "target_team": "monsters",
+            "param_status_effects": [
+                {
+                    "status": "regen",
+                    "count": 0
+                }
+            ]
+        },
+        {
+            "id": "VitalityBuff",
+            "name": "CardEffectAddStatusEffect",
+            "target_mode": "room",
+            "target_team": "monsters",
+            "param_status_effects": [
+                {
+                    "status": "buff",
+                    "count": 0
+                }
+            ]
+        }
+    ],
+    "sprites": [
+        {
+            "id": "VitalityExtractionArt",
+            "path": "textures/VitalityExtractionArt.png"
+        }
+    ],
+    "game_objects": [
+        {
+            "id": "VitalityExtractionArt",
+            "type": "card_art",
+            "extensions": {
+                "card_art": {
+                    "sprite": "@VitalityExtractionArt"
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,59 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+    "cards": [
+        {
+            "id": "PiercingShriek",
+            "names": {
+                "english": "Piercing Shriek",
+                "chinese": "刺耳尖啸"
+            },
+            "descriptions": {
+                "english": "Deal [effect0.power] damage to all enemy units.",
+                "chinese": "对所有敌方单位造成 [effect0.power] 点伤害。"
+            },
+            "card_type": "spell",
+            "rarity": "uncommon",
+            "class": "@ClassSuccubus",
+            "card_art": "@PiercingShriekArt",
+            "cost": 0,
+            "targets_room": true,
+            "targetless": true,
+            "pools": [
+                "MegaPool"
+            ],
+            "traits": [
+                "@Consume",
+                "@Piercing"
+            ],
+            "effects": [
+                "@PiercingShriekDamage"
+            ]
+        }
+    ],
+    "effects": [
+        {
+            "id": "PiercingShriekDamage",
+            "name": "CardEffectDamage",
+            "target_mode": "room",
+            "target_team": "heroes",
+            "param_int": 13
+        }
+    ],
+    "sprites": [
+        {
+            "id": "PiercingShriekArt",
+            "path": "textures/PiercingShriekArt.png"
+        }
+    ],
+    "game_objects": [
+        {
+            "id": "PiercingShriekArt",
+            "type": "card_art",
+            "extensions": {
+                "card_art": {
+                    "sprite": "@PiercingShriekArt"
+                }
+            }
+        }
+    ]
+}

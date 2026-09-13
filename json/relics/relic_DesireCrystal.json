@@ -1,0 +1,83 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+    "relics": [
+        {
+            "id": "DesireCrystal",
+            "type": "collectable",
+            "names": {
+                "english": "Desire Crystal",
+                "chinese": "欲望水晶"
+            },
+            "descriptions": {
+                "english": "The first <b>Ghost</b> you summon each turn draws you 1 card and gives 1[ember].",
+                "chinese": "每回合首次召唤幽魂单位时，抽 1 张牌并获得 1[ember]。"
+            },
+            "disallow_in_deployment": false,
+            "relic_effects": [
+                "@DesireCrystalEffect"
+            ],
+            "icon": "@DesireCrystalIcon",
+            "icon_small": "@DesireCrystalIcon",
+            "extensions": [
+                {
+                    "collectable": {
+                        "class": "@ClassSuccubus",
+                        "pools": [
+                            "MegaRelicPool"
+                        ],
+                        "rarity": "uncommon",
+                        "unlock_level": 0
+                    }
+                }
+            ]
+        }
+    ],
+    "relic_effects": [
+        {
+            "id": "DesireCrystalEffect",
+            "name": "RelicEffectAddEffectOnUnitSpawn",
+            "source_team": "monsters",
+            "param_subtype": "@Sub_Ghost",
+            "param_effects": [
+                "@DesireCrystalDraw",
+                "@DesireCrystalEmber"
+            ],
+            "conditions": [
+                {
+                    "id": "@DesireCrystalOncePerTurn"
+                }
+            ]
+        }
+    ],
+    "relic_effect_conditions": [
+        {
+            "id": "DesireCrystalOncePerTurn",
+            "param_track_trigger_count": true,
+            "allow_multiple_triggers_per_duration": false,
+            "param_entry_duration": "this_turn",
+            "param_int": 1
+        }
+    ],
+    "effects": [
+        {
+            "id": "DesireCrystalDraw",
+            "name": "CardEffectDraw",
+            "target_mode": "self",
+            "target_team": "none",
+            "param_int": 1
+        },
+        {
+            "id": "DesireCrystalEmber",
+            "name": "CardEffectGainEnergy",
+            "target_mode": "self",
+            "target_team": "none",
+            "param_int": 1
+        }
+    ],
+    "sprites": [
+        {
+            "id": "DesireCrystalIcon",
+            "path": "textures/DesireCrystalArt.png"
+        }
+    ]
+}

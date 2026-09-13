@@ -1,0 +1,65 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+    "cards": [
+        {
+            "id": "CubusSpike",
+            "names": {
+                "english": "Cubus Spike",
+                "chinese": "诡影道钉"
+            },
+            "descriptions": {
+                "english": "Apply <b>[mt2_succclan.Plugin_frantic] [trait0.power][x]</b> to all enemy units.",
+                "chinese": "对所有敌方单位施加 <b>[mt2_succclan.Plugin_frantic] [trait0.power][x]</b>。"
+            },
+            "card_type": "spell",
+            "rarity": "rare",
+            "class": "@ClassSuccubus",
+            "card_art": "@CubusSpikeArt",
+            "cost": 0,
+            "targets_room": true,
+            "targetless": true,
+            "pools": [
+                "MegaPool"
+            ],
+            "traits": [
+                "@CubusSpikeScaling",
+                "@Consume"
+            ],
+            "effects": [
+                "@CubusSpikeFrantic"
+            ],
+            "cost_type": "consume_remaining_energy"
+        }
+    ],
+    "effects": [
+        {
+            "id": "CubusSpikeFrantic",
+            "name": "CardEffectAddStatusEffect",
+            "target_mode": "room",
+            "target_team": "heroes",
+            "param_status_effects": [
+                {
+                    "status": "@frantic",
+                    "count": 0
+                }
+            ]
+        }
+    ],
+    "sprites": [
+        {
+            "id": "CubusSpikeArt",
+            "path": "textures/CubusSpikeArt.png"
+        }
+    ],
+    "game_objects": [
+        {
+            "id": "CubusSpikeArt",
+            "type": "card_art",
+            "extensions": {
+                "card_art": {
+                    "sprite": "@CubusSpikeArt"
+                }
+            }
+        }
+    ]
+}

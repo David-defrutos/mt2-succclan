@@ -1,0 +1,113 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+    "cards": [
+        {
+            "id": "SpawnOolioddroo",
+            "names": {
+                "english": "Oolioddroo",
+                "chinese": "蛾梦魔"
+            },
+            "card_art": "@OolioddrooCardArt",
+            "cost": 1,
+            "card_type": "monster",
+            "rarity": "uncommon",
+            "class": "@ClassSuccubus",
+            "targets_room": true,
+            "pools": [
+                "MegaPool"
+            ],
+            "effects": [
+                "@SpawnOolioddroo"
+            ]
+        }
+    ],
+    "characters": [
+        {
+            "id": "Oolioddroo",
+            "names": {
+                "english": "Oolioddroo",
+                "chinese": "蛾梦魔"
+            },
+            "character_art": "@OolioddrooCharacterArt",
+            "size": 2,
+            "attack_damage": 0,
+            "health": 30,
+            "subtypes": [
+                "@Sub_Cubus"
+            ],
+            "triggers": [
+                "@OolioddrooOnTurn"
+            ]
+        }
+    ],
+    "character_triggers": [
+        {
+            "id": "OolioddrooOnTurn",
+            "trigger": "on_turn_begin",
+            "descriptions": {
+                "english": "Deal damage equal to its [attack] to enemy units.",
+                "chinese": "对所有敌方单位造成等同于自身[attack]的伤害。"
+            },
+            "effects": [
+                "@OolioddrooDamage"
+            ]
+        }
+    ],
+    "effects": [
+        {
+            "id": "SpawnOolioddroo",
+            "name": "CardEffectSpawnMonster",
+            "target_mode": "drop_target_character",
+            "param_character": "@Oolioddroo"
+        },
+        {
+            "id": "OolioddrooDamage",
+            "name": "CardEffectDamagePerSourceAttack",
+            "target_mode": "room",
+            "target_team": "heroes",
+            "param_int": 1
+        }
+    ],
+    "sprites": [
+        {
+            "id": "OolioddrooCardArt",
+            "path": "textures/OolioddrooCardArt.png"
+        },
+        {
+            "id": "OolioddrooCharacterArt",
+            "path": "textures/OolioddrooCharacterArt.png"
+        }
+    ],
+    "game_objects": [
+        {
+            "id": "OolioddrooCardArt",
+            "type": "card_art",
+            "extensions": {
+                "card_art": {
+                    "sprite": "@OolioddrooCardArt"
+                }
+            }
+        },
+        {
+            "id": "OolioddrooCharacterArt",
+            "type": "character_art",
+            "extensions": {
+                "character_art": {
+                    "sprite": "@OolioddrooCharacterArt",
+                    "transform": {
+                        "position": {
+                            "x": 0,
+                            "y": 0.5,
+                            "z": 0.1
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

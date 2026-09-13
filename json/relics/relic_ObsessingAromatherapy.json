@@ -1,0 +1,54 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+    "relics": [
+        {
+            "id": "ObsessingAromatherapy",
+            "type": "collectable",
+            "names": {
+                "english": "Obsessing Aromatherapy",
+                "chinese": "迷乱香薰"
+            },
+            "descriptions": {
+                "english": "Enemy units gain <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> when they enter the train.",
+                "chinese": "敌方单位进入列车时，获得 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>。"
+            },
+            "disallow_in_deployment": false,
+            "relic_effects": [
+                "@ObsessingAromatherapyEffect"
+            ],
+            "icon": "@ObsessingAromatherapyIcon",
+            "icon_small": "@ObsessingAromatherapyIcon",
+            "extensions": [
+                {
+                    "collectable": {
+                        "class": "@ClassSuccubus",
+                        "pools": [
+                            "MegaRelicPool"
+                        ],
+                        "rarity": "uncommon",
+                        "unlock_level": 0
+                    }
+                }
+            ]
+        }
+    ],
+    "relic_effects": [
+        {
+            "id": "ObsessingAromatherapyEffect",
+            "name": "RelicEffectAddStatusEffectOnSpawn",
+            "source_team": "heroes",
+            "param_status_effects": [
+                {
+                    "status": "@frantic",
+                    "count": 1
+                }
+            ]
+        }
+    ],
+    "sprites": [
+        {
+            "id": "ObsessingAromatherapyIcon",
+            "path": "textures/ObsessingAromatherapyArt.png"
+        }
+    ]
+}

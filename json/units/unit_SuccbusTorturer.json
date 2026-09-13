@@ -1,0 +1,118 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+    "cards": [
+        {
+            "id": "SpawnSuccbusTorturer",
+            "names": {
+                "english": "Succbus Torturer",
+                "chinese": "魅魔拷打者"
+            },
+            "card_art": "@SuccbusTorturerCardArt",
+            "cost": 1,
+            "card_type": "monster",
+            "rarity": "uncommon",
+            "class": "@ClassSuccubus",
+            "targets_room": true,
+            "pools": [
+                "MegaPool"
+            ],
+            "effects": [
+                "@SpawnSuccbusTorturer"
+            ]
+        }
+    ],
+    "characters": [
+        {
+            "id": "SuccbusTorturer",
+            "names": {
+                "english": "Succbus Torturer",
+                "chinese": "魅魔拷打者"
+            },
+            "character_art": "@SuccbusTorturerCharacterArt",
+            "size": 2,
+            "attack_damage": 15,
+            "health": 10,
+            "subtypes": [
+                "@Sub_Cubus"
+            ],
+            "triggers": [
+                "@SuccbusTorturerOnAttack"
+            ]
+        }
+    ],
+    "character_triggers": [
+        {
+            "id": "SuccbusTorturerOnAttack",
+            "trigger": "on_attacking",
+            "descriptions": {
+                "english": "Apply [melee weakness] [effect0.status0.power] to the attacked unit.",
+                "chinese": "对被攻击的单位施加[melee weakness] [effect0.status0.power]。"
+            },
+            "effects": [
+                "@SuccbusTorturerWeakness"
+            ]
+        }
+    ],
+    "effects": [
+        {
+            "id": "SpawnSuccbusTorturer",
+            "name": "CardEffectSpawnMonster",
+            "target_mode": "drop_target_character",
+            "param_character": "@SuccbusTorturer"
+        },
+        {
+            "id": "SuccbusTorturerWeakness",
+            "name": "CardEffectAddStatusEffect",
+            "target_mode": "last_attacked_character",
+            "target_team": "heroes",
+            "param_status_effects": [
+                {
+                    "status": "melee weakness",
+                    "count": 1
+                }
+            ]
+        }
+    ],
+    "sprites": [
+        {
+            "id": "SuccbusTorturerCardArt",
+            "path": "textures/SuccbusTorturerCardArt.png"
+        },
+        {
+            "id": "SuccbusTorturerCharacterArt",
+            "path": "textures/SuccbusTorturerCharacterArt.png"
+        }
+    ],
+    "game_objects": [
+        {
+            "id": "SuccbusTorturerCardArt",
+            "type": "card_art",
+            "extensions": {
+                "card_art": {
+                    "sprite": "@SuccbusTorturerCardArt"
+                }
+            }
+        },
+        {
+            "id": "SuccbusTorturerCharacterArt",
+            "type": "character_art",
+            "extensions": {
+                "character_art": {
+                    "sprite": "@SuccbusTorturerCharacterArt",
+                    "transform": {
+                        "position": {
+                            "x": 0,
+                            "y": 0.5,
+                            "z": 0.1
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

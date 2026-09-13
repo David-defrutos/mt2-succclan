@@ -1,0 +1,112 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+    "cards": [
+        {
+            "id": "DreadShot",
+            "names": {
+                "english": "Dread Shot",
+                "chinese": "恐惧射击"
+            },
+            "descriptions": {
+                "english": "Deal [effect0.power] damage.",
+                "chinese": "造成 [effect0.power] 点伤害。"
+            },
+            "card_type": "spell",
+            "rarity": "common",
+            "class": "@ClassSuccubus",
+            "card_art": "@DreadShotArt",
+            "cost": 1,
+            "targets_room": true,
+            "targetless": false,
+            "pools": [
+                "MegaPool"
+            ],
+            "effects": [
+                "@DreadShotDamage",
+                "@DreadShotFrantic",
+                "@DreadShotDazed",
+                "@DreadShotWither"
+            ],
+            "triggers": [
+                "@DreadShotOnKill"
+            ]
+        }
+    ],
+    "card_triggers": [
+        {
+            "id": "DreadShotOnKill",
+            "trigger": "on_kill",
+            "descriptions": {
+                "english": "Apply <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>, [dazed] [effect1.status0.power] and [witherbloom] [effect2.status0.power] to enemy units.",
+                "chinese": "对所有敌方单位施加 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>、[dazed] [effect1.status0.power] 和[witherbloom] [effect2.status0.power]。"
+            },
+            "effects": [
+                "@DreadShotFrantic",
+                "@DreadShotDazed",
+                "@DreadShotWither"
+            ]
+        }
+    ],
+    "effects": [
+        {
+            "id": "DreadShotDamage",
+            "name": "CardEffectDamage",
+            "target_mode": "drop_target_character",
+            "target_team": "both",
+            "param_int": 2
+        },
+        {
+            "id": "DreadShotFrantic",
+            "name": "CardEffectAddStatusEffect",
+            "target_mode": "room",
+            "target_team": "heroes",
+            "param_status_effects": [
+                {
+                    "status": "@frantic",
+                    "count": 1
+                }
+            ]
+        },
+        {
+            "id": "DreadShotDazed",
+            "name": "CardEffectAddStatusEffect",
+            "target_mode": "room",
+            "target_team": "heroes",
+            "param_status_effects": [
+                {
+                    "status": "dazed",
+                    "count": 1
+                }
+            ]
+        },
+        {
+            "id": "DreadShotWither",
+            "name": "CardEffectAddStatusEffect",
+            "target_mode": "room",
+            "target_team": "heroes",
+            "param_status_effects": [
+                {
+                    "status": "witherbloom",
+                    "count": 1
+                }
+            ]
+        }
+    ],
+    "sprites": [
+        {
+            "id": "DreadShotArt",
+            "path": "textures/DreadShotArt.png"
+        }
+    ],
+    "game_objects": [
+        {
+            "id": "DreadShotArt",
+            "type": "card_art",
+            "extensions": {
+                "card_art": {
+                    "sprite": "@DreadShotArt"
+                }
+            }
+        }
+    ]
+}

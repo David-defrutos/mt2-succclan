@@ -1,0 +1,138 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+    "cards": [
+        {
+            "id": "SpawnSlothGhost",
+            "names": {
+                "english": "Sloth Ghost",
+                "chinese": "怠惰幽魂"
+            },
+            "card_type": "monster",
+            "rarity": "uncommon",
+            "class": "@ClassSuccubus",
+            "card_art": "@SlothGhostCardArt",
+            "cost": 0,
+            "targets_room": true,
+            "pools": [
+                "MegaPool"
+            ],
+            "effects": [
+                "@SpawnSlothGhost"
+            ]
+        }
+    ],
+    "characters": [
+        {
+            "id": "SlothGhost",
+            "names": {
+                "english": "Sloth Ghost",
+                "chinese": "怠惰幽魂"
+            },
+            "character_art": "@SlothGhostCharacterArt",
+            "size": 1,
+            "attack_damage": 0,
+            "health": 2,
+            "subtypes": [
+                "@Sub_Ghost"
+            ],
+            "triggers": [
+                "@SlothGhostOnSpawn",
+                "@SlothGhostAccursed"
+            ]
+        }
+    ],
+    "character_triggers": [
+        {
+            "id": "SlothGhostOnSpawn",
+            "trigger": "on_spawn",
+            "descriptions": {
+                "english": "Add [effect0.power_unmodified] <b>Obsessing Spark</b> with [exhaust] to your hand.",
+                "chinese": "将 [effect0.power_unmodified] 张带有[exhaust]的<b>欲望碎片</b>加入手牌。"
+            },
+            "effects": [
+                "@SlothGhostAddShards"
+            ]
+        },
+        {
+            "id": "SlothGhostAccursed",
+            "trigger": {
+                "id": "@Accursed",
+                "mod_reference": "Conductor"
+            },
+            "descriptions": {
+                "english": "Deal [effect0.power] damage to enemy units.",
+                "chinese": "对所有敌方单位造成 [effect0.power] 点伤害。"
+            },
+            "effects": [
+                "@SlothGhostDamage"
+            ]
+        }
+    ],
+    "effects": [
+        {
+            "id": "SpawnSlothGhost",
+            "name": "CardEffectSpawnMonster",
+            "target_mode": "drop_target_character",
+            "param_character": "@SlothGhost"
+        },
+        {
+            "id": "SlothGhostAddShards",
+            "name": "CardEffectAddBattleCard",
+            "target_mode": "room",
+            "target_team": "none",
+            "param_int": 3,
+            "param_int_2": 2,
+            "param_card_pool": "@ObsessingShardPool",
+            "param_upgrade": "@ConsumeUpgrade"
+        },
+        {
+            "id": "SlothGhostDamage",
+            "name": "CardEffectDamage",
+            "target_mode": "room",
+            "target_team": "heroes",
+            "param_int": 5
+        }
+    ],
+    "sprites": [
+        {
+            "id": "SlothGhostCardArt",
+            "path": "textures/SlothGhostCardArt.png"
+        },
+        {
+            "id": "SlothGhostCharacterArt",
+            "path": "textures/SlothGhostCharacterArt.png"
+        }
+    ],
+    "game_objects": [
+        {
+            "id": "SlothGhostCardArt",
+            "type": "card_art",
+            "extensions": {
+                "card_art": {
+                    "sprite": "@SlothGhostCardArt"
+                }
+            }
+        },
+        {
+            "id": "SlothGhostCharacterArt",
+            "type": "character_art",
+            "extensions": {
+                "character_art": {
+                    "sprite": "@SlothGhostCharacterArt",
+                    "transform": {
+                        "position": {
+                            "x": 0,
+                            "y": 0.4,
+                            "z": 0.1
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

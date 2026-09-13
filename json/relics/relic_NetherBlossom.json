@@ -1,0 +1,54 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+    "relics": [
+        {
+            "id": "NetherBlossom",
+            "type": "collectable",
+            "names": {
+                "english": "Nether Blossom",
+                "chinese": "下界之花"
+            },
+            "descriptions": {
+                "english": "When <b>[mt2_succclan.Plugin_frantic]</b> is applied to a unit, also apply [buff] [effect0.status0.power].",
+                "chinese": "施加 <b>[mt2_succclan.Plugin_frantic]</b> 时，同时施加[buff] [effect0.status0.power]。"
+            },
+            "disallow_in_deployment": false,
+            "relic_effects": [
+                "@NetherBlossomEffect"
+            ],
+            "icon": "@NetherBlossomIcon",
+            "icon_small": "@NetherBlossomIcon",
+            "extensions": [
+                {
+                    "collectable": {
+                        "class": "@ClassSuccubus",
+                        "pools": [
+                            "MegaRelicPool"
+                        ],
+                        "rarity": "uncommon",
+                        "unlock_level": 0
+                    }
+                }
+            ]
+        }
+    ],
+    "relic_effects": [
+        {
+            "id": "NetherBlossomEffect",
+            "name": "RelicEffectAddStatusEffectOnStatusApplied",
+            "source_team": "heroes",
+            "param_status_effects": [
+                {
+                    "status": "buff",
+                    "count": 1
+                }
+            ]
+        }
+    ],
+    "sprites": [
+        {
+            "id": "NetherBlossomIcon",
+            "path": "textures/NetherBlossomArt.png"
+        }
+    ]
+}

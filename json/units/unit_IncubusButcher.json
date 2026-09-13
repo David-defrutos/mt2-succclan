@@ -1,0 +1,127 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+    "cards": [
+        {
+            "id": "SpawnIncubusButcher",
+            "names": {
+                "english": "Incubus Butcher",
+                "chinese": "魇魔刽子手"
+            },
+            "card_art": "@IncubusButcherCardArt",
+            "cost": 2,
+            "card_type": "monster",
+            "rarity": "uncommon",
+            "class": "@ClassSuccubus",
+            "targets_room": true,
+            "pools": [
+                "MegaPool"
+            ],
+            "effects": [
+                "@SpawnIncubusButcher"
+            ]
+        }
+    ],
+    "characters": [
+        {
+            "id": "IncubusButcher",
+            "names": {
+                "english": "Incubus Butcher",
+                "chinese": "魇魔刽子手"
+            },
+            "character_art": "@IncubusButcherCharacterArt",
+            "size": 2,
+            "attack_damage": 5,
+            "health": 20,
+            "subtypes": [
+                "@Sub_Cubus"
+            ],
+            "starting_status_effects": [
+                {
+                    "status": "sweep",
+                    "count": 1
+                }
+            ],
+            "triggers": [
+                "@IncubusButcherHarvest"
+            ]
+        }
+    ],
+    "character_triggers": [
+        {
+            "id": "IncubusButcherHarvest",
+            "trigger": "on_any_unit_death_on_floor",
+            "descriptions": {
+                "english": "+[effect0.power][attack] and +[effect1.power][health].",
+                "chinese": "+[effect0.power][attack]，+[effect1.power][health]。"
+            },
+            "effects": [
+                "@IncubusButcherAttack",
+                "@IncubusButcherHealth"
+            ]
+        }
+    ],
+    "effects": [
+        {
+            "id": "SpawnIncubusButcher",
+            "name": "CardEffectSpawnMonster",
+            "target_mode": "drop_target_character",
+            "param_character": "@IncubusButcher"
+        },
+        {
+            "id": "IncubusButcherAttack",
+            "name": "CardEffectBuffDamage",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_int": 3
+        },
+        {
+            "id": "IncubusButcherHealth",
+            "name": "CardEffectBuffMaxHealth",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_int": 1
+        }
+    ],
+    "sprites": [
+        {
+            "id": "IncubusButcherCardArt",
+            "path": "textures/IncubusButcherCardArt.png"
+        },
+        {
+            "id": "IncubusButcherCharacterArt",
+            "path": "textures/IncubusButcherCharacterArt.png"
+        }
+    ],
+    "game_objects": [
+        {
+            "id": "IncubusButcherCardArt",
+            "type": "card_art",
+            "extensions": {
+                "card_art": {
+                    "sprite": "@IncubusButcherCardArt"
+                }
+            }
+        },
+        {
+            "id": "IncubusButcherCharacterArt",
+            "type": "character_art",
+            "extensions": {
+                "character_art": {
+                    "sprite": "@IncubusButcherCharacterArt",
+                    "transform": {
+                        "position": {
+                            "x": 0,
+                            "y": 0.5,
+                            "z": 0.1
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

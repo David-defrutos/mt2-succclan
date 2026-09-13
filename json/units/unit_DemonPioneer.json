@@ -1,0 +1,124 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+    "cards": [
+        {
+            "id": "SpawnDemonPioneer",
+            "names": {
+                "english": "Demon Pioneer",
+                "chinese": "恶魔先锋"
+            },
+            "card_art": "@DemonPioneerCardArt",
+            "cost": 1,
+            "card_type": "monster",
+            "rarity": "uncommon",
+            "class": "@ClassSuccubus",
+            "targets_room": true,
+            "pools": [
+                "MegaPool"
+            ],
+            "effects": [
+                "@SpawnDemonPioneer"
+            ]
+        }
+    ],
+    "characters": [
+        {
+            "id": "DemonPioneer",
+            "names": {
+                "english": "Demon Pioneer",
+                "chinese": "恶魔先锋"
+            },
+            "character_art": "@DemonPioneerCharacterArt",
+            "size": 3,
+            "attack_damage": 20,
+            "health": 30,
+            "subtypes": [
+                "@Sub_Cubus"
+            ],
+            "triggers": [
+                "@DemonPioneerAccursed"
+            ]
+        }
+    ],
+    "character_triggers": [
+        {
+            "id": "DemonPioneerAccursed",
+            "trigger": {
+                "id": "@Accursed",
+                "mod_reference": "Conductor"
+            },
+            "descriptions": {
+                "english": "+[effect0.power][attack] and +[effect1.power][health].",
+                "chinese": "+[effect0.power][attack]，+[effect1.power][health]。"
+            },
+            "effects": [
+                "@DemonPioneerAttack",
+                "@DemonPioneerHealth"
+            ]
+        }
+    ],
+    "effects": [
+        {
+            "id": "SpawnDemonPioneer",
+            "name": "CardEffectSpawnMonster",
+            "target_mode": "drop_target_character",
+            "param_character": "@DemonPioneer"
+        },
+        {
+            "id": "DemonPioneerAttack",
+            "name": "CardEffectBuffDamage",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_int": 2
+        },
+        {
+            "id": "DemonPioneerHealth",
+            "name": "CardEffectBuffMaxHealth",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_int": 5
+        }
+    ],
+    "sprites": [
+        {
+            "id": "DemonPioneerCardArt",
+            "path": "textures/DemonPioneerCardArt.png"
+        },
+        {
+            "id": "DemonPioneerCharacterArt",
+            "path": "textures/DemonPioneerCharacterArt.png"
+        }
+    ],
+    "game_objects": [
+        {
+            "id": "DemonPioneerCardArt",
+            "type": "card_art",
+            "extensions": {
+                "card_art": {
+                    "sprite": "@DemonPioneerCardArt"
+                }
+            }
+        },
+        {
+            "id": "DemonPioneerCharacterArt",
+            "type": "character_art",
+            "extensions": {
+                "character_art": {
+                    "sprite": "@DemonPioneerCharacterArt",
+                    "transform": {
+                        "position": {
+                            "x": 0,
+                            "y": 0.5,
+                            "z": 0.1
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,60 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+    "cards": [
+        {
+            "id": "PlagueBoost",
+            "names": {
+                "english": "Plague Boost",
+                "chinese": "瘟疫爆发"
+            },
+            "descriptions": {
+                "english": "Gain 1[ember] for every <b>Blight</b> in your deck.",
+                "chinese": "牌库中每有 1 张[blight]牌，获得 1[ember]。"
+            },
+            "card_type": "spell",
+            "rarity": "rare",
+            "class": "@ClassSuccubus",
+            "card_art": "@PlagueBoostArt",
+            "cost": 0,
+            "targets_room": true,
+            "targetless": true,
+            "pools": [
+                "MegaPool"
+            ],
+            "traits": [
+                "@Frozen",
+                "@Consume",
+                "@PlagueBoostScaling"
+            ],
+            "effects": [
+                "@PlagueBoostEmber"
+            ]
+        }
+    ],
+    "effects": [
+        {
+            "id": "PlagueBoostEmber",
+            "name": "CardEffectGainEnergy",
+            "target_mode": "self",
+            "target_team": "none",
+            "param_int": 0
+        }
+    ],
+    "sprites": [
+        {
+            "id": "PlagueBoostArt",
+            "path": "textures/PlagueBoostArt.png"
+        }
+    ],
+    "game_objects": [
+        {
+            "id": "PlagueBoostArt",
+            "type": "card_art",
+            "extensions": {
+                "card_art": {
+                    "sprite": "@PlagueBoostArt"
+                }
+            }
+        }
+    ]
+}

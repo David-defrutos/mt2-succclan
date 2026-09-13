@@ -1,0 +1,176 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+    "cards": [
+        {
+            "id": "SpawnAbyssPrincess",
+            "names": {
+                "english": "Abyss Princess",
+                "chinese": "深渊公主"
+            },
+            "card_art": "@AbyssPrincessCardArt",
+            "cost": 2,
+            "card_type": "monster",
+            "rarity": "rare",
+            "class": "@ClassSuccubus",
+            "targets_room": true,
+            "pools": [
+                "MegaPool"
+            ],
+            "effects": [
+                "@SpawnAbyssPrincess"
+            ]
+        }
+    ],
+    "characters": [
+        {
+            "id": "AbyssPrincess",
+            "names": {
+                "english": "Abyss Princess",
+                "chinese": "深渊公主"
+            },
+            "character_art": "@AbyssPrincessCharacterArt",
+            "size": 2,
+            "attack_damage": 25,
+            "health": 1,
+            "subtypes": [
+                "@Sub_Cubus"
+            ],
+            "starting_status_effects": [
+                {
+                    "status": "ambush",
+                    "count": 1
+                }
+            ],
+            "triggers": [
+                "@AbyssPrincessOnAttack"
+            ]
+        }
+    ],
+    "character_triggers": [
+        {
+            "id": "AbyssPrincessOnAttack",
+            "trigger": "on_attacking",
+            "descriptions": {
+                "english": "Gain [debuff] [effect0.status0.power]. Apply [buff] [effect1.status0.power], <b>[mt2_succclan.Plugin_frantic] [effect2.status0.power]</b>, [dazed] [effect3.status0.power] and [witherbloom] [effect4.status0.power] to enemy units.",
+                "chinese": "获得[debuff] [effect0.status0.power]。对所有敌方单位施加[buff] [effect1.status0.power]、<b>[mt2_succclan.Plugin_frantic] [effect2.status0.power]</b>、[dazed] [effect3.status0.power] 和[witherbloom] [effect4.status0.power]。"
+            },
+            "effects": [
+                "@AbyssPrincessSap",
+                "@AbyssPrincessRage",
+                "@AbyssPrincessFrantic",
+                "@AbyssPrincessDazed",
+                "@AbyssPrincessWither"
+            ]
+        }
+    ],
+    "effects": [
+        {
+            "id": "SpawnAbyssPrincess",
+            "name": "CardEffectSpawnMonster",
+            "target_mode": "drop_target_character",
+            "param_character": "@AbyssPrincess"
+        },
+        {
+            "id": "AbyssPrincessSap",
+            "name": "CardEffectAddStatusEffect",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_status_effects": [
+                {
+                    "status": "debuff",
+                    "count": 3
+                }
+            ]
+        },
+        {
+            "id": "AbyssPrincessRage",
+            "name": "CardEffectAddStatusEffect",
+            "target_mode": "room",
+            "target_team": "heroes",
+            "param_status_effects": [
+                {
+                    "status": "buff",
+                    "count": 3
+                }
+            ]
+        },
+        {
+            "id": "AbyssPrincessFrantic",
+            "name": "CardEffectAddStatusEffect",
+            "target_mode": "room",
+            "target_team": "heroes",
+            "param_status_effects": [
+                {
+                    "status": "@frantic",
+                    "count": 1
+                }
+            ]
+        },
+        {
+            "id": "AbyssPrincessDazed",
+            "name": "CardEffectAddStatusEffect",
+            "target_mode": "room",
+            "target_team": "heroes",
+            "param_status_effects": [
+                {
+                    "status": "dazed",
+                    "count": 1
+                }
+            ]
+        },
+        {
+            "id": "AbyssPrincessWither",
+            "name": "CardEffectAddStatusEffect",
+            "target_mode": "room",
+            "target_team": "heroes",
+            "param_status_effects": [
+                {
+                    "status": "witherbloom",
+                    "count": 1
+                }
+            ]
+        }
+    ],
+    "sprites": [
+        {
+            "id": "AbyssPrincessCardArt",
+            "path": "textures/AbyssPrincessCardArt.png"
+        },
+        {
+            "id": "AbyssPrincessCharacterArt",
+            "path": "textures/AbyssPrincessCharacterArt.png"
+        }
+    ],
+    "game_objects": [
+        {
+            "id": "AbyssPrincessCardArt",
+            "type": "card_art",
+            "extensions": {
+                "card_art": {
+                    "sprite": "@AbyssPrincessCardArt"
+                }
+            }
+        },
+        {
+            "id": "AbyssPrincessCharacterArt",
+            "type": "character_art",
+            "extensions": {
+                "character_art": {
+                    "sprite": "@AbyssPrincessCharacterArt",
+                    "transform": {
+                        "position": {
+                            "x": 0,
+                            "y": 0.5,
+                            "z": 0.1
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

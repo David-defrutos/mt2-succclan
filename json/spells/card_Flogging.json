@@ -19,7 +19,7 @@
             "targets_room": true,
             "targetless": true,
             "pools": [
-                "MegaPool"
+                "StarterCardsOnly"
             ],
             "effects": [
                 "@FloggingDamage",

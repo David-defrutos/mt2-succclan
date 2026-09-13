@@ -1,0 +1,144 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+    "cards": [
+        {
+            "id": "SpawnChaosCreation",
+            "names": {
+                "english": "Chaos Creation",
+                "chinese": "混沌造物"
+            },
+            "card_art": "@ChaosCreationCardArt",
+            "cost": 1,
+            "card_type": "monster",
+            "rarity": "uncommon",
+            "class": "@ClassSuccubus",
+            "targets_room": true,
+            "pools": [
+                "MegaPool"
+            ],
+            "effects": [
+                "@SpawnChaosCreation"
+            ]
+        }
+    ],
+    "characters": [
+        {
+            "id": "ChaosCreation",
+            "names": {
+                "english": "Chaos Creation",
+                "chinese": "混沌造物"
+            },
+            "character_art": "@ChaosCreationCharacterArt",
+            "size": 2,
+            "attack_damage": 0,
+            "health": 40,
+            "subtypes": [
+                "@Sub_Cubus"
+            ],
+            "triggers": [
+                "@ChaosCreationOnHit"
+            ]
+        }
+    ],
+    "character_triggers": [
+        {
+            "id": "ChaosCreationOnHit",
+            "trigger": "on_hit",
+            "descriptions": {
+                "english": "Apply <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>, [dazed] [effect1.status0.power] and [witherbloom] [effect2.status0.power] to enemy units.",
+                "chinese": "对所有敌方单位施加 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>、[dazed] [effect1.status0.power] 和[witherbloom] [effect2.status0.power]。"
+            },
+            "effects": [
+                "@ChaosCreationFrantic",
+                "@ChaosCreationDazed",
+                "@ChaosCreationWither"
+            ]
+        }
+    ],
+    "effects": [
+        {
+            "id": "SpawnChaosCreation",
+            "name": "CardEffectSpawnMonster",
+            "target_mode": "drop_target_character",
+            "param_character": "@ChaosCreation"
+        },
+        {
+            "id": "ChaosCreationFrantic",
+            "name": "CardEffectAddStatusEffect",
+            "target_mode": "room",
+            "target_team": "heroes",
+            "param_status_effects": [
+                {
+                    "status": "@frantic",
+                    "count": 1
+                }
+            ]
+        },
+        {
+            "id": "ChaosCreationDazed",
+            "name": "CardEffectAddStatusEffect",
+            "target_mode": "room",
+            "target_team": "heroes",
+            "param_status_effects": [
+                {
+                    "status": "dazed",
+                    "count": 1
+                }
+            ]
+        },
+        {
+            "id": "ChaosCreationWither",
+            "name": "CardEffectAddStatusEffect",
+            "target_mode": "room",
+            "target_team": "heroes",
+            "param_status_effects": [
+                {
+                    "status": "witherbloom",
+                    "count": 1
+                }
+            ]
+        }
+    ],
+    "sprites": [
+        {
+            "id": "ChaosCreationCardArt",
+            "path": "textures/ChaosCreationCardArt.png"
+        },
+        {
+            "id": "ChaosCreationCharacterArt",
+            "path": "textures/ChaosCreationCharacterArt.png"
+        }
+    ],
+    "game_objects": [
+        {
+            "id": "ChaosCreationCardArt",
+            "type": "card_art",
+            "extensions": {
+                "card_art": {
+                    "sprite": "@ChaosCreationCardArt"
+                }
+            }
+        },
+        {
+            "id": "ChaosCreationCharacterArt",
+            "type": "character_art",
+            "extensions": {
+                "character_art": {
+                    "sprite": "@ChaosCreationCharacterArt",
+                    "transform": {
+                        "position": {
+                            "x": 0,
+                            "y": 0.5,
+                            "z": 0.1
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,149 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+    "cards": [
+        {
+            "id": "SpawnArroganceGhost",
+            "names": {
+                "english": "Arrogance Ghost",
+                "chinese": "傲慢幽魂"
+            },
+            "card_type": "monster",
+            "rarity": "rare",
+            "class": "@ClassSuccubus",
+            "card_art": "@ArroganceGhostCardArt",
+            "cost": 0,
+            "targets_room": true,
+            "pools": [
+                "MegaPool"
+            ],
+            "effects": [
+                "@SpawnArroganceGhost"
+            ]
+        }
+    ],
+    "characters": [
+        {
+            "id": "ArroganceGhost",
+            "names": {
+                "english": "Arrogance Ghost",
+                "chinese": "傲慢幽魂"
+            },
+            "character_art": "@ArroganceGhostCharacterArt",
+            "size": 1,
+            "attack_damage": 0,
+            "health": 40,
+            "subtypes": [
+                "@Sub_Ghost"
+            ],
+            "triggers": [
+                "@ArroganceGhostOnSpawn",
+                "@ArroganceGhostAccursed"
+            ]
+        }
+    ],
+    "character_triggers": [
+        {
+            "id": "ArroganceGhostOnSpawn",
+            "trigger": "on_spawn",
+            "descriptions": {
+                "english": "Add [effect0.power_unmodified] <b>Obsessing Spark</b> with [exhaust] to your hand.",
+                "chinese": "将 [effect0.power_unmodified] 张带有[exhaust]的<b>欲望碎片</b>加入手牌。"
+            },
+            "effects": [
+                "@ArroganceGhostAddShards"
+            ]
+        },
+        {
+            "id": "ArroganceGhostAccursed",
+            "trigger": {
+                "id": "@Accursed",
+                "mod_reference": "Conductor"
+            },
+            "descriptions": {
+                "english": "Discard [effect0.power] <b>Obsessing Spark</b> from your hand. -[effect1.power][health].",
+                "chinese": "从手牌舍弃 [effect0.power] 张<b>欲望碎片</b>。-[effect1.power][health]。"
+            },
+            "effects": [
+                "@ArroganceGhostSpread",
+                "@ArroganceGhostSelfHarm"
+            ]
+        }
+    ],
+    "effects": [
+        {
+            "id": "SpawnArroganceGhost",
+            "name": "CardEffectSpawnMonster",
+            "target_mode": "drop_target_character",
+            "param_character": "@ArroganceGhost"
+        },
+        {
+            "id": "ArroganceGhostAddShards",
+            "name": "CardEffectAddBattleCard",
+            "target_mode": "room",
+            "target_team": "none",
+            "param_int": 3,
+            "param_int_2": 2,
+            "param_card_pool": "@ObsessingShardPool",
+            "param_upgrade": "@ConsumeUpgrade"
+        },
+        {
+            "id": "ArroganceGhostSpread",
+            "name": {
+                "id": "@CardEffectRandomDiscardFromCardPile",
+                "mod_reference": "Conductor"
+            },
+            "target_mode": "hand",
+            "target_card_type": "blight",
+            "param_int": 2
+        },
+        {
+            "id": "ArroganceGhostSelfHarm",
+            "name": "CardEffectDebuffMaxHealth",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_int": 2
+        }
+    ],
+    "sprites": [
+        {
+            "id": "ArroganceGhostCardArt",
+            "path": "textures/ArroganceGhostCardArt.png"
+        },
+        {
+            "id": "ArroganceGhostCharacterArt",
+            "path": "textures/ArroganceGhostCharacterArt.png"
+        }
+    ],
+    "game_objects": [
+        {
+            "id": "ArroganceGhostCardArt",
+            "type": "card_art",
+            "extensions": {
+                "card_art": {
+                    "sprite": "@ArroganceGhostCardArt"
+                }
+            }
+        },
+        {
+            "id": "ArroganceGhostCharacterArt",
+            "type": "character_art",
+            "extensions": {
+                "character_art": {
+                    "sprite": "@ArroganceGhostCharacterArt",
+                    "transform": {
+                        "position": {
+                            "x": 0,
+                            "y": 0.4,
+                            "z": 0.1
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,54 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+    "relics": [
+        {
+            "id": "FlareRibbon",
+            "type": "collectable",
+            "names": {
+                "english": "Flare Ribbon",
+                "chinese": "薪火缎带"
+            },
+            "descriptions": {
+                "english": "Gain [armor] [effect0.status0.power] when your Pyre is attacked.",
+                "chinese": "薪火被攻击时，获得[armor] [effect0.status0.power]。"
+            },
+            "disallow_in_deployment": false,
+            "relic_effects": [
+                "@FlareRibbonEffect"
+            ],
+            "icon": "@FlareRibbonIcon",
+            "icon_small": "@FlareRibbonIcon",
+            "extensions": [
+                {
+                    "collectable": {
+                        "class": "@ClassSuccubus",
+                        "pools": [
+                            "MegaRelicPool"
+                        ],
+                        "rarity": "common",
+                        "unlock_level": 0
+                    }
+                }
+            ]
+        }
+    ],
+    "relic_effects": [
+        {
+            "id": "FlareRibbonEffect",
+            "name": "RelicEffectAddStatusEffectOnDamage",
+            "source_team": "monsters",
+            "param_status_effects": [
+                {
+                    "status": "armor",
+                    "count": 4
+                }
+            ]
+        }
+    ],
+    "sprites": [
+        {
+            "id": "FlareRibbonIcon",
+            "path": "textures/FlareRibbonArt.png"
+        }
+    ]
+}

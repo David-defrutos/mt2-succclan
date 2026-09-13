@@ -1,0 +1,105 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+    "cards": [
+        {
+            "id": "InsanityReach",
+            "names": {
+                "english": "Insanity Reach",
+                "chinese": "疯狂蔓延"
+            },
+            "descriptions": {
+                "english": "<b>Ascend</b> enemy units on this floor and apply +[effect0.power][attack], <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b>, [dazed] [effect2.status0.power] and [witherbloom] [effect3.status0.power].",
+                "chinese": "使本层所有敌方单位上升，并施加 +[effect0.power][attack]、<b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b>、[dazed] [effect2.status0.power] 和[witherbloom] [effect3.status0.power]。"
+            },
+            "card_type": "spell",
+            "rarity": "rare",
+            "class": "@ClassSuccubus",
+            "card_art": "@InsanityReachArt",
+            "cost": 2,
+            "targets_room": true,
+            "targetless": true,
+            "pools": [
+                "MegaPool"
+            ],
+            "traits": [
+                "@Pyrebound"
+            ],
+            "effects": [
+                "@InsanityReachAttack",
+                "@InsanityReachFrantic",
+                "@InsanityReachDazed",
+                "@InsanityReachWither",
+                "@InsanityReachBump"
+            ]
+        }
+    ],
+    "effects": [
+        {
+            "id": "InsanityReachAttack",
+            "name": "CardEffectBuffDamage",
+            "target_mode": "room",
+            "target_team": "heroes",
+            "param_int": 10
+        },
+        {
+            "id": "InsanityReachFrantic",
+            "name": "CardEffectAddStatusEffect",
+            "target_mode": "room",
+            "target_team": "heroes",
+            "param_status_effects": [
+                {
+                    "status": "@frantic",
+                    "count": 3
+                }
+            ]
+        },
+        {
+            "id": "InsanityReachDazed",
+            "name": "CardEffectAddStatusEffect",
+            "target_mode": "room",
+            "target_team": "heroes",
+            "param_status_effects": [
+                {
+                    "status": "dazed",
+                    "count": 3
+                }
+            ]
+        },
+        {
+            "id": "InsanityReachWither",
+            "name": "CardEffectAddStatusEffect",
+            "target_mode": "room",
+            "target_team": "heroes",
+            "param_status_effects": [
+                {
+                    "status": "witherbloom",
+                    "count": 3
+                }
+            ]
+        },
+        {
+            "id": "InsanityReachBump",
+            "name": "CardEffectBump",
+            "target_mode": "room",
+            "target_team": "heroes",
+            "param_int": 1
+        }
+    ],
+    "sprites": [
+        {
+            "id": "InsanityReachArt",
+            "path": "textures/InsanityReachArt.png"
+        }
+    ],
+    "game_objects": [
+        {
+            "id": "InsanityReachArt",
+            "type": "card_art",
+            "extensions": {
+                "card_art": {
+                    "sprite": "@InsanityReachArt"
+                }
+            }
+        }
+    ]
+}

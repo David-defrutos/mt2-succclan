@@ -1,0 +1,100 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+    "cards": [
+        {
+            "id": "SpawnVrolikai",
+            "names": {
+                "english": "Vrolikai",
+                "chinese": "四臂蛇魔"
+            },
+            "card_art": "@VrolikaiCardArt",
+            "cost": 1,
+            "card_type": "monster",
+            "rarity": "uncommon",
+            "class": "@ClassSuccubus",
+            "targets_room": true,
+            "pools": [
+                "MegaPool"
+            ],
+            "effects": [
+                "@SpawnVrolikai"
+            ]
+        }
+    ],
+    "characters": [
+        {
+            "id": "Vrolikai",
+            "names": {
+                "english": "Vrolikai",
+                "chinese": "四臂蛇魔"
+            },
+            "character_art": "@VrolikaiCharacterArt",
+            "size": 2,
+            "attack_damage": 6,
+            "health": 6,
+            "subtypes": [
+                "@Sub_Cubus"
+            ],
+            "starting_status_effects": [
+                {
+                    "status": "multistrike",
+                    "count": 3
+                },
+                {
+                    "status": "heal immunity",
+                    "count": 1
+                }
+            ]
+        }
+    ],
+    "effects": [
+        {
+            "id": "SpawnVrolikai",
+            "name": "CardEffectSpawnMonster",
+            "target_mode": "drop_target_character",
+            "param_character": "@Vrolikai"
+        }
+    ],
+    "sprites": [
+        {
+            "id": "VrolikaiCardArt",
+            "path": "textures/VrolikaiCardArt.png"
+        },
+        {
+            "id": "VrolikaiCharacterArt",
+            "path": "textures/VrolikaiCharacterArt.png"
+        }
+    ],
+    "game_objects": [
+        {
+            "id": "VrolikaiCardArt",
+            "type": "card_art",
+            "extensions": {
+                "card_art": {
+                    "sprite": "@VrolikaiCardArt"
+                }
+            }
+        },
+        {
+            "id": "VrolikaiCharacterArt",
+            "type": "character_art",
+            "extensions": {
+                "character_art": {
+                    "sprite": "@VrolikaiCharacterArt",
+                    "transform": {
+                        "position": {
+                            "x": 0,
+                            "y": 0.5,
+                            "z": 0.1
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

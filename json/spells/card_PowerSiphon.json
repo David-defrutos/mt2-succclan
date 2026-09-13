@@ -1,0 +1,69 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+    "cards": [
+        {
+            "id": "PowerSiphon",
+            "names": {
+                "english": "Power Siphon",
+                "chinese": "力量虹吸"
+            },
+            "descriptions": {
+                "english": "Deal [effect0.power] damage to the front enemy unit. Discard [effect1.power] <b>Obsessing Spark</b>.",
+                "chinese": "对前排敌方单位造成 [effect0.power] 点伤害。舍弃 [effect1.power] 张<b>欲望碎片</b>。"
+            },
+            "card_type": "spell",
+            "rarity": "uncommon",
+            "class": "@ClassSuccubus",
+            "card_art": "@PowerSiphonArt",
+            "cost": 2,
+            "targets_room": true,
+            "targetless": true,
+            "pools": [
+                "MegaPool"
+            ],
+            "traits": [
+                "@Attuned"
+            ],
+            "effects": [
+                "@PowerSiphonDamage",
+                "@PowerSiphonSpread"
+            ]
+        }
+    ],
+    "effects": [
+        {
+            "id": "PowerSiphonDamage",
+            "name": "CardEffectDamage",
+            "target_mode": "front_in_room",
+            "target_team": "heroes",
+            "param_int": 30
+        },
+        {
+            "id": "PowerSiphonSpread",
+            "name": {
+                "id": "@CardEffectRandomDiscardFromCardPile",
+                "mod_reference": "Conductor"
+            },
+            "target_mode": "hand",
+            "target_card_type": "blight",
+            "param_int": 2
+        }
+    ],
+    "sprites": [
+        {
+            "id": "PowerSiphonArt",
+            "path": "textures/PowerSiphonArt.png"
+        }
+    ],
+    "game_objects": [
+        {
+            "id": "PowerSiphonArt",
+            "type": "card_art",
+            "extensions": {
+                "card_art": {
+                    "sprite": "@PowerSiphonArt"
+                }
+            }
+        }
+    ]
+}

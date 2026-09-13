@@ -22,6 +22,9 @@
                 "@InceptionPsionic",
                 "@InceptionAttack",
                 "@InceptionHealth"
+            ],
+            "pools": [
+                "StarterCardsOnly"
             ]
         }
     ],

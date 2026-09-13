@@ -1,0 +1,138 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+    "cards": [
+        {
+            "id": "SpawnWrathGhost",
+            "names": {
+                "english": "Wrath Ghost",
+                "chinese": "愤怒幽魂"
+            },
+            "card_type": "monster",
+            "rarity": "uncommon",
+            "class": "@ClassSuccubus",
+            "card_art": "@WrathGhostCardArt",
+            "cost": 0,
+            "targets_room": true,
+            "pools": [
+                "MegaPool"
+            ],
+            "effects": [
+                "@SpawnWrathGhost"
+            ]
+        }
+    ],
+    "characters": [
+        {
+            "id": "WrathGhost",
+            "names": {
+                "english": "Wrath Ghost",
+                "chinese": "愤怒幽魂"
+            },
+            "character_art": "@WrathGhostCharacterArt",
+            "size": 1,
+            "attack_damage": 0,
+            "health": 2,
+            "subtypes": [
+                "@Sub_Ghost"
+            ],
+            "triggers": [
+                "@WrathGhostOnSpawn",
+                "@WrathGhostAccursed"
+            ]
+        }
+    ],
+    "character_triggers": [
+        {
+            "id": "WrathGhostOnSpawn",
+            "trigger": "on_spawn",
+            "descriptions": {
+                "english": "Add [effect0.power_unmodified] <b>Obsessing Spark</b> with [exhaust] to your hand.",
+                "chinese": "将 [effect0.power_unmodified] 张带有[exhaust]的<b>欲望碎片</b>加入手牌。"
+            },
+            "effects": [
+                "@WrathGhostAddShards"
+            ]
+        },
+        {
+            "id": "WrathGhostAccursed",
+            "trigger": {
+                "id": "@Accursed",
+                "mod_reference": "Conductor"
+            },
+            "descriptions": {
+                "english": "Apply +[effect0.power][attack] to friendly units.",
+                "chinese": "所有友方单位获得 +[effect0.power][attack]。"
+            },
+            "effects": [
+                "@WrathGhostBuff"
+            ]
+        }
+    ],
+    "effects": [
+        {
+            "id": "SpawnWrathGhost",
+            "name": "CardEffectSpawnMonster",
+            "target_mode": "drop_target_character",
+            "param_character": "@WrathGhost"
+        },
+        {
+            "id": "WrathGhostAddShards",
+            "name": "CardEffectAddBattleCard",
+            "target_mode": "room",
+            "target_team": "none",
+            "param_int": 3,
+            "param_int_2": 2,
+            "param_card_pool": "@ObsessingShardPool",
+            "param_upgrade": "@ConsumeUpgrade"
+        },
+        {
+            "id": "WrathGhostBuff",
+            "name": "CardEffectBuffDamage",
+            "target_mode": "room",
+            "target_team": "monsters",
+            "param_int": 2
+        }
+    ],
+    "sprites": [
+        {
+            "id": "WrathGhostCardArt",
+            "path": "textures/WrathGhostCardArt.png"
+        },
+        {
+            "id": "WrathGhostCharacterArt",
+            "path": "textures/WrathGhostCharacterArt.png"
+        }
+    ],
+    "game_objects": [
+        {
+            "id": "WrathGhostCardArt",
+            "type": "card_art",
+            "extensions": {
+                "card_art": {
+                    "sprite": "@WrathGhostCardArt"
+                }
+            }
+        },
+        {
+            "id": "WrathGhostCharacterArt",
+            "type": "character_art",
+            "extensions": {
+                "character_art": {
+                    "sprite": "@WrathGhostCharacterArt",
+                    "transform": {
+                        "position": {
+                            "x": 0,
+                            "y": 0.4,
+                            "z": 0.1
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

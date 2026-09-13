@@ -1,0 +1,55 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+    "relics": [
+        {
+            "id": "AbyssCrown",
+            "type": "collectable",
+            "names": {
+                "english": "Abyss Crown",
+                "chinese": "深渊王冠"
+            },
+            "descriptions": {
+                "english": "Apply [effect0.power] extra stack of <b>[mt2_succclan.Plugin_frantic]</b> every time it is applied.",
+                "chinese": "每次施加 <b>[mt2_succclan.Plugin_frantic]</b> 时，额外施加 [effect0.power] 层。"
+            },
+            "disallow_in_deployment": false,
+            "relic_effects": [
+                "@AbyssCrownEffect"
+            ],
+            "icon": "@AbyssCrownIcon",
+            "icon_small": "@AbyssCrownIcon",
+            "extensions": [
+                {
+                    "collectable": {
+                        "class": "@ClassSuccubus",
+                        "pools": [
+                            "MegaRelicPool"
+                        ],
+                        "rarity": "rare",
+                        "unlock_level": 0
+                    }
+                }
+            ]
+        }
+    ],
+    "relic_effects": [
+        {
+            "id": "AbyssCrownEffect",
+            "name": "RelicEffectModifyStatusMagnitude",
+            "source_team": "heroes",
+            "param_int": 1,
+            "param_status_effects": [
+                {
+                    "status": "@frantic",
+                    "count": 1
+                }
+            ]
+        }
+    ],
+    "sprites": [
+        {
+            "id": "AbyssCrownIcon",
+            "path": "textures/AbyssCrownArt.png"
+        }
+    ]
+}

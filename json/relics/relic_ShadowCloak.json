@@ -1,0 +1,53 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+    "relics": [
+        {
+            "id": "ShadowCloak",
+            "type": "collectable",
+            "names": {
+                "english": "Shadow Cloak",
+                "chinese": "暗影斗篷"
+            },
+            "descriptions": {
+                "english": "<b>Accursed</b> abilities trigger [effect0.power] additional time.",
+                "chinese": "<b>被咒</b>效果额外触发 [effect0.power] 次。"
+            },
+            "disallow_in_deployment": false,
+            "relic_effects": [
+                "@ShadowCloakEffect"
+            ],
+            "icon": "@ShadowCloakIcon",
+            "icon_small": "@ShadowCloakIcon",
+            "extensions": [
+                {
+                    "collectable": {
+                        "class": "@ClassSuccubus",
+                        "pools": [
+                            "MegaRelicPool"
+                        ],
+                        "rarity": "rare",
+                        "unlock_level": 0
+                    }
+                }
+            ]
+        }
+    ],
+    "relic_effects": [
+        {
+            "id": "ShadowCloakEffect",
+            "name": "RelicEffectModifyTriggerCount",
+            "source_team": "monsters",
+            "param_int": 1,
+            "param_trigger": {
+                "id": "@Accursed",
+                "mod_reference": "Conductor"
+            }
+        }
+    ],
+    "sprites": [
+        {
+            "id": "ShadowCloakIcon",
+            "path": "textures/ShadowCloakArt.png"
+        }
+    ]
+}

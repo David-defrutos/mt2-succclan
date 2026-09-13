@@ -1,0 +1,66 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+    "cards": [
+        {
+            "id": "DarkFury",
+            "names": {
+                "english": "Dark Fury",
+                "chinese": "黑暗狂怒"
+            },
+            "descriptions": {
+                "english": "Enemy units gain +[effect0.power][attack] and lose [effect1.power][health].",
+                "chinese": "所有敌方单位 +[effect0.power][attack]，-[effect1.power][health]。"
+            },
+            "card_type": "spell",
+            "rarity": "uncommon",
+            "class": "@ClassSuccubus",
+            "card_art": "@DarkFuryArt",
+            "cost": 1,
+            "targets_room": true,
+            "targetless": true,
+            "pools": [
+                "MegaPool"
+            ],
+            "traits": [
+                "@Consume"
+            ],
+            "effects": [
+                "@DarkFuryAttack",
+                "@DarkFuryHealth"
+            ]
+        }
+    ],
+    "effects": [
+        {
+            "id": "DarkFuryAttack",
+            "name": "CardEffectBuffDamage",
+            "target_mode": "room",
+            "target_team": "heroes",
+            "param_int": 10
+        },
+        {
+            "id": "DarkFuryHealth",
+            "name": "CardEffectDebuffMaxHealth",
+            "target_mode": "room",
+            "target_team": "heroes",
+            "param_int": 10
+        }
+    ],
+    "sprites": [
+        {
+            "id": "DarkFuryArt",
+            "path": "textures/DarkFuryArt.png"
+        }
+    ],
+    "game_objects": [
+        {
+            "id": "DarkFuryArt",
+            "type": "card_art",
+            "extensions": {
+                "card_art": {
+                    "sprite": "@DarkFuryArt"
+                }
+            }
+        }
+    ]
+}

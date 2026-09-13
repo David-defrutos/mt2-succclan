@@ -1,0 +1,463 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+    "essences": [
+        {
+            "character": "@ArroganceGhost",
+            "upgrade": "@EssenceArroganceGhost"
+        },
+        {
+            "character": "@EnvyGhost",
+            "upgrade": "@EssenceEnvyGhost"
+        },
+        {
+            "character": "@GluttonyGhost",
+            "upgrade": "@EssenceGluttonyGhost"
+        },
+        {
+            "character": "@GreedGhost",
+            "upgrade": "@EssenceGreedGhost"
+        },
+        {
+            "character": "@LustGhost",
+            "upgrade": "@EssenceLustGhost"
+        },
+        {
+            "character": "@SlothGhost",
+            "upgrade": "@EssenceSlothGhost"
+        },
+        {
+            "character": "@WrathGhost",
+            "upgrade": "@EssenceWrathGhost"
+        },
+        {
+            "character": "@ChaosCreation",
+            "upgrade": "@EssenceChaosCreation"
+        },
+        {
+            "character": "@DemonPioneer",
+            "upgrade": "@EssenceDemonPioneer"
+        },
+        {
+            "character": "@IncubusButcher",
+            "upgrade": "@EssenceIncubusButcher"
+        },
+        {
+            "character": "@SuccbusTorturer",
+            "upgrade": "@EssenceSuccbusTorturer"
+        },
+        {
+            "character": "@Vrolikai",
+            "upgrade": "@EssenceVrolikai"
+        },
+        {
+            "character": "@Oolioddroo",
+            "upgrade": "@EssenceOolioddroo"
+        },
+        {
+            "character": "@AbyssPrincess",
+            "upgrade": "@EssenceAbyssPrincess"
+        },
+        {
+            "character": "@EndlessShadow",
+            "upgrade": "@EssenceEndlessShadow"
+        },
+        {
+            "character": "@ShadowWarrior",
+            "upgrade": "@EssenceShadowWarrior"
+        }
+    ],
+    "upgrades": [
+        {
+            "id": "EssenceShadowWarriorAttack",
+            "bonus_damage": 1
+        },
+        {
+            "id": "EssenceArroganceGhost",
+            "titles": {
+                "english": "Arrogance Ghost",
+                "chinese": "傲慢幽魂"
+            },
+            "descriptions": {
+                "english": "Add [effect0.power_unmodified] <b>Obsessing Spark</b> with [exhaust] to your hand. <b>Accursed</b>: gain [effect1.power][ember] and draw [effect2.power] more next turn.",
+                "chinese": "将 [effect0.power_unmodified] 张带有[exhaust]的<b>欲望碎片</b>加入手牌。<b>被咒</b>：获得 [effect1.power][ember]，下回合多抽 [effect2.power] 张牌。"
+            },
+            "use_upgrade_highlight_tags": true,
+            "trigger_upgrades": [
+                "@EssenceShardOnSpawn",
+                "@EssenceArroganceAccursed"
+            ]
+        },
+        {
+            "id": "EssenceEnvyGhost",
+            "titles": {
+                "english": "Envy Ghost",
+                "chinese": "嫉妒幽魂"
+            },
+            "descriptions": {
+                "english": "Add [effect0.power_unmodified] <b>Obsessing Spark</b> with [exhaust] to your hand. <b>Accursed</b>: deal [effect1.power] damage to the front enemy unit.",
+                "chinese": "将 [effect0.power_unmodified] 张带有[exhaust]的<b>欲望碎片</b>加入手牌。<b>被咒</b>：对前排敌方单位造成 [effect1.power] 点伤害。"
+            },
+            "use_upgrade_highlight_tags": true,
+            "trigger_upgrades": [
+                "@EssenceShardOnSpawn",
+                "@EnvyGhostAccursed"
+            ]
+        },
+        {
+            "id": "EssenceGluttonyGhost",
+            "titles": {
+                "english": "Gluttony Ghost",
+                "chinese": "暴食幽魂"
+            },
+            "descriptions": {
+                "english": "Add [effect0.power_unmodified] <b>Obsessing Spark</b> with [exhaust] to your hand. <b>Accursed</b>: apply [regen] [effect1.status0.power] to friendly units.",
+                "chinese": "将 [effect0.power_unmodified] 张带有[exhaust]的<b>欲望碎片</b>加入手牌。<b>被咒</b>：友方单位获得[regen] [effect1.status0.power]。"
+            },
+            "use_upgrade_highlight_tags": true,
+            "trigger_upgrades": [
+                "@EssenceShardOnSpawn",
+                "@GluttonyGhostAccursed"
+            ]
+        },
+        {
+            "id": "EssenceGreedGhost",
+            "titles": {
+                "english": "Greed Ghost",
+                "chinese": "贪婪幽魂"
+            },
+            "descriptions": {
+                "english": "Add [effect0.power_unmodified] <b>Obsessing Spark</b> with [exhaust] to your hand. <b>Accursed</b>: gain [effect1.power][coin].",
+                "chinese": "将 [effect0.power_unmodified] 张带有[exhaust]的<b>欲望碎片</b>加入手牌。<b>被咒</b>：获得 [effect1.power][coin]。"
+            },
+            "use_upgrade_highlight_tags": true,
+            "trigger_upgrades": [
+                "@EssenceShardOnSpawn",
+                "@GreedGhostAccursed"
+            ]
+        },
+        {
+            "id": "EssenceLustGhost",
+            "titles": {
+                "english": "Lust Ghost",
+                "chinese": "色欲幽魂"
+            },
+            "descriptions": {
+                "english": "Add [effect0.power_unmodified] <b>Obsessing Spark</b> with [exhaust] to your hand. <b>Accursed</b>: apply <b>[mt2_succclan.Plugin_frantic]</b> to the back enemy unit.",
+                "chinese": "将 [effect0.power_unmodified] 张带有[exhaust]的<b>欲望碎片</b>加入手牌。<b>被咒</b>：对后排敌方单位施加 <b>[mt2_succclan.Plugin_frantic]</b>。"
+            },
+            "use_upgrade_highlight_tags": true,
+            "trigger_upgrades": [
+                "@EssenceShardOnSpawn",
+                "@LustGhostAccursed"
+            ]
+        },
+        {
+            "id": "EssenceSlothGhost",
+            "titles": {
+                "english": "Sloth Ghost",
+                "chinese": "怠惰幽魂"
+            },
+            "descriptions": {
+                "english": "Add [effect0.power_unmodified] <b>Obsessing Spark</b> with [exhaust] to your hand. <b>Accursed</b>: deal [effect1.power] damage to enemy units.",
+                "chinese": "将 [effect0.power_unmodified] 张带有[exhaust]的<b>欲望碎片</b>加入手牌。<b>被咒</b>：对所有敌方单位造成 [effect1.power] 点伤害。"
+            },
+            "use_upgrade_highlight_tags": true,
+            "trigger_upgrades": [
+                "@EssenceShardOnSpawn",
+                "@SlothGhostAccursed"
+            ]
+        },
+        {
+            "id": "EssenceWrathGhost",
+            "titles": {
+                "english": "Wrath Ghost",
+                "chinese": "愤怒幽魂"
+            },
+            "descriptions": {
+                "english": "Add [effect0.power_unmodified] <b>Obsessing Spark</b> with [exhaust] to your hand. <b>Accursed</b>: apply +[effect1.power][attack] to friendly units.",
+                "chinese": "将 [effect0.power_unmodified] 张带有[exhaust]的<b>欲望碎片</b>加入手牌。<b>被咒</b>：所有友方单位获得 +[effect1.power][attack]。"
+            },
+            "use_upgrade_highlight_tags": true,
+            "trigger_upgrades": [
+                "@EssenceShardOnSpawn",
+                "@WrathGhostAccursed"
+            ]
+        },
+        {
+            "id": "EssenceChaosCreation",
+            "titles": {
+                "english": "Chaos Creation",
+                "chinese": "混沌造物"
+            },
+            "descriptions": {
+                "english": "<b>Revenge</b>: apply <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>, [dazed] and [witherbloom] to the attacking enemy unit.",
+                "chinese": "<b>复仇</b>：对攻击的敌方单位施加 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>、[dazed] 和[witherbloom]。"
+            },
+            "use_upgrade_highlight_tags": true,
+            "trigger_upgrades": [
+                "@EssenceChaosOnHit"
+            ]
+        },
+        {
+            "id": "EssenceDemonPioneer",
+            "titles": {
+                "english": "Demon Pioneer",
+                "chinese": "恶魔先锋"
+            },
+            "descriptions": {
+                "english": "+[bonussize][capacity]. <b>Accursed</b>: +[effect0.power][attack] and +[effect1.power][health].",
+                "chinese": "+[bonussize][capacity]。<b>被咒</b>：+[effect0.power][attack]，+[effect1.power][health]。"
+            },
+            "use_upgrade_highlight_tags": true,
+            "trigger_upgrades": [
+                "@DemonPioneerAccursed"
+            ],
+            "bonus_size": 1
+        },
+        {
+            "id": "EssenceIncubusButcher",
+            "titles": {
+                "english": "Incubus Butcher",
+                "chinese": "魇魔刽子手"
+            },
+            "descriptions": {
+                "english": "+2[ember]. [sweep].",
+                "chinese": "+2[ember]。[sweep]。"
+            },
+            "use_upgrade_highlight_tags": true,
+            "cost_reduction": -2,
+            "status_effect_upgrades": [
+                {
+                    "status": "sweep",
+                    "count": 1
+                }
+            ]
+        },
+        {
+            "id": "EssenceSuccbusTorturer",
+            "titles": {
+                "english": "Succbus Torturer",
+                "chinese": "魅魔拷打者"
+            },
+            "descriptions": {
+                "english": "-10[health]. <b>Strike</b>: apply [melee weakness] [effect0.status0.power] to the attacked unit.",
+                "chinese": "-10[health]。<b>攻击</b>：对被攻击的单位施加[melee weakness] [effect0.status0.power]。"
+            },
+            "use_upgrade_highlight_tags": true,
+            "trigger_upgrades": [
+                "@SuccbusTorturerOnAttack"
+            ],
+            "bonus_hp": -10
+        },
+        {
+            "id": "EssenceVrolikai",
+            "titles": {
+                "english": "Vrolikai",
+                "chinese": "四臂蛇魔"
+            },
+            "descriptions": {
+                "english": "[multistrike] 1. [heal immunity].",
+                "chinese": "[multistrike] 1。[heal immunity]。"
+            },
+            "use_upgrade_highlight_tags": true,
+            "status_effect_upgrades": [
+                {
+                    "status": "multistrike",
+                    "count": 1
+                },
+                {
+                    "status": "heal immunity",
+                    "count": 1
+                }
+            ]
+        },
+        {
+            "id": "EssenceOolioddroo",
+            "titles": {
+                "english": "Oolioddroo",
+                "chinese": "蛾梦魔"
+            },
+            "descriptions": {
+                "english": "-5[attack]. At the start of turn deal damage equal to its [attack] to enemy units.",
+                "chinese": "-5[attack]。回合开始时，对所有敌方单位造成等同于自身[attack]的伤害。"
+            },
+            "use_upgrade_highlight_tags": true,
+            "trigger_upgrades": [
+                "@OolioddrooOnTurn"
+            ],
+            "bonus_damage": -5
+        },
+        {
+            "id": "EssenceAbyssPrincess",
+            "titles": {
+                "english": "Abyss Princess",
+                "chinese": "深渊公主"
+            },
+            "descriptions": {
+                "english": "<b>Strike</b>: gain [debuff] [effect0.status0.power] and apply [buff] and <b>[mt2_succclan.Plugin_frantic]</b> to enemy units.",
+                "chinese": "<b>攻击</b>：获得[debuff] [effect0.status0.power]，并对所有敌方单位施加[buff] 和 <b>[mt2_succclan.Plugin_frantic]</b>。"
+            },
+            "use_upgrade_highlight_tags": true,
+            "trigger_upgrades": [
+                "@AbyssPrincessOnAttack"
+            ]
+        },
+        {
+            "id": "EssenceEndlessShadow",
+            "titles": {
+                "english": "Endless Shadow",
+                "chinese": "无尽幽影"
+            },
+            "descriptions": {
+                "english": "[endless].",
+                "chinese": "[endless]。"
+            },
+            "use_upgrade_highlight_tags": true,
+            "status_effect_upgrades": [
+                {
+                    "status": "endless",
+                    "count": 1
+                }
+            ]
+        },
+        {
+            "id": "EssenceShadowWarrior",
+            "titles": {
+                "english": "Shadow Warrior",
+                "chinese": "暗影武者"
+            },
+            "descriptions": {
+                "english": "<b>Accursed</b>: +[effect0.upgrade.bonusdamage][attack] permanently.",
+                "chinese": "<b>被咒</b>：永久获得 +[effect0.upgrade.bonusdamage][attack]。"
+            },
+            "use_upgrade_highlight_tags": true,
+            "trigger_upgrades": [
+                "@EssenceShadowWarriorAccursed"
+            ]
+        }
+    ],
+    "character_triggers": [
+        {
+            "id": "EssenceShardOnSpawn",
+            "trigger": "on_spawn",
+            "descriptions": {
+                "english": "Add [effect0.power_unmodified] <b>Obsessing Spark</b> with [exhaust] to your hand.",
+                "chinese": "将 [effect0.power_unmodified] 张带有[exhaust]的<b>欲望碎片</b>加入手牌。"
+            },
+            "effects": [
+                "@EssenceOneShard"
+            ]
+        },
+        {
+            "id": "EssenceArroganceAccursed",
+            "trigger": {
+                "id": "@Accursed",
+                "mod_reference": "Conductor"
+            },
+            "descriptions": {
+                "english": "Gain [effect0.power][ember] and draw [effect1.power] more card next turn.",
+                "chinese": "获得 [effect0.power][ember]，下回合多抽 [effect1.power] 张牌。"
+            },
+            "effects": [
+                "@EssenceArroganceEmber",
+                "@EssenceArroganceDraw"
+            ]
+        },
+        {
+            "id": "EssenceChaosOnHit",
+            "trigger": "on_hit",
+            "descriptions": {
+                "english": "Apply <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>, [dazed] [effect1.status0.power] and [witherbloom] [effect2.status0.power] to the attacking enemy unit.",
+                "chinese": "对攻击的敌方单位施加 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>、[dazed] [effect1.status0.power] 和[witherbloom] [effect2.status0.power]。"
+            },
+            "effects": [
+                "@EssenceChaosFrantic",
+                "@EssenceChaosDazed",
+                "@EssenceChaosWither"
+            ]
+        },
+        {
+            "id": "EssenceShadowWarriorAccursed",
+            "trigger": {
+                "id": "@Accursed",
+                "mod_reference": "Conductor"
+            },
+            "descriptions": {
+                "english": "+[effect0.upgrade.bonusdamage][attack] permanently.",
+                "chinese": "永久获得 +[effect0.upgrade.bonusdamage][attack]。"
+            },
+            "effects": [
+                "@EssenceShadowWarriorBuff"
+            ]
+        }
+    ],
+    "effects": [
+        {
+            "id": "EssenceOneShard",
+            "name": "CardEffectAddBattleCard",
+            "target_mode": "room",
+            "target_team": "none",
+            "param_int": 3,
+            "param_int_2": 1,
+            "param_card_pool": "@ObsessingShardPool",
+            "param_upgrade": "@ConsumeUpgrade"
+        },
+        {
+            "id": "EssenceArroganceEmber",
+            "name": "CardEffectGainEnergy",
+            "target_mode": "self",
+            "target_team": "none",
+            "param_int": 1
+        },
+        {
+            "id": "EssenceArroganceDraw",
+            "name": "CardEffectDrawAdditionalNextTurn",
+            "target_mode": "self",
+            "target_team": "none",
+            "param_int": 1
+        },
+        {
+            "id": "EssenceChaosFrantic",
+            "name": "CardEffectAddStatusEffect",
+            "target_mode": "last_attacker_character",
+            "target_team": "heroes",
+            "param_status_effects": [
+                {
+                    "status": "@frantic",
+                    "count": 2
+                }
+            ]
+        },
+        {
+            "id": "EssenceChaosDazed",
+            "name": "CardEffectAddStatusEffect",
+            "target_mode": "last_attacker_character",
+            "target_team": "heroes",
+            "param_status_effects": [
+                {
+                    "status": "dazed",
+                    "count": 2
+                }
+            ]
+        },
+        {
+            "id": "EssenceChaosWither",
+            "name": "CardEffectAddStatusEffect",
+            "target_mode": "last_attacker_character",
+            "target_team": "heroes",
+            "param_status_effects": [
+                {
+                    "status": "witherbloom",
+                    "count": 2
+                }
+            ]
+        },
+        {
+            "id": "EssenceShadowWarriorBuff",
+            "name": "CardEffectAddCardUpgradeToUnits",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_upgrade": "@EssenceShadowWarriorAttack"
+        }
+    ]
+}

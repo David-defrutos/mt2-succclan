@@ -1,0 +1,55 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+    "relics": [
+        {
+            "id": "MutantElixirs",
+            "type": "collectable",
+            "names": {
+                "english": "Mutant Elixirs",
+                "chinese": "突变药剂"
+            },
+            "descriptions": {
+                "english": "The first friendly unit you summon each turn gains [multistrike] [effect0.status0.power].",
+                "chinese": "每回合召唤的首个友方单位获得[multistrike] [effect0.status0.power]。"
+            },
+            "disallow_in_deployment": false,
+            "relic_effects": [
+                "@MutantElixirsEffect"
+            ],
+            "icon": "@MutantElixirsIcon",
+            "icon_small": "@MutantElixirsIcon",
+            "extensions": [
+                {
+                    "collectable": {
+                        "class": "@ClassSuccubus",
+                        "pools": [
+                            "MegaRelicPool"
+                        ],
+                        "rarity": "uncommon",
+                        "unlock_level": 0
+                    }
+                }
+            ]
+        }
+    ],
+    "relic_effects": [
+        {
+            "id": "MutantElixirsEffect",
+            "name": "RelicEffectAddStatusEffectOnFirstSpawn",
+            "source_team": "monsters",
+            "param_string": "OnlyFromCard",
+            "param_status_effects": [
+                {
+                    "status": "multistrike",
+                    "count": 1
+                }
+            ]
+        }
+    ],
+    "sprites": [
+        {
+            "id": "MutantElixirsIcon",
+            "path": "textures/MutantElixirsArt.png"
+        }
+    ]
+}

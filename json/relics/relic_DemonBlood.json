@@ -1,0 +1,60 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+    "relics": [
+        {
+            "id": "DemonBlood",
+            "type": "collectable",
+            "names": {
+                "english": "Demon Blood",
+                "chinese": "恶魔之血"
+            },
+            "descriptions": {
+                "english": "Playing a <b>Blight</b> deals [effect0.power] damage to a random enemy unit.",
+                "chinese": "打出[blight]牌时，对随机敌方单位造成 [effect0.power] 点伤害。"
+            },
+            "disallow_in_deployment": false,
+            "relic_effects": [
+                "@DemonBloodBlight",
+                "@DemonBloodJunk"
+            ],
+            "icon": "@DemonBloodIcon",
+            "icon_small": "@DemonBloodIcon",
+            "extensions": [
+                {
+                    "collectable": {
+                        "class": "@ClassSuccubus",
+                        "pools": [
+                            "MegaRelicPool"
+                        ],
+                        "rarity": "common",
+                        "unlock_level": 0
+                    }
+                }
+            ]
+        }
+    ],
+    "relic_effects": [
+        {
+            "id": "DemonBloodBlight",
+            "name": "RelicEffectDamageOnCardPlayed",
+            "source_team": "heroes",
+            "param_int": 3,
+            "target_mode": "random_in_room",
+            "param_card_type": "blight"
+        },
+        {
+            "id": "DemonBloodJunk",
+            "name": "RelicEffectDamageOnCardPlayed",
+            "source_team": "heroes",
+            "param_int": 3,
+            "target_mode": "random_in_room",
+            "param_card_type": "junk"
+        }
+    ],
+    "sprites": [
+        {
+            "id": "DemonBloodIcon",
+            "path": "textures/DemonBloodArt.png"
+        }
+    ]
+}

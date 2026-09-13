@@ -1,0 +1,66 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+    "cards": [
+        {
+            "id": "PainAndPleasure",
+            "names": {
+                "english": "Pain And Pleasure",
+                "chinese": "喜怒无常"
+            },
+            "descriptions": {
+                "english": "Discard [effect0.power] <b>Obsessing Spark</b> from your hand and draw [effect1.power] cards.",
+                "chinese": "从手牌舍弃 [effect0.power] 张<b>欲望碎片</b>并抽 [effect1.power] 张牌。"
+            },
+            "card_type": "spell",
+            "rarity": "common",
+            "class": "@ClassSuccubus",
+            "card_art": "@PainAndPleasureArt",
+            "cost": 0,
+            "targets_room": true,
+            "targetless": true,
+            "pools": [
+                "MegaPool"
+            ],
+            "effects": [
+                "@PainAndPleasureDiscard",
+                "@PainAndPleasureDraw"
+            ]
+        }
+    ],
+    "effects": [
+        {
+            "id": "PainAndPleasureDiscard",
+            "name": {
+                "id": "@CardEffectRandomDiscardFromCardPile",
+                "mod_reference": "Conductor"
+            },
+            "target_mode": "hand",
+            "target_card_type": "blight",
+            "param_int": 3
+        },
+        {
+            "id": "PainAndPleasureDraw",
+            "name": "CardEffectDraw",
+            "target_mode": "self",
+            "target_team": "none",
+            "param_int": 3
+        }
+    ],
+    "sprites": [
+        {
+            "id": "PainAndPleasureArt",
+            "path": "textures/PainAndPleasureArt.png"
+        }
+    ],
+    "game_objects": [
+        {
+            "id": "PainAndPleasureArt",
+            "type": "card_art",
+            "extensions": {
+                "card_art": {
+                    "sprite": "@PainAndPleasureArt"
+                }
+            }
+        }
+    ]
+}
