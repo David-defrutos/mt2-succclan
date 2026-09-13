@@ -33,9 +33,14 @@ namespace mt2_succclan.Plugin
                         "json/status_effects/psionic.json",
                         "json/status_effects/frantic.json",
 
+                        // Campeones
+                        "json/champions/champion_KnightMare.json",
+                        "json/champions/champion_ShadowLady.json",
+
                         // Hechizos y blights
                         "json/spells/card_ObsessingShard.json",
                         "json/spells/card_Flogging.json",
+                        "json/spells/card_Inception.json",
 
                         // Unidades
                         "json/units/unit_GreedGhost.json"

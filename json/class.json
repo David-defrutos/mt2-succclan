@@ -51,8 +51,61 @@
                     }
                 }
             ],
-            "champions": [],
-            "is_crew": false
+            "champions": [
+                {
+                    "id": "KnightMareChampion",
+                    "card_data": "@SpawnKnightMare",
+                    "starter_card": "@Inception",
+                    "upgrade_tree": [
+                        [
+                            "@upg_AbyssBasic",
+                            "@upg_AbyssPre",
+                            "@upg_AbyssPro"
+                        ],
+                        [
+                            "@upg_EndlessBasic",
+                            "@upg_EndlessPre",
+                            "@upg_EndlessPro"
+                        ],
+                        [
+                            "@upg_IllusionBasic",
+                            "@upg_IllusionPre",
+                            "@upg_IllusionPro"
+                        ]
+                    ],
+                    "icon": "@icon_KnightMare",
+                    "portrait": "@portrait_KnightMare"
+                },
+                {
+                    "id": "ShadowLadyChampion",
+                    "card_data": "@SpawnShadowLady",
+                    "starter_card": "@Flogging",
+                    "upgrade_tree": [
+                        [
+                            "@upg_BloodThirstyBasic",
+                            "@upg_BloodThirstyPre",
+                            "@upg_BloodThirstyPro"
+                        ],
+                        [
+                            "@upg_PlagueBasic",
+                            "@upg_PlaguePre",
+                            "@upg_PlaguePro"
+                        ],
+                        [
+                            "@upg_ProfanityBasic",
+                            "@upg_ProfanityPre",
+                            "@upg_ProfanityPro"
+                        ]
+                    ],
+                    "icon": "@icon_ShadowLady",
+                    "portrait": "@portrait_ShadowLady"
+                }
+            ],
+            "is_crew": false,
+            "class_select_character_displays": [
+                "@KnightMareClassDisplayArt",
+                "@ShadowLadyClassDisplayArt"
+            ]
         }
     ],
     "subtypes": [
@@ -144,6 +197,14 @@
         {
             "id": "icon_ShadowLady",
             "path": "textures/ClanAssets/icon_ShadowLady.png"
+        },
+        {
+            "id": "portrait_KnightMare",
+            "path": "textures/ClanAssets/portrait_KnightMare.png"
+        },
+        {
+            "id": "portrait_ShadowLady",
+            "path": "textures/ClanAssets/portrait_ShadowLady.png"
         }
     ]
 }

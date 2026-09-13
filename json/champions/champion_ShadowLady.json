@@ -1,0 +1,665 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+    "cards": [
+        {
+            "id": "SpawnShadowLady",
+            "names": {
+                "english": "Shadow Lady",
+                "chinese": "匿影女士"
+            },
+            "card_art": "@ShadowLadyCardArt",
+            "cost": 0,
+            "card_type": "monster",
+            "rarity": "champion",
+            "class": "@ClassSuccubus",
+            "targets_room": true,
+            "targetless": false,
+            "effects": [
+                "@SpawnShadowLady"
+            ]
+        }
+    ],
+    "characters": [
+        {
+            "id": "ShadowLady",
+            "names": {
+                "english": "Shadow Lady",
+                "chinese": "匿影女士"
+            },
+            "character_art": "@ShadowLadyCharacterArt",
+            "size": 3,
+            "attack_damage": 10,
+            "health": 30,
+            "subtypes": [
+                "SubtypesData_Champion_83f21cbe-9d9b-4566-a2c3-ca559ab8ff34"
+            ]
+        }
+    ],
+    "character_triggers": [
+        {
+            "id": "BloodThirstyBasicTrigger",
+            "trigger": "on_turn_begin",
+            "descriptions": {
+                "english": "Apply +[effect0.power][attack] to friendly and enemy units on this floor.",
+                "chinese": "对本层所有友方和敌方单位施加 +[effect0.power][attack]。"
+            },
+            "effects": [
+                "@BloodThirstyBasicAttack"
+            ]
+        },
+        {
+            "id": "BloodThirstyPreTrigger",
+            "trigger": "on_turn_begin",
+            "descriptions": {
+                "english": "Apply +[effect0.power][attack] to friendly and enemy units on this floor.",
+                "chinese": "对本层所有友方和敌方单位施加 +[effect0.power][attack]。"
+            },
+            "effects": [
+                "@BloodThirstyPreAttack"
+            ]
+        },
+        {
+            "id": "BloodThirstyProTrigger",
+            "trigger": "on_turn_begin",
+            "descriptions": {
+                "english": "Apply +[effect0.power][attack] to friendly and enemy units on this floor.",
+                "chinese": "对本层所有友方和敌方单位施加 +[effect0.power][attack]。"
+            },
+            "effects": [
+                "@BloodThirstyProAttack"
+            ]
+        },
+        {
+            "id": "PlagueBasicPreCombat",
+            "trigger": "pre_combat",
+            "descriptions": {
+                "english": "Add 1 <b>Obsessing Spark</b> with [exhaust] to your hand. +[effect1.power][ember].",
+                "chinese": "将 1 张带有[exhaust]的<b>欲望碎片</b>加入手牌。+[effect1.power][ember]。"
+            },
+            "effects": [
+                "@PlagueBasicAddShard",
+                "@PlagueBasicEmber"
+            ]
+        },
+        {
+            "id": "PlagueBasicAccursed",
+            "trigger": {
+                "id": "@Accursed",
+                "mod_reference": "Conductor"
+            },
+            "descriptions": {
+                "english": "Gain +[effect0.power][attack] and [damage shield] [effect1.status0.power].",
+                "chinese": "获得 +[effect0.power][attack] 和[damage shield] [effect1.status0.power]。"
+            },
+            "effects": [
+                "@PlagueBasicAttack",
+                "@PlagueBasicShield"
+            ]
+        },
+        {
+            "id": "PlaguePrePreCombat",
+            "trigger": "pre_combat",
+            "descriptions": {
+                "english": "Add 1 <b>Obsessing Spark</b> with [exhaust] to your hand. +[effect1.power][ember].",
+                "chinese": "将 1 张带有[exhaust]的<b>欲望碎片</b>加入手牌。+[effect1.power][ember]。"
+            },
+            "effects": [
+                "@PlaguePreAddShard",
+                "@PlaguePreEmber"
+            ]
+        },
+        {
+            "id": "PlaguePreAccursed",
+            "trigger": {
+                "id": "@Accursed",
+                "mod_reference": "Conductor"
+            },
+            "descriptions": {
+                "english": "Gain +[effect0.power][attack] and [damage shield] [effect1.status0.power].",
+                "chinese": "获得 +[effect0.power][attack] 和[damage shield] [effect1.status0.power]。"
+            },
+            "effects": [
+                "@PlaguePreAttack",
+                "@PlaguePreShield"
+            ]
+        },
+        {
+            "id": "PlagueProPreCombat",
+            "trigger": "pre_combat",
+            "descriptions": {
+                "english": "Add 1 <b>Obsessing Spark</b> with [exhaust] to your hand. +[effect1.power][ember].",
+                "chinese": "将 1 张带有[exhaust]的<b>欲望碎片</b>加入手牌。+[effect1.power][ember]。"
+            },
+            "effects": [
+                "@PlagueProAddShard",
+                "@PlagueProEmber"
+            ]
+        },
+        {
+            "id": "PlagueProAccursed",
+            "trigger": {
+                "id": "@Accursed",
+                "mod_reference": "Conductor"
+            },
+            "descriptions": {
+                "english": "Gain +[effect0.power][attack] and [damage shield] [effect1.status0.power].",
+                "chinese": "获得 +[effect0.power][attack] 和[damage shield] [effect1.status0.power]。"
+            },
+            "effects": [
+                "@PlagueProAttack",
+                "@PlagueProShield"
+            ]
+        },
+        {
+            "id": "ProfanityBasicTrigger",
+            "trigger": "on_attacking",
+            "descriptions": {
+                "english": "Apply <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>, [dazed] [effect1.status0.power], [witherbloom] [effect2.status0.power] and +[effect3.power][attack] to enemy units on this floor.",
+                "chinese": "对本层所有敌方单位施加 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>、[dazed] [effect1.status0.power]、[witherbloom] [effect2.status0.power] 和 +[effect3.power][attack]。"
+            },
+            "effects": [
+                "@ProfanityBasicFrantic",
+                "@ProfanityBasicDazed",
+                "@ProfanityBasicWither",
+                "@ProfanityBasicAttack"
+            ]
+        },
+        {
+            "id": "ProfanityPreTrigger",
+            "trigger": "on_attacking",
+            "descriptions": {
+                "english": "Apply <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>, [dazed] [effect1.status0.power], [witherbloom] [effect2.status0.power] and +[effect3.power][attack] to enemy units on this floor.",
+                "chinese": "对本层所有敌方单位施加 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>、[dazed] [effect1.status0.power]、[witherbloom] [effect2.status0.power] 和 +[effect3.power][attack]。"
+            },
+            "effects": [
+                "@ProfanityPreFrantic",
+                "@ProfanityPreDazed",
+                "@ProfanityPreWither",
+                "@ProfanityPreAttack"
+            ]
+        },
+        {
+            "id": "ProfanityProTrigger",
+            "trigger": "on_attacking",
+            "descriptions": {
+                "english": "Apply <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>, [dazed] [effect1.status0.power], [witherbloom] [effect2.status0.power] and +[effect3.power][attack] to enemy units on this floor.",
+                "chinese": "对本层所有敌方单位施加 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>、[dazed] [effect1.status0.power]、[witherbloom] [effect2.status0.power] 和 +[effect3.power][attack]。"
+            },
+            "effects": [
+                "@ProfanityProFrantic",
+                "@ProfanityProDazed",
+                "@ProfanityProWither",
+                "@ProfanityProAttack"
+            ]
+        }
+    ],
+    "effects": [
+        {
+            "id": "BloodThirstyBasicAttack",
+            "name": "CardEffectBuffDamage",
+            "target_mode": "room",
+            "target_team": "both",
+            "param_int": 10
+        },
+        {
+            "id": "BloodThirstyPreAttack",
+            "name": "CardEffectBuffDamage",
+            "target_mode": "room",
+            "target_team": "both",
+            "param_int": 15
+        },
+        {
+            "id": "BloodThirstyProAttack",
+            "name": "CardEffectBuffDamage",
+            "target_mode": "room",
+            "target_team": "both",
+            "param_int": 25
+        },
+        {
+            "id": "PlagueBasicAddShard",
+            "name": "CardEffectAddBattleCard",
+            "target_mode": "room",
+            "target_team": "none",
+            "param_int": 3,
+            "param_int_2": 1,
+            "param_card_pool": "@ObsessingShardPool",
+            "param_upgrade": "@ConsumeUpgrade"
+        },
+        {
+            "id": "PlagueBasicEmber",
+            "name": "CardEffectGainEnergy",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_int": 1
+        },
+        {
+            "id": "PlagueBasicAttack",
+            "name": "CardEffectBuffDamage",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_int": 3
+        },
+        {
+            "id": "PlagueBasicShield",
+            "name": "CardEffectAddStatusEffect",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_status_effects": [
+                {
+                    "status": "damage shield",
+                    "count": 1
+                }
+            ]
+        },
+        {
+            "id": "PlaguePreAddShard",
+            "name": "CardEffectAddBattleCard",
+            "target_mode": "room",
+            "target_team": "none",
+            "param_int": 3,
+            "param_int_2": 1,
+            "param_card_pool": "@ObsessingShardPool",
+            "param_upgrade": "@ConsumeUpgrade"
+        },
+        {
+            "id": "PlaguePreEmber",
+            "name": "CardEffectGainEnergy",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_int": 1
+        },
+        {
+            "id": "PlaguePreAttack",
+            "name": "CardEffectBuffDamage",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_int": 5
+        },
+        {
+            "id": "PlaguePreShield",
+            "name": "CardEffectAddStatusEffect",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_status_effects": [
+                {
+                    "status": "damage shield",
+                    "count": 1
+                }
+            ]
+        },
+        {
+            "id": "PlagueProAddShard",
+            "name": "CardEffectAddBattleCard",
+            "target_mode": "room",
+            "target_team": "none",
+            "param_int": 3,
+            "param_int_2": 1,
+            "param_card_pool": "@ObsessingShardPool",
+            "param_upgrade": "@ConsumeUpgrade"
+        },
+        {
+            "id": "PlagueProEmber",
+            "name": "CardEffectGainEnergy",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_int": 1
+        },
+        {
+            "id": "PlagueProAttack",
+            "name": "CardEffectBuffDamage",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_int": 7
+        },
+        {
+            "id": "PlagueProShield",
+            "name": "CardEffectAddStatusEffect",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_status_effects": [
+                {
+                    "status": "damage shield",
+                    "count": 1
+                }
+            ]
+        },
+        {
+            "id": "ProfanityBasicFrantic",
+            "name": "CardEffectAddStatusEffect",
+            "target_mode": "room",
+            "target_team": "heroes",
+            "param_status_effects": [
+                {
+                    "status": "@frantic",
+                    "count": 2
+                }
+            ]
+        },
+        {
+            "id": "ProfanityBasicDazed",
+            "name": "CardEffectAddStatusEffect",
+            "target_mode": "room",
+            "target_team": "heroes",
+            "param_status_effects": [
+                {
+                    "status": "dazed",
+                    "count": 2
+                }
+            ]
+        },
+        {
+            "id": "ProfanityBasicWither",
+            "name": "CardEffectAddStatusEffect",
+            "target_mode": "room",
+            "target_team": "heroes",
+            "param_status_effects": [
+                {
+                    "status": "witherbloom",
+                    "count": 2
+                }
+            ]
+        },
+        {
+            "id": "ProfanityBasicAttack",
+            "name": "CardEffectBuffDamage",
+            "target_mode": "room",
+            "target_team": "heroes",
+            "param_int": 10
+        },
+        {
+            "id": "ProfanityPreFrantic",
+            "name": "CardEffectAddStatusEffect",
+            "target_mode": "room",
+            "target_team": "heroes",
+            "param_status_effects": [
+                {
+                    "status": "@frantic",
+                    "count": 2
+                }
+            ]
+        },
+        {
+            "id": "ProfanityPreDazed",
+            "name": "CardEffectAddStatusEffect",
+            "target_mode": "room",
+            "target_team": "heroes",
+            "param_status_effects": [
+                {
+                    "status": "dazed",
+                    "count": 2
+                }
+            ]
+        },
+        {
+            "id": "ProfanityPreWither",
+            "name": "CardEffectAddStatusEffect",
+            "target_mode": "room",
+            "target_team": "heroes",
+            "param_status_effects": [
+                {
+                    "status": "witherbloom",
+                    "count": 2
+                }
+            ]
+        },
+        {
+            "id": "ProfanityPreAttack",
+            "name": "CardEffectBuffDamage",
+            "target_mode": "room",
+            "target_team": "heroes",
+            "param_int": 20
+        },
+        {
+            "id": "ProfanityProFrantic",
+            "name": "CardEffectAddStatusEffect",
+            "target_mode": "room",
+            "target_team": "heroes",
+            "param_status_effects": [
+                {
+                    "status": "@frantic",
+                    "count": 2
+                }
+            ]
+        },
+        {
+            "id": "ProfanityProDazed",
+            "name": "CardEffectAddStatusEffect",
+            "target_mode": "room",
+            "target_team": "heroes",
+            "param_status_effects": [
+                {
+                    "status": "dazed",
+                    "count": 2
+                }
+            ]
+        },
+        {
+            "id": "ProfanityProWither",
+            "name": "CardEffectAddStatusEffect",
+            "target_mode": "room",
+            "target_team": "heroes",
+            "param_status_effects": [
+                {
+                    "status": "witherbloom",
+                    "count": 2
+                }
+            ]
+        },
+        {
+            "id": "ProfanityProAttack",
+            "name": "CardEffectBuffDamage",
+            "target_mode": "room",
+            "target_team": "heroes",
+            "param_int": 30
+        },
+        {
+            "id": "SpawnShadowLady",
+            "name": "CardEffectSpawnMonster",
+            "target_mode": "drop_target_character",
+            "param_character": "@ShadowLady"
+        }
+    ],
+    "upgrades": [
+        {
+            "id": "upg_BloodThirstyBasic",
+            "titles": {
+                "english": "Blood Thirsty",
+                "chinese": "嗜血"
+            },
+            "bonus_damage": 10,
+            "bonus_hp": 10,
+            "use_upgrade_highlight_tags": true,
+            "trigger_upgrades": [
+                "@BloodThirstyBasicTrigger"
+            ]
+        },
+        {
+            "id": "upg_BloodThirstyPre",
+            "titles": {
+                "english": "Blood Thirsty II",
+                "chinese": "嗜血 II"
+            },
+            "bonus_damage": 20,
+            "bonus_hp": 30,
+            "use_upgrade_highlight_tags": true,
+            "trigger_upgrades": [
+                "@BloodThirstyPreTrigger"
+            ]
+        },
+        {
+            "id": "upg_BloodThirstyPro",
+            "titles": {
+                "english": "Blood Thirsty III",
+                "chinese": "嗜血 III"
+            },
+            "bonus_damage": 50,
+            "bonus_hp": 40,
+            "use_upgrade_highlight_tags": true,
+            "trigger_upgrades": [
+                "@BloodThirstyProTrigger"
+            ]
+        },
+        {
+            "id": "upg_PlagueBasic",
+            "titles": {
+                "english": "Plague",
+                "chinese": "瘟疫"
+            },
+            "bonus_damage": 0,
+            "bonus_hp": 10,
+            "use_upgrade_highlight_tags": true,
+            "trigger_upgrades": [
+                "@PlagueBasicPreCombat",
+                "@PlagueBasicAccursed"
+            ]
+        },
+        {
+            "id": "upg_PlaguePre",
+            "titles": {
+                "english": "Plague II",
+                "chinese": "瘟疫 II"
+            },
+            "bonus_damage": 10,
+            "bonus_hp": 20,
+            "use_upgrade_highlight_tags": true,
+            "trigger_upgrades": [
+                "@PlaguePrePreCombat",
+                "@PlaguePreAccursed"
+            ]
+        },
+        {
+            "id": "upg_PlaguePro",
+            "titles": {
+                "english": "Plague III",
+                "chinese": "瘟疫 III"
+            },
+            "bonus_damage": 20,
+            "bonus_hp": 50,
+            "use_upgrade_highlight_tags": true,
+            "trigger_upgrades": [
+                "@PlagueProPreCombat",
+                "@PlagueProAccursed"
+            ]
+        },
+        {
+            "id": "upg_ProfanityBasic",
+            "titles": {
+                "english": "Profanity",
+                "chinese": "亵渎"
+            },
+            "bonus_damage": 0,
+            "bonus_hp": 0,
+            "use_upgrade_highlight_tags": true,
+            "status_effect_upgrades": [
+                {
+                    "status": "ambush",
+                    "count": 1
+                }
+            ],
+            "trigger_upgrades": [
+                "@ProfanityBasicTrigger"
+            ]
+        },
+        {
+            "id": "upg_ProfanityPre",
+            "titles": {
+                "english": "Profanity II",
+                "chinese": "亵渎 II"
+            },
+            "bonus_damage": 20,
+            "bonus_hp": 5,
+            "use_upgrade_highlight_tags": true,
+            "status_effect_upgrades": [
+                {
+                    "status": "ambush",
+                    "count": 1
+                }
+            ],
+            "trigger_upgrades": [
+                "@ProfanityPreTrigger"
+            ]
+        },
+        {
+            "id": "upg_ProfanityPro",
+            "titles": {
+                "english": "Profanity III",
+                "chinese": "亵渎 III"
+            },
+            "bonus_damage": 30,
+            "bonus_hp": 10,
+            "use_upgrade_highlight_tags": true,
+            "status_effect_upgrades": [
+                {
+                    "status": "ambush",
+                    "count": 1
+                }
+            ],
+            "trigger_upgrades": [
+                "@ProfanityProTrigger"
+            ]
+        }
+    ],
+    "sprites": [
+        {
+            "id": "ShadowLadyCardArt",
+            "path": "textures/ShadowLadyCardArt.png"
+        },
+        {
+            "id": "ShadowLadyCharacterArt",
+            "path": "textures/ShadowLadyCharacterArt.png"
+        }
+    ],
+    "game_objects": [
+        {
+            "id": "ShadowLadyCardArt",
+            "type": "card_art",
+            "extensions": {
+                "card_art": {
+                    "sprite": "@ShadowLadyCardArt"
+                }
+            }
+        },
+        {
+            "id": "ShadowLadyCharacterArt",
+            "type": "character_art",
+            "extensions": {
+                "character_art": {
+                    "sprite": "@ShadowLadyCharacterArt",
+                    "transform": {
+                        "position": {
+                            "x": 0,
+                            "y": 0.6,
+                            "z": 0.1
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "ShadowLadyClassDisplayArt",
+            "type": "character_art",
+            "extensions": {
+                "character_art": {
+                    "sprite": "@ShadowLadyCharacterArt",
+                    "transform": {
+                        "position": {
+                            "x": 2.1,
+                            "y": 0.8,
+                            "z": 0
+                        },
+                        "scale": {
+                            "x": 2.3,
+                            "y": 2.3,
+                            "z": 1
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

@@ -17,7 +17,7 @@
             "traits": [
                 "@Consume"
             ],
-            "effect_triggers": [
+            "triggers": [
                 "@ObsessingShardOnUnplayed"
             ]
         }

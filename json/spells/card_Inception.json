@@ -1,0 +1,73 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+    "cards": [
+        {
+            "id": "Inception",
+            "names": {
+                "english": "Inception",
+                "chinese": "思想窃取"
+            },
+            "descriptions": {
+                "english": "Give <b>[mt2_succclan.Plugin_psionic] [effect0.status0.power]</b>. Gain +[effect1.power][attack] and +[effect2.power][health].",
+                "chinese": "给予 <b>[mt2_succclan.Plugin_psionic] [effect0.status0.power]</b>，+[effect1.power][attack]，+[effect2.power][health]。"
+            },
+            "card_type": "spell",
+            "rarity": "common",
+            "class": "@ClassSuccubus",
+            "card_art": "@InceptionArt",
+            "cost": 1,
+            "targets_room": true,
+            "targetless": false,
+            "effects": [
+                "@InceptionPsionic",
+                "@InceptionAttack",
+                "@InceptionHealth"
+            ]
+        }
+    ],
+    "effects": [
+        {
+            "id": "InceptionPsionic",
+            "name": "CardEffectAddStatusEffect",
+            "target_mode": "drop_target_character",
+            "target_team": "monsters",
+            "param_status_effects": [
+                {
+                    "status": "@psionic",
+                    "count": 1
+                }
+            ]
+        },
+        {
+            "id": "InceptionAttack",
+            "name": "CardEffectBuffDamage",
+            "target_mode": "last_targeted_characters",
+            "target_team": "monsters",
+            "param_int": 2
+        },
+        {
+            "id": "InceptionHealth",
+            "name": "CardEffectBuffMaxHealth",
+            "target_mode": "last_targeted_characters",
+            "target_team": "monsters",
+            "param_int": 2
+        }
+    ],
+    "sprites": [
+        {
+            "id": "InceptionArt",
+            "path": "textures/InceptionArt.png"
+        }
+    ],
+    "game_objects": [
+        {
+            "id": "InceptionArt",
+            "type": "card_art",
+            "extensions": {
+                "card_art": {
+                    "sprite": "@InceptionArt"
+                }
+            }
+        }
+    ]
+}
