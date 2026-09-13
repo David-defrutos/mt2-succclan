@@ -1,13 +1,12 @@
 using BepInEx;
 using BepInEx.Logging;
-using TrainworksReloaded.Base;
+using Microsoft.Extensions.Configuration;
 using TrainworksReloaded.Core;
+using TrainworksReloaded.Core.Extensions;
 
 namespace mt2_succclan.Plugin
 {
     [BepInPlugin(MyPluginInfo.PLUGIN_GUID, MyPluginInfo.PLUGIN_NAME, MyPluginInfo.PLUGIN_VERSION)]
-    [BepInDependency("TrainworksReloaded")]
-    [BepInDependency("Conductor")]
     public class Plugin : BaseUnityPlugin
     {
         internal static new ManualLogSource Logger = new(MyPluginInfo.PLUGIN_GUID);
