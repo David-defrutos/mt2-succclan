@@ -8,8 +8,8 @@
                 "chinese": "亵渎晋升"
             },
             "descriptions": {
-                "english": "<b>Descend</b> an enemy unit to the bottom floor. Apply <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b>, [dazed] [effect2.status0.power] and [witherbloom] [effect3.status0.power].",
-                "chinese": "使一个敌方单位<b>下降</b>到最底层，并施加 <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b>、[dazed] [effect2.status0.power] 和[witherbloom] [effect3.status0.power]。"
+                "english": "<b>Descend</b> an enemy unit to the bottom floor. Apply <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b>.",
+                "chinese": "使一个敌方单位<b>下降</b>到最底层，并施加 <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b>。"
             },
             "card_type": "spell",
             "rarity": "common",
@@ -26,9 +26,7 @@
             ],
             "effects": [
                 "@PABump",
-                "@PAFrantic",
-                "@PADazed",
-                "@PAWither"
+                "@PAFrantic"
             ]
         }
     ],
@@ -48,30 +46,6 @@
             "param_status_effects": [
                 {
                     "status": "@frantic",
-                    "count": 3
-                }
-            ]
-        },
-        {
-            "id": "PADazed",
-            "name": "CardEffectAddStatusEffect",
-            "target_mode": "last_targeted_characters",
-            "target_team": "both",
-            "param_status_effects": [
-                {
-                    "status": "dazed",
-                    "count": 3
-                }
-            ]
-        },
-        {
-            "id": "PAWither",
-            "name": "CardEffectAddStatusEffect",
-            "target_mode": "last_targeted_characters",
-            "target_team": "both",
-            "param_status_effects": [
-                {
-                    "status": "witherbloom",
                     "count": 3
                 }
             ]

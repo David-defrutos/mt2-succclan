@@ -8,8 +8,8 @@
                 "chinese": "亵渎晋升+"
             },
             "descriptions": {
-                "english": "<b>Descend</b> an enemy unit to the bottom floor. Apply <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b>, [dazed] [effect2.status0.power], [witherbloom] [effect3.status0.power] and +[effect4.power][attack].",
-                "chinese": "使一个敌方单位<b>下降</b>到最底层，并施加 <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b>、[dazed] [effect2.status0.power]、[witherbloom] [effect3.status0.power] 和 +[effect4.power][attack]。"
+                "english": "<b>Descend</b> an enemy unit to the bottom floor. Apply <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b> and +[effect2.power][attack].",
+                "chinese": "使一个敌方单位<b>下降</b>到最底层，并施加 <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b> 和 +[effect2.power][attack]。"
             },
             "card_type": "spell",
             "rarity": "uncommon",
@@ -27,8 +27,6 @@
             "effects": [
                 "@PAPBump",
                 "@PAPFrantic",
-                "@PAPDazed",
-                "@PAPWither",
                 "@PAPAttack"
             ]
         }
@@ -49,30 +47,6 @@
             "param_status_effects": [
                 {
                     "status": "@frantic",
-                    "count": 3
-                }
-            ]
-        },
-        {
-            "id": "PAPDazed",
-            "name": "CardEffectAddStatusEffect",
-            "target_mode": "last_targeted_characters",
-            "target_team": "heroes",
-            "param_status_effects": [
-                {
-                    "status": "dazed",
-                    "count": 3
-                }
-            ]
-        },
-        {
-            "id": "PAPWither",
-            "name": "CardEffectAddStatusEffect",
-            "target_mode": "last_targeted_characters",
-            "target_team": "heroes",
-            "param_status_effects": [
-                {
-                    "status": "witherbloom",
                     "count": 3
                 }
             ]

@@ -190,8 +190,8 @@
                 "chinese": "混沌造物"
             },
             "descriptions": {
-                "english": "<b>Revenge</b>: apply <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>, [dazed] and [witherbloom] to the attacking enemy unit.",
-                "chinese": "<b>复仇</b>：对攻击的敌方单位施加 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>、[dazed] 和[witherbloom]。"
+                "english": "<b>Revenge</b>: apply <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> to the attacking enemy unit.",
+                "chinese": "<b>复仇</b>：对攻击的敌方单位施加 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>。"
             },
             "use_upgrade_highlight_tags": true,
             "trigger_upgrades": [
@@ -367,13 +367,11 @@
             "id": "EssenceChaosOnHit",
             "trigger": "on_hit",
             "descriptions": {
-                "english": "Apply <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>, [dazed] [effect1.status0.power] and [witherbloom] [effect2.status0.power] to the attacking enemy unit.",
-                "chinese": "对攻击的敌方单位施加 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>、[dazed] [effect1.status0.power] 和[witherbloom] [effect2.status0.power]。"
+                "english": "Apply <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> to the attacking enemy unit.",
+                "chinese": "对攻击的敌方单位施加 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>。"
             },
             "effects": [
-                "@EssenceChaosFrantic",
-                "@EssenceChaosDazed",
-                "@EssenceChaosWither"
+                "@EssenceChaosFrantic"
             ]
         },
         {
@@ -424,30 +422,6 @@
             "param_status_effects": [
                 {
                     "status": "@frantic",
-                    "count": 2
-                }
-            ]
-        },
-        {
-            "id": "EssenceChaosDazed",
-            "name": "CardEffectAddStatusEffect",
-            "target_mode": "last_attacker_character",
-            "target_team": "heroes",
-            "param_status_effects": [
-                {
-                    "status": "dazed",
-                    "count": 2
-                }
-            ]
-        },
-        {
-            "id": "EssenceChaosWither",
-            "name": "CardEffectAddStatusEffect",
-            "target_mode": "last_attacker_character",
-            "target_team": "heroes",
-            "param_status_effects": [
-                {
-                    "status": "witherbloom",
                     "count": 2
                 }
             ]

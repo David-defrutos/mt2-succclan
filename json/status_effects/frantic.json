@@ -3,7 +3,7 @@
     "status_effects": [
         {
             "id": "frantic",
-            "class_name": "@StatusEffectMarkerState",
+            "class_name": "@StatusEffectFranticState",
             "names": {
                 "english": "Frantic",
                 "chinese": "疯狂"
@@ -13,12 +13,12 @@
                 "chinese": "<nobr>疯狂 {0}</nobr>"
             },
             "card_tooltips": {
-                "english": "Unit is out of its mind: it cannot attack and it wounds those beside it.",
-                "chinese": "单位陷入疯狂：无法攻击，并伤及身旁的单位。"
+                "english": "Unit attacks its own front unit instead of attacking. Decreases every turn.",
+                "chinese": "单位不再攻击，转而攻击己方前排单位。每回合减少。"
             },
             "character_tooltips": {
-                "english": "Cannot attack and wounds the units beside it.",
-                "chinese": "无法攻击，并伤及身旁的单位。"
+                "english": "Attacks its own front unit instead of attacking. Decreases every turn.",
+                "chinese": "不再攻击，转而攻击己方前排单位。每回合减少。"
             },
             "replacement_texts": {
                 "english": "<b>Frantic</b>",
@@ -29,7 +29,7 @@
                 "chinese": "疯狂"
             },
             "display_category": "negative",
-            "trigger_stage": "none",
+            "trigger_stage": "on_combat_turn_spark",
             "is_stackable": true,
             "remove_stack_at_end_of_turn": true,
             "exclude_monster_propagation": true,

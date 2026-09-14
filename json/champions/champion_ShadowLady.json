@@ -154,13 +154,11 @@
             "id": "ProfanityBasicTrigger",
             "trigger": "on_attacking",
             "descriptions": {
-                "english": "Apply <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>, [dazed] [effect1.status0.power], [witherbloom] [effect2.status0.power] and +[effect3.power][attack] to enemy units on this floor.",
-                "chinese": "对本层所有敌方单位施加 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>、[dazed] [effect1.status0.power]、[witherbloom] [effect2.status0.power] 和 +[effect3.power][attack]。"
+                "english": "Apply <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> and +[effect1.power][attack] to enemy units on this floor.",
+                "chinese": "对本层所有敌方单位施加 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> 和 +[effect1.power][attack]。"
             },
             "effects": [
                 "@ProfanityBasicFrantic",
-                "@ProfanityBasicDazed",
-                "@ProfanityBasicWither",
                 "@ProfanityBasicAttack"
             ]
         },
@@ -168,13 +166,11 @@
             "id": "ProfanityPreTrigger",
             "trigger": "on_attacking",
             "descriptions": {
-                "english": "Apply <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>, [dazed] [effect1.status0.power], [witherbloom] [effect2.status0.power] and +[effect3.power][attack] to enemy units on this floor.",
-                "chinese": "对本层所有敌方单位施加 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>、[dazed] [effect1.status0.power]、[witherbloom] [effect2.status0.power] 和 +[effect3.power][attack]。"
+                "english": "Apply <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> and +[effect1.power][attack] to enemy units on this floor.",
+                "chinese": "对本层所有敌方单位施加 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> 和 +[effect1.power][attack]。"
             },
             "effects": [
                 "@ProfanityPreFrantic",
-                "@ProfanityPreDazed",
-                "@ProfanityPreWither",
                 "@ProfanityPreAttack"
             ]
         },
@@ -182,13 +178,11 @@
             "id": "ProfanityProTrigger",
             "trigger": "on_attacking",
             "descriptions": {
-                "english": "Apply <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>, [dazed] [effect1.status0.power], [witherbloom] [effect2.status0.power] and +[effect3.power][attack] to enemy units on this floor.",
-                "chinese": "对本层所有敌方单位施加 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>、[dazed] [effect1.status0.power]、[witherbloom] [effect2.status0.power] 和 +[effect3.power][attack]。"
+                "english": "Apply <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> and +[effect1.power][attack] to enemy units on this floor.",
+                "chinese": "对本层所有敌方单位施加 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> 和 +[effect1.power][attack]。"
             },
             "effects": [
                 "@ProfanityProFrantic",
-                "@ProfanityProDazed",
-                "@ProfanityProWither",
                 "@ProfanityProAttack"
             ]
         }
@@ -336,30 +330,6 @@
             ]
         },
         {
-            "id": "ProfanityBasicDazed",
-            "name": "CardEffectAddStatusEffect",
-            "target_mode": "room",
-            "target_team": "heroes",
-            "param_status_effects": [
-                {
-                    "status": "dazed",
-                    "count": 2
-                }
-            ]
-        },
-        {
-            "id": "ProfanityBasicWither",
-            "name": "CardEffectAddStatusEffect",
-            "target_mode": "room",
-            "target_team": "heroes",
-            "param_status_effects": [
-                {
-                    "status": "witherbloom",
-                    "count": 2
-                }
-            ]
-        },
-        {
             "id": "ProfanityBasicAttack",
             "name": "CardEffectBuffDamage",
             "target_mode": "room",
@@ -379,30 +349,6 @@
             ]
         },
         {
-            "id": "ProfanityPreDazed",
-            "name": "CardEffectAddStatusEffect",
-            "target_mode": "room",
-            "target_team": "heroes",
-            "param_status_effects": [
-                {
-                    "status": "dazed",
-                    "count": 2
-                }
-            ]
-        },
-        {
-            "id": "ProfanityPreWither",
-            "name": "CardEffectAddStatusEffect",
-            "target_mode": "room",
-            "target_team": "heroes",
-            "param_status_effects": [
-                {
-                    "status": "witherbloom",
-                    "count": 2
-                }
-            ]
-        },
-        {
             "id": "ProfanityPreAttack",
             "name": "CardEffectBuffDamage",
             "target_mode": "room",
@@ -417,30 +363,6 @@
             "param_status_effects": [
                 {
                     "status": "@frantic",
-                    "count": 2
-                }
-            ]
-        },
-        {
-            "id": "ProfanityProDazed",
-            "name": "CardEffectAddStatusEffect",
-            "target_mode": "room",
-            "target_team": "heroes",
-            "param_status_effects": [
-                {
-                    "status": "dazed",
-                    "count": 2
-                }
-            ]
-        },
-        {
-            "id": "ProfanityProWither",
-            "name": "CardEffectAddStatusEffect",
-            "target_mode": "room",
-            "target_team": "heroes",
-            "param_status_effects": [
-                {
-                    "status": "witherbloom",
                     "count": 2
                 }
             ]

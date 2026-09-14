@@ -8,8 +8,8 @@
                 "chinese": "意识灼烧"
             },
             "descriptions": {
-                "english": "Apply <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>, [dazed] [effect1.status0.power], [witherbloom] [effect2.status0.power] and [multistrike] [effect3.status0.power] to an enemy unit. Discard [effect4.power] <b>Obsessing Spark</b>.",
-                "chinese": "对一个敌方单位施加 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>、[dazed] [effect1.status0.power]、[witherbloom] [effect2.status0.power] 和[multistrike] [effect3.status0.power]。舍弃 [effect4.power] 张<b>欲望碎片</b>。"
+                "english": "Apply <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> and [multistrike] [effect1.status0.power] to an enemy unit. Discard [effect2.power] <b>Obsessing Spark</b>.",
+                "chinese": "对一个敌方单位施加 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> 和[multistrike] [effect1.status0.power]。舍弃 [effect2.power] 张<b>欲望碎片</b>。"
             },
             "card_type": "spell",
             "rarity": "uncommon",
@@ -23,8 +23,6 @@
             ],
             "effects": [
                 "@MindBurningFrantic",
-                "@MindBurningDazed",
-                "@MindBurningWither",
                 "@MindBurningMulti",
                 "@MindBurningSpread"
             ]
@@ -39,30 +37,6 @@
             "param_status_effects": [
                 {
                     "status": "@frantic",
-                    "count": 2
-                }
-            ]
-        },
-        {
-            "id": "MindBurningDazed",
-            "name": "CardEffectAddStatusEffect",
-            "target_mode": "drop_target_character",
-            "target_team": "heroes",
-            "param_status_effects": [
-                {
-                    "status": "dazed",
-                    "count": 2
-                }
-            ]
-        },
-        {
-            "id": "MindBurningWither",
-            "name": "CardEffectAddStatusEffect",
-            "target_mode": "drop_target_character",
-            "target_team": "heroes",
-            "param_status_effects": [
-                {
-                    "status": "witherbloom",
                     "count": 2
                 }
             ]

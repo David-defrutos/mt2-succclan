@@ -45,13 +45,11 @@
             "id": "ChaosCreationOnHit",
             "trigger": "on_hit",
             "descriptions": {
-                "english": "Apply <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>, [dazed] [effect1.status0.power] and [witherbloom] [effect2.status0.power] to enemy units.",
-                "chinese": "对所有敌方单位施加 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>、[dazed] [effect1.status0.power] 和[witherbloom] [effect2.status0.power]。"
+                "english": "Apply <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> to the attacking enemy unit.",
+                "chinese": "对攻击的敌方单位施加 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>。"
             },
             "effects": [
-                "@ChaosCreationFrantic",
-                "@ChaosCreationDazed",
-                "@ChaosCreationWither"
+                "@ChaosCreationFrantic"
             ]
         }
     ],
@@ -65,35 +63,11 @@
         {
             "id": "ChaosCreationFrantic",
             "name": "CardEffectAddStatusEffect",
-            "target_mode": "room",
+            "target_mode": "last_attacker_character",
             "target_team": "heroes",
             "param_status_effects": [
                 {
                     "status": "@frantic",
-                    "count": 1
-                }
-            ]
-        },
-        {
-            "id": "ChaosCreationDazed",
-            "name": "CardEffectAddStatusEffect",
-            "target_mode": "room",
-            "target_team": "heroes",
-            "param_status_effects": [
-                {
-                    "status": "dazed",
-                    "count": 1
-                }
-            ]
-        },
-        {
-            "id": "ChaosCreationWither",
-            "name": "CardEffectAddStatusEffect",
-            "target_mode": "room",
-            "target_team": "heroes",
-            "param_status_effects": [
-                {
-                    "status": "witherbloom",
                     "count": 1
                 }
             ]

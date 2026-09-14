@@ -28,7 +28,7 @@
             "effects": [
                 "@CubusSpikeFrantic"
             ],
-            "cost_type": "consume_remaining_energy"
+            "cost_type": "x"
         }
     ],
     "effects": [

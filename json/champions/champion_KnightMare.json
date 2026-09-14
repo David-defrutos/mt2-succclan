@@ -109,8 +109,8 @@
             "id": "EndlessBasicTrigger",
             "trigger": "on_death",
             "descriptions": {
-                "english": "<b>Psionic Burst [effect0.status0.power]</b>: create a copy of itself in this room with [multistrike] [effect2.upgrade.status0.power].",
-                "chinese": "<b>灵能爆破 [effect0.status0.power]</b>：在本层创造一个自身的复制，并获得[multistrike] [effect2.upgrade.status0.power]。"
+                "english": "<b>Psionic Burst [effect0.status0.power]</b>: create a copy of itself in this room with [multistrike] [effect2.upgrade.status0.power] and [untouchable] [effect2.upgrade.status1.power].",
+                "chinese": "<b>灵能爆破 [effect0.status0.power]</b>：在本层创造一个自身的复制品，带有[multistrike] [effect2.upgrade.status0.power] 和[untouchable] [effect2.upgrade.status1.power]。"
             },
             "effects": [
                 "@EndlessBasicCheck",
@@ -125,8 +125,8 @@
             "id": "EndlessPreTrigger",
             "trigger": "on_death",
             "descriptions": {
-                "english": "<b>Psionic Burst [effect0.status0.power]</b>: create a copy of itself in this room with [multistrike] [effect2.upgrade.status0.power].",
-                "chinese": "<b>灵能爆破 [effect0.status0.power]</b>：在本层创造一个自身的复制，并获得[multistrike] [effect2.upgrade.status0.power]。"
+                "english": "<b>Psionic Burst [effect0.status0.power]</b>: create a copy of itself in this room with [multistrike] [effect2.upgrade.status0.power], [untouchable] [effect2.upgrade.status1.power] and [titanskin] [effect2.upgrade.status2.power].",
+                "chinese": "<b>灵能爆破 [effect0.status0.power]</b>：在本层创造一个自身的复制品，带有[multistrike] [effect2.upgrade.status0.power]、[untouchable] [effect2.upgrade.status1.power] 和[titanskin] [effect2.upgrade.status2.power]。"
             },
             "effects": [
                 "@EndlessPreCheck",
@@ -141,8 +141,8 @@
             "id": "EndlessProTrigger",
             "trigger": "on_death",
             "descriptions": {
-                "english": "<b>Psionic Burst [effect0.status0.power]</b>: create a copy of itself in this room with [multistrike] [effect2.upgrade.status0.power].",
-                "chinese": "<b>灵能爆破 [effect0.status0.power]</b>：在本层创造一个自身的复制，并获得[multistrike] [effect2.upgrade.status0.power]。"
+                "english": "<b>Psionic Burst [effect0.status0.power]</b>: create a copy of itself in this room, ready to act, with [multistrike] [effect2.upgrade.status0.power] and [titanskin] [effect2.upgrade.status1.power].",
+                "chinese": "<b>灵能爆破 [effect0.status0.power]</b>：在本层立刻创造一个可行动的自身复制品，带有[multistrike] [effect2.upgrade.status0.power] 和[titanskin] [effect2.upgrade.status1.power]。"
             },
             "effects": [
                 "@EndlessProCheck",
@@ -216,6 +216,18 @@
             },
             "effects": [
                 "@KnightMareGainPsionic"
+            ]
+        },
+        {
+            "id": "EndlessClearStasisTrigger",
+            "trigger": "pre_combat",
+            "descriptions": {
+                "english": "Lose [untouchable] at the start of the turn.",
+                "chinese": "回合开始时失去[untouchable]。"
+            },
+            "hide_visual_and_ignore_silence": true,
+            "effects": [
+                "@EndlessClearStasis"
             ]
         }
     ],
@@ -408,7 +420,7 @@
             "param_status_effects": [
                 {
                     "status": "@psionic",
-                    "count": 2
+                    "count": 4
                 }
             ]
         },
@@ -420,7 +432,7 @@
             "param_status_effects": [
                 {
                     "status": "@psionic",
-                    "count": 2
+                    "count": 4
                 }
             ]
         },
@@ -446,7 +458,7 @@
             "param_status_effects": [
                 {
                     "status": "@psionic",
-                    "count": 3
+                    "count": 4
                 }
             ]
         },
@@ -458,7 +470,7 @@
             "param_status_effects": [
                 {
                     "status": "@psionic",
-                    "count": 3
+                    "count": 4
                 }
             ]
         },
@@ -693,6 +705,18 @@
             "name": "CardEffectSpawnMonster",
             "target_mode": "drop_target_character",
             "param_character": "@KnightMare"
+        },
+        {
+            "id": "EndlessClearStasis",
+            "name": "CardEffectRemoveStatusEffect",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_status_effects": [
+                {
+                    "status": "untouchable",
+                    "count": 99
+                }
+            ]
         }
     ],
     "upgrades": [
@@ -741,7 +765,14 @@
                 {
                     "status": "multistrike",
                     "count": 1
+                },
+                {
+                    "status": "untouchable",
+                    "count": 1
                 }
+            ],
+            "trigger_upgrades": [
+                "@EndlessClearStasisTrigger"
             ]
         },
         {
@@ -762,8 +793,19 @@
             "status_effect_upgrades": [
                 {
                     "status": "multistrike",
-                    "count": 2
+                    "count": 1
+                },
+                {
+                    "status": "untouchable",
+                    "count": 1
+                },
+                {
+                    "status": "titanskin",
+                    "count": 1
                 }
+            ],
+            "trigger_upgrades": [
+                "@EndlessClearStasisTrigger"
             ]
         },
         {
@@ -784,7 +826,11 @@
             "status_effect_upgrades": [
                 {
                     "status": "multistrike",
-                    "count": 4
+                    "count": 1
+                },
+                {
+                    "status": "titanskin",
+                    "count": 1
                 }
             ]
         },
