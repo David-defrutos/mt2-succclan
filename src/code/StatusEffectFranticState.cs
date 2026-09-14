@@ -78,7 +78,6 @@ namespace mt2_succclan.Plugin
                         damageType = Damage.Type.DirectAttack,
                         affectedVfx = GetSourceStatusEffectData()?.GetOnAffectedVFX(),
                         relicState = inputTriggerParams.suppressingRelic,
-                        selfTarget = target == thisCharacter,
                     });
             }
 
