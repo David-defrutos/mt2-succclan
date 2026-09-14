@@ -8,8 +8,8 @@
                 "chinese": "鞭笞"
             },
             "descriptions": {
-                "english": "Deal [effect0.power] damage to all enemies. Shuffle 1 <b>Obsessing Spark</b> with [exhaust] into your deck.",
-                "chinese": "对所有敌方单位造成 [effect0.power] 点伤害。将 1 张带有[exhaust]的<b>欲望碎片</b>洗入牌库。"
+                "english": "Deal [effect0.power] damage to all enemies. Shuffle 1 <b>Obsessing Spark</b> with [consume] into your deck.",
+                "chinese": "对所有敌方单位造成 [effect0.power] 点伤害。将 1 张带有[consume]的<b>欲望碎片</b>洗入牌库。"
             },
             "card_type": "spell",
             "rarity": "starter",

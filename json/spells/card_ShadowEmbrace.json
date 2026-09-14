@@ -8,8 +8,8 @@
                 "chinese": "拥抱暗影"
             },
             "descriptions": {
-                "english": "Add [effect0.power_unmodified] <b>Obsessing Spark</b> with [exhaust] to the discard pile. Draw [effect1.power] cards.",
-                "chinese": "将 [effect0.power_unmodified] 张带有[exhaust]的<b>欲望碎片</b>加入弃牌堆。抽 [effect1.power] 张牌。"
+                "english": "Add [effect0.power_unmodified] <b>Obsessing Spark</b> with [consume] to the discard pile. Draw [effect1.power] cards.",
+                "chinese": "将 [effect0.power_unmodified] 张带有[consume]的<b>欲望碎片</b>加入弃牌堆。抽 [effect1.power] 张牌。"
             },
             "card_type": "spell",
             "rarity": "uncommon",

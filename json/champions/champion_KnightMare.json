@@ -109,8 +109,8 @@
             "id": "EndlessBasicTrigger",
             "trigger": "on_death",
             "descriptions": {
-                "english": "<b>Psionic Burst [effect0.status0.power]</b>: create a copy of itself in this room with [multistrike] [effect2.upgrade.status0.power] and [untouchable] [effect2.upgrade.status1.power].",
-                "chinese": "<b>灵能爆破 [effect0.status0.power]</b>：在本层创造一个自身的复制品，带有[multistrike] [effect2.upgrade.status0.power] 和[untouchable] [effect2.upgrade.status1.power]。"
+                "english": "<b>Psionic Burst [effect0.status0.power]</b>: create a copy of itself in this room with [multistrike] [effect2.upgrade.status0.power] and [stasis] [effect2.upgrade.status1.power].",
+                "chinese": "<b>灵能爆破 [effect0.status0.power]</b>：在本层创造一个自身的复制品，带有[multistrike] [effect2.upgrade.status0.power] 和[stasis] [effect2.upgrade.status1.power]。"
             },
             "effects": [
                 "@EndlessBasicCheck",
@@ -125,8 +125,8 @@
             "id": "EndlessPreTrigger",
             "trigger": "on_death",
             "descriptions": {
-                "english": "<b>Psionic Burst [effect0.status0.power]</b>: create a copy of itself in this room with [multistrike] [effect2.upgrade.status0.power], [untouchable] [effect2.upgrade.status1.power] and <b>Titanskin</b> [effect2.upgrade.status2.power].",
-                "chinese": "<b>灵能爆破 [effect0.status0.power]</b>：在本层创造一个自身的复制品，带有[multistrike] [effect2.upgrade.status0.power]、[untouchable] [effect2.upgrade.status1.power] 和<b>Titanskin</b> [effect2.upgrade.status2.power]。"
+                "english": "<b>Psionic Burst [effect0.status0.power]</b>: create a copy of itself in this room with [multistrike] [effect2.upgrade.status0.power], [stasis] [effect2.upgrade.status1.power] and [titanskin] [effect2.upgrade.status2.power].",
+                "chinese": "<b>灵能爆破 [effect0.status0.power]</b>：在本层创造一个自身的复制品，带有[multistrike] [effect2.upgrade.status0.power]、[stasis] [effect2.upgrade.status1.power] 和[titanskin] [effect2.upgrade.status2.power]。"
             },
             "effects": [
                 "@EndlessPreCheck",
@@ -141,8 +141,8 @@
             "id": "EndlessProTrigger",
             "trigger": "on_death",
             "descriptions": {
-                "english": "<b>Psionic Burst [effect0.status0.power]</b>: create a copy of itself in this room, ready to act, with [multistrike] [effect2.upgrade.status0.power] and <b>Titanskin</b> [effect2.upgrade.status1.power].",
-                "chinese": "<b>灵能爆破 [effect0.status0.power]</b>：在本层立刻创造一个可行动的自身复制品，带有[multistrike] [effect2.upgrade.status0.power] 和<b>Titanskin</b> [effect2.upgrade.status1.power]。"
+                "english": "<b>Psionic Burst [effect0.status0.power]</b>: create a copy of itself in this room, ready to act, with [multistrike] [effect2.upgrade.status0.power] and [titanskin] [effect2.upgrade.status1.power].",
+                "chinese": "<b>灵能爆破 [effect0.status0.power]</b>：在本层立刻创造一个可行动的自身复制品，带有[multistrike] [effect2.upgrade.status0.power] 和[titanskin] [effect2.upgrade.status1.power]。"
             },
             "effects": [
                 "@EndlessProCheck",
@@ -222,8 +222,8 @@
             "id": "EndlessClearStasisTrigger",
             "trigger": "pre_combat",
             "descriptions": {
-                "english": "Lose [untouchable] at the start of the turn.",
-                "chinese": "回合开始时失去[untouchable]。"
+                "english": "Lose [stasis] at the start of the turn.",
+                "chinese": "回合开始时失去[stasis]。"
             },
             "hide_visual_and_ignore_silence": true,
             "effects": [
@@ -916,7 +916,7 @@
                     "transform": {
                         "position": {
                             "x": 0,
-                            "y": 0.6,
+                            "y": 0.8,
                             "z": 0.1
                         },
                         "scale": {

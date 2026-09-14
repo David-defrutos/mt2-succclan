@@ -46,8 +46,8 @@
             "id": "LustGhostOnSpawn",
             "trigger": "on_spawn",
             "descriptions": {
-                "english": "Add [effect0.power_unmodified] <b>Obsessing Spark</b> with [exhaust] to your hand.",
-                "chinese": "将 [effect0.power_unmodified] 张带有[exhaust]的<b>欲望碎片</b>加入手牌。"
+                "english": "Add [effect0.power_unmodified] <b>Obsessing Spark</b> with [consume] to your hand.",
+                "chinese": "将 [effect0.power_unmodified] 张带有[consume]的<b>欲望碎片</b>加入手牌。"
             },
             "effects": [
                 "@LustGhostAddShards"
@@ -127,7 +127,7 @@
                     "transform": {
                         "position": {
                             "x": 0,
-                            "y": 0.4,
+                            "y": 0.6,
                             "z": 0.1
                         },
                         "scale": {
