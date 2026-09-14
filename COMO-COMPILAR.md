@@ -59,21 +59,54 @@ en profundidad buscando DLLs, y una copia en `src\bin\` haria que cargase el plu
 veces. Por eso el `--output` apunta fuera y luego se copia solo el DLL.
 
 Con el GitHub CLI, que es lo fiable (el ZIP de Actions baja de 0 bytes si el navegador no
-tiene sesion):
+tiene sesion).
+
+**`gh run download` a secas es una trampa.** Sin id de run baja el artefacto del ultimo run
+*con exito*, que si el tuyo acaba de fallar es el de un commit anterior: instalas un DLL
+viejo y no te enteras. Y si lo lanzas justo despues del `git push`, GitHub todavia no ha
+registrado el run, asi que el filtro por SHA devuelve vacio y pasa lo mismo. Hay que
+esperar a que el run **exista**, no solo a que termine.
+
+Este bloque lo hace entero y decide solo: instala o te escupe el log del fallo.
 
 ```powershell
 $mod = "C:\Users\david\AppData\Roaming\Thunderstore Mod Manager\DataFolder\MonsterTrain2\profiles\Default\BepInEx\plugins\David-SuccClan_Custom"
+$out = "D:\Juegos\MT2_mod\ddls\dll-succclan"
 cd $mod
-gh run download --name mt2_succclan.Plugin --dir "D:\Juegos\MT2_mod\ddls\dll-succclan"
-Copy-Item "D:\Juegos\MT2_mod\ddls\dll-succclan\mt2_succclan.Plugin.dll" $mod -Force
+
+Copy-Item "$mod\mt2_succclan.Plugin.dll" "D:\Juegos\MT2_mod\backups\dll-succclan-anterior.dll" -Force
+
+$sha = git rev-parse HEAD
+$run = $null
+while (-not $run) {
+    Start-Sleep -Seconds 5
+    $run = gh run list --branch main --limit 10 --json databaseId,headSha,status,conclusion |
+           ConvertFrom-Json | Where-Object { $_.headSha -eq $sha } | Select-Object -First 1
+}
+Write-Host "Run $($run.databaseId) para el commit $sha"
+gh run watch $run.databaseId --exit-status
+
+if ($LASTEXITCODE -eq 0) {
+    Remove-Item "$out\*" -Force -ErrorAction SilentlyContinue
+    gh run download $run.databaseId --name mt2_succclan.Plugin --dir $out
+    Copy-Item "$out\mt2_succclan.Plugin.dll" $mod -Force
+    (Get-FileHash "$mod\mt2_succclan.Plugin.dll").Hash -eq (Get-FileHash "D:\Juegos\MT2_mod\backups\dll-succclan-anterior.dll").Hash
+} else {
+    gh run view $run.databaseId --log-failed
+}
 ```
 
-La primera vez no hay copia de seguridad que hacer, porque no hay DLL previo. A partir de la
-segunda, **siempre antes**:
+Piezas que importan, por si lo desmontas:
 
-```powershell
-Copy-Item "$mod\mt2_succclan.Plugin.dll" "D:\Juegos\MT2_mod\backups\dll-succclan-anterior.dll"
-```
+1. El `while` espera a que el run aparezca en la lista. Sin el, el filtro por SHA sale vacio.
+2. `Remove-Item "$out\*"` antes de bajar: `gh run download` **no sobrescribe**, aborta con
+   *"Este archivo ya existe"* y te deja el DLL anterior en su sitio.
+3. `--exit-status` hace que `gh run watch` devuelva codigo distinto de cero si el build falla.
+4. La comparacion de hash final tiene que salir **`False`**. Si sale `True`, el DLL es el
+   mismo de antes y algo de lo anterior no ha funcionado: no lances el juego, revisalo.
+
+La primera vez no hay copia de seguridad que hacer, porque no hay DLL previo; quita esa
+linea del bloque.
 
 ## 4. Comprobar
 

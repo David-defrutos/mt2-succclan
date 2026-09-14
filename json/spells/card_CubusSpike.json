@@ -18,9 +18,6 @@
             "cost": 0,
             "targets_room": true,
             "targetless": true,
-            "pools": [
-                "MegaPool"
-            ],
             "traits": [
                 "@CubusSpikeScaling",
                 "@Consume"

@@ -31,7 +31,13 @@
             "character_art": "@ChaosCreationCharacterArt",
             "size": 2,
             "attack_damage": 0,
-            "health": 40,
+            "health": 20,
+            "starting_status_effects": [
+                {
+                    "status": "heal immunity",
+                    "count": 1
+                }
+            ],
             "subtypes": [
                 "@Sub_Cubus"
             ],

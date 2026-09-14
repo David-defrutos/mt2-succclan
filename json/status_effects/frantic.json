@@ -30,7 +30,7 @@
             },
             "display_category": "negative",
             "trigger_stage": "on_combat_turn_spark",
-            "is_stackable": true,
+            "is_stackable": false,
             "remove_stack_at_end_of_turn": true,
             "exclude_monster_propagation": true,
             "icon": "@Frantic"
