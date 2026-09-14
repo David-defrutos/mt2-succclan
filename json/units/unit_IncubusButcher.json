@@ -14,10 +14,13 @@
             "class": "@ClassSuccubus",
             "targets_room": true,
             "pools": [
-                "MegaPool"
+                "UnitsAllBanner"
             ],
             "effects": [
                 "@SpawnIncubusButcher"
+            ],
+            "traits": [
+                "@IncubusButcherDeploy"
             ]
         }
     ],
@@ -42,14 +45,14 @@
                 }
             ],
             "triggers": [
-                "@IncubusButcherHarvest"
+                "@IncubusButcherSlay"
             ]
         }
     ],
     "character_triggers": [
         {
-            "id": "IncubusButcherHarvest",
-            "trigger": "on_any_unit_death_on_floor",
+            "id": "IncubusButcherSlay",
+            "trigger": "on_kill",
             "descriptions": {
                 "english": "+[effect0.power][attack] and +[effect1.power][health].",
                 "chinese": "+[effect0.power][attack]，+[effect1.power][health]。"
@@ -111,7 +114,7 @@
                     "transform": {
                         "position": {
                             "x": 0,
-                            "y": 0.7,
+                            "y": 0.5,
                             "z": 0.1
                         },
                         "scale": {
@@ -122,6 +125,12 @@
                     }
                 }
             }
+        }
+    ],
+    "traits": [
+        {
+            "id": "IncubusButcherDeploy",
+            "name": "CardTraitDrawInDeploymentPhase"
         }
     ]
 }

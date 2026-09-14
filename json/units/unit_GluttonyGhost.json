@@ -18,6 +18,9 @@
             ],
             "effects": [
                 "@SpawnGluttonyGhost"
+            ],
+            "traits": [
+                "@GluttonyGhostDeploy"
             ]
         }
     ],
@@ -127,7 +130,7 @@
                     "transform": {
                         "position": {
                             "x": 0,
-                            "y": 0.6,
+                            "y": 0.4,
                             "z": 0.1
                         },
                         "scale": {
@@ -138,6 +141,12 @@
                     }
                 }
             }
+        }
+    ],
+    "traits": [
+        {
+            "id": "GluttonyGhostDeploy",
+            "name": "CardTraitDrawInDeploymentPhase"
         }
     ]
 }

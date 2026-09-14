@@ -14,10 +14,13 @@
             "class": "@ClassSuccubus",
             "targets_room": true,
             "pools": [
-                "MegaPool"
+                "UnitsAllBanner"
             ],
             "effects": [
                 "@SpawnAbyssPrincess"
+            ],
+            "traits": [
+                "@AbyssPrincessDeploy"
             ]
         }
     ],
@@ -134,7 +137,7 @@
                     "transform": {
                         "position": {
                             "x": 0,
-                            "y": 0.7,
+                            "y": 0.5,
                             "z": 0.1
                         },
                         "scale": {
@@ -145,6 +148,12 @@
                     }
                 }
             }
+        }
+    ],
+    "traits": [
+        {
+            "id": "AbyssPrincessDeploy",
+            "name": "CardTraitDrawInDeploymentPhase"
         }
     ]
 }
