@@ -294,8 +294,8 @@
                 "chinese": "深渊公主"
             },
             "descriptions": {
-                "english": "<b>Strike</b>: gain [debuff] [effect0.status0.power] and apply [buff] and <b>[mt2_succclan.Plugin_frantic]</b> to enemy units.",
-                "chinese": "<b>攻击</b>：获得[debuff] [effect0.status0.power]，并对所有敌方单位施加[buff] 和 <b>[mt2_succclan.Plugin_frantic]</b>。"
+                "english": "<b>Strike</b>: gain [sap] [effect0.status0.power] and apply [rage] and <b>[mt2_succclan.Plugin_frantic]</b> to enemy units.",
+                "chinese": "<b>攻击</b>：获得[sap] [effect0.status0.power]，并对所有敌方单位施加[rage] 和 <b>[mt2_succclan.Plugin_frantic]</b>。"
             },
             "use_upgrade_highlight_tags": true,
             "trigger_upgrades": [

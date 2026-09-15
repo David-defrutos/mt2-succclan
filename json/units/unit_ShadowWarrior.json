@@ -71,7 +71,8 @@
             "name": "CardEffectAddCardUpgradeToUnits",
             "target_mode": "self",
             "target_team": "monsters",
-            "param_upgrade": "@ShadowWarriorPermanentAttack"
+            "param_upgrade": "@ShadowWarriorPermanentAttack",
+            "param_int_3": 2
         }
     ],
     "sprites": [
@@ -103,12 +104,12 @@
                     "transform": {
                         "position": {
                             "x": 0,
-                            "y": 0.5,
+                            "y": 0.8,
                             "z": 0.1
                         },
                         "scale": {
-                            "x": 1.0,
-                            "y": 1.0,
+                            "x": 1.25,
+                            "y": 1.25,
                             "z": 1
                         }
                     }

@@ -15,7 +15,7 @@
             "rarity": "common",
             "class": "@ClassSuccubus",
             "card_art": "@BloodCarnivalArt",
-            "cost": 0,
+            "cost": 1,
             "targets_room": true,
             "targetless": true,
             "pools": [

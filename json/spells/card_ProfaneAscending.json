@@ -8,8 +8,8 @@
                 "chinese": "亵渎晋升"
             },
             "descriptions": {
-                "english": "<b>Descend</b> an enemy unit to the bottom floor. Apply <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b>.",
-                "chinese": "使一个敌方单位<b>下降</b>到最底层，并施加 <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b>。"
+                "english": "<b>Descend</b> an enemy unit to the bottom floor. Apply <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b> and fully heal it.",
+                "chinese": "使一个敌方单位<b>下降</b>到最底层，施加 <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b>，并将其治疗至满。"
             },
             "card_type": "spell",
             "rarity": "common",
@@ -26,7 +26,8 @@
             ],
             "effects": [
                 "@PABump",
-                "@PAFrantic"
+                "@PAFrantic",
+                "@PAHeal"
             ]
         }
     ],
@@ -49,6 +50,13 @@
                     "count": 1
                 }
             ]
+        },
+        {
+            "id": "PAHeal",
+            "name": "CardEffectHeal",
+            "target_mode": "last_targeted_characters",
+            "target_team": "heroes",
+            "param_int": 999
         }
     ],
     "sprites": [

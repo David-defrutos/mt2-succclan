@@ -8,8 +8,8 @@
                 "chinese": "意识灼烧"
             },
             "descriptions": {
-                "english": "Apply <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> and [multistrike] [effect1.status0.power] to an enemy unit. Discard [effect2.power] <b>Obsessing Spark</b>.",
-                "chinese": "对一个敌方单位施加 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> 和[multistrike] [effect1.status0.power]。舍弃 [effect2.power] 张<b>欲望碎片</b>。"
+                "english": "Apply <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> and [multistrike] [effect1.status0.power] to an enemy unit.",
+                "chinese": "对一个敌方单位施加 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> 和[multistrike] [effect1.status0.power]。"
             },
             "card_type": "spell",
             "rarity": "uncommon",
@@ -23,8 +23,7 @@
             ],
             "effects": [
                 "@MindBurningFrantic",
-                "@MindBurningMulti",
-                "@MindBurningSpread"
+                "@MindBurningMulti"
             ]
         }
     ],
@@ -52,16 +51,6 @@
                     "count": 1
                 }
             ]
-        },
-        {
-            "id": "MindBurningSpread",
-            "name": {
-                "id": "@CardEffectRandomDiscardFromCardPile",
-                "mod_reference": "Conductor"
-            },
-            "target_mode": "hand",
-            "target_card_type": "blight",
-            "param_int": 2
         }
     ],
     "sprites": [

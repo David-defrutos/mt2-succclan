@@ -11,7 +11,7 @@
             "rarity": "rare",
             "class": "@ClassSuccubus",
             "card_art": "@ArroganceGhostCardArt",
-            "cost": 0,
+            "cost": 1,
             "targets_room": true,
             "pools": [
                 "MegaPool"
@@ -136,12 +136,12 @@
                     "transform": {
                         "position": {
                             "x": 0,
-                            "y": 0.4,
+                            "y": 0.8,
                             "z": 0.1
                         },
                         "scale": {
-                            "x": 1.0,
-                            "y": 1.0,
+                            "x": 1.25,
+                            "y": 1.25,
                             "z": 1
                         }
                     }

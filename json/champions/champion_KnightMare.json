@@ -17,6 +17,27 @@
             "effects": [
                 "@SpawnKnightMare"
             ]
+        },
+        {
+            "id": "KnightMarePsionicCollapse",
+            "names": {
+                "english": "Psionic Collapse",
+                "chinese": "灵能崩解"
+            },
+            "descriptions": {
+                "english": "Gain [undying] [effect0.status0.power], then this unit dies.",
+                "chinese": "获得 [undying] [effect0.status0.power]，然后本单位死亡。"
+            },
+            "card_art": "@KnightMareCardArt",
+            "card_type": "spell",
+            "is_an_ability": true,
+            "cooldown": 2,
+            "targetless": true,
+            "targets_room": false,
+            "effects": [
+                "@CollapseUndying",
+                "@CollapseKill"
+            ]
         }
     ],
     "characters": [
@@ -109,13 +130,26 @@
             "id": "EndlessBasicTrigger",
             "trigger": "on_death",
             "descriptions": {
-                "english": "<b>Psionic Burst [effect0.status0.power]</b>: create a copy of itself in this room with [multistrike] [effect2.upgrade.status0.power] and [stasis] [effect2.upgrade.status1.power].",
-                "chinese": "<b>灵能爆破 [effect0.status0.power]</b>：在本层创造一个自身的复制品，带有[multistrike] [effect2.upgrade.status0.power] 和[stasis] [effect2.upgrade.status1.power]。"
+                "english": "Gain [stasis] [effect0.status0.power]. Permanently +[effect2.upgrade.bonusdamage][attack] and +[effect2.upgrade.bonushp][health] for every [effect1.status0.power] <b>[mt2_succclan.Plugin_psionic]</b>.",
+                "chinese": "获得 [stasis] [effect0.status0.power]。每 [effect1.status0.power] 点 <b>[mt2_succclan.Plugin_psionic]</b>，永久 +[effect2.upgrade.bonusdamage][attack]，+[effect2.upgrade.bonushp][health]。"
             },
             "effects": [
-                "@EndlessBasicCheck",
-                "@EndlessBasicRemove",
-                "@EndlessBasicSpawn"
+                "@EndlessBasicStasisSelf",
+                "@PsionicRung1Check",
+                "@EndlessBasicGrow1",
+                "@PsionicRung1Spend",
+                "@PsionicRung2Check",
+                "@EndlessBasicGrow2",
+                "@PsionicRung2Spend",
+                "@PsionicRung3Check",
+                "@EndlessBasicGrow3",
+                "@PsionicRung3Spend",
+                "@PsionicRung4Check",
+                "@EndlessBasicGrow4",
+                "@PsionicRung4Spend",
+                "@PsionicRung5Check",
+                "@EndlessBasicGrow5",
+                "@PsionicRung5Spend"
             ],
             "additional_tooltips": [
                 "@PsionicBurstTooltip"
@@ -125,13 +159,26 @@
             "id": "EndlessPreTrigger",
             "trigger": "on_death",
             "descriptions": {
-                "english": "<b>Psionic Burst [effect0.status0.power]</b>: create a copy of itself in this room with [multistrike] [effect2.upgrade.status0.power], [stasis] [effect2.upgrade.status1.power] and [titanskin] [effect2.upgrade.status2.power].",
-                "chinese": "<b>灵能爆破 [effect0.status0.power]</b>：在本层创造一个自身的复制品，带有[multistrike] [effect2.upgrade.status0.power]、[stasis] [effect2.upgrade.status1.power] 和[titanskin] [effect2.upgrade.status2.power]。"
+                "english": "Gain [stasis] [effect0.status0.power]. Permanently +[effect2.upgrade.bonusdamage][attack] and +[effect2.upgrade.bonushp][health] for every [effect1.status0.power] <b>[mt2_succclan.Plugin_psionic]</b>.",
+                "chinese": "获得 [stasis] [effect0.status0.power]。每 [effect1.status0.power] 点 <b>[mt2_succclan.Plugin_psionic]</b>，永久 +[effect2.upgrade.bonusdamage][attack]，+[effect2.upgrade.bonushp][health]。"
             },
             "effects": [
-                "@EndlessPreCheck",
-                "@EndlessPreRemove",
-                "@EndlessPreSpawn"
+                "@EndlessPreStasisSelf",
+                "@PsionicRung1Check",
+                "@EndlessPreGrow1",
+                "@PsionicRung1Spend",
+                "@PsionicRung2Check",
+                "@EndlessPreGrow2",
+                "@PsionicRung2Spend",
+                "@PsionicRung3Check",
+                "@EndlessPreGrow3",
+                "@PsionicRung3Spend",
+                "@PsionicRung4Check",
+                "@EndlessPreGrow4",
+                "@PsionicRung4Spend",
+                "@PsionicRung5Check",
+                "@EndlessPreGrow5",
+                "@PsionicRung5Spend"
             ],
             "additional_tooltips": [
                 "@PsionicBurstTooltip"
@@ -141,13 +188,26 @@
             "id": "EndlessProTrigger",
             "trigger": "on_death",
             "descriptions": {
-                "english": "<b>Psionic Burst [effect0.status0.power]</b>: create a copy of itself in this room, ready to act, with [multistrike] [effect2.upgrade.status0.power] and [titanskin] [effect2.upgrade.status1.power].",
-                "chinese": "<b>灵能爆破 [effect0.status0.power]</b>：在本层立刻创造一个可行动的自身复制品，带有[multistrike] [effect2.upgrade.status0.power] 和[titanskin] [effect2.upgrade.status1.power]。"
+                "english": "Gain [stasis] [effect0.status0.power]. Permanently +[effect2.upgrade.bonusdamage][attack] and +[effect2.upgrade.bonushp][health] for every [effect1.status0.power] <b>[mt2_succclan.Plugin_psionic]</b>.",
+                "chinese": "获得 [stasis] [effect0.status0.power]。每 [effect1.status0.power] 点 <b>[mt2_succclan.Plugin_psionic]</b>，永久 +[effect2.upgrade.bonusdamage][attack]，+[effect2.upgrade.bonushp][health]。"
             },
             "effects": [
-                "@EndlessProCheck",
-                "@EndlessProRemove",
-                "@EndlessProSpawn"
+                "@EndlessProStasisSelf",
+                "@PsionicRung1Check",
+                "@EndlessProGrow1",
+                "@PsionicRung1Spend",
+                "@PsionicRung2Check",
+                "@EndlessProGrow2",
+                "@PsionicRung2Spend",
+                "@PsionicRung3Check",
+                "@EndlessProGrow3",
+                "@PsionicRung3Spend",
+                "@PsionicRung4Check",
+                "@EndlessProGrow4",
+                "@PsionicRung4Spend",
+                "@PsionicRung5Check",
+                "@EndlessProGrow5",
+                "@PsionicRung5Spend"
             ],
             "additional_tooltips": [
                 "@PsionicBurstTooltip"
@@ -228,6 +288,18 @@
             "hide_visual_and_ignore_silence": true,
             "effects": [
                 "@EndlessClearStasis"
+            ]
+        },
+        {
+            "id": "EndlessReviveTrigger",
+            "trigger": "on_reanimated",
+            "descriptions": {
+                "english": "Heal to full and gain [multistrike] [effect1.status0.power].",
+                "chinese": "回复至满，并获得 [multistrike] [effect1.status0.power]。"
+            },
+            "effects": [
+                "@EndlessReviveHeal",
+                "@EndlessReviveMulti"
             ]
         }
     ],
@@ -405,120 +477,6 @@
             "target_mode": "self",
             "target_team": "monsters",
             "param_int": 1
-        },
-        {
-            "id": "EndlessBasicCheck",
-            "name": {
-                "id": "@CardEffectRequireStatusThreshold",
-                "mod_reference": "Conductor"
-            },
-            "target_mode": "self",
-            "target_team": "monsters",
-            "should_test": true,
-            "should_cancel_subsequent_effects_if_test_fails": true,
-            "param_bool": true,
-            "param_status_effects": [
-                {
-                    "status": "@psionic",
-                    "count": 4
-                }
-            ]
-        },
-        {
-            "id": "EndlessBasicRemove",
-            "name": "CardEffectRemoveStatusEffect",
-            "target_mode": "self",
-            "target_team": "monsters",
-            "param_status_effects": [
-                {
-                    "status": "@psionic",
-                    "count": 4
-                }
-            ]
-        },
-        {
-            "id": "EndlessBasicSpawn",
-            "name": "CardEffectSpawnMonster",
-            "target_mode": "room",
-            "target_team": "monsters",
-            "param_character": "@KnightMare",
-            "param_upgrade": "@EndlessBasicMultiUpgrade"
-        },
-        {
-            "id": "EndlessPreCheck",
-            "name": {
-                "id": "@CardEffectRequireStatusThreshold",
-                "mod_reference": "Conductor"
-            },
-            "target_mode": "self",
-            "target_team": "monsters",
-            "should_test": true,
-            "should_cancel_subsequent_effects_if_test_fails": true,
-            "param_bool": true,
-            "param_status_effects": [
-                {
-                    "status": "@psionic",
-                    "count": 4
-                }
-            ]
-        },
-        {
-            "id": "EndlessPreRemove",
-            "name": "CardEffectRemoveStatusEffect",
-            "target_mode": "self",
-            "target_team": "monsters",
-            "param_status_effects": [
-                {
-                    "status": "@psionic",
-                    "count": 4
-                }
-            ]
-        },
-        {
-            "id": "EndlessPreSpawn",
-            "name": "CardEffectSpawnMonster",
-            "target_mode": "room",
-            "target_team": "monsters",
-            "param_character": "@KnightMare",
-            "param_upgrade": "@EndlessPreMultiUpgrade"
-        },
-        {
-            "id": "EndlessProCheck",
-            "name": {
-                "id": "@CardEffectRequireStatusThreshold",
-                "mod_reference": "Conductor"
-            },
-            "target_mode": "self",
-            "target_team": "monsters",
-            "should_test": true,
-            "should_cancel_subsequent_effects_if_test_fails": true,
-            "param_bool": true,
-            "param_status_effects": [
-                {
-                    "status": "@psionic",
-                    "count": 4
-                }
-            ]
-        },
-        {
-            "id": "EndlessProRemove",
-            "name": "CardEffectRemoveStatusEffect",
-            "target_mode": "self",
-            "target_team": "monsters",
-            "param_status_effects": [
-                {
-                    "status": "@psionic",
-                    "count": 4
-                }
-            ]
-        },
-        {
-            "id": "EndlessProSpawn",
-            "name": "CardEffectSpawnMonster",
-            "target_mode": "room",
-            "target_team": "monsters",
-            "param_character": "@KnightMare",
-            "param_upgrade": "@EndlessProMultiUpgrade"
         },
         {
             "id": "IllusionBasicAttack",
@@ -717,6 +675,349 @@
                     "count": 99
                 }
             ]
+        },
+        {
+            "id": "EndlessBasicStasisSelf",
+            "name": "CardEffectAddStatusEffect",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_status_effects": [
+                {
+                    "status": "untouchable",
+                    "count": 1
+                }
+            ]
+        },
+        {
+            "id": "EndlessPreStasisSelf",
+            "name": "CardEffectAddStatusEffect",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_status_effects": [
+                {
+                    "status": "untouchable",
+                    "count": 1
+                }
+            ]
+        },
+        {
+            "id": "CollapseUndying",
+            "name": "CardEffectAddStatusEffect",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_status_effects": [
+                {
+                    "status": "undying",
+                    "count": 1
+                }
+            ]
+        },
+        {
+            "id": "EndlessReviveHeal",
+            "name": "CardEffectHeal",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_int": 999
+        },
+        {
+            "id": "CollapseKill",
+            "name": "CardEffectKill",
+            "target_mode": "self",
+            "target_team": "monsters"
+        },
+        {
+            "id": "EndlessProStasisSelf",
+            "name": "CardEffectAddStatusEffect",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_status_effects": [
+                {
+                    "status": "untouchable",
+                    "count": 1
+                }
+            ]
+        },
+        {
+            "id": "PsionicRung1Check",
+            "name": {
+                "id": "@CardEffectRequireStatusThreshold",
+                "mod_reference": "Conductor"
+            },
+            "target_mode": "self",
+            "target_team": "monsters",
+            "should_test": true,
+            "should_cancel_subsequent_effects_if_test_fails": true,
+            "param_bool": true,
+            "param_status_effects": [
+                {
+                    "status": "@psionic",
+                    "count": 4
+                }
+            ]
+        },
+        {
+            "id": "PsionicRung1Spend",
+            "name": "CardEffectRemoveStatusEffect",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_status_effects": [
+                {
+                    "status": "@psionic",
+                    "count": 4
+                }
+            ]
+        },
+        {
+            "id": "PsionicRung2Check",
+            "name": {
+                "id": "@CardEffectRequireStatusThreshold",
+                "mod_reference": "Conductor"
+            },
+            "target_mode": "self",
+            "target_team": "monsters",
+            "should_test": true,
+            "should_cancel_subsequent_effects_if_test_fails": true,
+            "param_bool": true,
+            "param_status_effects": [
+                {
+                    "status": "@psionic",
+                    "count": 4
+                }
+            ]
+        },
+        {
+            "id": "PsionicRung2Spend",
+            "name": "CardEffectRemoveStatusEffect",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_status_effects": [
+                {
+                    "status": "@psionic",
+                    "count": 4
+                }
+            ]
+        },
+        {
+            "id": "PsionicRung3Check",
+            "name": {
+                "id": "@CardEffectRequireStatusThreshold",
+                "mod_reference": "Conductor"
+            },
+            "target_mode": "self",
+            "target_team": "monsters",
+            "should_test": true,
+            "should_cancel_subsequent_effects_if_test_fails": true,
+            "param_bool": true,
+            "param_status_effects": [
+                {
+                    "status": "@psionic",
+                    "count": 4
+                }
+            ]
+        },
+        {
+            "id": "PsionicRung3Spend",
+            "name": "CardEffectRemoveStatusEffect",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_status_effects": [
+                {
+                    "status": "@psionic",
+                    "count": 4
+                }
+            ]
+        },
+        {
+            "id": "PsionicRung4Check",
+            "name": {
+                "id": "@CardEffectRequireStatusThreshold",
+                "mod_reference": "Conductor"
+            },
+            "target_mode": "self",
+            "target_team": "monsters",
+            "should_test": true,
+            "should_cancel_subsequent_effects_if_test_fails": true,
+            "param_bool": true,
+            "param_status_effects": [
+                {
+                    "status": "@psionic",
+                    "count": 4
+                }
+            ]
+        },
+        {
+            "id": "PsionicRung4Spend",
+            "name": "CardEffectRemoveStatusEffect",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_status_effects": [
+                {
+                    "status": "@psionic",
+                    "count": 4
+                }
+            ]
+        },
+        {
+            "id": "PsionicRung5Check",
+            "name": {
+                "id": "@CardEffectRequireStatusThreshold",
+                "mod_reference": "Conductor"
+            },
+            "target_mode": "self",
+            "target_team": "monsters",
+            "should_test": true,
+            "should_cancel_subsequent_effects_if_test_fails": true,
+            "param_bool": true,
+            "param_status_effects": [
+                {
+                    "status": "@psionic",
+                    "count": 4
+                }
+            ]
+        },
+        {
+            "id": "PsionicRung5Spend",
+            "name": "CardEffectRemoveStatusEffect",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_status_effects": [
+                {
+                    "status": "@psionic",
+                    "count": 4
+                }
+            ]
+        },
+        {
+            "id": "EndlessBasicGrow1",
+            "name": "CardEffectAddCardUpgradeToUnits",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_upgrade": "@KnightMareGrowth11",
+            "param_int_3": 2
+        },
+        {
+            "id": "EndlessBasicGrow2",
+            "name": "CardEffectAddCardUpgradeToUnits",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_upgrade": "@KnightMareGrowth11",
+            "param_int_3": 2
+        },
+        {
+            "id": "EndlessBasicGrow3",
+            "name": "CardEffectAddCardUpgradeToUnits",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_upgrade": "@KnightMareGrowth11",
+            "param_int_3": 2
+        },
+        {
+            "id": "EndlessBasicGrow4",
+            "name": "CardEffectAddCardUpgradeToUnits",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_upgrade": "@KnightMareGrowth11",
+            "param_int_3": 2
+        },
+        {
+            "id": "EndlessBasicGrow5",
+            "name": "CardEffectAddCardUpgradeToUnits",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_upgrade": "@KnightMareGrowth11",
+            "param_int_3": 2
+        },
+        {
+            "id": "EndlessPreGrow1",
+            "name": "CardEffectAddCardUpgradeToUnits",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_upgrade": "@KnightMareGrowth12",
+            "param_int_3": 2
+        },
+        {
+            "id": "EndlessPreGrow2",
+            "name": "CardEffectAddCardUpgradeToUnits",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_upgrade": "@KnightMareGrowth12",
+            "param_int_3": 2
+        },
+        {
+            "id": "EndlessPreGrow3",
+            "name": "CardEffectAddCardUpgradeToUnits",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_upgrade": "@KnightMareGrowth12",
+            "param_int_3": 2
+        },
+        {
+            "id": "EndlessPreGrow4",
+            "name": "CardEffectAddCardUpgradeToUnits",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_upgrade": "@KnightMareGrowth12",
+            "param_int_3": 2
+        },
+        {
+            "id": "EndlessPreGrow5",
+            "name": "CardEffectAddCardUpgradeToUnits",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_upgrade": "@KnightMareGrowth12",
+            "param_int_3": 2
+        },
+        {
+            "id": "EndlessProGrow1",
+            "name": "CardEffectAddCardUpgradeToUnits",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_upgrade": "@KnightMareGrowth22",
+            "param_int_3": 2
+        },
+        {
+            "id": "EndlessProGrow2",
+            "name": "CardEffectAddCardUpgradeToUnits",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_upgrade": "@KnightMareGrowth22",
+            "param_int_3": 2
+        },
+        {
+            "id": "EndlessProGrow3",
+            "name": "CardEffectAddCardUpgradeToUnits",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_upgrade": "@KnightMareGrowth22",
+            "param_int_3": 2
+        },
+        {
+            "id": "EndlessProGrow4",
+            "name": "CardEffectAddCardUpgradeToUnits",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_upgrade": "@KnightMareGrowth22",
+            "param_int_3": 2
+        },
+        {
+            "id": "EndlessProGrow5",
+            "name": "CardEffectAddCardUpgradeToUnits",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_upgrade": "@KnightMareGrowth22",
+            "param_int_3": 2
+        },
+        {
+            "id": "EndlessReviveMulti",
+            "name": "CardEffectAddStatusEffect",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_status_effects": [
+                {
+                    "status": "multistrike",
+                    "count": 1
+                }
+            ]
         }
     ],
     "upgrades": [
@@ -760,22 +1061,6 @@
             ]
         },
         {
-            "id": "EndlessBasicMultiUpgrade",
-            "status_effect_upgrades": [
-                {
-                    "status": "multistrike",
-                    "count": 1
-                },
-                {
-                    "status": "untouchable",
-                    "count": 1
-                }
-            ],
-            "trigger_upgrades": [
-                "@EndlessClearStasisTrigger"
-            ]
-        },
-        {
             "id": "upg_EndlessBasic",
             "titles": {
                 "english": "Endless",
@@ -785,28 +1070,11 @@
             "bonus_hp": 0,
             "use_upgrade_highlight_tags": true,
             "trigger_upgrades": [
-                "@EndlessBasicTrigger"
-            ]
-        },
-        {
-            "id": "EndlessPreMultiUpgrade",
-            "status_effect_upgrades": [
-                {
-                    "status": "multistrike",
-                    "count": 1
-                },
-                {
-                    "status": "untouchable",
-                    "count": 1
-                },
-                {
-                    "status": "titanskin",
-                    "count": 1
-                }
-            ],
-            "trigger_upgrades": [
+                "@EndlessBasicTrigger",
+                "@EndlessReviveTrigger",
                 "@EndlessClearStasisTrigger"
-            ]
+            ],
+            "ability_upgrade": "@KnightMarePsionicCollapse"
         },
         {
             "id": "upg_EndlessPre",
@@ -818,21 +1086,11 @@
             "bonus_hp": 5,
             "use_upgrade_highlight_tags": true,
             "trigger_upgrades": [
-                "@EndlessPreTrigger"
-            ]
-        },
-        {
-            "id": "EndlessProMultiUpgrade",
-            "status_effect_upgrades": [
-                {
-                    "status": "multistrike",
-                    "count": 1
-                },
-                {
-                    "status": "titanskin",
-                    "count": 1
-                }
-            ]
+                "@EndlessPreTrigger",
+                "@EndlessReviveTrigger",
+                "@EndlessClearStasisTrigger"
+            ],
+            "ability_upgrade": "@KnightMarePsionicCollapse"
         },
         {
             "id": "upg_EndlessPro",
@@ -844,8 +1102,11 @@
             "bonus_hp": 10,
             "use_upgrade_highlight_tags": true,
             "trigger_upgrades": [
-                "@EndlessProTrigger"
-            ]
+                "@EndlessProTrigger",
+                "@EndlessReviveTrigger",
+                "@EndlessClearStasisTrigger"
+            ],
+            "ability_upgrade": "@KnightMarePsionicCollapse"
         },
         {
             "id": "upg_IllusionBasic",
@@ -885,6 +1146,69 @@
             "trigger_upgrades": [
                 "@IllusionProTrigger"
             ]
+        },
+        {
+            "id": "KnightMareGrowth11",
+            "bonus_damage": 1,
+            "bonus_hp": 1
+        },
+        {
+            "id": "KnightMareGrowth12",
+            "bonus_damage": 1,
+            "bonus_hp": 2
+        },
+        {
+            "id": "KnightMareGrowth22",
+            "bonus_damage": 2,
+            "bonus_hp": 2
+        },
+        {
+            "id": "KnightMarePermanent",
+            "bonus_damage": 2,
+            "bonus_hp": 2
+        },
+        {
+            "id": "EndlessBasicMultiUpgrade",
+            "status_effect_upgrades": [
+                {
+                    "status": "multistrike",
+                    "count": 1
+                },
+                {
+                    "status": "untouchable",
+                    "count": 1
+                }
+            ]
+        },
+        {
+            "id": "EndlessPreMultiUpgrade",
+            "status_effect_upgrades": [
+                {
+                    "status": "multistrike",
+                    "count": 1
+                },
+                {
+                    "status": "untouchable",
+                    "count": 1
+                },
+                {
+                    "status": "titanskin",
+                    "count": 1
+                }
+            ]
+        },
+        {
+            "id": "EndlessProMultiUpgrade",
+            "status_effect_upgrades": [
+                {
+                    "status": "multistrike",
+                    "count": 1
+                },
+                {
+                    "status": "titanskin",
+                    "count": 1
+                }
+            ]
         }
     ],
     "sprites": [
@@ -920,8 +1244,8 @@
                             "z": 0.1
                         },
                         "scale": {
-                            "x": 1.0,
-                            "y": 1.0,
+                            "x": 1.25,
+                            "y": 1.25,
                             "z": 1
                         }
                     }

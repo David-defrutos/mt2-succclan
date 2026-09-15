@@ -8,14 +8,14 @@
                 "chinese": "支配他人"
             },
             "descriptions": {
-                "english": "<b>Descend</b> a unit and apply <b>[mt2_succclan.Plugin_frantic] [effect2.status0.power]</b>. Add 1 <b>Obsessing Spark</b> with [consume] to your hand.",
-                "chinese": "使一个单位<b>下降</b>并施加 <b>[mt2_succclan.Plugin_frantic] [effect2.status0.power]</b>。将 1 张带有[consume]的<b>欲望碎片</b>加入手牌。"
+                "english": "<b>Descend</b> a unit, apply <b>[mt2_succclan.Plugin_frantic] [effect2.status0.power]</b> and fully heal it. Add 1 <b>Obsessing Spark</b> with [consume] to your hand.",
+                "chinese": "使一个单位<b>下降</b>，施加 <b>[mt2_succclan.Plugin_frantic] [effect2.status0.power]</b>，并将其治疗至满。将 1 张带有[consume]的<b>欲望碎片</b>加入手牌。"
             },
             "card_type": "spell",
             "rarity": "common",
             "class": "@ClassSuccubus",
             "card_art": "@MindDominationArt",
-            "cost": 0,
+            "cost": 2,
             "targets_room": true,
             "targetless": false,
             "pools": [
@@ -24,7 +24,8 @@
             "effects": [
                 "@MindDominationShard",
                 "@MindDominationBump",
-                "@MindDominationFrantic"
+                "@MindDominationFrantic",
+                "@MindDominationHeal"
             ]
         }
     ],
@@ -57,6 +58,13 @@
                     "count": 1
                 }
             ]
+        },
+        {
+            "id": "MindDominationHeal",
+            "name": "CardEffectHeal",
+            "target_mode": "last_targeted_characters",
+            "target_team": "both",
+            "param_int": 999
         }
     ],
     "sprites": [

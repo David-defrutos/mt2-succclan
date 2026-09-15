@@ -9,8 +9,8 @@
                 "chinese": "下界之花"
             },
             "descriptions": {
-                "english": "When <b>[mt2_succclan.Plugin_frantic]</b> is applied to a unit, also apply [buff] [effect0.status0.power].",
-                "chinese": "施加 <b>[mt2_succclan.Plugin_frantic]</b> 时，同时施加[buff] [effect0.status0.power]。"
+                "english": "When <b>[mt2_succclan.Plugin_frantic]</b> is applied to a unit, also apply [rage] [effect0.status0.power].",
+                "chinese": "施加 <b>[mt2_succclan.Plugin_frantic]</b> 时，同时施加[rage] [effect0.status0.power]。"
             },
             "disallow_in_deployment": false,
             "relic_effects": [

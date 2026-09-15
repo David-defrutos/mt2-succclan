@@ -9,7 +9,7 @@ namespace mt2_succclan.Plugin
     /// Frantic: la unidad enloquece. En su turno NO ataca al enemigo; en su lugar golpea
     /// a un aliado de su propia sala con su propio ataque, y repite el golpe una vez por
     /// cada carga de multistrike. Si no le queda ningun aliado, se golpea a si misma.
-    /// Pierde una carga al final de cada turno.
+    /// Pierde una carga AL DISPARARSE, no al final del turno.
     ///
     /// Port literal del StatusEffectFrantic de SuccClan (Monster Train 1), adaptado al
     /// API de MT2:
@@ -19,6 +19,15 @@ namespace mt2_succclan.Plugin
     ///     existen, ahora es affectedVfx. Ver StatusEffectRecoilState de Conductor.
     ///   - canAttackOrHeal sigue estando en OutputTriggerParams; verificado en el
     ///     ensamblado del juego (MonsterTrain2.Api 2.1.20112166).
+    ///
+    /// Diferencia deliberada con MT1 (15-sep-2026): alli la carga se perdia al final del
+    /// turno (remove_stack_at_end_of_turn). Eso hacia inutil cualquier fuente que aplicase
+    /// Frantic DURANTE el combate -- el caso de Chaos Creation, que lo pone en su on_hit:
+    /// el heroe ya habia actuado, y la carga se iba antes de llegar a su siguiente turno.
+    /// Ahora la carga se consume aqui, al dispararse, asi que un Frantic aplicado tarde
+    /// espera al turno siguiente y se gasta cuando de verdad hace algo.
+    /// El JSON lleva remove_stack_at_end_of_turn: false; si se vuelve a poner en true, el
+    /// estado se gastaria dos veces.
     ///
     /// La etapa (on_combat_turn_spark) se declara en json/status_effects/frantic.json.
     /// Esa etapa se invoca dentro de CombatManager.RunUnitTurn, igual que en MT1.
@@ -80,6 +89,9 @@ namespace mt2_succclan.Plugin
                         relicState = inputTriggerParams.suppressingRelic,
                     });
             }
+
+            // La carga se gasta aqui, al dispararse, no al final del turno.
+            thisCharacter.RemoveStatusEffect(GetStatusId(), 1, true);
 
             // Lo que hace que Frantic sea un debuff de verdad: cancela el ataque normal.
             outputTriggerParams.canAttackOrHeal = false;

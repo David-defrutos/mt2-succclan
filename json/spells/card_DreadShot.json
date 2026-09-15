@@ -12,18 +12,17 @@
                 "chinese": "造成 [effect0.power] 点伤害。"
             },
             "card_type": "spell",
-            "rarity": "common",
+            "rarity": "uncommon",
             "class": "@ClassSuccubus",
             "card_art": "@DreadShotArt",
-            "cost": 1,
+            "cost": 2,
             "targets_room": true,
             "targetless": false,
             "pools": [
                 "MegaPool"
             ],
             "effects": [
-                "@DreadShotDamage",
-                "@DreadShotFrantic"
+                "@DreadShotDamage"
             ],
             "triggers": [
                 "@DreadShotOnKill"
@@ -48,7 +47,7 @@
             "id": "DreadShotDamage",
             "name": "CardEffectDamage",
             "target_mode": "drop_target_character",
-            "target_team": "both",
+            "target_team": "heroes",
             "param_int": 2
         },
         {

@@ -8,14 +8,14 @@
                 "chinese": "活力汲取"
             },
             "descriptions": {
-                "english": "Friendly units gain [regen] and [buff] equal to the number of <b>[mt2_succclan.Plugin_frantic]</b> in this room.",
-                "chinese": "友方单位获得等同于本层 <b>[mt2_succclan.Plugin_frantic]</b> 层数的[regen]和[buff]。"
+                "english": "Friendly units gain [regen] and [rage] equal to the number of <b>[mt2_succclan.Plugin_frantic]</b> in this room.",
+                "chinese": "友方单位获得等同于本层 <b>[mt2_succclan.Plugin_frantic]</b> 层数的[regen]和[rage]。"
             },
             "card_type": "spell",
-            "rarity": "rare",
+            "rarity": "common",
             "class": "@ClassSuccubus",
             "card_art": "@VitalityExtractionArt",
-            "cost": 2,
+            "cost": 0,
             "targets_room": true,
             "targetless": true,
             "pools": [

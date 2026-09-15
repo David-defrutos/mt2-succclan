@@ -8,8 +8,8 @@
                 "chinese": "危险的游戏"
             },
             "descriptions": {
-                "english": "Apply <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> and +[effect1.power][attack] to enemy units.",
-                "chinese": "对所有敌方单位施加 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> 和 +[effect1.power][attack]。"
+                "english": "Apply <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>, +[effect1.power][attack] and [armor] [effect2.status0.power] to enemy units.",
+                "chinese": "对所有敌方单位施加 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>、+[effect1.power][attack] 和[armor] [effect2.status0.power]。"
             },
             "card_type": "spell",
             "rarity": "uncommon",
@@ -23,7 +23,8 @@
             ],
             "effects": [
                 "@DangerousGameFrantic",
-                "@DangerousGameAttack"
+                "@DangerousGameAttack",
+                "@DangerousGameArmor"
             ]
         }
     ],
@@ -46,6 +47,18 @@
             "target_mode": "room",
             "target_team": "heroes",
             "param_int": 10
+        },
+        {
+            "id": "DangerousGameArmor",
+            "name": "CardEffectAddStatusEffect",
+            "target_mode": "room",
+            "target_team": "heroes",
+            "param_status_effects": [
+                {
+                    "status": "armor",
+                    "count": 30
+                }
+            ]
         }
     ],
     "sprites": [

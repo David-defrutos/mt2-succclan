@@ -35,7 +35,7 @@
         {
             "id": "PlagueBoostEmber",
             "name": "CardEffectGainEnergy",
-            "target_mode": "self",
+            "target_mode": "room",
             "target_team": "none",
             "param_int": 0
         }

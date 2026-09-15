@@ -13,12 +13,12 @@
                 "chinese": "<nobr>疯狂 {0}</nobr>"
             },
             "card_tooltips": {
-                "english": "Unit attacks its own front unit instead of attacking. Decreases every turn.",
-                "chinese": "单位不再攻击，转而攻击己方前排单位。每回合减少。"
+                "english": "Unit attacks its own front unit instead of attacking. Consumed when it triggers.",
+                "chinese": "单位不再攻击，转而攻击己方前排单位。触发后消耗。"
             },
             "character_tooltips": {
-                "english": "Attacks its own front unit instead of attacking. Decreases every turn.",
-                "chinese": "不再攻击，转而攻击己方前排单位。每回合减少。"
+                "english": "Attacks its own front unit instead of attacking. Consumed when it triggers.",
+                "chinese": "不再攻击，转而攻击己方前排单位。触发后消耗。"
             },
             "replacement_texts": {
                 "english": "<b>Frantic</b>",
@@ -31,7 +31,7 @@
             "display_category": "negative",
             "trigger_stage": "on_combat_turn_spark",
             "is_stackable": false,
-            "remove_stack_at_end_of_turn": true,
+            "remove_stack_at_end_of_turn": false,
             "exclude_monster_propagation": true,
             "icon": "@Frantic"
         }
