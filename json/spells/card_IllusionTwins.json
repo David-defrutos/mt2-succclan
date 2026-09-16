@@ -32,11 +32,16 @@
     "effects": [
         {
             "id": "IllusionTwinsCopy",
-            "name": "CardEffectCopyUnits",
+            "name": "@CardEffectCopyUnitsWithStatus",
             "target_mode": "drop_target_character",
             "target_team": "monsters",
             "param_int": 1,
-            "param_upgrade": "@IllusionTwinsFragile"
+            "param_status_effects": [
+                {
+                    "status": "fragile",
+                    "count": 1
+                }
+            ]
         }
     ],
     "sprites": [
