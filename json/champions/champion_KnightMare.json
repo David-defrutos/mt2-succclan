@@ -217,15 +217,16 @@
             "id": "IllusionBasicTrigger",
             "trigger": "on_hit",
             "descriptions": {
-                "english": "Gain +[effect0.power][attack] and +[effect1.power][health]. <b>Psionic Burst [effect2.status0.power]</b>: gain [lifesteal] [effect4.status0.power].",
-                "chinese": "获得 +[effect0.power][attack]，+[effect1.power][health]。<b>灵能爆破 [effect2.status0.power]</b>：获得[lifesteal] [effect4.status0.power]。"
+                "english": "Gain +[effect0.power][attack] and +[effect1.power][health]. <b>Psionic Burst [effect2.status0.power]</b>: gain [lifesteal] [effect4.status0.power] and [spikes] [effect5.status0.power].",
+                "chinese": "获得 +[effect0.power][attack]，+[effect1.power][health]。<b>灵能爆破 [effect2.status0.power]</b>：获得[lifesteal] [effect4.status0.power]和[spikes] [effect5.status0.power]。"
             },
             "effects": [
                 "@IllusionBasicAttack",
                 "@IllusionBasicHealth",
                 "@IllusionBasicCheck",
                 "@IllusionBasicRemove",
-                "@IllusionBasicLifesteal"
+                "@IllusionBasicLifesteal",
+                "@IllusionBasicSpikes"
             ],
             "additional_tooltips": [
                 "@PsionicBurstTooltip"
@@ -235,15 +236,16 @@
             "id": "IllusionPreTrigger",
             "trigger": "on_hit",
             "descriptions": {
-                "english": "Gain +[effect0.power][attack] and +[effect1.power][health]. <b>Psionic Burst [effect2.status0.power]</b>: gain [lifesteal] [effect4.status0.power].",
-                "chinese": "获得 +[effect0.power][attack]，+[effect1.power][health]。<b>灵能爆破 [effect2.status0.power]</b>：获得[lifesteal] [effect4.status0.power]。"
+                "english": "Gain +[effect0.power][attack] and +[effect1.power][health]. <b>Psionic Burst [effect2.status0.power]</b>: gain [lifesteal] [effect4.status0.power] and [spikes] [effect5.status0.power].",
+                "chinese": "获得 +[effect0.power][attack]，+[effect1.power][health]。<b>灵能爆破 [effect2.status0.power]</b>：获得[lifesteal] [effect4.status0.power]和[spikes] [effect5.status0.power]。"
             },
             "effects": [
                 "@IllusionPreAttack",
                 "@IllusionPreHealth",
                 "@IllusionPreCheck",
                 "@IllusionPreRemove",
-                "@IllusionPreLifesteal"
+                "@IllusionPreLifesteal",
+                "@IllusionPreSpikes"
             ],
             "additional_tooltips": [
                 "@PsionicBurstTooltip"
@@ -253,15 +255,16 @@
             "id": "IllusionProTrigger",
             "trigger": "on_hit",
             "descriptions": {
-                "english": "Gain +[effect0.power][attack] and +[effect1.power][health]. <b>Psionic Burst [effect2.status0.power]</b>: gain [lifesteal] [effect4.status0.power].",
-                "chinese": "获得 +[effect0.power][attack]，+[effect1.power][health]。<b>灵能爆破 [effect2.status0.power]</b>：获得[lifesteal] [effect4.status0.power]。"
+                "english": "Gain +[effect0.power][attack] and +[effect1.power][health]. <b>Psionic Burst [effect2.status0.power]</b>: gain [lifesteal] [effect4.status0.power] and [spikes] [effect5.status0.power].",
+                "chinese": "获得 +[effect0.power][attack]，+[effect1.power][health]。<b>灵能爆破 [effect2.status0.power]</b>：获得[lifesteal] [effect4.status0.power]和[spikes] [effect5.status0.power]。"
             },
             "effects": [
                 "@IllusionProAttack",
                 "@IllusionProHealth",
                 "@IllusionProCheck",
                 "@IllusionProRemove",
-                "@IllusionProLifesteal"
+                "@IllusionProLifesteal",
+                "@IllusionProSpikes"
             ],
             "additional_tooltips": [
                 "@PsionicBurstTooltip"
@@ -483,7 +486,7 @@
             "name": "CardEffectBuffDamage",
             "target_mode": "self",
             "target_team": "monsters",
-            "param_int": 2
+            "param_int": 1
         },
         {
             "id": "IllusionBasicHealth",
@@ -506,7 +509,7 @@
             "param_status_effects": [
                 {
                     "status": "@psionic",
-                    "count": 1
+                    "count": 4
                 }
             ]
         },
@@ -518,7 +521,7 @@
             "param_status_effects": [
                 {
                     "status": "@psionic",
-                    "count": 1
+                    "count": 4
                 }
             ]
         },
@@ -535,18 +538,30 @@
             ]
         },
         {
+            "id": "IllusionBasicSpikes",
+            "name": "CardEffectAddStatusEffect",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_status_effects": [
+                {
+                    "status": "spikes",
+                    "count": 1
+                }
+            ]
+        },
+        {
             "id": "IllusionPreAttack",
             "name": "CardEffectBuffDamage",
             "target_mode": "self",
             "target_team": "monsters",
-            "param_int": 3
+            "param_int": 2
         },
         {
             "id": "IllusionPreHealth",
             "name": "CardEffectBuffMaxHealth",
             "target_mode": "self",
             "target_team": "monsters",
-            "param_int": 5
+            "param_int": 4
         },
         {
             "id": "IllusionPreCheck",
@@ -562,7 +577,7 @@
             "param_status_effects": [
                 {
                     "status": "@psionic",
-                    "count": 1
+                    "count": 4
                 }
             ]
         },
@@ -574,7 +589,7 @@
             "param_status_effects": [
                 {
                     "status": "@psionic",
-                    "count": 1
+                    "count": 4
                 }
             ]
         },
@@ -591,18 +606,30 @@
             ]
         },
         {
+            "id": "IllusionPreSpikes",
+            "name": "CardEffectAddStatusEffect",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_status_effects": [
+                {
+                    "status": "spikes",
+                    "count": 2
+                }
+            ]
+        },
+        {
             "id": "IllusionProAttack",
             "name": "CardEffectBuffDamage",
             "target_mode": "self",
             "target_team": "monsters",
-            "param_int": 5
+            "param_int": 3
         },
         {
             "id": "IllusionProHealth",
             "name": "CardEffectBuffMaxHealth",
             "target_mode": "self",
             "target_team": "monsters",
-            "param_int": 8
+            "param_int": 5
         },
         {
             "id": "IllusionProCheck",
@@ -618,7 +645,7 @@
             "param_status_effects": [
                 {
                     "status": "@psionic",
-                    "count": 1
+                    "count": 4
                 }
             ]
         },
@@ -630,7 +657,7 @@
             "param_status_effects": [
                 {
                     "status": "@psionic",
-                    "count": 1
+                    "count": 4
                 }
             ]
         },
@@ -643,6 +670,18 @@
                 {
                     "status": "lifesteal",
                     "count": 1
+                }
+            ]
+        },
+        {
+            "id": "IllusionProSpikes",
+            "name": "CardEffectAddStatusEffect",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_status_effects": [
+                {
+                    "status": "spikes",
+                    "count": 3
                 }
             ]
         },
