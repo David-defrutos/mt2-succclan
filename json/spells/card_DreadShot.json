@@ -12,7 +12,7 @@
                 "chinese": "造成 [effect0.power] 点伤害。"
             },
             "card_type": "spell",
-            "rarity": "uncommon",
+            "rarity": "common",
             "class": "@ClassSuccubus",
             "card_art": "@DreadShotArt",
             "cost": 2,

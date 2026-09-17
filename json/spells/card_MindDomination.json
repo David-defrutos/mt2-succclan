@@ -15,7 +15,7 @@
             "rarity": "common",
             "class": "@ClassSuccubus",
             "card_art": "@MindDominationArt",
-            "cost": 2,
+            "cost": 1,
             "targets_room": true,
             "targetless": false,
             "pools": [
