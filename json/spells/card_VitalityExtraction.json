@@ -8,8 +8,8 @@
                 "chinese": "活力汲取"
             },
             "descriptions": {
-                "english": "Friendly units gain [regen] and [rage] equal to the number of <b>[mt2_succclan.Plugin_frantic]</b> in this room.",
-                "chinese": "友方单位获得等同于本层 <b>[mt2_succclan.Plugin_frantic]</b> 层数的[regen]和[rage]。"
+                "english": "Friendly units gain [regen] and [rage] equal to the number of <b>[mt2_succclan.Plugin_frantic]</b> plus <b>[mt2_succclan.Plugin_psionic]</b> in this room.",
+                "chinese": "友方单位获得等同于本层 <b>[mt2_succclan.Plugin_frantic]</b> 与 <b>[mt2_succclan.Plugin_psionic]</b> 层数之和的[regen]和[rage]。"
             },
             "card_type": "spell",
             "rarity": "common",
@@ -22,38 +22,82 @@
                 "MegaPool"
             ],
             "traits": [
-                "@Consume",
-                "@VitalityScalingRegen",
-                "@VitalityScalingBuff"
+                "@Consume"
             ],
             "effects": [
-                "@VitalityRegen",
-                "@VitalityBuff"
+                "@VitalityRegenFrantic",
+                "@VitalityRegenPsionic",
+                "@VitalityBuffFrantic",
+                "@VitalityBuffPsionic"
             ]
         }
     ],
     "effects": [
         {
-            "id": "VitalityRegen",
-            "name": "CardEffectAddStatusEffect",
+            "id": "VitalityRegenFrantic",
+            "name": "CardEffectAddStatusEffectPerOtherEffect",
             "target_mode": "room",
             "target_team": "monsters",
+            "param_int": 1,
             "param_status_effects": [
                 {
                     "status": "regen",
-                    "count": 0
+                    "count": 1
+                },
+                {
+                    "status": "@frantic",
+                    "count": 1
                 }
             ]
         },
         {
-            "id": "VitalityBuff",
-            "name": "CardEffectAddStatusEffect",
+            "id": "VitalityRegenPsionic",
+            "name": "CardEffectAddStatusEffectPerOtherEffect",
             "target_mode": "room",
             "target_team": "monsters",
+            "param_int": 1,
+            "param_status_effects": [
+                {
+                    "status": "regen",
+                    "count": 1
+                },
+                {
+                    "status": "@psionic",
+                    "count": 1
+                }
+            ]
+        },
+        {
+            "id": "VitalityBuffFrantic",
+            "name": "CardEffectAddStatusEffectPerOtherEffect",
+            "target_mode": "room",
+            "target_team": "monsters",
+            "param_int": 1,
             "param_status_effects": [
                 {
                     "status": "buff",
-                    "count": 0
+                    "count": 1
+                },
+                {
+                    "status": "@frantic",
+                    "count": 1
+                }
+            ]
+        },
+        {
+            "id": "VitalityBuffPsionic",
+            "name": "CardEffectAddStatusEffectPerOtherEffect",
+            "target_mode": "room",
+            "target_team": "monsters",
+            "param_int": 1,
+            "param_status_effects": [
+                {
+                    "status": "buff",
+                    "count": 1
+                },
+                {
+                    "status": "@psionic",
+                    "count": 1
                 }
             ]
         }
