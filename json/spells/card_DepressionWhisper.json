@@ -30,17 +30,17 @@
     "effects": [
         {
             "id": "DepressionRemoveBuffs",
-            "name": "CardEffectMultiplyAllPositiveStatusEffects",
+            "name": "CardEffectRemoveAllStatusEffects",
             "target_mode": "room",
             "target_team": "heroes",
-            "param_multiplier": 0.0
+            "param_int": 0
         },
         {
             "id": "DepressionDoubleDebuffs",
-            "name": "CardEffectMultiplyAllStatusEffects",
+            "name": "@CardEffectMultiplyNegativeStatusEffects",
             "target_mode": "room",
             "target_team": "heroes",
-            "param_multiplier": 2.0
+            "param_int": 2
         }
     ],
     "sprites": [
