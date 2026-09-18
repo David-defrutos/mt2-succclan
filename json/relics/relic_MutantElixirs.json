@@ -9,12 +9,13 @@
                 "chinese": "突变药剂"
             },
             "descriptions": {
-                "english": "The first friendly unit you summon each turn gains [multistrike] [effect0.status0.power].",
-                "chinese": "每回合召唤的首个友方单位获得[multistrike] [effect0.status0.power]。"
+                "english": "At the start of each turn, a random friendly unit becomes <b>Mutated</b> and gains [multistrike] 1. The previously <b>Mutated</b> unit loses it.",
+                "chinese": "每回合开始时，随机一个友方单位变为<b>变异</b>并获得 [multistrike] 1。之前的<b>变异</b>单位失去该效果。"
             },
             "disallow_in_deployment": false,
             "relic_effects": [
-                "@MutantElixirsEffect"
+                "@MutantElixirsClear",
+                "@MutantElixirsGrant"
             ],
             "icon": "@MutantElixirsIcon",
             "icon_small": "@MutantElixirsIcon",
@@ -34,21 +35,111 @@
     ],
     "relic_effects": [
         {
-            "id": "MutantElixirsEffect",
-            "name": "RelicEffectAddStatusEffectOnFirstSpawn",
-            "source_team": "monsters",
-            "param_string": "OnlyFromCard",
+            "id": "MutantElixirsClear",
+            "name": "RelicEffectAddEffectStartOfTurn",
+            "param_int": 1,
+            "param_effects": [
+                "@MutantTakeMultistrike",
+                "@MutantClearMark"
+            ]
+        },
+        {
+            "id": "MutantElixirsGrant",
+            "name": "RelicEffectAddEffectStartOfTurn",
+            "param_int": 2,
+            "param_effects": [
+                "@MutantGiveMultistrikeAndMark"
+            ]
+        }
+    ],
+    "effects": [
+        {
+            "id": "MutantTakeMultistrike",
+            "name": "CardEffectRemoveStatusEffect",
+            "target_mode": "front_with_status",
+            "target_team": "monsters",
+            "param_str": "mt2_succclan.plugin_mutated",
             "param_status_effects": [
                 {
                     "status": "multistrike",
                     "count": 1
                 }
             ]
+        },
+        {
+            "id": "MutantClearMark",
+            "name": "CardEffectRemoveStatusEffect",
+            "target_mode": "front_with_status",
+            "target_team": "monsters",
+            "param_str": "mt2_succclan.plugin_mutated",
+            "param_status_effects": [
+                {
+                    "status": "@mutated",
+                    "count": 99
+                }
+            ]
+        },
+        {
+            "id": "MutantGiveMultistrikeAndMark",
+            "name": "CardEffectAddStatusEffect",
+            "target_mode": "random_in_room",
+            "target_team": "monsters",
+            "param_status_effects": [
+                {
+                    "status": "multistrike",
+                    "count": 1
+                },
+                {
+                    "status": "@mutated",
+                    "count": 1
+                }
+            ]
+        }
+    ],
+    "status_effects": [
+        {
+            "id": "mutated",
+            "class_name": "@StatusEffectMarkerState",
+            "names": {
+                "english": "Mutated",
+                "chinese": "突变"
+            },
+            "card_tooltips": {
+                "english": "This unit was mutated by Mutant Elixirs this turn.",
+                "chinese": "本回合被突变药剂改造的单位。"
+            },
+            "character_tooltips": {
+                "english": "Mutated by Mutant Elixirs. Loses its bonus at the start of your next turn.",
+                "chinese": "被突变药剂改造。下回合开始时失去加成。"
+            },
+            "replacement_texts": {
+                "english": "<b>Mutated</b>",
+                "chinese": "<b>突变</b>"
+            },
+            "notifications": {
+                "english": "Mutated",
+                "chinese": "突变"
+            },
+            "display_category": "persistent",
+            "trigger_stage": "none",
+            "is_stackable": false,
+            "remove_stack_at_end_of_turn": false,
+            "icon": "@Mutated"
         }
     ],
     "sprites": [
         {
             "id": "MutantElixirsIcon",
+            "path": "textures/MutantElixirsArt.png"
+        },
+        {
+            "id": "Mutated",
+            "path": "textures/MutantElixirsArt.png"
+        }
+    ],
+    "atlas_icons": [
+        {
+            "id": "Mutated",
             "path": "textures/MutantElixirsArt.png"
         }
     ]

@@ -18,9 +18,6 @@
             ],
             "effects": [
                 "@SpawnArroganceGhost"
-            ],
-            "traits": [
-                "@ArroganceGhostDeploy"
             ]
         }
     ],
@@ -49,8 +46,8 @@
             "id": "ArroganceGhostOnSpawn",
             "trigger": "on_spawn",
             "descriptions": {
-                "english": "Add [effect0.power_unmodified] <b>Obsessing Spark</b> with [consume] to your hand.",
-                "chinese": "将 [effect0.power_unmodified] 张带有[consume]的<b>欲望碎片</b>加入手牌。"
+                "english": "Add [effect0.secondarypower] <b>Obsessing Spark</b> with [consume] to your hand.",
+                "chinese": "将 [effect0.secondarypower] 张带有[consume]的<b>欲望碎片</b>加入手牌。"
             },
             "effects": [
                 "@ArroganceGhostAddShards"
@@ -91,13 +88,11 @@
         },
         {
             "id": "ArroganceGhostSpread",
-            "name": {
-                "id": "@CardEffectRandomDiscardFromCardPile",
-                "mod_reference": "Conductor"
-            },
+            "name": "@CardEffectDiscardSpecificCard",
             "target_mode": "hand",
             "target_card_type": "blight",
-            "param_int": 2
+            "param_int": 2,
+            "param_card": "@ObsessingShard"
         },
         {
             "id": "ArroganceGhostSelfHarm",
@@ -147,12 +142,6 @@
                     }
                 }
             }
-        }
-    ],
-    "traits": [
-        {
-            "id": "ArroganceGhostDeploy",
-            "name": "CardTraitDrawInDeploymentPhase"
         }
     ]
 }

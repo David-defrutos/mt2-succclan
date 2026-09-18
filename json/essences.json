@@ -78,8 +78,8 @@
                 "chinese": "傲慢幽魂"
             },
             "descriptions": {
-                "english": "Add [effect0.power_unmodified] <b>Obsessing Spark</b> with [consume] to your hand. <b>Accursed</b>: gain [effect1.power][ember] and draw [effect2.power] more next turn.",
-                "chinese": "将 [effect0.power_unmodified] 张带有[consume]的<b>欲望碎片</b>加入手牌。<b>被咒</b>：获得 [effect1.power][ember]，下回合多抽 [effect2.power] 张牌。"
+                "english": "Add 1 <b>Obsessing Spark</b> with [consume] to your hand. <b>Accursed</b>: gain 1[ember] and draw 1 more next turn.",
+                "chinese": "将 1 张带有[consume]的<b>欲望碎片</b>加入手牌。<b>被咒</b>：获得 1[ember]，下回合多抽 1 张牌。"
             },
             "use_upgrade_highlight_tags": true,
             "trigger_upgrades": [
@@ -94,8 +94,8 @@
                 "chinese": "嫉妒幽魂"
             },
             "descriptions": {
-                "english": "Add [effect0.power_unmodified] <b>Obsessing Spark</b> with [consume] to your hand. <b>Accursed</b>: deal [effect1.power] damage to the front enemy unit.",
-                "chinese": "将 [effect0.power_unmodified] 张带有[consume]的<b>欲望碎片</b>加入手牌。<b>被咒</b>：对前排敌方单位造成 [effect1.power] 点伤害。"
+                "english": "Add 1 <b>Obsessing Spark</b> with [consume] to your hand. <b>Accursed</b>: deal 20 damage to the front enemy unit.",
+                "chinese": "将 1 张带有[consume]的<b>欲望碎片</b>加入手牌。<b>被咒</b>：对前排敌方单位造成 20 点伤害。"
             },
             "use_upgrade_highlight_tags": true,
             "trigger_upgrades": [
@@ -110,8 +110,8 @@
                 "chinese": "暴食幽魂"
             },
             "descriptions": {
-                "english": "Add [effect0.power_unmodified] <b>Obsessing Spark</b> with [consume] to your hand. <b>Accursed</b>: apply [regen] [effect1.status0.power] to friendly units.",
-                "chinese": "将 [effect0.power_unmodified] 张带有[consume]的<b>欲望碎片</b>加入手牌。<b>被咒</b>：友方单位获得[regen] [effect1.status0.power]。"
+                "english": "Add 1 <b>Obsessing Spark</b> with [consume] to your hand. <b>Accursed</b>: apply [regen] 2 to friendly units.",
+                "chinese": "将 1 张带有[consume]的<b>欲望碎片</b>加入手牌。<b>被咒</b>：友方单位获得[regen] 2。"
             },
             "use_upgrade_highlight_tags": true,
             "trigger_upgrades": [
@@ -126,8 +126,8 @@
                 "chinese": "贪婪幽魂"
             },
             "descriptions": {
-                "english": "Add [effect0.power_unmodified] <b>Obsessing Spark</b> with [consume] to your hand. <b>Accursed</b>: gain [effect1.power][coin].",
-                "chinese": "将 [effect0.power_unmodified] 张带有[consume]的<b>欲望碎片</b>加入手牌。<b>被咒</b>：获得 [effect1.power][coin]。"
+                "english": "Add 1 <b>Obsessing Spark</b> with [consume] to your hand. <b>Accursed</b>: gain 5[coin].",
+                "chinese": "将 1 张带有[consume]的<b>欲望碎片</b>加入手牌。<b>被咒</b>：获得 5[coin]。"
             },
             "use_upgrade_highlight_tags": true,
             "trigger_upgrades": [
@@ -142,8 +142,8 @@
                 "chinese": "色欲幽魂"
             },
             "descriptions": {
-                "english": "Add [effect0.power_unmodified] <b>Obsessing Spark</b> with [consume] to your hand. <b>Accursed</b>: apply <b>[mt2_succclan.Plugin_frantic]</b> to the back enemy unit.",
-                "chinese": "将 [effect0.power_unmodified] 张带有[consume]的<b>欲望碎片</b>加入手牌。<b>被咒</b>：对后排敌方单位施加 <b>[mt2_succclan.Plugin_frantic]</b>。"
+                "english": "Add 1 <b>Obsessing Spark</b> with [consume] to your hand. <b>Accursed</b>: apply <b>[mt2_succclan.Plugin_frantic]</b> to the back enemy unit.",
+                "chinese": "将 1 张带有[consume]的<b>欲望碎片</b>加入手牌。<b>被咒</b>：对后排敌方单位施加 <b>[mt2_succclan.Plugin_frantic]</b>。"
             },
             "use_upgrade_highlight_tags": true,
             "trigger_upgrades": [
@@ -158,8 +158,8 @@
                 "chinese": "怠惰幽魂"
             },
             "descriptions": {
-                "english": "Add [effect0.power_unmodified] <b>Obsessing Spark</b> with [consume] to your hand. <b>Accursed</b>: deal [effect1.power] damage to enemy units.",
-                "chinese": "将 [effect0.power_unmodified] 张带有[consume]的<b>欲望碎片</b>加入手牌。<b>被咒</b>：对所有敌方单位造成 [effect1.power] 点伤害。"
+                "english": "Add 1 <b>Obsessing Spark</b> with [consume] to your hand. <b>Accursed</b>: deal 5 damage to enemy units.",
+                "chinese": "将 1 张带有[consume]的<b>欲望碎片</b>加入手牌。<b>被咒</b>：对所有敌方单位造成 5 点伤害。"
             },
             "use_upgrade_highlight_tags": true,
             "trigger_upgrades": [
@@ -174,8 +174,8 @@
                 "chinese": "愤怒幽魂"
             },
             "descriptions": {
-                "english": "Add [effect0.power_unmodified] <b>Obsessing Spark</b> with [consume] to your hand. <b>Accursed</b>: apply +[effect1.power][attack] to friendly units.",
-                "chinese": "将 [effect0.power_unmodified] 张带有[consume]的<b>欲望碎片</b>加入手牌。<b>被咒</b>：所有友方单位获得 +[effect1.power][attack]。"
+                "english": "Add 1 <b>Obsessing Spark</b> with [consume] to your hand. <b>Accursed</b>: apply +2[attack] to friendly units.",
+                "chinese": "将 1 张带有[consume]的<b>欲望碎片</b>加入手牌。<b>被咒</b>：所有友方单位获得 +2[attack]。"
             },
             "use_upgrade_highlight_tags": true,
             "trigger_upgrades": [
@@ -190,8 +190,8 @@
                 "chinese": "混沌造物"
             },
             "descriptions": {
-                "english": "<b>Revenge</b>: apply <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> to the attacking enemy unit.",
-                "chinese": "<b>复仇</b>：对攻击的敌方单位施加 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>。"
+                "english": "<b>Revenge</b>: apply <b>[mt2_succclan.Plugin_frantic] 1</b> to the attacking enemy unit.",
+                "chinese": "<b>复仇</b>：对攻击的敌方单位施加 <b>[mt2_succclan.Plugin_frantic] 1</b>。"
             },
             "use_upgrade_highlight_tags": true,
             "trigger_upgrades": [
@@ -205,8 +205,8 @@
                 "chinese": "恶魔先锋"
             },
             "descriptions": {
-                "english": "+[bonussize][capacity]. <b>Accursed</b>: +[effect0.power][attack] and +[effect1.power][health].",
-                "chinese": "+[bonussize][capacity]。<b>被咒</b>：+[effect0.power][attack]，+[effect1.power][health]。"
+                "english": "+[bonussize][capacity]. <b>Accursed</b>: +1[attack] and +3[health]. Permanently +1[attack] and +1[health].",
+                "chinese": "+[bonussize][capacity]。<b>被咒</b>：+1[attack]，+3[health]。 永久 +1[attack] 和 +1[health]。"
             },
             "use_upgrade_highlight_tags": true,
             "trigger_upgrades": [
@@ -240,8 +240,8 @@
                 "chinese": "魅魔拷打者"
             },
             "descriptions": {
-                "english": "-10[health]. <b>Strike</b>: apply [meleeweakness] [effect0.status0.power] to the attacked unit.",
-                "chinese": "-10[health]。<b>攻击</b>：对被攻击的单位施加[meleeweakness] [effect0.status0.power]。"
+                "english": "-10[health]. <b>Strike</b>: apply [meleeweakness] 1 to the attacked unit.",
+                "chinese": "-10[health]。<b>攻击</b>：对被攻击的单位施加[meleeweakness] 1。"
             },
             "use_upgrade_highlight_tags": true,
             "trigger_upgrades": [
@@ -294,8 +294,8 @@
                 "chinese": "深渊公主"
             },
             "descriptions": {
-                "english": "<b>Strike</b>: gain [sap] [effect0.status0.power] and apply [rage] and <b>[mt2_succclan.Plugin_frantic]</b> to enemy units.",
-                "chinese": "<b>攻击</b>：获得[sap] [effect0.status0.power]，并对所有敌方单位施加[rage] 和 <b>[mt2_succclan.Plugin_frantic]</b>。"
+                "english": "<b>Strike</b>: gain [sap] 3 and apply [rage] and <b>[mt2_succclan.Plugin_frantic]</b> to enemy units.",
+                "chinese": "<b>攻击</b>：获得[sap] 3，并对所有敌方单位施加[rage] 和 <b>[mt2_succclan.Plugin_frantic]</b>。"
             },
             "use_upgrade_highlight_tags": true,
             "trigger_upgrades": [
@@ -327,8 +327,8 @@
                 "chinese": "暗影武者"
             },
             "descriptions": {
-                "english": "<b>Accursed</b>: +[effect0.upgrade.bonusdamage][attack] permanently.",
-                "chinese": "<b>被咒</b>：永久获得 +[effect0.upgrade.bonusdamage][attack]。"
+                "english": "<b>Accursed</b>: +1[attack] permanently.",
+                "chinese": "<b>被咒</b>：永久获得 +1[attack]。"
             },
             "use_upgrade_highlight_tags": true,
             "trigger_upgrades": [
@@ -341,8 +341,8 @@
             "id": "EssenceShardOnSpawn",
             "trigger": "on_spawn",
             "descriptions": {
-                "english": "Add [effect0.power_unmodified] <b>Obsessing Spark</b> with [consume] to your hand.",
-                "chinese": "将 [effect0.power_unmodified] 张带有[consume]的<b>欲望碎片</b>加入手牌。"
+                "english": "Add [effect0.secondarypower] <b>Obsessing Spark</b> with [consume] to your hand.",
+                "chinese": "将 [effect0.secondarypower] 张带有[consume]的<b>欲望碎片</b>加入手牌。"
             },
             "effects": [
                 "@EssenceOneShard"
@@ -431,7 +431,8 @@
             "name": "CardEffectAddCardUpgradeToUnits",
             "target_mode": "self",
             "target_team": "monsters",
-            "param_upgrade": "@EssenceShadowWarriorAttack"
+            "param_upgrade": "@EssenceShadowWarriorAttack",
+            "param_int_3": 2
         }
     ]
 }

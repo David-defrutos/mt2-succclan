@@ -130,26 +130,12 @@
             "id": "EndlessBasicTrigger",
             "trigger": "on_death",
             "descriptions": {
-                "english": "Gain [stasis] [effect0.status0.power]. Permanently +[effect2.upgrade.bonusdamage][attack] and +[effect2.upgrade.bonushp][health] for every [effect1.status0.power] <b>[mt2_succclan.Plugin_psionic]</b>.",
-                "chinese": "获得 [stasis] [effect0.status0.power]。每 [effect1.status0.power] 点 <b>[mt2_succclan.Plugin_psionic]</b>，永久 +[effect2.upgrade.bonusdamage][attack]，+[effect2.upgrade.bonushp][health]。"
+                "english": "Gain [stasis] [effect0.status0.power]. Consume every group of 4 <b>[mt2_succclan.Plugin_psionic]</b>; permanently gain +[effect1.upgrade.bonusdamage][attack] and +[effect1.upgrade.bonushp][health] per group.",
+                "chinese": "获得 [stasis] [effect0.status0.power]。每消耗 4 层 <b>[mt2_succclan.Plugin_psionic]</b>，永久 +[effect1.upgrade.bonusdamage][attack] 和 +[effect1.upgrade.bonushp][health]。"
             },
             "effects": [
                 "@EndlessBasicStasisSelf",
-                "@PsionicRung1Check",
-                "@EndlessBasicGrow1",
-                "@PsionicRung1Spend",
-                "@PsionicRung2Check",
-                "@EndlessBasicGrow2",
-                "@PsionicRung2Spend",
-                "@PsionicRung3Check",
-                "@EndlessBasicGrow3",
-                "@PsionicRung3Spend",
-                "@PsionicRung4Check",
-                "@EndlessBasicGrow4",
-                "@PsionicRung4Spend",
-                "@PsionicRung5Check",
-                "@EndlessBasicGrow5",
-                "@PsionicRung5Spend"
+                "@EndlessBasicGrow1"
             ],
             "additional_tooltips": [
                 "@PsionicBurstTooltip"
@@ -159,26 +145,12 @@
             "id": "EndlessPreTrigger",
             "trigger": "on_death",
             "descriptions": {
-                "english": "Gain [stasis] [effect0.status0.power]. Permanently +[effect2.upgrade.bonusdamage][attack] and +[effect2.upgrade.bonushp][health] for every [effect1.status0.power] <b>[mt2_succclan.Plugin_psionic]</b>.",
-                "chinese": "获得 [stasis] [effect0.status0.power]。每 [effect1.status0.power] 点 <b>[mt2_succclan.Plugin_psionic]</b>，永久 +[effect2.upgrade.bonusdamage][attack]，+[effect2.upgrade.bonushp][health]。"
+                "english": "Gain [stasis] [effect0.status0.power]. Consume every group of 4 <b>[mt2_succclan.Plugin_psionic]</b>; permanently gain +[effect1.upgrade.bonusdamage][attack] and +[effect1.upgrade.bonushp][health] per group.",
+                "chinese": "获得 [stasis] [effect0.status0.power]。每消耗 4 层 <b>[mt2_succclan.Plugin_psionic]</b>，永久 +[effect1.upgrade.bonusdamage][attack] 和 +[effect1.upgrade.bonushp][health]。"
             },
             "effects": [
                 "@EndlessPreStasisSelf",
-                "@PsionicRung1Check",
-                "@EndlessPreGrow1",
-                "@PsionicRung1Spend",
-                "@PsionicRung2Check",
-                "@EndlessPreGrow2",
-                "@PsionicRung2Spend",
-                "@PsionicRung3Check",
-                "@EndlessPreGrow3",
-                "@PsionicRung3Spend",
-                "@PsionicRung4Check",
-                "@EndlessPreGrow4",
-                "@PsionicRung4Spend",
-                "@PsionicRung5Check",
-                "@EndlessPreGrow5",
-                "@PsionicRung5Spend"
+                "@EndlessPreGrow1"
             ],
             "additional_tooltips": [
                 "@PsionicBurstTooltip"
@@ -188,26 +160,12 @@
             "id": "EndlessProTrigger",
             "trigger": "on_death",
             "descriptions": {
-                "english": "Gain [stasis] [effect0.status0.power]. Permanently +[effect2.upgrade.bonusdamage][attack] and +[effect2.upgrade.bonushp][health] for every [effect1.status0.power] <b>[mt2_succclan.Plugin_psionic]</b>.",
-                "chinese": "获得 [stasis] [effect0.status0.power]。每 [effect1.status0.power] 点 <b>[mt2_succclan.Plugin_psionic]</b>，永久 +[effect2.upgrade.bonusdamage][attack]，+[effect2.upgrade.bonushp][health]。"
+                "english": "Gain [stasis] [effect0.status0.power]. Consume every group of 4 <b>[mt2_succclan.Plugin_psionic]</b>; permanently gain +[effect1.upgrade.bonusdamage][attack] and +[effect1.upgrade.bonushp][health] per group.",
+                "chinese": "获得 [stasis] [effect0.status0.power]。每消耗 4 层 <b>[mt2_succclan.Plugin_psionic]</b>，永久 +[effect1.upgrade.bonusdamage][attack] 和 +[effect1.upgrade.bonushp][health]。"
             },
             "effects": [
                 "@EndlessProStasisSelf",
-                "@PsionicRung1Check",
-                "@EndlessProGrow1",
-                "@PsionicRung1Spend",
-                "@PsionicRung2Check",
-                "@EndlessProGrow2",
-                "@PsionicRung2Spend",
-                "@PsionicRung3Check",
-                "@EndlessProGrow3",
-                "@PsionicRung3Spend",
-                "@PsionicRung4Check",
-                "@EndlessProGrow4",
-                "@PsionicRung4Spend",
-                "@PsionicRung5Check",
-                "@EndlessProGrow5",
-                "@PsionicRung5Spend"
+                "@EndlessProGrow1"
             ],
             "additional_tooltips": [
                 "@PsionicBurstTooltip"
@@ -928,11 +886,17 @@
         },
         {
             "id": "EndlessBasicGrow1",
-            "name": "CardEffectAddCardUpgradeToUnits",
+            "name": "@CardEffectPsionicPermanentGrowth",
             "target_mode": "self",
             "target_team": "monsters",
             "param_upgrade": "@KnightMareGrowth11",
-            "param_int_3": 2
+            "param_int_3": 2,
+            "param_status_effects": [
+                {
+                    "status": "@psionic",
+                    "count": 4
+                }
+            ]
         },
         {
             "id": "EndlessBasicGrow2",
@@ -968,11 +932,17 @@
         },
         {
             "id": "EndlessPreGrow1",
-            "name": "CardEffectAddCardUpgradeToUnits",
+            "name": "@CardEffectPsionicPermanentGrowth",
             "target_mode": "self",
             "target_team": "monsters",
             "param_upgrade": "@KnightMareGrowth12",
-            "param_int_3": 2
+            "param_int_3": 2,
+            "param_status_effects": [
+                {
+                    "status": "@psionic",
+                    "count": 4
+                }
+            ]
         },
         {
             "id": "EndlessPreGrow2",
@@ -1008,11 +978,17 @@
         },
         {
             "id": "EndlessProGrow1",
-            "name": "CardEffectAddCardUpgradeToUnits",
+            "name": "@CardEffectPsionicPermanentGrowth",
             "target_mode": "self",
             "target_team": "monsters",
             "param_upgrade": "@KnightMareGrowth22",
-            "param_int_3": 2
+            "param_int_3": 2,
+            "param_status_effects": [
+                {
+                    "status": "@psionic",
+                    "count": 4
+                }
+            ]
         },
         {
             "id": "EndlessProGrow2",

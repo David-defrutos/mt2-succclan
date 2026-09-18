@@ -30,13 +30,11 @@
     "effects": [
         {
             "id": "PainAndPleasureDiscard",
-            "name": {
-                "id": "@CardEffectRandomDiscardFromCardPile",
-                "mod_reference": "Conductor"
-            },
+            "name": "@CardEffectDiscardSpecificCard",
             "target_mode": "hand",
             "target_card_type": "blight",
-            "param_int": 3
+            "param_int": 3,
+            "param_card": "@ObsessingShard"
         },
         {
             "id": "PainAndPleasureDraw",

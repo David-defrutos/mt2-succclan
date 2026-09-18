@@ -3,47 +3,9 @@ using System.Collections;
 namespace mt2_succclan.Plugin
 {
     /// <summary>
-    /// Aplica estados solo a las unidades que son CLONES, saltandose las demas.
-    /// Pensado para ir justo detras de un CardEffectCopyUnits en la misma carta.
-    ///
-    /// Por que hace falta (16-sep-2026):
-    ///   - CardEffectCopyUnits.Setup solo lee GetParamInt, o sea que IGNORA param_upgrade
-    ///     en silencio. Ponerlo ahi no da error y no hace nada.
-    ///   - CardEffectCopyUnits es SEALED, asi que no se puede heredar de el para envolverlo.
-    ///   - MonsterManager.CloneMonsterState llama a CopyCardState, CopyCharacterStats y
-    ///     CopyCharacterAbility, pero NO copia estados: ponerselos al original antes de
-    ///     clonar tampoco sirve.
-    ///   - El enum TargetMode del juego no tiene ningun "last spawned character" (solo
-    ///     LastSpawnedMorsel), asi que no hay modo de objetivo que apunte a la copia.
-    ///
-    /// Lo unico que queda es reconocerla: CloneMonsterState marca la copia con
-    /// SetIsClone(true), y CharacterState.GetIsClone() es publico.
-    ///
-    /// Es idempotente: si el clon ya tiene el estado, no se lo vuelve a aplicar. Asi los
-    /// clones de turnos anteriores que sigan vivos no acumulan cargas cada vez que se
-    /// juega la carta.
-    ///
-    /// NO sobreescribe TestEffect a proposito: cuando el juego comprueba si la carta se
-    /// puede jugar todavia no existe ningun clon, asi que cualquier test propio la dejaria
-    /// como no jugable.
-    ///
-    /// Ejemplo (Illusion Twins):
-    /// "effects": [
-    ///   {
-    ///     "id": "IllusionTwinsCopy",
-    ///     "name": "CardEffectCopyUnits",
-    ///     "target_mode": "drop_target_character",
-    ///     "target_team": "monsters",
-    ///     "param_int": 1
-    ///   },
-    ///   {
-    ///     "id": "IllusionTwinsFragile",
-    ///     "name": "@CardEffectAddStatusEffectToClones",
-    ///     "target_mode": "room",
-    ///     "target_team": "monsters",
-    ///     "param_status_effects": [ { "status": "fragile", "count": 1 } ]
-    ///   }
-    /// ]
+    /// Legacy effect retained for compatibility. Illusion Twins now uses
+    /// CardEffectCopyWithStatuses, which identifies the new copy by callback and
+    /// applies Fragile after the engine has finished copying its states.
     /// </summary>
     public class CardEffectAddStatusEffectToClones : CardEffectBase
     {

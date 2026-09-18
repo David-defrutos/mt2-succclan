@@ -8,8 +8,8 @@
                 "chinese": "黑暗契约"
             },
             "descriptions": {
-                "english": "Shuffle [effect0.power_unmodified] <b>Obsessing Spark</b> with [consume] into your deck. +[effect1.power][ember] every turn.",
-                "chinese": "将 [effect0.power_unmodified] 张带有[consume]的<b>欲望碎片</b>洗入牌库。每回合 +[effect1.power][ember]。"
+                "english": "Shuffle [effect0.secondarypower] <b>Obsessing Spark</b> with [consume] into your deck. +[effect1.power][ember] every turn.",
+                "chinese": "将 [effect0.secondarypower] 张带有[consume]的<b>欲望碎片</b>洗入牌库。每回合 +[effect1.power][ember]。"
             },
             "card_type": "spell",
             "rarity": "uncommon",

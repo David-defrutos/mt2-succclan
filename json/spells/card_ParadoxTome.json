@@ -8,8 +8,8 @@
                 "chinese": "悖论法典"
             },
             "descriptions": {
-                "english": "Apply [sweep] to a friendly unit. Add [effect1.power_unmodified] <b>Obsessing Spark</b> with [consume] to your hand.",
-                "chinese": "对一个友方单位施加[sweep]。将 [effect1.power_unmodified] 张带有[consume]的<b>欲望碎片</b>加入手牌。"
+                "english": "Apply [sweep] to a friendly unit. Add [effect1.secondarypower] <b>Obsessing Spark</b> with [consume] to your hand.",
+                "chinese": "对一个友方单位施加[sweep]。将 [effect1.secondarypower] 张带有[consume]的<b>欲望碎片</b>加入手牌。"
             },
             "card_type": "spell",
             "rarity": "rare",

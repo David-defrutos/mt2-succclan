@@ -9,8 +9,8 @@
                 "chinese": "恶魔之血"
             },
             "descriptions": {
-                "english": "Playing a <b>Blight</b> deals [effect0.power] damage to a random enemy unit.",
-                "chinese": "打出[blight]牌时，对随机敌方单位造成 [effect0.power] 点伤害。"
+                "english": "Playing a <b>Blight</b> or <b>Scourge</b> deals [effect0.power] damage to a random enemy unit.",
+                "chinese": "打出<b>祸患</b>或<b>天灾</b>牌时，对随机敌方单位造成 [effect0.power] 点伤害。"
             },
             "disallow_in_deployment": false,
             "relic_effects": [

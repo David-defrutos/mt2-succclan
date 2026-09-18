@@ -35,7 +35,7 @@
     "relic_effects": [
         {
             "id": "NetherBlossomEffect",
-            "name": "RelicEffectAddStatusEffectOnStatusApplied",
+            "name": "@RelicEffectRageOnFrantic",
             "source_team": "heroes",
             "param_status_effects": [
                 {

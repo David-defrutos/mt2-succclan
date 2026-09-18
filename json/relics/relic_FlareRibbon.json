@@ -35,7 +35,7 @@
     "relic_effects": [
         {
             "id": "FlareRibbonEffect",
-            "name": "RelicEffectAddStatusEffectOnDamage",
+            "name": "@RelicEffectArmorOnPyreAttacked",
             "source_team": "monsters",
             "param_status_effects": [
                 {

@@ -18,9 +18,6 @@
             ],
             "effects": [
                 "@SpawnEndlessShadow"
-            ],
-            "traits": [
-                "@EndlessShadowDeploy"
             ]
         }
     ],
@@ -36,6 +33,7 @@
             "attack_damage": 10,
             "health": 15,
             "subtypes": [
+                "SubtypesData_BannerUnit",
                 "@Sub_Cubus"
             ],
             "triggers": [
@@ -48,8 +46,8 @@
             "id": "EndlessShadowOnDeath",
             "trigger": "on_death",
             "descriptions": {
-                "english": "Create a copy of itself in this room with [effect0.upgrade.bonushp][health].",
-                "chinese": "在本层创造一个自身的复制品，[effect0.upgrade.bonushp][health]。"
+                "english": "Summon another Endless Shadow in this room, inheriting card upgrades with [effect0.upgrade.bonushp][health].",
+                "chinese": "在本层召唤另一个无尽暗影，继承卡牌升级并获得 [effect0.upgrade.bonushp][health]。"
             },
             "effects": [
                 "@EndlessShadowSpawn"
@@ -112,12 +110,6 @@
                     }
                 }
             }
-        }
-    ],
-    "traits": [
-        {
-            "id": "EndlessShadowDeploy",
-            "name": "CardTraitDrawInDeploymentPhase"
         }
     ]
 }
