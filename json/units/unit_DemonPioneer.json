@@ -18,9 +18,6 @@
             ],
             "effects": [
                 "@SpawnDemonPioneer"
-            ],
-            "traits": [
-                "@DemonPioneerDeploy"
             ]
         }
     ],
@@ -36,6 +33,7 @@
             "attack_damage": 10,
             "health": 10,
             "subtypes": [
+                "SubtypesData_BannerUnit",
                 "@Sub_Cubus"
             ],
             "triggers": [
@@ -131,12 +129,6 @@
                     }
                 }
             }
-        }
-    ],
-    "traits": [
-        {
-            "id": "DemonPioneerDeploy",
-            "name": "CardTraitDrawInDeploymentPhase"
         }
     ]
 }

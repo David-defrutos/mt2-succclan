@@ -18,9 +18,6 @@
             ],
             "effects": [
                 "@SpawnChaosCreation"
-            ],
-            "traits": [
-                "@ChaosCreationDeploy"
             ]
         }
     ],
@@ -42,6 +39,7 @@
                 }
             ],
             "subtypes": [
+                "SubtypesData_BannerUnit",
                 "@Sub_Cubus"
             ],
             "triggers": [
@@ -122,12 +120,6 @@
                     }
                 }
             }
-        }
-    ],
-    "traits": [
-        {
-            "id": "ChaosCreationDeploy",
-            "name": "CardTraitDrawInDeploymentPhase"
         }
     ]
 }

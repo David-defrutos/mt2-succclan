@@ -18,9 +18,6 @@
             ],
             "effects": [
                 "@SpawnIncubusButcher"
-            ],
-            "traits": [
-                "@IncubusButcherDeploy"
             ]
         }
     ],
@@ -36,6 +33,7 @@
             "attack_damage": 5,
             "health": 20,
             "subtypes": [
+                "SubtypesData_BannerUnit",
                 "@Sub_Cubus"
             ],
             "starting_status_effects": [
@@ -75,7 +73,7 @@
             "name": "CardEffectBuffDamage",
             "target_mode": "self",
             "target_team": "monsters",
-            "param_int": 3
+            "param_int": 2
         },
         {
             "id": "IncubusButcherHealth",
@@ -125,12 +123,6 @@
                     }
                 }
             }
-        }
-    ],
-    "traits": [
-        {
-            "id": "IncubusButcherDeploy",
-            "name": "CardTraitDrawInDeploymentPhase"
         }
     ]
 }

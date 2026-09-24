@@ -18,9 +18,6 @@
             ],
             "effects": [
                 "@SpawnAbyssPrincess"
-            ],
-            "traits": [
-                "@AbyssPrincessDeploy"
             ]
         }
     ],
@@ -36,6 +33,7 @@
             "attack_damage": 25,
             "health": 1,
             "subtypes": [
+                "SubtypesData_BannerUnit",
                 "@Sub_Cubus"
             ],
             "starting_status_effects": [
@@ -148,12 +146,6 @@
                     }
                 }
             }
-        }
-    ],
-    "traits": [
-        {
-            "id": "AbyssPrincessDeploy",
-            "name": "CardTraitDrawInDeploymentPhase"
         }
     ]
 }

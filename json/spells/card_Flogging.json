@@ -12,7 +12,7 @@
                 "chinese": "对所有敌方单位造成 [effect0.power] 点伤害。将 1 张带有[consume]的<b>欲望碎片</b>洗入牌库。"
             },
             "card_type": "spell",
-            "rarity": "starter",
+            "rarity": "common",
             "class": "@ClassSuccubus",
             "card_art": "@FloggingArt",
             "cost": 0,

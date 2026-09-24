@@ -18,9 +18,6 @@
             ],
             "effects": [
                 "@SpawnGreedGhost"
-            ],
-            "traits": [
-                "@GreedGhostDeploy"
             ]
         }
     ],
@@ -136,12 +133,6 @@
                     }
                 }
             }
-        }
-    ],
-    "traits": [
-        {
-            "id": "GreedGhostDeploy",
-            "name": "CardTraitDrawInDeploymentPhase"
         }
     ]
 }

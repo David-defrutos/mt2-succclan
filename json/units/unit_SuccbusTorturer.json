@@ -18,9 +18,6 @@
             ],
             "effects": [
                 "@SpawnSuccbusTorturer"
-            ],
-            "traits": [
-                "@SuccbusTorturerDeploy"
             ]
         }
     ],
@@ -36,6 +33,7 @@
             "attack_damage": 15,
             "health": 10,
             "subtypes": [
+                "SubtypesData_BannerUnit",
                 "@Sub_Cubus"
             ],
             "triggers": [
@@ -116,12 +114,6 @@
                     }
                 }
             }
-        }
-    ],
-    "traits": [
-        {
-            "id": "SuccbusTorturerDeploy",
-            "name": "CardTraitDrawInDeploymentPhase"
         }
     ]
 }

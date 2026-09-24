@@ -18,9 +18,6 @@
             ],
             "effects": [
                 "@SpawnShadowWarrior"
-            ],
-            "traits": [
-                "@ShadowWarriorDeploy"
             ]
         }
     ],
@@ -36,6 +33,7 @@
             "attack_damage": 5,
             "health": 1,
             "subtypes": [
+                "SubtypesData_BannerUnit",
                 "@Sub_Cubus"
             ],
             "triggers": [
@@ -115,12 +113,6 @@
                     }
                 }
             }
-        }
-    ],
-    "traits": [
-        {
-            "id": "ShadowWarriorDeploy",
-            "name": "CardTraitDrawInDeploymentPhase"
         }
     ]
 }
