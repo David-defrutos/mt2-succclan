@@ -1,4 +1,4 @@
-{
+﻿{
     "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
     "cards": [
         {
@@ -15,7 +15,7 @@
             "rarity": "uncommon",
             "class": "@ClassSuccubus",
             "card_art": "@DarkPactArt",
-            "cost": 1,
+            "cost": 3,
             "targets_room": true,
             "targetless": true,
             "pools": [
@@ -37,14 +37,14 @@
             "target_mode": "room",
             "target_team": "none",
             "param_int": 7,
-            "param_int_2": 2,
+            "param_int_2": 3,
             "param_card_pool": "@ObsessingShardPool",
             "param_upgrade": "@ConsumeUpgrade"
         },
         {
             "id": "DarkPactEmber",
             "name": "CardEffectGainEnergyEveryTurn",
-            "target_mode": "self",
+            "target_mode": "room",
             "target_team": "none",
             "param_int": 1
         }
