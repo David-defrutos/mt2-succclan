@@ -1,4 +1,4 @@
-{
+﻿{
     "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
     "card_pools": [
         {
@@ -39,7 +39,7 @@
             "name": "CardTraitScalingAddStatusEffect",
             "param_tracked_value": "played_cost",
             "param_entry_duration": "this_battle",
-            "param_int": 2,
+            "param_int": 1,
             "param_team": "heroes",
             "param_status_effects": [
                 {

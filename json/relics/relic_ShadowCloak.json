@@ -17,7 +17,7 @@
                 "@ShadowCloakEffect"
             ],
             "icon": "@ShadowCloakIcon",
-            "icon_small": "@ShadowCloakIcon",
+            "icon_small": "@ShadowCloakIconSmall",
             "extensions": [
                 {
                     "collectable": {
@@ -47,7 +47,11 @@
     "sprites": [
         {
             "id": "ShadowCloakIcon",
-            "path": "textures/ShadowCloakArt.png"
+            "path": "textures/RelicIcons/ShadowCloakIcon.png"
+        },
+        {
+            "id": "ShadowCloakIconSmall",
+            "path": "textures/RelicIcons/ShadowCloakIconSmall.png"
         }
     ]
 }

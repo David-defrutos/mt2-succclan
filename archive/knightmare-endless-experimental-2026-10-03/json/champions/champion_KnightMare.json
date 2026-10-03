@@ -1,0 +1,1328 @@
+﻿{
+    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+    "cards": [
+        {
+            "id": "SpawnKnightMare",
+            "names": {
+                "english": "Knightmare",
+                "chinese": "梦魇之主"
+            },
+            "card_art": "@KnightMareCardArt",
+            "cost": 0,
+            "card_type": "monster",
+            "rarity": "champion",
+            "class": "@ClassSuccubus",
+            "targets_room": true,
+            "targetless": false,
+            "effects": [
+                "@SpawnKnightMare"
+            ]
+        },
+        {
+            "id": "KnightMarePsionicCollapse",
+            "names": {
+                "english": "Psionic Collapse",
+                "chinese": "灵能崩解"
+            },
+            "descriptions": {
+                "english": "Gain [undying] [effect0.status0.power], then this unit dies.",
+                "chinese": "获得 [undying] [effect0.status0.power]，然后本单位死亡。"
+            },
+            "card_art": "@KnightMareCardArt",
+            "card_type": "spell",
+            "is_an_ability": true,
+            "cooldown": 2,
+            "targetless": true,
+            "targets_room": false,
+            "effects": [
+                "@CollapseUndying",
+                "@CollapseKill"
+            ]
+        },
+        {
+            "id": "KnightMareAbyssSpark",
+            "names": {
+                "english": "Obsession",
+                "spanish": "Obsesión",
+                "chinese": "执念"
+            },
+            "descriptions": {
+                "english": "Add [effect0.secondarypower] <b>Obsessing Spark</b> to your hand.",
+                "spanish": "Añade [effect0.secondarypower] <b>Obsessing Spark</b> a tu mano.",
+                "chinese": "将 [effect0.secondarypower] 张<b>欲望碎片</b>加入手牌。"
+            },
+            "card_art": "@ObsessingShardArt",
+            "card_type": "spell",
+            "is_an_ability": true,
+            "cost": 0,
+            "cooldown": 3,
+            "initial_cooldown": 0,
+            "targetless": true,
+            "targets_room": false,
+            "effects": [
+                "@KnightMareAbyssAddSpark"
+            ]
+        }
+    ],
+    "characters": [
+        {
+            "id": "KnightMare",
+            "names": {
+                "english": "Knightmare",
+                "chinese": "梦魇之主"
+            },
+            "character_art": "@KnightMareCharacterArt",
+            "size": 2,
+            "attack_damage": 0,
+            "health": 10,
+            "subtypes": [
+                "SubtypesData_Champion_83f21cbe-9d9b-4566-a2c3-ca559ab8ff34"
+            ],
+            "triggers": [
+                "@KnightMareHarvest"
+            ]
+        }
+    ],
+    "character_triggers": [
+        {
+            "id": "AbyssBasicTrigger",
+            "trigger": {
+                "id": "@Accursed",
+                "mod_reference": "Conductor"
+            },
+            "descriptions": {
+                "english": "All friendly units +[effect0.power][attack] and +[effect1.power][health]. <b>Psionic Burst [effect2.status0.power]</b>: draw 1 card and gain 1[ember].",
+                "chinese": "所有友方单位 +[effect0.power][attack]，+[effect1.power][health]。<b>灵能爆破 [effect2.status0.power]</b>：抽 1 张牌并获得 1[ember]。"
+            },
+            "effects": [
+                "@AbyssBasicAttack",
+                "@AbyssBasicHealth",
+                "@AbyssBasicCheck",
+                "@AbyssBasicRemove",
+                "@AbyssBasicDraw",
+                "@AbyssBasicEmber"
+            ],
+            "additional_tooltips": [
+                "@PsionicBurstTooltip"
+            ]
+        },
+        {
+            "id": "AbyssPreTrigger",
+            "trigger": {
+                "id": "@Accursed",
+                "mod_reference": "Conductor"
+            },
+            "descriptions": {
+                "english": "All friendly units +[effect0.power][attack] and +[effect1.power][health]. <b>Psionic Burst [effect2.status0.power]</b>: draw 1 card and gain 1[ember].",
+                "chinese": "所有友方单位 +[effect0.power][attack]，+[effect1.power][health]。<b>灵能爆破 [effect2.status0.power]</b>：抽 1 张牌并获得 1[ember]。"
+            },
+            "effects": [
+                "@AbyssPreAttack",
+                "@AbyssPreHealth",
+                "@AbyssPreCheck",
+                "@AbyssPreRemove",
+                "@AbyssPreDraw",
+                "@AbyssPreEmber"
+            ],
+            "additional_tooltips": [
+                "@PsionicBurstTooltip"
+            ]
+        },
+        {
+            "id": "AbyssProTrigger",
+            "trigger": {
+                "id": "@Accursed",
+                "mod_reference": "Conductor"
+            },
+            "descriptions": {
+                "english": "All friendly units +[effect0.power][attack] and +[effect1.power][health]. <b>Psionic Burst [effect2.status0.power]</b>: draw 1 card and gain 1[ember].",
+                "chinese": "所有友方单位 +[effect0.power][attack]，+[effect1.power][health]。<b>灵能爆破 [effect2.status0.power]</b>：抽 1 张牌并获得 1[ember]。"
+            },
+            "effects": [
+                "@AbyssProAttack",
+                "@AbyssProHealth",
+                "@AbyssProCheck",
+                "@AbyssProRemove",
+                "@AbyssProDraw",
+                "@AbyssProEmber"
+            ],
+            "additional_tooltips": [
+                "@PsionicBurstTooltip"
+            ]
+        },
+        {
+            "id": "EndlessBasicTrigger",
+            "trigger": "on_death",
+            "descriptions": {
+                "english": "Gain [stasis] [effect0.status0.power]. Consume every group of 4 <b>[mt2_succclan.Plugin_psionic]</b>; permanently gain +[effect1.upgrade.bonusdamage][attack] and +[effect1.upgrade.bonushp][health] per group.",
+                "chinese": "获得 [stasis] [effect0.status0.power]。每消耗 4 层 <b>[mt2_succclan.Plugin_psionic]</b>，永久 +[effect1.upgrade.bonusdamage][attack] 和 +[effect1.upgrade.bonushp][health]。"
+            },
+            "effects": [
+                "@EndlessBasicStasisSelf",
+                "@EndlessBasicGrow1"
+            ],
+            "additional_tooltips": [
+                "@PsionicBurstTooltip"
+            ]
+        },
+        {
+            "id": "EndlessPreTrigger",
+            "trigger": "on_death",
+            "descriptions": {
+                "english": "Gain [stasis] [effect0.status0.power]. Consume every group of 4 <b>[mt2_succclan.Plugin_psionic]</b>; permanently gain +[effect1.upgrade.bonusdamage][attack] and +[effect1.upgrade.bonushp][health] per group.",
+                "chinese": "获得 [stasis] [effect0.status0.power]。每消耗 4 层 <b>[mt2_succclan.Plugin_psionic]</b>，永久 +[effect1.upgrade.bonusdamage][attack] 和 +[effect1.upgrade.bonushp][health]。"
+            },
+            "effects": [
+                "@EndlessPreStasisSelf",
+                "@EndlessPreGrow1"
+            ],
+            "additional_tooltips": [
+                "@PsionicBurstTooltip"
+            ]
+        },
+        {
+            "id": "EndlessProTrigger",
+            "trigger": "on_death",
+            "descriptions": {
+                "english": "Gain [stasis] [effect0.status0.power]. Consume every group of 4 <b>[mt2_succclan.Plugin_psionic]</b>; permanently gain +[effect1.upgrade.bonusdamage][attack] and +[effect1.upgrade.bonushp][health] per group.",
+                "chinese": "获得 [stasis] [effect0.status0.power]。每消耗 4 层 <b>[mt2_succclan.Plugin_psionic]</b>，永久 +[effect1.upgrade.bonusdamage][attack] 和 +[effect1.upgrade.bonushp][health]。"
+            },
+            "effects": [
+                "@EndlessProStasisSelf",
+                "@EndlessProGrow1"
+            ],
+            "additional_tooltips": [
+                "@PsionicBurstTooltip"
+            ]
+        },
+        {
+            "id": "IllusionBasicTrigger",
+            "trigger": "on_hit",
+            "descriptions": {
+                "english": "Gain +[effect0.power][attack] and +[effect1.power][health]. <b>Psionic Burst [effect2.status0.power]</b>: gain [lifesteal] [effect4.status0.power] and [spikes] [effect5.status0.power].",
+                "chinese": "获得 +[effect0.power][attack]，+[effect1.power][health]。<b>灵能爆破 [effect2.status0.power]</b>：获得[lifesteal] [effect4.status0.power]和[spikes] [effect5.status0.power]。"
+            },
+            "effects": [
+                "@IllusionBasicAttack",
+                "@IllusionBasicHealth",
+                "@IllusionBasicCheck",
+                "@IllusionBasicRemove",
+                "@IllusionBasicLifesteal",
+                "@IllusionBasicSpikes"
+            ],
+            "additional_tooltips": [
+                "@PsionicBurstTooltip"
+            ]
+        },
+        {
+            "id": "IllusionPreTrigger",
+            "trigger": "on_hit",
+            "descriptions": {
+                "english": "Gain +[effect0.power][attack] and +[effect1.power][health]. <b>Psionic Burst [effect2.status0.power]</b>: gain [lifesteal] [effect4.status0.power] and [spikes] [effect5.status0.power].",
+                "chinese": "获得 +[effect0.power][attack]，+[effect1.power][health]。<b>灵能爆破 [effect2.status0.power]</b>：获得[lifesteal] [effect4.status0.power]和[spikes] [effect5.status0.power]。"
+            },
+            "effects": [
+                "@IllusionPreAttack",
+                "@IllusionPreHealth",
+                "@IllusionPreCheck",
+                "@IllusionPreRemove",
+                "@IllusionPreLifesteal",
+                "@IllusionPreSpikes"
+            ],
+            "additional_tooltips": [
+                "@PsionicBurstTooltip"
+            ]
+        },
+        {
+            "id": "IllusionProTrigger",
+            "trigger": "on_hit",
+            "descriptions": {
+                "english": "Gain +[effect0.power][attack] and +[effect1.power][health]. <b>Psionic Burst [effect2.status0.power]</b>: gain [lifesteal] [effect4.status0.power] and [spikes] [effect5.status0.power].",
+                "chinese": "获得 +[effect0.power][attack]，+[effect1.power][health]。<b>灵能爆破 [effect2.status0.power]</b>：获得[lifesteal] [effect4.status0.power]和[spikes] [effect5.status0.power]。"
+            },
+            "effects": [
+                "@IllusionProAttack",
+                "@IllusionProHealth",
+                "@IllusionProCheck",
+                "@IllusionProRemove",
+                "@IllusionProLifesteal",
+                "@IllusionProSpikes"
+            ],
+            "additional_tooltips": [
+                "@PsionicBurstTooltip"
+            ]
+        },
+        {
+            "id": "KnightMareHarvest",
+            "trigger": "on_any_unit_death_on_floor",
+            "descriptions": {
+                "english": "Gain <b>[mt2_succclan.Plugin_psionic] [effect0.status0.power]</b>.",
+                "chinese": "获得 <b>[mt2_succclan.Plugin_psionic] [effect0.status0.power]</b>。"
+            },
+            "effects": [
+                "@KnightMareGainPsionic"
+            ]
+        },
+        {
+            "id": "EndlessClearStasisTrigger",
+            "trigger": "pre_combat",
+            "descriptions": {
+                "english": "Lose [stasis] at the start of the turn.",
+                "chinese": "回合开始时失去[stasis]。"
+            },
+            "hide_visual_and_ignore_silence": true,
+            "effects": [
+                "@EndlessClearStasis"
+            ]
+        },
+        {
+            "id": "EndlessReviveTrigger",
+            "trigger": "on_reanimated",
+            "descriptions": {
+                "english": "Heal [effect0.power][health] and gain [multistrike] [effect1.status0.power].",
+                "chinese": "恢复 [effect0.power] 点[health]，并获得 [multistrike] [effect1.status0.power]。"
+            },
+            "effects": [
+                "@EndlessReviveHeal",
+                "@EndlessReviveMulti"
+            ]
+        }
+    ],
+    "effects": [
+        {
+            "id": "AbyssBasicAttack",
+            "name": "CardEffectBuffDamage",
+            "target_mode": "room",
+            "target_team": "monsters",
+            "param_int": 1
+        },
+        {
+            "id": "AbyssBasicHealth",
+            "name": "CardEffectBuffMaxHealth",
+            "target_mode": "room",
+            "target_team": "monsters",
+            "param_int": 1
+        },
+        {
+            "id": "AbyssBasicCheck",
+            "name": {
+                "id": "@CardEffectRequireStatusThreshold",
+                "mod_reference": "Conductor"
+            },
+            "target_mode": "self",
+            "target_team": "monsters",
+            "should_test": true,
+            "should_cancel_subsequent_effects_if_test_fails": true,
+            "param_bool": true,
+            "param_status_effects": [
+                {
+                    "status": "@psionic",
+                    "count": 1
+                }
+            ]
+        },
+        {
+            "id": "AbyssBasicRemove",
+            "name": "CardEffectRemoveStatusEffect",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_status_effects": [
+                {
+                    "status": "@psionic",
+                    "count": 1
+                }
+            ]
+        },
+        {
+            "id": "AbyssBasicDraw",
+            "name": "CardEffectDraw",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_int": 1
+        },
+        {
+            "id": "AbyssBasicEmber",
+            "name": "CardEffectGainEnergy",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_int": 1
+        },
+        {
+            "id": "AbyssPreAttack",
+            "name": "CardEffectBuffDamage",
+            "target_mode": "room",
+            "target_team": "monsters",
+            "param_int": 2
+        },
+        {
+            "id": "AbyssPreHealth",
+            "name": "CardEffectBuffMaxHealth",
+            "target_mode": "room",
+            "target_team": "monsters",
+            "param_int": 2
+        },
+        {
+            "id": "AbyssPreCheck",
+            "name": {
+                "id": "@CardEffectRequireStatusThreshold",
+                "mod_reference": "Conductor"
+            },
+            "target_mode": "self",
+            "target_team": "monsters",
+            "should_test": true,
+            "should_cancel_subsequent_effects_if_test_fails": true,
+            "param_bool": true,
+            "param_status_effects": [
+                {
+                    "status": "@psionic",
+                    "count": 1
+                }
+            ]
+        },
+        {
+            "id": "AbyssPreRemove",
+            "name": "CardEffectRemoveStatusEffect",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_status_effects": [
+                {
+                    "status": "@psionic",
+                    "count": 1
+                }
+            ]
+        },
+        {
+            "id": "AbyssPreDraw",
+            "name": "CardEffectDraw",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_int": 1
+        },
+        {
+            "id": "AbyssPreEmber",
+            "name": "CardEffectGainEnergy",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_int": 1
+        },
+        {
+            "id": "AbyssProAttack",
+            "name": "CardEffectBuffDamage",
+            "target_mode": "room",
+            "target_team": "monsters",
+            "param_int": 4
+        },
+        {
+            "id": "AbyssProHealth",
+            "name": "CardEffectBuffMaxHealth",
+            "target_mode": "room",
+            "target_team": "monsters",
+            "param_int": 2
+        },
+        {
+            "id": "AbyssProCheck",
+            "name": {
+                "id": "@CardEffectRequireStatusThreshold",
+                "mod_reference": "Conductor"
+            },
+            "target_mode": "self",
+            "target_team": "monsters",
+            "should_test": true,
+            "should_cancel_subsequent_effects_if_test_fails": true,
+            "param_bool": true,
+            "param_status_effects": [
+                {
+                    "status": "@psionic",
+                    "count": 1
+                }
+            ]
+        },
+        {
+            "id": "AbyssProRemove",
+            "name": "CardEffectRemoveStatusEffect",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_status_effects": [
+                {
+                    "status": "@psionic",
+                    "count": 1
+                }
+            ]
+        },
+        {
+            "id": "AbyssProDraw",
+            "name": "CardEffectDraw",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_int": 1
+        },
+        {
+            "id": "AbyssProEmber",
+            "name": "CardEffectGainEnergy",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_int": 1
+        },
+        {
+            "id": "IllusionBasicAttack",
+            "name": "CardEffectBuffDamage",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_int": 1
+        },
+        {
+            "id": "IllusionBasicHealth",
+            "name": "CardEffectBuffMaxHealth",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_int": 3
+        },
+        {
+            "id": "IllusionBasicCheck",
+            "name": {
+                "id": "@CardEffectRequireStatusThreshold",
+                "mod_reference": "Conductor"
+            },
+            "target_mode": "self",
+            "target_team": "monsters",
+            "should_test": true,
+            "should_cancel_subsequent_effects_if_test_fails": true,
+            "param_bool": true,
+            "param_status_effects": [
+                {
+                    "status": "@psionic",
+                    "count": 4
+                }
+            ]
+        },
+        {
+            "id": "IllusionBasicRemove",
+            "name": "CardEffectRemoveStatusEffect",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_status_effects": [
+                {
+                    "status": "@psionic",
+                    "count": 4
+                }
+            ]
+        },
+        {
+            "id": "IllusionBasicLifesteal",
+            "name": "CardEffectAddStatusEffect",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_status_effects": [
+                {
+                    "status": "lifesteal",
+                    "count": 1
+                }
+            ]
+        },
+        {
+            "id": "IllusionBasicSpikes",
+            "name": "CardEffectAddStatusEffect",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_status_effects": [
+                {
+                    "status": "spikes",
+                    "count": 1
+                }
+            ]
+        },
+        {
+            "id": "IllusionPreAttack",
+            "name": "CardEffectBuffDamage",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_int": 2
+        },
+        {
+            "id": "IllusionPreHealth",
+            "name": "CardEffectBuffMaxHealth",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_int": 4
+        },
+        {
+            "id": "IllusionPreCheck",
+            "name": {
+                "id": "@CardEffectRequireStatusThreshold",
+                "mod_reference": "Conductor"
+            },
+            "target_mode": "self",
+            "target_team": "monsters",
+            "should_test": true,
+            "should_cancel_subsequent_effects_if_test_fails": true,
+            "param_bool": true,
+            "param_status_effects": [
+                {
+                    "status": "@psionic",
+                    "count": 4
+                }
+            ]
+        },
+        {
+            "id": "IllusionPreRemove",
+            "name": "CardEffectRemoveStatusEffect",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_status_effects": [
+                {
+                    "status": "@psionic",
+                    "count": 4
+                }
+            ]
+        },
+        {
+            "id": "IllusionPreLifesteal",
+            "name": "CardEffectAddStatusEffect",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_status_effects": [
+                {
+                    "status": "lifesteal",
+                    "count": 1
+                }
+            ]
+        },
+        {
+            "id": "IllusionPreSpikes",
+            "name": "CardEffectAddStatusEffect",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_status_effects": [
+                {
+                    "status": "spikes",
+                    "count": 2
+                }
+            ]
+        },
+        {
+            "id": "IllusionProAttack",
+            "name": "CardEffectBuffDamage",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_int": 3
+        },
+        {
+            "id": "IllusionProHealth",
+            "name": "CardEffectBuffMaxHealth",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_int": 5
+        },
+        {
+            "id": "IllusionProCheck",
+            "name": {
+                "id": "@CardEffectRequireStatusThreshold",
+                "mod_reference": "Conductor"
+            },
+            "target_mode": "self",
+            "target_team": "monsters",
+            "should_test": true,
+            "should_cancel_subsequent_effects_if_test_fails": true,
+            "param_bool": true,
+            "param_status_effects": [
+                {
+                    "status": "@psionic",
+                    "count": 4
+                }
+            ]
+        },
+        {
+            "id": "IllusionProRemove",
+            "name": "CardEffectRemoveStatusEffect",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_status_effects": [
+                {
+                    "status": "@psionic",
+                    "count": 4
+                }
+            ]
+        },
+        {
+            "id": "IllusionProLifesteal",
+            "name": "CardEffectAddStatusEffect",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_status_effects": [
+                {
+                    "status": "lifesteal",
+                    "count": 1
+                }
+            ]
+        },
+        {
+            "id": "IllusionProSpikes",
+            "name": "CardEffectAddStatusEffect",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_status_effects": [
+                {
+                    "status": "spikes",
+                    "count": 3
+                }
+            ]
+        },
+        {
+            "id": "KnightMareGainPsionic",
+            "name": "CardEffectAddStatusEffect",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_status_effects": [
+                {
+                    "status": "@psionic",
+                    "count": 1
+                }
+            ]
+        },
+        {
+            "id": "SpawnKnightMare",
+            "name": "CardEffectSpawnMonster",
+            "target_mode": "drop_target_character",
+            "param_character": "@KnightMare"
+        },
+        {
+            "id": "EndlessClearStasis",
+            "name": "CardEffectRemoveStatusEffect",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_status_effects": [
+                {
+                    "status": "untouchable",
+                    "count": 99
+                }
+            ]
+        },
+        {
+            "id": "EndlessBasicStasisSelf",
+            "name": "CardEffectAddStatusEffect",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_status_effects": [
+                {
+                    "status": "untouchable",
+                    "count": 1
+                }
+            ]
+        },
+        {
+            "id": "EndlessPreStasisSelf",
+            "name": "CardEffectAddStatusEffect",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_status_effects": [
+                {
+                    "status": "untouchable",
+                    "count": 1
+                }
+            ]
+        },
+        {
+            "id": "CollapseUndying",
+            "name": "CardEffectAddStatusEffect",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_status_effects": [
+                {
+                    "status": "undying",
+                    "count": 1
+                }
+            ]
+        },
+        {
+            "id": "EndlessReviveHeal",
+            "name": "CardEffectHeal",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_int": 999
+        },
+        {
+            "id": "CollapseKill",
+            "name": "CardEffectKill",
+            "target_mode": "self",
+            "target_team": "monsters"
+        },
+        {
+            "id": "EndlessProStasisSelf",
+            "name": "CardEffectAddStatusEffect",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_status_effects": [
+                {
+                    "status": "untouchable",
+                    "count": 1
+                }
+            ]
+        },
+        {
+            "id": "PsionicRung1Check",
+            "name": {
+                "id": "@CardEffectRequireStatusThreshold",
+                "mod_reference": "Conductor"
+            },
+            "target_mode": "self",
+            "target_team": "monsters",
+            "should_test": true,
+            "should_cancel_subsequent_effects_if_test_fails": true,
+            "param_bool": true,
+            "param_status_effects": [
+                {
+                    "status": "@psionic",
+                    "count": 4
+                }
+            ]
+        },
+        {
+            "id": "PsionicRung1Spend",
+            "name": "CardEffectRemoveStatusEffect",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_status_effects": [
+                {
+                    "status": "@psionic",
+                    "count": 4
+                }
+            ]
+        },
+        {
+            "id": "PsionicRung2Check",
+            "name": {
+                "id": "@CardEffectRequireStatusThreshold",
+                "mod_reference": "Conductor"
+            },
+            "target_mode": "self",
+            "target_team": "monsters",
+            "should_test": true,
+            "should_cancel_subsequent_effects_if_test_fails": true,
+            "param_bool": true,
+            "param_status_effects": [
+                {
+                    "status": "@psionic",
+                    "count": 4
+                }
+            ]
+        },
+        {
+            "id": "PsionicRung2Spend",
+            "name": "CardEffectRemoveStatusEffect",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_status_effects": [
+                {
+                    "status": "@psionic",
+                    "count": 4
+                }
+            ]
+        },
+        {
+            "id": "PsionicRung3Check",
+            "name": {
+                "id": "@CardEffectRequireStatusThreshold",
+                "mod_reference": "Conductor"
+            },
+            "target_mode": "self",
+            "target_team": "monsters",
+            "should_test": true,
+            "should_cancel_subsequent_effects_if_test_fails": true,
+            "param_bool": true,
+            "param_status_effects": [
+                {
+                    "status": "@psionic",
+                    "count": 4
+                }
+            ]
+        },
+        {
+            "id": "PsionicRung3Spend",
+            "name": "CardEffectRemoveStatusEffect",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_status_effects": [
+                {
+                    "status": "@psionic",
+                    "count": 4
+                }
+            ]
+        },
+        {
+            "id": "PsionicRung4Check",
+            "name": {
+                "id": "@CardEffectRequireStatusThreshold",
+                "mod_reference": "Conductor"
+            },
+            "target_mode": "self",
+            "target_team": "monsters",
+            "should_test": true,
+            "should_cancel_subsequent_effects_if_test_fails": true,
+            "param_bool": true,
+            "param_status_effects": [
+                {
+                    "status": "@psionic",
+                    "count": 4
+                }
+            ]
+        },
+        {
+            "id": "PsionicRung4Spend",
+            "name": "CardEffectRemoveStatusEffect",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_status_effects": [
+                {
+                    "status": "@psionic",
+                    "count": 4
+                }
+            ]
+        },
+        {
+            "id": "PsionicRung5Check",
+            "name": {
+                "id": "@CardEffectRequireStatusThreshold",
+                "mod_reference": "Conductor"
+            },
+            "target_mode": "self",
+            "target_team": "monsters",
+            "should_test": true,
+            "should_cancel_subsequent_effects_if_test_fails": true,
+            "param_bool": true,
+            "param_status_effects": [
+                {
+                    "status": "@psionic",
+                    "count": 4
+                }
+            ]
+        },
+        {
+            "id": "PsionicRung5Spend",
+            "name": "CardEffectRemoveStatusEffect",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_status_effects": [
+                {
+                    "status": "@psionic",
+                    "count": 4
+                }
+            ]
+        },
+        {
+            "id": "EndlessBasicGrow1",
+            "name": "@CardEffectPsionicPermanentGrowth",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_upgrade": "@KnightMareGrowth11",
+            "param_int_3": 2,
+            "param_status_effects": [
+                {
+                    "status": "@psionic",
+                    "count": 4
+                }
+            ]
+        },
+        {
+            "id": "EndlessBasicGrow2",
+            "name": "CardEffectAddCardUpgradeToUnits",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_upgrade": "@KnightMareGrowth11",
+            "param_int_3": 2
+        },
+        {
+            "id": "EndlessBasicGrow3",
+            "name": "CardEffectAddCardUpgradeToUnits",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_upgrade": "@KnightMareGrowth11",
+            "param_int_3": 2
+        },
+        {
+            "id": "EndlessBasicGrow4",
+            "name": "CardEffectAddCardUpgradeToUnits",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_upgrade": "@KnightMareGrowth11",
+            "param_int_3": 2
+        },
+        {
+            "id": "EndlessBasicGrow5",
+            "name": "CardEffectAddCardUpgradeToUnits",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_upgrade": "@KnightMareGrowth11",
+            "param_int_3": 2
+        },
+        {
+            "id": "EndlessPreGrow1",
+            "name": "@CardEffectPsionicPermanentGrowth",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_upgrade": "@KnightMareGrowth12",
+            "param_int_3": 2,
+            "param_status_effects": [
+                {
+                    "status": "@psionic",
+                    "count": 4
+                }
+            ]
+        },
+        {
+            "id": "EndlessPreGrow2",
+            "name": "CardEffectAddCardUpgradeToUnits",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_upgrade": "@KnightMareGrowth12",
+            "param_int_3": 2
+        },
+        {
+            "id": "EndlessPreGrow3",
+            "name": "CardEffectAddCardUpgradeToUnits",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_upgrade": "@KnightMareGrowth12",
+            "param_int_3": 2
+        },
+        {
+            "id": "EndlessPreGrow4",
+            "name": "CardEffectAddCardUpgradeToUnits",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_upgrade": "@KnightMareGrowth12",
+            "param_int_3": 2
+        },
+        {
+            "id": "EndlessPreGrow5",
+            "name": "CardEffectAddCardUpgradeToUnits",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_upgrade": "@KnightMareGrowth12",
+            "param_int_3": 2
+        },
+        {
+            "id": "EndlessProGrow1",
+            "name": "@CardEffectPsionicPermanentGrowth",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_upgrade": "@KnightMareGrowth22",
+            "param_int_3": 2,
+            "param_status_effects": [
+                {
+                    "status": "@psionic",
+                    "count": 4
+                }
+            ]
+        },
+        {
+            "id": "EndlessProGrow2",
+            "name": "CardEffectAddCardUpgradeToUnits",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_upgrade": "@KnightMareGrowth22",
+            "param_int_3": 2
+        },
+        {
+            "id": "EndlessProGrow3",
+            "name": "CardEffectAddCardUpgradeToUnits",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_upgrade": "@KnightMareGrowth22",
+            "param_int_3": 2
+        },
+        {
+            "id": "EndlessProGrow4",
+            "name": "CardEffectAddCardUpgradeToUnits",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_upgrade": "@KnightMareGrowth22",
+            "param_int_3": 2
+        },
+        {
+            "id": "EndlessProGrow5",
+            "name": "CardEffectAddCardUpgradeToUnits",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_upgrade": "@KnightMareGrowth22",
+            "param_int_3": 2
+        },
+        {
+            "id": "EndlessReviveMulti",
+            "name": "CardEffectAddStatusEffect",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_status_effects": [
+                {
+                    "status": "multistrike",
+                    "count": 1
+                }
+            ]
+        },
+        {
+            "id": "KnightMareAbyssAddSpark",
+            "name": "CardEffectAddBattleCard",
+            "target_mode": "room",
+            "target_team": "none",
+            "param_int": 3,
+            "param_int_2": 1,
+            "param_card_pool": "@ObsessingShardPool"
+        }
+    ],
+    "upgrades": [
+        {
+            "id": "upg_AbyssBasic",
+            "titles": {
+                "english": "Abyss",
+                "chinese": "深渊"
+            },
+            "bonus_damage": 5,
+            "bonus_hp": 0,
+            "use_upgrade_highlight_tags": true,
+            "trigger_upgrades": [
+                "@AbyssBasicTrigger"
+            ],
+            "ability_upgrade": "@KnightMareAbyssSpark"
+        },
+        {
+            "id": "upg_AbyssPre",
+            "titles": {
+                "english": "Abyss II",
+                "chinese": "深渊 II"
+            },
+            "bonus_damage": 5,
+            "bonus_hp": 10,
+            "use_upgrade_highlight_tags": true,
+            "trigger_upgrades": [
+                "@AbyssPreTrigger"
+            ],
+            "ability_upgrade": "@KnightMareAbyssSpark"
+        },
+        {
+            "id": "upg_AbyssPro",
+            "titles": {
+                "english": "Abyss III",
+                "chinese": "深渊 III"
+            },
+            "bonus_damage": 5,
+            "bonus_hp": 30,
+            "use_upgrade_highlight_tags": true,
+            "trigger_upgrades": [
+                "@AbyssProTrigger"
+            ],
+            "ability_upgrade": "@KnightMareAbyssSpark"
+        },
+        {
+            "id": "upg_EndlessBasic",
+            "titles": {
+                "english": "Endless",
+                "chinese": "无尽"
+            },
+            "bonus_damage": 10,
+            "bonus_hp": 0,
+            "use_upgrade_highlight_tags": true,
+            "trigger_upgrades": [
+                "@EndlessBasicTrigger",
+                "@EndlessReviveTrigger",
+                "@EndlessClearStasisTrigger"
+            ],
+            "ability_upgrade": "@KnightMarePsionicCollapse"
+        },
+        {
+            "id": "upg_EndlessPre",
+            "titles": {
+                "english": "Endless II",
+                "chinese": "无尽 II"
+            },
+            "bonus_damage": 15,
+            "bonus_hp": 5,
+            "use_upgrade_highlight_tags": true,
+            "trigger_upgrades": [
+                "@EndlessPreTrigger",
+                "@EndlessReviveTrigger",
+                "@EndlessClearStasisTrigger"
+            ],
+            "ability_upgrade": "@KnightMarePsionicCollapse"
+        },
+        {
+            "id": "upg_EndlessPro",
+            "titles": {
+                "english": "Endless III",
+                "chinese": "无尽 III"
+            },
+            "bonus_damage": 20,
+            "bonus_hp": 10,
+            "use_upgrade_highlight_tags": true,
+            "trigger_upgrades": [
+                "@EndlessProTrigger",
+                "@EndlessReviveTrigger",
+                "@EndlessClearStasisTrigger"
+            ],
+            "ability_upgrade": "@KnightMarePsionicCollapse"
+        },
+        {
+            "id": "upg_IllusionBasic",
+            "titles": {
+                "english": "Illusion",
+                "chinese": "幻影"
+            },
+            "bonus_damage": 0,
+            "bonus_hp": 10,
+            "use_upgrade_highlight_tags": true,
+            "trigger_upgrades": [
+                "@IllusionBasicTrigger"
+            ]
+        },
+        {
+            "id": "upg_IllusionPre",
+            "titles": {
+                "english": "Illusion II",
+                "chinese": "幻影 II"
+            },
+            "bonus_damage": 0,
+            "bonus_hp": 30,
+            "use_upgrade_highlight_tags": true,
+            "trigger_upgrades": [
+                "@IllusionPreTrigger"
+            ]
+        },
+        {
+            "id": "upg_IllusionPro",
+            "titles": {
+                "english": "Illusion III",
+                "chinese": "幻影 III"
+            },
+            "bonus_damage": 0,
+            "bonus_hp": 50,
+            "use_upgrade_highlight_tags": true,
+            "trigger_upgrades": [
+                "@IllusionProTrigger"
+            ]
+        },
+        {
+            "id": "KnightMareGrowth11",
+            "bonus_damage": 1,
+            "bonus_hp": 1
+        },
+        {
+            "id": "KnightMareGrowth12",
+            "bonus_damage": 1,
+            "bonus_hp": 2
+        },
+        {
+            "id": "KnightMareGrowth22",
+            "bonus_damage": 2,
+            "bonus_hp": 2
+        },
+        {
+            "id": "KnightMarePermanent",
+            "bonus_damage": 2,
+            "bonus_hp": 2
+        },
+        {
+            "id": "EndlessBasicMultiUpgrade",
+            "status_effect_upgrades": [
+                {
+                    "status": "multistrike",
+                    "count": 1
+                },
+                {
+                    "status": "untouchable",
+                    "count": 1
+                }
+            ]
+        },
+        {
+            "id": "EndlessPreMultiUpgrade",
+            "status_effect_upgrades": [
+                {
+                    "status": "multistrike",
+                    "count": 1
+                },
+                {
+                    "status": "untouchable",
+                    "count": 1
+                },
+                {
+                    "status": "titanskin",
+                    "count": 1
+                }
+            ]
+        },
+        {
+            "id": "EndlessProMultiUpgrade",
+            "status_effect_upgrades": [
+                {
+                    "status": "multistrike",
+                    "count": 1
+                },
+                {
+                    "status": "titanskin",
+                    "count": 1
+                }
+            ]
+        }
+    ],
+    "sprites": [
+        {
+            "id": "KnightMareCardArt",
+            "path": "textures/KnightMareCardArt.png"
+        },
+        {
+            "id": "KnightMareCharacterArt",
+            "path": "textures/KnightMareCharacterArt.png"
+        }
+    ],
+    "game_objects": [
+        {
+            "id": "KnightMareCardArt",
+            "type": "card_art",
+            "extensions": {
+                "card_art": {
+                    "sprite": "@KnightMareCardArt"
+                }
+            }
+        },
+        {
+            "id": "KnightMareCharacterArt",
+            "type": "character_art",
+            "extensions": {
+                "character_art": {
+                    "sprite": "@KnightMareCharacterArt",
+                    "transform": {
+                        "position": {
+                            "x": 0,
+                            "y": 1.092,
+                            "z": 0.1
+                        },
+                        "scale": {
+                            "x": 0.85,
+                            "y": 0.85,
+                            "z": 1
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "KnightMareClassDisplayArt",
+            "type": "character_art",
+            "extensions": {
+                "character_art": {
+                    "sprite": "@KnightMareCharacterArt",
+                    "transform": {
+                        "position": {
+                            "x": 1.7,
+                            "y": 0.9,
+                            "z": 0
+                        },
+                        "scale": {
+                            "x": 2.5,
+                            "y": 2.5,
+                            "z": 1
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

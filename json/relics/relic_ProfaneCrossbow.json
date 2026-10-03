@@ -17,7 +17,7 @@
                 "@ProfaneCrossbowEffect"
             ],
             "icon": "@ProfaneCrossbowIcon",
-            "icon_small": "@ProfaneCrossbowIcon",
+            "icon_small": "@ProfaneCrossbowIconSmall",
             "extensions": [
                 {
                     "collectable": {
@@ -45,7 +45,11 @@
     "sprites": [
         {
             "id": "ProfaneCrossbowIcon",
-            "path": "textures/ProfaneCrossbowArt.png"
+            "path": "textures/RelicIcons/ProfaneCrossbowIcon.png"
+        },
+        {
+            "id": "ProfaneCrossbowIconSmall",
+            "path": "textures/RelicIcons/ProfaneCrossbowIconSmall.png"
         }
     ],
     "effects": [

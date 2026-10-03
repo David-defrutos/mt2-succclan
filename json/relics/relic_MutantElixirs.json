@@ -18,7 +18,7 @@
                 "@MutantElixirsGrant"
             ],
             "icon": "@MutantElixirsIcon",
-            "icon_small": "@MutantElixirsIcon",
+            "icon_small": "@MutantElixirsIconSmall",
             "extensions": [
                 {
                     "collectable": {
@@ -130,17 +130,21 @@
     "sprites": [
         {
             "id": "MutantElixirsIcon",
-            "path": "textures/MutantElixirsArt.png"
+            "path": "textures/RelicIcons/MutantElixirsIcon.png"
+        },
+        {
+            "id": "MutantElixirsIconSmall",
+            "path": "textures/RelicIcons/MutantElixirsIconSmall.png"
         },
         {
             "id": "Mutated",
-            "path": "textures/MutantElixirsArt.png"
+            "path": "textures/RelicIcons/MutantElixirsIconSmall.png"
         }
     ],
     "atlas_icons": [
         {
             "id": "Mutated",
-            "path": "textures/MutantElixirsArt.png"
+            "path": "textures/RelicIcons/MutantElixirsIconSmall.png"
         }
     ]
 }

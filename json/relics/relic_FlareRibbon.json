@@ -17,7 +17,7 @@
                 "@FlareRibbonEffect"
             ],
             "icon": "@FlareRibbonIcon",
-            "icon_small": "@FlareRibbonIcon",
+            "icon_small": "@FlareRibbonIconSmall",
             "extensions": [
                 {
                     "collectable": {
@@ -48,7 +48,11 @@
     "sprites": [
         {
             "id": "FlareRibbonIcon",
-            "path": "textures/FlareRibbonArt.png"
+            "path": "textures/RelicIcons/FlareRibbonIcon.png"
+        },
+        {
+            "id": "FlareRibbonIconSmall",
+            "path": "textures/RelicIcons/FlareRibbonIconSmall.png"
         }
     ]
 }

@@ -17,7 +17,7 @@
                 "@ObsessingAromatherapyEffect"
             ],
             "icon": "@ObsessingAromatherapyIcon",
-            "icon_small": "@ObsessingAromatherapyIcon",
+            "icon_small": "@ObsessingAromatherapyIconSmall",
             "extensions": [
                 {
                     "collectable": {
@@ -48,7 +48,11 @@
     "sprites": [
         {
             "id": "ObsessingAromatherapyIcon",
-            "path": "textures/ObsessingAromatherapyArt.png"
+            "path": "textures/RelicIcons/ObsessingAromatherapyIcon.png"
+        },
+        {
+            "id": "ObsessingAromatherapyIconSmall",
+            "path": "textures/RelicIcons/ObsessingAromatherapyIconSmall.png"
         }
     ]
 }

@@ -17,7 +17,7 @@
                 "@DesireCrystalEffect"
             ],
             "icon": "@DesireCrystalIcon",
-            "icon_small": "@DesireCrystalIcon",
+            "icon_small": "@DesireCrystalIconSmall",
             "extensions": [
                 {
                     "collectable": {
@@ -77,7 +77,11 @@
     "sprites": [
         {
             "id": "DesireCrystalIcon",
-            "path": "textures/DesireCrystalArt.png"
+            "path": "textures/RelicIcons/DesireCrystalIcon.png"
+        },
+        {
+            "id": "DesireCrystalIconSmall",
+            "path": "textures/RelicIcons/DesireCrystalIconSmall.png"
         }
     ]
 }

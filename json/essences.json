@@ -221,8 +221,8 @@
                 "chinese": "魇魔刽子手"
             },
             "descriptions": {
-                "english": "+2[ember]. [sweep].",
-                "chinese": "+2[ember]。[sweep]。"
+                "english": "Costs +2[ember]. [sweep].",
+                "chinese": "费用 +2[ember]。[sweep]。"
             },
             "use_upgrade_highlight_tags": true,
             "cost_reduction": -2,

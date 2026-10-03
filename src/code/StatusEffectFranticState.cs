@@ -45,6 +45,7 @@ namespace mt2_succclan.Plugin
             var character = inputTriggerParams.associatedCharacter;
             return character != null
                 && character.IsAlive
+                && !FranticBossImmunity.IsBoss(character)
                 && character.GetStatusEffectStacks(GetStatusId()) > 0;
         }
 

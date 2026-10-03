@@ -18,7 +18,7 @@
                 "@DemonBloodJunk"
             ],
             "icon": "@DemonBloodIcon",
-            "icon_small": "@DemonBloodIcon",
+            "icon_small": "@DemonBloodIconSmall",
             "extensions": [
                 {
                     "collectable": {
@@ -54,7 +54,11 @@
     "sprites": [
         {
             "id": "DemonBloodIcon",
-            "path": "textures/DemonBloodArt.png"
+            "path": "textures/RelicIcons/DemonBloodIcon.png"
+        },
+        {
+            "id": "DemonBloodIconSmall",
+            "path": "textures/RelicIcons/DemonBloodIconSmall.png"
         }
     ]
 }

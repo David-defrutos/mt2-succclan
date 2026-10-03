@@ -1,0 +1,132 @@
+﻿{
+    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+    "cards": [
+        {
+            "id": "SpectralRefuge",
+            "names": {
+                "english": "Spectral Refuge",
+                "spanish": "Refugio espectral",
+                "chinese": "幽灵庇护所"
+            },
+            "descriptions": {
+                "english": "At the start of each turn, friendly <b>Ghosts</b> on this floor gain +5[health] and [regen] 2.",
+                "spanish": "Al comienzo de cada turno, los <b>Ghosts</b> aliados de esta sala obtienen +5[health] y [regen] 2.",
+                "chinese": "每回合开始时，本层友方<b>幽灵</b>获得 +5[health] 和 [regen] 2。"
+            },
+            "card_art": "@SpectralRefugeArt",
+            "cost": 1,
+            "card_type": "room",
+            "rarity": "uncommon",
+            "class": "@ClassSuccubus",
+            "targets_room": true,
+            "targetless": true,
+            "effects": [
+                "@SpectralRefugeAttach"
+            ],
+            "pools": [
+                "MegaPool",
+                "RoomAndEquipmentDraftPool",
+                "RoomAndEquipmentMerchant_RoomPool",
+                "TrainRoomPool"
+            ]
+        }
+    ],
+    "upgrades": [
+        {
+            "id": "SpectralRefugeUpgrade",
+            "titles": {
+                "english": "Spectral Refuge",
+                "spanish": "Refugio espectral",
+                "chinese": "幽灵庇护所"
+            },
+            "descriptions": {
+                "english": "At the start of each turn, friendly <b>Ghosts</b> on this floor gain +5[health] and [regen] 2.",
+                "spanish": "Al comienzo de cada turno, los <b>Ghosts</b> aliados de esta sala obtienen +5[health] y [regen] 2.",
+                "chinese": "每回合开始时，本层友方<b>幽灵</b>获得 +5[health] 和 [regen] 2。"
+            },
+            "room_modifier_upgrades": [
+                "@SpectralRefugeModifier"
+            ],
+            "hide_icon_on_card": true,
+            "icon": "@SpectralRefugeIcon"
+        }
+    ],
+    "room_modifiers": [
+        {
+            "id": "SpectralRefugeModifier",
+            "name": "@RoomStateSuccClanTurnStartEffects",
+            "titles": {
+                "english": "Spectral Refuge",
+                "spanish": "Refugio espectral",
+                "chinese": "幽灵庇护所"
+            },
+            "descriptions": {
+                "english": "At the start of each turn, friendly <b>Ghosts</b> on this floor gain +5[health] and [regen] 2.",
+                "spanish": "Al comienzo de cada turno, los <b>Ghosts</b> aliados de esta sala obtienen +5[health] y [regen] 2.",
+                "chinese": "每回合开始时，本层友方<b>幽灵</b>获得 +5[health] 和 [regen] 2。"
+            },
+            "in_play_descriptions": {
+                "english": "At the start of each turn, friendly <b>Ghosts</b> on this floor gain +5[health] and [regen] 2.",
+                "spanish": "Al comienzo de cada turno, los <b>Ghosts</b> aliados de esta sala obtienen +5[health] y [regen] 2.",
+                "chinese": "每回合开始时，本层友方<b>幽灵</b>获得 +5[health] 和 [regen] 2。"
+            },
+            "param_effects": [
+                "@SpectralRefugeHealth",
+                "@SpectralRefugeRegen"
+            ]
+        }
+    ],
+    "effects": [
+        {
+            "id": "SpectralRefugeAttach",
+            "name": "CardEffectAttachTrainRoomAttachment",
+            "target_mode": "room",
+            "target_team": "monsters",
+            "param_upgrade": "@SpectralRefugeUpgrade",
+            "param_bool": false,
+            "param_bool_2": false
+        },
+        {
+            "id": "SpectralRefugeHealth",
+            "name": "CardEffectBuffMaxHealth",
+            "target_mode": "room",
+            "target_team": "monsters",
+            "target_subtype": "@Sub_Ghost",
+            "param_int": 5
+        },
+        {
+            "id": "SpectralRefugeRegen",
+            "name": "CardEffectAddStatusEffect",
+            "target_mode": "room",
+            "target_team": "monsters",
+            "target_subtype": "@Sub_Ghost",
+            "param_status_effects": [
+                {
+                    "status": "regen",
+                    "count": 2
+                }
+            ]
+        }
+    ],
+    "sprites": [
+        {
+            "id": "SpectralRefugeArt",
+            "path": "textures/SpectralRefugeArt.png"
+        },
+        {
+            "id": "SpectralRefugeIcon",
+            "path": "textures/EquipmentRoomIcons/SpectralRefuge.png"
+        }
+    ],
+    "game_objects": [
+        {
+            "id": "SpectralRefugeArt",
+            "type": "card_art",
+            "extensions": {
+                "card_art": {
+                    "sprite": "@SpectralRefugeArt"
+                }
+            }
+        }
+    ]
+}

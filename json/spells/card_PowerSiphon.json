@@ -1,4 +1,4 @@
-{
+﻿{
     "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
     "cards": [
         {
@@ -8,21 +8,23 @@
                 "chinese": "力量虹吸"
             },
             "descriptions": {
-                "english": "Deal [effect0.power] damage to the front enemy unit. Discard [effect1.power] <b>Obsessing Spark</b>.",
-                "chinese": "对前排敌方单位造成 [effect0.power] 点伤害。舍弃 [effect1.power] 张<b>欲望碎片</b>。"
+                "english": "Deal 20 damage to the front enemy unit for each <b>Blight</b> in your hand, then discard all <b>Blights</b> in your hand.",
+                "spanish": "Inflige 20 de daño al enemigo delantero por cada <b>Blight</b> en tu mano y después descarta todos los <b>Blights</b> de tu mano.",
+                "chinese": "手牌中每有一张<b>祸害</b>，对前排敌方单位造成 20 点伤害，然后舍弃手牌中的所有<b>祸害</b>。"
             },
             "card_type": "spell",
             "rarity": "uncommon",
             "class": "@ClassSuccubus",
             "card_art": "@PowerSiphonArt",
-            "cost": 2,
+            "cost": 1,
             "targets_room": true,
             "targetless": true,
             "pools": [
                 "MegaPool"
             ],
             "traits": [
-                "@Attuned"
+                "@Attuned",
+                "@PowerSiphonBlightDamage"
             ],
             "effects": [
                 "@PowerSiphonDamage",
@@ -36,15 +38,13 @@
             "name": "CardEffectDamage",
             "target_mode": "front_in_room",
             "target_team": "heroes",
-            "param_int": 30
+            "param_int": 0
         },
         {
             "id": "PowerSiphonSpread",
-            "name": "@CardEffectDiscardSpecificCard",
-            "target_mode": "hand",
-            "target_card_type": "blight",
-            "param_int": 2,
-            "param_card": "@ObsessingShard"
+            "name": "@CardEffectDiscardAllBlights",
+            "target_mode": "room",
+            "target_team": "none"
         }
     ],
     "sprites": [
@@ -62,6 +62,13 @@
                     "sprite": "@PowerSiphonArt"
                 }
             }
+        }
+    ],
+    "traits": [
+        {
+            "id": "PowerSiphonBlightDamage",
+            "name": "@CardTraitBlightHandDamage",
+            "param_int": 20
         }
     ]
 }

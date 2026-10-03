@@ -1,0 +1,97 @@
+﻿{
+    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+    "cards": [
+        {
+            "id": "MourningVeil",
+            "names": {
+                "english": "Mourning Veil",
+                "spanish": "Velo de luto",
+                "chinese": "哀悼面纱"
+            },
+            "card_art": "@MourningVeilArt",
+            "cost": 1,
+            "card_type": "equipment",
+            "rarity": "uncommon",
+            "class": "@ClassSuccubus",
+            "targets_room": true,
+            "targetless": false,
+            "effects": [
+                "@MourningVeilAttach"
+            ],
+            "pools": [
+                "MegaPool",
+                "RoomAndEquipmentDraftPool",
+                "RoomAndEquipmentMerchant_EquipmentPool"
+            ]
+        }
+    ],
+    "upgrades": [
+        {
+            "id": "MourningVeilUpgrade",
+            "titles": {
+                "english": "Mourning Veil",
+                "spanish": "Velo de luto",
+                "chinese": "哀悼面纱"
+            },
+            "icon": "@MourningVeilIcon",
+            "trigger_upgrades": [
+                "@MourningVeilTrigger"
+            ],
+            "bonus_hp": 8
+        }
+    ],
+    "character_triggers": [
+        {
+            "id": "MourningVeilTrigger",
+            "trigger": {
+                "id": "@Accursed",
+                "mod_reference": "Conductor"
+            },
+            "descriptions": {
+                "english": "Restore [effect0.power] health.",
+                "spanish": "Cura [effect0.power] de vida.",
+                "chinese": "恢复 [effect0.power] 点生命。"
+            },
+            "effects": [
+                "@MourningVeilEffect"
+            ]
+        }
+    ],
+    "effects": [
+        {
+            "id": "MourningVeilAttach",
+            "name": "CardEffectAttachEquipment",
+            "target_mode": "drop_target_character",
+            "target_team": "monsters",
+            "param_upgrade": "@MourningVeilUpgrade"
+        },
+        {
+            "id": "MourningVeilEffect",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "name": "CardEffectHeal",
+            "param_int": 4
+        }
+    ],
+    "sprites": [
+        {
+            "id": "MourningVeilArt",
+            "path": "textures/MourningVeilArt.png"
+        },
+        {
+            "id": "MourningVeilIcon",
+            "path": "textures/EquipmentRoomIcons/MourningVeil.png"
+        }
+    ],
+    "game_objects": [
+        {
+            "id": "MourningVeilArt",
+            "type": "card_art",
+            "extensions": {
+                "card_art": {
+                    "sprite": "@MourningVeilArt"
+                }
+            }
+        }
+    ]
+}

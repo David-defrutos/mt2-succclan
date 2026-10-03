@@ -17,7 +17,7 @@
                 "@AbyssCrownEffect"
             ],
             "icon": "@AbyssCrownIcon",
-            "icon_small": "@AbyssCrownIcon",
+            "icon_small": "@AbyssCrownIconSmall",
             "extensions": [
                 {
                     "collectable": {
@@ -49,7 +49,11 @@
     "sprites": [
         {
             "id": "AbyssCrownIcon",
-            "path": "textures/AbyssCrownArt.png"
+            "path": "textures/RelicIcons/AbyssCrownIcon.png"
+        },
+        {
+            "id": "AbyssCrownIconSmall",
+            "path": "textures/RelicIcons/AbyssCrownIconSmall.png"
         }
     ]
 }

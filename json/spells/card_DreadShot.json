@@ -1,4 +1,4 @@
-{
+﻿{
     "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
     "cards": [
         {
@@ -8,8 +8,9 @@
                 "chinese": "恐惧射击"
             },
             "descriptions": {
-                "english": "Deal [effect0.power] damage.",
-                "chinese": "造成 [effect0.power] 点伤害。"
+                "english": "Deal [effect0.power] damage to a friendly or enemy unit.",
+                "spanish": "Inflige [effect0.power] de daño a una unidad aliada o enemiga.",
+                "chinese": "对一个友方或敌方单位造成 [effect0.power] 点伤害。"
             },
             "card_type": "spell",
             "rarity": "common",
@@ -47,7 +48,7 @@
             "id": "DreadShotDamage",
             "name": "CardEffectDamage",
             "target_mode": "drop_target_character",
-            "target_team": "heroes",
+            "target_team": "both",
             "param_int": 2
         },
         {

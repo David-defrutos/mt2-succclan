@@ -63,9 +63,14 @@ namespace mt2_succclan.Plugin
                         "json/spells/card_PlagueBoost.json",
                         "json/spells/card_PowerSiphon.json",
                         "json/spells/card_ProfaneAscending.json",
-                        "json/spells/card_ProfaneAscendingPlus.json",
                         "json/spells/card_ShadowEmbrace.json",
                         "json/spells/card_VitalityExtraction.json",
+
+                        // Salas y equipos
+                        "json/rooms/room_SpectralRefuge.json",
+                        "json/rooms/room_ObsessionVault.json",
+                        "json/equipment/equip_WhisperingBlade.json",
+                        "json/equipment/equip_MourningVeil.json",
 
                         // Reliquias
                         "json/relics/relic_AbyssCrown.json",

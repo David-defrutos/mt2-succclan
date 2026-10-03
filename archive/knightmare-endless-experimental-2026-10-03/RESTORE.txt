@@ -1,0 +1,7 @@
+Archived experimental Knightmare before the first Thunderstore release.
+Contains the full champion JSON, permanent-growth source, DLL and README.
+The live src/code/AuditedCardEffects.cs also retains CardEffectPsionicPermanentGrowth.
+No archived JSON is registered by Plugin.cs; the release packaging excludes archive/.
+To restore ONLY Endless, merge the Endless upgrades, triggers, effects, growth upgrades and KnightMarePsionicCollapse card from this snapshot into the current champion JSON; preserve subsequent Abyss/Illusion and art edits. Rebuild locally if custom-effect code changes. Do not overwrite the whole plugin with this historical DLL.
+
+The historical binary uses .dll.snapshot so BepInEx cannot load it as a second plugin.

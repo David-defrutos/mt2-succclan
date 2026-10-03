@@ -18,7 +18,7 @@
                 "@PoisonSerumShard"
             ],
             "icon": "@PoisonSerumIcon",
-            "icon_small": "@PoisonSerumIcon",
+            "icon_small": "@PoisonSerumIconSmall",
             "extensions": [
                 {
                     "collectable": {
@@ -48,7 +48,11 @@
     "sprites": [
         {
             "id": "PoisonSerumIcon",
-            "path": "textures/PoisonSerumArt.png"
+            "path": "textures/RelicIcons/PoisonSerumIcon.png"
+        },
+        {
+            "id": "PoisonSerumIconSmall",
+            "path": "textures/RelicIcons/PoisonSerumIconSmall.png"
         }
     ]
 }

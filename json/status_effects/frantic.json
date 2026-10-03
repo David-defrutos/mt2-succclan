@@ -1,4 +1,4 @@
-{
+﻿{
     "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
     "status_effects": [
         {
@@ -13,12 +13,14 @@
                 "chinese": "<nobr>疯狂 {0}</nobr>"
             },
             "card_tooltips": {
-                "english": "Unit attacks its own front unit instead of attacking. Consumed when it triggers.",
-                "chinese": "单位不再攻击，转而攻击己方前排单位。触发后消耗。"
+                "english": "Unit attacks its own front unit instead of attacking. Consumes 1 stack when it triggers. Cannot be applied to bosses.",
+                "spanish": "La unidad ataca a su propio aliado delantero en vez de atacar. Consume 1 carga al activarse. No se puede aplicar a jefes.",
+                "chinese": "单位不再攻击敌人，转而攻击己方前排单位。每次触发消耗 1 层。无法施加于首领。"
             },
             "character_tooltips": {
-                "english": "Attacks its own front unit instead of attacking. Consumed when it triggers.",
-                "chinese": "不再攻击，转而攻击己方前排单位。触发后消耗。"
+                "english": "Unit attacks its own front unit instead of attacking. Consumes 1 stack when it triggers. Cannot be applied to bosses.",
+                "spanish": "La unidad ataca a su propio aliado delantero en vez de atacar. Consume 1 carga al activarse. No se puede aplicar a jefes.",
+                "chinese": "单位不再攻击敌人，转而攻击己方前排单位。每次触发消耗 1 层。无法施加于首领。"
             },
             "replacement_texts": {
                 "english": "<b>Frantic</b>",
@@ -30,7 +32,7 @@
             },
             "display_category": "negative",
             "trigger_stage": "on_combat_turn_spark",
-            "is_stackable": false,
+            "is_stackable": true,
             "remove_stack_at_end_of_turn": false,
             "exclude_monster_propagation": true,
             "icon": "@Frantic"

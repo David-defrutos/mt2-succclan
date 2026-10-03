@@ -1,4 +1,4 @@
-{
+﻿{
     "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
     "cards": [
         {
@@ -8,8 +8,9 @@
                 "chinese": "诡影道钉"
             },
             "descriptions": {
-                "english": "If at least 1[ember] is spent, apply <b>[mt2_succclan.Plugin_frantic]</b> to all enemy units.",
-                "chinese": "若消耗至少 1[ember]，对所有敌方单位施加 <b>[mt2_succclan.Plugin_frantic]</b>。"
+                "english": "Apply <b>[mt2_succclan.Plugin_frantic] X</b> to all enemy units on this floor, except bosses.",
+                "spanish": "Aplica <b>[mt2_succclan.Plugin_frantic] X</b> a todos los enemigos de esta sala, excepto los jefes.",
+                "chinese": "对本层所有敌方单位施加 <b>[mt2_succclan.Plugin_frantic] X</b>，首领除外。"
             },
             "card_type": "spell",
             "rarity": "rare",
@@ -25,7 +26,10 @@
             "effects": [
                 "@CubusSpikeFrantic"
             ],
-            "cost_type": "x"
+            "cost_type": "x",
+            "pools": [
+                "MegaPool"
+            ]
         }
     ],
     "effects": [

@@ -17,7 +17,7 @@
                 "@NetherBlossomEffect"
             ],
             "icon": "@NetherBlossomIcon",
-            "icon_small": "@NetherBlossomIcon",
+            "icon_small": "@NetherBlossomIconSmall",
             "extensions": [
                 {
                     "collectable": {
@@ -48,7 +48,11 @@
     "sprites": [
         {
             "id": "NetherBlossomIcon",
-            "path": "textures/NetherBlossomArt.png"
+            "path": "textures/RelicIcons/NetherBlossomIcon.png"
+        },
+        {
+            "id": "NetherBlossomIconSmall",
+            "path": "textures/RelicIcons/NetherBlossomIconSmall.png"
         }
     ]
 }

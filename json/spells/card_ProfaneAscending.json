@@ -8,8 +8,8 @@
                 "chinese": "亵渎晋升"
             },
             "descriptions": {
-                "english": "<b>Descend</b> an enemy unit to the bottom floor. Apply <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b> and fully heal it.",
-                "chinese": "使一个敌方单位<b>下降</b>到最底层，施加 <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b>，并将其治疗至满。"
+                "english": "<b>Ascend</b> an enemy unit. Apply <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b> and heal it for [effect2.power][health].",
+                "chinese": "使一个敌方单位<b>上升</b>一层，施加 <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b>，并为其恢复 [effect2.power] 点[health]。"
             },
             "card_type": "spell",
             "rarity": "common",
@@ -21,9 +21,6 @@
             "pools": [
                 "MegaPool",
                 "SpellsNotAllowedSpellPowerPool"
-            ],
-            "traits": [
-                "@Consume"
             ],
             "effects": [
                 "@PABump",
@@ -38,7 +35,7 @@
             "name": "CardEffectBump",
             "target_mode": "drop_target_character",
             "target_team": "heroes",
-            "param_int": -100
+            "param_int": 1
         },
         {
             "id": "PAFrantic",
@@ -57,7 +54,7 @@
             "name": "CardEffectHeal",
             "target_mode": "last_targeted_characters",
             "target_team": "heroes",
-            "param_int": 999
+            "param_int": 100
         }
     ],
     "sprites": [

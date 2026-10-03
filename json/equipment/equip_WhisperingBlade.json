@@ -1,0 +1,99 @@
+﻿{
+    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+    "cards": [
+        {
+            "id": "WhisperingBlade",
+            "names": {
+                "english": "Whispering Blade",
+                "spanish": "Hoja susurrante",
+                "chinese": "低语之刃"
+            },
+            "card_art": "@WhisperingBladeArt",
+            "cost": 1,
+            "card_type": "equipment",
+            "rarity": "uncommon",
+            "class": "@ClassSuccubus",
+            "targets_room": true,
+            "targetless": false,
+            "effects": [
+                "@WhisperingBladeAttach"
+            ],
+            "pools": [
+                "MegaPool",
+                "RoomAndEquipmentDraftPool",
+                "RoomAndEquipmentMerchant_EquipmentPool"
+            ]
+        }
+    ],
+    "upgrades": [
+        {
+            "id": "WhisperingBladeUpgrade",
+            "titles": {
+                "english": "Whispering Blade",
+                "spanish": "Hoja susurrante",
+                "chinese": "低语之刃"
+            },
+            "icon": "@WhisperingBladeIcon",
+            "trigger_upgrades": [
+                "@WhisperingBladeTrigger"
+            ],
+            "bonus_damage": 5
+        }
+    ],
+    "character_triggers": [
+        {
+            "id": "WhisperingBladeTrigger",
+            "trigger": "on_attacking",
+            "descriptions": {
+                "english": "Gain [mt2_succclan.Plugin_psionic] [effect0.status0.power].",
+                "spanish": "Obtiene [mt2_succclan.Plugin_psionic] [effect0.status0.power].",
+                "chinese": "获得 [mt2_succclan.Plugin_psionic] [effect0.status0.power]。"
+            },
+            "effects": [
+                "@WhisperingBladeEffect"
+            ]
+        }
+    ],
+    "effects": [
+        {
+            "id": "WhisperingBladeAttach",
+            "name": "CardEffectAttachEquipment",
+            "target_mode": "drop_target_character",
+            "target_team": "monsters",
+            "param_upgrade": "@WhisperingBladeUpgrade"
+        },
+        {
+            "id": "WhisperingBladeEffect",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "name": "CardEffectAddStatusEffect",
+            "param_status_effects": [
+                {
+                    "status": "@psionic",
+                    "count": 1
+                }
+            ]
+        }
+    ],
+    "sprites": [
+        {
+            "id": "WhisperingBladeArt",
+            "path": "textures/WhisperingBladeArt.png"
+        },
+        {
+            "id": "WhisperingBladeIcon",
+            "path": "textures/EquipmentRoomIcons/WhisperingBlade.png"
+        }
+    ],
+    "game_objects": [
+        {
+            "id": "WhisperingBladeArt",
+            "type": "card_art",
+            "extensions": {
+                "card_art": {
+                    "sprite": "@WhisperingBladeArt"
+                }
+            }
+        }
+    ]
+}

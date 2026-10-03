@@ -1,0 +1,119 @@
+﻿{
+    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+    "cards": [
+        {
+            "id": "ObsessionVault",
+            "names": {
+                "english": "Obsession Vault",
+                "spanish": "Bóveda de obsesión",
+                "chinese": "执念宝库"
+            },
+            "descriptions": {
+                "english": "At the start of each turn, add 1 <b>Obsessing Spark</b> to your hand.",
+                "spanish": "Al comienzo de cada turno, añade 1 <b>Obsessing Spark</b> a tu mano.",
+                "chinese": "每回合开始时，将 1 张<b>欲望碎片</b>加入手牌。"
+            },
+            "card_art": "@ObsessionVaultArt",
+            "cost": 1,
+            "card_type": "room",
+            "rarity": "uncommon",
+            "class": "@ClassSuccubus",
+            "targets_room": true,
+            "targetless": true,
+            "effects": [
+                "@ObsessionVaultAttach"
+            ],
+            "pools": [
+                "MegaPool",
+                "RoomAndEquipmentDraftPool",
+                "RoomAndEquipmentMerchant_RoomPool",
+                "TrainRoomPool"
+            ]
+        }
+    ],
+    "upgrades": [
+        {
+            "id": "ObsessionVaultUpgrade",
+            "titles": {
+                "english": "Obsession Vault",
+                "spanish": "Bóveda de obsesión",
+                "chinese": "执念宝库"
+            },
+            "descriptions": {
+                "english": "At the start of each turn, add 1 <b>Obsessing Spark</b> to your hand.",
+                "spanish": "Al comienzo de cada turno, añade 1 <b>Obsessing Spark</b> a tu mano.",
+                "chinese": "每回合开始时，将 1 张<b>欲望碎片</b>加入手牌。"
+            },
+            "room_modifier_upgrades": [
+                "@ObsessionVaultModifier"
+            ],
+            "hide_icon_on_card": true,
+            "icon": "@ObsessionVaultIcon"
+        }
+    ],
+    "room_modifiers": [
+        {
+            "id": "ObsessionVaultModifier",
+            "name": "@RoomStateSuccClanTurnStartEffects",
+            "titles": {
+                "english": "Obsession Vault",
+                "spanish": "Bóveda de obsesión",
+                "chinese": "执念宝库"
+            },
+            "descriptions": {
+                "english": "At the start of each turn, add 1 <b>Obsessing Spark</b> to your hand.",
+                "spanish": "Al comienzo de cada turno, añade 1 <b>Obsessing Spark</b> a tu mano.",
+                "chinese": "每回合开始时，将 1 张<b>欲望碎片</b>加入手牌。"
+            },
+            "in_play_descriptions": {
+                "english": "At the start of each turn, add 1 <b>Obsessing Spark</b> to your hand.",
+                "spanish": "Al comienzo de cada turno, añade 1 <b>Obsessing Spark</b> a tu mano.",
+                "chinese": "每回合开始时，将 1 张<b>欲望碎片</b>加入手牌。"
+            },
+            "param_effects": [
+                "@ObsessionVaultSpark"
+            ]
+        }
+    ],
+    "effects": [
+        {
+            "id": "ObsessionVaultAttach",
+            "name": "CardEffectAttachTrainRoomAttachment",
+            "target_mode": "room",
+            "target_team": "monsters",
+            "param_upgrade": "@ObsessionVaultUpgrade",
+            "param_bool": false,
+            "param_bool_2": false
+        },
+        {
+            "id": "ObsessionVaultSpark",
+            "name": "CardEffectAddBattleCard",
+            "target_mode": "room",
+            "target_team": "none",
+            "param_int": 3,
+            "param_int_2": 1,
+            "param_card_pool": "@ObsessingShardPool"
+        }
+    ],
+    "sprites": [
+        {
+            "id": "ObsessionVaultArt",
+            "path": "textures/ObsessionVaultArt.png"
+        },
+        {
+            "id": "ObsessionVaultIcon",
+            "path": "textures/EquipmentRoomIcons/ObsessionVault.png"
+        }
+    ],
+    "game_objects": [
+        {
+            "id": "ObsessionVaultArt",
+            "type": "card_art",
+            "extensions": {
+                "card_art": {
+                    "sprite": "@ObsessionVaultArt"
+                }
+            }
+        }
+    ]
+}

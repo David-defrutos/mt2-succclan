@@ -1,4 +1,4 @@
-{
+﻿{
     "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
     "cards": [
         {
@@ -31,14 +31,15 @@
             "character_art": "@WrathGhostCharacterArt",
             "size": 1,
             "attack_damage": 0,
-            "health": 2,
+            "health": 8,
             "subtypes": [
                 "@Sub_Ghost"
             ],
             "triggers": [
                 "@WrathGhostOnSpawn",
                 "@WrathGhostAccursed"
-            ]
+            ],
+            "ability": "@KnightMareAbyssSpark"
         }
     ],
     "character_triggers": [
@@ -122,12 +123,12 @@
                     "transform": {
                         "position": {
                             "x": 0,
-                            "y": 1.41,
+                            "y": 0.6715,
                             "z": 0.1
                         },
                         "scale": {
-                            "x": 1,
-                            "y": 1,
+                            "x": 0.65,
+                            "y": 0.65,
                             "z": 1
                         }
                     }

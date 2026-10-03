@@ -41,7 +41,7 @@
         {
             "id": "ShadowEmbraceDraw",
             "name": "CardEffectDraw",
-            "target_mode": "self",
+            "target_mode": "room",
             "target_team": "none",
             "param_int": 2
         }

@@ -17,7 +17,7 @@
                 "@FleshRingEffect"
             ],
             "icon": "@FleshRingIcon",
-            "icon_small": "@FleshRingIcon",
+            "icon_small": "@FleshRingIconSmall",
             "extensions": [
                 {
                     "collectable": {
@@ -57,7 +57,11 @@
     "sprites": [
         {
             "id": "FleshRingIcon",
-            "path": "textures/FleshRingArt.png"
+            "path": "textures/RelicIcons/FleshRingIcon.png"
+        },
+        {
+            "id": "FleshRingIconSmall",
+            "path": "textures/RelicIcons/FleshRingIconSmall.png"
         }
     ]
 }
