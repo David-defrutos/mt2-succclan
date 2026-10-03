@@ -5,15 +5,39 @@
             "id": "ClassSuccubus",
             "titles": {
                 "english": "Succubus",
-                "chinese": "魅影"
+                "chinese": "魅影",
+                "spanish": "Súcubo",
+                "french": "Succube",
+                "german": "Sukkubus",
+                "portuguese": "Súcubo",
+                "russian": "Суккуб",
+                "chinese_traditional": "魅魔",
+                "japanese": "サキュバス",
+                "korean": "서큐버스"
             },
             "descriptions": {
                 "english": "As primary class",
-                "chinese": "作为主种族选择"
+                "chinese": "作为主种族选择",
+                "spanish": "Como clan principal",
+                "french": "Comme clan principal",
+                "german": "Als Hauptclan",
+                "portuguese": "Como clã principal",
+                "russian": "Как основной клан",
+                "chinese_traditional": "作為主氏族",
+                "japanese": "メインクランとして",
+                "korean": "주 클랜으로 선택"
             },
             "subclass_descriptions": {
                 "english": "As subclass",
-                "chinese": "作为副种族选择"
+                "chinese": "作为副种族选择",
+                "spanish": "Como clan aliado",
+                "french": "Comme clan allié",
+                "german": "Als verbündeter Clan",
+                "portuguese": "Como clã aliado",
+                "russian": "Как союзный клан",
+                "chinese_traditional": "作為盟友氏族",
+                "japanese": "サブクランとして",
+                "korean": "보조 클랜으로 선택"
             },
             "icons": {
                 "small": "@ClanLogo_48",
@@ -113,14 +137,30 @@
             "id": "Sub_Cubus",
             "names": {
                 "english": "SuccUnits",
-                "chinese": "魅影单位"
+                "chinese": "魅影单位",
+                "spanish": "Unidades de súcubo",
+                "french": "Unités succubes",
+                "german": "Sukkubus-Einheiten",
+                "portuguese": "Unidades de Súcubo",
+                "russian": "Отряды суккубов",
+                "chinese_traditional": "魅魔單位",
+                "japanese": "サキュバスユニット",
+                "korean": "서큐버스 유닛"
             }
         },
         {
             "id": "Sub_Ghost",
             "names": {
                 "english": "Ghost",
-                "chinese": "幽魂"
+                "chinese": "幽魂",
+                "spanish": "Fantasma",
+                "french": "Fantôme",
+                "german": "Geist",
+                "portuguese": "Fantasma",
+                "russian": "Призрак",
+                "chinese_traditional": "幽靈",
+                "japanese": "幽霊",
+                "korean": "유령"
             }
         }
     ],
@@ -231,11 +271,27 @@
             "prefab": "@SuccubusMapIcon",
             "titles": {
                 "english": "Succubus Banner",
-                "chinese": "魅影战旗"
+                "chinese": "魅影战旗",
+                "spanish": "Estandarte de súcubo",
+                "french": "Bannière des succubes",
+                "german": "Sukkubus-Banner",
+                "portuguese": "Estandarte de Súcubo",
+                "russian": "Знамя суккубов",
+                "chinese_traditional": "魅魔旗幟",
+                "japanese": "サキュバスの旗",
+                "korean": "서큐버스 깃발"
             },
             "descriptions": {
                 "english": "Gain a Succubus unit",
-                "chinese": "获取一个魅影单位"
+                "chinese": "获取一个魅影单位",
+                "spanish": "Obtén una unidad de súcubo",
+                "french": "Obtenez une unité succube",
+                "german": "Erhalte eine Sukkubus-Einheit",
+                "portuguese": "Obtenha uma unidade de Súcubo",
+                "russian": "Получить отряд суккубов",
+                "chinese_traditional": "獲得一個魅魔單位",
+                "japanese": "サキュバスユニットを獲得",
+                "korean": "서큐버스 유닛 획득"
             },
             "pools": [
                 "RandomChosenMainClassUnit",
@@ -279,11 +335,27 @@
             ],
             "titles": {
                 "english": "Succubus Unit Reward Draft",
-                "chinese": "魅影单位奖励"
+                "chinese": "魅影单位奖励",
+                "spanish": "Elección de unidad de súcubo",
+                "french": "Choix d'une unité succube",
+                "german": "Sukkubus-Einheit auswählen",
+                "portuguese": "Escolha de unidade de Súcubo",
+                "russian": "Выбор отряда суккубов",
+                "chinese_traditional": "魅魔單位獎勵選擇",
+                "japanese": "サキュバスユニットの報酬選択",
+                "korean": "서큐버스 유닛 보상 선택"
             },
             "descriptions": {
                 "english": "Choose a card!",
-                "chinese": "选一个吧！"
+                "chinese": "选一个吧！",
+                "spanish": "¡Elige una carta!",
+                "french": "Choisissez une carte !",
+                "german": "Wähle eine Karte!",
+                "portuguese": "Escolha uma carta!",
+                "russian": "Выберите карту!",
+                "chinese_traditional": "選擇一張牌！",
+                "japanese": "カードを選択！",
+                "korean": "카드를 선택하세요!"
             },
             "extensions": [
                 {

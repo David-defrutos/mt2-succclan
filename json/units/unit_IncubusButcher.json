@@ -5,7 +5,15 @@
             "id": "SpawnIncubusButcher",
             "names": {
                 "english": "Incubus Butcher",
-                "chinese": "魇魔刽子手"
+                "chinese": "魇魔刽子手",
+                "spanish": "Carnicero íncubo",
+                "french": "Boucher incube",
+                "german": "Inkubus-Schlächter",
+                "portuguese": "Açougueiro Íncubo",
+                "russian": "Мясник-инкуб",
+                "chinese_traditional": "夢魔屠夫",
+                "japanese": "インキュバスの屠殺者",
+                "korean": "인큐버스 도살자"
             },
             "card_art": "@IncubusButcherCardArt",
             "cost": 2,
@@ -26,7 +34,15 @@
             "id": "IncubusButcher",
             "names": {
                 "english": "Incubus Butcher",
-                "chinese": "魇魔刽子手"
+                "chinese": "魇魔刽子手",
+                "spanish": "Carnicero íncubo",
+                "french": "Boucher incube",
+                "german": "Inkubus-Schlächter",
+                "portuguese": "Açougueiro Íncubo",
+                "russian": "Мясник-инкуб",
+                "chinese_traditional": "夢魔屠夫",
+                "japanese": "インキュバスの屠殺者",
+                "korean": "인큐버스 도살자"
             },
             "character_art": "@IncubusButcherCharacterArt",
             "size": 2,
@@ -53,7 +69,15 @@
             "trigger": "on_kill",
             "descriptions": {
                 "english": "+[effect0.power][attack] and +[effect1.power][health].",
-                "chinese": "+[effect0.power][attack]，+[effect1.power][health]。"
+                "chinese": "+[effect0.power][attack]，+[effect1.power][health]。",
+                "spanish": "+[effect0.power][attack] y +[effect1.power][health].",
+                "french": "+[effect0.power][attack] et +[effect1.power][health].",
+                "german": "+[effect0.power][attack] und +[effect1.power][health].",
+                "portuguese": "+[effect0.power][attack] e +[effect1.power][health].",
+                "russian": "+[effect0.power][attack] и +[effect1.power][health].",
+                "chinese_traditional": "+[effect0.power][attack] 與 +[effect1.power][health]。",
+                "japanese": "+[effect0.power][attack]と+[effect1.power][health]。",
+                "korean": "+[effect0.power][attack] 및 +[effect1.power][health]."
             },
             "effects": [
                 "@IncubusButcherAttack",

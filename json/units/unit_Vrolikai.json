@@ -5,7 +5,15 @@
             "id": "SpawnVrolikai",
             "names": {
                 "english": "Vrolikai",
-                "chinese": "四臂蛇魔"
+                "chinese": "四臂蛇魔",
+                "spanish": "Vrolikai",
+                "french": "Vrolikai",
+                "german": "Vrolikai",
+                "portuguese": "Vrolikai",
+                "russian": "Vrolikai",
+                "chinese_traditional": "Vrolikai",
+                "japanese": "Vrolikai",
+                "korean": "Vrolikai"
             },
             "card_art": "@VrolikaiCardArt",
             "cost": 1,
@@ -26,7 +34,15 @@
             "id": "Vrolikai",
             "names": {
                 "english": "Vrolikai",
-                "chinese": "四臂蛇魔"
+                "chinese": "四臂蛇魔",
+                "spanish": "Vrolikai",
+                "french": "Vrolikai",
+                "german": "Vrolikai",
+                "portuguese": "Vrolikai",
+                "russian": "Vrolikai",
+                "chinese_traditional": "Vrolikai",
+                "japanese": "Vrolikai",
+                "korean": "Vrolikai"
             },
             "character_art": "@VrolikaiCharacterArt",
             "size": 2,

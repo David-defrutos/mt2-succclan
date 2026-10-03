@@ -5,7 +5,15 @@
             "id": "SpawnKnightMare",
             "names": {
                 "english": "Knightmare",
-                "chinese": "梦魇之主"
+                "chinese": "梦魇之主",
+                "spanish": "Knightmare",
+                "french": "Knightmare",
+                "german": "Knightmare",
+                "portuguese": "Knightmare",
+                "russian": "Knightmare",
+                "chinese_traditional": "Knightmare",
+                "japanese": "Knightmare",
+                "korean": "Knightmare"
             },
             "card_art": "@KnightMareCardArt",
             "cost": 0,
@@ -23,12 +31,26 @@
             "names": {
                 "english": "Obsession",
                 "spanish": "Obsesión",
-                "chinese": "执念"
+                "chinese": "执念",
+                "french": "Obsession",
+                "german": "Besessenheit",
+                "portuguese": "Obsessão",
+                "russian": "Одержимость",
+                "chinese_traditional": "執念",
+                "japanese": "執着",
+                "korean": "집착"
             },
             "descriptions": {
                 "english": "Add [effect0.secondarypower] <b>Obsessing Spark</b> to your hand.",
-                "spanish": "Añade [effect0.secondarypower] <b>Obsessing Spark</b> a tu mano.",
-                "chinese": "将 [effect0.secondarypower] 张<b>欲望碎片</b>加入手牌。"
+                "spanish": "Añade [effect0.secondarypower] <b>Chispa obsesiva</b> a tu mano.",
+                "chinese": "将 [effect0.secondarypower] 张<b>欲望碎片</b>加入手牌。",
+                "french": "Ajoutez [effect0.secondarypower] <b>Étincelle obsédante</b> à votre main.",
+                "german": "Füge deiner Hand [effect0.secondarypower] <b>Besessenheitsfunke</b> hinzu.",
+                "portuguese": "Adicione [effect0.secondarypower] <b>Centelha Obsessiva</b> à sua mão.",
+                "russian": "Добавляет [effect0.secondarypower] <b>Искра одержимости</b> в руку.",
+                "chinese_traditional": "將 [effect0.secondarypower] 張<b>執念火花</b>加入手牌。",
+                "japanese": "手札に<b>執着の火花</b>を[effect0.secondarypower]枚加える。",
+                "korean": "손에 <b>집착의 불꽃</b> [effect0.secondarypower]장을 추가합니다."
             },
             "card_art": "@ObsessingShardArt",
             "card_type": "spell",
@@ -48,7 +70,15 @@
             "id": "KnightMare",
             "names": {
                 "english": "Knightmare",
-                "chinese": "梦魇之主"
+                "chinese": "梦魇之主",
+                "spanish": "Knightmare",
+                "french": "Knightmare",
+                "german": "Knightmare",
+                "portuguese": "Knightmare",
+                "russian": "Knightmare",
+                "chinese_traditional": "Knightmare",
+                "japanese": "Knightmare",
+                "korean": "Knightmare"
             },
             "character_art": "@KnightMareCharacterArt",
             "size": 2,
@@ -71,7 +101,15 @@
             },
             "descriptions": {
                 "english": "All friendly units +[effect0.power][attack] and +[effect1.power][health]. <b>Psionic Burst [effect2.status0.power]</b>: draw 1 card and gain 1[ember].",
-                "chinese": "所有友方单位 +[effect0.power][attack]，+[effect1.power][health]。<b>灵能爆破 [effect2.status0.power]</b>：抽 1 张牌并获得 1[ember]。"
+                "chinese": "所有友方单位 +[effect0.power][attack]，+[effect1.power][health]。<b>灵能爆破 [effect2.status0.power]</b>：抽 1 张牌并获得 1[ember]。",
+                "spanish": "Todas las unidades aliadas obtienen +[effect0.power][attack] y +[effect1.power][health]. <b>Estallido psiónico [effect2.status0.power]</b>: roba 1 carta y gana 1[ember].",
+                "french": "Toutes les unités alliées gagnent +[effect0.power][attack] et +[effect1.power][health]. <b>Explosion psionique [effect2.status0.power]</b> : piochez 1 carte et gagnez 1[ember].",
+                "german": "Alle verbündeten Einheiten erhalten +[effect0.power][attack] und +[effect1.power][health]. <b>Psionischer Ausbruch [effect2.status0.power]</b>: Ziehe 1 Karte und erhalte 1[ember].",
+                "portuguese": "Todas as unidades aliadas ganham +[effect0.power][attack] e +[effect1.power][health]. <b>Explosão Psiônica [effect2.status0.power]</b>: compre 1 carta e ganhe 1[ember].",
+                "russian": "Все союзники получают +[effect0.power][attack] и +[effect1.power][health]. <b>Псионический всплеск [effect2.status0.power]</b>: берёт 1 карту и даёт 1[ember].",
+                "chinese_traditional": "所有友方單位獲得 +[effect0.power][attack] 與 +[effect1.power][health]。<b>靈能爆發 [effect2.status0.power]</b>：抽 1 張牌並獲得 1[ember]。",
+                "japanese": "味方全員に+[effect0.power][attack]と+[effect1.power][health]。<b>サイオニックバースト [effect2.status0.power]</b>：カードを1枚引き、1[ember]を得る。",
+                "korean": "모든 아군이 +[effect0.power][attack] 및 +[effect1.power][health]을 얻습니다. <b>사이오닉 폭발 [effect2.status0.power]</b>: 카드 1장을 뽑고 1[ember]을 얻습니다."
             },
             "effects": [
                 "@AbyssBasicAttack",
@@ -93,7 +131,15 @@
             },
             "descriptions": {
                 "english": "All friendly units +[effect0.power][attack] and +[effect1.power][health]. <b>Psionic Burst [effect2.status0.power]</b>: draw 1 card and gain 1[ember].",
-                "chinese": "所有友方单位 +[effect0.power][attack]，+[effect1.power][health]。<b>灵能爆破 [effect2.status0.power]</b>：抽 1 张牌并获得 1[ember]。"
+                "chinese": "所有友方单位 +[effect0.power][attack]，+[effect1.power][health]。<b>灵能爆破 [effect2.status0.power]</b>：抽 1 张牌并获得 1[ember]。",
+                "spanish": "Todas las unidades aliadas obtienen +[effect0.power][attack] y +[effect1.power][health]. <b>Estallido psiónico [effect2.status0.power]</b>: roba 1 carta y gana 1[ember].",
+                "french": "Toutes les unités alliées gagnent +[effect0.power][attack] et +[effect1.power][health]. <b>Explosion psionique [effect2.status0.power]</b> : piochez 1 carte et gagnez 1[ember].",
+                "german": "Alle verbündeten Einheiten erhalten +[effect0.power][attack] und +[effect1.power][health]. <b>Psionischer Ausbruch [effect2.status0.power]</b>: Ziehe 1 Karte und erhalte 1[ember].",
+                "portuguese": "Todas as unidades aliadas ganham +[effect0.power][attack] e +[effect1.power][health]. <b>Explosão Psiônica [effect2.status0.power]</b>: compre 1 carta e ganhe 1[ember].",
+                "russian": "Все союзники получают +[effect0.power][attack] и +[effect1.power][health]. <b>Псионический всплеск [effect2.status0.power]</b>: берёт 1 карту и даёт 1[ember].",
+                "chinese_traditional": "所有友方單位獲得 +[effect0.power][attack] 與 +[effect1.power][health]。<b>靈能爆發 [effect2.status0.power]</b>：抽 1 張牌並獲得 1[ember]。",
+                "japanese": "味方全員に+[effect0.power][attack]と+[effect1.power][health]。<b>サイオニックバースト [effect2.status0.power]</b>：カードを1枚引き、1[ember]を得る。",
+                "korean": "모든 아군이 +[effect0.power][attack] 및 +[effect1.power][health]을 얻습니다. <b>사이오닉 폭발 [effect2.status0.power]</b>: 카드 1장을 뽑고 1[ember]을 얻습니다."
             },
             "effects": [
                 "@AbyssPreAttack",
@@ -115,7 +161,15 @@
             },
             "descriptions": {
                 "english": "All friendly units +[effect0.power][attack] and +[effect1.power][health]. <b>Psionic Burst [effect2.status0.power]</b>: draw 1 card and gain 1[ember].",
-                "chinese": "所有友方单位 +[effect0.power][attack]，+[effect1.power][health]。<b>灵能爆破 [effect2.status0.power]</b>：抽 1 张牌并获得 1[ember]。"
+                "chinese": "所有友方单位 +[effect0.power][attack]，+[effect1.power][health]。<b>灵能爆破 [effect2.status0.power]</b>：抽 1 张牌并获得 1[ember]。",
+                "spanish": "Todas las unidades aliadas obtienen +[effect0.power][attack] y +[effect1.power][health]. <b>Estallido psiónico [effect2.status0.power]</b>: roba 1 carta y gana 1[ember].",
+                "french": "Toutes les unités alliées gagnent +[effect0.power][attack] et +[effect1.power][health]. <b>Explosion psionique [effect2.status0.power]</b> : piochez 1 carte et gagnez 1[ember].",
+                "german": "Alle verbündeten Einheiten erhalten +[effect0.power][attack] und +[effect1.power][health]. <b>Psionischer Ausbruch [effect2.status0.power]</b>: Ziehe 1 Karte und erhalte 1[ember].",
+                "portuguese": "Todas as unidades aliadas ganham +[effect0.power][attack] e +[effect1.power][health]. <b>Explosão Psiônica [effect2.status0.power]</b>: compre 1 carta e ganhe 1[ember].",
+                "russian": "Все союзники получают +[effect0.power][attack] и +[effect1.power][health]. <b>Псионический всплеск [effect2.status0.power]</b>: берёт 1 карту и даёт 1[ember].",
+                "chinese_traditional": "所有友方單位獲得 +[effect0.power][attack] 與 +[effect1.power][health]。<b>靈能爆發 [effect2.status0.power]</b>：抽 1 張牌並獲得 1[ember]。",
+                "japanese": "味方全員に+[effect0.power][attack]と+[effect1.power][health]。<b>サイオニックバースト [effect2.status0.power]</b>：カードを1枚引き、1[ember]を得る。",
+                "korean": "모든 아군이 +[effect0.power][attack] 및 +[effect1.power][health]을 얻습니다. <b>사이오닉 폭발 [effect2.status0.power]</b>: 카드 1장을 뽑고 1[ember]을 얻습니다."
             },
             "effects": [
                 "@AbyssProAttack",
@@ -134,7 +188,15 @@
             "trigger": "on_death",
             "descriptions": {
                 "english": "<b>Psionic Burst 2</b>: respawn with full health and gain [multistrike] 1.",
-                "chinese": "<b>灵能爆破 2</b>：以满生命值重新召唤，并获得[multistrike] 1。"
+                "chinese": "<b>灵能爆破 2</b>：以满生命值重新召唤，并获得[multistrike] 1。",
+                "spanish": "<b>Estallido psiónico 2</b>: reaparece con toda la vida y obtiene [multistrike] 1.",
+                "french": "<b>Explosion psionique 2</b> : réapparaît avec toute sa santé et gagne [multistrike] 1.",
+                "german": "<b>Psionischer Ausbruch 2</b>: Erscheint mit voller Gesundheit erneut und erhält [multistrike] 1.",
+                "portuguese": "<b>Explosão Psiônica 2</b>: reaparece com a vida cheia e ganha [multistrike] 1.",
+                "russian": "<b>Псионический всплеск 2</b>: возвращается с полным здоровьем и получает [multistrike] 1.",
+                "chinese_traditional": "<b>靈能爆發 2</b>：以滿生命值重生並獲得 [multistrike] 1。",
+                "japanese": "<b>サイオニックバースト 2</b>：最大体力で復活し、[multistrike] 1を得る。",
+                "korean": "<b>사이오닉 폭발 2</b>: 최대 체력으로 부활하고 [multistrike] 1을 얻습니다."
             },
             "effects": [
                 "@EndlessBasicRebirth"
@@ -148,7 +210,15 @@
             "trigger": "on_death",
             "descriptions": {
                 "english": "<b>Psionic Burst 3</b>: respawn with full health and gain [multistrike] 2.",
-                "chinese": "<b>灵能爆破 3</b>：以满生命值重新召唤，并获得[multistrike] 2。"
+                "chinese": "<b>灵能爆破 3</b>：以满生命值重新召唤，并获得[multistrike] 2。",
+                "spanish": "<b>Estallido psiónico 3</b>: reaparece con toda la vida y obtiene [multistrike] 2.",
+                "french": "<b>Explosion psionique 3</b> : réapparaît avec toute sa santé et gagne [multistrike] 2.",
+                "german": "<b>Psionischer Ausbruch 3</b>: Erscheint mit voller Gesundheit erneut und erhält [multistrike] 2.",
+                "portuguese": "<b>Explosão Psiônica 3</b>: reaparece com a vida cheia e ganha [multistrike] 2.",
+                "russian": "<b>Псионический всплеск 3</b>: возвращается с полным здоровьем и получает [multistrike] 2.",
+                "chinese_traditional": "<b>靈能爆發 3</b>：以滿生命值重生並獲得 [multistrike] 2。",
+                "japanese": "<b>サイオニックバースト 3</b>：最大体力で復活し、[multistrike] 2を得る。",
+                "korean": "<b>사이오닉 폭발 3</b>: 최대 체력으로 부활하고 [multistrike] 2을 얻습니다."
             },
             "effects": [
                 "@EndlessPreRebirth"
@@ -162,7 +232,15 @@
             "trigger": "on_death",
             "descriptions": {
                 "english": "<b>Psionic Burst 4</b>: respawn with full health and gain [multistrike] 4.",
-                "chinese": "<b>灵能爆破 4</b>：以满生命值重新召唤，并获得[multistrike] 4。"
+                "chinese": "<b>灵能爆破 4</b>：以满生命值重新召唤，并获得[multistrike] 4。",
+                "spanish": "<b>Estallido psiónico 4</b>: reaparece con toda la vida y obtiene [multistrike] 4.",
+                "french": "<b>Explosion psionique 4</b> : réapparaît avec toute sa santé et gagne [multistrike] 4.",
+                "german": "<b>Psionischer Ausbruch 4</b>: Erscheint mit voller Gesundheit erneut und erhält [multistrike] 4.",
+                "portuguese": "<b>Explosão Psiônica 4</b>: reaparece com a vida cheia e ganha [multistrike] 4.",
+                "russian": "<b>Псионический всплеск 4</b>: возвращается с полным здоровьем и получает [multistrike] 4.",
+                "chinese_traditional": "<b>靈能爆發 4</b>：以滿生命值重生並獲得 [multistrike] 4。",
+                "japanese": "<b>サイオニックバースト 4</b>：最大体力で復活し、[multistrike] 4を得る。",
+                "korean": "<b>사이오닉 폭발 4</b>: 최대 체력으로 부활하고 [multistrike] 4을 얻습니다."
             },
             "effects": [
                 "@EndlessProRebirth"
@@ -176,7 +254,15 @@
             "trigger": "on_hit",
             "descriptions": {
                 "english": "Gain +[effect0.power][attack] and +[effect1.power][health]. <b>Psionic Burst [effect2.status0.power]</b>: gain [lifesteal] [effect4.status0.power] and [spikes] [effect5.status0.power].",
-                "chinese": "获得 +[effect0.power][attack]，+[effect1.power][health]。<b>灵能爆破 [effect2.status0.power]</b>：获得[lifesteal] [effect4.status0.power]和[spikes] [effect5.status0.power]。"
+                "chinese": "获得 +[effect0.power][attack]，+[effect1.power][health]。<b>灵能爆破 [effect2.status0.power]</b>：获得[lifesteal] [effect4.status0.power]和[spikes] [effect5.status0.power]。",
+                "spanish": "Obtiene +[effect0.power][attack] y +[effect1.power][health]. <b>Estallido psiónico [effect2.status0.power]</b>: obtiene [lifesteal] [effect4.status0.power] y [spikes] [effect5.status0.power].",
+                "french": "Gagne +[effect0.power][attack] et +[effect1.power][health]. <b>Explosion psionique [effect2.status0.power]</b> : gagne [lifesteal] [effect4.status0.power] et [spikes] [effect5.status0.power].",
+                "german": "Erhält +[effect0.power][attack] und +[effect1.power][health]. <b>Psionischer Ausbruch [effect2.status0.power]</b>: Erhält [lifesteal] [effect4.status0.power] und [spikes] [effect5.status0.power].",
+                "portuguese": "Ganha +[effect0.power][attack] e +[effect1.power][health]. <b>Explosão Psiônica [effect2.status0.power]</b>: ganha [lifesteal] [effect4.status0.power] e [spikes] [effect5.status0.power].",
+                "russian": "Получает +[effect0.power][attack] и +[effect1.power][health]. <b>Псионический всплеск [effect2.status0.power]</b>: получает [lifesteal] [effect4.status0.power] и [spikes] [effect5.status0.power].",
+                "chinese_traditional": "獲得 +[effect0.power][attack] 與 +[effect1.power][health]。<b>靈能爆發 [effect2.status0.power]</b>：獲得 [lifesteal] [effect4.status0.power] 與 [spikes] [effect5.status0.power]。",
+                "japanese": "+[effect0.power][attack]と+[effect1.power][health]を得る。<b>サイオニックバースト [effect2.status0.power]</b>：[lifesteal] [effect4.status0.power]と[spikes] [effect5.status0.power]を得る。",
+                "korean": "+[effect0.power][attack] 및 +[effect1.power][health]을 얻습니다. <b>사이오닉 폭발 [effect2.status0.power]</b>: [lifesteal] [effect4.status0.power] 및 [spikes] [effect5.status0.power]을 얻습니다."
             },
             "effects": [
                 "@IllusionBasicAttack",
@@ -195,7 +281,15 @@
             "trigger": "on_hit",
             "descriptions": {
                 "english": "Gain +[effect0.power][attack] and +[effect1.power][health]. <b>Psionic Burst [effect2.status0.power]</b>: gain [lifesteal] [effect4.status0.power] and [spikes] [effect5.status0.power].",
-                "chinese": "获得 +[effect0.power][attack]，+[effect1.power][health]。<b>灵能爆破 [effect2.status0.power]</b>：获得[lifesteal] [effect4.status0.power]和[spikes] [effect5.status0.power]。"
+                "chinese": "获得 +[effect0.power][attack]，+[effect1.power][health]。<b>灵能爆破 [effect2.status0.power]</b>：获得[lifesteal] [effect4.status0.power]和[spikes] [effect5.status0.power]。",
+                "spanish": "Obtiene +[effect0.power][attack] y +[effect1.power][health]. <b>Estallido psiónico [effect2.status0.power]</b>: obtiene [lifesteal] [effect4.status0.power] y [spikes] [effect5.status0.power].",
+                "french": "Gagne +[effect0.power][attack] et +[effect1.power][health]. <b>Explosion psionique [effect2.status0.power]</b> : gagne [lifesteal] [effect4.status0.power] et [spikes] [effect5.status0.power].",
+                "german": "Erhält +[effect0.power][attack] und +[effect1.power][health]. <b>Psionischer Ausbruch [effect2.status0.power]</b>: Erhält [lifesteal] [effect4.status0.power] und [spikes] [effect5.status0.power].",
+                "portuguese": "Ganha +[effect0.power][attack] e +[effect1.power][health]. <b>Explosão Psiônica [effect2.status0.power]</b>: ganha [lifesteal] [effect4.status0.power] e [spikes] [effect5.status0.power].",
+                "russian": "Получает +[effect0.power][attack] и +[effect1.power][health]. <b>Псионический всплеск [effect2.status0.power]</b>: получает [lifesteal] [effect4.status0.power] и [spikes] [effect5.status0.power].",
+                "chinese_traditional": "獲得 +[effect0.power][attack] 與 +[effect1.power][health]。<b>靈能爆發 [effect2.status0.power]</b>：獲得 [lifesteal] [effect4.status0.power] 與 [spikes] [effect5.status0.power]。",
+                "japanese": "+[effect0.power][attack]と+[effect1.power][health]を得る。<b>サイオニックバースト [effect2.status0.power]</b>：[lifesteal] [effect4.status0.power]と[spikes] [effect5.status0.power]を得る。",
+                "korean": "+[effect0.power][attack] 및 +[effect1.power][health]을 얻습니다. <b>사이오닉 폭발 [effect2.status0.power]</b>: [lifesteal] [effect4.status0.power] 및 [spikes] [effect5.status0.power]을 얻습니다."
             },
             "effects": [
                 "@IllusionPreAttack",
@@ -214,7 +308,15 @@
             "trigger": "on_hit",
             "descriptions": {
                 "english": "Gain +[effect0.power][attack] and +[effect1.power][health]. <b>Psionic Burst [effect2.status0.power]</b>: gain [lifesteal] [effect4.status0.power] and [spikes] [effect5.status0.power].",
-                "chinese": "获得 +[effect0.power][attack]，+[effect1.power][health]。<b>灵能爆破 [effect2.status0.power]</b>：获得[lifesteal] [effect4.status0.power]和[spikes] [effect5.status0.power]。"
+                "chinese": "获得 +[effect0.power][attack]，+[effect1.power][health]。<b>灵能爆破 [effect2.status0.power]</b>：获得[lifesteal] [effect4.status0.power]和[spikes] [effect5.status0.power]。",
+                "spanish": "Obtiene +[effect0.power][attack] y +[effect1.power][health]. <b>Estallido psiónico [effect2.status0.power]</b>: obtiene [lifesteal] [effect4.status0.power] y [spikes] [effect5.status0.power].",
+                "french": "Gagne +[effect0.power][attack] et +[effect1.power][health]. <b>Explosion psionique [effect2.status0.power]</b> : gagne [lifesteal] [effect4.status0.power] et [spikes] [effect5.status0.power].",
+                "german": "Erhält +[effect0.power][attack] und +[effect1.power][health]. <b>Psionischer Ausbruch [effect2.status0.power]</b>: Erhält [lifesteal] [effect4.status0.power] und [spikes] [effect5.status0.power].",
+                "portuguese": "Ganha +[effect0.power][attack] e +[effect1.power][health]. <b>Explosão Psiônica [effect2.status0.power]</b>: ganha [lifesteal] [effect4.status0.power] e [spikes] [effect5.status0.power].",
+                "russian": "Получает +[effect0.power][attack] и +[effect1.power][health]. <b>Псионический всплеск [effect2.status0.power]</b>: получает [lifesteal] [effect4.status0.power] и [spikes] [effect5.status0.power].",
+                "chinese_traditional": "獲得 +[effect0.power][attack] 與 +[effect1.power][health]。<b>靈能爆發 [effect2.status0.power]</b>：獲得 [lifesteal] [effect4.status0.power] 與 [spikes] [effect5.status0.power]。",
+                "japanese": "+[effect0.power][attack]と+[effect1.power][health]を得る。<b>サイオニックバースト [effect2.status0.power]</b>：[lifesteal] [effect4.status0.power]と[spikes] [effect5.status0.power]を得る。",
+                "korean": "+[effect0.power][attack] 및 +[effect1.power][health]을 얻습니다. <b>사이오닉 폭발 [effect2.status0.power]</b>: [lifesteal] [effect4.status0.power] 및 [spikes] [effect5.status0.power]을 얻습니다."
             },
             "effects": [
                 "@IllusionProAttack",
@@ -233,7 +335,15 @@
             "trigger": "on_any_unit_death_on_floor",
             "descriptions": {
                 "english": "Gain <b>[mt2_succclan.Plugin_psionic] [effect0.status0.power]</b>.",
-                "chinese": "获得 <b>[mt2_succclan.Plugin_psionic] [effect0.status0.power]</b>。"
+                "chinese": "获得 <b>[mt2_succclan.Plugin_psionic] [effect0.status0.power]</b>。",
+                "spanish": "Obtiene <b>[mt2_succclan.Plugin_psionic] [effect0.status0.power]</b>.",
+                "french": "Gagne <b>[mt2_succclan.Plugin_psionic] [effect0.status0.power]</b>.",
+                "german": "Erhält <b>[mt2_succclan.Plugin_psionic] [effect0.status0.power]</b>.",
+                "portuguese": "Ganha <b>[mt2_succclan.Plugin_psionic] [effect0.status0.power]</b>.",
+                "russian": "Получает <b>[mt2_succclan.Plugin_psionic] [effect0.status0.power]</b>.",
+                "chinese_traditional": "獲得 <b>[mt2_succclan.Plugin_psionic] [effect0.status0.power]</b>。",
+                "japanese": "<b>[mt2_succclan.Plugin_psionic] [effect0.status0.power]</b>を得る。",
+                "korean": "<b>[mt2_succclan.Plugin_psionic] [effect0.status0.power]</b>을 얻습니다."
             },
             "effects": [
                 "@KnightMareGainPsionic"
@@ -676,7 +786,15 @@
             "id": "upg_AbyssBasic",
             "titles": {
                 "english": "Abyss",
-                "chinese": "深渊"
+                "chinese": "深渊",
+                "spanish": "Abismo",
+                "french": "Abîme",
+                "german": "Abgrund",
+                "portuguese": "Abismo",
+                "russian": "Бездна",
+                "chinese_traditional": "深淵",
+                "japanese": "深淵",
+                "korean": "심연"
             },
             "bonus_damage": 5,
             "bonus_hp": 0,
@@ -690,7 +808,15 @@
             "id": "upg_AbyssPre",
             "titles": {
                 "english": "Abyss II",
-                "chinese": "深渊 II"
+                "chinese": "深渊 II",
+                "spanish": "Abismo II",
+                "french": "Abîme II",
+                "german": "Abgrund II",
+                "portuguese": "Abismo II",
+                "russian": "Бездна II",
+                "chinese_traditional": "深淵 II",
+                "japanese": "深淵 II",
+                "korean": "심연 II"
             },
             "bonus_damage": 5,
             "bonus_hp": 10,
@@ -704,7 +830,15 @@
             "id": "upg_AbyssPro",
             "titles": {
                 "english": "Abyss III",
-                "chinese": "深渊 III"
+                "chinese": "深渊 III",
+                "spanish": "Abismo III",
+                "french": "Abîme III",
+                "german": "Abgrund III",
+                "portuguese": "Abismo III",
+                "russian": "Бездна III",
+                "chinese_traditional": "深淵 III",
+                "japanese": "深淵 III",
+                "korean": "심연 III"
             },
             "bonus_damage": 5,
             "bonus_hp": 30,
@@ -718,7 +852,15 @@
             "id": "upg_EndlessBasic",
             "titles": {
                 "english": "Endless",
-                "chinese": "无尽"
+                "chinese": "无尽",
+                "spanish": "Interminable",
+                "french": "Sans fin",
+                "german": "Endlos",
+                "portuguese": "Infindável",
+                "russian": "Бесконечность",
+                "chinese_traditional": "無盡",
+                "japanese": "無限",
+                "korean": "무한"
             },
             "bonus_damage": 10,
             "bonus_hp": 0,
@@ -731,7 +873,15 @@
             "id": "upg_EndlessPre",
             "titles": {
                 "english": "Endless II",
-                "chinese": "无尽 II"
+                "chinese": "无尽 II",
+                "spanish": "Interminable II",
+                "french": "Sans fin II",
+                "german": "Endlos II",
+                "portuguese": "Infindável II",
+                "russian": "Бесконечность II",
+                "chinese_traditional": "無盡 II",
+                "japanese": "無限 II",
+                "korean": "무한 II"
             },
             "bonus_damage": 15,
             "bonus_hp": 5,
@@ -744,7 +894,15 @@
             "id": "upg_EndlessPro",
             "titles": {
                 "english": "Endless III",
-                "chinese": "无尽 III"
+                "chinese": "无尽 III",
+                "spanish": "Interminable III",
+                "french": "Sans fin III",
+                "german": "Endlos III",
+                "portuguese": "Infindável III",
+                "russian": "Бесконечность III",
+                "chinese_traditional": "無盡 III",
+                "japanese": "無限 III",
+                "korean": "무한 III"
             },
             "bonus_damage": 20,
             "bonus_hp": 10,
@@ -757,7 +915,15 @@
             "id": "upg_IllusionBasic",
             "titles": {
                 "english": "Illusion",
-                "chinese": "幻影"
+                "chinese": "幻影",
+                "spanish": "Ilusión",
+                "french": "Illusion",
+                "german": "Illusion",
+                "portuguese": "Ilusão",
+                "russian": "Иллюзия",
+                "chinese_traditional": "幻象",
+                "japanese": "幻影",
+                "korean": "환상"
             },
             "bonus_damage": 0,
             "bonus_hp": 10,
@@ -770,7 +936,15 @@
             "id": "upg_IllusionPre",
             "titles": {
                 "english": "Illusion II",
-                "chinese": "幻影 II"
+                "chinese": "幻影 II",
+                "spanish": "Ilusión II",
+                "french": "Illusion II",
+                "german": "Illusion II",
+                "portuguese": "Ilusão II",
+                "russian": "Иллюзия II",
+                "chinese_traditional": "幻象 II",
+                "japanese": "幻影 II",
+                "korean": "환상 II"
             },
             "bonus_damage": 0,
             "bonus_hp": 30,
@@ -783,7 +957,15 @@
             "id": "upg_IllusionPro",
             "titles": {
                 "english": "Illusion III",
-                "chinese": "幻影 III"
+                "chinese": "幻影 III",
+                "spanish": "Ilusión III",
+                "french": "Illusion III",
+                "german": "Illusion III",
+                "portuguese": "Ilusão III",
+                "russian": "Иллюзия III",
+                "chinese_traditional": "幻象 III",
+                "japanese": "幻影 III",
+                "korean": "환상 III"
             },
             "bonus_damage": 0,
             "bonus_hp": 50,

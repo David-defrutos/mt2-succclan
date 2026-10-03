@@ -117,11 +117,27 @@
             "id": "PsionicBurstTooltip",
             "titles": {
                 "english": "Psionic Burst",
-                "chinese": "灵能爆破"
+                "chinese": "灵能爆破",
+                "spanish": "Estallido psiónico",
+                "french": "Explosion psionique",
+                "german": "Psionischer Ausbruch",
+                "portuguese": "Explosão Psiônica",
+                "russian": "Псионический всплеск",
+                "chinese_traditional": "靈能爆發",
+                "japanese": "サイオニックバースト",
+                "korean": "사이오닉 폭발"
             },
             "descriptions": {
                 "english": "Reduce <b>Psionic</b> for additional ability.",
-                "chinese": "消耗相应层数的 <b>灵能</b> 以触发额外效果。"
+                "chinese": "消耗相应层数的 <b>灵能</b> 以触发额外效果。",
+                "spanish": "Consume <b>Psiónico</b> para activar un efecto adicional.",
+                "french": "Consomme <b>Psionique</b> pour déclencher un effet supplémentaire.",
+                "german": "Verbraucht <b>Psionik</b>, um einen zusätzlichen Effekt auszulösen.",
+                "portuguese": "Consome <b>Psiônico</b> para ativar um efeito adicional.",
+                "russian": "Расходует <b>Псионика</b> для дополнительного эффекта.",
+                "chinese_traditional": "消耗<b>靈能</b>以觸發額外效果。",
+                "japanese": "<b>サイオニック</b>を消費して追加効果を発動する。",
+                "korean": "<b>사이오닉</b>을 소모해 추가 효과를 발동합니다."
             },
             "style": "keyword",
             "allow_secondary_placement": true

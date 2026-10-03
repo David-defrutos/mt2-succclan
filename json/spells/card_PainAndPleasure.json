@@ -5,11 +5,27 @@
             "id": "PainAndPleasure",
             "names": {
                 "english": "Pain And Pleasure",
-                "chinese": "喜怒无常"
+                "chinese": "喜怒无常",
+                "spanish": "Dolor y placer",
+                "french": "Douleur et plaisir",
+                "german": "Schmerz und Lust",
+                "portuguese": "Dor e Prazer",
+                "russian": "Боль и наслаждение",
+                "chinese_traditional": "痛苦與歡愉",
+                "japanese": "苦痛と快楽",
+                "korean": "고통과 쾌락"
             },
             "descriptions": {
                 "english": "Requires [effect0.power] <b>Obsessing Spark</b> in hand. Discard them and draw [effect1.power] cards.",
-                "chinese": "需要手牌中有 [effect0.power] 张<b>欲望碎片</b>。舍弃这些牌并抽 [effect1.power] 张牌。"
+                "chinese": "需要手牌中有 [effect0.power] 张<b>欲望碎片</b>。舍弃这些牌并抽 [effect1.power] 张牌。",
+                "spanish": "Requiere [effect0.power] <b>Chispa obsesiva</b> en la mano. Descártalas y roba [effect1.power] cartas.",
+                "french": "Nécessite [effect0.power] <b>Étincelle obsédante</b> en main. Défaussez-les et piochez [effect1.power] cartes.",
+                "german": "Benötigt [effect0.power] <b>Besessenheitsfunke</b> auf der Hand. Wirf sie ab und ziehe [effect1.power] Karten.",
+                "portuguese": "Requer [effect0.power] <b>Centelha Obsessiva</b> na mão. Descarte-as e compre [effect1.power] cartas.",
+                "russian": "Требует [effect0.power] <b>Искра одержимости</b> в руке. Сбрасывает их и даёт [effect1.power] карт.",
+                "chinese_traditional": "需要手牌中有 [effect0.power] 張<b>執念火花</b>。棄掉它們並抽 [effect1.power] 張牌。",
+                "japanese": "手札に<b>執着の火花</b>が[effect0.power]枚必要。それらを捨てて[effect1.power]枚引く。",
+                "korean": "손에 <b>집착의 불꽃</b> [effect0.power]장이 필요합니다. 해당 카드를 버리고 [effect1.power]장을 뽑습니다."
             },
             "card_type": "spell",
             "rarity": "common",

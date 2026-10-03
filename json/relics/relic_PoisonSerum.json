@@ -6,11 +6,27 @@
             "type": "collectable",
             "names": {
                 "english": "Poison Serum",
-                "chinese": "瘟疫血清"
+                "chinese": "瘟疫血清",
+                "spanish": "Suero venenoso",
+                "french": "Sérum empoisonné",
+                "german": "Giftserum",
+                "portuguese": "Soro Venenoso",
+                "russian": "Ядовитая сыворотка",
+                "chinese_traditional": "毒液血清",
+                "japanese": "毒の血清",
+                "korean": "독성 혈청"
             },
             "descriptions": {
                 "english": "Draw [effect0.power] extra card each turn. At the start of each turn add an <b>Obsessing Spark</b> to your hand.",
-                "chinese": "每回合多抽 [effect0.power] 张牌。回合开始时，将一张<b>欲望碎片</b>加入手牌。"
+                "chinese": "每回合多抽 [effect0.power] 张牌。回合开始时，将一张<b>欲望碎片</b>加入手牌。",
+                "spanish": "Roba [effect0.power] cartas adicionales cada turno. Al comienzo de cada turno, añade 1 <b>Chispa obsesiva</b> a tu mano.",
+                "french": "Piochez [effect0.power] cartes supplémentaires chaque tour. Au début de chaque tour, ajoutez 1 <b>Étincelle obsédante</b> à votre main.",
+                "german": "Ziehe in jedem Zug [effect0.power] zusätzliche Karten. Füge deiner Hand zu Beginn jedes Zuges 1 <b>Besessenheitsfunke</b> hinzu.",
+                "portuguese": "Compre [effect0.power] cartas extras a cada turno. No início de cada turno, adicione 1 <b>Centelha Obsessiva</b> à sua mão.",
+                "russian": "Каждый ход даёт [effect0.power] дополнительных карт. В начале каждого хода добавляет в руку 1 <b>Искра одержимости</b>.",
+                "chinese_traditional": "每回合額外抽 [effect0.power] 張牌。每回合開始時，將 1 張<b>執念火花</b>加入手牌。",
+                "japanese": "各ターンに追加で[effect0.power]枚引く。各ターン開始時、手札に<b>執着の火花</b>を1枚加える。",
+                "korean": "매 턴 카드를 [effect0.power]장 더 뽑습니다. 매 턴 시작 시 손에 <b>집착의 불꽃</b> 1장을 추가합니다."
             },
             "disallow_in_deployment": false,
             "relic_effects": [

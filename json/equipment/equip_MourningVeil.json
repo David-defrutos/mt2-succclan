@@ -6,7 +6,14 @@
             "names": {
                 "english": "Mourning Veil",
                 "spanish": "Velo de luto",
-                "chinese": "哀悼面纱"
+                "chinese": "哀悼面纱",
+                "french": "Voile de deuil",
+                "german": "Trauerschleier",
+                "portuguese": "Véu de Luto",
+                "russian": "Траурная вуаль",
+                "chinese_traditional": "哀悼之紗",
+                "japanese": "喪のヴェール",
+                "korean": "애도의 면사포"
             },
             "card_art": "@MourningVeilArt",
             "cost": 1,
@@ -31,7 +38,14 @@
             "titles": {
                 "english": "Mourning Veil",
                 "spanish": "Velo de luto",
-                "chinese": "哀悼面纱"
+                "chinese": "哀悼面纱",
+                "french": "Voile de deuil",
+                "german": "Trauerschleier",
+                "portuguese": "Véu de Luto",
+                "russian": "Траурная вуаль",
+                "chinese_traditional": "哀悼之紗",
+                "japanese": "喪のヴェール",
+                "korean": "애도의 면사포"
             },
             "icon": "@MourningVeilIcon",
             "trigger_upgrades": [
@@ -49,8 +63,15 @@
             },
             "descriptions": {
                 "english": "Restore [effect0.power] health.",
-                "spanish": "Cura [effect0.power] de vida.",
-                "chinese": "恢复 [effect0.power] 点生命。"
+                "spanish": "Recupera [effect0.power] de vida.",
+                "chinese": "恢复 [effect0.power] 点生命。",
+                "french": "Restaure [effect0.power] points de santé.",
+                "german": "Stellt [effect0.power] Gesundheit wieder her.",
+                "portuguese": "Restaura [effect0.power] de vida.",
+                "russian": "Восстанавливает [effect0.power] здоровья.",
+                "chinese_traditional": "恢復 [effect0.power] 點生命值。",
+                "japanese": "体力を[effect0.power]回復する。",
+                "korean": "체력을 [effect0.power] 회복합니다."
             },
             "effects": [
                 "@MourningVeilEffect"

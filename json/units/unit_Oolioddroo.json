@@ -5,7 +5,15 @@
             "id": "SpawnOolioddroo",
             "names": {
                 "english": "Oolioddroo",
-                "chinese": "蛾梦魔"
+                "chinese": "蛾梦魔",
+                "spanish": "Oolioddroo",
+                "french": "Oolioddroo",
+                "german": "Oolioddroo",
+                "portuguese": "Oolioddroo",
+                "russian": "Oolioddroo",
+                "chinese_traditional": "Oolioddroo",
+                "japanese": "Oolioddroo",
+                "korean": "Oolioddroo"
             },
             "card_art": "@OolioddrooCardArt",
             "cost": 2,
@@ -26,7 +34,15 @@
             "id": "Oolioddroo",
             "names": {
                 "english": "Oolioddroo",
-                "chinese": "蛾梦魔"
+                "chinese": "蛾梦魔",
+                "spanish": "Oolioddroo",
+                "french": "Oolioddroo",
+                "german": "Oolioddroo",
+                "portuguese": "Oolioddroo",
+                "russian": "Oolioddroo",
+                "chinese_traditional": "Oolioddroo",
+                "japanese": "Oolioddroo",
+                "korean": "Oolioddroo"
             },
             "character_art": "@OolioddrooCharacterArt",
             "size": 2,
@@ -47,7 +63,15 @@
             "trigger": "on_turn_begin",
             "descriptions": {
                 "english": "Deal damage equal to its [attack] to enemy units.",
-                "chinese": "对所有敌方单位造成等同于自身[attack]的伤害。"
+                "chinese": "对所有敌方单位造成等同于自身[attack]的伤害。",
+                "spanish": "Inflige daño igual a su [attack] a las unidades enemigas.",
+                "french": "Inflige aux unités ennemies des dégâts égaux à son [attack].",
+                "german": "Fügt feindlichen Einheiten Schaden in Höhe des eigenen [attack] zu.",
+                "portuguese": "Causa às unidades inimigas dano igual ao seu [attack].",
+                "russian": "Наносит врагам урон, равный своей [attack].",
+                "chinese_traditional": "對敵方單位造成等同自身 [attack] 的傷害。",
+                "japanese": "自身の[attack]に等しいダメージを敵全員に与える。",
+                "korean": "적에게 자신의 [attack]만큼 피해를 줍니다."
             },
             "effects": [
                 "@OolioddrooDamage"

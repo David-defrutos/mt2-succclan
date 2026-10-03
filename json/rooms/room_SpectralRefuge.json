@@ -6,12 +6,26 @@
             "names": {
                 "english": "Spectral Refuge",
                 "spanish": "Refugio espectral",
-                "chinese": "幽灵庇护所"
+                "chinese": "幽灵庇护所",
+                "french": "Refuge spectral",
+                "german": "Geisterzuflucht",
+                "portuguese": "Refúgio Espectral",
+                "russian": "Призрачное убежище",
+                "chinese_traditional": "幽靈庇護所",
+                "japanese": "幽霊の避難所",
+                "korean": "유령의 안식처"
             },
             "descriptions": {
                 "english": "At the start of each turn, friendly <b>Ghosts</b> on this floor gain +5[health] and [regen] 2.",
-                "spanish": "Al comienzo de cada turno, los <b>Ghosts</b> aliados de esta sala obtienen +5[health] y [regen] 2.",
-                "chinese": "每回合开始时，本层友方<b>幽灵</b>获得 +5[health] 和 [regen] 2。"
+                "spanish": "Al comienzo de cada turno, los <b>Fantasmas</b> aliados de este piso obtienen +5[health] y [regen] 2.",
+                "chinese": "每回合开始时，本层友方<b>幽灵</b>获得 +5[health] 和 [regen] 2。",
+                "french": "Au début de chaque tour, les <b>Fantômes</b> alliés de cet étage gagnent +5[health] et [regen] 2.",
+                "german": "Zu Beginn jedes Zuges erhalten verbündete <b>Geister</b> auf dieser Etage +5[health] und [regen] 2.",
+                "portuguese": "No início de cada turno, os <b>Fantasmas</b> aliados neste andar ganham +5[health] e [regen] 2.",
+                "russian": "В начале каждого хода союзные <b>Призраки</b> на этом этаже получают +5[health] и [regen] 2.",
+                "chinese_traditional": "每回合開始時，此樓層的友方<b>幽靈</b>獲得 +5[health] 與 [regen] 2。",
+                "japanese": "各ターン開始時、この階の味方の<b>幽霊</b>に+5[health]と[regen] 2。",
+                "korean": "매 턴 시작 시 이 층의 아군 <b>유령</b>이 +5[health] 및 [regen] 2를 얻습니다."
             },
             "card_art": "@SpectralRefugeArt",
             "cost": 1,
@@ -37,12 +51,26 @@
             "titles": {
                 "english": "Spectral Refuge",
                 "spanish": "Refugio espectral",
-                "chinese": "幽灵庇护所"
+                "chinese": "幽灵庇护所",
+                "french": "Refuge spectral",
+                "german": "Geisterzuflucht",
+                "portuguese": "Refúgio Espectral",
+                "russian": "Призрачное убежище",
+                "chinese_traditional": "幽靈庇護所",
+                "japanese": "幽霊の避難所",
+                "korean": "유령의 안식처"
             },
             "descriptions": {
                 "english": "At the start of each turn, friendly <b>Ghosts</b> on this floor gain +5[health] and [regen] 2.",
-                "spanish": "Al comienzo de cada turno, los <b>Ghosts</b> aliados de esta sala obtienen +5[health] y [regen] 2.",
-                "chinese": "每回合开始时，本层友方<b>幽灵</b>获得 +5[health] 和 [regen] 2。"
+                "spanish": "Al comienzo de cada turno, los <b>Fantasmas</b> aliados de este piso obtienen +5[health] y [regen] 2.",
+                "chinese": "每回合开始时，本层友方<b>幽灵</b>获得 +5[health] 和 [regen] 2。",
+                "french": "Au début de chaque tour, les <b>Fantômes</b> alliés de cet étage gagnent +5[health] et [regen] 2.",
+                "german": "Zu Beginn jedes Zuges erhalten verbündete <b>Geister</b> auf dieser Etage +5[health] und [regen] 2.",
+                "portuguese": "No início de cada turno, os <b>Fantasmas</b> aliados neste andar ganham +5[health] e [regen] 2.",
+                "russian": "В начале каждого хода союзные <b>Призраки</b> на этом этаже получают +5[health] и [regen] 2.",
+                "chinese_traditional": "每回合開始時，此樓層的友方<b>幽靈</b>獲得 +5[health] 與 [regen] 2。",
+                "japanese": "各ターン開始時、この階の味方の<b>幽霊</b>に+5[health]と[regen] 2。",
+                "korean": "매 턴 시작 시 이 층의 아군 <b>유령</b>이 +5[health] 및 [regen] 2를 얻습니다."
             },
             "room_modifier_upgrades": [
                 "@SpectralRefugeModifier"
@@ -58,17 +86,38 @@
             "titles": {
                 "english": "Spectral Refuge",
                 "spanish": "Refugio espectral",
-                "chinese": "幽灵庇护所"
+                "chinese": "幽灵庇护所",
+                "french": "Refuge spectral",
+                "german": "Geisterzuflucht",
+                "portuguese": "Refúgio Espectral",
+                "russian": "Призрачное убежище",
+                "chinese_traditional": "幽靈庇護所",
+                "japanese": "幽霊の避難所",
+                "korean": "유령의 안식처"
             },
             "descriptions": {
                 "english": "At the start of each turn, friendly <b>Ghosts</b> on this floor gain +5[health] and [regen] 2.",
-                "spanish": "Al comienzo de cada turno, los <b>Ghosts</b> aliados de esta sala obtienen +5[health] y [regen] 2.",
-                "chinese": "每回合开始时，本层友方<b>幽灵</b>获得 +5[health] 和 [regen] 2。"
+                "spanish": "Al comienzo de cada turno, los <b>Fantasmas</b> aliados de este piso obtienen +5[health] y [regen] 2.",
+                "chinese": "每回合开始时，本层友方<b>幽灵</b>获得 +5[health] 和 [regen] 2。",
+                "french": "Au début de chaque tour, les <b>Fantômes</b> alliés de cet étage gagnent +5[health] et [regen] 2.",
+                "german": "Zu Beginn jedes Zuges erhalten verbündete <b>Geister</b> auf dieser Etage +5[health] und [regen] 2.",
+                "portuguese": "No início de cada turno, os <b>Fantasmas</b> aliados neste andar ganham +5[health] e [regen] 2.",
+                "russian": "В начале каждого хода союзные <b>Призраки</b> на этом этаже получают +5[health] и [regen] 2.",
+                "chinese_traditional": "每回合開始時，此樓層的友方<b>幽靈</b>獲得 +5[health] 與 [regen] 2。",
+                "japanese": "各ターン開始時、この階の味方の<b>幽霊</b>に+5[health]と[regen] 2。",
+                "korean": "매 턴 시작 시 이 층의 아군 <b>유령</b>이 +5[health] 및 [regen] 2를 얻습니다."
             },
             "in_play_descriptions": {
                 "english": "At the start of each turn, friendly <b>Ghosts</b> on this floor gain +5[health] and [regen] 2.",
-                "spanish": "Al comienzo de cada turno, los <b>Ghosts</b> aliados de esta sala obtienen +5[health] y [regen] 2.",
-                "chinese": "每回合开始时，本层友方<b>幽灵</b>获得 +5[health] 和 [regen] 2。"
+                "spanish": "Al comienzo de cada turno, los <b>Fantasmas</b> aliados de este piso obtienen +5[health] y [regen] 2.",
+                "chinese": "每回合开始时，本层友方<b>幽灵</b>获得 +5[health] 和 [regen] 2。",
+                "french": "Au début de chaque tour, les <b>Fantômes</b> alliés de cet étage gagnent +5[health] et [regen] 2.",
+                "german": "Zu Beginn jedes Zuges erhalten verbündete <b>Geister</b> auf dieser Etage +5[health] und [regen] 2.",
+                "portuguese": "No início de cada turno, os <b>Fantasmas</b> aliados neste andar ganham +5[health] e [regen] 2.",
+                "russian": "В начале каждого хода союзные <b>Призраки</b> на этом этаже получают +5[health] и [regen] 2.",
+                "chinese_traditional": "每回合開始時，此樓層的友方<b>幽靈</b>獲得 +5[health] 與 [regen] 2。",
+                "japanese": "各ターン開始時、この階の味方の<b>幽霊</b>に+5[health]と[regen] 2。",
+                "korean": "매 턴 시작 시 이 층의 아군 <b>유령</b>이 +5[health] 및 [regen] 2를 얻습니다."
             },
             "param_effects": [
                 "@SpectralRefugeHealth",

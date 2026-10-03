@@ -5,11 +5,27 @@
             "id": "DepressionWhisper",
             "names": {
                 "english": "Depression Whisper",
-                "chinese": "忧郁低语"
+                "chinese": "忧郁低语",
+                "spanish": "Susurro de abatimiento",
+                "french": "Murmure d'abattement",
+                "german": "Flüstern der Verzweiflung",
+                "portuguese": "Sussurro de Desânimo",
+                "russian": "Шёпот уныния",
+                "chinese_traditional": "消沉低語",
+                "japanese": "憂鬱の囁き",
+                "korean": "우울의 속삭임"
             },
             "descriptions": {
                 "english": "Remove all <b>buffs</b> from enemy units and double their <b>debuffs</b>.",
-                "chinese": "移除所有敌方单位的增益效果并使其减益效果翻倍。"
+                "chinese": "移除所有敌方单位的增益效果并使其减益效果翻倍。",
+                "spanish": "Elimina todos los <b>efectos beneficiosos</b> de las unidades enemigas y duplica sus <b>efectos perjudiciales</b>.",
+                "french": "Retire tous les <b>effets positifs</b> des unités ennemies et double leurs <b>effets négatifs</b>.",
+                "german": "Entfernt alle <b>positiven Effekte</b> von feindlichen Einheiten und verdoppelt ihre <b>negativen Effekte</b>.",
+                "portuguese": "Remove todos os <b>efeitos positivos</b> das unidades inimigas e dobra seus <b>efeitos negativos</b>.",
+                "russian": "Снимает все <b>положительные эффекты</b> с врагов и удваивает их <b>отрицательные эффекты</b>.",
+                "chinese_traditional": "移除敵方單位所有<b>增益</b>，並使其<b>減益</b>層數加倍。",
+                "japanese": "敵全員の<b>強化効果</b>をすべて解除し、<b>弱体効果</b>を2倍にする。",
+                "korean": "적의 모든 <b>강화 효과</b>를 제거하고 <b>약화 효과</b>를 두 배로 만듭니다."
             },
             "card_type": "spell",
             "rarity": "rare",

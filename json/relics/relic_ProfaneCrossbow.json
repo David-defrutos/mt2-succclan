@@ -6,11 +6,27 @@
             "type": "collectable",
             "names": {
                 "english": "Profane Crossbow",
-                "chinese": "亵渎手弩"
+                "chinese": "亵渎手弩",
+                "spanish": "Ballesta profana",
+                "french": "Arbalète profane",
+                "german": "Unheilige Armbrust",
+                "portuguese": "Besta Profana",
+                "russian": "Нечестивый арбалет",
+                "chinese_traditional": "褻瀆之弩",
+                "japanese": "冒涜の弩",
+                "korean": "불경한 석궁"
             },
             "descriptions": {
                 "english": "At the start of each turn, deal 30 damage to the front enemy unit on each floor.",
-                "chinese": "每回合开始时，对每层最前方的敌方单位造成 30 点伤害。"
+                "chinese": "每回合开始时，对每层最前方的敌方单位造成 30 点伤害。",
+                "spanish": "Al comienzo de cada turno, inflige 30 de daño a la unidad enemiga delantera de cada piso.",
+                "french": "Au début de chaque tour, inflige 30 dégâts à l'unité ennemie en première ligne de chaque étage.",
+                "german": "Fügt zu Beginn jedes Zuges der vordersten feindlichen Einheit auf jeder Etage 30 Schaden zu.",
+                "portuguese": "No início de cada turno, causa 30 de dano à unidade inimiga da frente de cada andar.",
+                "russian": "В начале каждого хода наносит 30 урона переднему врагу на каждом этаже.",
+                "chinese_traditional": "每回合開始時，對每個樓層最前方的敵方單位造成 30 點傷害。",
+                "japanese": "各ターン開始時、各階の最前列の敵に30ダメージを与える。",
+                "korean": "매 턴 시작 시 각 층의 맨 앞 적에게 피해를 30 줍니다."
             },
             "disallow_in_deployment": false,
             "relic_effects": [

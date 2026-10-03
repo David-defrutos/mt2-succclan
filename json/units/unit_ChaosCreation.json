@@ -5,7 +5,15 @@
             "id": "SpawnChaosCreation",
             "names": {
                 "english": "Chaos Creation",
-                "chinese": "混沌造物"
+                "chinese": "混沌造物",
+                "spanish": "Creación del caos",
+                "french": "Création du chaos",
+                "german": "Chaosgeburt",
+                "portuguese": "Criação do Caos",
+                "russian": "Порождение хаоса",
+                "chinese_traditional": "混沌造物",
+                "japanese": "混沌の創造物",
+                "korean": "혼돈의 창조물"
             },
             "card_art": "@ChaosCreationCardArt",
             "cost": 1,
@@ -26,7 +34,15 @@
             "id": "ChaosCreation",
             "names": {
                 "english": "Chaos Creation",
-                "chinese": "混沌造物"
+                "chinese": "混沌造物",
+                "spanish": "Creación del caos",
+                "french": "Création du chaos",
+                "german": "Chaosgeburt",
+                "portuguese": "Criação do Caos",
+                "russian": "Порождение хаоса",
+                "chinese_traditional": "混沌造物",
+                "japanese": "混沌の創造物",
+                "korean": "혼돈의 창조물"
             },
             "character_art": "@ChaosCreationCharacterArt",
             "size": 2,
@@ -53,7 +69,15 @@
             "trigger": "on_hit",
             "descriptions": {
                 "english": "Apply <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> to the attacking enemy unit.",
-                "chinese": "对攻击的敌方单位施加 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>。"
+                "chinese": "对攻击的敌方单位施加 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>。",
+                "spanish": "Otorga <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> a la unidad enemiga atacante.",
+                "french": "Applique <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> à l'unité ennemie attaquante.",
+                "german": "Verleiht der angreifenden feindlichen Einheit <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>.",
+                "portuguese": "Aplica <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> à unidade inimiga atacante.",
+                "russian": "Даёт атакующему врагу <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>.",
+                "chinese_traditional": "對攻擊者施加 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>。",
+                "japanese": "攻撃してきた敵に<b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>を付与する。",
+                "korean": "공격한 적에게 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>을 부여합니다."
             },
             "effects": [
                 "@ChaosCreationFrantic"

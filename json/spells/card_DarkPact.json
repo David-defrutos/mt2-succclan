@@ -5,11 +5,27 @@
             "id": "DarkPact",
             "names": {
                 "english": "Dark Pact",
-                "chinese": "黑暗契约"
+                "chinese": "黑暗契约",
+                "spanish": "Pacto oscuro",
+                "french": "Pacte sombre",
+                "german": "Dunkler Pakt",
+                "portuguese": "Pacto Sombrio",
+                "russian": "Тёмный договор",
+                "chinese_traditional": "黑暗契約",
+                "japanese": "闇の契約",
+                "korean": "어둠의 계약"
             },
             "descriptions": {
                 "english": "Shuffle [effect0.secondarypower] <b>Obsessing Spark</b> with [consume] into your deck. +[effect1.power][ember] every turn.",
-                "chinese": "将 [effect0.secondarypower] 张带有[consume]的<b>欲望碎片</b>洗入牌库。每回合 +[effect1.power][ember]。"
+                "chinese": "将 [effect0.secondarypower] 张带有[consume]的<b>欲望碎片</b>洗入牌库。每回合 +[effect1.power][ember]。",
+                "spanish": "Mezcla [effect0.secondarypower] <b>Chispa obsesiva</b> con [consume] en tu mazo. +[effect1.power][ember] cada turno.",
+                "french": "Mélangez [effect0.secondarypower] <b>Étincelle obsédante</b> avec [consume] dans votre deck. +[effect1.power][ember] chaque tour.",
+                "german": "Mische [effect0.secondarypower] <b>Besessenheitsfunke</b> mit [consume] in dein Deck. +[effect1.power][ember] in jedem Zug.",
+                "portuguese": "Embaralhe [effect0.secondarypower] <b>Centelha Obsessiva</b> com [consume] no seu deck. +[effect1.power][ember] a cada turno.",
+                "russian": "Замешивает в колоду [effect0.secondarypower] <b>Искра одержимости</b> с [consume]. +[effect1.power][ember] каждый ход.",
+                "chinese_traditional": "將 [effect0.secondarypower] 張帶有 [consume] 的<b>執念火花</b>洗入牌庫。每回合 +[effect1.power][ember]。",
+                "japanese": "[consume]付きの<b>執着の火花</b>を[effect0.secondarypower]枚山札に混ぜる。毎ターン+[effect1.power][ember]。",
+                "korean": "[consume]가 있는 <b>집착의 불꽃</b> [effect0.secondarypower]장을 덱에 섞습니다. 매 턴 +[effect1.power][ember]."
             },
             "card_type": "spell",
             "rarity": "uncommon",

@@ -6,11 +6,27 @@
             "type": "collectable",
             "names": {
                 "english": "Abyss Crown",
-                "chinese": "深渊王冠"
+                "chinese": "深渊王冠",
+                "spanish": "Corona del abismo",
+                "french": "Couronne des abysses",
+                "german": "Krone des Abgrunds",
+                "portuguese": "Coroa do Abismo",
+                "russian": "Корона бездны",
+                "chinese_traditional": "深淵王冠",
+                "japanese": "深淵の冠",
+                "korean": "심연의 왕관"
             },
             "descriptions": {
                 "english": "Apply [effect0.power] extra stack of <b>[mt2_succclan.Plugin_psionic]</b> every time it is applied.",
-                "chinese": "每次施加 <b>[mt2_succclan.Plugin_psionic]</b> 时，额外施加 [effect0.power] 层。"
+                "chinese": "每次施加 <b>[mt2_succclan.Plugin_psionic]</b> 时，额外施加 [effect0.power] 层。",
+                "spanish": "Cada vez que se aplica <b>[mt2_succclan.Plugin_psionic]</b>, aplica [effect0.power] cargas adicionales.",
+                "french": "Chaque application de <b>[mt2_succclan.Plugin_psionic]</b> ajoute [effect0.power] charges supplémentaires.",
+                "german": "Jede Anwendung von <b>[mt2_succclan.Plugin_psionic]</b> fügt [effect0.power] zusätzliche Stapel hinzu.",
+                "portuguese": "Cada aplicação de <b>[mt2_succclan.Plugin_psionic]</b> adiciona [effect0.power] acúmulos extras.",
+                "russian": "Каждое наложение <b>[mt2_succclan.Plugin_psionic]</b> добавляет ещё [effect0.power] зарядов.",
+                "chinese_traditional": "每次施加<b>[mt2_succclan.Plugin_psionic]</b>時，額外施加 [effect0.power] 層。",
+                "japanese": "<b>[mt2_succclan.Plugin_psionic]</b>を付与するたびに、追加で[effect0.power]スタック付与する。",
+                "korean": "<b>[mt2_succclan.Plugin_psionic]</b>을 부여할 때마다 [effect0.power]중첩을 추가로 부여합니다."
             },
             "disallow_in_deployment": false,
             "relic_effects": [

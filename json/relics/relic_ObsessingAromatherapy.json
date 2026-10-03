@@ -6,11 +6,27 @@
             "type": "collectable",
             "names": {
                 "english": "Obsessing Aromatherapy",
-                "chinese": "迷乱香薰"
+                "chinese": "迷乱香薰",
+                "spanish": "Aromaterapia obsesiva",
+                "french": "Aromathérapie obsédante",
+                "german": "Besessenheitsaromatherapie",
+                "portuguese": "Aromaterapia Obsessiva",
+                "russian": "Навязчивая ароматерапия",
+                "chinese_traditional": "執念芳療",
+                "japanese": "執着の芳香療法",
+                "korean": "집착의 아로마 요법"
             },
             "descriptions": {
                 "english": "Enemy units gain <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> when they enter the train.",
-                "chinese": "敌方单位进入列车时，获得 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>。"
+                "chinese": "敌方单位进入列车时，获得 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>。",
+                "spanish": "Las unidades enemigas obtienen <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> al entrar en el tren.",
+                "french": "Les unités ennemies gagnent <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> en entrant dans le train.",
+                "german": "Feindliche Einheiten erhalten beim Betreten des Zuges <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>.",
+                "portuguese": "As unidades inimigas ganham <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> ao entrar no trem.",
+                "russian": "Враги получают <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> при входе в поезд.",
+                "chinese_traditional": "敵方單位進入列車時獲得 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>。",
+                "japanese": "敵ユニットは列車に入ると<b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>を得る。",
+                "korean": "적은 열차에 들어올 때 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>을 얻습니다."
             },
             "disallow_in_deployment": false,
             "relic_effects": [

@@ -5,7 +5,15 @@
             "id": "SpawnGluttonyGhost",
             "names": {
                 "english": "Gluttony Ghost",
-                "chinese": "暴食幽魂"
+                "chinese": "暴食幽魂",
+                "spanish": "Fantasma de la gula",
+                "french": "Fantôme de la gourmandise",
+                "german": "Geist der Völlerei",
+                "portuguese": "Fantasma da Gula",
+                "russian": "Призрак чревоугодия",
+                "chinese_traditional": "暴食幽靈",
+                "japanese": "暴食の幽霊",
+                "korean": "폭식의 유령"
             },
             "card_type": "monster",
             "rarity": "common",
@@ -26,7 +34,15 @@
             "id": "GluttonyGhost",
             "names": {
                 "english": "Gluttony Ghost",
-                "chinese": "暴食幽魂"
+                "chinese": "暴食幽魂",
+                "spanish": "Fantasma de la gula",
+                "french": "Fantôme de la gourmandise",
+                "german": "Geist der Völlerei",
+                "portuguese": "Fantasma da Gula",
+                "russian": "Призрак чревоугодия",
+                "chinese_traditional": "暴食幽靈",
+                "japanese": "暴食の幽霊",
+                "korean": "폭식의 유령"
             },
             "character_art": "@GluttonyGhostCharacterArt",
             "size": 1,
@@ -48,7 +64,15 @@
             "trigger": "on_spawn",
             "descriptions": {
                 "english": "Add [effect0.secondarypower] <b>Obsessing Spark</b> with [consume] to your hand.",
-                "chinese": "将 [effect0.secondarypower] 张带有[consume]的<b>欲望碎片</b>加入手牌。"
+                "chinese": "将 [effect0.secondarypower] 张带有[consume]的<b>欲望碎片</b>加入手牌。",
+                "spanish": "Añade [effect0.secondarypower] <b>Chispa obsesiva</b> con [consume] a tu mano.",
+                "french": "Ajoutez [effect0.secondarypower] <b>Étincelle obsédante</b> avec [consume] à votre main.",
+                "german": "Füge deiner Hand [effect0.secondarypower] <b>Besessenheitsfunke</b> mit [consume] hinzu.",
+                "portuguese": "Adicione [effect0.secondarypower] <b>Centelha Obsessiva</b> com [consume] à sua mão.",
+                "russian": "Добавляет в руку [effect0.secondarypower] <b>Искра одержимости</b> с [consume].",
+                "chinese_traditional": "將 [effect0.secondarypower] 張帶有 [consume] 的<b>執念火花</b>加入手牌。",
+                "japanese": "[consume]付きの<b>執着の火花</b>を[effect0.secondarypower]枚手札に加える。",
+                "korean": "[consume]가 있는 <b>집착의 불꽃</b> [effect0.secondarypower]장을 손에 추가합니다."
             },
             "effects": [
                 "@GluttonyGhostAddShards"
@@ -62,7 +86,15 @@
             },
             "descriptions": {
                 "english": "Apply [regen] [effect0.status0.power] to friendly units.",
-                "chinese": "友方单位获得[regen] [effect0.status0.power]。"
+                "chinese": "友方单位获得[regen] [effect0.status0.power]。",
+                "spanish": "Otorga [regen] [effect0.status0.power] a las unidades aliadas.",
+                "french": "Applique [regen] [effect0.status0.power] aux unités alliées.",
+                "german": "Verleiht verbündeten Einheiten [regen] [effect0.status0.power].",
+                "portuguese": "Concede [regen] [effect0.status0.power] às unidades aliadas.",
+                "russian": "Даёт союзникам [regen] [effect0.status0.power].",
+                "chinese_traditional": "對友方單位施加 [regen] [effect0.status0.power]。",
+                "japanese": "味方全員に[regen] [effect0.status0.power]を付与する。",
+                "korean": "아군에게 [regen] [effect0.status0.power]을 부여합니다."
             },
             "effects": [
                 "@GluttonyGhostRegen"

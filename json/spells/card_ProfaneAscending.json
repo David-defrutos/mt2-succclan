@@ -5,11 +5,27 @@
             "id": "ProfaneAscending",
             "names": {
                 "english": "Profane Ascending",
-                "chinese": "亵渎晋升"
+                "chinese": "亵渎晋升",
+                "spanish": "Ascenso profano",
+                "french": "Ascension profane",
+                "german": "Unheiliger Aufstieg",
+                "portuguese": "Ascensão Profana",
+                "russian": "Нечестивое вознесение",
+                "chinese_traditional": "褻瀆飛升",
+                "japanese": "冒涜の上昇",
+                "korean": "불경한 상승"
             },
             "descriptions": {
                 "english": "<b>Ascend</b> an enemy unit. Apply <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b> and heal it for [effect2.power][health].",
-                "chinese": "使一个敌方单位<b>上升</b>一层，施加 <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b>，并为其恢复 [effect2.power] 点[health]。"
+                "chinese": "使一个敌方单位<b>上升</b>一层，施加 <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b>，并为其恢复 [effect2.power] 点[health]。",
+                "spanish": "<b>Asciende</b> una unidad enemiga. Le otorga <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b> y le cura [effect2.power][health].",
+                "french": "Fait <b>monter</b> une unité ennemie. Lui applique <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b> et lui restaure [effect2.power][health].",
+                "german": "Lässt eine feindliche Einheit <b>aufsteigen</b>. Verleiht ihr <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b> und heilt sie um [effect2.power][health].",
+                "portuguese": "Faz uma unidade inimiga <b>subir</b>. Aplica <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b> e cura [effect2.power][health].",
+                "russian": "<b>Поднимает</b> врага. Даёт ему <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b> и исцеляет на [effect2.power][health].",
+                "chinese_traditional": "使一個敵方單位<b>上升</b>。施加 <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b> 並治療 [effect2.power][health]。",
+                "japanese": "敵1体を<b>上昇</b>させる。<b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b>を付与し[effect2.power][health]回復する。",
+                "korean": "적 하나를 <b>상승</b>시킵니다. <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b>을 부여하고 [effect2.power][health]만큼 회복시킵니다."
             },
             "card_type": "spell",
             "rarity": "common",

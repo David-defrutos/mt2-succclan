@@ -6,11 +6,27 @@
             "type": "collectable",
             "names": {
                 "english": "Flesh Ring",
-                "chinese": "血肉之灾"
+                "chinese": "血肉之灾",
+                "spanish": "Anillo de carne",
+                "french": "Anneau de chair",
+                "german": "Fleischring",
+                "portuguese": "Anel de Carne",
+                "russian": "Кольцо плоти",
+                "chinese_traditional": "血肉指環",
+                "japanese": "肉の指輪",
+                "korean": "살점 반지"
             },
             "descriptions": {
                 "english": "The first <b>Blight</b> you play each turn draws you [effect0.power] card.",
-                "chinese": "每回合首次打出[blight]牌时，抽 [effect0.power] 张牌。"
+                "chinese": "每回合首次打出[blight]牌时，抽 [effect0.power] 张牌。",
+                "spanish": "La primera <b>Ruina</b> que juegas cada turno te hace robar [effect0.power] cartas.",
+                "french": "Le premier <b>Fléau</b> joué chaque tour vous fait piocher [effect0.power] cartes.",
+                "german": "Der erste <b>Fluch</b>, den du in jedem Zug spielst, lässt dich [effect0.power] Karten ziehen.",
+                "portuguese": "A primeira <b>Praga</b> jogada a cada turno faz você comprar [effect0.power] cartas.",
+                "russian": "Первая <b>Порча</b>, сыгранная за ход, даёт [effect0.power] карт.",
+                "chinese_traditional": "每回合打出的第一張<b>禍害</b>牌使你抽 [effect0.power] 張牌。",
+                "japanese": "各ターン最初にプレイした<b>荒廃</b>で、カードを[effect0.power]枚引く。",
+                "korean": "매 턴 처음 사용한 <b>저주</b> 카드로 카드를 [effect0.power]장 뽑습니다."
             },
             "disallow_in_deployment": false,
             "relic_effects": [

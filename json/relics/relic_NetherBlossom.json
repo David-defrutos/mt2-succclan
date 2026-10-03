@@ -6,11 +6,27 @@
             "type": "collectable",
             "names": {
                 "english": "Nether Blossom",
-                "chinese": "下界之花"
+                "chinese": "下界之花",
+                "spanish": "Flor del inframundo",
+                "french": "Fleur du monde inférieur",
+                "german": "Unterweltblüte",
+                "portuguese": "Flor do Submundo",
+                "russian": "Цветок преисподней",
+                "chinese_traditional": "冥界之花",
+                "japanese": "冥界の花",
+                "korean": "명계의 꽃"
             },
             "descriptions": {
                 "english": "When <b>[mt2_succclan.Plugin_frantic]</b> is applied to a unit, also apply [rage] [effect0.status0.power].",
-                "chinese": "施加 <b>[mt2_succclan.Plugin_frantic]</b> 时，同时施加[rage] [effect0.status0.power]。"
+                "chinese": "施加 <b>[mt2_succclan.Plugin_frantic]</b> 时，同时施加[rage] [effect0.status0.power]。",
+                "spanish": "Cuando una unidad recibe <b>[mt2_succclan.Plugin_frantic]</b>, también recibe [rage] [effect0.status0.power].",
+                "french": "Lorsqu'une unité reçoit <b>[mt2_succclan.Plugin_frantic]</b>, applique aussi [rage] [effect0.status0.power].",
+                "german": "Wenn eine Einheit <b>[mt2_succclan.Plugin_frantic]</b> erhält, erhält sie auch [rage] [effect0.status0.power].",
+                "portuguese": "Quando uma unidade recebe <b>[mt2_succclan.Plugin_frantic]</b>, também recebe [rage] [effect0.status0.power].",
+                "russian": "При наложении <b>[mt2_succclan.Plugin_frantic]</b> отряд также получает [rage] [effect0.status0.power].",
+                "chinese_traditional": "對單位施加<b>[mt2_succclan.Plugin_frantic]</b>時，也施加 [rage] [effect0.status0.power]。",
+                "japanese": "ユニットに<b>[mt2_succclan.Plugin_frantic]</b>を付与すると、[rage] [effect0.status0.power]も付与する。",
+                "korean": "유닛에게 <b>[mt2_succclan.Plugin_frantic]</b>을 부여하면 [rage] [effect0.status0.power]도 부여합니다."
             },
             "disallow_in_deployment": false,
             "relic_effects": [

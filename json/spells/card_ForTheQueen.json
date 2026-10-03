@@ -5,11 +5,27 @@
             "id": "ForTheQueen",
             "names": {
                 "english": "For the Queen",
-                "chinese": "为了女王"
+                "chinese": "为了女王",
+                "spanish": "Por la reina",
+                "french": "Pour la reine",
+                "german": "Für die Königin",
+                "portuguese": "Pela Rainha",
+                "russian": "За королеву",
+                "chinese_traditional": "為了女王",
+                "japanese": "女王のために",
+                "korean": "여왕을 위하여"
             },
             "descriptions": {
                 "english": "<b>Sacrifice</b> a friendly unit. Gain [effect1.power][coin].",
-                "chinese": "<b>牺牲</b>一个友方单位。获得 [effect1.power][coin]。"
+                "chinese": "<b>牺牲</b>一个友方单位。获得 [effect1.power][coin]。",
+                "spanish": "<b>Sacrifica</b> una unidad aliada. Gana [effect1.power][coin].",
+                "french": "<b>Sacrifiez</b> une unité alliée. Gagnez [effect1.power][coin].",
+                "german": "<b>Opfere</b> eine verbündete Einheit. Erhalte [effect1.power][coin].",
+                "portuguese": "<b>Sacrifique</b> uma unidade aliada. Ganhe [effect1.power][coin].",
+                "russian": "<b>Приносит в жертву</b> союзника. Даёт [effect1.power][coin].",
+                "chinese_traditional": "<b>犧牲</b>一個友方單位。獲得 [effect1.power][coin]。",
+                "japanese": "味方1体を<b>生贄</b>にする。[effect1.power][coin]を得る。",
+                "korean": "아군 하나를 <b>희생</b>시킵니다. [effect1.power][coin]을 얻습니다."
             },
             "card_type": "spell",
             "rarity": "uncommon",

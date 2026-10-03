@@ -5,11 +5,27 @@
             "id": "BloodCarnival",
             "names": {
                 "english": "Blood Carnival",
-                "chinese": "鲜血狂欢"
+                "chinese": "鲜血狂欢",
+                "spanish": "Carnaval de sangre",
+                "french": "Carnaval sanglant",
+                "german": "Blutkarneval",
+                "portuguese": "Carnaval de Sangue",
+                "russian": "Кровавый карнавал",
+                "chinese_traditional": "鮮血狂歡",
+                "japanese": "血の謝肉祭",
+                "korean": "피의 축제"
             },
             "descriptions": {
                 "english": "Give everyone +[effect0.power][attack].",
-                "chinese": "所有单位 +[effect0.power][attack]。"
+                "chinese": "所有单位 +[effect0.power][attack]。",
+                "spanish": "Otorga +[effect0.power][attack] a todas las unidades.",
+                "french": "Applique +[effect0.power][attack] à toutes les unités.",
+                "german": "Verleiht allen Einheiten +[effect0.power][attack].",
+                "portuguese": "Concede +[effect0.power][attack] a todas as unidades.",
+                "russian": "Даёт всем отрядам +[effect0.power][attack].",
+                "chinese_traditional": "所有單位獲得 +[effect0.power][attack]。",
+                "japanese": "全ユニットに+[effect0.power][attack]を付与する。",
+                "korean": "모든 유닛에게 +[effect0.power][attack]을 부여합니다."
             },
             "card_type": "spell",
             "rarity": "common",

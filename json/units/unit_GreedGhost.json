@@ -5,7 +5,15 @@
             "id": "SpawnGreedGhost",
             "names": {
                 "english": "Greed Ghost",
-                "chinese": "贪婪幽魂"
+                "chinese": "贪婪幽魂",
+                "spanish": "Fantasma de la avaricia",
+                "french": "Fantôme de l'avarice",
+                "german": "Geist der Gier",
+                "portuguese": "Fantasma da Ganância",
+                "russian": "Призрак алчности",
+                "chinese_traditional": "貪婪幽靈",
+                "japanese": "強欲の幽霊",
+                "korean": "탐욕의 유령"
             },
             "card_type": "monster",
             "rarity": "uncommon",
@@ -26,7 +34,15 @@
             "id": "GreedGhost",
             "names": {
                 "english": "Greed Ghost",
-                "chinese": "贪婪幽魂"
+                "chinese": "贪婪幽魂",
+                "spanish": "Fantasma de la avaricia",
+                "french": "Fantôme de l'avarice",
+                "german": "Geist der Gier",
+                "portuguese": "Fantasma da Ganância",
+                "russian": "Призрак алчности",
+                "chinese_traditional": "貪婪幽靈",
+                "japanese": "強欲の幽霊",
+                "korean": "탐욕의 유령"
             },
             "size": 1,
             "attack_damage": 0,
@@ -48,7 +64,15 @@
             "trigger": "on_spawn",
             "descriptions": {
                 "english": "Add 2 <b>Obsessing Spark</b> with [consume] to your hand.",
-                "chinese": "将 2 张带有[consume]的<b>欲望碎片</b>加入手牌。"
+                "chinese": "将 2 张带有[consume]的<b>欲望碎片</b>加入手牌。",
+                "spanish": "Añade 2 <b>Chispa obsesiva</b> con [consume] a tu mano.",
+                "french": "Ajoutez 2 <b>Étincelle obsédante</b> avec [consume] à votre main.",
+                "german": "Füge deiner Hand 2 <b>Besessenheitsfunke</b> mit [consume] hinzu.",
+                "portuguese": "Adicione 2 <b>Centelha Obsessiva</b> com [consume] à sua mão.",
+                "russian": "Добавляет в руку 2 <b>Искра одержимости</b> с [consume].",
+                "chinese_traditional": "將 2 張帶有 [consume] 的<b>執念火花</b>加入手牌。",
+                "japanese": "[consume]付きの<b>執着の火花</b>を2枚手札に加える。",
+                "korean": "[consume]가 있는 <b>집착의 불꽃</b> 2장을 손에 추가합니다."
             },
             "effects": [
                 "@GreedGhostAddShards"
@@ -62,7 +86,15 @@
             },
             "descriptions": {
                 "english": "Gain [effect0.power][coin].",
-                "chinese": "获得 [effect0.power][coin]。"
+                "chinese": "获得 [effect0.power][coin]。",
+                "spanish": "Gana [effect0.power][coin].",
+                "french": "Gagnez [effect0.power][coin].",
+                "german": "Erhalte [effect0.power][coin].",
+                "portuguese": "Ganhe [effect0.power][coin].",
+                "russian": "Даёт [effect0.power][coin].",
+                "chinese_traditional": "獲得 [effect0.power][coin]。",
+                "japanese": "[effect0.power][coin]を得る。",
+                "korean": "[effect0.power][coin]을 얻습니다."
             },
             "effects": [
                 "@GreedGhostGold"

@@ -5,11 +5,27 @@
             "id": "MindBurning",
             "names": {
                 "english": "Mind Burning",
-                "chinese": "意识灼烧"
+                "chinese": "意识灼烧",
+                "spanish": "Mente en llamas",
+                "french": "Esprit en flammes",
+                "german": "Geistbrand",
+                "portuguese": "Mente em Chamas",
+                "russian": "Горящий разум",
+                "chinese_traditional": "心靈灼燒",
+                "japanese": "精神の炎",
+                "korean": "정신 연소"
             },
             "descriptions": {
                 "english": "Apply <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> and [multistrike] [effect1.status0.power] to an enemy unit.",
-                "chinese": "对一个敌方单位施加 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> 和[multistrike] [effect1.status0.power]。"
+                "chinese": "对一个敌方单位施加 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> 和[multistrike] [effect1.status0.power]。",
+                "spanish": "Otorga <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> y [multistrike] [effect1.status0.power] a una unidad enemiga.",
+                "french": "Applique <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> et [multistrike] [effect1.status0.power] à une unité ennemie.",
+                "german": "Verleiht einer feindlichen Einheit <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> und [multistrike] [effect1.status0.power].",
+                "portuguese": "Aplica <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> e [multistrike] [effect1.status0.power] a uma unidade inimiga.",
+                "russian": "Даёт врагу <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> и [multistrike] [effect1.status0.power].",
+                "chinese_traditional": "對一個敵方單位施加 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> 與 [multistrike] [effect1.status0.power]。",
+                "japanese": "敵1体に<b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>と[multistrike] [effect1.status0.power]を付与する。",
+                "korean": "적 하나에게 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> 및 [multistrike] [effect1.status0.power]을 부여합니다."
             },
             "card_type": "spell",
             "rarity": "uncommon",

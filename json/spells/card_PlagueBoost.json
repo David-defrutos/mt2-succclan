@@ -5,11 +5,27 @@
             "id": "PlagueBoost",
             "names": {
                 "english": "Plague Boost",
-                "chinese": "瘟疫爆发"
+                "chinese": "瘟疫爆发",
+                "spanish": "Impulso de la plaga",
+                "french": "Renfort de peste",
+                "german": "Seuchenverstärkung",
+                "portuguese": "Impulso da Praga",
+                "russian": "Усиление чумы",
+                "chinese_traditional": "瘟疫增幅",
+                "japanese": "疫病の増幅",
+                "korean": "역병 증폭"
             },
             "descriptions": {
                 "english": "Gain 1[ember] for every <b>Blight</b> in your deck.",
-                "chinese": "牌库中每有 1 张[blight]牌，获得 1[ember]。"
+                "chinese": "牌库中每有 1 张[blight]牌，获得 1[ember]。",
+                "spanish": "Gana 1[ember] por cada <b>Ruina</b> en tu mazo.",
+                "french": "Gagnez 1[ember] pour chaque <b>Fléau</b> dans votre deck.",
+                "german": "Erhalte 1[ember] für jeden <b>Fluch</b> in deinem Deck.",
+                "portuguese": "Ganhe 1[ember] para cada <b>Praga</b> no seu deck.",
+                "russian": "Даёт 1[ember] за каждую <b>Порчу</b> в колоде.",
+                "chinese_traditional": "牌庫中每有一張<b>禍害</b>牌，獲得 1[ember]。",
+                "japanese": "山札の<b>荒廃</b>1枚につき1[ember]を得る。",
+                "korean": "덱의 <b>저주</b> 카드 한 장당 1[ember]을 얻습니다."
             },
             "card_type": "spell",
             "rarity": "rare",

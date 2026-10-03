@@ -6,11 +6,27 @@
             "type": "collectable",
             "names": {
                 "english": "Shadow Cloak",
-                "chinese": "暗影斗篷"
+                "chinese": "暗影斗篷",
+                "spanish": "Capa de las sombras",
+                "french": "Cape des ombres",
+                "german": "Schattenumhang",
+                "portuguese": "Manto das Sombras",
+                "russian": "Плащ теней",
+                "chinese_traditional": "暗影披風",
+                "japanese": "影のマント",
+                "korean": "그림자 망토"
             },
             "descriptions": {
                 "english": "<b>Accursed</b> abilities trigger [effect0.power] additional time.",
-                "chinese": "<b>被咒</b>效果额外触发 [effect0.power] 次。"
+                "chinese": "<b>被咒</b>效果额外触发 [effect0.power] 次。",
+                "spanish": "Las habilidades <b>Maldito</b> se activan [effect0.power] veces adicionales.",
+                "french": "Les capacités <b>Maudit</b> se déclenchent [effect0.power] fois de plus.",
+                "german": "<b>Verflucht</b>-Fähigkeiten werden [effect0.power] zusätzliche Male ausgelöst.",
+                "portuguese": "Habilidades <b>Amaldiçoado</b> são ativadas [effect0.power] vezes adicionais.",
+                "russian": "Способности <b>Проклятие</b> срабатывают ещё [effect0.power] раз.",
+                "chinese_traditional": "<b>詛咒</b>能力額外觸發 [effect0.power] 次。",
+                "japanese": "<b>呪い</b>の能力が追加で[effect0.power]回発動する。",
+                "korean": "<b>저주</b> 능력이 [effect0.power]회 추가로 발동합니다."
             },
             "disallow_in_deployment": false,
             "relic_effects": [

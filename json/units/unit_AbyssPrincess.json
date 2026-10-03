@@ -5,7 +5,15 @@
             "id": "SpawnAbyssPrincess",
             "names": {
                 "english": "Abyss Princess",
-                "chinese": "深渊公主"
+                "chinese": "深渊公主",
+                "spanish": "Princesa del abismo",
+                "french": "Princesse des abysses",
+                "german": "Prinzessin des Abgrunds",
+                "portuguese": "Princesa do Abismo",
+                "russian": "Принцесса бездны",
+                "chinese_traditional": "深淵公主",
+                "japanese": "深淵の姫",
+                "korean": "심연의 공주"
             },
             "card_art": "@AbyssPrincessCardArt",
             "cost": 2,
@@ -26,7 +34,15 @@
             "id": "AbyssPrincess",
             "names": {
                 "english": "Abyss Princess",
-                "chinese": "深渊公主"
+                "chinese": "深渊公主",
+                "spanish": "Princesa del abismo",
+                "french": "Princesse des abysses",
+                "german": "Prinzessin des Abgrunds",
+                "portuguese": "Princesa do Abismo",
+                "russian": "Принцесса бездны",
+                "chinese_traditional": "深淵公主",
+                "japanese": "深淵の姫",
+                "korean": "심연의 공주"
             },
             "character_art": "@AbyssPrincessCharacterArt",
             "size": 2,
@@ -53,7 +69,15 @@
             "trigger": "on_attacking",
             "descriptions": {
                 "english": "Gain [sap] [effect0.status0.power]. Apply [rage] [effect1.status0.power] and <b>[mt2_succclan.Plugin_frantic] [effect2.status0.power]</b> to enemy units.",
-                "chinese": "获得[sap] [effect0.status0.power]。对所有敌方单位施加[rage] [effect1.status0.power] 和 <b>[mt2_succclan.Plugin_frantic] [effect2.status0.power]</b>。"
+                "chinese": "获得[sap] [effect0.status0.power]。对所有敌方单位施加[rage] [effect1.status0.power] 和 <b>[mt2_succclan.Plugin_frantic] [effect2.status0.power]</b>。",
+                "spanish": "Obtiene [sap] [effect0.status0.power]. Otorga [rage] [effect1.status0.power] y <b>[mt2_succclan.Plugin_frantic] [effect2.status0.power]</b> a las unidades enemigas.",
+                "french": "Gagne [sap] [effect0.status0.power]. Applique [rage] [effect1.status0.power] et <b>[mt2_succclan.Plugin_frantic] [effect2.status0.power]</b> aux unités ennemies.",
+                "german": "Erhält [sap] [effect0.status0.power]. Verleiht feindlichen Einheiten [rage] [effect1.status0.power] und <b>[mt2_succclan.Plugin_frantic] [effect2.status0.power]</b>.",
+                "portuguese": "Ganha [sap] [effect0.status0.power]. Aplica [rage] [effect1.status0.power] e <b>[mt2_succclan.Plugin_frantic] [effect2.status0.power]</b> às unidades inimigas.",
+                "russian": "Получает [sap] [effect0.status0.power]. Даёт врагам [rage] [effect1.status0.power] и <b>[mt2_succclan.Plugin_frantic] [effect2.status0.power]</b>.",
+                "chinese_traditional": "獲得 [sap] [effect0.status0.power]。對敵方單位施加 [rage] [effect1.status0.power] 與 <b>[mt2_succclan.Plugin_frantic] [effect2.status0.power]</b>。",
+                "japanese": "[sap] [effect0.status0.power]を得る。敵全員に[rage] [effect1.status0.power]と<b>[mt2_succclan.Plugin_frantic] [effect2.status0.power]</b>を付与する。",
+                "korean": "[sap] [effect0.status0.power]을 얻습니다. 적에게 [rage] [effect1.status0.power] 및 <b>[mt2_succclan.Plugin_frantic] [effect2.status0.power]</b>을 부여합니다."
             },
             "effects": [
                 "@AbyssPrincessSap",

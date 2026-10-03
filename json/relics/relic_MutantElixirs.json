@@ -6,11 +6,27 @@
             "type": "collectable",
             "names": {
                 "english": "Mutant Elixirs",
-                "chinese": "突变药剂"
+                "chinese": "突变药剂",
+                "spanish": "Elixires mutantes",
+                "french": "Élixirs mutants",
+                "german": "Mutationselixiere",
+                "portuguese": "Elixires Mutantes",
+                "russian": "Мутационные эликсиры",
+                "chinese_traditional": "變異靈藥",
+                "japanese": "変異の霊薬",
+                "korean": "변이 영약"
             },
             "descriptions": {
                 "english": "At the start of each turn, a random friendly unit becomes <b>Mutated</b> and gains [multistrike] 1. The previously <b>Mutated</b> unit loses it.",
-                "chinese": "每回合开始时，随机一个友方单位变为<b>变异</b>并获得 [multistrike] 1。之前的<b>变异</b>单位失去该效果。"
+                "chinese": "每回合开始时，随机一个友方单位变为<b>变异</b>并获得 [multistrike] 1。之前的<b>变异</b>单位失去该效果。",
+                "spanish": "Al comienzo de cada turno, una unidad aliada aleatoria queda <b>Mutado</b> y obtiene [multistrike] 1. La unidad <b>Mutado</b> anterior pierde esa bonificación.",
+                "french": "Au début de chaque tour, une unité alliée aléatoire devient <b>Muté</b> et gagne [multistrike] 1. L'unité précédemment <b>Muté</b> perd ce bonus.",
+                "german": "Zu Beginn jedes Zuges wird eine zufällige verbündete Einheit <b>Mutiert</b> und erhält [multistrike] 1. Die zuvor <b>Mutiert</b> markierte Einheit verliert den Bonus.",
+                "portuguese": "No início de cada turno, uma unidade aliada aleatória fica <b>Mutado</b> e ganha [multistrike] 1. A unidade anteriormente <b>Mutado</b> perde esse bônus.",
+                "russian": "В начале каждого хода случайный союзник получает <b>Мутировавший</b> и [multistrike] 1. Предыдущий носитель <b>Мутировавший</b> теряет бонус.",
+                "chinese_traditional": "每回合開始時，隨機友方單位獲得<b>變異</b>及 [multistrike] 1。先前<b>變異</b>的單位失去此加成。",
+                "japanese": "各ターン開始時、ランダムな味方が<b>変異</b>し[multistrike] 1を得る。前に<b>変異</b>したユニットはこのボーナスを失う。",
+                "korean": "매 턴 시작 시 무작위 아군이 <b>변이</b> 상태가 되고 [multistrike] 1을 얻습니다. 이전 <b>변이</b> 유닛은 해당 보너스를 잃습니다."
             },
             "disallow_in_deployment": false,
             "relic_effects": [
@@ -102,23 +118,63 @@
             "class_name": "@StatusEffectMarkerState",
             "names": {
                 "english": "Mutated",
-                "chinese": "突变"
+                "chinese": "突变",
+                "spanish": "Mutado",
+                "french": "Muté",
+                "german": "Mutiert",
+                "portuguese": "Mutado",
+                "russian": "Мутировавший",
+                "chinese_traditional": "變異",
+                "japanese": "変異",
+                "korean": "변이"
             },
             "card_tooltips": {
                 "english": "This unit was mutated by Mutant Elixirs this turn.",
-                "chinese": "本回合被突变药剂改造的单位。"
+                "chinese": "本回合被突变药剂改造的单位。",
+                "spanish": "Esta unidad ha mutado por Elixires mutantes este turno.",
+                "french": "Cette unité a muté à cause de Élixirs mutants ce tour.",
+                "german": "Diese Einheit wurde in diesem Zug durch Mutationselixiere mutiert.",
+                "portuguese": "Esta unidade sofreu mutação por Elixires Mutantes neste turno.",
+                "russian": "Этот отряд мутировал из-за Мутационные эликсиры в этом ходу.",
+                "chinese_traditional": "此單位本回合因變異靈藥而變異。",
+                "japanese": "このターン、変異の霊薬で変異したユニット。",
+                "korean": "이번 턴에 변이 영약으로 변이한 유닛입니다."
             },
             "character_tooltips": {
                 "english": "Mutated by Mutant Elixirs. Loses its bonus at the start of your next turn.",
-                "chinese": "被突变药剂改造。下回合开始时失去加成。"
+                "chinese": "被突变药剂改造。下回合开始时失去加成。",
+                "spanish": "Ha mutado por Elixires mutantes. Pierde su bonificación al comienzo de tu próximo turno.",
+                "french": "Muté par Élixirs mutants. Perd son bonus au début de votre prochain tour.",
+                "german": "Durch Mutationselixiere mutiert. Verliert den Bonus zu Beginn deines nächsten Zuges.",
+                "portuguese": "Sofreu mutação por Elixires Mutantes. Perde seu bônus no início do seu próximo turno.",
+                "russian": "Мутировал из-за Мутационные эликсиры. Теряет бонус в начале вашего следующего хода.",
+                "chinese_traditional": "因變異靈藥而變異。在你的下回合開始時失去加成。",
+                "japanese": "変異の霊薬で変異。次の自分のターン開始時にボーナスを失う。",
+                "korean": "변이 영약으로 변이했습니다. 다음 턴 시작 시 보너스를 잃습니다."
             },
             "replacement_texts": {
                 "english": "<b>Mutated</b>",
-                "chinese": "<b>突变</b>"
+                "chinese": "<b>突变</b>",
+                "spanish": "<b>Mutado</b>",
+                "french": "<b>Muté</b>",
+                "german": "<b>Mutiert</b>",
+                "portuguese": "<b>Mutado</b>",
+                "russian": "<b>Мутировавший</b>",
+                "chinese_traditional": "<b>變異</b>",
+                "japanese": "<b>変異</b>",
+                "korean": "<b>변이</b>"
             },
             "notifications": {
                 "english": "Mutated",
-                "chinese": "突变"
+                "chinese": "突变",
+                "spanish": "Mutado",
+                "french": "Muté",
+                "german": "Mutiert",
+                "portuguese": "Mutado",
+                "russian": "Мутировавший",
+                "chinese_traditional": "變異",
+                "japanese": "変異",
+                "korean": "변이"
             },
             "display_category": "persistent",
             "trigger_stage": "none",

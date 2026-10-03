@@ -6,11 +6,27 @@
             "type": "collectable",
             "names": {
                 "english": "Flare Ribbon",
-                "chinese": "薪火缎带"
+                "chinese": "薪火缎带",
+                "spanish": "Cinta llameante",
+                "french": "Ruban flamboyant",
+                "german": "Flammenband",
+                "portuguese": "Fita Flamejante",
+                "russian": "Пламенная лента",
+                "chinese_traditional": "烈焰緞帶",
+                "japanese": "炎のリボン",
+                "korean": "화염 리본"
             },
             "descriptions": {
                 "english": "Gain [armor] [effect0.status0.power] when your Pyre is attacked.",
-                "chinese": "薪火被攻击时，获得[armor] [effect0.status0.power]。"
+                "chinese": "薪火被攻击时，获得[armor] [effect0.status0.power]。",
+                "spanish": "Gana [armor] [effect0.status0.power] cuando tu Pira recibe un ataque.",
+                "french": "Gagnez [armor] [effect0.status0.power] lorsque votre Brasier est attaqué.",
+                "german": "Erhalte [armor] [effect0.status0.power], wenn deine Höllenglut angegriffen wird.",
+                "portuguese": "Ganhe [armor] [effect0.status0.power] quando sua Pira for atacada.",
+                "russian": "Даёт [armor] [effect0.status0.power], когда атакуют Пекло.",
+                "chinese_traditional": "薪火受到攻擊時，獲得 [armor] [effect0.status0.power]。",
+                "japanese": "パイアが攻撃されると[armor] [effect0.status0.power]を得る。",
+                "korean": "화로가 공격받으면 [armor] [effect0.status0.power]을 얻습니다."
             },
             "disallow_in_deployment": false,
             "relic_effects": [

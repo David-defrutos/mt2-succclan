@@ -5,7 +5,15 @@
             "id": "SpawnShadowLady",
             "names": {
                 "english": "Shadow Lady",
-                "chinese": "匿影女士"
+                "chinese": "匿影女士",
+                "spanish": "Dama de las sombras",
+                "french": "Dame des ombres",
+                "german": "Schattendame",
+                "portuguese": "Dama das Sombras",
+                "russian": "Владычица теней",
+                "chinese_traditional": "暗影女士",
+                "japanese": "影の貴婦人",
+                "korean": "그림자 여군주"
             },
             "card_art": "@ShadowLadyCardArt",
             "cost": 0,
@@ -24,7 +32,15 @@
             "id": "ShadowLady",
             "names": {
                 "english": "Shadow Lady",
-                "chinese": "匿影女士"
+                "chinese": "匿影女士",
+                "spanish": "Dama de las sombras",
+                "french": "Dame des ombres",
+                "german": "Schattendame",
+                "portuguese": "Dama das Sombras",
+                "russian": "Владычица теней",
+                "chinese_traditional": "暗影女士",
+                "japanese": "影の貴婦人",
+                "korean": "그림자 여군주"
             },
             "character_art": "@ShadowLadyCharacterArt",
             "size": 3,
@@ -41,7 +57,15 @@
             "trigger": "on_turn_begin",
             "descriptions": {
                 "english": "Apply +[effect0.power][attack] to friendly and enemy units on this floor.",
-                "chinese": "对本层所有友方和敌方单位施加 +[effect0.power][attack]。"
+                "chinese": "对本层所有友方和敌方单位施加 +[effect0.power][attack]。",
+                "spanish": "Otorga +[effect0.power][attack] a las unidades aliadas y enemigas de este piso.",
+                "french": "Applique +[effect0.power][attack] aux unités alliées et ennemies de cet étage.",
+                "german": "Verleiht verbündeten und feindlichen Einheiten auf dieser Etage +[effect0.power][attack].",
+                "portuguese": "Concede +[effect0.power][attack] às unidades aliadas e inimigas neste andar.",
+                "russian": "Даёт +[effect0.power][attack] союзникам и врагам на этом этаже.",
+                "chinese_traditional": "此樓層的友方與敵方單位獲得 +[effect0.power][attack]。",
+                "japanese": "この階の味方と敵全員に+[effect0.power][attack]を付与する。",
+                "korean": "이 층의 아군과 적에게 +[effect0.power][attack]을 부여합니다."
             },
             "effects": [
                 "@BloodThirstyBasicAttack"
@@ -52,7 +76,15 @@
             "trigger": "on_turn_begin",
             "descriptions": {
                 "english": "Apply +[effect0.power][attack] to friendly and enemy units on this floor.",
-                "chinese": "对本层所有友方和敌方单位施加 +[effect0.power][attack]。"
+                "chinese": "对本层所有友方和敌方单位施加 +[effect0.power][attack]。",
+                "spanish": "Otorga +[effect0.power][attack] a las unidades aliadas y enemigas de este piso.",
+                "french": "Applique +[effect0.power][attack] aux unités alliées et ennemies de cet étage.",
+                "german": "Verleiht verbündeten und feindlichen Einheiten auf dieser Etage +[effect0.power][attack].",
+                "portuguese": "Concede +[effect0.power][attack] às unidades aliadas e inimigas neste andar.",
+                "russian": "Даёт +[effect0.power][attack] союзникам и врагам на этом этаже.",
+                "chinese_traditional": "此樓層的友方與敵方單位獲得 +[effect0.power][attack]。",
+                "japanese": "この階の味方と敵全員に+[effect0.power][attack]を付与する。",
+                "korean": "이 층의 아군과 적에게 +[effect0.power][attack]을 부여합니다."
             },
             "effects": [
                 "@BloodThirstyPreAttack"
@@ -63,7 +95,15 @@
             "trigger": "on_turn_begin",
             "descriptions": {
                 "english": "Apply +[effect0.power][attack] to friendly and enemy units on this floor.",
-                "chinese": "对本层所有友方和敌方单位施加 +[effect0.power][attack]。"
+                "chinese": "对本层所有友方和敌方单位施加 +[effect0.power][attack]。",
+                "spanish": "Otorga +[effect0.power][attack] a las unidades aliadas y enemigas de este piso.",
+                "french": "Applique +[effect0.power][attack] aux unités alliées et ennemies de cet étage.",
+                "german": "Verleiht verbündeten und feindlichen Einheiten auf dieser Etage +[effect0.power][attack].",
+                "portuguese": "Concede +[effect0.power][attack] às unidades aliadas e inimigas neste andar.",
+                "russian": "Даёт +[effect0.power][attack] союзникам и врагам на этом этаже.",
+                "chinese_traditional": "此樓層的友方與敵方單位獲得 +[effect0.power][attack]。",
+                "japanese": "この階の味方と敵全員に+[effect0.power][attack]を付与する。",
+                "korean": "이 층의 아군과 적에게 +[effect0.power][attack]을 부여합니다."
             },
             "effects": [
                 "@BloodThirstyProAttack"
@@ -74,7 +114,15 @@
             "trigger": "pre_combat",
             "descriptions": {
                 "english": "Add 1 <b>Obsessing Spark</b> with [consume] to your hand. +[effect1.power][ember].",
-                "chinese": "将 1 张带有[consume]的<b>欲望碎片</b>加入手牌。+[effect1.power][ember]。"
+                "chinese": "将 1 张带有[consume]的<b>欲望碎片</b>加入手牌。+[effect1.power][ember]。",
+                "spanish": "Añade 1 <b>Chispa obsesiva</b> con [consume] a tu mano. +[effect1.power][ember].",
+                "french": "Ajoutez 1 <b>Étincelle obsédante</b> avec [consume] à votre main. +[effect1.power][ember].",
+                "german": "Füge deiner Hand 1 <b>Besessenheitsfunke</b> mit [consume] hinzu. +[effect1.power][ember].",
+                "portuguese": "Adicione 1 <b>Centelha Obsessiva</b> com [consume] à sua mão. +[effect1.power][ember].",
+                "russian": "Добавляет в руку 1 <b>Искра одержимости</b> с [consume]. +[effect1.power][ember].",
+                "chinese_traditional": "將 1 張帶有 [consume] 的<b>執念火花</b>加入手牌。+[effect1.power][ember]。",
+                "japanese": "[consume]付きの<b>執着の火花</b>を1枚手札に加える。+[effect1.power][ember]。",
+                "korean": "[consume]가 있는 <b>집착의 불꽃</b> 1장을 손에 추가합니다. +[effect1.power][ember]."
             },
             "effects": [
                 "@PlagueBasicAddShard",
@@ -89,7 +137,15 @@
             },
             "descriptions": {
                 "english": "Gain +[effect0.power][attack] and [damageshield] [effect1.status0.power].",
-                "chinese": "获得 +[effect0.power][attack] 和[damageshield] [effect1.status0.power]。"
+                "chinese": "获得 +[effect0.power][attack] 和[damageshield] [effect1.status0.power]。",
+                "spanish": "Obtiene +[effect0.power][attack] y [damageshield] [effect1.status0.power].",
+                "french": "Gagne +[effect0.power][attack] et [damageshield] [effect1.status0.power].",
+                "german": "Erhält +[effect0.power][attack] und [damageshield] [effect1.status0.power].",
+                "portuguese": "Ganha +[effect0.power][attack] e [damageshield] [effect1.status0.power].",
+                "russian": "Получает +[effect0.power][attack] и [damageshield] [effect1.status0.power].",
+                "chinese_traditional": "獲得 +[effect0.power][attack] 與 [damageshield] [effect1.status0.power]。",
+                "japanese": "+[effect0.power][attack]と[damageshield] [effect1.status0.power]を得る。",
+                "korean": "+[effect0.power][attack] 및 [damageshield] [effect1.status0.power]을 얻습니다."
             },
             "effects": [
                 "@PlagueBasicAttack",
@@ -101,7 +157,15 @@
             "trigger": "pre_combat",
             "descriptions": {
                 "english": "Add 1 <b>Obsessing Spark</b> with [consume] to your hand. +[effect1.power][ember].",
-                "chinese": "将 1 张带有[consume]的<b>欲望碎片</b>加入手牌。+[effect1.power][ember]。"
+                "chinese": "将 1 张带有[consume]的<b>欲望碎片</b>加入手牌。+[effect1.power][ember]。",
+                "spanish": "Añade 1 <b>Chispa obsesiva</b> con [consume] a tu mano. +[effect1.power][ember].",
+                "french": "Ajoutez 1 <b>Étincelle obsédante</b> avec [consume] à votre main. +[effect1.power][ember].",
+                "german": "Füge deiner Hand 1 <b>Besessenheitsfunke</b> mit [consume] hinzu. +[effect1.power][ember].",
+                "portuguese": "Adicione 1 <b>Centelha Obsessiva</b> com [consume] à sua mão. +[effect1.power][ember].",
+                "russian": "Добавляет в руку 1 <b>Искра одержимости</b> с [consume]. +[effect1.power][ember].",
+                "chinese_traditional": "將 1 張帶有 [consume] 的<b>執念火花</b>加入手牌。+[effect1.power][ember]。",
+                "japanese": "[consume]付きの<b>執着の火花</b>を1枚手札に加える。+[effect1.power][ember]。",
+                "korean": "[consume]가 있는 <b>집착의 불꽃</b> 1장을 손에 추가합니다. +[effect1.power][ember]."
             },
             "effects": [
                 "@PlaguePreAddShard",
@@ -116,7 +180,15 @@
             },
             "descriptions": {
                 "english": "Gain +[effect0.power][attack] and [damageshield] [effect1.status0.power].",
-                "chinese": "获得 +[effect0.power][attack] 和[damageshield] [effect1.status0.power]。"
+                "chinese": "获得 +[effect0.power][attack] 和[damageshield] [effect1.status0.power]。",
+                "spanish": "Obtiene +[effect0.power][attack] y [damageshield] [effect1.status0.power].",
+                "french": "Gagne +[effect0.power][attack] et [damageshield] [effect1.status0.power].",
+                "german": "Erhält +[effect0.power][attack] und [damageshield] [effect1.status0.power].",
+                "portuguese": "Ganha +[effect0.power][attack] e [damageshield] [effect1.status0.power].",
+                "russian": "Получает +[effect0.power][attack] и [damageshield] [effect1.status0.power].",
+                "chinese_traditional": "獲得 +[effect0.power][attack] 與 [damageshield] [effect1.status0.power]。",
+                "japanese": "+[effect0.power][attack]と[damageshield] [effect1.status0.power]を得る。",
+                "korean": "+[effect0.power][attack] 및 [damageshield] [effect1.status0.power]을 얻습니다."
             },
             "effects": [
                 "@PlaguePreAttack",
@@ -128,7 +200,15 @@
             "trigger": "pre_combat",
             "descriptions": {
                 "english": "Add 1 <b>Obsessing Spark</b> with [consume] to your hand. +[effect1.power][ember].",
-                "chinese": "将 1 张带有[consume]的<b>欲望碎片</b>加入手牌。+[effect1.power][ember]。"
+                "chinese": "将 1 张带有[consume]的<b>欲望碎片</b>加入手牌。+[effect1.power][ember]。",
+                "spanish": "Añade 1 <b>Chispa obsesiva</b> con [consume] a tu mano. +[effect1.power][ember].",
+                "french": "Ajoutez 1 <b>Étincelle obsédante</b> avec [consume] à votre main. +[effect1.power][ember].",
+                "german": "Füge deiner Hand 1 <b>Besessenheitsfunke</b> mit [consume] hinzu. +[effect1.power][ember].",
+                "portuguese": "Adicione 1 <b>Centelha Obsessiva</b> com [consume] à sua mão. +[effect1.power][ember].",
+                "russian": "Добавляет в руку 1 <b>Искра одержимости</b> с [consume]. +[effect1.power][ember].",
+                "chinese_traditional": "將 1 張帶有 [consume] 的<b>執念火花</b>加入手牌。+[effect1.power][ember]。",
+                "japanese": "[consume]付きの<b>執着の火花</b>を1枚手札に加える。+[effect1.power][ember]。",
+                "korean": "[consume]가 있는 <b>집착의 불꽃</b> 1장을 손에 추가합니다. +[effect1.power][ember]."
             },
             "effects": [
                 "@PlagueProAddShard",
@@ -143,7 +223,15 @@
             },
             "descriptions": {
                 "english": "Gain +[effect0.power][attack] and [damageshield] [effect1.status0.power].",
-                "chinese": "获得 +[effect0.power][attack] 和[damageshield] [effect1.status0.power]。"
+                "chinese": "获得 +[effect0.power][attack] 和[damageshield] [effect1.status0.power]。",
+                "spanish": "Obtiene +[effect0.power][attack] y [damageshield] [effect1.status0.power].",
+                "french": "Gagne +[effect0.power][attack] et [damageshield] [effect1.status0.power].",
+                "german": "Erhält +[effect0.power][attack] und [damageshield] [effect1.status0.power].",
+                "portuguese": "Ganha +[effect0.power][attack] e [damageshield] [effect1.status0.power].",
+                "russian": "Получает +[effect0.power][attack] и [damageshield] [effect1.status0.power].",
+                "chinese_traditional": "獲得 +[effect0.power][attack] 與 [damageshield] [effect1.status0.power]。",
+                "japanese": "+[effect0.power][attack]と[damageshield] [effect1.status0.power]を得る。",
+                "korean": "+[effect0.power][attack] 및 [damageshield] [effect1.status0.power]을 얻습니다."
             },
             "effects": [
                 "@PlagueProAttack",
@@ -155,7 +243,15 @@
             "trigger": "on_attacking",
             "descriptions": {
                 "english": "Apply <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> and +[effect1.power][attack] to enemy units on this floor.",
-                "chinese": "对本层所有敌方单位施加 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> 和 +[effect1.power][attack]。"
+                "chinese": "对本层所有敌方单位施加 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> 和 +[effect1.power][attack]。",
+                "spanish": "Otorga <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> y +[effect1.power][attack] a las unidades enemigas de este piso.",
+                "french": "Applique <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> et +[effect1.power][attack] aux unités ennemies de cet étage.",
+                "german": "Verleiht feindlichen Einheiten auf dieser Etage <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> und +[effect1.power][attack].",
+                "portuguese": "Aplica <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> e +[effect1.power][attack] às unidades inimigas neste andar.",
+                "russian": "Даёт врагам на этом этаже <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> и +[effect1.power][attack].",
+                "chinese_traditional": "此樓層的敵方單位獲得 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> 與 +[effect1.power][attack]。",
+                "japanese": "この階の敵全員に<b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>と+[effect1.power][attack]を付与する。",
+                "korean": "이 층의 적에게 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> 및 +[effect1.power][attack]을 부여합니다."
             },
             "effects": [
                 "@ProfanityBasicFrantic",
@@ -167,7 +263,15 @@
             "trigger": "on_attacking",
             "descriptions": {
                 "english": "Apply <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> and +[effect1.power][attack] to enemy units on this floor.",
-                "chinese": "对本层所有敌方单位施加 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> 和 +[effect1.power][attack]。"
+                "chinese": "对本层所有敌方单位施加 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> 和 +[effect1.power][attack]。",
+                "spanish": "Otorga <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> y +[effect1.power][attack] a las unidades enemigas de este piso.",
+                "french": "Applique <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> et +[effect1.power][attack] aux unités ennemies de cet étage.",
+                "german": "Verleiht feindlichen Einheiten auf dieser Etage <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> und +[effect1.power][attack].",
+                "portuguese": "Aplica <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> e +[effect1.power][attack] às unidades inimigas neste andar.",
+                "russian": "Даёт врагам на этом этаже <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> и +[effect1.power][attack].",
+                "chinese_traditional": "此樓層的敵方單位獲得 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> 與 +[effect1.power][attack]。",
+                "japanese": "この階の敵全員に<b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>と+[effect1.power][attack]を付与する。",
+                "korean": "이 층의 적에게 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> 및 +[effect1.power][attack]을 부여합니다."
             },
             "effects": [
                 "@ProfanityPreFrantic",
@@ -179,7 +283,15 @@
             "trigger": "on_attacking",
             "descriptions": {
                 "english": "Apply <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> and +[effect1.power][attack] to enemy units on this floor.",
-                "chinese": "对本层所有敌方单位施加 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> 和 +[effect1.power][attack]。"
+                "chinese": "对本层所有敌方单位施加 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> 和 +[effect1.power][attack]。",
+                "spanish": "Otorga <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> y +[effect1.power][attack] a las unidades enemigas de este piso.",
+                "french": "Applique <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> et +[effect1.power][attack] aux unités ennemies de cet étage.",
+                "german": "Verleiht feindlichen Einheiten auf dieser Etage <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> und +[effect1.power][attack].",
+                "portuguese": "Aplica <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> e +[effect1.power][attack] às unidades inimigas neste andar.",
+                "russian": "Даёт врагам на этом этаже <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> и +[effect1.power][attack].",
+                "chinese_traditional": "此樓層的敵方單位獲得 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> 與 +[effect1.power][attack]。",
+                "japanese": "この階の敵全員に<b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>と+[effect1.power][attack]を付与する。",
+                "korean": "이 층의 적에게 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> 및 +[effect1.power][attack]을 부여합니다."
             },
             "effects": [
                 "@ProfanityProFrantic",
@@ -386,7 +498,15 @@
             "id": "upg_BloodThirstyBasic",
             "titles": {
                 "english": "Blood Thirsty",
-                "chinese": "嗜血"
+                "chinese": "嗜血",
+                "spanish": "Sed de sangre",
+                "french": "Soif de sang",
+                "german": "Blutdurst",
+                "portuguese": "Sede de Sangue",
+                "russian": "Жажда крови",
+                "chinese_traditional": "嗜血",
+                "japanese": "血への渇望",
+                "korean": "피의 갈증"
             },
             "bonus_damage": 10,
             "bonus_hp": 10,
@@ -399,7 +519,15 @@
             "id": "upg_BloodThirstyPre",
             "titles": {
                 "english": "Blood Thirsty II",
-                "chinese": "嗜血 II"
+                "chinese": "嗜血 II",
+                "spanish": "Sed de sangre II",
+                "french": "Soif de sang II",
+                "german": "Blutdurst II",
+                "portuguese": "Sede de Sangue II",
+                "russian": "Жажда крови II",
+                "chinese_traditional": "嗜血 II",
+                "japanese": "血への渇望 II",
+                "korean": "피의 갈증 II"
             },
             "bonus_damage": 20,
             "bonus_hp": 30,
@@ -412,7 +540,15 @@
             "id": "upg_BloodThirstyPro",
             "titles": {
                 "english": "Blood Thirsty III",
-                "chinese": "嗜血 III"
+                "chinese": "嗜血 III",
+                "spanish": "Sed de sangre III",
+                "french": "Soif de sang III",
+                "german": "Blutdurst III",
+                "portuguese": "Sede de Sangue III",
+                "russian": "Жажда крови III",
+                "chinese_traditional": "嗜血 III",
+                "japanese": "血への渇望 III",
+                "korean": "피의 갈증 III"
             },
             "bonus_damage": 50,
             "bonus_hp": 40,
@@ -425,7 +561,15 @@
             "id": "upg_PlagueBasic",
             "titles": {
                 "english": "Plague",
-                "chinese": "瘟疫"
+                "chinese": "瘟疫",
+                "spanish": "Plaga",
+                "french": "Peste",
+                "german": "Seuche",
+                "portuguese": "Praga",
+                "russian": "Чума",
+                "chinese_traditional": "瘟疫",
+                "japanese": "疫病",
+                "korean": "역병"
             },
             "bonus_damage": 0,
             "bonus_hp": 10,
@@ -439,7 +583,15 @@
             "id": "upg_PlaguePre",
             "titles": {
                 "english": "Plague II",
-                "chinese": "瘟疫 II"
+                "chinese": "瘟疫 II",
+                "spanish": "Plaga II",
+                "french": "Peste II",
+                "german": "Seuche II",
+                "portuguese": "Praga II",
+                "russian": "Чума II",
+                "chinese_traditional": "瘟疫 II",
+                "japanese": "疫病 II",
+                "korean": "역병 II"
             },
             "bonus_damage": 10,
             "bonus_hp": 20,
@@ -453,7 +605,15 @@
             "id": "upg_PlaguePro",
             "titles": {
                 "english": "Plague III",
-                "chinese": "瘟疫 III"
+                "chinese": "瘟疫 III",
+                "spanish": "Plaga III",
+                "french": "Peste III",
+                "german": "Seuche III",
+                "portuguese": "Praga III",
+                "russian": "Чума III",
+                "chinese_traditional": "瘟疫 III",
+                "japanese": "疫病 III",
+                "korean": "역병 III"
             },
             "bonus_damage": 20,
             "bonus_hp": 50,
@@ -467,7 +627,15 @@
             "id": "upg_ProfanityBasic",
             "titles": {
                 "english": "Profanity",
-                "chinese": "亵渎"
+                "chinese": "亵渎",
+                "spanish": "Profanación",
+                "french": "Profanation",
+                "german": "Entweihung",
+                "portuguese": "Profanação",
+                "russian": "Осквернение",
+                "chinese_traditional": "褻瀆",
+                "japanese": "冒涜",
+                "korean": "모독"
             },
             "bonus_damage": 0,
             "bonus_hp": 0,
@@ -486,7 +654,15 @@
             "id": "upg_ProfanityPre",
             "titles": {
                 "english": "Profanity II",
-                "chinese": "亵渎 II"
+                "chinese": "亵渎 II",
+                "spanish": "Profanación II",
+                "french": "Profanation II",
+                "german": "Entweihung II",
+                "portuguese": "Profanação II",
+                "russian": "Осквернение II",
+                "chinese_traditional": "褻瀆 II",
+                "japanese": "冒涜 II",
+                "korean": "모독 II"
             },
             "bonus_damage": 20,
             "bonus_hp": 5,
@@ -505,7 +681,15 @@
             "id": "upg_ProfanityPro",
             "titles": {
                 "english": "Profanity III",
-                "chinese": "亵渎 III"
+                "chinese": "亵渎 III",
+                "spanish": "Profanación III",
+                "french": "Profanation III",
+                "german": "Entweihung III",
+                "portuguese": "Profanação III",
+                "russian": "Осквернение III",
+                "chinese_traditional": "褻瀆 III",
+                "japanese": "冒涜 III",
+                "korean": "모독 III"
             },
             "bonus_damage": 30,
             "bonus_hp": 10,

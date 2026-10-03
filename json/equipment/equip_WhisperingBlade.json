@@ -6,7 +6,14 @@
             "names": {
                 "english": "Whispering Blade",
                 "spanish": "Hoja susurrante",
-                "chinese": "低语之刃"
+                "chinese": "低语之刃",
+                "french": "Lame murmurante",
+                "german": "Flüsternde Klinge",
+                "portuguese": "Lâmina Sussurrante",
+                "russian": "Шепчущий клинок",
+                "chinese_traditional": "低語之刃",
+                "japanese": "囁く刃",
+                "korean": "속삭이는 칼날"
             },
             "card_art": "@WhisperingBladeArt",
             "cost": 1,
@@ -31,7 +38,14 @@
             "titles": {
                 "english": "Whispering Blade",
                 "spanish": "Hoja susurrante",
-                "chinese": "低语之刃"
+                "chinese": "低语之刃",
+                "french": "Lame murmurante",
+                "german": "Flüsternde Klinge",
+                "portuguese": "Lâmina Sussurrante",
+                "russian": "Шепчущий клинок",
+                "chinese_traditional": "低語之刃",
+                "japanese": "囁く刃",
+                "korean": "속삭이는 칼날"
             },
             "icon": "@WhisperingBladeIcon",
             "trigger_upgrades": [
@@ -47,7 +61,14 @@
             "descriptions": {
                 "english": "Gain [mt2_succclan.Plugin_psionic] [effect0.status0.power].",
                 "spanish": "Obtiene [mt2_succclan.Plugin_psionic] [effect0.status0.power].",
-                "chinese": "获得 [mt2_succclan.Plugin_psionic] [effect0.status0.power]。"
+                "chinese": "获得 [mt2_succclan.Plugin_psionic] [effect0.status0.power]。",
+                "french": "Gagne [mt2_succclan.Plugin_psionic] [effect0.status0.power].",
+                "german": "Erhält [mt2_succclan.Plugin_psionic] [effect0.status0.power].",
+                "portuguese": "Ganha [mt2_succclan.Plugin_psionic] [effect0.status0.power].",
+                "russian": "Получает [mt2_succclan.Plugin_psionic] [effect0.status0.power].",
+                "chinese_traditional": "獲得 [mt2_succclan.Plugin_psionic] [effect0.status0.power]。",
+                "japanese": "[mt2_succclan.Plugin_psionic] [effect0.status0.power]を得る。",
+                "korean": "[mt2_succclan.Plugin_psionic] [effect0.status0.power]을 얻습니다."
             },
             "effects": [
                 "@WhisperingBladeEffect"

@@ -5,11 +5,27 @@
             "id": "IllusionTwins",
             "names": {
                 "english": "Illusion Twins",
-                "chinese": "幻影双生"
+                "chinese": "幻影双生",
+                "spanish": "Gemelos ilusorios",
+                "french": "Jumeaux illusoires",
+                "german": "Illusionszwillinge",
+                "portuguese": "Gêmeos Ilusórios",
+                "russian": "Иллюзорные близнецы",
+                "chinese_traditional": "幻象雙生",
+                "japanese": "幻影の双子",
+                "korean": "환상의 쌍둥이"
             },
             "descriptions": {
                 "english": "Create [effect0.power] copy of a friendly unit with [fragile].",
-                "chinese": "复制 [effect0.power] 个指定的友方单位并附加[fragile]。"
+                "chinese": "复制 [effect0.power] 个指定的友方单位并附加[fragile]。",
+                "spanish": "Crea [effect0.power] copias de una unidad aliada con [fragile].",
+                "french": "Crée [effect0.power] copies d'une unité alliée avec [fragile].",
+                "german": "Erstellt [effect0.power] Kopien einer verbündeten Einheit mit [fragile].",
+                "portuguese": "Cria [effect0.power] cópias de uma unidade aliada com [fragile].",
+                "russian": "Создаёт [effect0.power] копий союзника с [fragile].",
+                "chinese_traditional": "建立 [effect0.power] 個帶有 [fragile] 的友方單位複製體。",
+                "japanese": "[fragile]付きの味方のコピーを[effect0.power]体作る。",
+                "korean": "[fragile]가 있는 아군 복제본을 [effect0.power]개 만듭니다."
             },
             "card_type": "spell",
             "rarity": "rare",

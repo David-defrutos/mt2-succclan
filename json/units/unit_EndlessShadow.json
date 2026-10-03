@@ -5,7 +5,15 @@
             "id": "SpawnEndlessShadow",
             "names": {
                 "english": "Endless Shadow",
-                "chinese": "无尽幽影"
+                "chinese": "无尽幽影",
+                "spanish": "Sombra interminable",
+                "french": "Ombre sans fin",
+                "german": "Endloser Schatten",
+                "portuguese": "Sombra Infindável",
+                "russian": "Бесконечная тень",
+                "chinese_traditional": "無盡暗影",
+                "japanese": "無限の影",
+                "korean": "끝없는 그림자"
             },
             "card_art": "@EndlessShadowCardArt",
             "cost": 1,
@@ -26,7 +34,15 @@
             "id": "EndlessShadow",
             "names": {
                 "english": "Endless Shadow",
-                "chinese": "无尽幽影"
+                "chinese": "无尽幽影",
+                "spanish": "Sombra interminable",
+                "french": "Ombre sans fin",
+                "german": "Endloser Schatten",
+                "portuguese": "Sombra Infindável",
+                "russian": "Бесконечная тень",
+                "chinese_traditional": "無盡暗影",
+                "japanese": "無限の影",
+                "korean": "끝없는 그림자"
             },
             "character_art": "@EndlessShadowCharacterArt",
             "size": 2,
@@ -47,7 +63,15 @@
             "trigger": "on_death",
             "descriptions": {
                 "english": "Summon another Endless Shadow in this room with 5 less max [health].",
-                "chinese": "在本层召唤另一个无尽幽影，其最大[health]减少 5 点。"
+                "chinese": "在本层召唤另一个无尽幽影，其最大[health]减少 5 点。",
+                "spanish": "Invoca otra Sombra interminable en esta sala con 5 menos de [health] máxima.",
+                "french": "Invoque une autre Ombre sans fin dans cette salle avec 5 de [health] maximum en moins.",
+                "german": "Beschwört einen weiteren Endloser Schatten in diesem Raum mit 5 weniger maximaler [health].",
+                "portuguese": "Invoca outra Sombra Infindável nesta sala com 5 a menos de [health] máxima.",
+                "russian": "Призывает ещё один отряд Бесконечная тень в этой комнате с максимальным [health] на 5 меньше.",
+                "chinese_traditional": "在此房間召喚另一個無盡暗影，其最大 [health] 降低 5。",
+                "japanese": "この部屋に最大[health]が5低い無限の影をもう1体召喚する。",
+                "korean": "이 방에 최대 [health]이 5 낮은 끝없는 그림자 하나를 더 소환합니다."
             },
             "effects": [
                 "@EndlessShadowSpawn"

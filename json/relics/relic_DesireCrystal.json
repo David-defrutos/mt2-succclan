@@ -6,11 +6,27 @@
             "type": "collectable",
             "names": {
                 "english": "Desire Crystal",
-                "chinese": "欲望水晶"
+                "chinese": "欲望水晶",
+                "spanish": "Cristal del deseo",
+                "french": "Cristal du désir",
+                "german": "Kristall der Begierde",
+                "portuguese": "Cristal do Desejo",
+                "russian": "Кристалл желания",
+                "chinese_traditional": "慾望水晶",
+                "japanese": "欲望の結晶",
+                "korean": "욕망의 수정"
             },
             "descriptions": {
                 "english": "The first <b>Ghost</b> you summon each turn draws you 1 card and gives 1[ember].",
-                "chinese": "每回合首次召唤幽魂单位时，抽 1 张牌并获得 1[ember]。"
+                "chinese": "每回合首次召唤幽魂单位时，抽 1 张牌并获得 1[ember]。",
+                "spanish": "El primer <b>Fantasma</b> que invocas cada turno te hace robar 1 carta y ganar 1[ember].",
+                "french": "Le premier <b>Fantôme</b> invoqué chaque tour vous fait piocher 1 carte et gagner 1[ember].",
+                "german": "Der erste <b>Geist</b>, den du in jedem Zug beschwörst, lässt dich 1 Karte ziehen und gibt dir 1[ember].",
+                "portuguese": "O primeiro <b>Fantasma</b> invocado a cada turno faz você comprar 1 carta e ganhar 1[ember].",
+                "russian": "Первый призванный за ход <b>Призрак</b> даёт 1 карту и 1[ember].",
+                "chinese_traditional": "每回合召喚的第一個<b>幽靈</b>使你抽 1 張牌並獲得 1[ember]。",
+                "japanese": "各ターン最初に召喚した<b>幽霊</b>で、カードを1枚引き1[ember]を得る。",
+                "korean": "매 턴 처음 소환한 <b>유령</b>이 카드 1장을 뽑고 1[ember]을 얻도록 합니다."
             },
             "disallow_in_deployment": false,
             "relic_effects": [

@@ -5,7 +5,15 @@
             "id": "ObsessingShard",
             "names": {
                 "english": "Obsessing Spark",
-                "chinese": "欲望碎片"
+                "chinese": "欲望碎片",
+                "spanish": "Chispa obsesiva",
+                "french": "Étincelle obsédante",
+                "german": "Besessenheitsfunke",
+                "portuguese": "Centelha Obsessiva",
+                "russian": "Искра одержимости",
+                "chinese_traditional": "執念火花",
+                "japanese": "執着の火花",
+                "korean": "집착의 불꽃"
             },
             "card_type": "blight",
             "rarity": "common",
@@ -28,7 +36,15 @@
             "trigger": "on_unplayed_negative",
             "descriptions": {
                 "english": "Your Pyre takes [effect0.power] damage.",
-                "chinese": "对薪火造成 [effect0.power] 点伤害。"
+                "chinese": "对薪火造成 [effect0.power] 点伤害。",
+                "spanish": "Tu Pira recibe [effect0.power] de daño.",
+                "french": "Votre Brasier subit [effect0.power] dégâts.",
+                "german": "Deine Höllenglut erleidet [effect0.power] Schaden.",
+                "portuguese": "Sua Pira sofre [effect0.power] de dano.",
+                "russian": "Пекло получает [effect0.power] урона.",
+                "chinese_traditional": "你的薪火受到 [effect0.power] 點傷害。",
+                "japanese": "パイアが[effect0.power]ダメージを受ける。",
+                "korean": "화로가 [effect0.power]의 피해를 받습니다."
             },
             "effects": [
                 "@ObsessingShardPyreDamage"

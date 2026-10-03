@@ -75,11 +75,27 @@
             "id": "EssenceArroganceGhost",
             "titles": {
                 "english": "Arrogance Ghost",
-                "chinese": "傲慢幽魂"
+                "chinese": "傲慢幽魂",
+                "spanish": "Fantasma de la soberbia",
+                "french": "Fantôme de l'orgueil",
+                "german": "Geist des Hochmuts",
+                "portuguese": "Fantasma da Soberba",
+                "russian": "Призрак гордыни",
+                "chinese_traditional": "傲慢幽靈",
+                "japanese": "傲慢の幽霊",
+                "korean": "오만의 유령"
             },
             "descriptions": {
                 "english": "Add 1 <b>Obsessing Spark</b> with [consume] to your hand. <b>Accursed</b>: gain 1[ember] and draw 1 more next turn.",
-                "chinese": "将 1 张带有[consume]的<b>欲望碎片</b>加入手牌。<b>被咒</b>：获得 1[ember]，下回合多抽 1 张牌。"
+                "chinese": "将 1 张带有[consume]的<b>欲望碎片</b>加入手牌。<b>被咒</b>：获得 1[ember]，下回合多抽 1 张牌。",
+                "spanish": "Añade 1 <b>Chispa obsesiva</b> con [consume] a tu mano. <b>Maldito</b>: Gana 1[ember] y roba 1 cartas adicionales el próximo turno.",
+                "french": "Ajoutez 1 <b>Étincelle obsédante</b> avec [consume] à votre main. <b>Maudit</b>: Gagnez 1[ember] et piochez 1 cartes supplémentaires au prochain tour.",
+                "german": "Füge deiner Hand 1 <b>Besessenheitsfunke</b> mit [consume] hinzu. <b>Verflucht</b>: Erhalte 1[ember] und ziehe im nächsten Zug 1 zusätzliche Karten.",
+                "portuguese": "Adicione 1 <b>Centelha Obsessiva</b> com [consume] à sua mão. <b>Amaldiçoado</b>: Ganhe 1[ember] e compre 1 cartas extras no próximo turno.",
+                "russian": "Добавляет в руку 1 <b>Искра одержимости</b> с [consume]. <b>Проклятие</b>: Даёт 1[ember] и 1 дополнительные карты в следующем ходу.",
+                "chinese_traditional": "將 1 張帶有 [consume] 的<b>執念火花</b>加入手牌。 <b>詛咒</b>: 獲得 1[ember]，下回合額外抽 1 張牌。",
+                "japanese": "[consume]付きの<b>執着の火花</b>を1枚手札に加える。 <b>呪い</b>: 1[ember]を得て、次のターンに追加で1枚引く。",
+                "korean": "[consume]가 있는 <b>집착의 불꽃</b> 1장을 손에 추가합니다. <b>저주</b>: 1[ember]을 얻고 다음 턴에 카드를 1장 더 뽑습니다."
             },
             "use_upgrade_highlight_tags": true,
             "trigger_upgrades": [
@@ -91,11 +107,27 @@
             "id": "EssenceEnvyGhost",
             "titles": {
                 "english": "Envy Ghost",
-                "chinese": "嫉妒幽魂"
+                "chinese": "嫉妒幽魂",
+                "spanish": "Fantasma de la envidia",
+                "french": "Fantôme de l'envie",
+                "german": "Geist des Neids",
+                "portuguese": "Fantasma da Inveja",
+                "russian": "Призрак зависти",
+                "chinese_traditional": "嫉妒幽靈",
+                "japanese": "嫉妬の幽霊",
+                "korean": "질투의 유령"
             },
             "descriptions": {
                 "english": "Add 1 <b>Obsessing Spark</b> with [consume] to your hand. <b>Accursed</b>: deal 20 damage to the front enemy unit.",
-                "chinese": "将 1 张带有[consume]的<b>欲望碎片</b>加入手牌。<b>被咒</b>：对前排敌方单位造成 20 点伤害。"
+                "chinese": "将 1 张带有[consume]的<b>欲望碎片</b>加入手牌。<b>被咒</b>：对前排敌方单位造成 20 点伤害。",
+                "spanish": "Añade 1 <b>Chispa obsesiva</b> con [consume] a tu mano. <b>Maldito</b>: Inflige 20 de daño a la unidad enemiga delantera.",
+                "french": "Ajoutez 1 <b>Étincelle obsédante</b> avec [consume] à votre main. <b>Maudit</b>: Inflige 20 dégâts à l'unité ennemie en première ligne.",
+                "german": "Füge deiner Hand 1 <b>Besessenheitsfunke</b> mit [consume] hinzu. <b>Verflucht</b>: Fügt der vordersten feindlichen Einheit 20 Schaden zu.",
+                "portuguese": "Adicione 1 <b>Centelha Obsessiva</b> com [consume] à sua mão. <b>Amaldiçoado</b>: Causa 20 de dano à unidade inimiga da frente.",
+                "russian": "Добавляет в руку 1 <b>Искра одержимости</b> с [consume]. <b>Проклятие</b>: Наносит 20 урона переднему врагу.",
+                "chinese_traditional": "將 1 張帶有 [consume] 的<b>執念火花</b>加入手牌。 <b>詛咒</b>: 對最前方的敵方單位造成 20 點傷害。",
+                "japanese": "[consume]付きの<b>執着の火花</b>を1枚手札に加える。 <b>呪い</b>: 最前列の敵に20ダメージを与える。",
+                "korean": "[consume]가 있는 <b>집착의 불꽃</b> 1장을 손에 추가합니다. <b>저주</b>: 맨 앞 적에게 20의 피해를 줍니다."
             },
             "use_upgrade_highlight_tags": true,
             "trigger_upgrades": [
@@ -107,11 +139,27 @@
             "id": "EssenceGluttonyGhost",
             "titles": {
                 "english": "Gluttony Ghost",
-                "chinese": "暴食幽魂"
+                "chinese": "暴食幽魂",
+                "spanish": "Fantasma de la gula",
+                "french": "Fantôme de la gourmandise",
+                "german": "Geist der Völlerei",
+                "portuguese": "Fantasma da Gula",
+                "russian": "Призрак чревоугодия",
+                "chinese_traditional": "暴食幽靈",
+                "japanese": "暴食の幽霊",
+                "korean": "폭식의 유령"
             },
             "descriptions": {
                 "english": "Add 1 <b>Obsessing Spark</b> with [consume] to your hand. <b>Accursed</b>: apply [regen] 2 to friendly units.",
-                "chinese": "将 1 张带有[consume]的<b>欲望碎片</b>加入手牌。<b>被咒</b>：友方单位获得[regen] 2。"
+                "chinese": "将 1 张带有[consume]的<b>欲望碎片</b>加入手牌。<b>被咒</b>：友方单位获得[regen] 2。",
+                "spanish": "Añade 1 <b>Chispa obsesiva</b> con [consume] a tu mano. <b>Maldito</b>: Otorga [regen] 2 a las unidades aliadas.",
+                "french": "Ajoutez 1 <b>Étincelle obsédante</b> avec [consume] à votre main. <b>Maudit</b>: Applique [regen] 2 aux unités alliées.",
+                "german": "Füge deiner Hand 1 <b>Besessenheitsfunke</b> mit [consume] hinzu. <b>Verflucht</b>: Verleiht verbündeten Einheiten [regen] 2.",
+                "portuguese": "Adicione 1 <b>Centelha Obsessiva</b> com [consume] à sua mão. <b>Amaldiçoado</b>: Concede [regen] 2 às unidades aliadas.",
+                "russian": "Добавляет в руку 1 <b>Искра одержимости</b> с [consume]. <b>Проклятие</b>: Даёт союзникам [regen] 2.",
+                "chinese_traditional": "將 1 張帶有 [consume] 的<b>執念火花</b>加入手牌。 <b>詛咒</b>: 對友方單位施加 [regen] 2。",
+                "japanese": "[consume]付きの<b>執着の火花</b>を1枚手札に加える。 <b>呪い</b>: 味方全員に[regen] 2を付与する。",
+                "korean": "[consume]가 있는 <b>집착의 불꽃</b> 1장을 손에 추가합니다. <b>저주</b>: 아군에게 [regen] 2을 부여합니다."
             },
             "use_upgrade_highlight_tags": true,
             "trigger_upgrades": [
@@ -123,11 +171,27 @@
             "id": "EssenceGreedGhost",
             "titles": {
                 "english": "Greed Ghost",
-                "chinese": "贪婪幽魂"
+                "chinese": "贪婪幽魂",
+                "spanish": "Fantasma de la avaricia",
+                "french": "Fantôme de l'avarice",
+                "german": "Geist der Gier",
+                "portuguese": "Fantasma da Ganância",
+                "russian": "Призрак алчности",
+                "chinese_traditional": "貪婪幽靈",
+                "japanese": "強欲の幽霊",
+                "korean": "탐욕의 유령"
             },
             "descriptions": {
                 "english": "Add 1 <b>Obsessing Spark</b> with [consume] to your hand. <b>Accursed</b>: gain 5[coin].",
-                "chinese": "将 1 张带有[consume]的<b>欲望碎片</b>加入手牌。<b>被咒</b>：获得 5[coin]。"
+                "chinese": "将 1 张带有[consume]的<b>欲望碎片</b>加入手牌。<b>被咒</b>：获得 5[coin]。",
+                "spanish": "Añade 1 <b>Chispa obsesiva</b> con [consume] a tu mano. <b>Maldito</b>: Gana 5[coin].",
+                "french": "Ajoutez 1 <b>Étincelle obsédante</b> avec [consume] à votre main. <b>Maudit</b>: Gagnez 5[coin].",
+                "german": "Füge deiner Hand 1 <b>Besessenheitsfunke</b> mit [consume] hinzu. <b>Verflucht</b>: Erhalte 5[coin].",
+                "portuguese": "Adicione 1 <b>Centelha Obsessiva</b> com [consume] à sua mão. <b>Amaldiçoado</b>: Ganhe 5[coin].",
+                "russian": "Добавляет в руку 1 <b>Искра одержимости</b> с [consume]. <b>Проклятие</b>: Даёт 5[coin].",
+                "chinese_traditional": "將 1 張帶有 [consume] 的<b>執念火花</b>加入手牌。 <b>詛咒</b>: 獲得 5[coin]。",
+                "japanese": "[consume]付きの<b>執着の火花</b>を1枚手札に加える。 <b>呪い</b>: 5[coin]を得る。",
+                "korean": "[consume]가 있는 <b>집착의 불꽃</b> 1장을 손에 추가합니다. <b>저주</b>: 5[coin]을 얻습니다."
             },
             "use_upgrade_highlight_tags": true,
             "trigger_upgrades": [
@@ -139,11 +203,27 @@
             "id": "EssenceLustGhost",
             "titles": {
                 "english": "Lust Ghost",
-                "chinese": "色欲幽魂"
+                "chinese": "色欲幽魂",
+                "spanish": "Fantasma de la lujuria",
+                "french": "Fantôme de la luxure",
+                "german": "Geist der Wollust",
+                "portuguese": "Fantasma da Luxúria",
+                "russian": "Призрак похоти",
+                "chinese_traditional": "色慾幽靈",
+                "japanese": "色欲の幽霊",
+                "korean": "색욕의 유령"
             },
             "descriptions": {
                 "english": "Add 1 <b>Obsessing Spark</b> with [consume] to your hand. <b>Accursed</b>: apply <b>[mt2_succclan.Plugin_frantic]</b> to the back enemy unit.",
-                "chinese": "将 1 张带有[consume]的<b>欲望碎片</b>加入手牌。<b>被咒</b>：对后排敌方单位施加 <b>[mt2_succclan.Plugin_frantic]</b>。"
+                "chinese": "将 1 张带有[consume]的<b>欲望碎片</b>加入手牌。<b>被咒</b>：对后排敌方单位施加 <b>[mt2_succclan.Plugin_frantic]</b>。",
+                "spanish": "Añade 1 <b>Chispa obsesiva</b> con [consume] a tu mano. <b>Maldito</b>: Otorga <b>[mt2_succclan.Plugin_frantic]</b> a la unidad enemiga trasera.",
+                "french": "Ajoutez 1 <b>Étincelle obsédante</b> avec [consume] à votre main. <b>Maudit</b>: Applique <b>[mt2_succclan.Plugin_frantic]</b> à l'unité ennemie en dernière ligne.",
+                "german": "Füge deiner Hand 1 <b>Besessenheitsfunke</b> mit [consume] hinzu. <b>Verflucht</b>: Verleiht der hintersten feindlichen Einheit <b>[mt2_succclan.Plugin_frantic]</b>.",
+                "portuguese": "Adicione 1 <b>Centelha Obsessiva</b> com [consume] à sua mão. <b>Amaldiçoado</b>: Aplica <b>[mt2_succclan.Plugin_frantic]</b> à unidade inimiga de trás.",
+                "russian": "Добавляет в руку 1 <b>Искра одержимости</b> с [consume]. <b>Проклятие</b>: Даёт <b>[mt2_succclan.Plugin_frantic]</b> заднему врагу.",
+                "chinese_traditional": "將 1 張帶有 [consume] 的<b>執念火花</b>加入手牌。 <b>詛咒</b>: 對最後方的敵方單位施加 <b>[mt2_succclan.Plugin_frantic]</b>。",
+                "japanese": "[consume]付きの<b>執着の火花</b>を1枚手札に加える。 <b>呪い</b>: 最後列の敵に<b>[mt2_succclan.Plugin_frantic]</b>を付与する。",
+                "korean": "[consume]가 있는 <b>집착의 불꽃</b> 1장을 손에 추가합니다. <b>저주</b>: 맨 뒤 적에게 <b>[mt2_succclan.Plugin_frantic]</b>을 부여합니다."
             },
             "use_upgrade_highlight_tags": true,
             "trigger_upgrades": [
@@ -155,11 +235,27 @@
             "id": "EssenceSlothGhost",
             "titles": {
                 "english": "Sloth Ghost",
-                "chinese": "怠惰幽魂"
+                "chinese": "怠惰幽魂",
+                "spanish": "Fantasma de la pereza",
+                "french": "Fantôme de la paresse",
+                "german": "Geist der Trägheit",
+                "portuguese": "Fantasma da Preguiça",
+                "russian": "Призрак лени",
+                "chinese_traditional": "懶惰幽靈",
+                "japanese": "怠惰の幽霊",
+                "korean": "나태의 유령"
             },
             "descriptions": {
                 "english": "Add 1 <b>Obsessing Spark</b> with [consume] to your hand. <b>Accursed</b>: deal 5 damage to enemy units.",
-                "chinese": "将 1 张带有[consume]的<b>欲望碎片</b>加入手牌。<b>被咒</b>：对所有敌方单位造成 5 点伤害。"
+                "chinese": "将 1 张带有[consume]的<b>欲望碎片</b>加入手牌。<b>被咒</b>：对所有敌方单位造成 5 点伤害。",
+                "spanish": "Añade 1 <b>Chispa obsesiva</b> con [consume] a tu mano. <b>Maldito</b>: Inflige 5 de daño a las unidades enemigas.",
+                "french": "Ajoutez 1 <b>Étincelle obsédante</b> avec [consume] à votre main. <b>Maudit</b>: Inflige 5 dégâts aux unités ennemies.",
+                "german": "Füge deiner Hand 1 <b>Besessenheitsfunke</b> mit [consume] hinzu. <b>Verflucht</b>: Fügt feindlichen Einheiten 5 Schaden zu.",
+                "portuguese": "Adicione 1 <b>Centelha Obsessiva</b> com [consume] à sua mão. <b>Amaldiçoado</b>: Causa 5 de dano às unidades inimigas.",
+                "russian": "Добавляет в руку 1 <b>Искра одержимости</b> с [consume]. <b>Проклятие</b>: Наносит 5 урона врагам.",
+                "chinese_traditional": "將 1 張帶有 [consume] 的<b>執念火花</b>加入手牌。 <b>詛咒</b>: 對敵方單位造成 5 點傷害。",
+                "japanese": "[consume]付きの<b>執着の火花</b>を1枚手札に加える。 <b>呪い</b>: 敵全員に5ダメージを与える。",
+                "korean": "[consume]가 있는 <b>집착의 불꽃</b> 1장을 손에 추가합니다. <b>저주</b>: 적에게 5의 피해를 줍니다."
             },
             "use_upgrade_highlight_tags": true,
             "trigger_upgrades": [
@@ -171,11 +267,27 @@
             "id": "EssenceWrathGhost",
             "titles": {
                 "english": "Wrath Ghost",
-                "chinese": "愤怒幽魂"
+                "chinese": "愤怒幽魂",
+                "spanish": "Fantasma de la ira",
+                "french": "Fantôme de la colère",
+                "german": "Geist des Zorns",
+                "portuguese": "Fantasma da Ira",
+                "russian": "Призрак гнева",
+                "chinese_traditional": "憤怒幽靈",
+                "japanese": "憤怒の幽霊",
+                "korean": "분노의 유령"
             },
             "descriptions": {
                 "english": "Add 1 <b>Obsessing Spark</b> with [consume] to your hand. <b>Accursed</b>: apply +2[attack] to friendly units.",
-                "chinese": "将 1 张带有[consume]的<b>欲望碎片</b>加入手牌。<b>被咒</b>：所有友方单位获得 +2[attack]。"
+                "chinese": "将 1 张带有[consume]的<b>欲望碎片</b>加入手牌。<b>被咒</b>：所有友方单位获得 +2[attack]。",
+                "spanish": "Añade 1 <b>Chispa obsesiva</b> con [consume] a tu mano. <b>Maldito</b>: Otorga +2[attack] a las unidades aliadas.",
+                "french": "Ajoutez 1 <b>Étincelle obsédante</b> avec [consume] à votre main. <b>Maudit</b>: Applique +2[attack] aux unités alliées.",
+                "german": "Füge deiner Hand 1 <b>Besessenheitsfunke</b> mit [consume] hinzu. <b>Verflucht</b>: Verleiht verbündeten Einheiten +2[attack].",
+                "portuguese": "Adicione 1 <b>Centelha Obsessiva</b> com [consume] à sua mão. <b>Amaldiçoado</b>: Concede +2[attack] às unidades aliadas.",
+                "russian": "Добавляет в руку 1 <b>Искра одержимости</b> с [consume]. <b>Проклятие</b>: Даёт союзникам +2[attack].",
+                "chinese_traditional": "將 1 張帶有 [consume] 的<b>執念火花</b>加入手牌。 <b>詛咒</b>: 友方單位獲得 +2[attack]。",
+                "japanese": "[consume]付きの<b>執着の火花</b>を1枚手札に加える。 <b>呪い</b>: 味方全員に+2[attack]を付与する。",
+                "korean": "[consume]가 있는 <b>집착의 불꽃</b> 1장을 손에 추가합니다. <b>저주</b>: 아군에게 +2[attack]을 부여합니다."
             },
             "use_upgrade_highlight_tags": true,
             "trigger_upgrades": [
@@ -187,11 +299,27 @@
             "id": "EssenceChaosCreation",
             "titles": {
                 "english": "Chaos Creation",
-                "chinese": "混沌造物"
+                "chinese": "混沌造物",
+                "spanish": "Creación del caos",
+                "french": "Création du chaos",
+                "german": "Chaosgeburt",
+                "portuguese": "Criação do Caos",
+                "russian": "Порождение хаоса",
+                "chinese_traditional": "混沌造物",
+                "japanese": "混沌の創造物",
+                "korean": "혼돈의 창조물"
             },
             "descriptions": {
                 "english": "<b>Revenge</b>: apply <b>[mt2_succclan.Plugin_frantic] 1</b> to the attacking enemy unit.",
-                "chinese": "<b>复仇</b>：对攻击的敌方单位施加 <b>[mt2_succclan.Plugin_frantic] 1</b>。"
+                "chinese": "<b>复仇</b>：对攻击的敌方单位施加 <b>[mt2_succclan.Plugin_frantic] 1</b>。",
+                "spanish": "<b>Represalia</b>: otorga <b>[mt2_succclan.Plugin_frantic] 1</b> a la unidad enemiga atacante.",
+                "french": "<b>Vengeance</b> : applique <b>[mt2_succclan.Plugin_frantic] 1</b> à l'unité ennemie attaquante.",
+                "german": "<b>Vergeltung</b>: Verleiht der angreifenden feindlichen Einheit <b>[mt2_succclan.Plugin_frantic] 1</b>.",
+                "portuguese": "<b>Vingança</b>: aplica <b>[mt2_succclan.Plugin_frantic] 1</b> à unidade inimiga atacante.",
+                "russian": "<b>Возмездие</b>: даёт атакующему врагу <b>[mt2_succclan.Plugin_frantic] 1</b>.",
+                "chinese_traditional": "<b>復仇</b>：對攻擊者施加 <b>[mt2_succclan.Plugin_frantic] 1</b>。",
+                "japanese": "<b>リベンジ</b>：攻撃してきた敵に<b>[mt2_succclan.Plugin_frantic] 1</b>を付与する。",
+                "korean": "<b>복수</b>: 공격한 적에게 <b>[mt2_succclan.Plugin_frantic] 1</b>을 부여합니다."
             },
             "use_upgrade_highlight_tags": true,
             "trigger_upgrades": [
@@ -202,11 +330,27 @@
             "id": "EssenceDemonPioneer",
             "titles": {
                 "english": "Demon Pioneer",
-                "chinese": "恶魔先锋"
+                "chinese": "恶魔先锋",
+                "spanish": "Pionero demoníaco",
+                "french": "Pionnier démoniaque",
+                "german": "Dämonischer Pionier",
+                "portuguese": "Pioneiro Demoníaco",
+                "russian": "Демонический первопроходец",
+                "chinese_traditional": "惡魔先鋒",
+                "japanese": "悪魔の先駆者",
+                "korean": "악마 선구자"
             },
             "descriptions": {
                 "english": "+[bonussize][capacity]. <b>Accursed</b>: +1[attack] and +3[health]. Permanently +1[attack] and +1[health].",
-                "chinese": "+[bonussize][capacity]。<b>被咒</b>：+1[attack]，+3[health]。 永久 +1[attack] 和 +1[health]。"
+                "chinese": "+[bonussize][capacity]。<b>被咒</b>：+1[attack]，+3[health]。 永久 +1[attack] 和 +1[health]。",
+                "spanish": "+[bonussize][capacity]. <b>Maldito</b>: +1[attack] y +3[health]. +1[attack] y +1[health] permanentemente.",
+                "french": "+[bonussize][capacity]. <b>Maudit</b> : +1[attack] et +3[health]. +1[attack] et +1[health] de façon permanente.",
+                "german": "+[bonussize][capacity]. <b>Verflucht</b>: +1[attack] und +3[health]. Dauerhaft +1[attack] und +1[health].",
+                "portuguese": "+[bonussize][capacity]. <b>Amaldiçoado</b>: +1[attack] e +3[health]. +1[attack] e +1[health] permanentemente.",
+                "russian": "+[bonussize][capacity]. <b>Проклятие</b>: +1[attack] и +3[health]. Навсегда +1[attack] и +1[health].",
+                "chinese_traditional": "+[bonussize][capacity]。<b>詛咒</b>：+1[attack] 與 +3[health]。永久 +1[attack] 與 +1[health]。",
+                "japanese": "+[bonussize][capacity]。<b>呪い</b>：+1[attack]と+3[health]。永続的に+1[attack]と+1[health]。",
+                "korean": "+[bonussize][capacity]. <b>저주</b>: +1[attack] 및 +3[health]. 영구적으로 +1[attack] 및 +1[health]."
             },
             "use_upgrade_highlight_tags": true,
             "trigger_upgrades": [
@@ -218,11 +362,27 @@
             "id": "EssenceIncubusButcher",
             "titles": {
                 "english": "Incubus Butcher",
-                "chinese": "魇魔刽子手"
+                "chinese": "魇魔刽子手",
+                "spanish": "Carnicero íncubo",
+                "french": "Boucher incube",
+                "german": "Inkubus-Schlächter",
+                "portuguese": "Açougueiro Íncubo",
+                "russian": "Мясник-инкуб",
+                "chinese_traditional": "夢魔屠夫",
+                "japanese": "インキュバスの屠殺者",
+                "korean": "인큐버스 도살자"
             },
             "descriptions": {
                 "english": "Costs +2[ember]. [sweep].",
-                "chinese": "费用 +2[ember]。[sweep]。"
+                "chinese": "费用 +2[ember]。[sweep]。",
+                "spanish": "Cuesta +2[ember]. [sweep].",
+                "french": "Coûte +2[ember]. [sweep].",
+                "german": "Kostet +2[ember]. [sweep].",
+                "portuguese": "Custa +2[ember]. [sweep].",
+                "russian": "Стоимость +2[ember]. [sweep].",
+                "chinese_traditional": "費用 +2[ember]。[sweep]。",
+                "japanese": "コスト+2[ember]。[sweep]。",
+                "korean": "비용 +2[ember]. [sweep]."
             },
             "use_upgrade_highlight_tags": true,
             "cost_reduction": -2,
@@ -237,11 +397,27 @@
             "id": "EssenceSuccbusTorturer",
             "titles": {
                 "english": "Succbus Torturer",
-                "chinese": "魅魔拷打者"
+                "chinese": "魅魔拷打者",
+                "spanish": "Torturadora súcubo",
+                "french": "Tortionnaire succube",
+                "german": "Sukkubus-Folterin",
+                "portuguese": "Torturadora Súcubo",
+                "russian": "Истязательница-суккуб",
+                "chinese_traditional": "魅魔拷問者",
+                "japanese": "サキュバスの拷問者",
+                "korean": "서큐버스 고문관"
             },
             "descriptions": {
                 "english": "-10[health]. <b>Strike</b>: apply [meleeweakness] 1 to the attacked unit.",
-                "chinese": "-10[health]。<b>攻击</b>：对被攻击的单位施加[meleeweakness] 1。"
+                "chinese": "-10[health]。<b>攻击</b>：对被攻击的单位施加[meleeweakness] 1。",
+                "spanish": "-10[health]. <b>Golpe</b>: otorga [meleeweakness] 1 a la unidad atacada.",
+                "french": "-10[health]. <b>Frappe</b> : applique [meleeweakness] 1 à l'unité attaquée.",
+                "german": "-10[health]. <b>Schlag</b>: Verleiht der angegriffenen Einheit [meleeweakness] 1.",
+                "portuguese": "-10[health]. <b>Golpe</b>: aplica [meleeweakness] 1 à unidade atacada.",
+                "russian": "-10[health]. <b>Удар</b>: даёт атакованной цели [meleeweakness] 1.",
+                "chinese_traditional": "-10[health]。<b>打擊</b>：對受攻擊單位施加 [meleeweakness] 1。",
+                "japanese": "-10[health]。<b>ストライク</b>：攻撃対象に[meleeweakness] 1を付与する。",
+                "korean": "-10[health]. <b>타격</b>: 공격 대상에게 [meleeweakness] 1을 부여합니다."
             },
             "use_upgrade_highlight_tags": true,
             "trigger_upgrades": [
@@ -253,11 +429,27 @@
             "id": "EssenceVrolikai",
             "titles": {
                 "english": "Vrolikai",
-                "chinese": "四臂蛇魔"
+                "chinese": "四臂蛇魔",
+                "spanish": "Vrolikai",
+                "french": "Vrolikai",
+                "german": "Vrolikai",
+                "portuguese": "Vrolikai",
+                "russian": "Vrolikai",
+                "chinese_traditional": "Vrolikai",
+                "japanese": "Vrolikai",
+                "korean": "Vrolikai"
             },
             "descriptions": {
                 "english": "[multistrike] 1. [heal_immune].",
-                "chinese": "[multistrike] 1。[heal_immune]。"
+                "chinese": "[multistrike] 1。[heal_immune]。",
+                "spanish": "[multistrike] 1. [heal_immune].",
+                "french": "[multistrike] 1. [heal_immune].",
+                "german": "[multistrike] 1. [heal_immune].",
+                "portuguese": "[multistrike] 1. [heal_immune].",
+                "russian": "[multistrike] 1. [heal_immune].",
+                "chinese_traditional": "[multistrike] 1. [heal_immune].",
+                "japanese": "[multistrike] 1. [heal_immune].",
+                "korean": "[multistrike] 1. [heal_immune]."
             },
             "use_upgrade_highlight_tags": true,
             "status_effect_upgrades": [
@@ -275,11 +467,27 @@
             "id": "EssenceOolioddroo",
             "titles": {
                 "english": "Oolioddroo",
-                "chinese": "蛾梦魔"
+                "chinese": "蛾梦魔",
+                "spanish": "Oolioddroo",
+                "french": "Oolioddroo",
+                "german": "Oolioddroo",
+                "portuguese": "Oolioddroo",
+                "russian": "Oolioddroo",
+                "chinese_traditional": "Oolioddroo",
+                "japanese": "Oolioddroo",
+                "korean": "Oolioddroo"
             },
             "descriptions": {
                 "english": "-5[attack]. At the start of turn deal damage equal to its [attack] to enemy units.",
-                "chinese": "-5[attack]。回合开始时，对所有敌方单位造成等同于自身[attack]的伤害。"
+                "chinese": "-5[attack]。回合开始时，对所有敌方单位造成等同于自身[attack]的伤害。",
+                "spanish": "-5[attack]. Al comienzo del turno, inflige daño igual a su [attack] a las unidades enemigas.",
+                "french": "-5[attack]. Au début du tour, inflige aux unités ennemies des dégâts égaux à son [attack].",
+                "german": "-5[attack]. Fügt feindlichen Einheiten zu Zugbeginn Schaden in Höhe des eigenen [attack] zu.",
+                "portuguese": "-5[attack]. No início do turno, causa às unidades inimigas dano igual ao seu [attack].",
+                "russian": "-5[attack]. В начале хода наносит врагам урон, равный своей [attack].",
+                "chinese_traditional": "-5[attack]。回合開始時，對敵方單位造成等同自身 [attack] 的傷害。",
+                "japanese": "-5[attack]。ターン開始時、自身の[attack]に等しいダメージを敵全員に与える。",
+                "korean": "-5[attack]. 턴 시작 시 적에게 자신의 [attack]만큼 피해를 줍니다."
             },
             "use_upgrade_highlight_tags": true,
             "trigger_upgrades": [
@@ -291,11 +499,27 @@
             "id": "EssenceAbyssPrincess",
             "titles": {
                 "english": "Abyss Princess",
-                "chinese": "深渊公主"
+                "chinese": "深渊公主",
+                "spanish": "Princesa del abismo",
+                "french": "Princesse des abysses",
+                "german": "Prinzessin des Abgrunds",
+                "portuguese": "Princesa do Abismo",
+                "russian": "Принцесса бездны",
+                "chinese_traditional": "深淵公主",
+                "japanese": "深淵の姫",
+                "korean": "심연의 공주"
             },
             "descriptions": {
                 "english": "<b>Strike</b>: gain [sap] 3 and apply [rage] and <b>[mt2_succclan.Plugin_frantic]</b> to enemy units.",
-                "chinese": "<b>攻击</b>：获得[sap] 3，并对所有敌方单位施加[rage] 和 <b>[mt2_succclan.Plugin_frantic]</b>。"
+                "chinese": "<b>攻击</b>：获得[sap] 3，并对所有敌方单位施加[rage] 和 <b>[mt2_succclan.Plugin_frantic]</b>。",
+                "spanish": "<b>Golpe</b>: obtiene [sap] 3 y otorga [rage] y <b>[mt2_succclan.Plugin_frantic]</b> a las unidades enemigas.",
+                "french": "<b>Frappe</b> : gagne [sap] 3 et applique [rage] et <b>[mt2_succclan.Plugin_frantic]</b> aux unités ennemies.",
+                "german": "<b>Schlag</b>: Erhält [sap] 3 und verleiht feindlichen Einheiten [rage] und <b>[mt2_succclan.Plugin_frantic]</b>.",
+                "portuguese": "<b>Golpe</b>: ganha [sap] 3 e aplica [rage] e <b>[mt2_succclan.Plugin_frantic]</b> às unidades inimigas.",
+                "russian": "<b>Удар</b>: получает [sap] 3 и даёт врагам [rage] и <b>[mt2_succclan.Plugin_frantic]</b>.",
+                "chinese_traditional": "<b>打擊</b>：獲得 [sap] 3，並對敵方單位施加 [rage] 與 <b>[mt2_succclan.Plugin_frantic]</b>。",
+                "japanese": "<b>ストライク</b>：[sap] 3を得て、敵全員に[rage]と<b>[mt2_succclan.Plugin_frantic]</b>を付与する。",
+                "korean": "<b>타격</b>: [sap] 3을 얻고 적에게 [rage] 및 <b>[mt2_succclan.Plugin_frantic]</b>을 부여합니다."
             },
             "use_upgrade_highlight_tags": true,
             "trigger_upgrades": [
@@ -306,11 +530,27 @@
             "id": "EssenceEndlessShadow",
             "titles": {
                 "english": "Endless Shadow",
-                "chinese": "无尽幽影"
+                "chinese": "无尽幽影",
+                "spanish": "Sombra interminable",
+                "french": "Ombre sans fin",
+                "german": "Endloser Schatten",
+                "portuguese": "Sombra Infindável",
+                "russian": "Бесконечная тень",
+                "chinese_traditional": "無盡暗影",
+                "japanese": "無限の影",
+                "korean": "끝없는 그림자"
             },
             "descriptions": {
                 "english": "[endless].",
-                "chinese": "[endless]。"
+                "chinese": "[endless]。",
+                "spanish": "[endless].",
+                "french": "[endless].",
+                "german": "[endless].",
+                "portuguese": "[endless].",
+                "russian": "[endless].",
+                "chinese_traditional": "[endless].",
+                "japanese": "[endless].",
+                "korean": "[endless]."
             },
             "use_upgrade_highlight_tags": true,
             "status_effect_upgrades": [
@@ -324,11 +564,27 @@
             "id": "EssenceShadowWarrior",
             "titles": {
                 "english": "Shadow Warrior",
-                "chinese": "暗影武者"
+                "chinese": "暗影武者",
+                "spanish": "Guerrero de las sombras",
+                "french": "Guerrier des ombres",
+                "german": "Schattenkrieger",
+                "portuguese": "Guerreiro das Sombras",
+                "russian": "Воин тени",
+                "chinese_traditional": "暗影戰士",
+                "japanese": "影の戦士",
+                "korean": "그림자 전사"
             },
             "descriptions": {
                 "english": "<b>Accursed</b>: +1[attack] permanently.",
-                "chinese": "<b>被咒</b>：永久获得 +1[attack]。"
+                "chinese": "<b>被咒</b>：永久获得 +1[attack]。",
+                "spanish": "<b>Maldito</b>: +1[attack] permanentemente.",
+                "french": "<b>Maudit</b> : +1[attack] de façon permanente.",
+                "german": "<b>Verflucht</b>: Dauerhaft +1[attack].",
+                "portuguese": "<b>Amaldiçoado</b>: +1[attack] permanentemente.",
+                "russian": "<b>Проклятие</b>: навсегда +1[attack].",
+                "chinese_traditional": "<b>詛咒</b>：永久 +1[attack]。",
+                "japanese": "<b>呪い</b>：永続的に+1[attack]。",
+                "korean": "<b>저주</b>: 영구적으로 +1[attack]."
             },
             "use_upgrade_highlight_tags": true,
             "trigger_upgrades": [
@@ -342,7 +598,15 @@
             "trigger": "on_spawn",
             "descriptions": {
                 "english": "Add [effect0.secondarypower] <b>Obsessing Spark</b> with [consume] to your hand.",
-                "chinese": "将 [effect0.secondarypower] 张带有[consume]的<b>欲望碎片</b>加入手牌。"
+                "chinese": "将 [effect0.secondarypower] 张带有[consume]的<b>欲望碎片</b>加入手牌。",
+                "spanish": "Añade [effect0.secondarypower] <b>Chispa obsesiva</b> con [consume] a tu mano.",
+                "french": "Ajoutez [effect0.secondarypower] <b>Étincelle obsédante</b> avec [consume] à votre main.",
+                "german": "Füge deiner Hand [effect0.secondarypower] <b>Besessenheitsfunke</b> mit [consume] hinzu.",
+                "portuguese": "Adicione [effect0.secondarypower] <b>Centelha Obsessiva</b> com [consume] à sua mão.",
+                "russian": "Добавляет в руку [effect0.secondarypower] <b>Искра одержимости</b> с [consume].",
+                "chinese_traditional": "將 [effect0.secondarypower] 張帶有 [consume] 的<b>執念火花</b>加入手牌。",
+                "japanese": "[consume]付きの<b>執着の火花</b>を[effect0.secondarypower]枚手札に加える。",
+                "korean": "[consume]가 있는 <b>집착의 불꽃</b> [effect0.secondarypower]장을 손에 추가합니다."
             },
             "effects": [
                 "@EssenceOneShard"
@@ -356,7 +620,15 @@
             },
             "descriptions": {
                 "english": "Gain [effect0.power][ember] and draw [effect1.power] more card next turn.",
-                "chinese": "获得 [effect0.power][ember]，下回合多抽 [effect1.power] 张牌。"
+                "chinese": "获得 [effect0.power][ember]，下回合多抽 [effect1.power] 张牌。",
+                "spanish": "Gana [effect0.power][ember] y roba [effect1.power] cartas adicionales el próximo turno.",
+                "french": "Gagnez [effect0.power][ember] et piochez [effect1.power] cartes supplémentaires au prochain tour.",
+                "german": "Erhalte [effect0.power][ember] und ziehe im nächsten Zug [effect1.power] zusätzliche Karten.",
+                "portuguese": "Ganhe [effect0.power][ember] e compre [effect1.power] cartas extras no próximo turno.",
+                "russian": "Даёт [effect0.power][ember] и [effect1.power] дополнительные карты в следующем ходу.",
+                "chinese_traditional": "獲得 [effect0.power][ember]，下回合額外抽 [effect1.power] 張牌。",
+                "japanese": "[effect0.power][ember]を得て、次のターンに追加で[effect1.power]枚引く。",
+                "korean": "[effect0.power][ember]을 얻고 다음 턴에 카드를 [effect1.power]장 더 뽑습니다."
             },
             "effects": [
                 "@EssenceArroganceEmber",
@@ -368,7 +640,15 @@
             "trigger": "on_hit",
             "descriptions": {
                 "english": "Apply <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> to the attacking enemy unit.",
-                "chinese": "对攻击的敌方单位施加 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>。"
+                "chinese": "对攻击的敌方单位施加 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>。",
+                "spanish": "Otorga <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> a la unidad enemiga atacante.",
+                "french": "Applique <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> à l'unité ennemie attaquante.",
+                "german": "Verleiht der angreifenden feindlichen Einheit <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>.",
+                "portuguese": "Aplica <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> à unidade inimiga atacante.",
+                "russian": "Даёт атакующему врагу <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>.",
+                "chinese_traditional": "對攻擊者施加 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>。",
+                "japanese": "攻撃してきた敵に<b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>を付与する。",
+                "korean": "공격한 적에게 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>을 부여합니다."
             },
             "effects": [
                 "@EssenceChaosFrantic"
@@ -382,7 +662,15 @@
             },
             "descriptions": {
                 "english": "+[effect0.upgrade.bonusdamage][attack] permanently.",
-                "chinese": "永久获得 +[effect0.upgrade.bonusdamage][attack]。"
+                "chinese": "永久获得 +[effect0.upgrade.bonusdamage][attack]。",
+                "spanish": "+[effect0.upgrade.bonusdamage][attack] permanentemente.",
+                "french": "+[effect0.upgrade.bonusdamage][attack] de façon permanente.",
+                "german": "Dauerhaft +[effect0.upgrade.bonusdamage][attack].",
+                "portuguese": "+[effect0.upgrade.bonusdamage][attack] permanentemente.",
+                "russian": "Навсегда +[effect0.upgrade.bonusdamage][attack].",
+                "chinese_traditional": "永久 +[effect0.upgrade.bonusdamage][attack]。",
+                "japanese": "永続的に+[effect0.upgrade.bonusdamage][attack]。",
+                "korean": "영구적으로 +[effect0.upgrade.bonusdamage][attack]."
             },
             "effects": [
                 "@EssenceShadowWarriorBuff"

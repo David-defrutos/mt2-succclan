@@ -5,11 +5,27 @@
             "id": "ParadoxTome",
             "names": {
                 "english": "Paradox Tome",
-                "chinese": "悖论法典"
+                "chinese": "悖论法典",
+                "spanish": "Tomo de la paradoja",
+                "french": "Grimoire du paradoxe",
+                "german": "Paradoxes Buch",
+                "portuguese": "Tomo do Paradoxo",
+                "russian": "Книга парадокса",
+                "chinese_traditional": "悖論之書",
+                "japanese": "逆説の書",
+                "korean": "역설의 고서"
             },
             "descriptions": {
                 "english": "Apply [sweep] to a friendly unit. Add [effect1.secondarypower] <b>Obsessing Spark</b> with [consume] to your hand.",
-                "chinese": "对一个友方单位施加[sweep]。将 [effect1.secondarypower] 张带有[consume]的<b>欲望碎片</b>加入手牌。"
+                "chinese": "对一个友方单位施加[sweep]。将 [effect1.secondarypower] 张带有[consume]的<b>欲望碎片</b>加入手牌。",
+                "spanish": "Otorga [sweep] a una unidad aliada. Añade [effect1.secondarypower] <b>Chispa obsesiva</b> con [consume] a tu mano.",
+                "french": "Applique [sweep] à une unité alliée. Ajoutez [effect1.secondarypower] <b>Étincelle obsédante</b> avec [consume] à votre main.",
+                "german": "Verleiht einer verbündeten Einheit [sweep]. Füge deiner Hand [effect1.secondarypower] <b>Besessenheitsfunke</b> mit [consume] hinzu.",
+                "portuguese": "Concede [sweep] a uma unidade aliada. Adicione [effect1.secondarypower] <b>Centelha Obsessiva</b> com [consume] à sua mão.",
+                "russian": "Даёт союзнику [sweep]. Добавляет в руку [effect1.secondarypower] <b>Искра одержимости</b> с [consume].",
+                "chinese_traditional": "對一個友方單位施加 [sweep]。將 [effect1.secondarypower] 張帶有 [consume] 的<b>執念火花</b>加入手牌。",
+                "japanese": "味方1体に[sweep]を付与する。[consume]付きの<b>執着の火花</b>を[effect1.secondarypower]枚手札に加える。",
+                "korean": "아군 하나에게 [sweep]를 부여합니다. [consume]가 있는 <b>집착의 불꽃</b> [effect1.secondarypower]장을 손에 추가합니다."
             },
             "card_type": "spell",
             "rarity": "rare",

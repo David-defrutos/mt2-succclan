@@ -5,7 +5,15 @@
             "id": "SpawnSlothGhost",
             "names": {
                 "english": "Sloth Ghost",
-                "chinese": "怠惰幽魂"
+                "chinese": "怠惰幽魂",
+                "spanish": "Fantasma de la pereza",
+                "french": "Fantôme de la paresse",
+                "german": "Geist der Trägheit",
+                "portuguese": "Fantasma da Preguiça",
+                "russian": "Призрак лени",
+                "chinese_traditional": "懶惰幽靈",
+                "japanese": "怠惰の幽霊",
+                "korean": "나태의 유령"
             },
             "card_type": "monster",
             "rarity": "uncommon",
@@ -26,7 +34,15 @@
             "id": "SlothGhost",
             "names": {
                 "english": "Sloth Ghost",
-                "chinese": "怠惰幽魂"
+                "chinese": "怠惰幽魂",
+                "spanish": "Fantasma de la pereza",
+                "french": "Fantôme de la paresse",
+                "german": "Geist der Trägheit",
+                "portuguese": "Fantasma da Preguiça",
+                "russian": "Призрак лени",
+                "chinese_traditional": "懶惰幽靈",
+                "japanese": "怠惰の幽霊",
+                "korean": "나태의 유령"
             },
             "character_art": "@SlothGhostCharacterArt",
             "size": 1,
@@ -48,7 +64,15 @@
             "trigger": "on_spawn",
             "descriptions": {
                 "english": "Add [effect0.secondarypower] <b>Obsessing Spark</b> with [consume] to your hand.",
-                "chinese": "将 [effect0.secondarypower] 张带有[consume]的<b>欲望碎片</b>加入手牌。"
+                "chinese": "将 [effect0.secondarypower] 张带有[consume]的<b>欲望碎片</b>加入手牌。",
+                "spanish": "Añade [effect0.secondarypower] <b>Chispa obsesiva</b> con [consume] a tu mano.",
+                "french": "Ajoutez [effect0.secondarypower] <b>Étincelle obsédante</b> avec [consume] à votre main.",
+                "german": "Füge deiner Hand [effect0.secondarypower] <b>Besessenheitsfunke</b> mit [consume] hinzu.",
+                "portuguese": "Adicione [effect0.secondarypower] <b>Centelha Obsessiva</b> com [consume] à sua mão.",
+                "russian": "Добавляет в руку [effect0.secondarypower] <b>Искра одержимости</b> с [consume].",
+                "chinese_traditional": "將 [effect0.secondarypower] 張帶有 [consume] 的<b>執念火花</b>加入手牌。",
+                "japanese": "[consume]付きの<b>執着の火花</b>を[effect0.secondarypower]枚手札に加える。",
+                "korean": "[consume]가 있는 <b>집착의 불꽃</b> [effect0.secondarypower]장을 손에 추가합니다."
             },
             "effects": [
                 "@SlothGhostAddShards"
@@ -62,7 +86,15 @@
             },
             "descriptions": {
                 "english": "Deal [effect0.power] damage to enemy units.",
-                "chinese": "对所有敌方单位造成 [effect0.power] 点伤害。"
+                "chinese": "对所有敌方单位造成 [effect0.power] 点伤害。",
+                "spanish": "Inflige [effect0.power] de daño a las unidades enemigas.",
+                "french": "Inflige [effect0.power] dégâts aux unités ennemies.",
+                "german": "Fügt feindlichen Einheiten [effect0.power] Schaden zu.",
+                "portuguese": "Causa [effect0.power] de dano às unidades inimigas.",
+                "russian": "Наносит [effect0.power] урона врагам.",
+                "chinese_traditional": "對敵方單位造成 [effect0.power] 點傷害。",
+                "japanese": "敵全員に[effect0.power]ダメージを与える。",
+                "korean": "적에게 [effect0.power]의 피해를 줍니다."
             },
             "effects": [
                 "@SlothGhostDamage"

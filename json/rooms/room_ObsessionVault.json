@@ -5,13 +5,27 @@
             "id": "ObsessionVault",
             "names": {
                 "english": "Obsession Vault",
-                "spanish": "Bóveda de obsesión",
-                "chinese": "执念宝库"
+                "spanish": "Cámara de la obsesión",
+                "chinese": "执念宝库",
+                "french": "Chambre de l'obsession",
+                "german": "Kammer der Besessenheit",
+                "portuguese": "Câmara da Obsessão",
+                "russian": "Хранилище одержимости",
+                "chinese_traditional": "執念寶庫",
+                "japanese": "執着の宝物庫",
+                "korean": "집착의 금고"
             },
             "descriptions": {
                 "english": "At the start of each turn, add 1 <b>Obsessing Spark</b> to your hand.",
-                "spanish": "Al comienzo de cada turno, añade 1 <b>Obsessing Spark</b> a tu mano.",
-                "chinese": "每回合开始时，将 1 张<b>欲望碎片</b>加入手牌。"
+                "spanish": "Al comienzo de cada turno, añade 1 <b>Chispa obsesiva</b> a tu mano.",
+                "chinese": "每回合开始时，将 1 张<b>欲望碎片</b>加入手牌。",
+                "french": "Au début de chaque tour, ajoutez 1 <b>Étincelle obsédante</b> à votre main.",
+                "german": "Füge deiner Hand zu Beginn jedes Zuges 1 <b>Besessenheitsfunke</b> hinzu.",
+                "portuguese": "No início de cada turno, adicione 1 <b>Centelha Obsessiva</b> à sua mão.",
+                "russian": "В начале каждого хода добавляет в руку 1 <b>Искра одержимости</b>.",
+                "chinese_traditional": "每回合開始時，將 1 張<b>執念火花</b>加入手牌。",
+                "japanese": "各ターン開始時、手札に<b>執着の火花</b>を1枚加える。",
+                "korean": "매 턴 시작 시 손에 <b>집착의 불꽃</b> 1장을 추가합니다."
             },
             "card_art": "@ObsessionVaultArt",
             "cost": 1,
@@ -36,13 +50,27 @@
             "id": "ObsessionVaultUpgrade",
             "titles": {
                 "english": "Obsession Vault",
-                "spanish": "Bóveda de obsesión",
-                "chinese": "执念宝库"
+                "spanish": "Cámara de la obsesión",
+                "chinese": "执念宝库",
+                "french": "Chambre de l'obsession",
+                "german": "Kammer der Besessenheit",
+                "portuguese": "Câmara da Obsessão",
+                "russian": "Хранилище одержимости",
+                "chinese_traditional": "執念寶庫",
+                "japanese": "執着の宝物庫",
+                "korean": "집착의 금고"
             },
             "descriptions": {
                 "english": "At the start of each turn, add 1 <b>Obsessing Spark</b> to your hand.",
-                "spanish": "Al comienzo de cada turno, añade 1 <b>Obsessing Spark</b> a tu mano.",
-                "chinese": "每回合开始时，将 1 张<b>欲望碎片</b>加入手牌。"
+                "spanish": "Al comienzo de cada turno, añade 1 <b>Chispa obsesiva</b> a tu mano.",
+                "chinese": "每回合开始时，将 1 张<b>欲望碎片</b>加入手牌。",
+                "french": "Au début de chaque tour, ajoutez 1 <b>Étincelle obsédante</b> à votre main.",
+                "german": "Füge deiner Hand zu Beginn jedes Zuges 1 <b>Besessenheitsfunke</b> hinzu.",
+                "portuguese": "No início de cada turno, adicione 1 <b>Centelha Obsessiva</b> à sua mão.",
+                "russian": "В начале каждого хода добавляет в руку 1 <b>Искра одержимости</b>.",
+                "chinese_traditional": "每回合開始時，將 1 張<b>執念火花</b>加入手牌。",
+                "japanese": "各ターン開始時、手札に<b>執着の火花</b>を1枚加える。",
+                "korean": "매 턴 시작 시 손에 <b>집착의 불꽃</b> 1장을 추가합니다."
             },
             "room_modifier_upgrades": [
                 "@ObsessionVaultModifier"
@@ -57,18 +85,39 @@
             "name": "@RoomStateSuccClanTurnStartEffects",
             "titles": {
                 "english": "Obsession Vault",
-                "spanish": "Bóveda de obsesión",
-                "chinese": "执念宝库"
+                "spanish": "Cámara de la obsesión",
+                "chinese": "执念宝库",
+                "french": "Chambre de l'obsession",
+                "german": "Kammer der Besessenheit",
+                "portuguese": "Câmara da Obsessão",
+                "russian": "Хранилище одержимости",
+                "chinese_traditional": "執念寶庫",
+                "japanese": "執着の宝物庫",
+                "korean": "집착의 금고"
             },
             "descriptions": {
                 "english": "At the start of each turn, add 1 <b>Obsessing Spark</b> to your hand.",
-                "spanish": "Al comienzo de cada turno, añade 1 <b>Obsessing Spark</b> a tu mano.",
-                "chinese": "每回合开始时，将 1 张<b>欲望碎片</b>加入手牌。"
+                "spanish": "Al comienzo de cada turno, añade 1 <b>Chispa obsesiva</b> a tu mano.",
+                "chinese": "每回合开始时，将 1 张<b>欲望碎片</b>加入手牌。",
+                "french": "Au début de chaque tour, ajoutez 1 <b>Étincelle obsédante</b> à votre main.",
+                "german": "Füge deiner Hand zu Beginn jedes Zuges 1 <b>Besessenheitsfunke</b> hinzu.",
+                "portuguese": "No início de cada turno, adicione 1 <b>Centelha Obsessiva</b> à sua mão.",
+                "russian": "В начале каждого хода добавляет в руку 1 <b>Искра одержимости</b>.",
+                "chinese_traditional": "每回合開始時，將 1 張<b>執念火花</b>加入手牌。",
+                "japanese": "各ターン開始時、手札に<b>執着の火花</b>を1枚加える。",
+                "korean": "매 턴 시작 시 손에 <b>집착의 불꽃</b> 1장을 추가합니다."
             },
             "in_play_descriptions": {
                 "english": "At the start of each turn, add 1 <b>Obsessing Spark</b> to your hand.",
-                "spanish": "Al comienzo de cada turno, añade 1 <b>Obsessing Spark</b> a tu mano.",
-                "chinese": "每回合开始时，将 1 张<b>欲望碎片</b>加入手牌。"
+                "spanish": "Al comienzo de cada turno, añade 1 <b>Chispa obsesiva</b> a tu mano.",
+                "chinese": "每回合开始时，将 1 张<b>欲望碎片</b>加入手牌。",
+                "french": "Au début de chaque tour, ajoutez 1 <b>Étincelle obsédante</b> à votre main.",
+                "german": "Füge deiner Hand zu Beginn jedes Zuges 1 <b>Besessenheitsfunke</b> hinzu.",
+                "portuguese": "No início de cada turno, adicione 1 <b>Centelha Obsessiva</b> à sua mão.",
+                "russian": "В начале каждого хода добавляет в руку 1 <b>Искра одержимости</b>.",
+                "chinese_traditional": "每回合開始時，將 1 張<b>執念火花</b>加入手牌。",
+                "japanese": "各ターン開始時、手札に<b>執着の火花</b>を1枚加える。",
+                "korean": "매 턴 시작 시 손에 <b>집착의 불꽃</b> 1장을 추가합니다."
             },
             "param_effects": [
                 "@ObsessionVaultSpark"

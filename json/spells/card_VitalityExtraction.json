@@ -5,11 +5,27 @@
             "id": "VitalityExtraction",
             "names": {
                 "english": "Vitality Extraction",
-                "chinese": "活力汲取"
+                "chinese": "活力汲取",
+                "spanish": "Extracción de vitalidad",
+                "french": "Extraction de vitalité",
+                "german": "Vitalitätsentzug",
+                "portuguese": "Extração de Vitalidade",
+                "russian": "Извлечение жизненной силы",
+                "chinese_traditional": "生命汲取",
+                "japanese": "生命力の抽出",
+                "korean": "생명력 추출"
             },
             "descriptions": {
                 "english": "Friendly units gain [regen] and [rage] equal to the number of <b>[mt2_succclan.Plugin_frantic]</b> plus <b>[mt2_succclan.Plugin_psionic]</b> in this room.",
-                "chinese": "友方单位获得等同于本层 <b>[mt2_succclan.Plugin_frantic]</b> 与 <b>[mt2_succclan.Plugin_psionic]</b> 层数之和的[regen]和[rage]。"
+                "chinese": "友方单位获得等同于本层 <b>[mt2_succclan.Plugin_frantic]</b> 与 <b>[mt2_succclan.Plugin_psionic]</b> 层数之和的[regen]和[rage]。",
+                "spanish": "Las unidades aliadas obtienen [regen] y [rage] en cantidad igual a la suma de <b>[mt2_succclan.Plugin_frantic]</b> y <b>[mt2_succclan.Plugin_psionic]</b> de esta sala.",
+                "french": "Les unités alliées gagnent [regen] et [rage], chacun égal à la somme de <b>[mt2_succclan.Plugin_frantic]</b> et <b>[mt2_succclan.Plugin_psionic]</b> dans cette salle.",
+                "german": "Verbündete Einheiten erhalten [regen] und [rage], jeweils in Höhe der Summe von <b>[mt2_succclan.Plugin_frantic]</b> und <b>[mt2_succclan.Plugin_psionic]</b> in diesem Raum.",
+                "portuguese": "As unidades aliadas ganham [regen] e [rage], cada um igual à soma de <b>[mt2_succclan.Plugin_frantic]</b> e <b>[mt2_succclan.Plugin_psionic]</b> nesta sala.",
+                "russian": "Союзники получают [regen] и [rage], каждый в количестве, равном сумме <b>[mt2_succclan.Plugin_frantic]</b> и <b>[mt2_succclan.Plugin_psionic]</b> в этой комнате.",
+                "chinese_traditional": "友方單位獲得 [regen] 與 [rage]，層數各等於此房間中<b>[mt2_succclan.Plugin_frantic]</b>與<b>[mt2_succclan.Plugin_psionic]</b>的總和。",
+                "japanese": "味方全員が、この部屋の<b>[mt2_succclan.Plugin_frantic]</b>と<b>[mt2_succclan.Plugin_psionic]</b>の合計に等しい[regen]と[rage]を得る。",
+                "korean": "아군이 이 방의 <b>[mt2_succclan.Plugin_frantic]</b> 및 <b>[mt2_succclan.Plugin_psionic]</b> 중첩 합계만큼 [regen] 및 [rage]을 각각 얻습니다."
             },
             "card_type": "spell",
             "rarity": "common",

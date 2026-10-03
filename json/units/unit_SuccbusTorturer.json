@@ -5,7 +5,15 @@
             "id": "SpawnSuccbusTorturer",
             "names": {
                 "english": "Succbus Torturer",
-                "chinese": "魅魔拷打者"
+                "chinese": "魅魔拷打者",
+                "spanish": "Torturadora súcubo",
+                "french": "Tortionnaire succube",
+                "german": "Sukkubus-Folterin",
+                "portuguese": "Torturadora Súcubo",
+                "russian": "Истязательница-суккуб",
+                "chinese_traditional": "魅魔拷問者",
+                "japanese": "サキュバスの拷問者",
+                "korean": "서큐버스 고문관"
             },
             "card_art": "@SuccbusTorturerCardArt",
             "cost": 1,
@@ -26,7 +34,15 @@
             "id": "SuccbusTorturer",
             "names": {
                 "english": "Succbus Torturer",
-                "chinese": "魅魔拷打者"
+                "chinese": "魅魔拷打者",
+                "spanish": "Torturadora súcubo",
+                "french": "Tortionnaire succube",
+                "german": "Sukkubus-Folterin",
+                "portuguese": "Torturadora Súcubo",
+                "russian": "Истязательница-суккуб",
+                "chinese_traditional": "魅魔拷問者",
+                "japanese": "サキュバスの拷問者",
+                "korean": "서큐버스 고문관"
             },
             "character_art": "@SuccbusTorturerCharacterArt",
             "size": 2,
@@ -47,7 +63,15 @@
             "trigger": "on_attacking",
             "descriptions": {
                 "english": "Apply [meleeweakness] [effect0.status0.power] to the attacked unit.",
-                "chinese": "对被攻击的单位施加[meleeweakness] [effect0.status0.power]。"
+                "chinese": "对被攻击的单位施加[meleeweakness] [effect0.status0.power]。",
+                "spanish": "Otorga [meleeweakness] [effect0.status0.power] a la unidad atacada.",
+                "french": "Applique [meleeweakness] [effect0.status0.power] à l'unité attaquée.",
+                "german": "Verleiht der angegriffenen Einheit [meleeweakness] [effect0.status0.power].",
+                "portuguese": "Aplica [meleeweakness] [effect0.status0.power] à unidade atacada.",
+                "russian": "Даёт атакованной цели [meleeweakness] [effect0.status0.power].",
+                "chinese_traditional": "對受攻擊單位施加 [meleeweakness] [effect0.status0.power]。",
+                "japanese": "攻撃対象に[meleeweakness] [effect0.status0.power]を付与する。",
+                "korean": "공격 대상에게 [meleeweakness] [effect0.status0.power]을 부여합니다."
             },
             "effects": [
                 "@SuccbusTorturerWeakness"

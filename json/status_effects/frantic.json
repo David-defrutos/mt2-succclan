@@ -6,29 +6,75 @@
             "class_name": "@StatusEffectFranticState",
             "names": {
                 "english": "Frantic",
-                "chinese": "疯狂"
+                "chinese": "疯狂",
+                "spanish": "Frenesí",
+                "french": "Frénésie",
+                "german": "Raserei",
+                "portuguese": "Frenesi",
+                "russian": "Неистовство",
+                "chinese_traditional": "狂亂",
+                "japanese": "狂乱",
+                "korean": "광란"
             },
             "stackable_names": {
                 "english": "<nobr>Frantic {0}</nobr>",
-                "chinese": "<nobr>疯狂 {0}</nobr>"
+                "chinese": "<nobr>疯狂 {0}</nobr>",
+                "spanish": "<nobr>Frenesí {0}</nobr>",
+                "french": "<nobr>Frénésie {0}</nobr>",
+                "german": "<nobr>Raserei {0}</nobr>",
+                "portuguese": "<nobr>Frenesi {0}</nobr>",
+                "russian": "<nobr>Неистовство {0}</nobr>",
+                "chinese_traditional": "<nobr>狂亂 {0}</nobr>",
+                "japanese": "<nobr>狂乱 {0}</nobr>",
+                "korean": "<nobr>광란 {0}</nobr>"
             },
             "card_tooltips": {
                 "english": "Unit attacks its own front unit instead of attacking. Consumes 1 stack when it triggers. Cannot be applied to bosses.",
-                "spanish": "La unidad ataca a su propio aliado delantero en vez de atacar. Consume 1 carga al activarse. No se puede aplicar a jefes.",
-                "chinese": "单位不再攻击敌人，转而攻击己方前排单位。每次触发消耗 1 层。无法施加于首领。"
+                "spanish": "La unidad ataca a su propio aliado delantero. Consume 1 carga al activarse. No se puede aplicar a jefes.",
+                "chinese": "单位不再攻击敌人，转而攻击己方前排单位。每次触发消耗 1 层。无法施加于首领。",
+                "french": "L'unité attaque son propre allié en première ligne. Consomme 1 charge au déclenchement. Ne peut pas être appliqué aux boss.",
+                "german": "Die Einheit greift ihren eigenen vordersten Verbündeten an. Verbraucht bei Auslösung 1 Stapel. Kann nicht auf Bosse angewendet werden.",
+                "portuguese": "A unidade ataca seu próprio aliado da frente. Consome 1 acúmulo ao ativar. Não pode ser aplicado a chefes.",
+                "russian": "Отряд атакует своего переднего союзника. При срабатывании расходует 1 заряд. Нельзя наложить на боссов.",
+                "chinese_traditional": "單位會攻擊己方最前方的單位。觸發時消耗 1 層。無法對首領施加。",
+                "japanese": "ユニットが自軍の最前列の味方を攻撃する。発動時に1スタック消費。ボスには付与できない。",
+                "korean": "유닛이 자신의 맨 앞 아군을 공격합니다. 발동 시 1중첩을 소모합니다. 보스에게는 부여할 수 없습니다."
             },
             "character_tooltips": {
                 "english": "Unit attacks its own front unit instead of attacking. Consumes 1 stack when it triggers. Cannot be applied to bosses.",
-                "spanish": "La unidad ataca a su propio aliado delantero en vez de atacar. Consume 1 carga al activarse. No se puede aplicar a jefes.",
-                "chinese": "单位不再攻击敌人，转而攻击己方前排单位。每次触发消耗 1 层。无法施加于首领。"
+                "spanish": "La unidad ataca a su propio aliado delantero. Consume 1 carga al activarse. No se puede aplicar a jefes.",
+                "chinese": "单位不再攻击敌人，转而攻击己方前排单位。每次触发消耗 1 层。无法施加于首领。",
+                "french": "L'unité attaque son propre allié en première ligne. Consomme 1 charge au déclenchement. Ne peut pas être appliqué aux boss.",
+                "german": "Die Einheit greift ihren eigenen vordersten Verbündeten an. Verbraucht bei Auslösung 1 Stapel. Kann nicht auf Bosse angewendet werden.",
+                "portuguese": "A unidade ataca seu próprio aliado da frente. Consome 1 acúmulo ao ativar. Não pode ser aplicado a chefes.",
+                "russian": "Отряд атакует своего переднего союзника. При срабатывании расходует 1 заряд. Нельзя наложить на боссов.",
+                "chinese_traditional": "單位會攻擊己方最前方的單位。觸發時消耗 1 層。無法對首領施加。",
+                "japanese": "ユニットが自軍の最前列の味方を攻撃する。発動時に1スタック消費。ボスには付与できない。",
+                "korean": "유닛이 자신의 맨 앞 아군을 공격합니다. 발동 시 1중첩을 소모합니다. 보스에게는 부여할 수 없습니다."
             },
             "replacement_texts": {
                 "english": "<b>Frantic</b>",
-                "chinese": "<b>疯狂</b>"
+                "chinese": "<b>疯狂</b>",
+                "spanish": "<b>Frenesí</b>",
+                "french": "<b>Frénésie</b>",
+                "german": "<b>Raserei</b>",
+                "portuguese": "<b>Frenesi</b>",
+                "russian": "<b>Неистовство</b>",
+                "chinese_traditional": "<b>狂亂</b>",
+                "japanese": "<b>狂乱</b>",
+                "korean": "<b>광란</b>"
             },
             "notifications": {
                 "english": "Frantic",
-                "chinese": "疯狂"
+                "chinese": "疯狂",
+                "spanish": "Frenesí",
+                "french": "Frénésie",
+                "german": "Raserei",
+                "portuguese": "Frenesi",
+                "russian": "Неистовство",
+                "chinese_traditional": "狂亂",
+                "japanese": "狂乱",
+                "korean": "광란"
             },
             "display_category": "negative",
             "trigger_stage": "on_combat_turn_spark",

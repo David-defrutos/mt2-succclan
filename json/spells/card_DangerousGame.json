@@ -5,11 +5,27 @@
             "id": "DangerousGame",
             "names": {
                 "english": "Dangerous Game",
-                "chinese": "危险的游戏"
+                "chinese": "危险的游戏",
+                "spanish": "Juego peligroso",
+                "french": "Jeu dangereux",
+                "german": "Gefährliches Spiel",
+                "portuguese": "Jogo Perigoso",
+                "russian": "Опасная игра",
+                "chinese_traditional": "危險遊戲",
+                "japanese": "危険な遊戯",
+                "korean": "위험한 게임"
             },
             "descriptions": {
                 "english": "Apply <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>, +[effect1.power][attack] and [armor] [effect2.status0.power] to enemy units.",
-                "chinese": "对所有敌方单位施加 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>、+[effect1.power][attack] 和[armor] [effect2.status0.power]。"
+                "chinese": "对所有敌方单位施加 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>、+[effect1.power][attack] 和[armor] [effect2.status0.power]。",
+                "spanish": "Otorga <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>, +[effect1.power][attack] y [armor] [effect2.status0.power] a las unidades enemigas.",
+                "french": "Applique <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>, +[effect1.power][attack] et [armor] [effect2.status0.power] aux unités ennemies.",
+                "german": "Verleiht feindlichen Einheiten <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>, +[effect1.power][attack] und [armor] [effect2.status0.power].",
+                "portuguese": "Aplica <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>, +[effect1.power][attack] e [armor] [effect2.status0.power] às unidades inimigas.",
+                "russian": "Даёт врагам <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>, +[effect1.power][attack] и [armor] [effect2.status0.power].",
+                "chinese_traditional": "對敵方單位施加 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>、+[effect1.power][attack] 與 [armor] [effect2.status0.power]。",
+                "japanese": "敵全員に<b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>、+[effect1.power][attack]、[armor] [effect2.status0.power]を付与する。",
+                "korean": "적에게 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>, +[effect1.power][attack] 및 [armor] [effect2.status0.power]를 부여합니다."
             },
             "card_type": "spell",
             "rarity": "uncommon",

@@ -5,11 +5,27 @@
             "id": "ShadowEmbrace",
             "names": {
                 "english": "Shadow Embrace",
-                "chinese": "拥抱暗影"
+                "chinese": "拥抱暗影",
+                "spanish": "Abrazo de las sombras",
+                "french": "Étreinte des ombres",
+                "german": "Schattenumarmung",
+                "portuguese": "Abraço das Sombras",
+                "russian": "Объятия теней",
+                "chinese_traditional": "暗影擁抱",
+                "japanese": "影の抱擁",
+                "korean": "그림자의 포옹"
             },
             "descriptions": {
                 "english": "Add [effect0.secondarypower] <b>Obsessing Spark</b> with [consume] to the discard pile. Draw [effect1.power] cards.",
-                "chinese": "将 [effect0.secondarypower] 张带有[consume]的<b>欲望碎片</b>加入弃牌堆。抽 [effect1.power] 张牌。"
+                "chinese": "将 [effect0.secondarypower] 张带有[consume]的<b>欲望碎片</b>加入弃牌堆。抽 [effect1.power] 张牌。",
+                "spanish": "Añade [effect0.secondarypower] <b>Chispa obsesiva</b> con [consume] a la pila de descarte. Roba [effect1.power] cartas.",
+                "french": "Ajoutez [effect0.secondarypower] <b>Étincelle obsédante</b> avec [consume] à la défausse. Piochez [effect1.power] cartes.",
+                "german": "Füge dem Ablagestapel [effect0.secondarypower] <b>Besessenheitsfunke</b> mit [consume] hinzu. Ziehe [effect1.power] Karten.",
+                "portuguese": "Adicione [effect0.secondarypower] <b>Centelha Obsessiva</b> com [consume] à pilha de descarte. Compre [effect1.power] cartas.",
+                "russian": "Добавляет в сброс [effect0.secondarypower] <b>Искра одержимости</b> с [consume]. Даёт [effect1.power] карт.",
+                "chinese_traditional": "將 [effect0.secondarypower] 張帶有 [consume] 的<b>執念火花</b>加入棄牌堆。抽 [effect1.power] 張牌。",
+                "japanese": "[consume]付きの<b>執着の火花</b>を[effect0.secondarypower]枚捨て札に加える。[effect1.power]枚引く。",
+                "korean": "[consume]가 있는 <b>집착의 불꽃</b> [effect0.secondarypower]장을 버린 카드 더미에 추가합니다. 카드를 [effect1.power]장 뽑습니다."
             },
             "card_type": "spell",
             "rarity": "uncommon",

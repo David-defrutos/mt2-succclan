@@ -6,27 +6,75 @@
             "class_name": "@StatusEffectMarkerState",
             "names": {
                 "english": "Psionic",
-                "chinese": "灵能"
+                "chinese": "灵能",
+                "spanish": "Psiónico",
+                "french": "Psionique",
+                "german": "Psionik",
+                "portuguese": "Psiônico",
+                "russian": "Псионика",
+                "chinese_traditional": "靈能",
+                "japanese": "サイオニック",
+                "korean": "사이오닉"
             },
             "stackable_names": {
                 "english": "<nobr>Psionic {0}</nobr>",
-                "chinese": "<nobr>灵能 {0}</nobr>"
+                "chinese": "<nobr>灵能 {0}</nobr>",
+                "spanish": "<nobr>Psiónico {0}</nobr>",
+                "french": "<nobr>Psionique {0}</nobr>",
+                "german": "<nobr>Psionik {0}</nobr>",
+                "portuguese": "<nobr>Psiônico {0}</nobr>",
+                "russian": "<nobr>Псионика {0}</nobr>",
+                "chinese_traditional": "<nobr>靈能 {0}</nobr>",
+                "japanese": "<nobr>サイオニック {0}</nobr>",
+                "korean": "<nobr>사이오닉 {0}</nobr>"
             },
             "card_tooltips": {
                 "english": "Trigger additional effects for KnightMare.",
-                "chinese": "用于触发梦魇骑士的额外能力。"
+                "chinese": "用于触发梦魇骑士的额外能力。",
+                "spanish": "Activa efectos adicionales de Knightmare.",
+                "french": "Déclenche des effets supplémentaires pour Knightmare.",
+                "german": "Löst zusätzliche Effekte für Knightmare aus.",
+                "portuguese": "Ativa efeitos adicionais de Knightmare.",
+                "russian": "Активирует дополнительные эффекты Knightmare.",
+                "chinese_traditional": "觸發 Knightmare 的額外效果。",
+                "japanese": "Knightmareの追加効果を発動する。",
+                "korean": "Knightmare의 추가 효과를 발동합니다."
             },
             "character_tooltips": {
                 "english": "Trigger additional effects for KnightMare.",
-                "chinese": "用于触发梦魇骑士的额外能力。"
+                "chinese": "用于触发梦魇骑士的额外能力。",
+                "spanish": "Activa efectos adicionales de Knightmare.",
+                "french": "Déclenche des effets supplémentaires pour Knightmare.",
+                "german": "Löst zusätzliche Effekte für Knightmare aus.",
+                "portuguese": "Ativa efeitos adicionais de Knightmare.",
+                "russian": "Активирует дополнительные эффекты Knightmare.",
+                "chinese_traditional": "觸發 Knightmare 的額外效果。",
+                "japanese": "Knightmareの追加効果を発動する。",
+                "korean": "Knightmare의 추가 효과를 발동합니다."
             },
             "replacement_texts": {
                 "english": "<b>Psionic</b>",
-                "chinese": "<b>灵能</b>"
+                "chinese": "<b>灵能</b>",
+                "spanish": "<b>Psiónico</b>",
+                "french": "<b>Psionique</b>",
+                "german": "<b>Psionik</b>",
+                "portuguese": "<b>Psiônico</b>",
+                "russian": "<b>Псионика</b>",
+                "chinese_traditional": "<b>靈能</b>",
+                "japanese": "<b>サイオニック</b>",
+                "korean": "<b>사이오닉</b>"
             },
             "notifications": {
                 "english": "Psionic",
-                "chinese": "灵能"
+                "chinese": "灵能",
+                "spanish": "Psiónico",
+                "french": "Psionique",
+                "german": "Psionik",
+                "portuguese": "Psiônico",
+                "russian": "Псионика",
+                "chinese_traditional": "靈能",
+                "japanese": "サイオニック",
+                "korean": "사이오닉"
             },
             "display_category": "persistent",
             "trigger_stage": "none",

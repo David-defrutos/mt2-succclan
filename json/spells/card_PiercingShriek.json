@@ -5,11 +5,27 @@
             "id": "PiercingShriek",
             "names": {
                 "english": "Piercing Shriek",
-                "chinese": "刺耳尖啸"
+                "chinese": "刺耳尖啸",
+                "spanish": "Grito penetrante",
+                "french": "Cri perçant",
+                "german": "Durchdringender Schrei",
+                "portuguese": "Grito Perfurante",
+                "russian": "Пронзительный крик",
+                "chinese_traditional": "刺耳尖嘯",
+                "japanese": "貫く絶叫",
+                "korean": "꿰뚫는 비명"
             },
             "descriptions": {
                 "english": "Deal [effect0.power] damage to all enemy units.",
-                "chinese": "对所有敌方单位造成 [effect0.power] 点伤害。"
+                "chinese": "对所有敌方单位造成 [effect0.power] 点伤害。",
+                "spanish": "Inflige [effect0.power] de daño a todas las unidades enemigas.",
+                "french": "Inflige [effect0.power] dégâts à toutes les unités ennemies.",
+                "german": "Fügt allen feindlichen Einheiten [effect0.power] Schaden zu.",
+                "portuguese": "Causa [effect0.power] de dano a todas as unidades inimigas.",
+                "russian": "Наносит [effect0.power] урона всем врагам.",
+                "chinese_traditional": "對所有敵方單位造成 [effect0.power] 點傷害。",
+                "japanese": "敵全員に[effect0.power]ダメージを与える。",
+                "korean": "모든 적에게 [effect0.power]의 피해를 줍니다."
             },
             "card_type": "spell",
             "rarity": "uncommon",

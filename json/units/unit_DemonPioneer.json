@@ -5,7 +5,15 @@
             "id": "SpawnDemonPioneer",
             "names": {
                 "english": "Demon Pioneer",
-                "chinese": "恶魔先锋"
+                "chinese": "恶魔先锋",
+                "spanish": "Pionero demoníaco",
+                "french": "Pionnier démoniaque",
+                "german": "Dämonischer Pionier",
+                "portuguese": "Pioneiro Demoníaco",
+                "russian": "Демонический первопроходец",
+                "chinese_traditional": "惡魔先鋒",
+                "japanese": "悪魔の先駆者",
+                "korean": "악마 선구자"
             },
             "card_art": "@DemonPioneerCardArt",
             "cost": 2,
@@ -26,7 +34,15 @@
             "id": "DemonPioneer",
             "names": {
                 "english": "Demon Pioneer",
-                "chinese": "恶魔先锋"
+                "chinese": "恶魔先锋",
+                "spanish": "Pionero demoníaco",
+                "french": "Pionnier démoniaque",
+                "german": "Dämonischer Pionier",
+                "portuguese": "Pioneiro Demoníaco",
+                "russian": "Демонический первопроходец",
+                "chinese_traditional": "惡魔先鋒",
+                "japanese": "悪魔の先駆者",
+                "korean": "악마 선구자"
             },
             "character_art": "@DemonPioneerCharacterArt",
             "size": 3,
@@ -50,7 +66,15 @@
             },
             "descriptions": {
                 "english": "+[effect0.power][attack] and +[effect1.power][health]. Permanently +[effect2.upgrade.bonusdamage][attack] and +[effect2.upgrade.bonushp][health].",
-                "chinese": "+[effect0.power][attack]，+[effect1.power][health]。永久 +[effect2.upgrade.bonusdamage][attack]，+[effect2.upgrade.bonushp][health]。"
+                "chinese": "+[effect0.power][attack]，+[effect1.power][health]。永久 +[effect2.upgrade.bonusdamage][attack]，+[effect2.upgrade.bonushp][health]。",
+                "spanish": "+[effect0.power][attack] y +[effect1.power][health]. +[effect2.upgrade.bonusdamage][attack] y +[effect2.upgrade.bonushp][health] permanentemente.",
+                "french": "+[effect0.power][attack] et +[effect1.power][health]. +[effect2.upgrade.bonusdamage][attack] et +[effect2.upgrade.bonushp][health] de façon permanente.",
+                "german": "+[effect0.power][attack] und +[effect1.power][health]. Dauerhaft +[effect2.upgrade.bonusdamage][attack] und +[effect2.upgrade.bonushp][health].",
+                "portuguese": "+[effect0.power][attack] e +[effect1.power][health]. +[effect2.upgrade.bonusdamage][attack] e +[effect2.upgrade.bonushp][health] permanentemente.",
+                "russian": "+[effect0.power][attack] и +[effect1.power][health]. Навсегда +[effect2.upgrade.bonusdamage][attack] и +[effect2.upgrade.bonushp][health].",
+                "chinese_traditional": "+[effect0.power][attack] 與 +[effect1.power][health]。永久 +[effect2.upgrade.bonusdamage][attack] 與 +[effect2.upgrade.bonushp][health]。",
+                "japanese": "+[effect0.power][attack]と+[effect1.power][health]。永続的に+[effect2.upgrade.bonusdamage][attack]と+[effect2.upgrade.bonushp][health]。",
+                "korean": "+[effect0.power][attack] 및 +[effect1.power][health]. 영구적으로 +[effect2.upgrade.bonusdamage][attack] 및 +[effect2.upgrade.bonushp][health]."
             },
             "effects": [
                 "@DemonPioneerAttack",

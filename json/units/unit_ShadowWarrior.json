@@ -5,7 +5,15 @@
             "id": "SpawnShadowWarrior",
             "names": {
                 "english": "Shadow Warrior",
-                "chinese": "暗影武者"
+                "chinese": "暗影武者",
+                "spanish": "Guerrero de las sombras",
+                "french": "Guerrier des ombres",
+                "german": "Schattenkrieger",
+                "portuguese": "Guerreiro das Sombras",
+                "russian": "Воин тени",
+                "chinese_traditional": "暗影戰士",
+                "japanese": "影の戦士",
+                "korean": "그림자 전사"
             },
             "card_art": "@ShadowWarriorCardArt",
             "cost": 1,
@@ -26,7 +34,15 @@
             "id": "ShadowWarrior",
             "names": {
                 "english": "Shadow Warrior",
-                "chinese": "暗影武者"
+                "chinese": "暗影武者",
+                "spanish": "Guerrero de las sombras",
+                "french": "Guerrier des ombres",
+                "german": "Schattenkrieger",
+                "portuguese": "Guerreiro das Sombras",
+                "russian": "Воин тени",
+                "chinese_traditional": "暗影戰士",
+                "japanese": "影の戦士",
+                "korean": "그림자 전사"
             },
             "character_art": "@ShadowWarriorCharacterArt",
             "size": 2,
@@ -50,7 +66,15 @@
             },
             "descriptions": {
                 "english": "+[effect0.upgrade.bonusdamage][attack] permanently.",
-                "chinese": "永久获得 +[effect0.upgrade.bonusdamage][attack]。"
+                "chinese": "永久获得 +[effect0.upgrade.bonusdamage][attack]。",
+                "spanish": "+[effect0.upgrade.bonusdamage][attack] permanentemente.",
+                "french": "+[effect0.upgrade.bonusdamage][attack] de façon permanente.",
+                "german": "Dauerhaft +[effect0.upgrade.bonusdamage][attack].",
+                "portuguese": "+[effect0.upgrade.bonusdamage][attack] permanentemente.",
+                "russian": "Навсегда +[effect0.upgrade.bonusdamage][attack].",
+                "chinese_traditional": "永久 +[effect0.upgrade.bonusdamage][attack]。",
+                "japanese": "永続的に+[effect0.upgrade.bonusdamage][attack]。",
+                "korean": "영구적으로 +[effect0.upgrade.bonusdamage][attack]."
             },
             "effects": [
                 "@ShadowWarriorBuff"

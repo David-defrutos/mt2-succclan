@@ -6,11 +6,27 @@
             "type": "collectable",
             "names": {
                 "english": "Demon Blood",
-                "chinese": "恶魔之血"
+                "chinese": "恶魔之血",
+                "spanish": "Sangre demoníaca",
+                "french": "Sang démoniaque",
+                "german": "Dämonenblut",
+                "portuguese": "Sangue Demoníaco",
+                "russian": "Кровь демона",
+                "chinese_traditional": "惡魔之血",
+                "japanese": "悪魔の血",
+                "korean": "악마의 피"
             },
             "descriptions": {
                 "english": "Playing a <b>Blight</b> or <b>Scourge</b> deals [effect0.power] damage to a random enemy unit.",
-                "chinese": "打出<b>祸患</b>或<b>天灾</b>牌时，对随机敌方单位造成 [effect0.power] 点伤害。"
+                "chinese": "打出<b>祸患</b>或<b>天灾</b>牌时，对随机敌方单位造成 [effect0.power] 点伤害。",
+                "spanish": "Jugar una <b>Ruina</b> o <b>Azote</b> inflige [effect0.power] de daño a una unidad enemiga aleatoria.",
+                "french": "Jouer un <b>Fléau</b> ou une <b>Calamité</b> inflige [effect0.power] dégâts à une unité ennemie aléatoire.",
+                "german": "Das Spielen von <b>Fluch</b> oder <b>Plage</b> fügt einer zufälligen feindlichen Einheit [effect0.power] Schaden zu.",
+                "portuguese": "Jogar uma <b>Praga</b> ou <b>Flagelo</b> causa [effect0.power] de dano a uma unidade inimiga aleatória.",
+                "russian": "Розыгрыш <b>Порчи</b> или <b>Проклятия</b> наносит [effect0.power] урона случайному врагу.",
+                "chinese_traditional": "打出<b>禍害</b>或<b>災禍</b>牌時，對隨機敵方單位造成 [effect0.power] 點傷害。",
+                "japanese": "<b>荒廃</b>か<b>災厄</b>をプレイすると、ランダムな敵に[effect0.power]ダメージを与える。",
+                "korean": "<b>저주</b> 또는 <b>재앙</b> 카드를 사용하면 무작위 적에게 [effect0.power]의 피해를 줍니다."
             },
             "disallow_in_deployment": false,
             "relic_effects": [

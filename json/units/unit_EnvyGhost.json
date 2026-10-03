@@ -5,7 +5,15 @@
             "id": "SpawnEnvyGhost",
             "names": {
                 "english": "Envy Ghost",
-                "chinese": "嫉妒幽魂"
+                "chinese": "嫉妒幽魂",
+                "spanish": "Fantasma de la envidia",
+                "french": "Fantôme de l'envie",
+                "german": "Geist des Neids",
+                "portuguese": "Fantasma da Inveja",
+                "russian": "Призрак зависти",
+                "chinese_traditional": "嫉妒幽靈",
+                "japanese": "嫉妬の幽霊",
+                "korean": "질투의 유령"
             },
             "card_type": "monster",
             "rarity": "common",
@@ -26,7 +34,15 @@
             "id": "EnvyGhost",
             "names": {
                 "english": "Envy Ghost",
-                "chinese": "嫉妒幽魂"
+                "chinese": "嫉妒幽魂",
+                "spanish": "Fantasma de la envidia",
+                "french": "Fantôme de l'envie",
+                "german": "Geist des Neids",
+                "portuguese": "Fantasma da Inveja",
+                "russian": "Призрак зависти",
+                "chinese_traditional": "嫉妒幽靈",
+                "japanese": "嫉妬の幽霊",
+                "korean": "질투의 유령"
             },
             "character_art": "@EnvyGhostCharacterArt",
             "size": 1,
@@ -48,7 +64,15 @@
             "trigger": "on_spawn",
             "descriptions": {
                 "english": "Add [effect0.secondarypower] <b>Obsessing Spark</b> with [consume] to your hand.",
-                "chinese": "将 [effect0.secondarypower] 张带有[consume]的<b>欲望碎片</b>加入手牌。"
+                "chinese": "将 [effect0.secondarypower] 张带有[consume]的<b>欲望碎片</b>加入手牌。",
+                "spanish": "Añade [effect0.secondarypower] <b>Chispa obsesiva</b> con [consume] a tu mano.",
+                "french": "Ajoutez [effect0.secondarypower] <b>Étincelle obsédante</b> avec [consume] à votre main.",
+                "german": "Füge deiner Hand [effect0.secondarypower] <b>Besessenheitsfunke</b> mit [consume] hinzu.",
+                "portuguese": "Adicione [effect0.secondarypower] <b>Centelha Obsessiva</b> com [consume] à sua mão.",
+                "russian": "Добавляет в руку [effect0.secondarypower] <b>Искра одержимости</b> с [consume].",
+                "chinese_traditional": "將 [effect0.secondarypower] 張帶有 [consume] 的<b>執念火花</b>加入手牌。",
+                "japanese": "[consume]付きの<b>執着の火花</b>を[effect0.secondarypower]枚手札に加える。",
+                "korean": "[consume]가 있는 <b>집착의 불꽃</b> [effect0.secondarypower]장을 손에 추가합니다."
             },
             "effects": [
                 "@EnvyGhostAddShards"
@@ -62,7 +86,15 @@
             },
             "descriptions": {
                 "english": "Deal [effect0.power] damage to the front enemy unit.",
-                "chinese": "对前排敌方单位造成 [effect0.power] 点伤害。"
+                "chinese": "对前排敌方单位造成 [effect0.power] 点伤害。",
+                "spanish": "Inflige [effect0.power] de daño a la unidad enemiga delantera.",
+                "french": "Inflige [effect0.power] dégâts à l'unité ennemie en première ligne.",
+                "german": "Fügt der vordersten feindlichen Einheit [effect0.power] Schaden zu.",
+                "portuguese": "Causa [effect0.power] de dano à unidade inimiga da frente.",
+                "russian": "Наносит [effect0.power] урона переднему врагу.",
+                "chinese_traditional": "對最前方的敵方單位造成 [effect0.power] 點傷害。",
+                "japanese": "最前列の敵に[effect0.power]ダメージを与える。",
+                "korean": "맨 앞 적에게 [effect0.power]의 피해를 줍니다."
             },
             "effects": [
                 "@EnvyGhostDamage"

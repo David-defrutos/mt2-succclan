@@ -5,12 +5,27 @@
             "id": "PowerSiphon",
             "names": {
                 "english": "Power Siphon",
-                "chinese": "力量虹吸"
+                "chinese": "力量虹吸",
+                "spanish": "Sifón de poder",
+                "french": "Siphon de puissance",
+                "german": "Kraftentzug",
+                "portuguese": "Sifão de Poder",
+                "russian": "Поглощение силы",
+                "chinese_traditional": "力量虹吸",
+                "japanese": "力の吸収",
+                "korean": "힘 흡수"
             },
             "descriptions": {
                 "english": "Deal 20 damage to the front enemy unit for each <b>Blight</b> in your hand, then discard all <b>Blights</b> in your hand.",
-                "spanish": "Inflige 20 de daño al enemigo delantero por cada <b>Blight</b> en tu mano y después descarta todos los <b>Blights</b> de tu mano.",
-                "chinese": "手牌中每有一张<b>祸害</b>，对前排敌方单位造成 20 点伤害，然后舍弃手牌中的所有<b>祸害</b>。"
+                "spanish": "Inflige 20 de daño a la unidad enemiga delantera por cada <b>Ruina</b> en tu mano y después descarta todas las <b>Ruinas</b> de tu mano.",
+                "chinese": "手牌中每有一张<b>祸害</b>，对前排敌方单位造成 20 点伤害，然后舍弃手牌中的所有<b>祸害</b>。",
+                "french": "Inflige 20 dégâts à l'unité ennemie en première ligne pour chaque <b>Fléau</b> en main, puis défaussez tous les <b>Fléaux</b> de votre main.",
+                "german": "Fügt der vordersten feindlichen Einheit für jeden <b>Fluch</b> auf deiner Hand 20 Schaden zu. Wirf dann alle <b>Flüche</b> auf deiner Hand ab.",
+                "portuguese": "Causa 20 de dano à unidade inimiga da frente para cada <b>Praga</b> na sua mão e depois descarta todas as <b>Pragas</b> da sua mão.",
+                "russian": "Наносит переднему врагу 20 урона за каждую <b>Порчу</b> в руке, затем сбрасывает всю <b>Порчу</b> из руки.",
+                "chinese_traditional": "手牌中每有一張<b>禍害</b>牌，對最前方的敵方單位造成 20 點傷害，然後棄掉手牌中所有<b>禍害</b>牌。",
+                "japanese": "手札の<b>荒廃</b>1枚につき最前列の敵に20ダメージを与え、その後手札の<b>荒廃</b>をすべて捨てる。",
+                "korean": "손의 <b>저주</b> 카드 한 장당 맨 앞 적에게 피해를 20 주고 손의 모든 <b>저주</b> 카드를 버립니다."
             },
             "card_type": "spell",
             "rarity": "uncommon",

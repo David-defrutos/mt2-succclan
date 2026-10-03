@@ -5,7 +5,15 @@
             "id": "SpawnLustGhost",
             "names": {
                 "english": "Lust Ghost",
-                "chinese": "色欲幽魂"
+                "chinese": "色欲幽魂",
+                "spanish": "Fantasma de la lujuria",
+                "french": "Fantôme de la luxure",
+                "german": "Geist der Wollust",
+                "portuguese": "Fantasma da Luxúria",
+                "russian": "Призрак похоти",
+                "chinese_traditional": "色慾幽靈",
+                "japanese": "色欲の幽霊",
+                "korean": "색욕의 유령"
             },
             "card_type": "monster",
             "rarity": "common",
@@ -26,7 +34,15 @@
             "id": "LustGhost",
             "names": {
                 "english": "Lust Ghost",
-                "chinese": "色欲幽魂"
+                "chinese": "色欲幽魂",
+                "spanish": "Fantasma de la lujuria",
+                "french": "Fantôme de la luxure",
+                "german": "Geist der Wollust",
+                "portuguese": "Fantasma da Luxúria",
+                "russian": "Призрак похоти",
+                "chinese_traditional": "色慾幽靈",
+                "japanese": "色欲の幽霊",
+                "korean": "색욕의 유령"
             },
             "character_art": "@LustGhostCharacterArt",
             "size": 1,
@@ -48,7 +64,15 @@
             "trigger": "on_spawn",
             "descriptions": {
                 "english": "Add [effect0.secondarypower] <b>Obsessing Spark</b> with [consume] to your hand.",
-                "chinese": "将 [effect0.secondarypower] 张带有[consume]的<b>欲望碎片</b>加入手牌。"
+                "chinese": "将 [effect0.secondarypower] 张带有[consume]的<b>欲望碎片</b>加入手牌。",
+                "spanish": "Añade [effect0.secondarypower] <b>Chispa obsesiva</b> con [consume] a tu mano.",
+                "french": "Ajoutez [effect0.secondarypower] <b>Étincelle obsédante</b> avec [consume] à votre main.",
+                "german": "Füge deiner Hand [effect0.secondarypower] <b>Besessenheitsfunke</b> mit [consume] hinzu.",
+                "portuguese": "Adicione [effect0.secondarypower] <b>Centelha Obsessiva</b> com [consume] à sua mão.",
+                "russian": "Добавляет в руку [effect0.secondarypower] <b>Искра одержимости</b> с [consume].",
+                "chinese_traditional": "將 [effect0.secondarypower] 張帶有 [consume] 的<b>執念火花</b>加入手牌。",
+                "japanese": "[consume]付きの<b>執着の火花</b>を[effect0.secondarypower]枚手札に加える。",
+                "korean": "[consume]가 있는 <b>집착의 불꽃</b> [effect0.secondarypower]장을 손에 추가합니다."
             },
             "effects": [
                 "@LustGhostAddShards"
@@ -62,7 +86,15 @@
             },
             "descriptions": {
                 "english": "Apply <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> to the back enemy unit.",
-                "chinese": "对后排敌方单位施加 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>。"
+                "chinese": "对后排敌方单位施加 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>。",
+                "spanish": "Otorga <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> a la unidad enemiga trasera.",
+                "french": "Applique <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> à l'unité ennemie en dernière ligne.",
+                "german": "Verleiht der hintersten feindlichen Einheit <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>.",
+                "portuguese": "Aplica <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> à unidade inimiga de trás.",
+                "russian": "Даёт <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> заднему врагу.",
+                "chinese_traditional": "對最後方的敵方單位施加 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>。",
+                "japanese": "最後列の敵に<b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>を付与する。",
+                "korean": "맨 뒤 적에게 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>을 부여합니다."
             },
             "effects": [
                 "@LustGhostFrantic"

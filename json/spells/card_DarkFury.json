@@ -5,11 +5,27 @@
             "id": "DarkFury",
             "names": {
                 "english": "Dark Fury",
-                "chinese": "黑暗狂怒"
+                "chinese": "黑暗狂怒",
+                "spanish": "Furia oscura",
+                "french": "Fureur sombre",
+                "german": "Dunkle Wut",
+                "portuguese": "Fúria Sombria",
+                "russian": "Тёмная ярость",
+                "chinese_traditional": "黑暗狂怒",
+                "japanese": "闇の怒り",
+                "korean": "어둠의 격노"
             },
             "descriptions": {
                 "english": "Enemy units gain +[effect0.power][attack] and lose [effect1.power][health].",
-                "chinese": "所有敌方单位 +[effect0.power][attack]，-[effect1.power][health]。"
+                "chinese": "所有敌方单位 +[effect0.power][attack]，-[effect1.power][health]。",
+                "spanish": "Las unidades enemigas obtienen +[effect0.power][attack] y pierden [effect1.power][health].",
+                "french": "Les unités ennemies gagnent +[effect0.power][attack] et perdent [effect1.power][health].",
+                "german": "Feindliche Einheiten erhalten +[effect0.power][attack] und verlieren [effect1.power][health].",
+                "portuguese": "As unidades inimigas ganham +[effect0.power][attack] e perdem [effect1.power][health].",
+                "russian": "Враги получают +[effect0.power][attack] и теряют [effect1.power][health].",
+                "chinese_traditional": "敵方單位獲得 +[effect0.power][attack] 並失去 [effect1.power][health]。",
+                "japanese": "敵全員が+[effect0.power][attack]を得て、[effect1.power][health]を失う。",
+                "korean": "적이 +[effect0.power][attack]을 얻고 [effect1.power][health]을 잃습니다."
             },
             "card_type": "spell",
             "rarity": "uncommon",

@@ -5,12 +5,27 @@
             "id": "CubusSpike",
             "names": {
                 "english": "Cubus Spike",
-                "chinese": "诡影道钉"
+                "chinese": "诡影道钉",
+                "spanish": "Clavo de Cubus",
+                "french": "Clou de Cubus",
+                "german": "Cubus-Nagel",
+                "portuguese": "Prego de Cubus",
+                "russian": "Шип Кубуса",
+                "chinese_traditional": "夢魔道釘",
+                "japanese": "夢魔のスパイク",
+                "korean": "큐버스 스파이크"
             },
             "descriptions": {
                 "english": "Apply <b>[mt2_succclan.Plugin_frantic] X</b> to all enemy units on this floor, except bosses.",
-                "spanish": "Aplica <b>[mt2_succclan.Plugin_frantic] X</b> a todos los enemigos de esta sala, excepto los jefes.",
-                "chinese": "对本层所有敌方单位施加 <b>[mt2_succclan.Plugin_frantic] X</b>，首领除外。"
+                "spanish": "Otorga <b>[mt2_succclan.Plugin_frantic] X</b> a todas las unidades enemigas de este piso, excepto a los jefes.",
+                "chinese": "对本层所有敌方单位施加 <b>[mt2_succclan.Plugin_frantic] X</b>，首领除外。",
+                "french": "Applique <b>[mt2_succclan.Plugin_frantic] X</b> à toutes les unités ennemies de cet étage, sauf aux boss.",
+                "german": "Verleiht allen feindlichen Einheiten auf dieser Etage außer Bossen <b>[mt2_succclan.Plugin_frantic] X</b>.",
+                "portuguese": "Aplica <b>[mt2_succclan.Plugin_frantic] X</b> a todas as unidades inimigas neste andar, exceto chefes.",
+                "russian": "Даёт <b>[mt2_succclan.Plugin_frantic] X</b> всем врагам на этом этаже, кроме боссов.",
+                "chinese_traditional": "對此樓層所有敵方單位施加 <b>[mt2_succclan.Plugin_frantic] X</b>，首領除外。",
+                "japanese": "この階のボス以外の敵全員に<b>[mt2_succclan.Plugin_frantic] X</b>を付与する。",
+                "korean": "이 층의 보스를 제외한 모든 적에게 <b>[mt2_succclan.Plugin_frantic] X</b>를 부여합니다."
             },
             "card_type": "spell",
             "rarity": "rare",
