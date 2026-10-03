@@ -13,7 +13,7 @@ This is a playable **ALPHA**. Expect bugs, rough balance and further changes.
 Found something, or think a card is absurd in either direction? Either place works:
 
 - [GitHub issues](https://github.com/David-defrutos/mt2-succclan/issues)
-- [The modding channel on the Monster Train Discord](https://discord.com/channels/336546996779483136/1377778943674810368)
+- [Monster Train Discord's Mod Channel](https://discord.com/channels/336546996779483136/1377778943674810368)
 
 A screenshot, reproduction steps and `BepInEx/LogOutput.log` help with bug reports. Translation corrections are welcome too.
 
