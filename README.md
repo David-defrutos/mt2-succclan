@@ -1,8 +1,8 @@
 # SuccClan for Monster Train 2
 
-- [Read in English](#succclan-for-monster-train-2)
-- [简体中文：点击此处阅读](#succclan-简体中文)
-- [Para leer en español, pulsa en este enlace](#succclan-para-monster-train-2)
+- **English:** this page starts in English. Chinese and Spanish follow below.
+- **简体中文：**中文介绍在英文部分之后，请向下滚动阅读。
+- **Español:** la versión en español está más abajo, después de la sección en chino.
 
 ## ⚠ ALPHA
 
@@ -98,7 +98,7 @@ Requires BepInExPack, Trainworks Reloaded and Conductor. Source and issues: [mt2
 - **Frantic**：受影响的单位攻击己方最前方的盟友。首领免疫。
 - **房间与装备**：包含 Spectral Refuge、Obsession Vault、Whispering Blade 和 Mourning Veil。
 
-[查看上方的游戏截图](#screenshots)
+游戏截图位于上方的英文部分。
 
 ## 移植与致谢
 

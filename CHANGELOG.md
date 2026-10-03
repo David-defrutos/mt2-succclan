@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.3 — 2026-10-03
+
+- Replaced README language links with plain directions in English, Chinese and Spanish.
+- Replaced the Chinese screenshot anchor link with plain directions.
+- No changes to card stats, effects or translations.
+
 ## 0.1.2 — 2026-10-03
 
 - Separated the README language navigation into one link per line.
