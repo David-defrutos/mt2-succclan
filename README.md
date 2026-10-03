@@ -1,6 +1,8 @@
 # SuccClan for Monster Train 2
 
-[English](#succclan-for-monster-train-2) · [简体中文：点击此处阅读](#succclan-简体中文) · [Para leer en español, pulsa en este enlace](#succclan-para-monster-train-2)
+- [Read in English](#succclan-for-monster-train-2)
+- [简体中文：点击此处阅读](#succclan-简体中文)
+- [Para leer en español, pulsa en este enlace](#succclan-para-monster-train-2)
 
 ## ⚠ ALPHA
 
