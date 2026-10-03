@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.2 — 2026-10-03
+
+- Separated the README language navigation into one link per line.
+- Corrected the Discord link label to "Monster Train Discord's Mod Channel".
+- No changes to card stats, effects or translations.
+
 ## 0.1.1 — 2026-10-03
 
 - Added complete SuccClan text coverage for all ten languages supported by Monster Train 2.
