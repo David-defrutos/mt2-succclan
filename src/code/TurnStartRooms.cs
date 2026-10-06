@@ -25,7 +25,9 @@ namespace mt2_succclan.Plugin
             if (lastAppliedTurn == turn) yield break;
             lastAppliedTurn = turn;
             yield return ShowTriggeredVFX(room, core);
-            yield return core.GetCombatManager().ApplyEffects(effects, room.GetRoomIndex());
+            yield return core.GetCombatManager().ApplyEffects(effects, room.GetRoomIndex(),
+                onPreEffectsFiredVfx: (state, parameters) =>
+                    SuccClanPresentation.PlayEffect(state, parameters, core));
         }
     }
 

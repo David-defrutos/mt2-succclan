@@ -48,6 +48,7 @@
     "effects": [
         {
             "id": "IllusionTwinsCopy",
+            "applied_vfx": "@SuccFXPsionicPulse",
             "name": "@CardEffectCopyWithStatuses",
             "target_mode": "drop_target_character",
             "target_team": "monsters",

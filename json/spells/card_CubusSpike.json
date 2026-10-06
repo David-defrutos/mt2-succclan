@@ -1,4 +1,4 @@
-﻿{
+{
     "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
     "cards": [
         {
@@ -50,6 +50,7 @@
     "effects": [
         {
             "id": "CubusSpikeFrantic",
+            "applied_vfx": "@SuccFXRailSpike",
             "name": "CardEffectAddStatusEffect",
             "target_mode": "room",
             "target_team": "heroes",

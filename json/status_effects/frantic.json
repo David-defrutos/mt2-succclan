@@ -1,8 +1,11 @@
-﻿{
+{
     "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
     "status_effects": [
         {
             "id": "frantic",
+            "added_vfx": "@SuccFXShadowImpact",
+            "affected_vfx": "@SuccFXShadowImpact",
+            "applied_sfx": "Combat_Debuff",
             "class_name": "@StatusEffectFranticState",
             "names": {
                 "english": "Frantic",

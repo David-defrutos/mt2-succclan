@@ -59,6 +59,7 @@
         },
         {
             "id": "InceptionAttack",
+            "applied_vfx": "@SuccFXAttackBuff",
             "name": "CardEffectBuffDamage",
             "target_mode": "last_targeted_characters",
             "target_team": "monsters",
@@ -66,6 +67,7 @@
         },
         {
             "id": "InceptionHealth",
+            "applied_vfx": "@SuccFXHealthBuff",
             "name": "CardEffectBuffMaxHealth",
             "target_mode": "last_targeted_characters",
             "target_team": "monsters",

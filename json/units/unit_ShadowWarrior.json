@@ -1,4 +1,4 @@
-﻿{
+{
     "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
     "cards": [
         {
@@ -32,6 +32,9 @@
     "characters": [
         {
             "id": "ShadowWarrior",
+            "attack_vfx": "@SuccFXBladeAttack",
+            "impact_vfx": "@SuccFXShadowImpact",
+            "death_vfx": "@SuccFXDeathSmoke",
             "names": {
                 "english": "Shadow Warrior",
                 "chinese": "暗影武者",
@@ -90,6 +93,7 @@
         },
         {
             "id": "ShadowWarriorBuff",
+            "applied_vfx": "@SuccFXPsionicPulse",
             "name": "CardEffectAddCardUpgradeToUnits",
             "target_mode": "self",
             "target_team": "monsters",

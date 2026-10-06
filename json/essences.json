@@ -680,6 +680,7 @@
     "effects": [
         {
             "id": "EssenceOneShard",
+            "applied_vfx": "@SuccFXObsessionPulse",
             "name": "CardEffectAddBattleCard",
             "target_mode": "room",
             "target_team": "none",
@@ -716,6 +717,7 @@
         },
         {
             "id": "EssenceShadowWarriorBuff",
+            "applied_vfx": "@SuccFXPsionicPulse",
             "name": "CardEffectAddCardUpgradeToUnits",
             "target_mode": "self",
             "target_team": "monsters",

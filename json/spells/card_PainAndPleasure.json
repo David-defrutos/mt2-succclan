@@ -1,4 +1,4 @@
-﻿{
+{
     "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
     "cards": [
         {
@@ -46,6 +46,7 @@
     "effects": [
         {
             "id": "PainAndPleasureDiscard",
+            "applied_vfx": "@SuccFXHandPulse",
             "name": "@CardEffectDiscardSpecificCard",
             "should_fail_to_cast_if_test_fails": true,
             "should_cancel_subsequent_effects_if_test_fails": true,

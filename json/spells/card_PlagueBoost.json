@@ -50,6 +50,7 @@
     "effects": [
         {
             "id": "PlagueBoostEmber",
+            "applied_vfx": "@SuccFXHandPulse",
             "name": "CardEffectGainEnergy",
             "target_mode": "room",
             "target_team": "none",

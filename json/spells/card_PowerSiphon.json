@@ -1,4 +1,4 @@
-﻿{
+{
     "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
     "cards": [
         {
@@ -50,6 +50,7 @@
     "effects": [
         {
             "id": "PowerSiphonDamage",
+            "applied_vfx": "@SuccFXArcaneImpact",
             "name": "CardEffectDamage",
             "target_mode": "front_in_room",
             "target_team": "heroes",

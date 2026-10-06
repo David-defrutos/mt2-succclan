@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 
 using ShinyShoe;
+using UnityEngine;
 
 namespace mt2_succclan.Plugin
 {
@@ -66,8 +67,6 @@ namespace mt2_succclan.Plugin
                 yield break;
             }
 
-            CoreSignals.DamageAppliedPlaySound.Dispatch(Damage.Type.DirectAttack);
-
             // Una pasada por el golpe normal mas una por cada carga de multistrike.
             int multistrikeStacks = thisCharacter.GetStatusEffectStacks(MultistrikeStatusId);
             for (int i = 0; i <= multistrikeStacks; i++)
@@ -80,6 +79,17 @@ namespace mt2_succclan.Plugin
                 var target = FindAllyTarget(combatManager, thisCharacter, room);
                 int damageAmount = GetDamageAmount(thisCharacter);
 
+                bool present = SuccClanPresentation.CanPresent(coreGameManagers);
+                CharacterState.MovementDoneToken movement = default;
+                bool animated = present && thisCharacter.IsMovementDone;
+                if (animated)
+                {
+                    movement = SuccClanPresentation.BeginFranticAttack(thisCharacter, coreGameManagers);
+                    yield return new WaitForSeconds(combatManager.ActiveTiming.UnitAttackWindUpDuration);
+                }
+                if (present)
+                    thisCharacter.PlayCharacterSound("Combat_Attack");
+
                 yield return combatManager.ApplyDamageToTarget(
                     damageAmount,
                     target,
@@ -89,6 +99,16 @@ namespace mt2_succclan.Plugin
                         affectedVfx = GetSourceStatusEffectData()?.GetOnAffectedVFX(),
                         relicState = inputTriggerParams.suppressingRelic,
                     });
+
+                if (animated)
+                {
+                    // Bound the presentation wait: a missing animation callback
+                    // must never stall combat. Stop immediately if self-hit kills.
+                    float deadline = Time.unscaledTime + combatManager.ActiveTiming.UnitAttackDuration + 1f;
+                    while (!thisCharacter.IsDestroyed && thisCharacter.IsAlive
+                        && !movement.IsDone() && Time.unscaledTime < deadline)
+                        yield return null;
+                }
             }
 
             // La carga se gasta aqui, al dispararse, no al final del turno.

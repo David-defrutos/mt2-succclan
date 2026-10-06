@@ -1,10 +1,10 @@
-﻿{
+{
     "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
     "cards": [
         {
             "id": "SpawnSuccbusTorturer",
             "names": {
-                "english": "Succbus Torturer",
+                "english": "Succubus Torturer",
                 "chinese": "魅魔拷打者",
                 "spanish": "Torturadora súcubo",
                 "french": "Tortionnaire succube",
@@ -32,8 +32,11 @@
     "characters": [
         {
             "id": "SuccbusTorturer",
+            "attack_vfx": "@SuccFXBladeAttack",
+            "impact_vfx": "@SuccFXShadowImpact",
+            "death_vfx": "@SuccFXDeathSmoke",
             "names": {
-                "english": "Succbus Torturer",
+                "english": "Succubus Torturer",
                 "chinese": "魅魔拷打者",
                 "spanish": "Torturadora súcubo",
                 "french": "Tortionnaire succube",
@@ -53,7 +56,8 @@
                 "@Sub_Cubus"
             ],
             "triggers": [
-                "@SuccbusTorturerOnAttack"
+                "@SuccbusTorturerOnAttack",
+                "@SuccbusTorturerAccursed"
             ]
         }
     ],
@@ -62,19 +66,41 @@
             "id": "SuccbusTorturerOnAttack",
             "trigger": "on_attacking",
             "descriptions": {
-                "english": "Apply [meleeweakness] [effect0.status0.power] to the attacked unit.",
-                "chinese": "对被攻击的单位施加[meleeweakness] [effect0.status0.power]。",
-                "spanish": "Otorga [meleeweakness] [effect0.status0.power] a la unidad atacada.",
-                "french": "Applique [meleeweakness] [effect0.status0.power] à l'unité attaquée.",
-                "german": "Verleiht der angegriffenen Einheit [meleeweakness] [effect0.status0.power].",
-                "portuguese": "Aplica [meleeweakness] [effect0.status0.power] à unidade atacada.",
-                "russian": "Даёт атакованной цели [meleeweakness] [effect0.status0.power].",
-                "chinese_traditional": "對受攻擊單位施加 [meleeweakness] [effect0.status0.power]。",
-                "japanese": "攻撃対象に[meleeweakness] [effect0.status0.power]を付与する。",
-                "korean": "공격 대상에게 [meleeweakness] [effect0.status0.power]을 부여합니다."
+                "english": "Apply [meleeweakness] [effect0.status0.power].",
+                "french": "Applique [meleeweakness] [effect0.status0.power].",
+                "german": "Wende [meleeweakness] [effect0.status0.power] an.",
+                "russian": "Накладывает [meleeweakness] х[effect0.status0.power].",
+                "portuguese": "Aplica [meleeweakness] [effect0.status0.power].",
+                "chinese": "施加 [meleeweakness] [effect0.status0.power]。",
+                "spanish": "Añade [meleeweakness] [effect0.status0.power].",
+                "chinese_traditional": "施加[meleeweakness][effect0.status0.power]。",
+                "korean": "[meleeweakness] [effect0.status0.power] 효과를 적용합니다.",
+                "japanese": "[meleeweakness] [effect0.status0.power]を付与する。"
             },
             "effects": [
                 "@SuccbusTorturerWeakness"
+            ]
+        },
+        {
+            "id": "SuccbusTorturerAccursed",
+            "trigger": {
+                "id": "@Accursed",
+                "mod_reference": "Conductor"
+            },
+            "descriptions": {
+                "english": "[advance] the rear enemy unit.",
+                "chinese": "使后排敌方单位[advance]。",
+                "spanish": "Hace [advance] a la última unidad enemiga.",
+                "french": "[advance] de l’ennemi en dernière ligne.",
+                "german": "Wende [advance] auf die hinterste gegnerische Einheit an.",
+                "portuguese": "Faz a unidade inimiga na retaguarda [advance].",
+                "russian": "[advance] заднего вражеского бойца.",
+                "chinese_traditional": "使後排敵方單位[advance]。",
+                "japanese": "後列の敵ユニットを[advance]させる。",
+                "korean": "후열 적 유닛을 [advance]시킵니다."
+            },
+            "effects": [
+                "@SuccbusTorturerAccursedAdvance"
             ]
         }
     ],
@@ -96,6 +122,13 @@
                     "count": 1
                 }
             ]
+        },
+        {
+            "id": "SuccbusTorturerAccursedAdvance",
+            "name": "CardEffectFloorRearrange",
+            "target_mode": "back_in_room",
+            "target_team": "heroes",
+            "param_int": 0
         }
     ],
     "sprites": [

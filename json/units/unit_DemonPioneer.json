@@ -32,6 +32,9 @@
     "characters": [
         {
             "id": "DemonPioneer",
+            "attack_vfx": "@SuccFXBladeAttack",
+            "impact_vfx": "@SuccFXShadowImpact",
+            "death_vfx": "@SuccFXDeathSmoke",
             "names": {
                 "english": "Demon Pioneer",
                 "chinese": "恶魔先锋",
@@ -92,6 +95,7 @@
         },
         {
             "id": "DemonPioneerAttack",
+            "applied_vfx": "@SuccFXAttackBuff",
             "name": "CardEffectBuffDamage",
             "target_mode": "self",
             "target_team": "monsters",
@@ -99,6 +103,7 @@
         },
         {
             "id": "DemonPioneerHealth",
+            "applied_vfx": "@SuccFXHealthBuff",
             "name": "CardEffectBuffMaxHealth",
             "target_mode": "self",
             "target_team": "monsters",
@@ -106,6 +111,7 @@
         },
         {
             "id": "DemonPioneerPermanentBuff",
+            "applied_vfx": "@SuccFXPsionicPulse",
             "name": "CardEffectAddCardUpgradeToUnits",
             "target_mode": "self",
             "target_team": "monsters",

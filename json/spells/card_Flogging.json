@@ -46,6 +46,7 @@
     "effects": [
         {
             "id": "FloggingDamage",
+            "applied_vfx": "@SuccFXShadowImpact",
             "name": "CardEffectDamage",
             "target_mode": "room",
             "target_team": "heroes",
@@ -53,6 +54,7 @@
         },
         {
             "id": "FloggingAddShard",
+            "applied_vfx": "@SuccFXObsessionPulse",
             "name": "CardEffectAddBattleCard",
             "target_mode": "room",
             "target_team": "none",

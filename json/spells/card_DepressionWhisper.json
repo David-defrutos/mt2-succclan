@@ -46,6 +46,7 @@
     "effects": [
         {
             "id": "DepressionRemoveBuffs",
+            "applied_vfx": "@SuccFXCursePulse",
             "name": "CardEffectRemoveAllStatusEffects",
             "target_mode": "room",
             "target_team": "heroes",

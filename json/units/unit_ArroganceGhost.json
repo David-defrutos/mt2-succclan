@@ -1,4 +1,4 @@
-﻿{
+{
     "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
     "cards": [
         {
@@ -32,6 +32,10 @@
     "characters": [
         {
             "id": "ArroganceGhost",
+            "attack_vfx": "@SuccFXSpectralAttack",
+            "impact_vfx": "@SuccFXSpectralImpact",
+            "death_vfx": "@SuccFXDeathSmoke",
+            "projectile_vfx": "@SuccFXSoulProjectile",
             "names": {
                 "english": "Arrogance Ghost",
                 "chinese": "傲慢幽魂",
@@ -111,6 +115,7 @@
         },
         {
             "id": "ArroganceGhostAddShards",
+            "applied_vfx": "@SuccFXObsessionPulse",
             "name": "CardEffectAddBattleCard",
             "target_mode": "room",
             "target_team": "none",
@@ -129,6 +134,7 @@
         },
         {
             "id": "ArroganceGhostSelfHarm",
+            "applied_vfx": "@SuccFXShadowImpact",
             "name": "CardEffectDebuffMaxHealth",
             "target_mode": "self",
             "target_team": "monsters",

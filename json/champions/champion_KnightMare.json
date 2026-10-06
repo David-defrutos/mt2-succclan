@@ -68,6 +68,9 @@
     "characters": [
         {
             "id": "KnightMare",
+            "attack_vfx": "@SuccFXPsionicAttack",
+            "impact_vfx": "@SuccFXArcaneImpact",
+            "death_vfx": "@SuccFXDeathSmoke",
             "names": {
                 "english": "Knightmare",
                 "chinese": "梦魇之主",
@@ -118,9 +121,6 @@
                 "@AbyssBasicRemove",
                 "@AbyssBasicDraw",
                 "@AbyssBasicEmber"
-            ],
-            "additional_tooltips": [
-                "@PsionicBurstTooltip"
             ]
         },
         {
@@ -148,9 +148,6 @@
                 "@AbyssPreRemove",
                 "@AbyssPreDraw",
                 "@AbyssPreEmber"
-            ],
-            "additional_tooltips": [
-                "@PsionicBurstTooltip"
             ]
         },
         {
@@ -178,9 +175,6 @@
                 "@AbyssProRemove",
                 "@AbyssProDraw",
                 "@AbyssProEmber"
-            ],
-            "additional_tooltips": [
-                "@PsionicBurstTooltip"
             ]
         },
         {
@@ -200,9 +194,6 @@
             },
             "effects": [
                 "@EndlessBasicRebirth"
-            ],
-            "additional_tooltips": [
-                "@PsionicBurstTooltip"
             ]
         },
         {
@@ -222,9 +213,6 @@
             },
             "effects": [
                 "@EndlessPreRebirth"
-            ],
-            "additional_tooltips": [
-                "@PsionicBurstTooltip"
             ]
         },
         {
@@ -244,9 +232,6 @@
             },
             "effects": [
                 "@EndlessProRebirth"
-            ],
-            "additional_tooltips": [
-                "@PsionicBurstTooltip"
             ]
         },
         {
@@ -271,9 +256,6 @@
                 "@IllusionBasicRemove",
                 "@IllusionBasicLifesteal",
                 "@IllusionBasicSpikes"
-            ],
-            "additional_tooltips": [
-                "@PsionicBurstTooltip"
             ]
         },
         {
@@ -298,9 +280,6 @@
                 "@IllusionPreRemove",
                 "@IllusionPreLifesteal",
                 "@IllusionPreSpikes"
-            ],
-            "additional_tooltips": [
-                "@PsionicBurstTooltip"
             ]
         },
         {
@@ -325,9 +304,6 @@
                 "@IllusionProRemove",
                 "@IllusionProLifesteal",
                 "@IllusionProSpikes"
-            ],
-            "additional_tooltips": [
-                "@PsionicBurstTooltip"
             ]
         },
         {
@@ -353,13 +329,18 @@
     "effects": [
         {
             "id": "AbyssBasicAttack",
+            "applied_vfx": "@SuccFXAttackBuff",
             "name": "CardEffectBuffDamage",
             "target_mode": "room",
             "target_team": "monsters",
-            "param_int": 1
+            "param_int": 1,
+            "additional_tooltips": [
+                "@PsionicBurstTooltip"
+            ]
         },
         {
             "id": "AbyssBasicHealth",
+            "applied_vfx": "@SuccFXHealthBuff",
             "name": "CardEffectBuffMaxHealth",
             "target_mode": "room",
             "target_team": "monsters",
@@ -385,6 +366,7 @@
         },
         {
             "id": "AbyssBasicRemove",
+            "applied_vfx": "@SuccFXPsionicPulse",
             "name": "CardEffectRemoveStatusEffect",
             "target_mode": "self",
             "target_team": "monsters",
@@ -411,13 +393,18 @@
         },
         {
             "id": "AbyssPreAttack",
+            "applied_vfx": "@SuccFXAttackBuff",
             "name": "CardEffectBuffDamage",
             "target_mode": "room",
             "target_team": "monsters",
-            "param_int": 2
+            "param_int": 2,
+            "additional_tooltips": [
+                "@PsionicBurstTooltip"
+            ]
         },
         {
             "id": "AbyssPreHealth",
+            "applied_vfx": "@SuccFXHealthBuff",
             "name": "CardEffectBuffMaxHealth",
             "target_mode": "room",
             "target_team": "monsters",
@@ -443,6 +430,7 @@
         },
         {
             "id": "AbyssPreRemove",
+            "applied_vfx": "@SuccFXPsionicPulse",
             "name": "CardEffectRemoveStatusEffect",
             "target_mode": "self",
             "target_team": "monsters",
@@ -469,13 +457,18 @@
         },
         {
             "id": "AbyssProAttack",
+            "applied_vfx": "@SuccFXAttackBuff",
             "name": "CardEffectBuffDamage",
             "target_mode": "room",
             "target_team": "monsters",
-            "param_int": 4
+            "param_int": 4,
+            "additional_tooltips": [
+                "@PsionicBurstTooltip"
+            ]
         },
         {
             "id": "AbyssProHealth",
+            "applied_vfx": "@SuccFXHealthBuff",
             "name": "CardEffectBuffMaxHealth",
             "target_mode": "room",
             "target_team": "monsters",
@@ -501,6 +494,7 @@
         },
         {
             "id": "AbyssProRemove",
+            "applied_vfx": "@SuccFXPsionicPulse",
             "name": "CardEffectRemoveStatusEffect",
             "target_mode": "self",
             "target_team": "monsters",
@@ -527,13 +521,18 @@
         },
         {
             "id": "IllusionBasicAttack",
+            "applied_vfx": "@SuccFXAttackBuff",
             "name": "CardEffectBuffDamage",
             "target_mode": "self",
             "target_team": "monsters",
-            "param_int": 1
+            "param_int": 1,
+            "additional_tooltips": [
+                "@PsionicBurstTooltip"
+            ]
         },
         {
             "id": "IllusionBasicHealth",
+            "applied_vfx": "@SuccFXHealthBuff",
             "name": "CardEffectBuffMaxHealth",
             "target_mode": "self",
             "target_team": "monsters",
@@ -559,6 +558,7 @@
         },
         {
             "id": "IllusionBasicRemove",
+            "applied_vfx": "@SuccFXPsionicPulse",
             "name": "CardEffectRemoveStatusEffect",
             "target_mode": "self",
             "target_team": "monsters",
@@ -595,13 +595,18 @@
         },
         {
             "id": "IllusionPreAttack",
+            "applied_vfx": "@SuccFXAttackBuff",
             "name": "CardEffectBuffDamage",
             "target_mode": "self",
             "target_team": "monsters",
-            "param_int": 2
+            "param_int": 2,
+            "additional_tooltips": [
+                "@PsionicBurstTooltip"
+            ]
         },
         {
             "id": "IllusionPreHealth",
+            "applied_vfx": "@SuccFXHealthBuff",
             "name": "CardEffectBuffMaxHealth",
             "target_mode": "self",
             "target_team": "monsters",
@@ -627,6 +632,7 @@
         },
         {
             "id": "IllusionPreRemove",
+            "applied_vfx": "@SuccFXPsionicPulse",
             "name": "CardEffectRemoveStatusEffect",
             "target_mode": "self",
             "target_team": "monsters",
@@ -663,13 +669,18 @@
         },
         {
             "id": "IllusionProAttack",
+            "applied_vfx": "@SuccFXAttackBuff",
             "name": "CardEffectBuffDamage",
             "target_mode": "self",
             "target_team": "monsters",
-            "param_int": 3
+            "param_int": 3,
+            "additional_tooltips": [
+                "@PsionicBurstTooltip"
+            ]
         },
         {
             "id": "IllusionProHealth",
+            "applied_vfx": "@SuccFXHealthBuff",
             "name": "CardEffectBuffMaxHealth",
             "target_mode": "self",
             "target_team": "monsters",
@@ -695,6 +706,7 @@
         },
         {
             "id": "IllusionProRemove",
+            "applied_vfx": "@SuccFXPsionicPulse",
             "name": "CardEffectRemoveStatusEffect",
             "target_mode": "self",
             "target_team": "monsters",
@@ -749,6 +761,7 @@
         },
         {
             "id": "KnightMareAbyssAddSpark",
+            "applied_vfx": "@SuccFXObsessionPulse",
             "name": "CardEffectAddBattleCard",
             "target_mode": "room",
             "target_team": "none",
@@ -758,27 +771,39 @@
         },
         {
             "id": "EndlessBasicRebirth",
+            "applied_vfx": "@SuccFXPsionicPulse",
             "name": "@CardEffectKnightmareRebirth",
             "target_mode": "self",
             "target_team": "monsters",
             "param_int": 2,
-            "param_upgrade": "@EndlessBasicMultiUpgrade"
+            "param_upgrade": "@EndlessBasicMultiUpgrade",
+            "additional_tooltips": [
+                "@PsionicBurstTooltip"
+            ]
         },
         {
             "id": "EndlessPreRebirth",
+            "applied_vfx": "@SuccFXPsionicPulse",
             "name": "@CardEffectKnightmareRebirth",
             "target_mode": "self",
             "target_team": "monsters",
             "param_int": 3,
-            "param_upgrade": "@EndlessPreMultiUpgrade"
+            "param_upgrade": "@EndlessPreMultiUpgrade",
+            "additional_tooltips": [
+                "@PsionicBurstTooltip"
+            ]
         },
         {
             "id": "EndlessProRebirth",
+            "applied_vfx": "@SuccFXPsionicPulse",
             "name": "@CardEffectKnightmareRebirth",
             "target_mode": "self",
             "target_team": "monsters",
             "param_int": 4,
-            "param_upgrade": "@EndlessProMultiUpgrade"
+            "param_upgrade": "@EndlessProMultiUpgrade",
+            "additional_tooltips": [
+                "@PsionicBurstTooltip"
+            ]
         }
     ],
     "upgrades": [

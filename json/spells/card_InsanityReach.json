@@ -50,6 +50,7 @@
     "effects": [
         {
             "id": "InsanityReachAttack",
+            "applied_vfx": "@SuccFXAttackBuff",
             "name": "CardEffectBuffDamage",
             "target_mode": "room",
             "target_team": "heroes",

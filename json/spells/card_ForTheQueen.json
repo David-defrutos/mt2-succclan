@@ -49,6 +49,7 @@
     "effects": [
         {
             "id": "ForTheQueenSacrifice",
+            "applied_vfx": "@SuccFXShadowImpact",
             "name": "CardEffectSacrifice",
             "target_mode": "drop_target_character",
             "target_team": "monsters"

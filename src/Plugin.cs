@@ -1,5 +1,6 @@
 using BepInEx;
 using BepInEx.Logging;
+using System.IO;
 using Microsoft.Extensions.Configuration;
 using TrainworksReloaded.Core;
 using TrainworksReloaded.Core.Extensions;
@@ -24,8 +25,10 @@ namespace mt2_succclan.Plugin
                     // OJO: Trainworks Reloaded NO escanea carpetas.
                     // Un JSON que no este en esta lista no existe para el juego,
                     // y no da ningun error. Ver docs\64-anadir-json-nuevos-y-recompilar.md
-                    c.AddMergedJsonFile(
+                    string[] jsonPaths =
+                    {
                         "json/plugin.json",
+                        "json/audiovisual.json",
 
                         // Clase
                         "json/class.json",
@@ -102,7 +105,25 @@ namespace mt2_succclan.Plugin
                         "json/units/unit_SuccbusTorturer.json",
                         "json/units/unit_Vrolikai.json",
                         "json/units/unit_WrathGhost.json"
-                    );
+                    };
+                    // Trainworks silently ignores missing merged JSON files.
+                    // Validate against the DLL directory, the same base path it uses.
+                    var contentDirectory = Path.GetDirectoryName(typeof(Plugin).Assembly.Location)!;
+                    foreach (var jsonPath in jsonPaths)
+                    {
+                        var fullPath = Path.Combine(contentDirectory, jsonPath);
+                        if (!File.Exists(fullPath))
+                        {
+                            Logger.LogError($"SuccClan content file missing: {fullPath}. Reinstall the complete mod package; keep json/ and textures/ beside the DLL.");
+                            throw new FileNotFoundException("SuccClan content is incomplete or incorrectly installed.", fullPath);
+                        }
+                    }
+                    c.AddMergedJsonFile(source =>
+                    {
+                        source.Paths = new System.Collections.Generic.List<string>(jsonPaths);
+                        source.Optional = false;
+                    });
+                    Logger.LogInfo($"SuccClan configured {jsonPaths.Length} JSON files from {contentDirectory}.");
                 }
             );
 

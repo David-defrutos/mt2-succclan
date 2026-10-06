@@ -1,4 +1,4 @@
-﻿{
+{
     "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
     "cards": [
         {
@@ -82,6 +82,7 @@
     "room_modifiers": [
         {
             "id": "ObsessionVaultModifier",
+            "triggered_vfx": "@SuccFXObsessionPulse",
             "name": "@RoomStateSuccClanTurnStartEffects",
             "titles": {
                 "english": "Obsession Vault",
@@ -127,6 +128,7 @@
     "effects": [
         {
             "id": "ObsessionVaultAttach",
+            "applied_vfx": "@SuccFXObsessionPulse",
             "name": "CardEffectAttachTrainRoomAttachment",
             "target_mode": "room",
             "target_team": "monsters",

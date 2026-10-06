@@ -1,5 +1,21 @@
 # Changelog
 
+## 0.1.4 — 2026-10-04
+
+- Matched Succubus Torturer Strike text to Railbeater in all ten languages; added Accursed: Advance the rear enemy unit (no damage).
+
+- Fixed missing Psionic Burst tooltips on all Knightmare upgrade paths.
+- Registered Obsessing Spark for native full generated-card tooltips and simultaneous Reserve resolution.
+- Corrected the English name to Succubus Torturer while preserving saved-game IDs.
+
+- Animated Knightmare and Shadow Lady card portraits with subtle motion and magical light; combat character artwork is unchanged.
+- Animated all ten rare card portraits with artwork-specific magical glows and ambient motion.
+- Added existing MT2 visual effects to all SuccClan units, spells, rooms and equipment; retained native status effects.
+- Added Psionic/Frantic presentation and restored attack feedback for each actual Frantic hit, including Multistrike; gameplay values unchanged.
+- Added spectral spawn/death effects and missing spell movement sounds. See AUDIOVISUAL.md for assignments and testing limits.
+- Fixed SuccClan not appearing after installation through r2modman or Thunderstore Mod Manager: DLL, JSON and textures are now packaged together under plugins/.
+- Added explicit missing-content diagnostics and a count of configured JSON files.
+
 ## 0.1.3 — 2026-10-03
 
 - Replaced README language links with plain directions in English, Chinese and Spanish.

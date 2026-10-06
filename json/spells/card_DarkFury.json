@@ -49,6 +49,7 @@
     "effects": [
         {
             "id": "DarkFuryAttack",
+            "applied_vfx": "@SuccFXAttackBuff",
             "name": "CardEffectBuffDamage",
             "target_mode": "room",
             "target_team": "heroes",
@@ -56,6 +57,7 @@
         },
         {
             "id": "DarkFuryHealth",
+            "applied_vfx": "@SuccFXShadowImpact",
             "name": "CardEffectDebuffMaxHealth",
             "target_mode": "room",
             "target_team": "heroes",

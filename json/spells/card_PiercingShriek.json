@@ -49,6 +49,7 @@
     "effects": [
         {
             "id": "PiercingShriekDamage",
+            "applied_vfx": "@SuccFXArcaneImpact",
             "name": "CardEffectDamage",
             "target_mode": "room",
             "target_team": "heroes",

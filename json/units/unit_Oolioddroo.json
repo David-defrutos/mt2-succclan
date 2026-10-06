@@ -1,4 +1,4 @@
-﻿{
+{
     "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
     "cards": [
         {
@@ -32,6 +32,10 @@
     "characters": [
         {
             "id": "Oolioddroo",
+            "attack_vfx": "@SuccFXPsionicAttack",
+            "impact_vfx": "@SuccFXArcaneImpact",
+            "death_vfx": "@SuccFXDeathSmoke",
+            "projectile_vfx": "@SuccFXSoulProjectile",
             "names": {
                 "english": "Oolioddroo",
                 "chinese": "蛾梦魔",
@@ -87,6 +91,7 @@
         },
         {
             "id": "OolioddrooDamage",
+            "applied_vfx": "@SuccFXArcaneImpact",
             "name": "CardEffectDamagePerSourceAttack",
             "target_mode": "room",
             "target_team": "heroes",

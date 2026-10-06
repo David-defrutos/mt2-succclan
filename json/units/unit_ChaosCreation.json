@@ -1,4 +1,4 @@
-﻿{
+{
     "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
     "cards": [
         {
@@ -32,6 +32,9 @@
     "characters": [
         {
             "id": "ChaosCreation",
+            "attack_vfx": "@SuccFXPsionicAttack",
+            "impact_vfx": "@SuccFXArcaneImpact",
+            "death_vfx": "@SuccFXDeathSmoke",
             "names": {
                 "english": "Chaos Creation",
                 "chinese": "混沌造物",

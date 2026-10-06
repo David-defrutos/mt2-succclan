@@ -1,4 +1,4 @@
-﻿{
+{
     "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
     "cards": [
         {
@@ -32,6 +32,10 @@
     "characters": [
         {
             "id": "GreedGhost",
+            "attack_vfx": "@SuccFXSpectralAttack",
+            "impact_vfx": "@SuccFXSpectralImpact",
+            "death_vfx": "@SuccFXDeathSmoke",
+            "projectile_vfx": "@SuccFXSoulProjectile",
             "names": {
                 "english": "Greed Ghost",
                 "chinese": "贪婪幽魂",
@@ -110,6 +114,7 @@
         },
         {
             "id": "GreedGhostAddShards",
+            "applied_vfx": "@SuccFXObsessionPulse",
             "name": "CardEffectAddBattleCard",
             "target_mode": "room",
             "target_team": "none",

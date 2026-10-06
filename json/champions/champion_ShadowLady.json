@@ -30,6 +30,9 @@
     "characters": [
         {
             "id": "ShadowLady",
+            "attack_vfx": "@SuccFXBladeAttack",
+            "impact_vfx": "@SuccFXShadowImpact",
+            "death_vfx": "@SuccFXDeathSmoke",
             "names": {
                 "english": "Shadow Lady",
                 "chinese": "匿影女士",
@@ -302,6 +305,7 @@
     "effects": [
         {
             "id": "BloodThirstyBasicAttack",
+            "applied_vfx": "@SuccFXAttackBuff",
             "name": "CardEffectBuffDamage",
             "target_mode": "room",
             "target_team": "both",
@@ -309,6 +313,7 @@
         },
         {
             "id": "BloodThirstyPreAttack",
+            "applied_vfx": "@SuccFXAttackBuff",
             "name": "CardEffectBuffDamage",
             "target_mode": "room",
             "target_team": "both",
@@ -316,6 +321,7 @@
         },
         {
             "id": "BloodThirstyProAttack",
+            "applied_vfx": "@SuccFXAttackBuff",
             "name": "CardEffectBuffDamage",
             "target_mode": "room",
             "target_team": "both",
@@ -323,6 +329,7 @@
         },
         {
             "id": "PlagueBasicAddShard",
+            "applied_vfx": "@SuccFXObsessionPulse",
             "name": "CardEffectAddBattleCard",
             "target_mode": "room",
             "target_team": "none",
@@ -340,6 +347,7 @@
         },
         {
             "id": "PlagueBasicAttack",
+            "applied_vfx": "@SuccFXAttackBuff",
             "name": "CardEffectBuffDamage",
             "target_mode": "self",
             "target_team": "monsters",
@@ -359,6 +367,7 @@
         },
         {
             "id": "PlaguePreAddShard",
+            "applied_vfx": "@SuccFXObsessionPulse",
             "name": "CardEffectAddBattleCard",
             "target_mode": "room",
             "target_team": "none",
@@ -376,6 +385,7 @@
         },
         {
             "id": "PlaguePreAttack",
+            "applied_vfx": "@SuccFXAttackBuff",
             "name": "CardEffectBuffDamage",
             "target_mode": "self",
             "target_team": "monsters",
@@ -395,6 +405,7 @@
         },
         {
             "id": "PlagueProAddShard",
+            "applied_vfx": "@SuccFXObsessionPulse",
             "name": "CardEffectAddBattleCard",
             "target_mode": "room",
             "target_team": "none",
@@ -412,6 +423,7 @@
         },
         {
             "id": "PlagueProAttack",
+            "applied_vfx": "@SuccFXAttackBuff",
             "name": "CardEffectBuffDamage",
             "target_mode": "self",
             "target_team": "monsters",
@@ -443,6 +455,7 @@
         },
         {
             "id": "ProfanityBasicAttack",
+            "applied_vfx": "@SuccFXAttackBuff",
             "name": "CardEffectBuffDamage",
             "target_mode": "room",
             "target_team": "heroes",
@@ -462,6 +475,7 @@
         },
         {
             "id": "ProfanityPreAttack",
+            "applied_vfx": "@SuccFXAttackBuff",
             "name": "CardEffectBuffDamage",
             "target_mode": "room",
             "target_team": "heroes",
@@ -481,6 +495,7 @@
         },
         {
             "id": "ProfanityProAttack",
+            "applied_vfx": "@SuccFXAttackBuff",
             "name": "CardEffectBuffDamage",
             "target_mode": "room",
             "target_team": "heroes",

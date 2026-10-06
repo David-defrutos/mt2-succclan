@@ -1,4 +1,4 @@
-﻿{
+{
     "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
     "cards": [
         {
@@ -35,6 +35,7 @@
     "upgrades": [
         {
             "id": "MourningVeilUpgrade",
+            "applied_vfx": "@SuccFXHealthBuff",
             "titles": {
                 "english": "Mourning Veil",
                 "spanish": "Velo de luto",
@@ -88,6 +89,7 @@
         },
         {
             "id": "MourningVeilEffect",
+            "applied_vfx": "@SuccFXHealSmall",
             "target_mode": "self",
             "target_team": "monsters",
             "name": "CardEffectHeal",

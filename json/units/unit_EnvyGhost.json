@@ -1,4 +1,4 @@
-﻿{
+{
     "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
     "cards": [
         {
@@ -32,6 +32,10 @@
     "characters": [
         {
             "id": "EnvyGhost",
+            "attack_vfx": "@SuccFXSpectralAttack",
+            "impact_vfx": "@SuccFXSpectralImpact",
+            "death_vfx": "@SuccFXDeathSmoke",
+            "projectile_vfx": "@SuccFXSoulProjectile",
             "names": {
                 "english": "Envy Ghost",
                 "chinese": "嫉妒幽魂",
@@ -110,6 +114,7 @@
         },
         {
             "id": "EnvyGhostAddShards",
+            "applied_vfx": "@SuccFXObsessionPulse",
             "name": "CardEffectAddBattleCard",
             "target_mode": "room",
             "target_team": "none",
@@ -120,6 +125,7 @@
         },
         {
             "id": "EnvyGhostDamage",
+            "applied_vfx": "@SuccFXShadowImpact",
             "name": "CardEffectDamage",
             "target_mode": "front_in_room",
             "target_team": "heroes",

@@ -1,4 +1,4 @@
-﻿{
+{
     "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
     "cards": [
         {
@@ -32,6 +32,9 @@
     "characters": [
         {
             "id": "IncubusButcher",
+            "attack_vfx": "@SuccFXBladeAttack",
+            "impact_vfx": "@SuccFXShadowImpact",
+            "death_vfx": "@SuccFXDeathSmoke",
             "names": {
                 "english": "Incubus Butcher",
                 "chinese": "魇魔刽子手",
@@ -94,6 +97,7 @@
         },
         {
             "id": "IncubusButcherAttack",
+            "applied_vfx": "@SuccFXAttackBuff",
             "name": "CardEffectBuffDamage",
             "target_mode": "self",
             "target_team": "monsters",
@@ -101,6 +105,7 @@
         },
         {
             "id": "IncubusButcherHealth",
+            "applied_vfx": "@SuccFXHealthBuff",
             "name": "CardEffectBuffMaxHealth",
             "target_mode": "self",
             "target_team": "monsters",

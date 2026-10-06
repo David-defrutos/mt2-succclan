@@ -71,6 +71,7 @@
     "effects": [
         {
             "id": "ProfaneCrossbowDamage",
+            "applied_vfx": "@SuccFXShadowImpact",
             "name": "CardEffectDamage",
             "target_mode": "front_in_room",
             "target_team": "heroes",

@@ -1,0 +1,148 @@
+{
+  "vfxs": [
+    {
+      "id": "SuccFXShadowImpact",
+      "vfx_left": {
+        "asset_name": "Assets/FX/FX_ShadowImpact_PS.prefab",
+        "asset_guid": "7fc4324c349cb2b4f81e9ed0e62eb115"
+      },
+      "spawn_location": "character_center"
+    },
+    {
+      "id": "SuccFXArcaneImpact",
+      "vfx_left": {
+        "asset_name": "Assets/FX/FX_Ancient Magic Impact_PS.prefab",
+        "asset_guid": "cb226d23beb7dfd4f8bd15c19efeebfc"
+      },
+      "spawn_location": "character_center"
+    },
+    {
+      "id": "SuccFXAttackBuff",
+      "vfx_left": {
+        "asset_name": "Assets/FX/FX_Buff_Attack_PS.prefab",
+        "asset_guid": "75491630f33039343baa202d7f6f7a30"
+      },
+      "spawn_location": "character_center"
+    },
+    {
+      "id": "SuccFXHealthBuff",
+      "vfx_left": {
+        "asset_name": "Assets/FX/FX_Buff_Health_PS.prefab",
+        "asset_guid": "163c171f05bdd644fbadfa6fc01064a0"
+      },
+      "spawn_location": "character_center"
+    },
+    {
+      "id": "SuccFXHealSmall",
+      "vfx_left": {
+        "asset_name": "Assets/FX/FX_HealImpactSmall_PS.prefab",
+        "asset_guid": "43d81144eb85739409501ee485f55b0f"
+      },
+      "spawn_location": "character_center"
+    },
+    {
+      "id": "SuccFXHealNormal",
+      "vfx_left": {
+        "asset_name": "Assets/FX/FX_HealImpactNormal_PS.prefab",
+        "asset_guid": "a1b4834936900f44c97dcde93697e47b"
+      },
+      "spawn_location": "character_center"
+    },
+    {
+      "id": "SuccFXDeathSmoke",
+      "vfx_left": {
+        "asset_name": "Assets/FX/FX_DeathSmoke_PS.prefab",
+        "asset_guid": "d78c3285156744647bfd58ecd73c989b"
+      },
+      "spawn_location": "character_center"
+    },
+    {
+      "id": "SuccFXSoulProjectile",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/CharacterFX/Attacks/PurifiedSoul/FX_PurifiedSoulAttack.prefab",
+        "asset_guid": "8eb4671567d56e145aa892824c0c8cb0"
+      },
+      "spawn_location": "character_top"
+    },
+    {
+      "id": "SuccFXSpectralAttack",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/CharacterFX/Attacks/EtherealSeelie/FX_EtherealSeelieAttack2.prefab",
+        "asset_guid": "50436e5870431eb4d89cda0584d38e59"
+      },
+      "spawn_location": "character_center"
+    },
+    {
+      "id": "SuccFXBladeAttack",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/CharacterFX/Attacks/DeathsDancer/FX_DeathsDancerAttack.prefab",
+        "asset_guid": "7b4040ba5c134c84eaeb246a77b0a401"
+      },
+      "spawn_location": "character_center"
+    },
+    {
+      "id": "SuccFXPsionicAttack",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/CharacterFX/Attacks/Ekka/FX_EkkaAttack.prefab",
+        "asset_guid": "c7e542f2b751e704d93e28e27fa469b4"
+      },
+      "spawn_location": "character_center"
+    },
+    {
+      "id": "SuccFXSpectralImpact",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/CharacterFX/Attacks/EtherealSeelie/FX_EtherealSeelieImpact.prefab",
+        "asset_guid": "b856194664a6e4b4da8f1c47c5a0e765"
+      },
+      "spawn_location": "character_center"
+    },
+    {
+      "id": "SuccFXRailSpike",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/Spells/LunaCoven/LunaSpike/FX_LunaSpike.prefab",
+        "asset_guid": "adfe2eb7246781e46bf76abdd96b74ba"
+      },
+      "spawn_location": "character_center"
+    },
+    {
+      "id": "SuccFXPsionicPulse",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/Spells/LunaCoven/Fae'sBlessing/FX_FaeBlessing.prefab",
+        "asset_guid": "154b24d57e7cd4f4d9b1b927165c4ab4"
+      },
+      "spawn_location": "character_center"
+    },
+    {
+      "id": "SuccFXObsessionPulse",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/Spells/LunaCoven/Moonrise/FX_Moonrise.prefab",
+        "asset_guid": "914fb9ae60c36c746beecec4a4320916"
+      },
+      "spawn_location": "room_center"
+    },
+    {
+      "id": "SuccFXRefugePulse",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/Spells/Banished/Sanctuary/FX_Sanctuary.prefab",
+        "asset_guid": "76644c90ff01eac449740aa5aaadf56e"
+      },
+      "spawn_location": "room_center"
+    },
+    {
+      "id": "SuccFXHandPulse",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/Spells/Pyreborne/Alchemy/FX_Alchemy.prefab",
+        "asset_guid": "dece7354ce5d1f94e9121ea4e8375122"
+      },
+      "spawn_location": "room_center"
+    },
+    {
+      "id": "SuccFXCursePulse",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/Spells/Wurmkin/EchoSnare/FX_EchoSnare.prefab",
+        "asset_guid": "e16e9b56751ec374b877f3cedf70889b"
+      },
+      "spawn_location": "character_center"
+    }
+  ]
+}

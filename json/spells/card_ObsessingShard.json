@@ -27,6 +27,9 @@
             ],
             "triggers": [
                 "@ObsessingShardOnUnplayed"
+            ],
+            "pools": [
+                "BlightsWithFullTooltipDescriptionPool"
             ]
         }
     ],
@@ -54,6 +57,7 @@
     "effects": [
         {
             "id": "ObsessingShardPyreDamage",
+            "applied_vfx": "@SuccFXShadowImpact",
             "name": "CardEffectDamage",
             "target_mode": "pyre",
             "target_team": "both",

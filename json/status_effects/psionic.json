@@ -3,6 +3,8 @@
     "status_effects": [
         {
             "id": "psionic",
+            "added_vfx": "@SuccFXPsionicPulse",
+            "applied_sfx": "Combat_Buff",
             "class_name": "@StatusEffectMarkerState",
             "names": {
                 "english": "Psionic",
