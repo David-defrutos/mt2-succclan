@@ -9,7 +9,7 @@ from pathlib import Path
 def package(mod: Path, output: Path) -> Path:
     manifest = json.loads((mod / "manifest.json").read_text(encoding="utf-8-sig"))
     metadata = ["manifest.json", "README.md", "CHANGELOG.md", "LOCALIZATION.md",
-                "icon.png", "LICENSE", "NOTICE.md", "ORIGINAL-ART.md"]
+                "icon.png", "LICENSE", "NOTICE.md", "ORIGINAL-ART.md", "AUDIOVISUAL.md"]
     dll = mod / "mt2_succclan.Plugin.dll"
     for name in metadata + [dll.name]:
         if not (mod / name).is_file():

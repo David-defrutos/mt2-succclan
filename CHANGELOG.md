@@ -1,18 +1,20 @@
 # Changelog
 
+## 0.1.5 — 2026-10-06
+
+- Added magical visual effects and sound feedback to units, spells, rooms and equipment, including Psionic and Frantic.
+- Animated the card artwork of Knightmare, Shadow Lady and all ten rare cards with subtle motion and magical glows. Combat character artwork is unchanged.
+- Fixed missing Psionic Burst tooltips on all Knightmare upgrade paths.
+- Fixed generated Obsessing Spark tooltips to show Consume and Reserve: your Pyre takes 1 damage.
+- Registered Obsessing Sparks for simultaneous Reserve resolution at the end of the turn.
+- Succubus Torturer now has Accursed: Advance the rear enemy unit. This moves the last enemy to the front without dealing damage.
+- Matched Succubus Torturer's Strike wording to Railbeater and corrected its English name. Updated text in all ten supported languages.
+- Updated the minimum Trainworks Reloaded dependency to 0.7.30.
+
+This is still an ALPHA. Please report bugs and balance feedback through GitHub issues or the Monster Train Discord modding channel.
+
 ## 0.1.4 — 2026-10-04
 
-- Matched Succubus Torturer Strike text to Railbeater in all ten languages; added Accursed: Advance the rear enemy unit (no damage).
-
-- Fixed missing Psionic Burst tooltips on all Knightmare upgrade paths.
-- Registered Obsessing Spark for native full generated-card tooltips and simultaneous Reserve resolution.
-- Corrected the English name to Succubus Torturer while preserving saved-game IDs.
-
-- Animated Knightmare and Shadow Lady card portraits with subtle motion and magical light; combat character artwork is unchanged.
-- Animated all ten rare card portraits with artwork-specific magical glows and ambient motion.
-- Added existing MT2 visual effects to all SuccClan units, spells, rooms and equipment; retained native status effects.
-- Added Psionic/Frantic presentation and restored attack feedback for each actual Frantic hit, including Multistrike; gameplay values unchanged.
-- Added spectral spawn/death effects and missing spell movement sounds. See AUDIOVISUAL.md for assignments and testing limits.
 - Fixed SuccClan not appearing after installation through r2modman or Thunderstore Mod Manager: DLL, JSON and textures are now packaged together under plugins/.
 - Added explicit missing-content diagnostics and a count of configured JSON files.
 
