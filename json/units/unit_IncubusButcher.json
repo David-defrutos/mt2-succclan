@@ -120,6 +120,70 @@
         {
             "id": "IncubusButcherCharacterArt",
             "path": "textures/IncubusButcherCharacterArt.png"
+        },
+        {
+            "id": "IncubusButcherAttackFrame1",
+            "path": "textures/IncubusButcherAttackFrame1.png"
+        },
+        {
+            "id": "IncubusButcherAttackFrame2",
+            "path": "textures/IncubusButcherAttackFrame2.png"
+        },
+        {
+            "id": "IncubusButcherAttackFrame3",
+            "path": "textures/IncubusButcherAttackFrame3.png"
+        },
+        {
+            "id": "IncubusButcherAttackFrame4",
+            "path": "textures/IncubusButcherAttackFrame4.png"
+        },
+        {
+            "id": "IncubusButcherDeathFrame1",
+            "path": "textures/IncubusButcherDeathFrame1.png"
+        },
+        {
+            "id": "IncubusButcherDeathFrame2",
+            "path": "textures/IncubusButcherDeathFrame2.png"
+        },
+        {
+            "id": "IncubusButcherDeathFrame3",
+            "path": "textures/IncubusButcherDeathFrame3.png"
+        },
+        {
+            "id": "IncubusButcherDeathFrame4",
+            "path": "textures/IncubusButcherDeathFrame4.png"
+        },
+        {
+            "id": "IncubusButcherHitReactFrame1",
+            "path": "textures/IncubusButcherHitReactFrame1.png"
+        },
+        {
+            "id": "IncubusButcherHitReactFrame2",
+            "path": "textures/IncubusButcherHitReactFrame2.png"
+        },
+        {
+            "id": "IncubusButcherHitReactFrame3",
+            "path": "textures/IncubusButcherHitReactFrame3.png"
+        },
+        {
+            "id": "IncubusButcherHitReactFrame4",
+            "path": "textures/IncubusButcherHitReactFrame4.png"
+        },
+        {
+            "id": "IncubusButcherIdleFrame1",
+            "path": "textures/IncubusButcherIdleFrame1.png"
+        },
+        {
+            "id": "IncubusButcherIdleFrame2",
+            "path": "textures/IncubusButcherIdleFrame2.png"
+        },
+        {
+            "id": "IncubusButcherIdleFrame3",
+            "path": "textures/IncubusButcherIdleFrame3.png"
+        },
+        {
+            "id": "IncubusButcherIdleFrame4",
+            "path": "textures/IncubusButcherIdleFrame4.png"
         }
     ],
     "game_objects": [
@@ -138,6 +202,77 @@
             "extensions": {
                 "character_art": {
                     "sprite": "@IncubusButcherCharacterArt",
+                    "animations": [
+                        {
+                            "animation": "idle",
+                            "frames": [
+                                "@IncubusButcherIdleFrame1",
+                                "@IncubusButcherIdleFrame1",
+                                "@IncubusButcherIdleFrame1",
+                                "@IncubusButcherIdleFrame1",
+                                "@IncubusButcherIdleFrame2",
+                                "@IncubusButcherIdleFrame2",
+                                "@IncubusButcherIdleFrame2",
+                                "@IncubusButcherIdleFrame3",
+                                "@IncubusButcherIdleFrame3",
+                                "@IncubusButcherIdleFrame3",
+                                "@IncubusButcherIdleFrame4",
+                                "@IncubusButcherIdleFrame4",
+                                "@IncubusButcherIdleFrame4",
+                                "@IncubusButcherIdleFrame4"
+                            ],
+                            "framerate": 8,
+                            "loop": true
+                        },
+                        {
+                            "animation": "attack",
+                            "frames": [
+                                "@IncubusButcherCharacterArt",
+                                "@IncubusButcherAttackFrame1",
+                                "@IncubusButcherAttackFrame1",
+                                "@IncubusButcherAttackFrame2",
+                                "@IncubusButcherAttackFrame2",
+                                "@IncubusButcherAttackFrame3",
+                                "@IncubusButcherAttackFrame3",
+                                "@IncubusButcherAttackFrame4",
+                                "@IncubusButcherCharacterArt"
+                            ],
+                            "framerate": 20,
+                            "loop": false
+                        },
+                        {
+                            "animation": "hit_react",
+                            "frames": [
+                                "@IncubusButcherCharacterArt",
+                                "@IncubusButcherHitReactFrame1",
+                                "@IncubusButcherHitReactFrame2",
+                                "@IncubusButcherHitReactFrame2",
+                                "@IncubusButcherHitReactFrame3",
+                                "@IncubusButcherHitReactFrame4"
+                            ],
+                            "framerate": 20,
+                            "loop": false
+                        },
+                        {
+                            "animation": "death",
+                            "frames": [
+                                "@IncubusButcherCharacterArt",
+                                "@IncubusButcherDeathFrame1",
+                                "@IncubusButcherDeathFrame1",
+                                "@IncubusButcherDeathFrame2",
+                                "@IncubusButcherDeathFrame2",
+                                "@IncubusButcherDeathFrame3",
+                                "@IncubusButcherDeathFrame3",
+                                "@IncubusButcherDeathFrame4",
+                                "@IncubusButcherDeathFrame4",
+                                "@IncubusButcherDeathFrame4",
+                                "@IncubusButcherDeathFrame4",
+                                "@IncubusButcherDeathFrame4"
+                            ],
+                            "framerate": 20,
+                            "loop": false
+                        }
+                    ],
                     "transform": {
                         "position": {
                             "x": 0,
