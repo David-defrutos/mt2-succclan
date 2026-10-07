@@ -2,6 +2,8 @@
 
 ## 0.1.6 — 2026-10-07
 
+- Added Incubus Butcher combat animations: idle, attack, hit reaction and death.
+
 - Changed Succubus Torturer Accursed to apply Melee Weakness 1 to the front enemy unit, replacing Advance. Strike is unchanged. Updated all ten supported languages.
 
 ## 0.1.5 — 2026-10-06
