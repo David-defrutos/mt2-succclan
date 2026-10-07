@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.6 — 2026-10-07
+
+- Changed Succubus Torturer Accursed to apply Melee Weakness 1 to the front enemy unit, replacing Advance. Strike is unchanged. Updated all ten supported languages.
+
 ## 0.1.5 — 2026-10-06
 
 - Added magical visual effects and sound feedback to units, spells, rooms and equipment, including Psionic and Frantic.

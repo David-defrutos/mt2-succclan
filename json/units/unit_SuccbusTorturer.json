@@ -88,19 +88,19 @@
                 "mod_reference": "Conductor"
             },
             "descriptions": {
-                "english": "[advance] the rear enemy unit.",
-                "chinese": "使后排敌方单位[advance]。",
-                "spanish": "Hace [advance] a la última unidad enemiga.",
-                "french": "[advance] de l’ennemi en dernière ligne.",
-                "german": "Wende [advance] auf die hinterste gegnerische Einheit an.",
-                "portuguese": "Faz a unidade inimiga na retaguarda [advance].",
-                "russian": "[advance] заднего вражеского бойца.",
-                "chinese_traditional": "使後排敵方單位[advance]。",
-                "japanese": "後列の敵ユニットを[advance]させる。",
-                "korean": "후열 적 유닛을 [advance]시킵니다."
+                "english": "Apply [meleeweakness] [effect0.status0.power] to the front enemy unit.",
+                "chinese": "对前排敌方单位施加 [meleeweakness] [effect0.status0.power]。",
+                "spanish": "Añade [meleeweakness] [effect0.status0.power] a la primera unidad enemiga.",
+                "french": "Applique [meleeweakness] [effect0.status0.power] à l’ennemi en première ligne.",
+                "german": "Wende [meleeweakness] [effect0.status0.power] auf die vorderste gegnerische Einheit an.",
+                "portuguese": "Aplica [meleeweakness] [effect0.status0.power] à unidade inimiga na frente.",
+                "russian": "Накладывает [meleeweakness] х[effect0.status0.power] на переднего вражеского бойца.",
+                "chinese_traditional": "對前排敵方單位施加 [meleeweakness] [effect0.status0.power]。",
+                "japanese": "前列の敵ユニットに[meleeweakness] [effect0.status0.power]を付与する。",
+                "korean": "전열 적 유닛에게 [meleeweakness] [effect0.status0.power]을 부여합니다."
             },
             "effects": [
-                "@SuccbusTorturerAccursedAdvance"
+                "@SuccbusTorturerAccursedWeakness"
             ]
         }
     ],
@@ -124,11 +124,17 @@
             ]
         },
         {
-            "id": "SuccbusTorturerAccursedAdvance",
-            "name": "CardEffectFloorRearrange",
-            "target_mode": "back_in_room",
+            "id": "SuccbusTorturerAccursedWeakness",
+            "name": "CardEffectAddStatusEffect",
+            "target_mode": "front_in_room",
             "target_team": "heroes",
-            "param_int": 0
+            "param_status_effects": [
+                {
+                    "status": "melee weakness",
+                    "count": 1
+                }
+            ],
+            "applied_vfx": "@SuccFXCursePulse"
         }
     ],
     "sprites": [
