@@ -165,3 +165,82 @@ raras en JSON y hashes de JSON originales sin cambios. Pendiente comprobar
 el resultado visual en el juego. Sin commit, push ni publicación.
 
 Estado del DLL: instalado; reiniciar el juego para cargarlo.
+
+## Incubus Butcher: renderer de animación, 07-10-2026
+
+El usuario reporta que no se ve. El log y AnimationTrace muestran la carga del
+prefab y las peticiones idle con CharacterUIMeshAnimatedSprite, sin error de
+resolución de frames. No hay comprobación visual automática en esta sesión.
+
+En el ensamblado instalado, CharacterUIMesh.Setup dimensiona el quad por
+sprite.bounds.size, pero CharacterUIMeshAnimatedSprite.Setup solo cambia la
+textura y registra bounds: no aplica esas dimensiones al quad heredado.
+ButcherAnimationRendering.cs multiplica XY del Quad_Default por bounds del
+sprite después de FinalizeGameObject, exclusivamente para namespace e ID del
+Butcher. Se ejecuta al finalizar el prefab, no por frame ni por Setup de clones.
+Conserva el factor configurado 0.85 y la posición Y original 1.0765; se retira
+el intento previo de aumentar el factor a 1.2. Shader explícito Shiny Shoe/Character
+Shader, usado por el renderer estático, compatible con la propiedad _MainTex
+que actualiza el renderer animado. No se modifica Trainworks ni otro personaje.
+
+Build local: 0 errores/avisos, DLL instalado. Conservados los 16 PNG y clips
+idle/attack/hit_react/death. Pendiente reiniciar y comprobar visibilidad, tamaño,
+suelo y reproducción; no se considera validado visualmente todavía.
+
+## Reposo continuo del Butcher: 0.1.8, 07-10-2026
+
+El usuario ve reposo robótico y variación de tamaño en una pose. La secuencia
+anterior repetía cuatro frames 3-4 veces a 8 fps: cambios de pose separados por
+0.375-0.5 segundos. Se usa IdleFrame1 como único frame idle. Los otros PNG se
+conservan y no se altera ningún clip attack/hit_react/death.
+
+ButcherIdleBreathing, añadido solo al quad del Butcher, aplica una sinusoide
+continua de 3.8 s, Y +/-0.4%, X +/-0.14%, compensando posición Y alrededor del
+apoyo de los pies (borde inferior alfa común en y=434 sobre lienzo450). Al salir
+de idle restaura escala base y deja los offsets nativos del siguiente clip.
+Usa Time.time: no avanza durante pausa con timeScale cero. Campos serializados
+conservan referencias y parámetros en clones Unity. No depende de nuevos frames,
+no usa RNG y no modifica habilidades ni estadísticas.
+
+Compilación local sin errores/avisos. Pendiente comprobación visual del resultado
+y transiciones en partida; no se ha verificado el movimiento dentro de Unity.
+
+## Ataque y reacción legibles del Butcher: 0.1.8, 07-10-2026
+
+Ampliación posterior al ajuste de idle: el usuario reporta ataque/golpe demasiado
+rápidos. Clips 12 frames, attack 25 fps (0.48 s), hit_react24 fps (0.50 s),
+con retención de poses de impacto/recuperación y retorno a la pose idle estable.
+Sin generación ni modificación de PNG; muerte y valores de juego conservados.
+
+El renderer de Trainworks acelera attack/hit_react por velocidad del juego
+(1.714x, 2.4x y hasta 8x en ataque). CharacterUI.DoAttackAnimation también
+solicita idle al terminar afterStrikeTime, independientemente del clip.
+ButcherPoseTiming, presente solo en el quad Butcher, limita la reproducción
+visual a 1x para esos dos clips y difiere solicitudes idle sin callback hasta
+completar su ventana de 0.48/0.50 s. Nunca bloquea nuevos ataques, muerte ni
+loops con callback. Nuevos PlayAnim cancelan el idle pendiente anterior.
+Los callbacks de combate, eventos de daño y beforeStrikeTime/afterStrikeTime
+nativos no se alteran ni se esperan animaciones desde la lógica de combate.
+Con golpes/ataques consecutivos se permite interrupción por el evento nuevo.
+En Instant, el juego puede omitir presentación de ataque como hace nativamente.
+
+Build sin errores/avisos; pendiente comprobar dentro de Unity legibilidad,
+reacciones consecutivas, Multistrike, transiciones y muerte. No se ha visto
+ni medido la animación ejecutándose en esta sesión.
+
+
+## Incubus Butcher: más poses intermedias, 10-10-2026
+
+Se sustituyen las cuatro poses por estado por 20 de ataque, 8 de reacción al
+daño y 12 de muerte. Secuencias attack 24 frames/50 fps (0,48 s), hit_react
+10/20 (0,50 s), death 16/25 (0,64 s). Reposo mantiene la imagen estable y la
+respiración continua del DLL vigente. No se recompila DLL ni se alteran las
+ventanas de ButcherPoseTiming.
+
+41 PNG RGBA 512x450: neutral original con 68 px transparentes por lado, sin
+reescalar sus píxeles. Base e idle y todas las secuencias comparten el lienzo;
+la corrección existente por sprite.bounds.size amplía el margen del hacha.
+Transform y shader conservados. Fuentes, prompts, previews y backup:
+D:\Juegos\MT2_mod\arte\succlan\lotes\butcher-animaciones-2026-10-10\README.md.
+Poses anteriores conservadas en sin-usar. PNG y referencias verificados;
+reinicio y revisión visual en partida pendientes.

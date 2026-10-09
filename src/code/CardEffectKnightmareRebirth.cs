@@ -30,11 +30,13 @@ namespace mt2_succclan.Plugin
             if (oldPoint == null) yield break;
 
             int index = oldPoint.GetIndexInRoom();
+            // ShiftSpawnPoints does not clear the last slot. Detach explicitly,
+            // retaining the old room for the remaining death/harvest callbacks.
+            source.SetLastKnownSpawnPoint();
+            source.RemoveFromSpawnPoint();
             int shifted = room.ShiftSpawnPoints(Team.Type.Monsters, index);
             index = Math.Max(index - shifted, 0);
             if (room.GetRemainingSpawnPointCount(Team.Type.Monsters) <= 0) yield break;
-            var point = room.GetMonsterPoint(index);
-            if (point == null) yield break;
 
             int cost = effect.GetParamInt();
             source.RemoveStatusEffect(Psionic, cost, allowModification: false);
@@ -43,13 +45,21 @@ namespace mt2_succclan.Plugin
             // upgrade triggers. It copies dead HP too; restore full HP immediately
             // after cloning and before the trigger's next effect can run.
             yield return core.GetMonsterManager().CloneMonsterState(source, parameters.selectedRoom,
-                character => reborn = character, core, SpawnMode.SelectedSlot, point, isCardless: true);
+                character => reborn = character, core, SpawnMode.FrontSlot, isCardless: true);
+            // MT2 CloneMonsterState only forwards a selected slot when it is
+            // still the source's current slot; a detached dead source has none.
+            // Spawn in a native free slot, then restore the original row order.
             if (reborn == null || reborn.IsDestroyed)
             {
-                source.AddStatusEffect(Psionic, cost, allowModification: false);
+                if (!source.IsDestroyed)
+                    source.AddStatusEffect(Psionic, cost, allowModification: false);
+                Plugin.Logger.LogWarning("Knightmare Endless: clone failed; Psionic refunded when source remains valid.");
                 yield break;
             }
             reborn.SetHealth(reborn.GetMaxHP(), reborn.GetMaxHP());
+            var rebornPoint = reborn.GetSpawnPoint(false);
+            if (rebornPoint != null && rebornPoint.GetIndexInRoom() != index)
+                room.RearrangeCharacter(Team.Type.Monsters, rebornPoint.GetIndexInRoom(), index);
             var upgrade = new CardUpgradeState();
             upgrade.Setup(effect.GetParamCardUpgradeData());
             yield return reborn.ApplyCardUpgrade(upgrade, fromSpawn: false);
@@ -57,6 +67,7 @@ namespace mt2_succclan.Plugin
             var card = reborn.GetSpawnerCard();
             if (card != null)
                 card.GetTemporaryCardStateModifiers().AddUpgrade(upgrade);
+            Plugin.Logger.LogInfo($"Knightmare Endless: respawned at full health; spent {cost} Psionic, remaining {reborn.GetStatusEffectStacks(Psionic)}.");
             core.GetMonsterManager().RefreshEquipmentUI();
             core.GetMonsterManager().RefreshCharacterAbilityUI();
         }

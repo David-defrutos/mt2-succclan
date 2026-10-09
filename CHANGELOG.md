@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.1.8 — 2026-10-10
+
+- **Knightmare, Endless:** fixed failed respawns caused by native selected-slot cloning. Frees the dying champion's slot explicitly, including the last slot, and restores its row position after cloning.
+
+- **Endless Shadow:** stop the death-triggered summon when the next copy would have no health. Prevents the zero-health sacrifice/respawn chain; clarified the tooltip in all 10 languages.
+- Added more Incubus Butcher animation poses: 20 attack poses, 8 hit reactions and 12 death poses, with a stable neutral pose.
+- Made Incubus Butcher attack and hit reactions easier to see: longer key-pose holds, normal visual playback speed, and deferred return to idle so clips can finish. Combat damage and callbacks retain their native timing.
+
+- Replaced Incubus Butcher's stepped idle poses with subtle, continuous breathing on one stable pose, eliminating the idle frame size jumps.
+
+## 0.1.7 — 2026-10-07
+
+- Fixed Incubus Butcher animated combat artwork sizing to match sprite dimensions; used the static character shader for frame texture compatibility.
+
 ## 0.1.6 — 2026-10-07
 
 - Added Incubus Butcher combat animations: idle, attack, hit reaction and death.
