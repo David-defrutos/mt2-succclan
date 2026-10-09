@@ -252,3 +252,5 @@ El build de GitHub falló en 1868db0 porque el proyecto NuGet todavía
 referenciaba TrainworksReloaded.Base 0.7.8, sin CharacterUIMeshAnimatedSprite.
 El build local usaba los ensamblados instalados de 0.7.30, por eso compilaba.
 Se alinea la referencia NuGet con 0.7.30, ya exigida por manifest.json.
+La API de compilación se actualiza también a MonsterTrain2.Api 4.10.22787024,
+versión mínima requerida por Trainworks 0.7.30; evita NU1605 por downgrade.

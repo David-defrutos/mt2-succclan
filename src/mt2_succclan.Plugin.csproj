@@ -16,7 +16,7 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="BepInEx.PluginInfoProps" Version="2.*" />
-    <PackageReference Include="MonsterTrain2.Api" Version="4.5.21908879" />
+    <PackageReference Include="MonsterTrain2.Api" Version="4.10.22787024" />
     <PackageReference Include="TrainworksReloaded.Base" Version="0.7.30" />
     <PackageReference Include="Conductor" Version="0.5.2" />
   </ItemGroup>
