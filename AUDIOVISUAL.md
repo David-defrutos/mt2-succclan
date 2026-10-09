@@ -244,3 +244,11 @@ Transform y shader conservados. Fuentes, prompts, previews y backup:
 D:\Juegos\MT2_mod\arte\succlan\lotes\butcher-animaciones-2026-10-10\README.md.
 Poses anteriores conservadas en sin-usar. PNG y referencias verificados;
 reinicio y revisión visual en partida pendientes.
+
+
+## Dependencia de compilación — 10-10-2026
+
+El build de GitHub falló en 1868db0 porque el proyecto NuGet todavía
+referenciaba TrainworksReloaded.Base 0.7.8, sin CharacterUIMeshAnimatedSprite.
+El build local usaba los ensamblados instalados de 0.7.30, por eso compilaba.
+Se alinea la referencia NuGet con 0.7.30, ya exigida por manifest.json.
