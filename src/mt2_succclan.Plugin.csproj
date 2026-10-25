@@ -6,7 +6,7 @@
     <Nullable>enable</Nullable>
     <RootNamespace>mt2_succclan.Plugin</RootNamespace>
     <LangVersion>latest</LangVersion>
-    <Version>0.1.8</Version>
+    <Version>0.1.10</Version>
   </PropertyGroup>
 
   <ItemGroup>
@@ -24,3 +24,5 @@
   <!-- Sin reglas de copia de json/ ni textures/: en este repo cuelgan de la raiz
        (la carpeta del plugin), no de src/. El build solo produce el DLL. -->
 </Project>
+<!-- 2026-10-25-1836||codex-succclan-targetless||src\mt2_succclan.Plugin.csproj||Versión de compilación 0.1.8 -> 0.1.9 -->
+<!-- 2026-10-25-1917||codex-succclan-targetless||src\mt2_succclan.Plugin.csproj||Versión de compilación 0.1.9 -> 0.1.10 -->

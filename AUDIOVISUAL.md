@@ -254,3 +254,35 @@ El build local usaba los ensamblados instalados de 0.7.30, por eso compilaba.
 Se alinea la referencia NuGet con 0.7.30, ya exigida por manifest.json.
 La API de compilación se actualiza también a MonsterTrain2.Api 4.10.22787024,
 versión mínima requerida por Trainworks 0.7.30; evita NU1605 por downgrade.
+
+
+## Corrección de entrada al ataque — 2026-10-10
+
+El usuario reportó un movimiento rápido extraño antes de atacar. Se retiran
+AttackFrame01 y AttackFrame02 de la secuencia activa: alteraban postura y
+proporciones antes de empezar a levantar el hacha. Los tres primeros fotogramas
+usan la imagen neutral estable y enlazan con AttackFrame03. Se conserva el
+resto del ataque y la duración 24/50 = 0,48 s; 18 poses de ataque activas.
+No se modifican PNG, reposo, daño, muerte ni DLL. PNG retirados de la secuencia
+conservados; JSON anterior archivado en sin-usar y previews actualizadas.
+Revisión visual en combate pendiente tras reiniciar.
+
+
+### 2026-10-10 — Ataque articulado de Incubus Butcher
+
+24 fotogramas de 512×450, 50 fps (0,48 s). Recortes de la imagen original, giros y traslaciones rígidas; brazos con longitudes constantes y manos siguiendo el mango. Cara y base de las pezuñas idénticas al original. Relleno generado únicamente bajo las piezas retiradas.
+
+Ataque instalado; reacción al daño y muerte conservan sus clips anteriores. Requiere reiniciar MT2. No verificado todavía en partida.
+
+Versiones descartadas: D:\Juegos\MT2_mod\arte\succlan\sin-usar\butcher-ataque-generado-descartado-2026-10-10_902aa4f9
+
+Script, piezas y GIF: `D:\Juegos\MT2_mod\arte\succlan\lotes\butcher-articulado-2026-10-10`.
+
+
+### 2026-10-11 — Reposo con variaciones como Vesper
+
+Reposo con dos poses completas del mismo personaje, siguiendo el método de Vesper. Cuatro mezclas intermedias (20/40/60/80 %), ciclo de 3,125 s a 8 fps. PNG RGBA de 512×450. Zona de piernas y pies desde y=360 idéntica al original. Variante generada por image_gen; conversión uniforme del lienzo, sin ajustar dimensiones independientemente por pose.
+
+Instalado en mod y copia de repositorio; sprites guardados también en en-uso. Configuración anterior y neutral archivados en `D:\Juegos\MT2_mod\arte\succlan\sin-usar\butcher-reposo-anterior-2026-10-11_fcc1a3c2`. El neutral original sigue activo en otros clips. DLL y ayudante de respiración existentes conservados. Pendiente de verificar en partida tras reiniciar.
+
+GIF y poses: `D:\Juegos\MT2_mod\arte\succlan\lotes\butcher-reposo-2026-10-11`.

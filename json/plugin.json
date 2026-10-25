@@ -104,12 +104,46 @@
         },
         {
             "id": "ShadowWarriorPermanentAttack",
-            "bonus_damage": 2
+            "bonus_damage": 2,
+            "bonus_hp": 1
         },
         {
             "id": "DemonPioneerPermanent",
             "bonus_damage": 1,
             "bonus_hp": 1
+        },
+        {
+            "id": "CurseguardStoneUpgrade",
+            "titles": {
+                "english": "Curseguard Stone",
+                "spanish": "Piedra de guardia maldita",
+                "chinese": "咒卫石",
+                "chinese_traditional": "咒衛石",
+                "french": "Pierre de garde maudite",
+                "german": "Fluchwachtstein",
+                "portuguese": "Pedra da Guarda Maldita",
+                "russian": "Камень проклятого стража",
+                "japanese": "呪護の石",
+                "korean": "저주 수호석"
+            },
+            "trigger_upgrades": [
+                "@CurseguardStoneAccursed"
+            ],
+            "filters": [
+                "ExcludeEelGorgon"
+            ],
+            "descriptions": {
+                "english": "<b>Accursed</b>: Gain [armor] [charactertrigger0.effect0.status0.power].",
+                "spanish": "<b>Maldito</b>: Obtiene [armor] [charactertrigger0.effect0.status0.power].",
+                "chinese": "<b>被咒</b>: 获得[armor] [charactertrigger0.effect0.status0.power]。",
+                "chinese_traditional": "<b>詛咒</b>: 獲得[armor] [charactertrigger0.effect0.status0.power]。",
+                "french": "<b>Maudit</b>: Gagne [armor] [charactertrigger0.effect0.status0.power].",
+                "german": "<b>Verflucht</b>: Erhält [armor] [charactertrigger0.effect0.status0.power].",
+                "portuguese": "<b>Amaldiçoado</b>: Ganha [armor] [charactertrigger0.effect0.status0.power].",
+                "russian": "<b>Проклятие</b>: Получает [armor] [charactertrigger0.effect0.status0.power].",
+                "japanese": "<b>呪い</b>: [armor] [charactertrigger0.effect0.status0.power]を得る。",
+                "korean": "<b>저주</b>: [armor] [charactertrigger0.effect0.status0.power] 획득."
+            }
         }
     ],
     "additional_tooltips": [
@@ -141,6 +175,142 @@
             },
             "style": "keyword",
             "allow_secondary_placement": true
+        }
+    ],
+    "cards": [
+        {
+            "id": "GhostObsession",
+            "names": {
+                "english": "Obsession",
+                "spanish": "Obsesión",
+                "chinese": "执念",
+                "french": "Obsession",
+                "german": "Besessenheit",
+                "portuguese": "Obsessão",
+                "russian": "Одержимость",
+                "chinese_traditional": "執念",
+                "japanese": "執着",
+                "korean": "집착"
+            },
+            "descriptions": {
+                "english": "Add [effect0.secondarypower] <b>Obsessing Spark</b> to your hand.",
+                "spanish": "Añade [effect0.secondarypower] <b>Chispa obsesiva</b> a tu mano.",
+                "chinese": "将 [effect0.secondarypower] 张<b>欲望碎片</b>加入手牌。",
+                "french": "Ajoutez [effect0.secondarypower] <b>Étincelle obsédante</b> à votre main.",
+                "german": "Füge deiner Hand [effect0.secondarypower] <b>Besessenheitsfunke</b> hinzu.",
+                "portuguese": "Adicione [effect0.secondarypower] <b>Centelha Obsessiva</b> à sua mão.",
+                "russian": "Добавляет [effect0.secondarypower] <b>Искра одержимости</b> в руку.",
+                "chinese_traditional": "將 [effect0.secondarypower] 張<b>執念火花</b>加入手牌。",
+                "japanese": "手札に<b>執着の火花</b>を[effect0.secondarypower]枚加える。",
+                "korean": "손에 <b>집착의 불꽃</b> [effect0.secondarypower]장을 추가합니다."
+            },
+            "card_art": "@ObsessingShardArt",
+            "card_type": "spell",
+            "is_an_ability": true,
+            "cost": 0,
+            "cooldown": 2,
+            "initial_cooldown": 0,
+            "targetless": true,
+            "targets_room": false,
+            "effects": [
+                "@KnightMareAbyssAddSpark"
+            ]
+        }
+    ],
+    "relics": [
+        {
+            "id": "CurseguardStone",
+            "type": "enhancer",
+            "pools": [
+                "UnitUpgradePoolCommon",
+                "SoulSavior_UnitUpgradePoolCommon",
+                "DraftUpgradePool",
+                "MalickaDraftUpgradePool"
+            ],
+            "extensions": [
+                {
+                    "enhancer": {
+                        "rarity": "common",
+                        "class": "@ClassSuccubus",
+                        "num_cards_to_show_in_upgrade_screen": 0
+                    }
+                }
+            ],
+            "names": {
+                "english": "Curseguard Stone",
+                "spanish": "Piedra de guardia maldita",
+                "chinese": "咒卫石",
+                "chinese_traditional": "咒衛石",
+                "french": "Pierre de garde maudite",
+                "german": "Fluchwachtstein",
+                "portuguese": "Pedra da Guarda Maldita",
+                "russian": "Камень проклятого стража",
+                "japanese": "呪護の石",
+                "korean": "저주 수호석"
+            },
+            "descriptions": {
+                "english": "<b>Accursed</b>: Gain [armor] 5.",
+                "spanish": "<b>Maldito</b>: Obtiene [armor] 5.",
+                "chinese": "<b>被咒</b>: 获得[armor] 5。",
+                "chinese_traditional": "<b>詛咒</b>: 獲得[armor] 5。",
+                "french": "<b>Maudit</b>: Gagne [armor] 5.",
+                "german": "<b>Verflucht</b>: Erhält [armor] 5.",
+                "portuguese": "<b>Amaldiçoado</b>: Ganha [armor] 5.",
+                "russian": "<b>Проклятие</b>: Получает [armor] 5.",
+                "japanese": "<b>呪い</b>: [armor] 5を得る。",
+                "korean": "<b>저주</b>: [armor] 5 획득."
+            },
+            "icon": "@ShadowCloakIcon",
+            "icon_small": "@ShadowCloakIconSmall",
+            "relic_effects": [
+                "@CurseguardStoneApply"
+            ]
+        }
+    ],
+    "relic_effects": [
+        {
+            "id": "CurseguardStoneApply",
+            "name": "RelicEffectCardUpgrade",
+            "param_card_type": "monster",
+            "param_upgrade": "@CurseguardStoneUpgrade"
+        }
+    ],
+    "character_triggers": [
+        {
+            "id": "CurseguardStoneAccursed",
+            "trigger": {
+                "id": "@Accursed",
+                "mod_reference": "Conductor"
+            },
+            "descriptions": {
+                "english": "Gain [armor] [effect0.status0.power].",
+                "spanish": "Obtiene [armor] [effect0.status0.power].",
+                "chinese": "获得[armor] [effect0.status0.power]。",
+                "chinese_traditional": "獲得[armor] [effect0.status0.power]。",
+                "french": "Gagne [armor] [effect0.status0.power].",
+                "german": "Erhält [armor] [effect0.status0.power].",
+                "portuguese": "Ganha [armor] [effect0.status0.power].",
+                "russian": "Получает [armor] [effect0.status0.power].",
+                "japanese": "[armor] [effect0.status0.power]を得る。",
+                "korean": "[armor] [effect0.status0.power] 획득."
+            },
+            "effects": [
+                "@CurseguardStoneArmor"
+            ]
+        }
+    ],
+    "effects": [
+        {
+            "id": "CurseguardStoneArmor",
+            "name": "CardEffectAddStatusEffect",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_status_effects": [
+                {
+                    "status": "armor",
+                    "count": 5
+                }
+            ]
         }
     ]
 }

@@ -56,32 +56,12 @@
                 "@Sub_Ghost"
             ],
             "triggers": [
-                "@GreedGhostOnSpawn",
                 "@GreedGhostAccursed"
             ],
-            "ability": "@KnightMareAbyssSpark"
+            "ability": "@GhostObsession"
         }
     ],
     "character_triggers": [
-        {
-            "id": "GreedGhostOnSpawn",
-            "trigger": "on_spawn",
-            "descriptions": {
-                "english": "Add 2 <b>Obsessing Spark</b> with [consume] to your hand.",
-                "chinese": "将 2 张带有[consume]的<b>欲望碎片</b>加入手牌。",
-                "spanish": "Añade 2 <b>Chispa obsesiva</b> con [consume] a tu mano.",
-                "french": "Ajoutez 2 <b>Étincelle obsédante</b> avec [consume] à votre main.",
-                "german": "Füge deiner Hand 2 <b>Besessenheitsfunke</b> mit [consume] hinzu.",
-                "portuguese": "Adicione 2 <b>Centelha Obsessiva</b> com [consume] à sua mão.",
-                "russian": "Добавляет в руку 2 <b>Искра одержимости</b> с [consume].",
-                "chinese_traditional": "將 2 張帶有 [consume] 的<b>執念火花</b>加入手牌。",
-                "japanese": "[consume]付きの<b>執着の火花</b>を2枚手札に加える。",
-                "korean": "[consume]가 있는 <b>집착의 불꽃</b> 2장을 손에 추가합니다."
-            },
-            "effects": [
-                "@GreedGhostAddShards"
-            ]
-        },
         {
             "id": "GreedGhostAccursed",
             "trigger": {
@@ -111,17 +91,6 @@
             "name": "CardEffectSpawnMonster",
             "target_mode": "drop_target_character",
             "param_character": "@GreedGhost"
-        },
-        {
-            "id": "GreedGhostAddShards",
-            "applied_vfx": "@SuccFXObsessionPulse",
-            "name": "CardEffectAddBattleCard",
-            "target_mode": "room",
-            "target_team": "none",
-            "param_int": 3,
-            "param_int_2": 2,
-            "param_card_pool": "@ObsessingShardPool",
-            "param_upgrade": "@ConsumeUpgrade"
         },
         {
             "id": "GreedGhostGold",

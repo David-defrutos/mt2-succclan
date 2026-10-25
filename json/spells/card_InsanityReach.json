@@ -1,4 +1,4 @@
-{
+﻿{
     "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
     "cards": [
         {
@@ -16,16 +16,16 @@
                 "korean": "광기의 손길"
             },
             "descriptions": {
-                "english": "<b>Ascend</b> enemy units on this floor and apply +[effect0.power][attack] and <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b>.",
-                "chinese": "使本层所有敌方单位上升，并施加 +[effect0.power][attack] 和 <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b>。",
-                "spanish": "<b>Asciende</b> a las unidades enemigas de este piso y les otorga +[effect0.power][attack] y <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b>.",
-                "french": "Fait <b>monter</b> les unités ennemies de cet étage et leur applique +[effect0.power][attack] et <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b>.",
-                "german": "Lässt feindliche Einheiten auf dieser Etage <b>aufsteigen</b> und verleiht ihnen +[effect0.power][attack] und <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b>.",
-                "portuguese": "Faz as unidades inimigas neste andar <b>subirem</b> e aplica +[effect0.power][attack] e <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b>.",
-                "russian": "<b>Поднимает</b> врагов на этом этаже и даёт им +[effect0.power][attack] и <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b>.",
-                "chinese_traditional": "使此樓層敵方單位<b>上升</b>，並施加 +[effect0.power][attack] 與 <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b>。",
-                "japanese": "この階の敵全員を<b>上昇</b>させ、+[effect0.power][attack]と<b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b>を付与する。",
-                "korean": "이 층의 적을 <b>상승</b>시키고 +[effect0.power][attack] 및 <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b>을 부여합니다."
+                "english": "<b>Ascend</b> non-boss enemy units on this floor and apply +[effect0.power][attack] and <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b>.",
+                "chinese": "使本层所有非首领敌方单位上升，并施加 +[effect0.power][attack] 和 <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b>。",
+                "spanish": "<b>Asciende</b> a las unidades enemigas que no sean jefes de este piso y les otorga +[effect0.power][attack] y <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b>.",
+                "french": "Fait <b>monter</b> les unités ennemies hors boss de cet étage et leur applique +[effect0.power][attack] et <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b>.",
+                "german": "Lässt feindliche Einheiten außer Bossen auf dieser Etage <b>aufsteigen</b> und verleiht ihnen +[effect0.power][attack] und <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b>.",
+                "portuguese": "Faz as unidades inimigas que não sejam chefes neste andar <b>subirem</b> e aplica +[effect0.power][attack] e <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b>.",
+                "russian": "<b>Поднимает</b> врагов, кроме боссов на этом этаже и даёт им +[effect0.power][attack] и <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b>.",
+                "chinese_traditional": "使此樓層非首領敵方單位<b>上升</b>，並施加 +[effect0.power][attack] 與 <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b>。",
+                "japanese": "この階のボス以外の敵全員を<b>上昇</b>させ、+[effect0.power][attack]と<b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b>を付与する。",
+                "korean": "이 층의 보스가 아닌 적을 <b>상승</b>시키고 +[effect0.power][attack] 및 <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b>을 부여합니다."
             },
             "card_type": "spell",
             "rarity": "rare",
@@ -54,7 +54,8 @@
             "name": "CardEffectBuffDamage",
             "target_mode": "room",
             "target_team": "heroes",
-            "param_int": 10
+            "param_int": 10,
+            "target_ignore_bosses": true
         },
         {
             "id": "InsanityReachFrantic",
@@ -66,14 +67,16 @@
                     "status": "@frantic",
                     "count": 1
                 }
-            ]
+            ],
+            "target_ignore_bosses": true
         },
         {
             "id": "InsanityReachBump",
             "name": "CardEffectBump",
             "target_mode": "room",
             "target_team": "heroes",
-            "param_int": 1
+            "param_int": 1,
+            "target_ignore_bosses": true
         }
     ],
     "sprites": [

@@ -2,7 +2,7 @@ using System.Collections;
 
 namespace mt2_succclan.Plugin
 {
-    // Port of CodePointer's MT1 CardEffectSpawnSelfPsionicBlust.
+    // Adapted from CodePointer's MT1 CardEffectSpawnSelfPsionicBlust.
     // Rebirth is a battle-local copy, not a permanent deck upgrade.
     public sealed class CardEffectKnightmareRebirth : CardEffectBase
     {
@@ -10,12 +10,26 @@ namespace mt2_succclan.Plugin
 
         public override PropDescriptions CreateEditorInspectorDescriptions() => new PropDescriptions();
 
+        internal static int GetRebirthCost(CardEffectState effect, CharacterState source)
+        {
+            int cost = effect.GetParamInt();
+            var data = effect.GetParamCardUpgradeData();
+            var card = source.GetSpawnerCard();
+            if (data == null || card == null) return cost;
+            // Each successful rebirth adds exactly one upgrade to the cloned
+            // card's battle-only modifiers. Native card cloning carries these
+            // forward; the original deck card remains untouched for next battle.
+            foreach (var upgrade in card.GetTemporaryCardStateModifiers().GetCardUpgrades())
+                if (upgrade.GetCardUpgradeDataId() == data.GetID()) cost++;
+            return cost;
+        }
+
         public override bool TestEffect(CardEffectState effect, CardEffectParams parameters, ICoreGameManagers core)
         {
             var source = parameters.selfTarget;
             var room = parameters.GetSelectedRoom(core.GetRoomManager());
             return source != null && source.IsDead && !source.IsDestroyed && source.GetMaxHP() > 0
-                && effect.GetParamInt() > 0 && source.GetStatusEffectStacks(Psionic) >= effect.GetParamInt()
+                && effect.GetParamInt() > 0 && source.GetStatusEffectStacks(Psionic) >= GetRebirthCost(effect, source)
                 && room != null && room.IsRoomEnabled();
         }
 
@@ -38,7 +52,7 @@ namespace mt2_succclan.Plugin
             index = Math.Max(index - shifted, 0);
             if (room.GetRemainingSpawnPointCount(Team.Type.Monsters) <= 0) yield break;
 
-            int cost = effect.GetParamInt();
+            int cost = GetRebirthCost(effect, source);
             source.RemoveStatusEffect(Psionic, cost, allowModification: false);
             CharacterState? reborn = null;
             // Native cloning preserves the champion's battle buffs, equipment and
@@ -63,11 +77,12 @@ namespace mt2_succclan.Plugin
             var upgrade = new CardUpgradeState();
             upgrade.Setup(effect.GetParamCardUpgradeData());
             yield return reborn.ApplyCardUpgrade(upgrade, fromSpawn: false);
-            // Remember additional Multistrike if this copy is copied again later.
+            // Remember battle-local growth and use each upgrade as a rebirth counter.
             var card = reborn.GetSpawnerCard();
             if (card != null)
                 card.GetTemporaryCardStateModifiers().AddUpgrade(upgrade);
-            Plugin.Logger.LogInfo($"Knightmare Endless: respawned at full health; spent {cost} Psionic, remaining {reborn.GetStatusEffectStacks(Psionic)}.");
+            reborn.SetHealth(reborn.GetMaxHP(), reborn.GetMaxHP());
+            Plugin.Logger.LogInfo($"Knightmare Endless: respawned at full health; spent {cost} Psionic, remaining {reborn.GetStatusEffectStacks(Psionic)}, next cost {GetRebirthCost(effect, reborn)}.");
             core.GetMonsterManager().RefreshEquipmentUI();
             core.GetMonsterManager().RefreshCharacterAbilityUI();
         }

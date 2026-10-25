@@ -1,4 +1,4 @@
-{
+﻿{
     "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
     "cards": [
         {
@@ -59,7 +59,8 @@
                     "status": "@frantic",
                     "count": 0
                 }
-            ]
+            ],
+            "target_ignore_bosses": true
         }
     ],
     "sprites": [

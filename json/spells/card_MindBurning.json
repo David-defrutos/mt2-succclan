@@ -1,4 +1,4 @@
-{
+﻿{
     "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
     "cards": [
         {
@@ -16,16 +16,16 @@
                 "korean": "정신 연소"
             },
             "descriptions": {
-                "english": "Apply <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> and [multistrike] [effect1.status0.power] to an enemy unit.",
-                "chinese": "对一个敌方单位施加 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> 和[multistrike] [effect1.status0.power]。",
-                "spanish": "Otorga <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> y [multistrike] [effect1.status0.power] a una unidad enemiga.",
-                "french": "Applique <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> et [multistrike] [effect1.status0.power] à une unité ennemie.",
-                "german": "Verleiht einer feindlichen Einheit <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> und [multistrike] [effect1.status0.power].",
-                "portuguese": "Aplica <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> e [multistrike] [effect1.status0.power] a uma unidade inimiga.",
-                "russian": "Даёт врагу <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> и [multistrike] [effect1.status0.power].",
-                "chinese_traditional": "對一個敵方單位施加 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> 與 [multistrike] [effect1.status0.power]。",
-                "japanese": "敵1体に<b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>と[multistrike] [effect1.status0.power]を付与する。",
-                "korean": "적 하나에게 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> 및 [multistrike] [effect1.status0.power]을 부여합니다."
+                "english": "Apply <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> and [multistrike] [effect1.status0.power] to a non-boss enemy unit.",
+                "chinese": "对一个非首领敌方单位施加 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> 和[multistrike] [effect1.status0.power]。",
+                "spanish": "Otorga <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> y [multistrike] [effect1.status0.power] a una unidad enemiga que no sea un jefe.",
+                "french": "Applique <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> et [multistrike] [effect1.status0.power] à une unité ennemie hors boss.",
+                "german": "Verleiht einer feindlichen Einheit außer einem Boss <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> und [multistrike] [effect1.status0.power].",
+                "portuguese": "Aplica <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> e [multistrike] [effect1.status0.power] a uma unidade inimiga que não seja um chefe.",
+                "russian": "Даёт врагу, кроме босса <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> и [multistrike] [effect1.status0.power].",
+                "chinese_traditional": "對一個非首領敵方單位施加 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> 與 [multistrike] [effect1.status0.power]。",
+                "japanese": "ボス以外の敵1体に<b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>と[multistrike] [effect1.status0.power]を付与する。",
+                "korean": "보스가 아닌 적 하나에게 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> 및 [multistrike] [effect1.status0.power]을 부여합니다."
             },
             "card_type": "spell",
             "rarity": "uncommon",
@@ -54,7 +54,8 @@
                     "status": "@frantic",
                     "count": 1
                 }
-            ]
+            ],
+            "target_ignore_bosses": true
         },
         {
             "id": "MindBurningMulti",
@@ -66,7 +67,8 @@
                     "status": "multistrike",
                     "count": 1
                 }
-            ]
+            ],
+            "target_ignore_bosses": true
         }
     ],
     "sprites": [

@@ -1,4 +1,4 @@
-{
+﻿{
     "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
     "cards": [
         {
@@ -98,18 +98,22 @@
         {
             "id": "IncubusButcherAttack",
             "applied_vfx": "@SuccFXAttackBuff",
-            "name": "CardEffectBuffDamage",
+            "name": "CardEffectAddCardUpgradeToUnits",
             "target_mode": "self",
             "target_team": "monsters",
-            "param_int": 2
+            "param_int": 2,
+            "param_upgrade": "@BattleGrowthIncubusButcherAttack",
+            "param_int_3": 0
         },
         {
             "id": "IncubusButcherHealth",
             "applied_vfx": "@SuccFXHealthBuff",
-            "name": "CardEffectBuffMaxHealth",
+            "name": "CardEffectAddCardUpgradeToUnits",
             "target_mode": "self",
             "target_team": "monsters",
-            "param_int": 1
+            "param_int": 1,
+            "param_upgrade": "@BattleGrowthIncubusButcherHealth",
+            "param_int_3": 0
         }
     ],
     "sprites": [
@@ -120,86 +124,6 @@
         {
             "id": "IncubusButcherCharacterArt",
             "path": "textures/IncubusButcherCharacterArt.png"
-        },
-        {
-            "id": "IncubusButcherV2AttackBetweenFrame01",
-            "path": "textures/IncubusButcherV2AttackBetweenFrame01.png"
-        },
-        {
-            "id": "IncubusButcherV2AttackBetweenFrame02",
-            "path": "textures/IncubusButcherV2AttackBetweenFrame02.png"
-        },
-        {
-            "id": "IncubusButcherV2AttackBetweenFrame03",
-            "path": "textures/IncubusButcherV2AttackBetweenFrame03.png"
-        },
-        {
-            "id": "IncubusButcherV2AttackBetweenFrame04",
-            "path": "textures/IncubusButcherV2AttackBetweenFrame04.png"
-        },
-        {
-            "id": "IncubusButcherV2AttackBetweenFrame05",
-            "path": "textures/IncubusButcherV2AttackBetweenFrame05.png"
-        },
-        {
-            "id": "IncubusButcherV2AttackBetweenFrame06",
-            "path": "textures/IncubusButcherV2AttackBetweenFrame06.png"
-        },
-        {
-            "id": "IncubusButcherV2AttackBetweenFrame07",
-            "path": "textures/IncubusButcherV2AttackBetweenFrame07.png"
-        },
-        {
-            "id": "IncubusButcherV2AttackBetweenFrame08",
-            "path": "textures/IncubusButcherV2AttackBetweenFrame08.png"
-        },
-        {
-            "id": "IncubusButcherV2AttackFrame01",
-            "path": "textures/IncubusButcherV2AttackFrame01.png"
-        },
-        {
-            "id": "IncubusButcherV2AttackFrame02",
-            "path": "textures/IncubusButcherV2AttackFrame02.png"
-        },
-        {
-            "id": "IncubusButcherV2AttackFrame03",
-            "path": "textures/IncubusButcherV2AttackFrame03.png"
-        },
-        {
-            "id": "IncubusButcherV2AttackFrame04",
-            "path": "textures/IncubusButcherV2AttackFrame04.png"
-        },
-        {
-            "id": "IncubusButcherV2AttackFrame05",
-            "path": "textures/IncubusButcherV2AttackFrame05.png"
-        },
-        {
-            "id": "IncubusButcherV2AttackFrame06",
-            "path": "textures/IncubusButcherV2AttackFrame06.png"
-        },
-        {
-            "id": "IncubusButcherV2AttackFrame07",
-            "path": "textures/IncubusButcherV2AttackFrame07.png"
-        },
-        {
-            "id": "IncubusButcherV2AttackFrame08",
-            "path": "textures/IncubusButcherV2AttackFrame08.png"
-        },
-        {
-            "id": "IncubusButcherV2AttackFrame09",
-            "path": "textures/IncubusButcherV2AttackFrame09.png"
-        },
-        {
-            "id": "IncubusButcherV2AttackFrame10",
-            "path": "textures/IncubusButcherV2AttackFrame10.png"
-        },
-        {
-            "id": "IncubusButcherV2AttackFrame11",
-            "path": "textures/IncubusButcherV2AttackFrame11.png"
-        },
-        {
-            "id": "IncubusButcherV2AttackFrame12",
-            "path": "textures/IncubusButcherV2AttackFrame12.png"
         },
         {
             "id": "IncubusButcherV2DeathFrame01",
@@ -284,6 +208,126 @@
         {
             "id": "IncubusButcherV2Neutral",
             "path": "textures/IncubusButcherV2Neutral.png"
+        },
+        {
+            "id": "IncubusButcherRigAttackFrame01",
+            "path": "textures/IncubusButcherRigAttackFrame01.png"
+        },
+        {
+            "id": "IncubusButcherRigAttackFrame02",
+            "path": "textures/IncubusButcherRigAttackFrame02.png"
+        },
+        {
+            "id": "IncubusButcherRigAttackFrame03",
+            "path": "textures/IncubusButcherRigAttackFrame03.png"
+        },
+        {
+            "id": "IncubusButcherRigAttackFrame04",
+            "path": "textures/IncubusButcherRigAttackFrame04.png"
+        },
+        {
+            "id": "IncubusButcherRigAttackFrame05",
+            "path": "textures/IncubusButcherRigAttackFrame05.png"
+        },
+        {
+            "id": "IncubusButcherRigAttackFrame06",
+            "path": "textures/IncubusButcherRigAttackFrame06.png"
+        },
+        {
+            "id": "IncubusButcherRigAttackFrame07",
+            "path": "textures/IncubusButcherRigAttackFrame07.png"
+        },
+        {
+            "id": "IncubusButcherRigAttackFrame08",
+            "path": "textures/IncubusButcherRigAttackFrame08.png"
+        },
+        {
+            "id": "IncubusButcherRigAttackFrame09",
+            "path": "textures/IncubusButcherRigAttackFrame09.png"
+        },
+        {
+            "id": "IncubusButcherRigAttackFrame10",
+            "path": "textures/IncubusButcherRigAttackFrame10.png"
+        },
+        {
+            "id": "IncubusButcherRigAttackFrame11",
+            "path": "textures/IncubusButcherRigAttackFrame11.png"
+        },
+        {
+            "id": "IncubusButcherRigAttackFrame12",
+            "path": "textures/IncubusButcherRigAttackFrame12.png"
+        },
+        {
+            "id": "IncubusButcherRigAttackFrame13",
+            "path": "textures/IncubusButcherRigAttackFrame13.png"
+        },
+        {
+            "id": "IncubusButcherRigAttackFrame14",
+            "path": "textures/IncubusButcherRigAttackFrame14.png"
+        },
+        {
+            "id": "IncubusButcherRigAttackFrame15",
+            "path": "textures/IncubusButcherRigAttackFrame15.png"
+        },
+        {
+            "id": "IncubusButcherRigAttackFrame16",
+            "path": "textures/IncubusButcherRigAttackFrame16.png"
+        },
+        {
+            "id": "IncubusButcherRigAttackFrame17",
+            "path": "textures/IncubusButcherRigAttackFrame17.png"
+        },
+        {
+            "id": "IncubusButcherRigAttackFrame18",
+            "path": "textures/IncubusButcherRigAttackFrame18.png"
+        },
+        {
+            "id": "IncubusButcherRigAttackFrame19",
+            "path": "textures/IncubusButcherRigAttackFrame19.png"
+        },
+        {
+            "id": "IncubusButcherRigAttackFrame20",
+            "path": "textures/IncubusButcherRigAttackFrame20.png"
+        },
+        {
+            "id": "IncubusButcherRigAttackFrame21",
+            "path": "textures/IncubusButcherRigAttackFrame21.png"
+        },
+        {
+            "id": "IncubusButcherRigAttackFrame22",
+            "path": "textures/IncubusButcherRigAttackFrame22.png"
+        },
+        {
+            "id": "IncubusButcherRigAttackFrame23",
+            "path": "textures/IncubusButcherRigAttackFrame23.png"
+        },
+        {
+            "id": "IncubusButcherRigAttackFrame24",
+            "path": "textures/IncubusButcherRigAttackFrame24.png"
+        },
+        {
+            "id": "IncubusButcherRestBlend20",
+            "path": "textures/IncubusButcherRestBlend20.png"
+        },
+        {
+            "id": "IncubusButcherRestBlend40",
+            "path": "textures/IncubusButcherRestBlend40.png"
+        },
+        {
+            "id": "IncubusButcherRestBlend60",
+            "path": "textures/IncubusButcherRestBlend60.png"
+        },
+        {
+            "id": "IncubusButcherRestBlend80",
+            "path": "textures/IncubusButcherRestBlend80.png"
+        },
+        {
+            "id": "IncubusButcherRestPose01",
+            "path": "textures/IncubusButcherRestPose01.png"
+        },
+        {
+            "id": "IncubusButcherRestPose02",
+            "path": "textures/IncubusButcherRestPose02.png"
         }
     ],
     "game_objects": [
@@ -306,38 +350,62 @@
                         {
                             "animation": "idle",
                             "frames": [
-                                "@IncubusButcherV2Neutral"
+                                "@IncubusButcherRestPose01",
+                                "@IncubusButcherRestPose01",
+                                "@IncubusButcherRestPose01",
+                                "@IncubusButcherRestPose01",
+                                "@IncubusButcherRestPose01",
+                                "@IncubusButcherRestPose01",
+                                "@IncubusButcherRestPose01",
+                                "@IncubusButcherRestPose01",
+                                "@IncubusButcherRestPose01",
+                                "@IncubusButcherRestPose01",
+                                "@IncubusButcherRestPose01",
+                                "@IncubusButcherRestPose01",
+                                "@IncubusButcherRestBlend20",
+                                "@IncubusButcherRestBlend40",
+                                "@IncubusButcherRestBlend60",
+                                "@IncubusButcherRestBlend80",
+                                "@IncubusButcherRestPose02",
+                                "@IncubusButcherRestPose02",
+                                "@IncubusButcherRestBlend80",
+                                "@IncubusButcherRestBlend60",
+                                "@IncubusButcherRestBlend40",
+                                "@IncubusButcherRestBlend20",
+                                "@IncubusButcherRestPose01",
+                                "@IncubusButcherRestPose01",
+                                "@IncubusButcherRestPose01"
                             ],
-                            "framerate": 12,
+                            "framerate": 8,
                             "loop": true
                         },
                         {
                             "animation": "attack",
                             "frames": [
-                                "@IncubusButcherV2Neutral",
-                                "@IncubusButcherV2AttackFrame01",
-                                "@IncubusButcherV2AttackFrame02",
-                                "@IncubusButcherV2AttackFrame03",
-                                "@IncubusButcherV2AttackFrame04",
-                                "@IncubusButcherV2AttackFrame05",
-                                "@IncubusButcherV2AttackFrame06",
-                                "@IncubusButcherV2AttackBetweenFrame01",
-                                "@IncubusButcherV2AttackBetweenFrame02",
-                                "@IncubusButcherV2AttackBetweenFrame03",
-                                "@IncubusButcherV2AttackBetweenFrame04",
-                                "@IncubusButcherV2AttackFrame07",
-                                "@IncubusButcherV2AttackFrame07",
-                                "@IncubusButcherV2AttackFrame08",
-                                "@IncubusButcherV2AttackFrame08",
-                                "@IncubusButcherV2AttackFrame09",
-                                "@IncubusButcherV2AttackFrame10",
-                                "@IncubusButcherV2AttackBetweenFrame05",
-                                "@IncubusButcherV2AttackBetweenFrame06",
-                                "@IncubusButcherV2AttackBetweenFrame07",
-                                "@IncubusButcherV2AttackBetweenFrame08",
-                                "@IncubusButcherV2AttackFrame11",
-                                "@IncubusButcherV2AttackFrame12",
-                                "@IncubusButcherV2Neutral"
+                                "@IncubusButcherRigAttackFrame01",
+                                "@IncubusButcherRigAttackFrame02",
+                                "@IncubusButcherRigAttackFrame03",
+                                "@IncubusButcherRigAttackFrame04",
+                                "@IncubusButcherRigAttackFrame05",
+                                "@IncubusButcherRigAttackFrame06",
+                                "@IncubusButcherRigAttackFrame07",
+                                "@IncubusButcherRigAttackFrame08",
+                                "@IncubusButcherRigAttackFrame09",
+                                "@IncubusButcherRigAttackFrame10",
+                                "@IncubusButcherRigAttackFrame11",
+                                "@IncubusButcherRigAttackFrame12",
+                                "@IncubusButcherRigAttackFrame13",
+                                "@IncubusButcherRigAttackFrame14",
+                                "@IncubusButcherRigAttackFrame15",
+                                "@IncubusButcherRigAttackFrame16",
+                                "@IncubusButcherRigAttackFrame17",
+                                "@IncubusButcherRigAttackFrame18",
+                                "@IncubusButcherRigAttackFrame19",
+                                "@IncubusButcherRigAttackFrame20",
+                                "@IncubusButcherRigAttackFrame21",
+                                "@IncubusButcherRigAttackFrame22",
+                                "@IncubusButcherRigAttackFrame23",
+                                "@IncubusButcherRigAttackFrame24"
                             ],
                             "framerate": 50,
                             "loop": false
@@ -400,6 +468,16 @@
                     }
                 }
             }
+        }
+    ],
+    "upgrades": [
+        {
+            "id": "BattleGrowthIncubusButcherAttack",
+            "bonus_damage": 2
+        },
+        {
+            "id": "BattleGrowthIncubusButcherHealth",
+            "bonus_hp": 1
         }
     ]
 }

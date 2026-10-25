@@ -1,4 +1,4 @@
-{
+﻿{
     "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
     "cards": [
         {
@@ -77,6 +77,10 @@
             ],
             "hide_icon_on_card": true,
             "icon": "@SpectralRefugeIcon"
+        },
+        {
+            "id": "BattleGrowthSpectralRefugeHealth",
+            "bonus_hp": 5
         }
     ],
     "room_modifiers": [
@@ -140,11 +144,13 @@
         {
             "id": "SpectralRefugeHealth",
             "applied_vfx": "@SuccFXHealthBuff",
-            "name": "CardEffectBuffMaxHealth",
+            "name": "CardEffectAddCardUpgradeToUnits",
             "target_mode": "room",
             "target_team": "monsters",
             "target_subtype": "@Sub_Ghost",
-            "param_int": 5
+            "param_int": 5,
+            "param_upgrade": "@BattleGrowthSpectralRefugeHealth",
+            "param_int_3": 0
         },
         {
             "id": "SpectralRefugeRegen",

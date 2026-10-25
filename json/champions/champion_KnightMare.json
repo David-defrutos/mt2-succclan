@@ -1,4 +1,4 @@
-{
+﻿{
     "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
     "cards": [
         {
@@ -181,16 +181,16 @@
             "id": "EndlessBasicTrigger",
             "trigger": "on_death",
             "descriptions": {
-                "english": "<b>Psionic Burst 2</b>: respawn with full health and gain [multistrike] 1.",
-                "chinese": "<b>灵能爆破 2</b>：以满生命值重新召唤，并获得[multistrike] 1。",
-                "spanish": "<b>Estallido psiónico 2</b>: reaparece con toda la vida y obtiene [multistrike] 1.",
-                "french": "<b>Explosion psionique 2</b> : réapparaît avec toute sa santé et gagne [multistrike] 1.",
-                "german": "<b>Psionischer Ausbruch 2</b>: Erscheint mit voller Gesundheit erneut und erhält [multistrike] 1.",
-                "portuguese": "<b>Explosão Psiônica 2</b>: reaparece com a vida cheia e ganha [multistrike] 1.",
-                "russian": "<b>Псионический всплеск 2</b>: возвращается с полным здоровьем и получает [multistrike] 1.",
-                "chinese_traditional": "<b>靈能爆發 2</b>：以滿生命值重生並獲得 [multistrike] 1。",
-                "japanese": "<b>サイオニックバースト 2</b>：最大体力で復活し、[multistrike] 1を得る。",
-                "korean": "<b>사이오닉 폭발 2</b>: 최대 체력으로 부활하고 [multistrike] 1을 얻습니다."
+                "english": "<b>Psionic Burst 2</b>: respawn with full health and gain [multistrike] 1, +1[attack] and +1[health]. Each respawn increases the Psionic cost by 1.",
+                "spanish": "<b>Estallido psiónico 2</b>: reaparece con toda la vida y obtiene [multistrike] 1, +1[attack] y +1[health]. Cada reaparición aumenta el coste de Psionic en 1.",
+                "chinese": "<b>灵能爆破 2</b>：以满生命值重生，获得[multistrike] 1、+1[attack]和+1[health]。每次重生使灵能消耗增加1。",
+                "chinese_traditional": "<b>靈能爆發 2</b>：以滿生命值重生，獲得[multistrike] 1、+1[attack]和+1[health]。每次重生使靈能消耗增加1。",
+                "french": "<b>Explosion psionique 2</b> : revient avec toute sa santé et gagne [multistrike] 1, +1[attack] et +1[health]. Chaque retour augmente le coût en Psionique de 1.",
+                "german": "<b>Psionischer Ausbruch 2</b>: Kehrt mit voller Gesundheit zurück und erhält [multistrike] 1, +1[attack] und +1[health]. Jede Wiederkehr erhöht die Psionik-Kosten um 1.",
+                "portuguese": "<b>Explosão Psiônica 2</b>: retorna com a vida cheia e ganha [multistrike] 1, +1[attack] e +1[health]. Cada retorno aumenta o custo de Psiônico em 1.",
+                "russian": "<b>Псионический всплеск 2</b>: возвращается с полным здоровьем и получает [multistrike] 1, +1[attack] и +1[health]. Каждое возвращение увеличивает расход Псионики на 1.",
+                "japanese": "<b>サイオニックバースト 2</b>：最大体力で復活し、[multistrike] 1、+1[attack]、+1[health]を得る。復活するたびにサイオニック消費が1増える。",
+                "korean": "<b>사이오닉 폭발 2</b>: 최대 체력으로 부활하고 [multistrike] 1, +1[attack], +1[health]을 얻습니다. 부활할 때마다 사이오닉 비용이 1 증가합니다."
             },
             "effects": [
                 "@EndlessBasicRebirth"
@@ -200,16 +200,16 @@
             "id": "EndlessPreTrigger",
             "trigger": "on_death",
             "descriptions": {
-                "english": "<b>Psionic Burst 3</b>: respawn with full health and gain [multistrike] 2.",
-                "chinese": "<b>灵能爆破 3</b>：以满生命值重新召唤，并获得[multistrike] 2。",
-                "spanish": "<b>Estallido psiónico 3</b>: reaparece con toda la vida y obtiene [multistrike] 2.",
-                "french": "<b>Explosion psionique 3</b> : réapparaît avec toute sa santé et gagne [multistrike] 2.",
-                "german": "<b>Psionischer Ausbruch 3</b>: Erscheint mit voller Gesundheit erneut und erhält [multistrike] 2.",
-                "portuguese": "<b>Explosão Psiônica 3</b>: reaparece com a vida cheia e ganha [multistrike] 2.",
-                "russian": "<b>Псионический всплеск 3</b>: возвращается с полным здоровьем и получает [multistrike] 2.",
-                "chinese_traditional": "<b>靈能爆發 3</b>：以滿生命值重生並獲得 [multistrike] 2。",
-                "japanese": "<b>サイオニックバースト 3</b>：最大体力で復活し、[multistrike] 2を得る。",
-                "korean": "<b>사이오닉 폭발 3</b>: 최대 체력으로 부활하고 [multistrike] 2을 얻습니다."
+                "english": "<b>Psionic Burst 2</b>: respawn with full health and gain [multistrike] 1, +2[attack] and +2[health]. Each respawn increases the Psionic cost by 1.",
+                "spanish": "<b>Estallido psiónico 2</b>: reaparece con toda la vida y obtiene [multistrike] 1, +2[attack] y +2[health]. Cada reaparición aumenta el coste de Psionic en 1.",
+                "chinese": "<b>灵能爆破 2</b>：以满生命值重生，获得[multistrike] 1、+2[attack]和+2[health]。每次重生使灵能消耗增加1。",
+                "chinese_traditional": "<b>靈能爆發 2</b>：以滿生命值重生，獲得[multistrike] 1、+2[attack]和+2[health]。每次重生使靈能消耗增加1。",
+                "french": "<b>Explosion psionique 2</b> : revient avec toute sa santé et gagne [multistrike] 1, +2[attack] et +2[health]. Chaque retour augmente le coût en Psionique de 1.",
+                "german": "<b>Psionischer Ausbruch 2</b>: Kehrt mit voller Gesundheit zurück und erhält [multistrike] 1, +2[attack] und +2[health]. Jede Wiederkehr erhöht die Psionik-Kosten um 1.",
+                "portuguese": "<b>Explosão Psiônica 2</b>: retorna com a vida cheia e ganha [multistrike] 1, +2[attack] e +2[health]. Cada retorno aumenta o custo de Psiônico em 1.",
+                "russian": "<b>Псионический всплеск 2</b>: возвращается с полным здоровьем и получает [multistrike] 1, +2[attack] и +2[health]. Каждое возвращение увеличивает расход Псионики на 1.",
+                "japanese": "<b>サイオニックバースト 2</b>：最大体力で復活し、[multistrike] 1、+2[attack]、+2[health]を得る。復活するたびにサイオニック消費が1増える。",
+                "korean": "<b>사이오닉 폭발 2</b>: 최대 체력으로 부활하고 [multistrike] 1, +2[attack], +2[health]을 얻습니다. 부활할 때마다 사이오닉 비용이 1 증가합니다."
             },
             "effects": [
                 "@EndlessPreRebirth"
@@ -219,16 +219,16 @@
             "id": "EndlessProTrigger",
             "trigger": "on_death",
             "descriptions": {
-                "english": "<b>Psionic Burst 4</b>: respawn with full health and gain [multistrike] 4.",
-                "chinese": "<b>灵能爆破 4</b>：以满生命值重新召唤，并获得[multistrike] 4。",
-                "spanish": "<b>Estallido psiónico 4</b>: reaparece con toda la vida y obtiene [multistrike] 4.",
-                "french": "<b>Explosion psionique 4</b> : réapparaît avec toute sa santé et gagne [multistrike] 4.",
-                "german": "<b>Psionischer Ausbruch 4</b>: Erscheint mit voller Gesundheit erneut und erhält [multistrike] 4.",
-                "portuguese": "<b>Explosão Psiônica 4</b>: reaparece com a vida cheia e ganha [multistrike] 4.",
-                "russian": "<b>Псионический всплеск 4</b>: возвращается с полным здоровьем и получает [multistrike] 4.",
-                "chinese_traditional": "<b>靈能爆發 4</b>：以滿生命值重生並獲得 [multistrike] 4。",
-                "japanese": "<b>サイオニックバースト 4</b>：最大体力で復活し、[multistrike] 4を得る。",
-                "korean": "<b>사이오닉 폭발 4</b>: 최대 체력으로 부활하고 [multistrike] 4을 얻습니다."
+                "english": "<b>Psionic Burst 2</b>: respawn with full health and gain [multistrike] 1, +3[attack] and +3[health]. Each respawn increases the Psionic cost by 1.",
+                "spanish": "<b>Estallido psiónico 2</b>: reaparece con toda la vida y obtiene [multistrike] 1, +3[attack] y +3[health]. Cada reaparición aumenta el coste de Psionic en 1.",
+                "chinese": "<b>灵能爆破 2</b>：以满生命值重生，获得[multistrike] 1、+3[attack]和+3[health]。每次重生使灵能消耗增加1。",
+                "chinese_traditional": "<b>靈能爆發 2</b>：以滿生命值重生，獲得[multistrike] 1、+3[attack]和+3[health]。每次重生使靈能消耗增加1。",
+                "french": "<b>Explosion psionique 2</b> : revient avec toute sa santé et gagne [multistrike] 1, +3[attack] et +3[health]. Chaque retour augmente le coût en Psionique de 1.",
+                "german": "<b>Psionischer Ausbruch 2</b>: Kehrt mit voller Gesundheit zurück und erhält [multistrike] 1, +3[attack] und +3[health]. Jede Wiederkehr erhöht die Psionik-Kosten um 1.",
+                "portuguese": "<b>Explosão Psiônica 2</b>: retorna com a vida cheia e ganha [multistrike] 1, +3[attack] e +3[health]. Cada retorno aumenta o custo de Psiônico em 1.",
+                "russian": "<b>Псионический всплеск 2</b>: возвращается с полным здоровьем и получает [multistrike] 1, +3[attack] и +3[health]. Каждое возвращение увеличивает расход Псионики на 1.",
+                "japanese": "<b>サイオニックバースト 2</b>：最大体力で復活し、[multistrike] 1、+3[attack]、+3[health]を得る。復活するたびにサイオニック消費が1増える。",
+                "korean": "<b>사이오닉 폭발 2</b>: 최대 체력으로 부활하고 [multistrike] 1, +3[attack], +3[health]을 얻습니다. 부활할 때마다 사이오닉 비용이 1 증가합니다."
             },
             "effects": [
                 "@EndlessProRebirth"
@@ -330,21 +330,25 @@
         {
             "id": "AbyssBasicAttack",
             "applied_vfx": "@SuccFXAttackBuff",
-            "name": "CardEffectBuffDamage",
+            "name": "CardEffectAddCardUpgradeToUnits",
             "target_mode": "room",
             "target_team": "monsters",
             "param_int": 1,
             "additional_tooltips": [
                 "@PsionicBurstTooltip"
-            ]
+            ],
+            "param_upgrade": "@BattleGrowthAbyssBasicAttack",
+            "param_int_3": 0
         },
         {
             "id": "AbyssBasicHealth",
             "applied_vfx": "@SuccFXHealthBuff",
-            "name": "CardEffectBuffMaxHealth",
+            "name": "CardEffectAddCardUpgradeToUnits",
             "target_mode": "room",
             "target_team": "monsters",
-            "param_int": 1
+            "param_int": 1,
+            "param_upgrade": "@BattleGrowthAbyssBasicHealth",
+            "param_int_3": 0
         },
         {
             "id": "AbyssBasicCheck",
@@ -360,7 +364,7 @@
             "param_status_effects": [
                 {
                     "status": "@psionic",
-                    "count": 1
+                    "count": 2
                 }
             ]
         },
@@ -373,7 +377,7 @@
             "param_status_effects": [
                 {
                     "status": "@psionic",
-                    "count": 1
+                    "count": 2
                 }
             ]
         },
@@ -394,21 +398,25 @@
         {
             "id": "AbyssPreAttack",
             "applied_vfx": "@SuccFXAttackBuff",
-            "name": "CardEffectBuffDamage",
+            "name": "CardEffectAddCardUpgradeToUnits",
             "target_mode": "room",
             "target_team": "monsters",
             "param_int": 2,
             "additional_tooltips": [
                 "@PsionicBurstTooltip"
-            ]
+            ],
+            "param_upgrade": "@BattleGrowthAbyssPreAttack",
+            "param_int_3": 0
         },
         {
             "id": "AbyssPreHealth",
             "applied_vfx": "@SuccFXHealthBuff",
-            "name": "CardEffectBuffMaxHealth",
+            "name": "CardEffectAddCardUpgradeToUnits",
             "target_mode": "room",
             "target_team": "monsters",
-            "param_int": 2
+            "param_int": 2,
+            "param_upgrade": "@BattleGrowthAbyssPreHealth",
+            "param_int_3": 0
         },
         {
             "id": "AbyssPreCheck",
@@ -424,7 +432,7 @@
             "param_status_effects": [
                 {
                     "status": "@psionic",
-                    "count": 1
+                    "count": 2
                 }
             ]
         },
@@ -437,7 +445,7 @@
             "param_status_effects": [
                 {
                     "status": "@psionic",
-                    "count": 1
+                    "count": 2
                 }
             ]
         },
@@ -458,21 +466,25 @@
         {
             "id": "AbyssProAttack",
             "applied_vfx": "@SuccFXAttackBuff",
-            "name": "CardEffectBuffDamage",
+            "name": "CardEffectAddCardUpgradeToUnits",
             "target_mode": "room",
             "target_team": "monsters",
             "param_int": 4,
             "additional_tooltips": [
                 "@PsionicBurstTooltip"
-            ]
+            ],
+            "param_upgrade": "@BattleGrowthAbyssProAttack",
+            "param_int_3": 0
         },
         {
             "id": "AbyssProHealth",
             "applied_vfx": "@SuccFXHealthBuff",
-            "name": "CardEffectBuffMaxHealth",
+            "name": "CardEffectAddCardUpgradeToUnits",
             "target_mode": "room",
             "target_team": "monsters",
-            "param_int": 2
+            "param_int": 2,
+            "param_upgrade": "@BattleGrowthAbyssProHealth",
+            "param_int_3": 0
         },
         {
             "id": "AbyssProCheck",
@@ -488,7 +500,7 @@
             "param_status_effects": [
                 {
                     "status": "@psionic",
-                    "count": 1
+                    "count": 2
                 }
             ]
         },
@@ -501,7 +513,7 @@
             "param_status_effects": [
                 {
                     "status": "@psionic",
-                    "count": 1
+                    "count": 2
                 }
             ]
         },
@@ -522,21 +534,25 @@
         {
             "id": "IllusionBasicAttack",
             "applied_vfx": "@SuccFXAttackBuff",
-            "name": "CardEffectBuffDamage",
+            "name": "CardEffectAddCardUpgradeToUnits",
             "target_mode": "self",
             "target_team": "monsters",
             "param_int": 1,
             "additional_tooltips": [
                 "@PsionicBurstTooltip"
-            ]
+            ],
+            "param_upgrade": "@BattleGrowthIllusionBasicAttack",
+            "param_int_3": 0
         },
         {
             "id": "IllusionBasicHealth",
             "applied_vfx": "@SuccFXHealthBuff",
-            "name": "CardEffectBuffMaxHealth",
+            "name": "CardEffectAddCardUpgradeToUnits",
             "target_mode": "self",
             "target_team": "monsters",
-            "param_int": 3
+            "param_int": 3,
+            "param_upgrade": "@BattleGrowthIllusionBasicHealth",
+            "param_int_3": 0
         },
         {
             "id": "IllusionBasicCheck",
@@ -596,21 +612,25 @@
         {
             "id": "IllusionPreAttack",
             "applied_vfx": "@SuccFXAttackBuff",
-            "name": "CardEffectBuffDamage",
+            "name": "CardEffectAddCardUpgradeToUnits",
             "target_mode": "self",
             "target_team": "monsters",
             "param_int": 2,
             "additional_tooltips": [
                 "@PsionicBurstTooltip"
-            ]
+            ],
+            "param_upgrade": "@BattleGrowthIllusionPreAttack",
+            "param_int_3": 0
         },
         {
             "id": "IllusionPreHealth",
             "applied_vfx": "@SuccFXHealthBuff",
-            "name": "CardEffectBuffMaxHealth",
+            "name": "CardEffectAddCardUpgradeToUnits",
             "target_mode": "self",
             "target_team": "monsters",
-            "param_int": 4
+            "param_int": 4,
+            "param_upgrade": "@BattleGrowthIllusionPreHealth",
+            "param_int_3": 0
         },
         {
             "id": "IllusionPreCheck",
@@ -670,21 +690,25 @@
         {
             "id": "IllusionProAttack",
             "applied_vfx": "@SuccFXAttackBuff",
-            "name": "CardEffectBuffDamage",
+            "name": "CardEffectAddCardUpgradeToUnits",
             "target_mode": "self",
             "target_team": "monsters",
             "param_int": 3,
             "additional_tooltips": [
                 "@PsionicBurstTooltip"
-            ]
+            ],
+            "param_upgrade": "@BattleGrowthIllusionProAttack",
+            "param_int_3": 0
         },
         {
             "id": "IllusionProHealth",
             "applied_vfx": "@SuccFXHealthBuff",
-            "name": "CardEffectBuffMaxHealth",
+            "name": "CardEffectAddCardUpgradeToUnits",
             "target_mode": "self",
             "target_team": "monsters",
-            "param_int": 5
+            "param_int": 5,
+            "param_upgrade": "@BattleGrowthIllusionProHealth",
+            "param_int_3": 0
         },
         {
             "id": "IllusionProCheck",
@@ -787,7 +811,7 @@
             "name": "@CardEffectKnightmareRebirth",
             "target_mode": "self",
             "target_team": "monsters",
-            "param_int": 3,
+            "param_int": 2,
             "param_upgrade": "@EndlessPreMultiUpgrade",
             "additional_tooltips": [
                 "@PsionicBurstTooltip"
@@ -799,7 +823,7 @@
             "name": "@CardEffectKnightmareRebirth",
             "target_mode": "self",
             "target_team": "monsters",
-            "param_int": 4,
+            "param_int": 2,
             "param_upgrade": "@EndlessProMultiUpgrade",
             "additional_tooltips": [
                 "@PsionicBurstTooltip"
@@ -1006,25 +1030,79 @@
                     "status": "multistrike",
                     "count": 1
                 }
-            ]
+            ],
+            "bonus_damage": 1,
+            "bonus_hp": 1
         },
         {
             "id": "EndlessPreMultiUpgrade",
             "status_effect_upgrades": [
                 {
                     "status": "multistrike",
-                    "count": 2
+                    "count": 1
                 }
-            ]
+            ],
+            "bonus_damage": 2,
+            "bonus_hp": 2
         },
         {
             "id": "EndlessProMultiUpgrade",
             "status_effect_upgrades": [
                 {
                     "status": "multistrike",
-                    "count": 4
+                    "count": 1
                 }
-            ]
+            ],
+            "bonus_damage": 3,
+            "bonus_hp": 3
+        },
+        {
+            "id": "BattleGrowthAbyssBasicAttack",
+            "bonus_damage": 1
+        },
+        {
+            "id": "BattleGrowthAbyssBasicHealth",
+            "bonus_hp": 1
+        },
+        {
+            "id": "BattleGrowthAbyssPreAttack",
+            "bonus_damage": 2
+        },
+        {
+            "id": "BattleGrowthAbyssPreHealth",
+            "bonus_hp": 2
+        },
+        {
+            "id": "BattleGrowthAbyssProAttack",
+            "bonus_damage": 4
+        },
+        {
+            "id": "BattleGrowthAbyssProHealth",
+            "bonus_hp": 2
+        },
+        {
+            "id": "BattleGrowthIllusionBasicAttack",
+            "bonus_damage": 1
+        },
+        {
+            "id": "BattleGrowthIllusionBasicHealth",
+            "bonus_hp": 3
+        },
+        {
+            "id": "BattleGrowthIllusionPreAttack",
+            "bonus_damage": 2
+        },
+        {
+            "id": "BattleGrowthIllusionPreHealth",
+            "bonus_hp": 4
+        },
+        {
+            "id": "BattleGrowthIllusionProAttack",
+            "bonus_damage": 3
+        },
+        {
+            "id": "BattleGrowthIllusionProHealth",
+            "bonus_hp": 5
         }
     ],
     "sprites": [

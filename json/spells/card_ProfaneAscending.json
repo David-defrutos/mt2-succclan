@@ -1,4 +1,4 @@
-{
+﻿{
     "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
     "cards": [
         {
@@ -16,16 +16,16 @@
                 "korean": "불경한 상승"
             },
             "descriptions": {
-                "english": "<b>Ascend</b> an enemy unit. Apply <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b> and heal it for [effect2.power][health].",
-                "chinese": "使一个敌方单位<b>上升</b>一层，施加 <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b>，并为其恢复 [effect2.power] 点[health]。",
-                "spanish": "<b>Asciende</b> una unidad enemiga. Le otorga <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b> y le cura [effect2.power][health].",
-                "french": "Fait <b>monter</b> une unité ennemie. Lui applique <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b> et lui restaure [effect2.power][health].",
-                "german": "Lässt eine feindliche Einheit <b>aufsteigen</b>. Verleiht ihr <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b> und heilt sie um [effect2.power][health].",
-                "portuguese": "Faz uma unidade inimiga <b>subir</b>. Aplica <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b> e cura [effect2.power][health].",
-                "russian": "<b>Поднимает</b> врага. Даёт ему <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b> и исцеляет на [effect2.power][health].",
-                "chinese_traditional": "使一個敵方單位<b>上升</b>。施加 <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b> 並治療 [effect2.power][health]。",
-                "japanese": "敵1体を<b>上昇</b>させる。<b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b>を付与し[effect2.power][health]回復する。",
-                "korean": "적 하나를 <b>상승</b>시킵니다. <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b>을 부여하고 [effect2.power][health]만큼 회복시킵니다."
+                "english": "<b>Ascend</b> an enemy unit. Apply <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b> and heal it for [effect2.power][health]. Cannot target bosses.",
+                "chinese": "使一个敌方单位<b>上升</b>一层，施加 <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b>，并为其恢复 [effect2.power] 点[health]。 无法选择首领。",
+                "spanish": "<b>Asciende</b> una unidad enemiga. Le otorga <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b> y le cura [effect2.power][health]. No puede seleccionar jefes.",
+                "french": "Fait <b>monter</b> une unité ennemie. Lui applique <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b> et lui restaure [effect2.power][health]. Ne peut pas cibler les boss.",
+                "german": "Lässt eine feindliche Einheit <b>aufsteigen</b>. Verleiht ihr <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b> und heilt sie um [effect2.power][health]. Bosse können nicht als Ziel gewählt werden.",
+                "portuguese": "Faz uma unidade inimiga <b>subir</b>. Aplica <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b> e cura [effect2.power][health]. Não pode selecionar chefes.",
+                "russian": "<b>Поднимает</b> врага. Даёт ему <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b> и исцеляет на [effect2.power][health]. Нельзя выбирать боссов целью.",
+                "chinese_traditional": "使一個敵方單位<b>上升</b>。施加 <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b> 並治療 [effect2.power][health]。 無法選擇首領。",
+                "japanese": "敵1体を<b>上昇</b>させる。<b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b>を付与し[effect2.power][health]回復する。 ボスは対象にできない。",
+                "korean": "적 하나를 <b>상승</b>시킵니다. <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b>을 부여하고 [effect2.power][health]만큼 회복시킵니다. 보스는 대상으로 지정할 수 없습니다."
             },
             "card_type": "spell",
             "rarity": "common",
@@ -51,7 +51,8 @@
             "name": "CardEffectBump",
             "target_mode": "drop_target_character",
             "target_team": "heroes",
-            "param_int": 1
+            "param_int": 1,
+            "target_ignore_bosses": true
         },
         {
             "id": "PAFrantic",
@@ -63,7 +64,8 @@
                     "status": "@frantic",
                     "count": 1
                 }
-            ]
+            ],
+            "target_ignore_bosses": true
         },
         {
             "id": "PAHeal",
@@ -71,7 +73,8 @@
             "name": "CardEffectHeal",
             "target_mode": "last_targeted_characters",
             "target_team": "heroes",
-            "param_int": 100
+            "param_int": 100,
+            "target_ignore_bosses": true
         }
     ],
     "sprites": [

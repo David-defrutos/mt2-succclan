@@ -1,4 +1,4 @@
-{
+﻿{
     "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
     "cards": [
         {
@@ -116,16 +116,16 @@
             "id": "PlagueBasicPreCombat",
             "trigger": "pre_combat",
             "descriptions": {
-                "english": "Add 1 <b>Obsessing Spark</b> with [consume] to your hand. +[effect1.power][ember].",
-                "chinese": "将 1 张带有[consume]的<b>欲望碎片</b>加入手牌。+[effect1.power][ember]。",
-                "spanish": "Añade 1 <b>Chispa obsesiva</b> con [consume] a tu mano. +[effect1.power][ember].",
-                "french": "Ajoutez 1 <b>Étincelle obsédante</b> avec [consume] à votre main. +[effect1.power][ember].",
-                "german": "Füge deiner Hand 1 <b>Besessenheitsfunke</b> mit [consume] hinzu. +[effect1.power][ember].",
-                "portuguese": "Adicione 1 <b>Centelha Obsessiva</b> com [consume] à sua mão. +[effect1.power][ember].",
-                "russian": "Добавляет в руку 1 <b>Искра одержимости</b> с [consume]. +[effect1.power][ember].",
-                "chinese_traditional": "將 1 張帶有 [consume] 的<b>執念火花</b>加入手牌。+[effect1.power][ember]。",
-                "japanese": "[consume]付きの<b>執着の火花</b>を1枚手札に加える。+[effect1.power][ember]。",
-                "korean": "[consume]가 있는 <b>집착의 불꽃</b> 1장을 손에 추가합니다. +[effect1.power][ember]."
+                "english": "Add 1 <b>Obsessing Spark</b> to your hand. +[effect1.power][ember].",
+                "chinese": "将 1 张<b>欲望碎片</b>加入手牌。+[effect1.power][ember]。",
+                "spanish": "Añade 1 <b>Chispa obsesiva</b> a tu mano. +[effect1.power][ember].",
+                "french": "Ajoutez 1 <b>Étincelle obsédante</b> à votre main. +[effect1.power][ember].",
+                "german": "Füge deiner Hand 1 <b>Besessenheitsfunke</b> hinzu. +[effect1.power][ember].",
+                "portuguese": "Adicione 1 <b>Centelha Obsessiva</b> à sua mão. +[effect1.power][ember].",
+                "russian": "Добавляет в руку 1 <b>Искра одержимости</b>. +[effect1.power][ember].",
+                "chinese_traditional": "將 1 張<b>執念火花</b>加入手牌。+[effect1.power][ember]。",
+                "japanese": "<b>執着の火花</b>を1枚手札に加える。+[effect1.power][ember]。",
+                "korean": "<b>집착의 불꽃</b> 1장을 손에 추가합니다. +[effect1.power][ember]."
             },
             "effects": [
                 "@PlagueBasicAddShard",
@@ -159,16 +159,16 @@
             "id": "PlaguePrePreCombat",
             "trigger": "pre_combat",
             "descriptions": {
-                "english": "Add 1 <b>Obsessing Spark</b> with [consume] to your hand. +[effect1.power][ember].",
-                "chinese": "将 1 张带有[consume]的<b>欲望碎片</b>加入手牌。+[effect1.power][ember]。",
-                "spanish": "Añade 1 <b>Chispa obsesiva</b> con [consume] a tu mano. +[effect1.power][ember].",
-                "french": "Ajoutez 1 <b>Étincelle obsédante</b> avec [consume] à votre main. +[effect1.power][ember].",
-                "german": "Füge deiner Hand 1 <b>Besessenheitsfunke</b> mit [consume] hinzu. +[effect1.power][ember].",
-                "portuguese": "Adicione 1 <b>Centelha Obsessiva</b> com [consume] à sua mão. +[effect1.power][ember].",
-                "russian": "Добавляет в руку 1 <b>Искра одержимости</b> с [consume]. +[effect1.power][ember].",
-                "chinese_traditional": "將 1 張帶有 [consume] 的<b>執念火花</b>加入手牌。+[effect1.power][ember]。",
-                "japanese": "[consume]付きの<b>執着の火花</b>を1枚手札に加える。+[effect1.power][ember]。",
-                "korean": "[consume]가 있는 <b>집착의 불꽃</b> 1장을 손에 추가합니다. +[effect1.power][ember]."
+                "english": "Add 1 <b>Obsessing Spark</b> to your hand. +[effect1.power][ember].",
+                "chinese": "将 1 张<b>欲望碎片</b>加入手牌。+[effect1.power][ember]。",
+                "spanish": "Añade 1 <b>Chispa obsesiva</b> a tu mano. +[effect1.power][ember].",
+                "french": "Ajoutez 1 <b>Étincelle obsédante</b> à votre main. +[effect1.power][ember].",
+                "german": "Füge deiner Hand 1 <b>Besessenheitsfunke</b> hinzu. +[effect1.power][ember].",
+                "portuguese": "Adicione 1 <b>Centelha Obsessiva</b> à sua mão. +[effect1.power][ember].",
+                "russian": "Добавляет в руку 1 <b>Искра одержимости</b>. +[effect1.power][ember].",
+                "chinese_traditional": "將 1 張<b>執念火花</b>加入手牌。+[effect1.power][ember]。",
+                "japanese": "<b>執着の火花</b>を1枚手札に加える。+[effect1.power][ember]。",
+                "korean": "<b>집착의 불꽃</b> 1장을 손에 추가합니다. +[effect1.power][ember]."
             },
             "effects": [
                 "@PlaguePreAddShard",
@@ -202,16 +202,16 @@
             "id": "PlagueProPreCombat",
             "trigger": "pre_combat",
             "descriptions": {
-                "english": "Add 1 <b>Obsessing Spark</b> with [consume] to your hand. +[effect1.power][ember].",
-                "chinese": "将 1 张带有[consume]的<b>欲望碎片</b>加入手牌。+[effect1.power][ember]。",
-                "spanish": "Añade 1 <b>Chispa obsesiva</b> con [consume] a tu mano. +[effect1.power][ember].",
-                "french": "Ajoutez 1 <b>Étincelle obsédante</b> avec [consume] à votre main. +[effect1.power][ember].",
-                "german": "Füge deiner Hand 1 <b>Besessenheitsfunke</b> mit [consume] hinzu. +[effect1.power][ember].",
-                "portuguese": "Adicione 1 <b>Centelha Obsessiva</b> com [consume] à sua mão. +[effect1.power][ember].",
-                "russian": "Добавляет в руку 1 <b>Искра одержимости</b> с [consume]. +[effect1.power][ember].",
-                "chinese_traditional": "將 1 張帶有 [consume] 的<b>執念火花</b>加入手牌。+[effect1.power][ember]。",
-                "japanese": "[consume]付きの<b>執着の火花</b>を1枚手札に加える。+[effect1.power][ember]。",
-                "korean": "[consume]가 있는 <b>집착의 불꽃</b> 1장을 손에 추가합니다. +[effect1.power][ember]."
+                "english": "Add 1 <b>Obsessing Spark</b> to your hand. +[effect1.power][ember].",
+                "chinese": "将 1 张<b>欲望碎片</b>加入手牌。+[effect1.power][ember]。",
+                "spanish": "Añade 1 <b>Chispa obsesiva</b> a tu mano. +[effect1.power][ember].",
+                "french": "Ajoutez 1 <b>Étincelle obsédante</b> à votre main. +[effect1.power][ember].",
+                "german": "Füge deiner Hand 1 <b>Besessenheitsfunke</b> hinzu. +[effect1.power][ember].",
+                "portuguese": "Adicione 1 <b>Centelha Obsessiva</b> à sua mão. +[effect1.power][ember].",
+                "russian": "Добавляет в руку 1 <b>Искра одержимости</b>. +[effect1.power][ember].",
+                "chinese_traditional": "將 1 張<b>執念火花</b>加入手牌。+[effect1.power][ember]。",
+                "japanese": "<b>執着の火花</b>を1枚手札に加える。+[effect1.power][ember]。",
+                "korean": "<b>집착의 불꽃</b> 1장을 손에 추가합니다. +[effect1.power][ember]."
             },
             "effects": [
                 "@PlagueProAddShard",
@@ -245,16 +245,16 @@
             "id": "ProfanityBasicTrigger",
             "trigger": "on_attacking",
             "descriptions": {
-                "english": "Apply <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> and +[effect1.power][attack] to enemy units on this floor.",
-                "chinese": "对本层所有敌方单位施加 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> 和 +[effect1.power][attack]。",
-                "spanish": "Otorga <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> y +[effect1.power][attack] a las unidades enemigas de este piso.",
-                "french": "Applique <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> et +[effect1.power][attack] aux unités ennemies de cet étage.",
-                "german": "Verleiht feindlichen Einheiten auf dieser Etage <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> und +[effect1.power][attack].",
-                "portuguese": "Aplica <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> e +[effect1.power][attack] às unidades inimigas neste andar.",
-                "russian": "Даёт врагам на этом этаже <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> и +[effect1.power][attack].",
-                "chinese_traditional": "此樓層的敵方單位獲得 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> 與 +[effect1.power][attack]。",
-                "japanese": "この階の敵全員に<b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>と+[effect1.power][attack]を付与する。",
-                "korean": "이 층의 적에게 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> 및 +[effect1.power][attack]을 부여합니다."
+                "english": "Apply <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> and +[effect1.power][attack] to non-boss enemy units on this floor.",
+                "chinese": "对本层所有非首领敌方单位施加 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> 和 +[effect1.power][attack]。",
+                "spanish": "Otorga <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> y +[effect1.power][attack] a las unidades enemigas que no sean jefes de este piso.",
+                "french": "Applique <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> et +[effect1.power][attack] aux unités ennemies hors boss de cet étage.",
+                "german": "Verleiht feindlichen Einheiten außer Bossen auf dieser Etage <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> und +[effect1.power][attack].",
+                "portuguese": "Aplica <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> e +[effect1.power][attack] às unidades inimigas que não sejam chefes neste andar.",
+                "russian": "Даёт врагам, кроме боссов на этом этаже <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> и +[effect1.power][attack].",
+                "chinese_traditional": "此樓層的非首領敵方單位獲得 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> 與 +[effect1.power][attack]。",
+                "japanese": "この階のボス以外の敵全員に<b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>と+[effect1.power][attack]を付与する。",
+                "korean": "이 층의 보스가 아닌 적에게 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> 및 +[effect1.power][attack]을 부여합니다."
             },
             "effects": [
                 "@ProfanityBasicFrantic",
@@ -265,16 +265,16 @@
             "id": "ProfanityPreTrigger",
             "trigger": "on_attacking",
             "descriptions": {
-                "english": "Apply <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> and +[effect1.power][attack] to enemy units on this floor.",
-                "chinese": "对本层所有敌方单位施加 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> 和 +[effect1.power][attack]。",
-                "spanish": "Otorga <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> y +[effect1.power][attack] a las unidades enemigas de este piso.",
-                "french": "Applique <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> et +[effect1.power][attack] aux unités ennemies de cet étage.",
-                "german": "Verleiht feindlichen Einheiten auf dieser Etage <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> und +[effect1.power][attack].",
-                "portuguese": "Aplica <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> e +[effect1.power][attack] às unidades inimigas neste andar.",
-                "russian": "Даёт врагам на этом этаже <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> и +[effect1.power][attack].",
-                "chinese_traditional": "此樓層的敵方單位獲得 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> 與 +[effect1.power][attack]。",
-                "japanese": "この階の敵全員に<b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>と+[effect1.power][attack]を付与する。",
-                "korean": "이 층의 적에게 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> 및 +[effect1.power][attack]을 부여합니다."
+                "english": "Apply <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> and +[effect1.power][attack] to non-boss enemy units on this floor.",
+                "chinese": "对本层所有非首领敌方单位施加 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> 和 +[effect1.power][attack]。",
+                "spanish": "Otorga <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> y +[effect1.power][attack] a las unidades enemigas que no sean jefes de este piso.",
+                "french": "Applique <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> et +[effect1.power][attack] aux unités ennemies hors boss de cet étage.",
+                "german": "Verleiht feindlichen Einheiten außer Bossen auf dieser Etage <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> und +[effect1.power][attack].",
+                "portuguese": "Aplica <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> e +[effect1.power][attack] às unidades inimigas que não sejam chefes neste andar.",
+                "russian": "Даёт врагам, кроме боссов на этом этаже <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> и +[effect1.power][attack].",
+                "chinese_traditional": "此樓層的非首領敵方單位獲得 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> 與 +[effect1.power][attack]。",
+                "japanese": "この階のボス以外の敵全員に<b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>と+[effect1.power][attack]を付与する。",
+                "korean": "이 층의 보스가 아닌 적에게 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> 및 +[effect1.power][attack]을 부여합니다."
             },
             "effects": [
                 "@ProfanityPreFrantic",
@@ -285,16 +285,16 @@
             "id": "ProfanityProTrigger",
             "trigger": "on_attacking",
             "descriptions": {
-                "english": "Apply <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> and +[effect1.power][attack] to enemy units on this floor.",
-                "chinese": "对本层所有敌方单位施加 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> 和 +[effect1.power][attack]。",
-                "spanish": "Otorga <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> y +[effect1.power][attack] a las unidades enemigas de este piso.",
-                "french": "Applique <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> et +[effect1.power][attack] aux unités ennemies de cet étage.",
-                "german": "Verleiht feindlichen Einheiten auf dieser Etage <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> und +[effect1.power][attack].",
-                "portuguese": "Aplica <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> e +[effect1.power][attack] às unidades inimigas neste andar.",
-                "russian": "Даёт врагам на этом этаже <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> и +[effect1.power][attack].",
-                "chinese_traditional": "此樓層的敵方單位獲得 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> 與 +[effect1.power][attack]。",
-                "japanese": "この階の敵全員に<b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>と+[effect1.power][attack]を付与する。",
-                "korean": "이 층의 적에게 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> 및 +[effect1.power][attack]을 부여합니다."
+                "english": "Apply <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> and +[effect1.power][attack] to non-boss enemy units on this floor.",
+                "chinese": "对本层所有非首领敌方单位施加 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> 和 +[effect1.power][attack]。",
+                "spanish": "Otorga <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> y +[effect1.power][attack] a las unidades enemigas que no sean jefes de este piso.",
+                "french": "Applique <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> et +[effect1.power][attack] aux unités ennemies hors boss de cet étage.",
+                "german": "Verleiht feindlichen Einheiten außer Bossen auf dieser Etage <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> und +[effect1.power][attack].",
+                "portuguese": "Aplica <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> e +[effect1.power][attack] às unidades inimigas que não sejam chefes neste andar.",
+                "russian": "Даёт врагам, кроме боссов на этом этаже <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> и +[effect1.power][attack].",
+                "chinese_traditional": "此樓層的非首領敵方單位獲得 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> 與 +[effect1.power][attack]。",
+                "japanese": "この階のボス以外の敵全員に<b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>と+[effect1.power][attack]を付与する。",
+                "korean": "이 층의 보스가 아닌 적에게 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> 및 +[effect1.power][attack]을 부여합니다."
             },
             "effects": [
                 "@ProfanityProFrantic",
@@ -306,26 +306,32 @@
         {
             "id": "BloodThirstyBasicAttack",
             "applied_vfx": "@SuccFXAttackBuff",
-            "name": "CardEffectBuffDamage",
+            "name": "CardEffectAddCardUpgradeToUnits",
             "target_mode": "room",
             "target_team": "both",
-            "param_int": 10
+            "param_int": 10,
+            "param_upgrade": "@BattleGrowthBloodThirstyBasicAttack",
+            "param_int_3": 0
         },
         {
             "id": "BloodThirstyPreAttack",
             "applied_vfx": "@SuccFXAttackBuff",
-            "name": "CardEffectBuffDamage",
+            "name": "CardEffectAddCardUpgradeToUnits",
             "target_mode": "room",
             "target_team": "both",
-            "param_int": 15
+            "param_int": 15,
+            "param_upgrade": "@BattleGrowthBloodThirstyPreAttack",
+            "param_int_3": 0
         },
         {
             "id": "BloodThirstyProAttack",
             "applied_vfx": "@SuccFXAttackBuff",
-            "name": "CardEffectBuffDamage",
+            "name": "CardEffectAddCardUpgradeToUnits",
             "target_mode": "room",
             "target_team": "both",
-            "param_int": 25
+            "param_int": 25,
+            "param_upgrade": "@BattleGrowthBloodThirstyProAttack",
+            "param_int_3": 0
         },
         {
             "id": "PlagueBasicAddShard",
@@ -335,8 +341,7 @@
             "target_team": "none",
             "param_int": 3,
             "param_int_2": 1,
-            "param_card_pool": "@ObsessingShardPool",
-            "param_upgrade": "@ConsumeUpgrade"
+            "param_card_pool": "@ObsessingShardPool"
         },
         {
             "id": "PlagueBasicEmber",
@@ -348,10 +353,12 @@
         {
             "id": "PlagueBasicAttack",
             "applied_vfx": "@SuccFXAttackBuff",
-            "name": "CardEffectBuffDamage",
+            "name": "CardEffectAddCardUpgradeToUnits",
             "target_mode": "self",
             "target_team": "monsters",
-            "param_int": 3
+            "param_int": 3,
+            "param_upgrade": "@BattleGrowthPlagueBasicAttack",
+            "param_int_3": 0
         },
         {
             "id": "PlagueBasicShield",
@@ -373,8 +380,7 @@
             "target_team": "none",
             "param_int": 3,
             "param_int_2": 1,
-            "param_card_pool": "@ObsessingShardPool",
-            "param_upgrade": "@ConsumeUpgrade"
+            "param_card_pool": "@ObsessingShardPool"
         },
         {
             "id": "PlaguePreEmber",
@@ -386,10 +392,12 @@
         {
             "id": "PlaguePreAttack",
             "applied_vfx": "@SuccFXAttackBuff",
-            "name": "CardEffectBuffDamage",
+            "name": "CardEffectAddCardUpgradeToUnits",
             "target_mode": "self",
             "target_team": "monsters",
-            "param_int": 5
+            "param_int": 5,
+            "param_upgrade": "@BattleGrowthPlaguePreAttack",
+            "param_int_3": 0
         },
         {
             "id": "PlaguePreShield",
@@ -411,8 +419,7 @@
             "target_team": "none",
             "param_int": 3,
             "param_int_2": 1,
-            "param_card_pool": "@ObsessingShardPool",
-            "param_upgrade": "@ConsumeUpgrade"
+            "param_card_pool": "@ObsessingShardPool"
         },
         {
             "id": "PlagueProEmber",
@@ -424,10 +431,12 @@
         {
             "id": "PlagueProAttack",
             "applied_vfx": "@SuccFXAttackBuff",
-            "name": "CardEffectBuffDamage",
+            "name": "CardEffectAddCardUpgradeToUnits",
             "target_mode": "self",
             "target_team": "monsters",
-            "param_int": 7
+            "param_int": 7,
+            "param_upgrade": "@BattleGrowthPlagueProAttack",
+            "param_int_3": 0
         },
         {
             "id": "PlagueProShield",
@@ -451,7 +460,8 @@
                     "status": "@frantic",
                     "count": 1
                 }
-            ]
+            ],
+            "target_ignore_bosses": true
         },
         {
             "id": "ProfanityBasicAttack",
@@ -459,7 +469,8 @@
             "name": "CardEffectBuffDamage",
             "target_mode": "room",
             "target_team": "heroes",
-            "param_int": 10
+            "param_int": 10,
+            "target_ignore_bosses": true
         },
         {
             "id": "ProfanityPreFrantic",
@@ -471,7 +482,8 @@
                     "status": "@frantic",
                     "count": 1
                 }
-            ]
+            ],
+            "target_ignore_bosses": true
         },
         {
             "id": "ProfanityPreAttack",
@@ -479,7 +491,8 @@
             "name": "CardEffectBuffDamage",
             "target_mode": "room",
             "target_team": "heroes",
-            "param_int": 20
+            "param_int": 20,
+            "target_ignore_bosses": true
         },
         {
             "id": "ProfanityProFrantic",
@@ -491,7 +504,8 @@
                     "status": "@frantic",
                     "count": 1
                 }
-            ]
+            ],
+            "target_ignore_bosses": true
         },
         {
             "id": "ProfanityProAttack",
@@ -499,7 +513,8 @@
             "name": "CardEffectBuffDamage",
             "target_mode": "room",
             "target_team": "heroes",
-            "param_int": 30
+            "param_int": 30,
+            "target_ignore_bosses": true
         },
         {
             "id": "SpawnShadowLady",
@@ -718,6 +733,30 @@
             "trigger_upgrades": [
                 "@ProfanityProTrigger"
             ]
+        },
+        {
+            "id": "BattleGrowthBloodThirstyBasicAttack",
+            "bonus_damage": 10
+        },
+        {
+            "id": "BattleGrowthBloodThirstyPreAttack",
+            "bonus_damage": 15
+        },
+        {
+            "id": "BattleGrowthBloodThirstyProAttack",
+            "bonus_damage": 25
+        },
+        {
+            "id": "BattleGrowthPlagueBasicAttack",
+            "bonus_damage": 3
+        },
+        {
+            "id": "BattleGrowthPlaguePreAttack",
+            "bonus_damage": 5
+        },
+        {
+            "id": "BattleGrowthPlagueProAttack",
+            "bonus_damage": 7
         }
     ],
     "sprites": [

@@ -1,4 +1,4 @@
-{
+﻿{
     "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
     "cards": [
         {
@@ -56,32 +56,12 @@
                 "@Sub_Ghost"
             ],
             "triggers": [
-                "@LustGhostOnSpawn",
                 "@LustGhostAccursed"
             ],
-            "ability": "@KnightMareAbyssSpark"
+            "ability": "@GhostObsession"
         }
     ],
     "character_triggers": [
-        {
-            "id": "LustGhostOnSpawn",
-            "trigger": "on_spawn",
-            "descriptions": {
-                "english": "Add [effect0.secondarypower] <b>Obsessing Spark</b> with [consume] to your hand.",
-                "chinese": "将 [effect0.secondarypower] 张带有[consume]的<b>欲望碎片</b>加入手牌。",
-                "spanish": "Añade [effect0.secondarypower] <b>Chispa obsesiva</b> con [consume] a tu mano.",
-                "french": "Ajoutez [effect0.secondarypower] <b>Étincelle obsédante</b> avec [consume] à votre main.",
-                "german": "Füge deiner Hand [effect0.secondarypower] <b>Besessenheitsfunke</b> mit [consume] hinzu.",
-                "portuguese": "Adicione [effect0.secondarypower] <b>Centelha Obsessiva</b> com [consume] à sua mão.",
-                "russian": "Добавляет в руку [effect0.secondarypower] <b>Искра одержимости</b> с [consume].",
-                "chinese_traditional": "將 [effect0.secondarypower] 張帶有 [consume] 的<b>執念火花</b>加入手牌。",
-                "japanese": "[consume]付きの<b>執着の火花</b>を[effect0.secondarypower]枚手札に加える。",
-                "korean": "[consume]가 있는 <b>집착의 불꽃</b> [effect0.secondarypower]장을 손에 추가합니다."
-            },
-            "effects": [
-                "@LustGhostAddShards"
-            ]
-        },
         {
             "id": "LustGhostAccursed",
             "trigger": {
@@ -113,17 +93,6 @@
             "param_character": "@LustGhost"
         },
         {
-            "id": "LustGhostAddShards",
-            "applied_vfx": "@SuccFXObsessionPulse",
-            "name": "CardEffectAddBattleCard",
-            "target_mode": "room",
-            "target_team": "none",
-            "param_int": 3,
-            "param_int_2": 2,
-            "param_card_pool": "@ObsessingShardPool",
-            "param_upgrade": "@ConsumeUpgrade"
-        },
-        {
             "id": "LustGhostFrantic",
             "name": "CardEffectAddStatusEffect",
             "target_mode": "back_in_room",
@@ -133,7 +102,8 @@
                     "status": "@frantic",
                     "count": 1
                 }
-            ]
+            ],
+            "target_ignore_bosses": true
         }
     ],
     "sprites": [

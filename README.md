@@ -1,5 +1,9 @@
 # SuccClan for Monster Train 2
 
+## Port and credits
+
+This is a port of [SuccClan for Monster Train 1 by CodePointer](https://github.com/CodePointer/SuccClan), made **with the original author's permission**. CodePointer created the original clan, characters, card concepts and art. Thank you for allowing the port. The original project is MIT licensed; attribution details are in [NOTICE.md](https://github.com/David-defrutos/mt2-succclan/blob/main/NOTICE.md) and [LICENSE](https://github.com/David-defrutos/mt2-succclan/blob/main/LICENSE).
+
 - **English:** this page starts in English. Chinese and Spanish follow below.
 - **简体中文：**中文介绍在英文部分之后，请向下滚动阅读。
 - **Español:** la versión en español está más abajo, después de la sección en chino.
@@ -13,7 +17,7 @@ This is a playable **ALPHA**. Expect bugs, rough balance and further changes.
 Found something, or think a card is absurd in either direction? Either place works:
 
 - [GitHub issues](https://github.com/David-defrutos/mt2-succclan/issues)
-- [Monster Train Discord's Mod Channel](https://discord.com/channels/336546996779483136/1377778943674810368)
+- [SuccClan channel on Monster Train Discord](https://discord.com/channels/336546996779483136/1563769828244725770)
 
 A screenshot, reproduction steps and `BepInEx/LogOutput.log` help with bug reports. Translation corrections are welcome too.
 
@@ -54,9 +58,6 @@ Choose **Knightmare** or **Shadow Lady**, then build around **Psionic**, **Accur
 
 ![Obsession Vault and Spectral Refuge — room cards](https://raw.githubusercontent.com/David-defrutos/mt2-succclan/main/media/screenshots/succlan-rooms-art.png)
 
-## Port and credits
-
-This is a port of [SuccClan for Monster Train 1 by CodePointer](https://github.com/CodePointer/SuccClan), made **with the original author's permission**. CodePointer created the original clan, characters, card concepts and art. Thank you for allowing the port. The original project is MIT licensed; attribution details are in [NOTICE.md](https://github.com/David-defrutos/mt2-succclan/blob/main/NOTICE.md) and [LICENSE](https://github.com/David-defrutos/mt2-succclan/blob/main/LICENSE).
 
 ## Main differences between MT1 and MT2
 
@@ -71,6 +72,10 @@ Requires BepInExPack, Trainworks Reloaded and Conductor. Source and issues: [mt2
 
 # SuccClan 简体中文
 
+## 移植与致谢
+
+本模组移植自 [CodePointer 为 Monster Train 1 制作的 SuccClan](https://github.com/CodePointer/SuccClan)，并已获得**原作者的许可**。原氏族、角色、卡牌概念与美术均由 CodePointer 创作。感谢原作者允许移植。原项目采用 MIT 许可证；署名详情见 [NOTICE.md](https://github.com/David-defrutos/mt2-succclan/blob/main/NOTICE.md) 与 [LICENSE](https://github.com/David-defrutos/mt2-succclan/blob/main/LICENSE)。
+
 ## ⚠ ALPHA
 
 这是可以游玩的 **ALPHA 测试版**。可能存在错误、尚未完善的平衡以及后续改动。
@@ -80,7 +85,7 @@ Requires BepInExPack, Trainworks Reloaded and Conductor. Source and issues: [mt2
 发现了问题，或者觉得某张牌过强或过弱？欢迎通过以下任一途径反馈：
 
 - [GitHub 问题页面](https://github.com/David-defrutos/mt2-succclan/issues)
-- [Monster Train Discord 的模组制作频道](https://discord.com/channels/336546996779483136/1377778943674810368)
+- [Monster Train Discord 的 SuccClan 频道](https://discord.com/channels/336546996779483136/1563769828244725770)
 
 报告错误时，截图、复现步骤和 `BepInEx/LogOutput.log` 会很有帮助。也欢迎指出翻译问题。
 
@@ -100,9 +105,6 @@ Requires BepInExPack, Trainworks Reloaded and Conductor. Source and issues: [mt2
 
 游戏截图位于上方的英文部分。
 
-## 移植与致谢
-
-本模组移植自 [CodePointer 为 Monster Train 1 制作的 SuccClan](https://github.com/CodePointer/SuccClan)，并已获得**原作者的许可**。原氏族、角色、卡牌概念与美术均由 CodePointer 创作。感谢原作者允许移植。原项目采用 MIT 许可证；署名详情见 [NOTICE.md](https://github.com/David-defrutos/mt2-succclan/blob/main/NOTICE.md) 与 [LICENSE](https://github.com/David-defrutos/mt2-succclan/blob/main/LICENSE)。
 
 ## MT1 与 MT2 版本的主要区别
 
@@ -117,6 +119,10 @@ Requires BepInExPack, Trainworks Reloaded and Conductor. Source and issues: [mt2
 
 # SuccClan para Monster Train 2
 
+## Port y créditos
+
+Es un port del [SuccClan de Monster Train 1 creado por CodePointer](https://github.com/CodePointer/SuccClan), hecho **con permiso de su autor original**. CodePointer creó el clan original, los personajes, las ideas de las cartas y su arte. Gracias por permitir el port. El proyecto original usa la licencia MIT; los detalles están en [NOTICE.md](https://github.com/David-defrutos/mt2-succclan/blob/main/NOTICE.md) y [LICENSE](https://github.com/David-defrutos/mt2-succclan/blob/main/LICENSE).
+
 ## ⚠ ALPHA
 
 Esta versión **ALPHA** se puede jugar, pero puede tener fallos y un equilibrio sin pulir.
@@ -126,7 +132,7 @@ Esta versión **ALPHA** se puede jugar, pero puede tener fallos y un equilibrio 
 ¿Has encontrado un fallo o crees que una carta es demasiado fuerte o demasiado débil? Puedes comentarlo en cualquiera de estos sitios:
 
 - [Incidencias de GitHub](https://github.com/David-defrutos/mt2-succclan/issues)
-- [Canal de modding del Discord de Monster Train](https://discord.com/channels/336546996779483136/1377778943674810368)
+- [Canal de SuccClan en el Discord de Monster Train](https://discord.com/channels/336546996779483136/1563769828244725770)
 
 Para comunicar un error ayudan una captura, los pasos para reproducirlo y `BepInEx/LogOutput.log`. También se agradecen correcciones de traducción.
 
@@ -145,9 +151,6 @@ Elige **Knightmare** o **Shadow Lady** y construye tu mazo alrededor de **Psioni
 - **Frantic:** las unidades afectadas atacan a su aliado delantero. Los jefes son inmunes.
 - **Salas y equipos:** incluye Spectral Refuge, Obsession Vault, Whispering Blade y Mourning Veil.
 
-## Port y créditos
-
-Es un port del [SuccClan de Monster Train 1 creado por CodePointer](https://github.com/CodePointer/SuccClan), hecho **con permiso de su autor original**. CodePointer creó el clan original, los personajes, las ideas de las cartas y su arte. Gracias por permitir el port. El proyecto original usa la licencia MIT; los detalles están en [NOTICE.md](https://github.com/David-defrutos/mt2-succclan/blob/main/NOTICE.md) y [LICENSE](https://github.com/David-defrutos/mt2-succclan/blob/main/LICENSE).
 
 ## Cambios principales respecto a MT1
 
@@ -157,3 +160,4 @@ Es un port del [SuccClan de Monster Train 1 creado por CodePointer](https://gith
 - He adaptado otras cartas y efectos cuando las mecánicas o los objetivos de MT1 no tenían equivalencia directa en MT2. Si alguna interacción parece errónea, indícamela.
 
 Requiere BepInExPack, Trainworks Reloaded y Conductor. Código e incidencias: [mt2-succclan](https://github.com/David-defrutos/mt2-succclan).
+<!-- 2026-10-25-1839||codex-succclan-targetless||README.md||Sustituir enlaces generales por canal dedicado SuccClan en EN/ZH-CN/ES; conservar créditos CodePointer -->

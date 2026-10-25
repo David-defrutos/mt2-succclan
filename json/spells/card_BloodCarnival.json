@@ -1,4 +1,4 @@
-{
+﻿{
     "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
     "cards": [
         {
@@ -46,10 +46,12 @@
         {
             "id": "BloodCarnivalBuff",
             "applied_vfx": "@SuccFXAttackBuff",
-            "name": "CardEffectBuffDamage",
+            "name": "CardEffectAddCardUpgradeToUnits",
             "target_mode": "room",
             "target_team": "both",
-            "param_int": 10
+            "param_int": 10,
+            "param_upgrade": "@BattleGrowthBloodCarnivalBuff",
+            "param_int_3": 0
         }
     ],
     "sprites": [
@@ -67,6 +69,12 @@
                     "sprite": "@BloodCarnivalArt"
                 }
             }
+        }
+    ],
+    "upgrades": [
+        {
+            "id": "BattleGrowthBloodCarnivalBuff",
+            "bonus_damage": 10
         }
     ]
 }

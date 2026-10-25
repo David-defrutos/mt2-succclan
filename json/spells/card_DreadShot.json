@@ -1,4 +1,4 @@
-{
+﻿{
     "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
     "cards": [
         {
@@ -50,16 +50,16 @@
             "id": "DreadShotOnKill",
             "trigger": "on_kill",
             "descriptions": {
-                "english": "Apply <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> to enemy units.",
-                "chinese": "对所有敌方单位施加 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>。",
-                "spanish": "Otorga <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> a las unidades enemigas.",
-                "french": "Applique <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> aux unités ennemies.",
-                "german": "Verleiht feindlichen Einheiten <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>.",
-                "portuguese": "Aplica <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> às unidades inimigas.",
-                "russian": "Даёт врагам <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>.",
-                "chinese_traditional": "對敵方單位施加 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>。",
-                "japanese": "敵全員に<b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>を付与する。",
-                "korean": "적에게 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>을 부여합니다."
+                "english": "Apply <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> to non-boss enemy units.",
+                "chinese": "对所有非首领敌方单位施加 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>。",
+                "spanish": "Otorga <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> a las unidades enemigas que no sean jefes.",
+                "french": "Applique <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> aux unités ennemies hors boss.",
+                "german": "Verleiht feindlichen Einheiten außer Bossen <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>.",
+                "portuguese": "Aplica <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> às unidades inimigas que não sejam chefes.",
+                "russian": "Даёт врагам, кроме боссов <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>.",
+                "chinese_traditional": "對非首領敵方單位施加 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>。",
+                "japanese": "ボス以外の敵全員に<b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>を付与する。",
+                "korean": "보스가 아닌 적에게 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>을 부여합니다."
             },
             "effects": [
                 "@DreadShotFrantic"
@@ -85,7 +85,8 @@
                     "status": "@frantic",
                     "count": 1
                 }
-            ]
+            ],
+            "target_ignore_bosses": true
         }
     ],
     "sprites": [

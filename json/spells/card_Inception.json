@@ -1,4 +1,4 @@
-{
+﻿{
     "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
     "cards": [
         {
@@ -60,18 +60,22 @@
         {
             "id": "InceptionAttack",
             "applied_vfx": "@SuccFXAttackBuff",
-            "name": "CardEffectBuffDamage",
+            "name": "CardEffectAddCardUpgradeToUnits",
             "target_mode": "last_targeted_characters",
             "target_team": "monsters",
-            "param_int": 2
+            "param_int": 2,
+            "param_upgrade": "@BattleGrowthInceptionAttack",
+            "param_int_3": 0
         },
         {
             "id": "InceptionHealth",
             "applied_vfx": "@SuccFXHealthBuff",
-            "name": "CardEffectBuffMaxHealth",
+            "name": "CardEffectAddCardUpgradeToUnits",
             "target_mode": "last_targeted_characters",
             "target_team": "monsters",
-            "param_int": 2
+            "param_int": 2,
+            "param_upgrade": "@BattleGrowthInceptionHealth",
+            "param_int_3": 0
         }
     ],
     "sprites": [
@@ -89,6 +93,16 @@
                     "sprite": "@InceptionArt"
                 }
             }
+        }
+    ],
+    "upgrades": [
+        {
+            "id": "BattleGrowthInceptionAttack",
+            "bonus_damage": 2
+        },
+        {
+            "id": "BattleGrowthInceptionHealth",
+            "bonus_hp": 2
         }
     ]
 }

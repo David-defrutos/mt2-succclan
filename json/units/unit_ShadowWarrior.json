@@ -1,4 +1,4 @@
-{
+﻿{
     "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
     "cards": [
         {
@@ -50,7 +50,7 @@
             "character_art": "@ShadowWarriorCharacterArt",
             "size": 2,
             "attack_damage": 5,
-            "health": 1,
+            "health": 10,
             "subtypes": [
                 "SubtypesData_BannerUnit",
                 "@Sub_Cubus"
@@ -68,16 +68,16 @@
                 "mod_reference": "Conductor"
             },
             "descriptions": {
-                "english": "+[effect0.upgrade.bonusdamage][attack] permanently.",
-                "chinese": "永久获得 +[effect0.upgrade.bonusdamage][attack]。",
-                "spanish": "+[effect0.upgrade.bonusdamage][attack] permanentemente.",
-                "french": "+[effect0.upgrade.bonusdamage][attack] de façon permanente.",
-                "german": "Dauerhaft +[effect0.upgrade.bonusdamage][attack].",
-                "portuguese": "+[effect0.upgrade.bonusdamage][attack] permanentemente.",
-                "russian": "Навсегда +[effect0.upgrade.bonusdamage][attack].",
-                "chinese_traditional": "永久 +[effect0.upgrade.bonusdamage][attack]。",
-                "japanese": "永続的に+[effect0.upgrade.bonusdamage][attack]。",
-                "korean": "영구적으로 +[effect0.upgrade.bonusdamage][attack]."
+                "english": "+[effect0.upgrade.bonusdamage][attack] / +[effect0.upgrade.bonushp][health] permanently.",
+                "chinese": "永久获得 +[effect0.upgrade.bonusdamage][attack] / +[effect0.upgrade.bonushp][health]。",
+                "spanish": "+[effect0.upgrade.bonusdamage][attack] / +[effect0.upgrade.bonushp][health] permanentemente.",
+                "french": "+[effect0.upgrade.bonusdamage][attack] / +[effect0.upgrade.bonushp][health] de façon permanente.",
+                "german": "Dauerhaft +[effect0.upgrade.bonusdamage][attack] / +[effect0.upgrade.bonushp][health].",
+                "portuguese": "+[effect0.upgrade.bonusdamage][attack] / +[effect0.upgrade.bonushp][health] permanentemente.",
+                "russian": "Навсегда +[effect0.upgrade.bonusdamage][attack] / +[effect0.upgrade.bonushp][health].",
+                "chinese_traditional": "永久 +[effect0.upgrade.bonusdamage][attack] / +[effect0.upgrade.bonushp][health]。",
+                "japanese": "永続的に+[effect0.upgrade.bonusdamage][attack] / +[effect0.upgrade.bonushp][health]。",
+                "korean": "영구적으로 +[effect0.upgrade.bonusdamage][attack] / +[effect0.upgrade.bonushp][health]."
             },
             "effects": [
                 "@ShadowWarriorBuff"

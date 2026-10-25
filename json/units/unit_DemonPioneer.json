@@ -1,4 +1,4 @@
-{
+﻿{
     "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
     "cards": [
         {
@@ -96,18 +96,22 @@
         {
             "id": "DemonPioneerAttack",
             "applied_vfx": "@SuccFXAttackBuff",
-            "name": "CardEffectBuffDamage",
+            "name": "CardEffectAddCardUpgradeToUnits",
             "target_mode": "self",
             "target_team": "monsters",
-            "param_int": 1
+            "param_int": 1,
+            "param_upgrade": "@BattleGrowthDemonPioneerAttack",
+            "param_int_3": 0
         },
         {
             "id": "DemonPioneerHealth",
             "applied_vfx": "@SuccFXHealthBuff",
-            "name": "CardEffectBuffMaxHealth",
+            "name": "CardEffectAddCardUpgradeToUnits",
             "target_mode": "self",
             "target_team": "monsters",
-            "param_int": 3
+            "param_int": 3,
+            "param_upgrade": "@BattleGrowthDemonPioneerHealth",
+            "param_int_3": 0
         },
         {
             "id": "DemonPioneerPermanentBuff",
@@ -159,6 +163,16 @@
                     }
                 }
             }
+        }
+    ],
+    "upgrades": [
+        {
+            "id": "BattleGrowthDemonPioneerAttack",
+            "bonus_damage": 1
+        },
+        {
+            "id": "BattleGrowthDemonPioneerHealth",
+            "bonus_hp": 3
         }
     ]
 }
