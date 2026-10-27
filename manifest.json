@@ -1,13 +1,13 @@
 ﻿{
-  "namespace": "frutos",
-  "name": "SuccClan",
-  "description": "ALPHA. CodePointer's SuccClan ported to Monster Train 2 with permission, redrawn artwork and adapted mechanics.",
-  "version_number": "0.1.10",
-  "dependencies": [
-    "BepInEx-BepInExPack-5.4.2100",
-    "MT2-Trainworks_Reloaded-0.7.30",
-    "Conductor-Conductor-0.5.13"
-  ],
-  "website_url": "https://github.com/David-defrutos/mt2-succclan",
-  "FullName": "frutos-SuccClan"
+    "namespace": "frutos",
+    "name": "SuccClan",
+    "description": "ALPHA. CodePointer's SuccClan ported to Monster Train 2 with permission, redrawn artwork and adapted mechanics.",
+    "version_number": "0.1.11",
+    "dependencies": [
+        "BepInEx-BepInExPack-5.4.2100",
+        "MT2-Trainworks_Reloaded-0.7.33",
+        "Conductor-Conductor-0.5.15"
+    ],
+    "website_url": "https://github.com/David-defrutos/mt2-succclan",
+    "FullName": "frutos-SuccClan"
 }

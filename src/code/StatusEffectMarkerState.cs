@@ -1,16 +1,12 @@
 namespace mt2_succclan.Plugin
 {
     /// <summary>
-    /// Estado marcador: no hace nada por si mismo, solo acumula cargas.
-    ///
-    /// Trainworks Reloaded EXIGE un class_name en cada status_effect propio, asi que un
-    /// estado "de solo tooltip" no se puede declarar unicamente en JSON. Esta clase vacia
-    /// es ese minimo: hereda de StatusEffectState y no sobreescribe nada.
-    ///
-    /// La lleva puesta psionic (contador de KnightMare) y frantic (marcador del debuff,
-    /// cuyo efecto real lo aplican dazed + witherbloom desde las cartas).
+    /// Minimal counter for Psionic and Mutated. Native StatusEffectState is
+    /// abstract, so Trainworks needs this concrete class for a passive marker.
+    /// Frantic uses its own StatusEffectFranticState and native attack routing.
     /// </summary>
     class StatusEffectMarkerState : StatusEffectState
     {
     }
 }
+// 2026-10-27-1536||codex-succclan-targetless||src/code/StatusEffectMarkerState.cs||Corregir documentación obsoleta: marcador solo para Psionic y Mutated, no Frantic

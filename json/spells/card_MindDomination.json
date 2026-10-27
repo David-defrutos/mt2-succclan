@@ -16,16 +16,16 @@
                 "korean": "정신 지배"
             },
             "descriptions": {
-                "english": "<b>Descend</b> a unit, apply <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b> and heal it for [effect2.power][health]. Cannot target bosses.",
-                "chinese": "使一个单位<b>下降</b>，施加 <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b>，并为其恢复 [effect2.power] 点[health]。 无法选择首领。",
-                "spanish": "<b>Desciende</b> una unidad, le otorga <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b> y le cura [effect2.power][health]. No puede seleccionar jefes.",
-                "french": "Fait <b>descendre</b> une unité, lui applique <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b> et lui restaure [effect2.power][health]. Ne peut pas cibler les boss.",
-                "german": "Lässt eine Einheit <b>absteigen</b>, verleiht ihr <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b> und heilt sie um [effect2.power][health]. Bosse können nicht als Ziel gewählt werden.",
-                "portuguese": "Faz uma unidade <b>descer</b>, aplica <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b> e cura [effect2.power][health]. Não pode selecionar chefes.",
-                "russian": "<b>Опускает</b> отряд, даёт ему <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b> и исцеляет на [effect2.power][health]. Нельзя выбирать боссов целью.",
-                "chinese_traditional": "使一個單位<b>下降</b>，施加 <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b> 並治療 [effect2.power][health]。 無法選擇首領。",
-                "japanese": "ユニット1体を<b>下降</b>させ、<b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b>を付与し[effect2.power][health]回復する。 ボスは対象にできない。",
-                "korean": "유닛 하나를 <b>하강</b>시키고 <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b>을 부여하며 [effect2.power][health]만큼 회복시킵니다. 보스는 대상으로 지정할 수 없습니다."
+                "english": "<b>Descend</b> a unit, apply <b>[mt2_succclan.Plugin_frantic] [effect2.status0.power]</b> and heal it for [effect3.power][health]. Cannot target bosses.",
+                "chinese": "使一个单位<b>下降</b>，施加 <b>[mt2_succclan.Plugin_frantic] [effect2.status0.power]</b>，并为其恢复 [effect3.power] 点[health]。 无法选择首领。",
+                "spanish": "<b>Desciende</b> una unidad, le otorga <b>[mt2_succclan.Plugin_frantic] [effect2.status0.power]</b> y le cura [effect3.power][health]. No puede seleccionar jefes.",
+                "french": "Fait <b>descendre</b> une unité, lui applique <b>[mt2_succclan.Plugin_frantic] [effect2.status0.power]</b> et lui restaure [effect3.power][health]. Ne peut pas cibler les boss.",
+                "german": "Lässt eine Einheit <b>absteigen</b>, verleiht ihr <b>[mt2_succclan.Plugin_frantic] [effect2.status0.power]</b> und heilt sie um [effect3.power][health]. Bosse können nicht als Ziel gewählt werden.",
+                "portuguese": "Faz uma unidade <b>descer</b>, aplica <b>[mt2_succclan.Plugin_frantic] [effect2.status0.power]</b> e cura [effect3.power][health]. Não pode selecionar chefes.",
+                "russian": "<b>Опускает</b> отряд, даёт ему <b>[mt2_succclan.Plugin_frantic] [effect2.status0.power]</b> и исцеляет на [effect3.power][health]. Нельзя выбирать боссов целью.",
+                "chinese_traditional": "使一個單位<b>下降</b>，施加 <b>[mt2_succclan.Plugin_frantic] [effect2.status0.power]</b> 並治療 [effect3.power][health]。 無法選擇首領。",
+                "japanese": "ユニット1体を<b>下降</b>させ、<b>[mt2_succclan.Plugin_frantic] [effect2.status0.power]</b>を付与し[effect3.power][health]回復する。 ボスは対象にできない。",
+                "korean": "유닛 하나를 <b>하강</b>시키고 <b>[mt2_succclan.Plugin_frantic] [effect2.status0.power]</b>을 부여하며 [effect3.power][health]만큼 회복시킵니다. 보스는 대상으로 지정할 수 없습니다."
             },
             "card_type": "spell",
             "rarity": "common",
@@ -38,6 +38,7 @@
                 "MegaPool"
             ],
             "effects": [
+                "@MindDominationValidTarget",
                 "@MindDominationBump",
                 "@MindDominationFrantic",
                 "@MindDominationHeal"
@@ -46,12 +47,22 @@
     ],
     "effects": [
         {
-            "id": "MindDominationBump",
-            "name": "CardEffectBump",
+            "id": "MindDominationValidTarget",
+            "name": "CardEffectNULL",
             "target_mode": "drop_target_character",
             "target_team": "both",
+            "target_ignore_bosses": true,
+            "should_fail_to_cast_if_test_fails": true,
+            "should_cancel_subsequent_effects_if_test_fails": true
+        },
+        {
+            "id": "MindDominationBump",
+            "name": "CardEffectBump",
+            "target_mode": "last_targeted_characters",
+            "target_team": "both",
             "param_int": -1,
-            "target_ignore_bosses": true
+            "target_ignore_bosses": true,
+            "should_test": true
         },
         {
             "id": "MindDominationFrantic",

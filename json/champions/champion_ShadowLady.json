@@ -335,7 +335,6 @@
         },
         {
             "id": "PlagueBasicAddShard",
-            "applied_vfx": "@SuccFXObsessionPulse",
             "name": "CardEffectAddBattleCard",
             "target_mode": "room",
             "target_team": "none",
@@ -374,7 +373,6 @@
         },
         {
             "id": "PlaguePreAddShard",
-            "applied_vfx": "@SuccFXObsessionPulse",
             "name": "CardEffectAddBattleCard",
             "target_mode": "room",
             "target_team": "none",
@@ -413,7 +411,6 @@
         },
         {
             "id": "PlagueProAddShard",
-            "applied_vfx": "@SuccFXObsessionPulse",
             "name": "CardEffectAddBattleCard",
             "target_mode": "room",
             "target_team": "none",

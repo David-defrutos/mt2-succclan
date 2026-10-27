@@ -1,4 +1,4 @@
-{
+﻿{
     "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
     "cards": [
         {
@@ -58,18 +58,21 @@
     "character_triggers": [
         {
             "id": "WhisperingBladeTrigger",
-            "trigger": "on_attacking",
+            "trigger": {
+                "id": "@Accursed",
+                "mod_reference": "Conductor"
+            },
             "descriptions": {
-                "english": "Gain [mt2_succclan.Plugin_psionic] [effect0.status0.power].",
-                "spanish": "Obtiene [mt2_succclan.Plugin_psionic] [effect0.status0.power].",
-                "chinese": "获得 [mt2_succclan.Plugin_psionic] [effect0.status0.power]。",
-                "french": "Gagne [mt2_succclan.Plugin_psionic] [effect0.status0.power].",
-                "german": "Erhält [mt2_succclan.Plugin_psionic] [effect0.status0.power].",
-                "portuguese": "Ganha [mt2_succclan.Plugin_psionic] [effect0.status0.power].",
-                "russian": "Получает [mt2_succclan.Plugin_psionic] [effect0.status0.power].",
-                "chinese_traditional": "獲得 [mt2_succclan.Plugin_psionic] [effect0.status0.power]。",
-                "japanese": "[mt2_succclan.Plugin_psionic] [effect0.status0.power]を得る。",
-                "korean": "[mt2_succclan.Plugin_psionic] [effect0.status0.power]을 얻습니다."
+                "english": "Apply [sap] [effect0.status0.power] to the rear enemy unit.",
+                "spanish": "Añade [sap] [effect0.status0.power] al enemigo de la retaguardia.",
+                "chinese": "对后排敌方单位施加 [sap] [effect0.status0.power]。",
+                "french": "Applique [sap] [effect0.status0.power] à l’ennemi en dernière ligne.",
+                "german": "Wende [sap] [effect0.status0.power] auf die hinterste gegnerische Einheit an.",
+                "portuguese": "Aplica [sap] [effect0.status0.power] à unidade inimiga na retaguarda.",
+                "russian": "Накладывает [sap] х[effect0.status0.power] на заднего вражеского бойца.",
+                "chinese_traditional": "對後排敵方單位施加 [sap] [effect0.status0.power]。",
+                "japanese": "最後列の敵ユニットに[sap] [effect0.status0.power]を付与する。",
+                "korean": "후열 적 유닛에게 [sap] [effect0.status0.power]을 부여합니다."
             },
             "effects": [
                 "@WhisperingBladeEffect"
@@ -86,13 +89,13 @@
         },
         {
             "id": "WhisperingBladeEffect",
-            "target_mode": "self",
-            "target_team": "monsters",
+            "target_mode": "back_in_room",
+            "target_team": "heroes",
             "name": "CardEffectAddStatusEffect",
             "param_status_effects": [
                 {
-                    "status": "@psionic",
-                    "count": 1
+                    "status": "debuff",
+                    "count": 2
                 }
             ]
         }

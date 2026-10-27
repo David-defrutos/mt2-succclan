@@ -1,163 +1,110 @@
 using System.Collections;
 using System.Collections.Generic;
-
-using ShinyShoe;
-using UnityEngine;
+using HarmonyLib;
 
 namespace mt2_succclan.Plugin
 {
-    /// <summary>
-    /// Frantic: la unidad enloquece. En su turno NO ataca al enemigo; en su lugar golpea
-    /// a un aliado de su propia sala con su propio ataque, y repite el golpe una vez por
-    /// cada carga de multistrike. Si no le queda ningun aliado, se golpea a si misma.
-    /// Pierde una carga AL DISPARARSE, no al final del turno.
-    ///
-    /// Port literal del StatusEffectFrantic de SuccClan (Monster Train 1), adaptado al
-    /// API de MT2:
-    ///   - TestTrigger y OnTriggered reciben ICoreGameManagers (el CombatManager ya no
-    ///     viene en inputTriggerParams).
-    ///   - ApplyDamageToTargetParameters cambio de campos: vfxAtLoc/showDamageVfx ya no
-    ///     existen, ahora es affectedVfx. Ver StatusEffectRecoilState de Conductor.
-    ///   - canAttackOrHeal sigue estando en OutputTriggerParams; verificado en el
-    ///     ensamblado del juego (MonsterTrain2.Api 2.1.20112166).
-    ///
-    /// Diferencia deliberada con MT1 (15-sep-2026): alli la carga se perdia al final del
-    /// turno (remove_stack_at_end_of_turn). Eso hacia inutil cualquier fuente que aplicase
-    /// Frantic DURANTE el combate -- el caso de Chaos Creation, que lo pone en su on_hit:
-    /// el heroe ya habia actuado, y la carga se iba antes de llegar a su siguiente turno.
-    /// Ahora la carga se consume aqui, al dispararse, asi que un Frantic aplicado tarde
-    /// espera al turno siguiente y se gasta cuando de verdad hace algo.
-    /// El JSON lleva remove_stack_at_end_of_turn: false; si se vuelve a poner en true, el
-    /// estado se gastaria dos veces.
-    ///
-    /// La etapa (on_combat_turn_spark) se declara en json/status_effects/frantic.json.
-    /// Esa etapa se invoca dentro de CombatManager.RunUnitTurn, igual que en MT1.
-    /// </summary>
+    // Keep the native RunUnitTurn: only redirect its attack targets. Native combat
+    // owns Strike, Slay, Revenge, Spikes, Lifesteal, Multistrike and preview.
     class StatusEffectFranticState : StatusEffectState
     {
-        /// <summary>Id del estado multistrike del juego base.</summary>
-        private const string MultistrikeStatusId = "multistrike";
-
-        public override bool TestTrigger(
-            InputTriggerParams inputTriggerParams,
-            OutputTriggerParams outputTriggerParams,
-            ICoreGameManagers coreGameManagers)
+        public override bool TestTrigger(InputTriggerParams input, OutputTriggerParams output,
+            ICoreGameManagers core)
         {
-            var character = inputTriggerParams.associatedCharacter;
-            return character != null
-                && character.IsAlive
-                && !FranticBossImmunity.IsBoss(character)
-                && character.GetStatusEffectStacks(GetStatusId()) > 0;
+            var unit = input.associatedCharacter;
+            return unit != null && !unit.IsDestroyed && unit.IsAlive && output.canAttackOrHeal
+                && !FranticBossImmunity.IsBoss(unit) && unit.GetStatusEffectStacks(GetStatusId()) > 0;
         }
 
-        protected override IEnumerator OnTriggered(
-            InputTriggerParams inputTriggerParams,
-            OutputTriggerParams outputTriggerParams,
-            ICoreGameManagers coreGameManagers)
+        protected override IEnumerator OnTriggered(InputTriggerParams input, OutputTriggerParams output,
+            ICoreGameManagers core)
         {
-            var thisCharacter = inputTriggerParams.associatedCharacter;
-            var combatManager = coreGameManagers.GetCombatManager();
-
-            var spawnPoint = thisCharacter?.GetSpawnPoint(false);
-            var room = spawnPoint?.GetRoomOwner();
-            if (thisCharacter == null || combatManager == null || room == null)
+            var unit = input.associatedCharacter;
+            if (unit == null || unit.IsDestroyed || !unit.IsAlive) yield break;
+            if (!FranticNativeTurn.Activate(unit))
             {
-                // Sin sala no hay a quien golpear, pero el turno igualmente se pierde.
-                outputTriggerParams.canAttackOrHeal = false;
+                // No native attack context: never accidentally attack the enemy.
+                output.canAttackOrHeal = false;
                 yield break;
             }
-
-            // Una pasada por el golpe normal mas una por cada carga de multistrike.
-            int multistrikeStacks = thisCharacter.GetStatusEffectStacks(MultistrikeStatusId);
-            for (int i = 0; i <= multistrikeStacks; i++)
-            {
-                if (!thisCharacter.IsAlive)
-                {
-                    break;
-                }
-
-                var target = FindAllyTarget(combatManager, thisCharacter, room);
-                int damageAmount = GetDamageAmount(thisCharacter);
-
-                bool present = SuccClanPresentation.CanPresent(coreGameManagers);
-                CharacterState.MovementDoneToken movement = default;
-                bool animated = present && thisCharacter.IsMovementDone;
-                if (animated)
-                {
-                    movement = SuccClanPresentation.BeginFranticAttack(thisCharacter, coreGameManagers);
-                    yield return new WaitForSeconds(combatManager.ActiveTiming.UnitAttackWindUpDuration);
-                }
-                if (present)
-                    thisCharacter.PlayCharacterSound("Combat_Attack");
-
-                yield return combatManager.ApplyDamageToTarget(
-                    damageAmount,
-                    target,
-                    new CombatManager.ApplyDamageToTargetParameters
-                    {
-                        damageType = Damage.Type.DirectAttack,
-                        affectedVfx = GetSourceStatusEffectData()?.GetOnAffectedVFX(),
-                        relicState = inputTriggerParams.suppressingRelic,
-                    });
-
-                if (animated)
-                {
-                    // Bound the presentation wait: a missing animation callback
-                    // must never stall combat. Stop immediately if self-hit kills.
-                    float deadline = Time.unscaledTime + combatManager.ActiveTiming.UnitAttackDuration + 1f;
-                    while (!thisCharacter.IsDestroyed && thisCharacter.IsAlive
-                        && !movement.IsDone() && Time.unscaledTime < deadline)
-                        yield return null;
-                }
-            }
-
-            // La carga se gasta aqui, al dispararse, no al final del turno.
-            thisCharacter.RemoveStatusEffect(GetStatusId(), 1, true);
-
-            // Lo que hace que Frantic sea un debuff de verdad: cancela el ataque normal.
-            outputTriggerParams.canAttackOrHeal = false;
-        }
-
-        /// <summary>
-        /// Primer aliado de la sala, que es el de delante. Puede ser la propia unidad si
-        /// es ella la que va al frente, y lo es forzosamente si no le queda ningun aliado.
-        /// Es la misma seleccion que hacia el original: "the friendly front unit".
-        /// </summary>
-        private static CharacterState FindAllyTarget(
-            CombatManager combatManager,
-            CharacterState thisCharacter,
-            RoomState room)
-        {
-            var charactersInRoom = new List<CharacterState>();
-            combatManager.GetAllCharactersInRoom(charactersInRoom, room);
-
-            foreach (var unit in charactersInRoom)
-            {
-                if (unit != null
-                    && unit.IsAlive
-                    && unit.GetTeamType() == thisCharacter.GetTeamType())
-                {
-                    return unit;
-                }
-            }
-
-            return thisCharacter;
+            // Consume before combat. The native hit may kill/destroy the attacker.
+            unit.RemoveStatusEffect(GetStatusId(), 1, allowModification: false);
         }
 
         public override int GetEffectMagnitude(int stacks = 1)
         {
-            var character = GetAssociatedCharacter();
-            if (character?.GetSpawnPoint(false)?.GetRoomOwner() == null)
-            {
-                return 0;
-            }
-            return GetDamageAmount(character);
+            var unit = GetAssociatedCharacter();
+            return unit == null || unit.IsDestroyed ? 0 : unit.GetAttackDamage();
+        }
+    }
+
+    internal static class FranticNativeTurn
+    {
+        internal sealed class Scope
+        {
+            internal CharacterState Unit = null!;
+            internal bool Activated;
+        }
+        private static readonly List<Scope> Scopes = new();
+
+        internal static bool Activate(CharacterState unit)
+        {
+            for (int i = Scopes.Count - 1; i >= 0; i--)
+                if (Scopes[i].Unit == unit) { Scopes[i].Activated = true; return true; }
+            return false;
         }
 
-        /// <summary>El dano es el ataque de la unidad enloquecida, no un valor fijo.</summary>
-        private static int GetDamageAmount(CharacterState character)
+        internal static bool IsActive(CharacterState unit)
         {
-            return character.GetAttackDamage();
+            for (int i = Scopes.Count - 1; i >= 0; i--)
+                if (Scopes[i].Unit == unit) return Scopes[i].Activated;
+            return false;
+        }
+
+        internal static IEnumerator Run(IEnumerator original, CharacterState unit)
+        {
+            if (unit == null || unit.IsDestroyed) yield break;
+            var scope = new Scope { Unit = unit };
+            Scopes.Add(scope);
+            try { yield return original; }
+            finally { Scopes.Remove(scope); }
+        }
+    }
+
+    [HarmonyPatch(typeof(CombatManager), nameof(CombatManager.RunUnitTurn))]
+    internal static class FranticNativeTurnPatch
+    {
+        [HarmonyPostfix]
+        private static void After(CharacterState attackerState, ref IEnumerator __result)
+            => __result = FranticNativeTurn.Run(__result, attackerState);
+    }
+
+    [HarmonyPatch(typeof(CombatManager), "CollectTargetDataInRunAttack")]
+    internal static class FranticNativeTargetsPatch
+    {
+        [HarmonyPrefix]
+        private static void Before(CharacterState attackerState, ref ICharacterManager targetsManager,
+            ref List<CharacterState> overrideTargets)
+        {
+            if (attackerState == null || attackerState.IsDestroyed || !FranticNativeTurn.IsActive(attackerState)) return;
+            targetsManager = attackerState.GetCharacterManager();
+            var allies = new List<CharacterState>();
+            attackerState.GetSpawnPoint(false)?.GetRoomOwner()?.AddCharactersToList(allies, attackerState.GetTeamType());
+            var front = allies.FirstOrDefault(unit => unit != null && !unit.IsDestroyed && unit.IsAlive);
+            overrideTargets = new List<CharacterState>();
+            if (front != null) overrideTargets.Add(front);
+            else if (attackerState.IsAlive) overrideTargets.Add(attackerState);
+        }
+
+        [HarmonyPostfix]
+        private static void After(CharacterState attackerState, ref TargetMode attackTargetMode,
+            ref TargetHelper.CollectTargetsData __result)
+        {
+            if (attackerState == null || attackerState.IsDestroyed || !FranticNativeTurn.IsActive(attackerState)) return;
+            // Frantic hits the front unit even if the attacker normally has Sweep.
+            attackTargetMode = TargetMode.FrontInRoom;
+            __result.targetMode = attackTargetMode;
         }
     }
 }
+// 2026-10-27-1456||codex-succclan-targetless||src/code/StatusEffectFranticState.cs||Frantic redirige ataques nativos al frente aliado; consume antes del golpe y conserva triggers y preview

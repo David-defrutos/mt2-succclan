@@ -69,16 +69,16 @@
                 "mod_reference": "Conductor"
             },
             "descriptions": {
-                "english": "Apply <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> to the back enemy unit.",
-                "chinese": "对后排敌方单位施加 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>。",
-                "spanish": "Otorga <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> a la unidad enemiga trasera.",
-                "french": "Applique <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> à l'unité ennemie en dernière ligne.",
-                "german": "Verleiht der hintersten feindlichen Einheit <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>.",
-                "portuguese": "Aplica <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> à unidade inimiga de trás.",
-                "russian": "Даёт <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> заднему врагу.",
-                "chinese_traditional": "對最後方的敵方單位施加 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>。",
-                "japanese": "最後列の敵に<b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>を付与する。",
-                "korean": "맨 뒤 적에게 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>을 부여합니다."
+                "english": "Apply <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> to the back enemy unit. Cannot target bosses.",
+                "chinese": "对后排敌方单位施加 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>。 无法选择首领。",
+                "spanish": "Otorga <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> a la unidad enemiga trasera. No puede seleccionar jefes.",
+                "french": "Applique <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> à l'unité ennemie en dernière ligne. Ne peut pas cibler les boss.",
+                "german": "Verleiht der hintersten feindlichen Einheit <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>. Bosse können nicht als Ziel gewählt werden.",
+                "portuguese": "Aplica <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> à unidade inimiga de trás. Não pode selecionar chefes.",
+                "russian": "Даёт <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> заднему врагу. Нельзя выбирать боссов целью.",
+                "chinese_traditional": "對最後方的敵方單位施加 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>。 無法選擇首領。",
+                "japanese": "最後列の敵に<b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>を付与する。 ボスは対象にできない。",
+                "korean": "맨 뒤 적에게 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>을 부여합니다. 보스는 대상으로 지정할 수 없습니다."
             },
             "effects": [
                 "@LustGhostFrantic"

@@ -1,33 +1,50 @@
-# Death and rebirth fixes — 2026-10-10
+<!-- Documento generado el 2026-10-27-1506 -->
 
-## Knightmare: Endless
+# Death and rebirth fixes — 2026-10-27
 
-Current balance: all tiers start at 2 Psionic, increasing by 1 for each
-successful rebirth this battle. Each rebirth restores full health, adds
-Multistrike 1 and +1/+1, +2/+2 or +3/+3 at tier I/II/III.
+## Knightmare: Endless — native rebirth, 2026-10-27
 
-The successful-rebirth counter is the number of this tier's growth upgrades
-in the spawner card's temporary modifiers. Native cloning carries it to
-the next copy. No growth or counter is added to the original deck card,
-so both reset next battle. Failed spawns do not advance the cost.
+All tiers start at 2 Psionic. Each successful Psionic rebirth raises the next
+cost by 1 and grants Multistrike 1 plus +1/+1, +2/+2 or +3/+3 by tier.
 
-Balance caveat: with Whispering Blade, Multistrike also increases Psionic
-production. A cost increment of 1 does not guarantee this combination
-cannot sustain itself; combat testing remains necessary.
-The native MonsterManager.CloneMonsterState only forwards a selected spawn
-point when it is still the source's current point. After compacting the row,
-a dying source has no current point, so the old selected-slot call failed.
+The former cardless CloneMonsterState implementation is retired. The JSON
+Extinguish effect is now a marker for localized descriptions and tooltips;
+it does not spawn a new character or fire a second resurrection.
 
-CardEffectKnightmareRebirth explicitly remembers and detaches the dead
-source, including the last slot, compacts the row, uses native free-slot
-cloning, then restores the copy's row position. The native clone retains
-stats, statuses and equipment. Additional Multistrike is recorded on the
-battle copy only. Failed creation refunds Psionic if the source is valid.
+A narrowly scoped CheckDeathCardTriggers coroutine adapter finds that marker,
+checks silence/mute, room availability, death, and the current Psionic cost.
+Existing native Undying (Reanimate) has priority and spends no Psionic or
+growth. When no native stacks remain and Psionic is sufficient, the adapter
+supplies one unmodified Undying stack and spends the required Psionic before
+Harvest can resolve. It then delegates to the original death routine.
 
-Verified after balance change: local build, 175 engine-substitute checks including three tiers,
-front/middle/last slot in a full row, position, full health and leftover
-Psionic. The substitutes now reproduce the native selected-slot rule that
-the previous tests omitted. In-game verification remains pending.
+A ReviveFromUndyingStatus adapter observes only these prepared revivals.
+After native HP=1 and death-flag reset, it applies the tier's existing growth
+upgrade and restores full new maximum HP, before native Harvest and queued
+OnReanimated/OnDeath events. Native animation, card identity, equipment,
+statuses, row position and death bookkeeping are preserved.
+
+Cost is based on the character's applied growth upgrades, including native
+preview copies. Real revivals also record growth in the spawner card's
+battle-only modifiers, matching the lifetime handling of the native
+CardEffectAddCardUpgradeToUnits. Preview never writes to real card modifiers.
+The unit tooltip resolves [effect0.power] against that same character count.
+
+Knightmare's own death is excluded from its Harvest effect, so it cannot
+refund its own cost. Harvest from other units remains native. This is a
+small subclass of CardEffectAddStatusEffect because the installed trigger
+filters have no simple exclude-own-dying-character option.
+
+Native JSON alone cannot implement a threshold-dependent, growing cost on
+Reanimate with full-HP restoration; unconditional Undying would resurrect
+without sufficient Psionic, while native cardless spawning loses identity.
+Only this missing connection is custom; combat/death operations remain native.
+
+Validation: 241 assertions using engine substitutes and metadata contract
+checks against the installed MT2 DLL. These do not replace Unity playtests.
+Test full HP, all tiers, cost 2/3/4, save/reload, preview, equipment, Rage,
+Regeneration, Corruption, native Reanimate exhaustion, Recall and Reform.
+The attack-generation synergy with Whispering Blade still needs balance tests.
 
 ## Endless Shadow
 
@@ -45,3 +62,5 @@ ordinary equipped HP does not extend the final guarded respawn.
 Verified: local build and 16 engine-substitute checks. The reported null
 reference was in CheckForDeath; its exact null operand was not captured.
 The zero-health recursion path is fixed; in-game confirmation remains pending.
+
+<!-- 2026-10-27-1506||codex-succclan-targetless||DEATH-AND-REBIRTH.md||Sustituir explicación vigente de clonación por puente Reanimate nativo, prioridad y checklist de partida -->

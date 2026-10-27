@@ -1,4 +1,4 @@
-{
+﻿{
     "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
     "cards": [
         {
@@ -95,11 +95,14 @@
         },
         {
             "id": "ArroganceGhostSpread",
-            "name": "@CardEffectDiscardSpecificCard",
+            "name": {
+                "id": "@CardEffectRandomDiscardFromCardPile",
+                "mod_reference": "Conductor"
+            },
             "target_mode": "hand",
             "target_card_type": "blight",
             "param_int": 2,
-            "param_card": "@ObsessingShard"
+            "param_card_pool": "@ObsessingShardPool"
         },
         {
             "id": "ArroganceGhostSelfHarm",

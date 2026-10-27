@@ -23,7 +23,7 @@ namespace mt2_succclan.Plugin
 
             foreach (CharacterState unidad in cardEffectParams.targets)
             {
-                if (unidad == null || !unidad.GetIsClone())
+                if (unidad == null || unidad.IsDestroyed || !unidad.GetIsClone())
                 {
                     continue;
                 }
@@ -66,3 +66,4 @@ namespace mt2_succclan.Plugin
         }
     }
 }
+// 2026-10-27-1503||codex-succclan-targetless||src/code/CardEffectAddStatusEffectToClones.cs||Proteger efecto legado de clones frente a unidades destruidas

@@ -1,4 +1,4 @@
-{
+﻿{
     "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
     "relics": [
         {
@@ -64,7 +64,8 @@
             "name": "RelicEffectAddEffectStartOfTurn",
             "param_int": 2,
             "param_effects": [
-                "@MutantGiveMultistrikeAndMark"
+                "@MutantGiveMark",
+                "@MutantGiveMultistrike"
             ]
         }
     ],
@@ -74,7 +75,7 @@
             "name": "CardEffectRemoveStatusEffect",
             "target_mode": "front_with_status",
             "target_team": "monsters",
-            "param_str": "mt2_succclan.plugin_mutated",
+            "param_str": "mt2_succclan.Plugin_mutated",
             "param_status_effects": [
                 {
                     "status": "multistrike",
@@ -87,7 +88,7 @@
             "name": "CardEffectRemoveStatusEffect",
             "target_mode": "front_with_status",
             "target_team": "monsters",
-            "param_str": "mt2_succclan.plugin_mutated",
+            "param_str": "mt2_succclan.Plugin_mutated",
             "param_status_effects": [
                 {
                     "status": "@mutated",
@@ -96,20 +97,31 @@
             ]
         },
         {
-            "id": "MutantGiveMultistrikeAndMark",
+            "id": "MutantGiveMark",
             "name": "CardEffectAddStatusEffect",
             "target_mode": "random_in_room",
             "target_team": "monsters",
             "param_status_effects": [
                 {
-                    "status": "multistrike",
-                    "count": 1
-                },
-                {
                     "status": "@mutated",
                     "count": 1
                 }
-            ]
+            ],
+            "param_bool": true
+        },
+        {
+            "id": "MutantGiveMultistrike",
+            "name": "CardEffectAddStatusEffect",
+            "target_mode": "front_with_status",
+            "target_team": "monsters",
+            "param_str": "mt2_succclan.Plugin_mutated",
+            "param_status_effects": [
+                {
+                    "status": "multistrike",
+                    "count": 1
+                }
+            ],
+            "param_bool": true
         }
     ],
     "status_effects": [

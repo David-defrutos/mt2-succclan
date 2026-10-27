@@ -1,6 +1,66 @@
 # Changelog
 
-## 0.1.10 — 2026-10-25
+## Unreleased — bug fixes under validation
+
+### English
+
+Thanks to **Brandon and Rratvar** for the reports and suggestions.
+
+- **Whispering Blade:** retains +5 Attack, 1 Ember and uncommon rarity. Replace Strike: gain Psionic 1 with Accursed: apply Sap 2 to the rear enemy unit.
+
+- **Pain and Pleasure / Arrogance Ghost:** use Conductor's pool-filtered discard, preserving the requirement and quantity of 2 Obsessing Sparks. Pain and Pleasure still draws 3 cards.
+- **Mutant Elixirs:** grant both Mutated and Multistrike 1 to the same unit, remove the previous mutation correctly and avoid choosing empty rooms.
+- Use native target validation for Mind Domination and Profane Ascending. Disable the four archived Butcher animation patches while its artwork is static. Requires Trainworks Reloaded 0.7.33 and Conductor 0.5.15 or newer.
+
+- **Knightmare — Endless:** replaced cardless cloning with native Reanimate on the same unit and card. Restore full upgraded health before death triggers resolve; existing Reanimate stacks have priority. Psionic resurrection becomes available after those stacks are exhausted.
+- **Knightmare:** show the increasing resurrection cost in the unit tooltip. Its own death no longer generates Psionic through Harvest, preventing a refund that made the initial Burst 2 behave like Burst 1.
+- **Frantic:** redirect native attacks to the front unit on the attacker's own team, retaining native attack interactions and combat preview. Consume one stack before attacking; stacks gained during combat remain available for a later activation.
+- **Abyss Crown:** use the native effect that adds an extra Psionic stack to positive applications, rather than modifying the status magnitude.
+- **Mind Domination:** validate non-boss targets before playing, including companion bosses. Complete the same validation boundary for other SuccClan spells with this restriction.
+- **Flare Ribbon:** grant Armor 4 to the Pyre after an enemy attack resolves, bypassing its status immunity as native Pyre-targeted status effects do. In-game verification is still required.
+- **Lust Ghost / Chaos Creation:** clarify their non-boss restriction in all ten languages. Remove the full-screen Moonrise effect from Spark generation, including Obsession Vault.
+- Guard targeting, cloning and Frantic immunity against destroyed characters. The reported Envy Ghost assertion still needs an in-game reproduction to confirm its full cause.
+
+### 简体中文
+
+感谢 **Brandon 和 Rratvar** 的问题报告和建议。
+
+- **低语之刃：**保留攻击力+5、费用1和非普通稀有度。将攻击时获得灵能1改为诅咒：对后排敌方单位施加弱化2。
+
+- **喜怒无常／傲慢幽魂：**改用Conductor按卡池筛选的弃牌效果，保留2张欲望碎片的要求和数量。喜怒无常仍抽3张牌。
+- **突变药剂：**使同一单位同时获得变异和多重攻击1，正确移除之前的变异，并避免选中空房间。
+- 支配他人和亵渎升腾改用原生目标验证。屠夫使用静态美术时停用四个已归档的动画补丁。需要Trainworks Reloaded 0.7.33和Conductor 0.5.15或更新版本。
+
+- **Knightmare — 无尽路线：**使用原生复生流程替代无卡牌复制，保留同一单位及其卡牌。在死亡触发结算前恢复强化后的全部生命值；已有的复生层数优先消耗，耗尽后才能使用灵能复活。
+- **Knightmare：**单位提示显示递增的复活消耗。自身死亡不再通过收割获得灵能，避免初始消耗2层实际上返还1层。
+- **疯狂：**将原生攻击改为攻击己方最前方单位，保留攻击交互和战斗预览。攻击前消耗1层；战斗中获得的层数保留至之后触发。
+- **深渊王冠：**改用原生的额外施加层数效果，使每次正向施加灵能额外获得1层，而非修改状态强度。
+- **支配他人：**出牌前检查非首领目标，包括伴随首领。补全其他具有该限制的SuccClan法术的同一检查环节。
+- **薪火缎带：**在敌方攻击结算后使薪火获得4点护甲，并像原生薪火状态效果一样绕过其状态免疫。仍需实战验证。
+- **色欲幽魂／混沌造物：**在全部十种语言中明确非首领限制。移除生成火花时的全屏月升效果，包括痴迷宝库。
+- 防止选取目标、复制和疯狂免疫逻辑访问已销毁单位。嫉妒幽魂的报错仍需实战复现以确认完整原因。
+
+### Español
+
+Gracias a **Brandon y Rratvar** por los reportes y propuestas.
+
+- **Whispering Blade:** mantiene +5 de ataque, coste 1 e infrecuente. Sustituye Strike: obtiene Psionic 1 por Accursed: aplica Sap 2 al enemigo de la retaguardia.
+
+- **Pain and Pleasure / Arrogance Ghost:** usan el descarte filtrado por pool de Conductor, conservando el requisito y cantidad de 2 Obsessing Sparks. Pain and Pleasure sigue robando 3 cartas.
+- **Mutant Elixirs:** concede Mutated y Multistrike 1 a la misma unidad, retira correctamente la mutación anterior y evita seleccionar salas vacías.
+- Validación nativa de objetivos para Mind Domination y Profane Ascending. Desactivados los cuatro parches archivados de animación del Butcher mientras usa arte estático. Requiere Trainworks Reloaded 0.7.33 y Conductor 0.5.15 o posterior.
+
+- **Knightmare — Endless:** sustituida la copia sin carta por Reanimate nativo sobre la misma unidad y carta. Recupera toda la vida máxima mejorada antes de resolver los triggers de muerte; las cargas de Reanimate existentes tienen prioridad. La resurrección por Psionic queda disponible al agotarlas.
+- **Knightmare:** coste creciente de resurrección en el tooltip de la unidad. Su propia muerte ya no genera Psionic mediante Harvest, evitando el reembolso que hacía que Burst 2 se comportase como Burst 1.
+- **Frantic:** redirige el ataque nativo a la unidad delantera del propio bando, conservando las interacciones de ataque y la predicción de combate. Consume una carga antes de atacar; las obtenidas durante el combate quedan para una activación posterior.
+- **Abyss Crown:** usa el efecto nativo que añade una carga adicional al aplicar Psionic positivo, en lugar de modificar su magnitud.
+- **Mind Domination:** valida objetivos que no sean bosses antes de jugarla, incluidos los acompañantes. Completada la misma validación para otros hechizos SuccClan con esta restricción.
+- **Flare Ribbon:** concede Armor 4 a la Pira tras resolver el ataque enemigo, evitando su inmunidad a estados como hacen los efectos nativos dirigidos a la Pira. Pendiente de comprobación en partida.
+- **Lust Ghost / Chaos Creation:** excepción de bosses explícita en los diez idiomas. Retirado Moonrise de pantalla completa al generar Sparks, incluida Obsession Vault.
+- Protecciones frente a personajes destruidos en selección, clonación e inmunidad Frantic. La causa completa del error de Envy Ghost sigue pendiente de reproducir en partida.
+
+
+## 0.1.11 — 2026-10-25
 
 ### English
 
@@ -24,7 +84,6 @@ Many thanks to **Brandon and Rratvar** for all the bug reports and improvement s
 
 #### Presentation
 
-- Reworked Incubus Butcher's attack with articulated movement and updated its idle animation with smoother transitions between poses.
 - Refreshed clan logos, card frames, banners and Frantic/Psionic icons.
 - Moved CodePointer's original-mod credits and permission acknowledgement to the top of each README language section: English, Simplified Chinese and Spanish.
 - Updated feedback links to the dedicated [SuccClan Discord channel](https://discord.com/channels/336546996779483136/1563769828244725770).
@@ -51,7 +110,6 @@ Many thanks to **Brandon and Rratvar** for all the bug reports and improvement s
 
 #### 外观与介绍
 
-- 重制 Incubus Butcher 的攻击动作，使用关节式移动，并优化待机姿势之间的过渡。
 - 更新氏族标志、卡框、旗帜以及 Frantic/Psionic 图标。
 - 将 CodePointer 的原模组署名及授权说明移至 README 每个语言部分的开头：英语、简体中文和西班牙语。
 - 反馈链接更新为专属的 [SuccClan Discord 频道](https://discord.com/channels/336546996779483136/1563769828244725770)。
@@ -78,10 +136,10 @@ Many thanks to **Brandon and Rratvar** for all the bug reports and improvement s
 
 #### Presentación
 
-- Rehecho el ataque de Incubus Butcher mediante movimiento articulado y actualizado su reposo con transiciones más suaves entre poses.
 - Renovados los logos del clan, marcos, estandartes e iconos de Frantic/Psionic.
 - Los créditos del mod original de CodePointer y la mención de su permiso aparecen al principio de cada sección del README: inglés, chino simplificado y español.
 - Actualizados los enlaces de comentarios al [canal dedicado de SuccClan en Discord](https://discord.com/channels/336546996779483136/1563769828244725770).
+
 
 ## 0.1.8 — 2026-10-10
 
@@ -154,3 +212,11 @@ New translations are a first pass and have not been reviewed by native speakers 
 <!-- 2026-10-25-1839||codex-succclan-targetless||CHANGELOG.md||Añadir canal dedicado Discord a 0.1.9 en tres idiomas; agradecimientos Brandon/Rratvar siguen específicos de versión -->
 <!-- 2026-10-25-1916||codex-succclan-targetless||CHANGELOG.md||Curseguard Stone: Armor 2 -> 5 en changelog 0.1.9 EN/ZH-CN/ES -->
 <!-- 2026-10-25-1917||codex-succclan-targetless||CHANGELOG.md||Encabezar 0.1.10 conservando íntegro el changelog trilingüe, Armor 5 y agradecimientos -->
+<!-- 2026-10-25-1950||codex-succclan-targetless||CHANGELOG.md||Retirar únicamente anuncio de nuevas animaciones Butcher de 0.1.10 en EN/ZH-CN/ES; conservar demás cambios e historial -->
+<!-- 2026-10-25-1952||codex-succclan-targetless||CHANGELOG.md||Encabezar 0.1.11 conservando changelog trilingüe sin anuncio de animaciones Butcher -->
+
+<!-- 2026-10-27-1506||codex-succclan-targetless||CHANGELOG.md||Añadir notas Unreleased EN/ZH/ES de bugs corregidos y límites de validación; conservar historial -->
+
+<!-- 2026-10-27-1554||codex-succclan-targetless||CHANGELOG.md||Ampliar Unreleased EN/ZH/ES con descarte de biblioteca, validación nativa, inmunidad Pyre, Mutant Elixirs y dependencias -->
+
+<!-- 2026-10-27-2046||codex-succclan-targetless||CHANGELOG.md||Añadir cambio aprobado de Whispering Blade en Unreleased EN/ZH/ES -->

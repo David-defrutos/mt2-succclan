@@ -72,17 +72,6 @@ namespace mt2_succclan.Plugin
                 SoundManager.PlaySfxSignal.Dispatch("Combat_Ascend");
         }
 
-        internal static CharacterState.MovementDoneToken BeginFranticAttack(CharacterState character, ICoreGameManagers core)
-        {
-            var timing = core.GetCombatManager().ActiveTiming;
-            character.PlayCharacterSound("Combat_AttackPrep");
-            // Keep the allied/self impact on the actual victim. Suppress forward
-            // attack particles and projectiles which would point at the enemy.
-            return character.DoMovementAttacking(timing.UnitAttackWindUpDuration,
-                timing.UnitAttackDuration, CharacterState.MovementActionType.Attack,
-                suppressAttackVfx: true);
-        }
-
         internal static void ShowSpawn(CharacterState character)
         {
             var managers = AllGameManagers.Instance;
@@ -138,3 +127,4 @@ namespace mt2_succclan.Plugin
         }
     }
 }
+// 2026-10-27-1547||codex-succclan-targetless||src/code/SuccClanPresentation.cs||Retirar presentación de golpe Frantic sin uso; RunUnitTurn ya anima el ataque nativo

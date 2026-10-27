@@ -18,6 +18,7 @@ namespace mt2_succclan.Plugin
             for (int i = args.targets.Count - 1; i >= 0; i--)
             {
                 var target = args.targets[i];
+                if (target == null || target.IsDestroyed) continue;
                 statuses.Clear();
                 target.GetStatusEffects(ref statuses);
                 foreach (var status in statuses)
@@ -34,3 +35,4 @@ namespace mt2_succclan.Plugin
         }
     }
 }
+// 2026-10-27-1504||codex-succclan-targetless||src/code/CardEffectMultiplyNegativeStatusEffects.cs||No multiplicar estados de objetivos destruidos

@@ -49,7 +49,8 @@ public sealed class CardEffectCopyWithStatuses : CardEffectBase
 			}
 			foreach (CharacterState copyUnit in cardEffectParams.targets)
 			{
-				SpawnPoint spawnPoint = copyUnit.GetSpawnPoint();
+				if (copyUnit == null || copyUnit.IsDestroyed || !copyUnit.IsAlive) continue;
+                SpawnPoint spawnPoint = copyUnit.GetSpawnPoint();
 				if (spawnPoint == null)
 				{
 					continue;
@@ -88,7 +89,8 @@ public sealed class CardEffectCopyWithStatuses : CardEffectBase
 			{
 				foreach (CharacterState item in originalUnitsInRoom)
 				{
-					combatManager.QueueTrigger(item, CharacterTriggerData.Trigger.CardMonsterPlayed, null, canAttackOrHeal: true, canFireTriggers: true, null, numSpawns);
+					if (item == null || item.IsDestroyed || !item.IsAlive) continue;
+                    combatManager.QueueTrigger(item, CharacterTriggerData.Trigger.CardMonsterPlayed, null, canAttackOrHeal: true, canFireTriggers: true, null, numSpawns);
 				}
 			}
 			if (numSpawns > 1 && !saveManager.PreviewMode)
@@ -109,3 +111,4 @@ public sealed class CardEffectCopyWithStatuses : CardEffectBase
 }
 
 }
+// 2026-10-27-1456||codex-succclan-targetless||src/code/CardEffectCopyWithStatuses.cs||No consultar ni encolar Rally sobre unidades originales destruidas durante la clonación

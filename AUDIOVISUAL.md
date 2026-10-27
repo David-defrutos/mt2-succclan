@@ -286,3 +286,37 @@ Reposo con dos poses completas del mismo personaje, siguiendo el método de Vesp
 Instalado en mod y copia de repositorio; sprites guardados también en en-uso. Configuración anterior y neutral archivados en `D:\Juegos\MT2_mod\arte\succlan\sin-usar\butcher-reposo-anterior-2026-10-11_fcc1a3c2`. El neutral original sigue activo en otros clips. DLL y ayudante de respiración existentes conservados. Pendiente de verificar en partida tras reiniciar.
 
 GIF y poses: `D:\Juegos\MT2_mod\arte\succlan\lotes\butcher-reposo-2026-10-11`.
+
+
+## Butcher: retirada de animaciones — 2026-10-25-1950
+
+Por petición del usuario, CharacterArt vuelve a usar el sprite original
+IncubusButcherCharacterArt sin la lista animations. No hay clips de idle,
+attack, hit_react ni death personalizados activos. Transform y shader
+se conservan. Los frames y código se conservan; el helper de Butcher
+solo se activa si existe CharacterUIMeshAnimatedSprite, por lo que no
+se adjunta al renderer estático. No requiere recompilar.
+Las secciones de animación anteriores son historial, no estado vigente.
+<!-- 2026-10-25-1950||codex-succclan-targetless||AUDIOVISUAL.md||Documentar retorno de Butcher a imagen estática; código/frames conservados inactivos -->
+
+
+## Spark generation — 2026-10-27
+
+All applied/triggered references to SuccFXObsessionPulse (Luna Coven Moonrise)
+have been removed from Spark sources, including Obsession Vault. The unused
+resource definition is retained. Knightmare Psionic rebirth now delegates
+to the native Reanimate animation; no cardless spawn presentation is used.
+Pending in-game visual verification.
+
+<!-- 2026-10-27-1506||codex-succclan-targetless||AUDIOVISUAL.md||Documentar retirada de Moonrise y presentación nativa de resurrección Knightmare -->
+
+
+## Static Butcher: archived hooks disabled — 2026-10-27
+
+The four Butcher animation patches now return false from HarmonyPrepare.
+Their code and art remain available, but no prefab/speed/pose/recovery hooks
+are registered while the unit uses static art. Champion/rare card atmosphere
+animations remain separate and active. The obsolete manual Frantic attack
+presentation helper was removed; native RunUnitTurn supplies its animation.
+
+<!-- 2026-10-27-1554||codex-succclan-targetless||AUDIOVISUAL.md||Documentar desactivación de hooks Butcher y presentación Frantic delegada al ataque nativo -->

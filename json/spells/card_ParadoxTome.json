@@ -61,7 +61,6 @@
         },
         {
             "id": "ParadoxTomeShards",
-            "applied_vfx": "@SuccFXObsessionPulse",
             "name": "CardEffectAddBattleCard",
             "target_mode": "room",
             "target_team": "none",

@@ -12,6 +12,10 @@ namespace mt2_succclan.Plugin
     [HarmonyPatch(typeof(GameObjectCharacterArtFinalizer), "FinalizeGameObject")]
     internal static class ButcherAnimationRendering
     {
+        // Archived animation support; Butcher currently uses static artwork.
+        [HarmonyPrepare]
+        private static bool Prepare() => false;
+
         [HarmonyPostfix]
         private static void AfterFinalize(IDefinition<GameObject> definition)
         {
@@ -77,6 +81,10 @@ namespace mt2_succclan.Plugin
     [HarmonyPatch(typeof(CharacterUIMeshAnimatedSprite), "GetAnimSpeedMultiplier")]
     internal static class ButcherReadableSpeed
     {
+        // Archived animation support; Butcher currently uses static artwork.
+        [HarmonyPrepare]
+        private static bool Prepare() => false;
+
         [HarmonyPostfix]
         private static void AfterSpeed(CharacterUIMeshAnimatedSprite __instance,
             Anim anim, ref float __result)
@@ -90,6 +98,10 @@ namespace mt2_succclan.Plugin
         new Type[] { typeof(Anim), typeof(float), typeof(float), typeof(Action<AnimNote>) })]
     internal static class ButcherPoseStarted
     {
+        // Archived animation support; Butcher currently uses static artwork.
+        [HarmonyPrepare]
+        private static bool Prepare() => false;
+
         [HarmonyPrefix]
         private static void BeforePlay(CharacterUIMeshAnimatedSprite __instance, Anim animType)
             => __instance.GetComponent<ButcherPoseTiming>()?.Started(animType);
@@ -99,6 +111,10 @@ namespace mt2_succclan.Plugin
         new Type[] { typeof(Anim), typeof(float), typeof(Action<AnimNote>) })]
     internal static class ButcherPoseRecovery
     {
+        // Archived animation support; Butcher currently uses static artwork.
+        [HarmonyPrepare]
+        private static bool Prepare() => false;
+
         [HarmonyPrefix]
         private static bool BeforeLoop(CharacterUIMeshAnimatedSprite __instance,
             Anim animType, Action<AnimNote>? animCallback)
@@ -163,3 +179,4 @@ namespace mt2_succclan.Plugin
         }
     }
 }
+// 2026-10-27-1536||codex-succclan-targetless||src/code/ButcherAnimationRendering.cs||Conservar animaciones archivadas pero no registrar sus cuatro parches globales mientras Butcher es estático

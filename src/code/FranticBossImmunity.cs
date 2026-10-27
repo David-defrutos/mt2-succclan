@@ -6,9 +6,9 @@ namespace mt2_succclan.Plugin
     {
         internal const string StatusId = "mt2_succclan.Plugin_frantic";
         internal static bool IsBoss(CharacterState character)
-            => character.IsAnyBoss() || character.IsCompanionBoss();
+            => character != null && !character.IsDestroyed && (character.IsAnyBoss() || character.IsCompanionBoss());
         internal static bool Blocks(CharacterState character, string statusId)
-            => string.Equals(statusId, StatusId, StringComparison.OrdinalIgnoreCase) && IsBoss(character);
+            => string.Equals(statusId, StatusId, StringComparison.OrdinalIgnoreCase) && (character == null || character.IsDestroyed || IsBoss(character));
     }
 
     [HarmonyPatch(typeof(CharacterState), nameof(CharacterState.IsImmune))]
@@ -31,3 +31,4 @@ namespace mt2_succclan.Plugin
             => !FranticBossImmunity.Blocks(__instance, statusId);
     }
 }
+// 2026-10-27-1503||codex-succclan-targetless||src/code/FranticBossImmunity.cs||Evitar consultas de inmunidad Frantic sobre unidades destruidas

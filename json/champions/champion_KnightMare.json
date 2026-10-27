@@ -181,16 +181,16 @@
             "id": "EndlessBasicTrigger",
             "trigger": "on_death",
             "descriptions": {
-                "english": "<b>Psionic Burst 2</b>: respawn with full health and gain [multistrike] 1, +1[attack] and +1[health]. Each respawn increases the Psionic cost by 1.",
-                "spanish": "<b>Estallido psiónico 2</b>: reaparece con toda la vida y obtiene [multistrike] 1, +1[attack] y +1[health]. Cada reaparición aumenta el coste de Psionic en 1.",
-                "chinese": "<b>灵能爆破 2</b>：以满生命值重生，获得[multistrike] 1、+1[attack]和+1[health]。每次重生使灵能消耗增加1。",
-                "chinese_traditional": "<b>靈能爆發 2</b>：以滿生命值重生，獲得[multistrike] 1、+1[attack]和+1[health]。每次重生使靈能消耗增加1。",
-                "french": "<b>Explosion psionique 2</b> : revient avec toute sa santé et gagne [multistrike] 1, +1[attack] et +1[health]. Chaque retour augmente le coût en Psionique de 1.",
-                "german": "<b>Psionischer Ausbruch 2</b>: Kehrt mit voller Gesundheit zurück und erhält [multistrike] 1, +1[attack] und +1[health]. Jede Wiederkehr erhöht die Psionik-Kosten um 1.",
-                "portuguese": "<b>Explosão Psiônica 2</b>: retorna com a vida cheia e ganha [multistrike] 1, +1[attack] e +1[health]. Cada retorno aumenta o custo de Psiônico em 1.",
-                "russian": "<b>Псионический всплеск 2</b>: возвращается с полным здоровьем и получает [multistrike] 1, +1[attack] и +1[health]. Каждое возвращение увеличивает расход Псионики на 1.",
-                "japanese": "<b>サイオニックバースト 2</b>：最大体力で復活し、[multistrike] 1、+1[attack]、+1[health]を得る。復活するたびにサイオニック消費が1増える。",
-                "korean": "<b>사이오닉 폭발 2</b>: 최대 체력으로 부활하고 [multistrike] 1, +1[attack], +1[health]을 얻습니다. 부활할 때마다 사이오닉 비용이 1 증가합니다."
+                "english": "<b>Psionic Burst [effect0.power]</b>: respawn with full health and gain [multistrike] 1, +1[attack] and +1[health]. Each respawn increases the Psionic cost by 1.",
+                "spanish": "<b>Estallido psiónico [effect0.power]</b>: reaparece con toda la vida y obtiene [multistrike] 1, +1[attack] y +1[health]. Cada reaparición aumenta el coste de Psionic en 1.",
+                "chinese": "<b>灵能爆破 [effect0.power]</b>：以满生命值重生，获得[multistrike] 1、+1[attack]和+1[health]。每次重生使灵能消耗增加1。",
+                "chinese_traditional": "<b>靈能爆發 [effect0.power]</b>：以滿生命值重生，獲得[multistrike] 1、+1[attack]和+1[health]。每次重生使靈能消耗增加1。",
+                "french": "<b>Explosion psionique [effect0.power]</b> : revient avec toute sa santé et gagne [multistrike] 1, +1[attack] et +1[health]. Chaque retour augmente le coût en Psionique de 1.",
+                "german": "<b>Psionischer Ausbruch [effect0.power]</b>: Kehrt mit voller Gesundheit zurück und erhält [multistrike] 1, +1[attack] und +1[health]. Jede Wiederkehr erhöht die Psionik-Kosten um 1.",
+                "portuguese": "<b>Explosão Psiônica [effect0.power]</b>: retorna com a vida cheia e ganha [multistrike] 1, +1[attack] e +1[health]. Cada retorno aumenta o custo de Psiônico em 1.",
+                "russian": "<b>Псионический всплеск [effect0.power]</b>: возвращается с полным здоровьем и получает [multistrike] 1, +1[attack] и +1[health]. Каждое возвращение увеличивает расход Псионики на 1.",
+                "japanese": "<b>サイオニックバースト [effect0.power]</b>：最大体力で復活し、[multistrike] 1、+1[attack]、+1[health]を得る。復活するたびにサイオニック消費が1増える。",
+                "korean": "<b>사이오닉 폭발 [effect0.power]</b>: 최대 체력으로 부활하고 [multistrike] 1, +1[attack], +1[health]을 얻습니다. 부활할 때마다 사이오닉 비용이 1 증가합니다."
             },
             "effects": [
                 "@EndlessBasicRebirth"
@@ -200,16 +200,16 @@
             "id": "EndlessPreTrigger",
             "trigger": "on_death",
             "descriptions": {
-                "english": "<b>Psionic Burst 2</b>: respawn with full health and gain [multistrike] 1, +2[attack] and +2[health]. Each respawn increases the Psionic cost by 1.",
-                "spanish": "<b>Estallido psiónico 2</b>: reaparece con toda la vida y obtiene [multistrike] 1, +2[attack] y +2[health]. Cada reaparición aumenta el coste de Psionic en 1.",
-                "chinese": "<b>灵能爆破 2</b>：以满生命值重生，获得[multistrike] 1、+2[attack]和+2[health]。每次重生使灵能消耗增加1。",
-                "chinese_traditional": "<b>靈能爆發 2</b>：以滿生命值重生，獲得[multistrike] 1、+2[attack]和+2[health]。每次重生使靈能消耗增加1。",
-                "french": "<b>Explosion psionique 2</b> : revient avec toute sa santé et gagne [multistrike] 1, +2[attack] et +2[health]. Chaque retour augmente le coût en Psionique de 1.",
-                "german": "<b>Psionischer Ausbruch 2</b>: Kehrt mit voller Gesundheit zurück und erhält [multistrike] 1, +2[attack] und +2[health]. Jede Wiederkehr erhöht die Psionik-Kosten um 1.",
-                "portuguese": "<b>Explosão Psiônica 2</b>: retorna com a vida cheia e ganha [multistrike] 1, +2[attack] e +2[health]. Cada retorno aumenta o custo de Psiônico em 1.",
-                "russian": "<b>Псионический всплеск 2</b>: возвращается с полным здоровьем и получает [multistrike] 1, +2[attack] и +2[health]. Каждое возвращение увеличивает расход Псионики на 1.",
-                "japanese": "<b>サイオニックバースト 2</b>：最大体力で復活し、[multistrike] 1、+2[attack]、+2[health]を得る。復活するたびにサイオニック消費が1増える。",
-                "korean": "<b>사이오닉 폭발 2</b>: 최대 체력으로 부활하고 [multistrike] 1, +2[attack], +2[health]을 얻습니다. 부활할 때마다 사이오닉 비용이 1 증가합니다."
+                "english": "<b>Psionic Burst [effect0.power]</b>: respawn with full health and gain [multistrike] 1, +2[attack] and +2[health]. Each respawn increases the Psionic cost by 1.",
+                "spanish": "<b>Estallido psiónico [effect0.power]</b>: reaparece con toda la vida y obtiene [multistrike] 1, +2[attack] y +2[health]. Cada reaparición aumenta el coste de Psionic en 1.",
+                "chinese": "<b>灵能爆破 [effect0.power]</b>：以满生命值重生，获得[multistrike] 1、+2[attack]和+2[health]。每次重生使灵能消耗增加1。",
+                "chinese_traditional": "<b>靈能爆發 [effect0.power]</b>：以滿生命值重生，獲得[multistrike] 1、+2[attack]和+2[health]。每次重生使靈能消耗增加1。",
+                "french": "<b>Explosion psionique [effect0.power]</b> : revient avec toute sa santé et gagne [multistrike] 1, +2[attack] et +2[health]. Chaque retour augmente le coût en Psionique de 1.",
+                "german": "<b>Psionischer Ausbruch [effect0.power]</b>: Kehrt mit voller Gesundheit zurück und erhält [multistrike] 1, +2[attack] und +2[health]. Jede Wiederkehr erhöht die Psionik-Kosten um 1.",
+                "portuguese": "<b>Explosão Psiônica [effect0.power]</b>: retorna com a vida cheia e ganha [multistrike] 1, +2[attack] e +2[health]. Cada retorno aumenta o custo de Psiônico em 1.",
+                "russian": "<b>Псионический всплеск [effect0.power]</b>: возвращается с полным здоровьем и получает [multistrike] 1, +2[attack] и +2[health]. Каждое возвращение увеличивает расход Псионики на 1.",
+                "japanese": "<b>サイオニックバースト [effect0.power]</b>：最大体力で復活し、[multistrike] 1、+2[attack]、+2[health]を得る。復活するたびにサイオニック消費が1増える。",
+                "korean": "<b>사이오닉 폭발 [effect0.power]</b>: 최대 체력으로 부활하고 [multistrike] 1, +2[attack], +2[health]을 얻습니다. 부활할 때마다 사이오닉 비용이 1 증가합니다."
             },
             "effects": [
                 "@EndlessPreRebirth"
@@ -219,16 +219,16 @@
             "id": "EndlessProTrigger",
             "trigger": "on_death",
             "descriptions": {
-                "english": "<b>Psionic Burst 2</b>: respawn with full health and gain [multistrike] 1, +3[attack] and +3[health]. Each respawn increases the Psionic cost by 1.",
-                "spanish": "<b>Estallido psiónico 2</b>: reaparece con toda la vida y obtiene [multistrike] 1, +3[attack] y +3[health]. Cada reaparición aumenta el coste de Psionic en 1.",
-                "chinese": "<b>灵能爆破 2</b>：以满生命值重生，获得[multistrike] 1、+3[attack]和+3[health]。每次重生使灵能消耗增加1。",
-                "chinese_traditional": "<b>靈能爆發 2</b>：以滿生命值重生，獲得[multistrike] 1、+3[attack]和+3[health]。每次重生使靈能消耗增加1。",
-                "french": "<b>Explosion psionique 2</b> : revient avec toute sa santé et gagne [multistrike] 1, +3[attack] et +3[health]. Chaque retour augmente le coût en Psionique de 1.",
-                "german": "<b>Psionischer Ausbruch 2</b>: Kehrt mit voller Gesundheit zurück und erhält [multistrike] 1, +3[attack] und +3[health]. Jede Wiederkehr erhöht die Psionik-Kosten um 1.",
-                "portuguese": "<b>Explosão Psiônica 2</b>: retorna com a vida cheia e ganha [multistrike] 1, +3[attack] e +3[health]. Cada retorno aumenta o custo de Psiônico em 1.",
-                "russian": "<b>Псионический всплеск 2</b>: возвращается с полным здоровьем и получает [multistrike] 1, +3[attack] и +3[health]. Каждое возвращение увеличивает расход Псионики на 1.",
-                "japanese": "<b>サイオニックバースト 2</b>：最大体力で復活し、[multistrike] 1、+3[attack]、+3[health]を得る。復活するたびにサイオニック消費が1増える。",
-                "korean": "<b>사이오닉 폭발 2</b>: 최대 체력으로 부활하고 [multistrike] 1, +3[attack], +3[health]을 얻습니다. 부활할 때마다 사이오닉 비용이 1 증가합니다."
+                "english": "<b>Psionic Burst [effect0.power]</b>: respawn with full health and gain [multistrike] 1, +3[attack] and +3[health]. Each respawn increases the Psionic cost by 1.",
+                "spanish": "<b>Estallido psiónico [effect0.power]</b>: reaparece con toda la vida y obtiene [multistrike] 1, +3[attack] y +3[health]. Cada reaparición aumenta el coste de Psionic en 1.",
+                "chinese": "<b>灵能爆破 [effect0.power]</b>：以满生命值重生，获得[multistrike] 1、+3[attack]和+3[health]。每次重生使灵能消耗增加1。",
+                "chinese_traditional": "<b>靈能爆發 [effect0.power]</b>：以滿生命值重生，獲得[multistrike] 1、+3[attack]和+3[health]。每次重生使靈能消耗增加1。",
+                "french": "<b>Explosion psionique [effect0.power]</b> : revient avec toute sa santé et gagne [multistrike] 1, +3[attack] et +3[health]. Chaque retour augmente le coût en Psionique de 1.",
+                "german": "<b>Psionischer Ausbruch [effect0.power]</b>: Kehrt mit voller Gesundheit zurück und erhält [multistrike] 1, +3[attack] und +3[health]. Jede Wiederkehr erhöht die Psionik-Kosten um 1.",
+                "portuguese": "<b>Explosão Psiônica [effect0.power]</b>: retorna com a vida cheia e ganha [multistrike] 1, +3[attack] e +3[health]. Cada retorno aumenta o custo de Psiônico em 1.",
+                "russian": "<b>Псионический всплеск [effect0.power]</b>: возвращается с полным здоровьем и получает [multistrike] 1, +3[attack] и +3[health]. Каждое возвращение увеличивает расход Псионики на 1.",
+                "japanese": "<b>サイオニックバースト [effect0.power]</b>：最大体力で復活し、[multistrike] 1、+3[attack]、+3[health]を得る。復活するたびにサイオニック消費が1増える。",
+                "korean": "<b>사이오닉 폭발 [effect0.power]</b>: 최대 체력으로 부활하고 [multistrike] 1, +3[attack], +3[health]을 얻습니다. 부활할 때마다 사이오닉 비용이 1 증가합니다."
             },
             "effects": [
                 "@EndlessProRebirth"
@@ -310,16 +310,16 @@
             "id": "KnightMareHarvest",
             "trigger": "on_any_unit_death_on_floor",
             "descriptions": {
-                "english": "Gain <b>[mt2_succclan.Plugin_psionic] [effect0.status0.power]</b>.",
-                "chinese": "获得 <b>[mt2_succclan.Plugin_psionic] [effect0.status0.power]</b>。",
-                "spanish": "Obtiene <b>[mt2_succclan.Plugin_psionic] [effect0.status0.power]</b>.",
-                "french": "Gagne <b>[mt2_succclan.Plugin_psionic] [effect0.status0.power]</b>.",
-                "german": "Erhält <b>[mt2_succclan.Plugin_psionic] [effect0.status0.power]</b>.",
-                "portuguese": "Ganha <b>[mt2_succclan.Plugin_psionic] [effect0.status0.power]</b>.",
-                "russian": "Получает <b>[mt2_succclan.Plugin_psionic] [effect0.status0.power]</b>.",
-                "chinese_traditional": "獲得 <b>[mt2_succclan.Plugin_psionic] [effect0.status0.power]</b>。",
-                "japanese": "<b>[mt2_succclan.Plugin_psionic] [effect0.status0.power]</b>を得る。",
-                "korean": "<b>[mt2_succclan.Plugin_psionic] [effect0.status0.power]</b>을 얻습니다."
+                "english": "Gain <b>[mt2_succclan.Plugin_psionic] [effect0.status0.power]</b> when another unit dies.",
+                "spanish": "Obtiene <b>[mt2_succclan.Plugin_psionic] [effect0.status0.power]</b> cuando muere otra unidad.",
+                "chinese": "其他单位死亡时，获得<b>[mt2_succclan.Plugin_psionic] [effect0.status0.power]</b>。",
+                "chinese_traditional": "其他單位死亡時，獲得<b>[mt2_succclan.Plugin_psionic] [effect0.status0.power]</b>。",
+                "french": "Gagne <b>[mt2_succclan.Plugin_psionic] [effect0.status0.power]</b> lorsqu’une autre unité meurt.",
+                "german": "Erhält <b>[mt2_succclan.Plugin_psionic] [effect0.status0.power]</b>, wenn eine andere Einheit stirbt.",
+                "portuguese": "Ganha <b>[mt2_succclan.Plugin_psionic] [effect0.status0.power]</b> quando outra unidade morre.",
+                "russian": "Получает <b>[mt2_succclan.Plugin_psionic] [effect0.status0.power]</b>, когда погибает другой отряд.",
+                "japanese": "他のユニットが死亡すると<b>[mt2_succclan.Plugin_psionic] [effect0.status0.power]</b>を得る。",
+                "korean": "다른 유닛이 죽으면 <b>[mt2_succclan.Plugin_psionic] [effect0.status0.power]</b>을 얻습니다."
             },
             "effects": [
                 "@KnightMareGainPsionic"
@@ -767,7 +767,7 @@
         },
         {
             "id": "KnightMareGainPsionic",
-            "name": "CardEffectAddStatusEffect",
+            "name": "@CardEffectKnightmareHarvest",
             "target_mode": "self",
             "target_team": "monsters",
             "param_status_effects": [
@@ -785,7 +785,6 @@
         },
         {
             "id": "KnightMareAbyssAddSpark",
-            "applied_vfx": "@SuccFXObsessionPulse",
             "name": "CardEffectAddBattleCard",
             "target_mode": "room",
             "target_team": "none",
