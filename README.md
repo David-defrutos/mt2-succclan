@@ -66,6 +66,10 @@ Choose **Knightmare** or **Shadow Lady**, then build around **Psionic**, **Accur
 - **Frantic:** retains the idea of making a unit attack its own front ally, is stackable and consumes one stack when it triggers. Bosses (including minibosses and companion bosses) are immune. In MT1 stacks were removed at turn end.
 - Other cards and effects were adapted where MT1 mechanics or targets did not transfer directly to MT2. This release is a reinterpretation, so please report interactions that feel wrong.
 
+## Acknowledgements
+
+Thank you to everyone who has helped me with any of my Monster Train 2 clan mods, through testing, bug reports, suggestions, technical advice or encouragement. Your help has made all of these projects better.
+
 Requires BepInExPack, Trainworks Reloaded and Conductor. Source and issues: [mt2-succclan](https://github.com/David-defrutos/mt2-succclan).
 
 ---
@@ -113,6 +117,10 @@ Requires BepInExPack, Trainworks Reloaded and Conductor. Source and issues: [mt2
 - **Frantic**：保留使单位攻击己方最前方盟友的机制，可以叠加，每次触发消耗一层。首领免疫，包括小首领和伴随首领。MT1 中的层数会在回合结束时移除。
 - 当 MT1 的机制或目标无法直接移植到 MT2 时，其他卡牌与效果也进行了适配。这是对原作的重新诠释；如果某些交互不合理，请反馈。
 
+## 鸣谢
+
+感谢所有曾帮助我制作任何 Monster Train 2 氏族模组的人，无论是参与测试、报告错误、提出建议、提供技术指导，还是给予鼓励。你们的帮助让这些项目变得更好。
+
 需要 BepInExPack、Trainworks Reloaded 和 Conductor。源代码与问题页面：[mt2-succclan](https://github.com/David-defrutos/mt2-succclan)。
 
 ---
@@ -159,5 +167,11 @@ Elige **Knightmare** o **Shadow Lady** y construye tu mazo alrededor de **Psioni
 - **Frantic:** mantiene la idea de atacar al aliado delantero, puede acumular cargas y consume una al activarse. Los jefes (incluidos minibosses y jefes acompañantes) son inmunes. En MT1 las cargas se quitaban al final del turno.
 - He adaptado otras cartas y efectos cuando las mecánicas o los objetivos de MT1 no tenían equivalencia directa en MT2. Si alguna interacción parece errónea, indícamela.
 
+## Agradecimientos
+
+Gracias a todas las personas que me han ayudado con cualquiera de mis clanes de Monster Train 2, ya sea probándolos, comunicando errores, proponiendo mejoras, compartiendo conocimientos técnicos o animándome a continuar. Vuestra ayuda ha mejorado todos estos proyectos.
+
 Requiere BepInExPack, Trainworks Reloaded y Conductor. Código e incidencias: [mt2-succclan](https://github.com/David-defrutos/mt2-succclan).
 <!-- 2026-10-25-1839||codex-succclan-targetless||README.md||Sustituir enlaces generales por canal dedicado SuccClan en EN/ZH-CN/ES; conservar créditos CodePointer -->
+
+<!-- 2026-10-27-2055||codex-succclan-targetless||README.md||Añadir agradecimiento general a quienes han ayudado con cualquiera de los clanes, separado de créditos CodePointer y reportes de versión -->

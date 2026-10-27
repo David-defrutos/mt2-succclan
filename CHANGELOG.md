@@ -1,63 +1,63 @@
 # Changelog
 
-## Unreleased — bug fixes under validation
+## 0.1.12 — 2026-10-27
 
 ### English
 
-Thanks to **Brandon and Rratvar** for the reports and suggestions.
+Thanks to **Brandon and Rratvar** for reporting bugs and suggesting improvements included in this update.
 
-- **Whispering Blade:** retains +5 Attack, 1 Ember and uncommon rarity. Replace Strike: gain Psionic 1 with Accursed: apply Sap 2 to the rear enemy unit.
-
-- **Pain and Pleasure / Arrogance Ghost:** use Conductor's pool-filtered discard, preserving the requirement and quantity of 2 Obsessing Sparks. Pain and Pleasure still draws 3 cards.
-- **Mutant Elixirs:** grant both Mutated and Multistrike 1 to the same unit, remove the previous mutation correctly and avoid choosing empty rooms.
-- Use native target validation for Mind Domination and Profane Ascending. Disable the four archived Butcher animation patches while its artwork is static. Requires Trainworks Reloaded 0.7.33 and Conductor 0.5.15 or newer.
-
-- **Knightmare — Endless:** replaced cardless cloning with native Reanimate on the same unit and card. Restore full upgraded health before death triggers resolve; existing Reanimate stacks have priority. Psionic resurrection becomes available after those stacks are exhausted.
-- **Knightmare:** show the increasing resurrection cost in the unit tooltip. Its own death no longer generates Psionic through Harvest, preventing a refund that made the initial Burst 2 behave like Burst 1.
-- **Frantic:** redirect native attacks to the front unit on the attacker's own team, retaining native attack interactions and combat preview. Consume one stack before attacking; stacks gained during combat remain available for a later activation.
-- **Abyss Crown:** use the native effect that adds an extra Psionic stack to positive applications, rather than modifying the status magnitude.
-- **Mind Domination:** validate non-boss targets before playing, including companion bosses. Complete the same validation boundary for other SuccClan spells with this restriction.
-- **Flare Ribbon:** grant Armor 4 to the Pyre after an enemy attack resolves, bypassing its status immunity as native Pyre-targeted status effects do. In-game verification is still required.
-- **Lust Ghost / Chaos Creation:** clarify their non-boss restriction in all ten languages. Remove the full-screen Moonrise effect from Spark generation, including Obsession Vault.
-- Guard targeting, cloning and Frantic immunity against destroyed characters. The reported Envy Ghost assertion still needs an in-game reproduction to confirm its full cause.
+- **Whispering Blade:** replaced Strike: gain Psionic 1 with Accursed: apply Sap 2 to the rear enemy unit.
+- **Knightmare — Endless:** resurrection now retains the same unit and card and restores full health, including health upgrades. Fixed its interaction with Reanimate: existing stacks take priority, then Psionic resurrection becomes available when they run out.
+- **Knightmare:** the unit tooltip shows the increasing resurrection cost. Its own death no longer grants Psionic through Harvest, fixing the refund that made the initial Burst 2 effectively cost 1.
+- **Frantic:** now causes actual attacks, with Strike, Slay, Spikes, Revenge, Melee Weakness and Lifesteal interactions and native combat prediction. One stack is consumed before attacking; stacks gained during combat remain for a later activation.
+- **Abyss Crown:** fixed the extra Psionic stack granted when applying Psionic.
+- **Mind Domination / Profane Ascending:** reject invalid boss targets before playing, including companion bosses. Applied the same companion-boss restriction to other affected SuccClan spells.
+- **Pain and Pleasure / Arrogance Ghost:** changed Obsessing Spark discard to use Conductor's card-pool filtering.
+- **Flare Ribbon:** fixed the Pyre's Armor gain after enemy attacks, including blocked attacks. Clarified that the Pyre gains Armor 4.
+- **Mutant Elixirs:** fixed the application of both Mutated and Multistrike 1 to the same unit, removal of the previous mutation and selection of empty rooms.
+- **Lust Ghost / Chaos Creation:** clarified their non-boss restriction.
+- Removed the full-screen Moonrise effect when generating Obsessing Sparks, including Obsession Vault.
+- Disabled obsolete Incubus Butcher animation hooks while using static artwork.
+- Added safeguards against accessing destroyed units during targeting, copying and Frantic processing.
+- Requires **Trainworks Reloaded 0.7.33** and **Conductor 0.5.15** or newer.
 
 ### 简体中文
 
-感谢 **Brandon 和 Rratvar** 的问题报告和建议。
+感谢 **Brandon 和 Rratvar** 报告错误并提出本次更新中的改进建议。
 
-- **低语之刃：**保留攻击力+5、费用1和非普通稀有度。将攻击时获得灵能1改为诅咒：对后排敌方单位施加弱化2。
-
-- **喜怒无常／傲慢幽魂：**改用Conductor按卡池筛选的弃牌效果，保留2张欲望碎片的要求和数量。喜怒无常仍抽3张牌。
-- **突变药剂：**使同一单位同时获得变异和多重攻击1，正确移除之前的变异，并避免选中空房间。
-- 支配他人和亵渎升腾改用原生目标验证。屠夫使用静态美术时停用四个已归档的动画补丁。需要Trainworks Reloaded 0.7.33和Conductor 0.5.15或更新版本。
-
-- **Knightmare — 无尽路线：**使用原生复生流程替代无卡牌复制，保留同一单位及其卡牌。在死亡触发结算前恢复强化后的全部生命值；已有的复生层数优先消耗，耗尽后才能使用灵能复活。
-- **Knightmare：**单位提示显示递增的复活消耗。自身死亡不再通过收割获得灵能，避免初始消耗2层实际上返还1层。
-- **疯狂：**将原生攻击改为攻击己方最前方单位，保留攻击交互和战斗预览。攻击前消耗1层；战斗中获得的层数保留至之后触发。
-- **深渊王冠：**改用原生的额外施加层数效果，使每次正向施加灵能额外获得1层，而非修改状态强度。
-- **支配他人：**出牌前检查非首领目标，包括伴随首领。补全其他具有该限制的SuccClan法术的同一检查环节。
-- **薪火缎带：**在敌方攻击结算后使薪火获得4点护甲，并像原生薪火状态效果一样绕过其状态免疫。仍需实战验证。
-- **色欲幽魂／混沌造物：**在全部十种语言中明确非首领限制。移除生成火花时的全屏月升效果，包括痴迷宝库。
-- 防止选取目标、复制和疯狂免疫逻辑访问已销毁单位。嫉妒幽魂的报错仍需实战复现以确认完整原因。
+- **低语之刃：**将攻击时获得灵能1改为诅咒：对后排敌方单位施加弱化2。
+- **Knightmare — 无尽路线：**复活时保留同一单位及其卡牌，并恢复全部生命值，包括生命强化。修复与复生的交互：优先消耗已有的复生层数，耗尽后可使用灵能复活。
+- **Knightmare：**单位提示显示递增的复活消耗。自身死亡不再通过收割获得灵能，修复初始消耗2层实际上因返还而只消耗1层的问题。
+- **疯狂：**现在会进行真正的攻击，支持攻击、杀戮、尖刺、复仇、近战易伤和吸血等交互及原生战斗预测。攻击前消耗1层；战斗中获得的层数保留至之后触发。
+- **深渊王冠：**修复施加灵能时额外获得1层灵能的效果。
+- **支配他人／亵渎升腾：**出牌前拒绝无效的首领目标，包括伴随首领。其他相关SuccClan法术也采用相同的伴随首领限制。
+- **喜怒无常／傲慢幽魂：**改用Conductor的卡池筛选来弃掉欲望碎片。
+- **薪火缎带：**修复薪火在敌方攻击后获得护甲的效果，包括被完全抵挡的攻击。明确说明薪火获得护甲4。
+- **突变药剂：**修复同一单位同时获得变异和多重攻击1、移除之前的变异及选中空房间的问题。
+- **色欲幽魂／混沌造物：**明确非首领限制。
+- 移除生成欲望碎片时的全屏月升效果，包括痴迷宝库。
+- 使用静态美术时，停用Incubus Butcher已废弃的动画补丁。
+- 为选取目标、复制和疯狂处理添加保护，避免访问已销毁单位。
+- 需要 **Trainworks Reloaded 0.7.33** 和 **Conductor 0.5.15** 或更新版本。
 
 ### Español
 
-Gracias a **Brandon y Rratvar** por los reportes y propuestas.
+Gracias a **Brandon y Rratvar** por los errores reportados y las mejoras propuestas que han dado lugar a esta actualización.
 
-- **Whispering Blade:** mantiene +5 de ataque, coste 1 e infrecuente. Sustituye Strike: obtiene Psionic 1 por Accursed: aplica Sap 2 al enemigo de la retaguardia.
-
-- **Pain and Pleasure / Arrogance Ghost:** usan el descarte filtrado por pool de Conductor, conservando el requisito y cantidad de 2 Obsessing Sparks. Pain and Pleasure sigue robando 3 cartas.
-- **Mutant Elixirs:** concede Mutated y Multistrike 1 a la misma unidad, retira correctamente la mutación anterior y evita seleccionar salas vacías.
-- Validación nativa de objetivos para Mind Domination y Profane Ascending. Desactivados los cuatro parches archivados de animación del Butcher mientras usa arte estático. Requiere Trainworks Reloaded 0.7.33 y Conductor 0.5.15 o posterior.
-
-- **Knightmare — Endless:** sustituida la copia sin carta por Reanimate nativo sobre la misma unidad y carta. Recupera toda la vida máxima mejorada antes de resolver los triggers de muerte; las cargas de Reanimate existentes tienen prioridad. La resurrección por Psionic queda disponible al agotarlas.
-- **Knightmare:** coste creciente de resurrección en el tooltip de la unidad. Su propia muerte ya no genera Psionic mediante Harvest, evitando el reembolso que hacía que Burst 2 se comportase como Burst 1.
-- **Frantic:** redirige el ataque nativo a la unidad delantera del propio bando, conservando las interacciones de ataque y la predicción de combate. Consume una carga antes de atacar; las obtenidas durante el combate quedan para una activación posterior.
-- **Abyss Crown:** usa el efecto nativo que añade una carga adicional al aplicar Psionic positivo, en lugar de modificar su magnitud.
-- **Mind Domination:** valida objetivos que no sean bosses antes de jugarla, incluidos los acompañantes. Completada la misma validación para otros hechizos SuccClan con esta restricción.
-- **Flare Ribbon:** concede Armor 4 a la Pira tras resolver el ataque enemigo, evitando su inmunidad a estados como hacen los efectos nativos dirigidos a la Pira. Pendiente de comprobación en partida.
-- **Lust Ghost / Chaos Creation:** excepción de bosses explícita en los diez idiomas. Retirado Moonrise de pantalla completa al generar Sparks, incluida Obsession Vault.
-- Protecciones frente a personajes destruidos en selección, clonación e inmunidad Frantic. La causa completa del error de Envy Ghost sigue pendiente de reproducir en partida.
+- **Whispering Blade:** sustituye Strike: obtiene Psionic 1 por Accursed: aplica Sap 2 al enemigo de la retaguardia.
+- **Knightmare — Endless:** la resurrección conserva la misma unidad y carta y recupera toda su vida, incluidas las mejoras de vida. Corregida la interacción con Reanimate: sus cargas tienen prioridad y, al agotarse, puede activarse la resurrección por Psionic.
+- **Knightmare:** el tooltip de la unidad muestra el coste creciente de resurrección. Su propia muerte ya no genera Psionic mediante Harvest, corrigiendo el reembolso que hacía que Burst 2 costase efectivamente 1.
+- **Frantic:** ahora provoca ataques reales, con interacciones de Strike, Slay, Spikes, Revenge, Melee Weakness y Lifesteal y predicción nativa de combate. Consume una carga antes de atacar; las obtenidas durante el combate quedan para una activación posterior.
+- **Abyss Crown:** corregida la carga adicional de Psionic al aplicar Psionic.
+- **Mind Domination / Profane Ascending:** rechazan objetivos boss inválidos antes de jugar, incluidos los acompañantes. Aplicada la misma restricción de acompañantes a otros hechizos afectados de SuccClan.
+- **Pain and Pleasure / Arrogance Ghost:** el descarte de Obsessing Sparks usa el filtrado por pool de Conductor.
+- **Flare Ribbon:** corregida la obtención de armadura de la Pira después de ataques enemigos, incluidos los bloqueados. Aclarado que la Pira obtiene Armor 4.
+- **Mutant Elixirs:** corregida la aplicación de Mutated y Multistrike 1 a la misma unidad, la retirada de la mutación anterior y la selección de salas vacías.
+- **Lust Ghost / Chaos Creation:** aclarada la restricción de bosses.
+- Retirado el efecto lunar de pantalla completa al generar Obsessing Sparks, incluida Obsession Vault.
+- Desactivados los parches antiguos de animación de Incubus Butcher mientras usa imagen estática.
+- Añadidas protecciones para evitar accesos a unidades destruidas durante la selección de objetivos, las copias y el procesamiento de Frantic.
+- Requiere **Trainworks Reloaded 0.7.33** y **Conductor 0.5.15** o posterior.
 
 
 ## 0.1.11 — 2026-10-25
@@ -220,3 +220,11 @@ New translations are a first pass and have not been reviewed by native speakers 
 <!-- 2026-10-27-1554||codex-succclan-targetless||CHANGELOG.md||Ampliar Unreleased EN/ZH/ES con descarte de biblioteca, validación nativa, inmunidad Pyre, Mutant Elixirs y dependencias -->
 
 <!-- 2026-10-27-2046||codex-succclan-targetless||CHANGELOG.md||Añadir cambio aprobado de Whispering Blade en Unreleased EN/ZH/ES -->
+
+<!-- 2026-10-27-2048||codex-succclan-targetless||CHANGELOG.md||Retirar datos sin cambios de Whispering Blade y Pain/Arrogance en Unreleased EN/ZH/ES; describir solo cambios -->
+
+<!-- 2026-10-27-2050||codex-succclan-targetless||CHANGELOG.md||Retirar mención a diez idiomas en entradas Lust Ghost/Chaos Creation de Unreleased EN/ZH/ES -->
+
+<!-- 2026-10-27-2052||codex-succclan-targetless||CHANGELOG.md||Preparar 0.1.12 EN/ZH/ES: solo cambios del producto, sin valores intactos ni idiomas/procesos/pruebas -->
+
+<!-- 2026-10-27-2055||codex-succclan-targetless||CHANGELOG.md||Precisar agradecimiento específico a Brandon/Rratvar por reportes y mejoras de 0.1.12 en EN/ZH/ES -->

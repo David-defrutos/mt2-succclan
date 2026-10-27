@@ -6,7 +6,7 @@
     <Nullable>enable</Nullable>
     <RootNamespace>mt2_succclan.Plugin</RootNamespace>
     <LangVersion>latest</LangVersion>
-    <Version>0.1.11</Version>
+    <Version>0.1.12</Version>
   </PropertyGroup>
 
   <ItemGroup>
@@ -27,3 +27,5 @@
 <!-- 2026-10-25-1836||codex-succclan-targetless||src\mt2_succclan.Plugin.csproj||Versión de compilación 0.1.8 -> 0.1.9 -->
 <!-- 2026-10-25-1917||codex-succclan-targetless||src\mt2_succclan.Plugin.csproj||Versión de compilación 0.1.9 -> 0.1.10 -->
 <!-- 2026-10-25-1952||codex-succclan-targetless||src\mt2_succclan.Plugin.csproj||Versión de compilación 0.1.10 -> 0.1.11 -->
+
+<!-- 2026-10-27-2052||codex-succclan-targetless||src/mt2_succclan.Plugin.csproj||Versión compilación 0.1.11 a 0.1.12 -->
