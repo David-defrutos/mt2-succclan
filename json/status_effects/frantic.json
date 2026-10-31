@@ -1,4 +1,4 @@
-{
+﻿{
     "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
     "status_effects": [
         {
@@ -32,28 +32,28 @@
                 "korean": "<nobr>광란 {0}</nobr>"
             },
             "card_tooltips": {
-                "english": "Unit attacks its own front unit instead of attacking. Consumes 1 stack when it triggers. Cannot be applied to bosses.",
-                "spanish": "La unidad ataca a su propio aliado delantero. Consume 1 carga al activarse. No se puede aplicar a jefes.",
-                "chinese": "单位不再攻击敌人，转而攻击己方前排单位。每次触发消耗 1 层。无法施加于首领。",
-                "french": "L'unité attaque son propre allié en première ligne. Consomme 1 charge au déclenchement. Ne peut pas être appliqué aux boss.",
-                "german": "Die Einheit greift ihren eigenen vordersten Verbündeten an. Verbraucht bei Auslösung 1 Stapel. Kann nicht auf Bosse angewendet werden.",
-                "portuguese": "A unidade ataca seu próprio aliado da frente. Consome 1 acúmulo ao ativar. Não pode ser aplicado a chefes.",
-                "russian": "Отряд атакует своего переднего союзника. При срабатывании расходует 1 заряд. Нельзя наложить на боссов.",
-                "chinese_traditional": "單位會攻擊己方最前方的單位。觸發時消耗 1 層。無法對首領施加。",
-                "japanese": "ユニットが自軍の最前列の味方を攻撃する。発動時に1スタック消費。ボスには付与できない。",
-                "korean": "유닛이 자신의 맨 앞 아군을 공격합니다. 발동 시 1중첩을 소모합니다. 보스에게는 부여할 수 없습니다."
+                "english": "Attacks the front unit on its own team, possibly itself. Consumes 1 stack per combat turn when attacking. Cannot be applied to bosses.",
+                "spanish": "Ataca a la unidad delantera de su propio bando, incluso a sí misma. Consume 1 carga por turno de combate si ataca. No se puede aplicar a jefes.",
+                "chinese": "攻击己方最前方的单位，可能是自身。每个进行攻击的战斗回合消耗1层。无法施加于首领。",
+                "french": "Attaque la première unité de son propre camp, y compris elle-même. Consomme 1 charge par tour de combat où elle attaque. Ne peut pas être appliqué aux boss.",
+                "german": "Greift die vorderste Einheit des eigenen Teams an, möglicherweise sich selbst. Verbraucht pro Kampfrunde mit Angriff 1 Stapel. Kann nicht auf Bosse angewendet werden.",
+                "portuguese": "Ataca a unidade da frente do próprio time, podendo atacar a si mesma. Consome 1 acúmulo por turno de combate em que ataca. Não pode ser aplicado a chefes.",
+                "russian": "Атакует переднего бойца своей стороны, в том числе себя. Расходует 1 заряд за боевой ход, в котором атакует. Нельзя наложить на боссов.",
+                "chinese_traditional": "攻擊己方最前方的單位，可能是自身。每個進行攻擊的戰鬥回合消耗1層。無法對首領施加。",
+                "japanese": "自軍の最前列のユニットを攻撃する。自分自身が対象になることもある。攻撃する戦闘ターンごとに1スタック消費。ボスには付与できない。",
+                "korean": "자기 진영의 맨 앞 유닛을 공격하며, 자신을 공격할 수도 있습니다. 공격하는 전투 턴마다 1중첩을 소모합니다. 보스에게는 부여할 수 없습니다."
             },
             "character_tooltips": {
-                "english": "Unit attacks its own front unit instead of attacking. Consumes 1 stack when it triggers. Cannot be applied to bosses.",
-                "spanish": "La unidad ataca a su propio aliado delantero. Consume 1 carga al activarse. No se puede aplicar a jefes.",
-                "chinese": "单位不再攻击敌人，转而攻击己方前排单位。每次触发消耗 1 层。无法施加于首领。",
-                "french": "L'unité attaque son propre allié en première ligne. Consomme 1 charge au déclenchement. Ne peut pas être appliqué aux boss.",
-                "german": "Die Einheit greift ihren eigenen vordersten Verbündeten an. Verbraucht bei Auslösung 1 Stapel. Kann nicht auf Bosse angewendet werden.",
-                "portuguese": "A unidade ataca seu próprio aliado da frente. Consome 1 acúmulo ao ativar. Não pode ser aplicado a chefes.",
-                "russian": "Отряд атакует своего переднего союзника. При срабатывании расходует 1 заряд. Нельзя наложить на боссов.",
-                "chinese_traditional": "單位會攻擊己方最前方的單位。觸發時消耗 1 層。無法對首領施加。",
-                "japanese": "ユニットが自軍の最前列の味方を攻撃する。発動時に1スタック消費。ボスには付与できない。",
-                "korean": "유닛이 자신의 맨 앞 아군을 공격합니다. 발동 시 1중첩을 소모합니다. 보스에게는 부여할 수 없습니다."
+                "english": "Attacks the front unit on its own team, possibly itself. Consumes 1 stack per combat turn when attacking. Cannot be applied to bosses.",
+                "spanish": "Ataca a la unidad delantera de su propio bando, incluso a sí misma. Consume 1 carga por turno de combate si ataca. No se puede aplicar a jefes.",
+                "chinese": "攻击己方最前方的单位，可能是自身。每个进行攻击的战斗回合消耗1层。无法施加于首领。",
+                "french": "Attaque la première unité de son propre camp, y compris elle-même. Consomme 1 charge par tour de combat où elle attaque. Ne peut pas être appliqué aux boss.",
+                "german": "Greift die vorderste Einheit des eigenen Teams an, möglicherweise sich selbst. Verbraucht pro Kampfrunde mit Angriff 1 Stapel. Kann nicht auf Bosse angewendet werden.",
+                "portuguese": "Ataca a unidade da frente do próprio time, podendo atacar a si mesma. Consome 1 acúmulo por turno de combate em que ataca. Não pode ser aplicado a chefes.",
+                "russian": "Атакует переднего бойца своей стороны, в том числе себя. Расходует 1 заряд за боевой ход, в котором атакует. Нельзя наложить на боссов.",
+                "chinese_traditional": "攻擊己方最前方的單位，可能是自身。每個進行攻擊的戰鬥回合消耗1層。無法對首領施加。",
+                "japanese": "自軍の最前列のユニットを攻撃する。自分自身が対象になることもある。攻撃する戦闘ターンごとに1スタック消費。ボスには付与できない。",
+                "korean": "자기 진영의 맨 앞 유닛을 공격하며, 자신을 공격할 수도 있습니다. 공격하는 전투 턴마다 1중첩을 소모합니다. 보스에게는 부여할 수 없습니다."
             },
             "replacement_texts": {
                 "english": "<b>Frantic</b>",

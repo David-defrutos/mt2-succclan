@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using HarmonyLib;
@@ -21,14 +22,14 @@ namespace mt2_succclan.Plugin
         {
             var unit = input.associatedCharacter;
             if (unit == null || unit.IsDestroyed || !unit.IsAlive) yield break;
-            if (!FranticNativeTurn.Activate(unit))
+            if (!FranticNativeTurn.Activate(unit, GetStatusId()))
             {
                 // No native attack context: never accidentally attack the enemy.
                 output.canAttackOrHeal = false;
                 yield break;
             }
-            // Consume before combat. The native hit may kill/destroy the attacker.
-            unit.RemoveStatusEffect(GetStatusId(), 1, allowModification: false);
+            // The native per-attack callback consumes once, after attack checks.
+            // A zero-attack or otherwise prevented turn must retain its stack.
         }
 
         public override int GetEffectMagnitude(int stacks = 1)
@@ -44,14 +45,39 @@ namespace mt2_succclan.Plugin
         {
             internal CharacterState Unit = null!;
             internal bool Activated;
+            internal bool Consumed;
+            internal string StatusId = null!;
         }
         private static readonly List<Scope> Scopes = new();
 
-        internal static bool Activate(CharacterState unit)
+        internal static bool Activate(CharacterState unit, string statusId)
         {
             for (int i = Scopes.Count - 1; i >= 0; i--)
-                if (Scopes[i].Unit == unit) { Scopes[i].Activated = true; return true; }
+                if (Scopes[i].Unit == unit)
+                {
+                    Scopes[i].Activated = true;
+                    Scopes[i].StatusId = statusId;
+                    return true;
+                }
             return false;
+        }
+
+        internal static void ConsumeForAttack(CharacterState unit)
+        {
+            if (unit == null || unit.IsDestroyed || !unit.IsAlive) return;
+            for (int i = Scopes.Count - 1; i >= 0; i--)
+                if (Scopes[i].Unit == unit)
+                {
+                    var scope = Scopes[i];
+                    if (scope.Activated && !scope.Consumed)
+                    {
+                        // This callback runs after native attack checks and target
+                        // collection, but before a hit can destroy the attacker.
+                        scope.Consumed = true;
+                        unit.RemoveStatusEffect(scope.StatusId, 1, allowModification: false);
+                    }
+                    return;
+                }
         }
 
         internal static bool IsActive(CharacterState unit)
@@ -74,6 +100,17 @@ namespace mt2_succclan.Plugin
     [HarmonyPatch(typeof(CombatManager), nameof(CombatManager.RunUnitTurn))]
     internal static class FranticNativeTurnPatch
     {
+        [HarmonyPrefix]
+        private static void Before(CharacterState attackerState, ref Action<int> perAttackVfxCallback)
+        {
+            var original = perAttackVfxCallback;
+            perAttackVfxCallback = attackIndex =>
+            {
+                FranticNativeTurn.ConsumeForAttack(attackerState);
+                original?.Invoke(attackIndex);
+            };
+        }
+
         [HarmonyPostfix]
         private static void After(CharacterState attackerState, ref IEnumerator __result)
             => __result = FranticNativeTurn.Run(__result, attackerState);
@@ -108,3 +145,5 @@ namespace mt2_succclan.Plugin
     }
 }
 // 2026-10-27-1456||codex-succclan-targetless||src/code/StatusEffectFranticState.cs||Frantic redirige ataques nativos al frente aliado; consume antes del golpe y conserva triggers y preview
+
+// 2026-10-27-2301||codex-succclan-targetless||src/code/StatusEffectFranticState.cs||H3: consumir una carga en primer callback nativo de ataque real; conservar sin ataque y no repetir por Multistrike

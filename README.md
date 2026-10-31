@@ -33,7 +33,7 @@ Choose **Knightmare** or **Shadow Lady**, then build around **Psionic**, **Accur
 
 - **Ghosts:** spectral allies with their own abilities; Obsession supplies Sparks for your deck.
 - **Accursed:** turn playing and discarding Blights or Scourges into useful effects.
-- **Frantic:** affected units attack their own front ally. Bosses are immune.
+- **Frantic:** affected units attack the front unit on their own team, possibly themselves. Bosses are immune.
 - **Rooms and equipment:** includes Spectral Refuge, Obsession Vault, Whispering Blade and Mourning Veil.
 
 ## Screenshots
@@ -63,12 +63,8 @@ Choose **Knightmare** or **Shadow Lady**, then build around **Psionic**, **Accur
 
 - **Artwork:** the card and character artwork has been redrawn for this MT2 port. I know some players liked the MT1 artwork. You can restore CodePointer's original images locally with the [original art replacement guide](https://github.com/David-defrutos/mt2-succclan/blob/main/ORIGINAL-ART.md). The game mechanics do not depend on which art you use.
 - **Knightmare, Abyss and Illusion paths:** their Psionic Burst effects were rebuilt for MT2. Abyss uses Conductor's Accursed trigger for Blight/Scourge interactions; Illusion adds Spikes alongside Lifesteal.
-- **Frantic:** retains the idea of making a unit attack its own front ally, is stackable and consumes one stack when it triggers. Bosses (including minibosses and companion bosses) are immune. In MT1 stacks were removed at turn end.
+- **Frantic:** retains the idea of making a unit attack the front unit on its own team, possibly itself, is stackable and consumes one stack per attacking combat turn. Bosses (including minibosses and companion bosses) are immune. In MT1 stacks were removed at turn end.
 - Other cards and effects were adapted where MT1 mechanics or targets did not transfer directly to MT2. This release is a reinterpretation, so please report interactions that feel wrong.
-
-## Acknowledgements
-
-Thank you to everyone who has helped me with any of my Monster Train 2 clan mods, through testing, bug reports, suggestions, technical advice or encouragement. Your help has made all of these projects better.
 
 Requires BepInExPack, Trainworks Reloaded and Conductor. Source and issues: [mt2-succclan](https://github.com/David-defrutos/mt2-succclan).
 
@@ -104,7 +100,7 @@ Requires BepInExPack, Trainworks Reloaded and Conductor. Source and issues: [mt2
 
 - **幽灵（Ghost）**：拥有各自能力的幽灵盟友；Obsession 能为你的牌组提供 Spark。
 - **Accursed**：通过打出或弃掉祸害牌、灾祸牌触发有益效果。
-- **Frantic**：受影响的单位攻击己方最前方的盟友。首领免疫。
+- **Frantic**：受影响的单位攻击己方最前方的单位，可能是自身。首领免疫。
 - **房间与装备**：包含 Spectral Refuge、Obsession Vault、Whispering Blade 和 Mourning Veil。
 
 游戏截图位于上方的英文部分。
@@ -114,12 +110,8 @@ Requires BepInExPack, Trainworks Reloaded and Conductor. Source and issues: [mt2
 
 - **美术**：卡牌与角色美术已为本次 MT2 移植重新绘制。我知道有些玩家喜欢 MT1 的美术。你可以按照[原版美术替换指南](https://github.com/David-defrutos/mt2-succclan/blob/main/ORIGINAL-ART.md)，在本地恢复 CodePointer 的原始图片。游戏机制不受所选美术影响。
 - **Knightmare 的 Abyss 与 Illusion 路线**：为 MT2 重建了 Psionic Burst 效果。Abyss 使用 Conductor 的 Accursed 触发器处理祸害牌与灾祸牌的交互；Illusion 在吸血之外加入了尖刺。
-- **Frantic**：保留使单位攻击己方最前方盟友的机制，可以叠加，每次触发消耗一层。首领免疫，包括小首领和伴随首领。MT1 中的层数会在回合结束时移除。
+- **Frantic**：保留使单位攻击己方最前方单位（可能是自身）的机制，可以叠加，每个进行攻击的战斗回合消耗一层。首领免疫，包括小首领和伴随首领。MT1 中的层数会在回合结束时移除。
 - 当 MT1 的机制或目标无法直接移植到 MT2 时，其他卡牌与效果也进行了适配。这是对原作的重新诠释；如果某些交互不合理，请反馈。
-
-## 鸣谢
-
-感谢所有曾帮助我制作任何 Monster Train 2 氏族模组的人，无论是参与测试、报告错误、提出建议、提供技术指导，还是给予鼓励。你们的帮助让这些项目变得更好。
 
 需要 BepInExPack、Trainworks Reloaded 和 Conductor。源代码与问题页面：[mt2-succclan](https://github.com/David-defrutos/mt2-succclan)。
 
@@ -156,7 +148,7 @@ Elige **Knightmare** o **Shadow Lady** y construye tu mazo alrededor de **Psioni
 
 - **Fantasmas:** aliados espectrales con habilidades propias; Obsession aporta Sparks para tu mazo.
 - **Accursed:** aprovecha jugar y descartar Blights o Scourges para activar efectos beneficiosos.
-- **Frantic:** las unidades afectadas atacan a su aliado delantero. Los jefes son inmunes.
+- **Frantic:** las unidades afectadas atacan a la unidad delantera de su propio bando, incluso a sí mismas. Los jefes son inmunes.
 - **Salas y equipos:** incluye Spectral Refuge, Obsession Vault, Whispering Blade y Mourning Veil.
 
 
@@ -164,14 +156,35 @@ Elige **Knightmare** o **Shadow Lady** y construye tu mazo alrededor de **Psioni
 
 - **Arte:** he rehecho el arte de las cartas y los personajes para este port a MT2. Sé que a algunas personas les gustaba el arte de MT1. Se pueden recuperar las imágenes originales de CodePointer en la instalación local siguiendo la [guía para sustituir el arte](https://github.com/David-defrutos/mt2-succclan/blob/main/ORIGINAL-ART.md). Las mecánicas no dependen del arte elegido.
 - **Knightmare, sendas Abyss e Illusion:** he reconstruido sus efectos Psionic Burst para MT2. Abyss usa el disparador Accursed de Conductor al jugar o descartar Blight/Scourge; Illusion añade Spikes además de Lifesteal.
-- **Frantic:** mantiene la idea de atacar al aliado delantero, puede acumular cargas y consume una al activarse. Los jefes (incluidos minibosses y jefes acompañantes) son inmunes. En MT1 las cargas se quitaban al final del turno.
+- **Frantic:** mantiene la idea de atacar a la unidad delantera del propio bando, incluso a sí misma, puede acumular cargas y consume una por turno de combate si ataca. Los jefes (incluidos minibosses y jefes acompañantes) son inmunes. En MT1 las cargas se quitaban al final del turno.
 - He adaptado otras cartas y efectos cuando las mecánicas o los objetivos de MT1 no tenían equivalencia directa en MT2. Si alguna interacción parece errónea, indícamela.
 
-## Agradecimientos
-
-Gracias a todas las personas que me han ayudado con cualquiera de mis clanes de Monster Train 2, ya sea probándolos, comunicando errores, proponiendo mejoras, compartiendo conocimientos técnicos o animándome a continuar. Vuestra ayuda ha mejorado todos estos proyectos.
-
 Requiere BepInExPack, Trainworks Reloaded y Conductor. Código e incidencias: [mt2-succclan](https://github.com/David-defrutos/mt2-succclan).
+
+---
+
+## Acknowledgements / 鸣谢 / Agradecimientos
+
+Thank you to everyone who has helped me with any of my Monster Train 2 clans through testing, bug reports, suggestions, technical advice, tools, permission to port their work or encouragement. Special thanks to:
+
+感谢所有曾帮助我制作任何 Monster Train 2 氏族模组的人，无论是参与测试、报告错误、提出建议、提供技术指导或工具、允许移植作品，还是给予鼓励。特别感谢：
+
+Gracias a todas las personas que me han ayudado con cualquiera de mis clanes de Monster Train 2: probándolos, comunicando errores, proponiendo mejoras, compartiendo conocimientos y herramientas, permitiendo adaptar su trabajo o animándome a continuar. En especial, a:
+
+1. **Brandon**
+2. **Chéradénine**
+3. **CodePointer** — original author of SuccClan / SuccClan 原作者 / autor original de SuccClan.
+4. **fohnjarmery**
+5. **lostone**
+6. **Rratvar, the Untitled**
+7. **timeracers**
+
 <!-- 2026-10-25-1839||codex-succclan-targetless||README.md||Sustituir enlaces generales por canal dedicado SuccClan en EN/ZH-CN/ES; conservar créditos CodePointer -->
 
 <!-- 2026-10-27-2055||codex-succclan-targetless||README.md||Añadir agradecimiento general a quienes han ayudado con cualquiera de los clanes, separado de créditos CodePointer y reportes de versión -->
+
+<!-- 2026-10-27-2259||codex-succclan-targetless||README.md||Nombrar colaboradores Discord conocidos en agradecimientos generales EN/ZH/ES: Brandon, Chéradénine, CodePointer, fohnjarmery, lostone, Rratvar the Untitled y timeracers; lista contrastada con FreeCompany -->
+
+<!-- 2026-10-27-2301||codex-succclan-targetless||README.md||Alinear presentación Frantic con autoataque y carga conservada si no ataca; conservar agradecimientos nominales -->
+
+<!-- 2026-10-27-2305||codex-succclan-targetless||README.md||Mover agradecimientos a lista única final con siete nombres Discord e identificar CodePointer como autor original; preservar créditos iniciales -->

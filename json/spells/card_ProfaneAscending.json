@@ -51,7 +51,7 @@
             "id": "ProfaneAscendingValidTarget",
             "name": "CardEffectNULL",
             "target_mode": "drop_target_character",
-            "target_team": "both",
+            "target_team": "heroes",
             "target_ignore_bosses": true,
             "should_fail_to_cast_if_test_fails": true,
             "should_cancel_subsequent_effects_if_test_fails": true
@@ -68,7 +68,7 @@
             "id": "PAFrantic",
             "name": "CardEffectAddStatusEffect",
             "target_mode": "last_targeted_characters",
-            "target_team": "both",
+            "target_team": "heroes",
             "param_status_effects": [
                 {
                     "status": "@frantic",
