@@ -29,7 +29,8 @@
                 "@ObsessingShardOnUnplayed"
             ],
             "pools": [
-                "BlightsWithFullTooltipDescriptionPool"
+              "BlightsWithFullTooltipDescriptionPool",
+              "CardsThatResolveSimultaneouslyOnUnplayed"
             ]
         }
     ],
