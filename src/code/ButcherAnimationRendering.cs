@@ -6,6 +6,7 @@ using System;
 using Anim = CharacterUI.Anim;
 using AnimNote = CharacterUI.AnimNote;
 
+/*
 namespace mt2_succclan.Plugin
 {
     /// <summary>Match static sprite sizing for Butcher's frame animation.</summary>
@@ -179,4 +180,6 @@ namespace mt2_succclan.Plugin
         }
     }
 }
+*/
+
 // 2026-10-27-1536||codex-succclan-targetless||src/code/ButcherAnimationRendering.cs||Conservar animaciones archivadas pero no registrar sus cuatro parches globales mientras Butcher es estático

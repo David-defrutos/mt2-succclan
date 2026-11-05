@@ -4,6 +4,7 @@ using System.IO;
 using Microsoft.Extensions.Configuration;
 using TrainworksReloaded.Core;
 using TrainworksReloaded.Core.Extensions;
+using TrainworksReloaded.Base;
 
 namespace mt2_succclan.Plugin
 {
@@ -11,6 +12,7 @@ namespace mt2_succclan.Plugin
     public class Plugin : BaseUnityPlugin
     {
         internal static new ManualLogSource Logger = new(MyPluginInfo.PLUGIN_GUID);
+        internal static ClassData? ClanInstance;
 
         public void Awake()
         {
@@ -106,7 +108,6 @@ namespace mt2_succclan.Plugin
                         "json/units/unit_Vrolikai.json",
                         "json/units/unit_WrathGhost.json"
                     };
-                    // Trainworks silently ignores missing merged JSON files.
                     // Validate against the DLL directory, the same base path it uses.
                     var contentDirectory = Path.GetDirectoryName(typeof(Plugin).Assembly.Location)!;
                     foreach (var jsonPath in jsonPaths)
@@ -123,7 +124,39 @@ namespace mt2_succclan.Plugin
                         source.Paths = new System.Collections.Generic.List<string>(jsonPaths);
                         source.Optional = false;
                     });
+
+
+                    // Setup special animations for Rare cards.
+                    Roundhouse.WhenReady(MyPluginInfo.PLUGIN_GUID, (GameDataManager ctx) =>
+                    {
+                        string[] CardArtIDs =
+                        {
+                            "KnightMareCardArt",
+                            "ShadowLadyCardArt",
+                            "CubusSpikeArt",
+                            "DepressionWhisperArt",
+                            "IllusionTwinsArt",
+                            "InsanityReachArt",
+                            "ParadoxTomeArt",
+                            "PlagueBoostArt",
+                            "AbyssPrincessCardArt",
+                            "ArroganceGhostCardArt",
+                            "EndlessShadowCardArt",
+                            "ShadowWarriorCardArt"
+                        };
+
+                        foreach (var id in CardArtIDs)
+                        {
+                            SuccSetupChampionCardAnimations.SetupCardArt(ctx.GetCardArt(id));
+                        }
+
+                        ClanInstance = ctx.GetClan("ClassSuccubus");
+                        // Setup Animated Character GameObjects
+                        // ctx.GetCharacterArt(id)
+                    });
                     Logger.LogInfo($"SuccClan configured {jsonPaths.Length} JSON files from {contentDirectory}.");
+
+
                 }
             );
 

@@ -1,7 +1,9 @@
+using HarmonyLib;
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using HarmonyLib;
+using TrainworksReloaded.Base;
+using TrainworksReloaded.Base.Extensions;
 using UnityEngine;
 
 namespace mt2_succclan.Plugin
@@ -20,14 +22,19 @@ namespace mt2_succclan.Plugin
 
         private static bool IsClanCard(CardState? card)
         {
-            return card?.GetCardDataID()?.StartsWith(MyPluginInfo.PLUGIN_GUID + "-Card-", StringComparison.Ordinal) == true;
+            //return card?.GetAssetName()?.BelongsToMod(MyPluginInfo.PLUGIN_GUID, TemplateConstants.Card) == true;
+            return card?.GetLinkedClassID() == Plugin.ClanInstance!.GetID();
         }
 
         private static bool IsClanCharacter(CharacterState? character)
         {
-            return character != null && !character.IsDestroyed
-                && character.GetSourceCharacterData()?.GetID()?.StartsWith(
-                    MyPluginInfo.PLUGIN_GUID + "-Character-", StringComparison.Ordinal) == true;
+            if (character == null || character.IsDestroyed)
+                return false;
+            if (IsClanCard(character.GetSpawnerCard()))
+                return true;
+            // if cardless and spawned w/o a backing spawner card (rare).
+            var fullyQualifiedID = character.GetSourceCharacterData()?.GetAssetKey();
+            return fullyQualifiedID?.BelongsToMod(MyPluginInfo.PLUGIN_GUID, TemplateConstants.Character) == true;
         }
 
         internal static bool IsClanContext(CardEffectState state, CardEffectParams parameters)

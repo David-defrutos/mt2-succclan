@@ -1,5 +1,7 @@
 using System;
 using HarmonyLib;
+using TrainworksReloaded.Base;
+using TrainworksReloaded.Base.Extensions;
 using TrainworksReloaded.Base.Prefab;
 using TrainworksReloaded.Core.Interfaces;
 using UnityEngine;
@@ -7,18 +9,12 @@ using UnityEngine.UI;
 
 namespace mt2_succclan.Plugin
 {
-    /// <summary>Attach to champion and rare card-art prefabs, never character art.</summary>
-    [HarmonyPatch(typeof(GameObjectCardArtDecorator), nameof(GameObjectCardArtDecorator.Setup))]
-    internal static class SuccChampionCardAnimationPatch
+    internal static class SuccSetupChampionCardAnimations
     {
-        [HarmonyPostfix]
-        private static void AfterSetup(IDefinition<GameObject> definition)
+        internal static void SetupCardArt(GameObject root)
         {
-            if (!string.Equals(definition.Key, MyPluginInfo.PLUGIN_GUID, StringComparison.Ordinal)
-                || definition.Configuration.GetSection("type").Value != "card_art") return;
-            if (!TryProfile(definition.Id, out var hue, out var focus, out var secondFocus,
+            if (!TryProfile(root.name, out var hue, out var focus, out var secondFocus,
                 out float period, out float pulseSpeed)) return;
-            var root = definition.Data;
             var image = root.transform.Find("CardSprite")?.GetComponent<Image>();
             if (image == null || root.GetComponent<SuccChampionCardAnimation>() != null) return;
             // Clip only the art rectangle; the frame and card text are siblings
@@ -40,7 +36,7 @@ namespace mt2_succclan.Plugin
 
         // Explicit IDs prevent the presentation from touching relics, other
         // clans, character art, or cards which are not rare in this release.
-        private static bool TryProfile(string id, out Color hue, out Vector2 focus,
+        private static bool TryProfile(string fullId, out Color hue, out Vector2 focus,
             out Vector2 secondFocus, out float period, out float pulseSpeed)
         {
             hue = new Color(0.65f, 0.20f, 1f);
@@ -48,7 +44,7 @@ namespace mt2_succclan.Plugin
             secondFocus = new Vector2(-1f, -1f);
             period = 7f;
             pulseSpeed = 1.4f;
-            switch (id)
+            switch (fullId.ExtractId(MyPluginInfo.PLUGIN_GUID, TemplateConstants.GameObject, TemplateConstants.SubtemplateGameObjectCardArt))
             {
                 case "KnightMareCardArt":
                     hue = new Color(0.12f, 0.72f, 1f); focus = new Vector2(0.29f, 0.77f); period = 6.6f; break;
