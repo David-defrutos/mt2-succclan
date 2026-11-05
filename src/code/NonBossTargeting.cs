@@ -2,6 +2,8 @@
 using System;
 using System.Collections.Generic;
 using HarmonyLib;
+using TrainworksReloaded.Base;
+using TrainworksReloaded.Base.Extensions;
 
 namespace mt2_succclan.Plugin
 {
@@ -33,9 +35,8 @@ namespace mt2_succclan.Plugin
     {
         internal static bool Applies(CardEffectState effect)
         {
-            var id = effect?.GetParentCardState()?.GetCardDataID();
-            return effect != null && effect.GetTargetIgnoreBosses() && id != null
-                && id.StartsWith(MyPluginInfo.PLUGIN_GUID + "-", StringComparison.Ordinal);
+            return effect != null && effect.GetTargetIgnoreBosses()
+                && SuccClanEffectContext.IsCard(effect.GetParentCardState());
         }
         internal static bool Invalid(CharacterState? target)
             => target == null || target.IsDestroyed || target.IsAnyBoss() || target.IsCompanionBoss();
@@ -65,15 +66,26 @@ namespace mt2_succclan.Plugin
 {
     internal static class SuccClanEffectContext
     {
-        internal static bool IsOwn(CardEffectState effect, CardEffectParams parameters)
+        internal static bool IsCard(CardState? card)
         {
-            var id = (effect.GetParentCardState() ?? parameters.playedCard)?.GetCardDataID();
-            if (id != null && id.StartsWith(MyPluginInfo.PLUGIN_GUID + "-", StringComparison.Ordinal)) return true;
-            var unit = parameters.selfTarget;
-            if (unit == null || unit.IsDestroyed) return false;
-            id = unit.GetSourceCharacterData()?.GetID();
-            return id != null && id.StartsWith(MyPluginInfo.PLUGIN_GUID + "-", StringComparison.Ordinal);
+            if (card == null) return false;
+            var clan = Plugin.ClanInstance;
+            return (clan != null && card.GetLinkedClassID() == clan.GetID())
+                || card.GetAssetName()?.BelongsToMod(MyPluginInfo.PLUGIN_GUID, TemplateConstants.Card) == true;
         }
+
+        internal static bool IsCharacter(CharacterState? unit)
+        {
+            if (unit == null || unit.IsDestroyed) return false;
+            return IsCard(unit.GetSpawnerCard())
+                || unit.GetSourceCharacterData()?.GetAssetKey()?.BelongsToMod(
+                    MyPluginInfo.PLUGIN_GUID, TemplateConstants.Character) == true;
+        }
+
+        internal static bool IsOwn(CardEffectState effect, CardEffectParams parameters)
+            => IsCard(effect.GetParentCardState()) || IsCard(parameters.playedCard)
+                || IsCharacter(parameters.selfTarget)
+                || IsCharacter(parameters.characterThatActivatedAbility);
     }
 
     // Conductor owns pool filtering, random selection, count validation and
@@ -99,3 +111,4 @@ namespace mt2_succclan.Plugin
 // 2026-10-27-1540||codex-succclan-targetless||src/code/NonBossTargeting.cs||Conectar mano nativa con descarte Conductor solo para SuccClan y compartir comprobación segura de contexto
 // 2026-10-27-1545||codex-succclan-targetless||src\code\NonBossTargeting.cs||Retirar parche global de TestEffect: validación sustituida por CardEffectNULL nativo
 // 2026-10-27-1547||codex-succclan-targetless||src/code/NonBossTargeting.cs||Mantener comprobación de contexto nulo en puente nativo de mano
+// 2026-11-05-1726||codex-succclan-targetless||src\code\NonBossTargeting.cs||Identificar clan por clase y asset key, nunca por prefijos de GUID; corregir mano y filtro de bosses

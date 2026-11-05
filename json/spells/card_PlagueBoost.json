@@ -1,4 +1,4 @@
-{
+﻿{
     "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
     "cards": [
         {
@@ -16,16 +16,16 @@
                 "korean": "역병 증폭"
             },
             "descriptions": {
-                "english": "Gain 1[ember] for every <b>Blight</b> in your deck.",
-                "chinese": "牌库中每有 1 张[blight]牌，获得 1[ember]。",
-                "spanish": "Gana 1[ember] por cada <b>Ruina</b> en tu mazo.",
-                "french": "Gagnez 1[ember] pour chaque <b>Fléau</b> dans votre deck.",
-                "german": "Erhalte 1[ember] für jeden <b>Fluch</b> in deinem Deck.",
-                "portuguese": "Ganhe 1[ember] para cada <b>Praga</b> no seu deck.",
-                "russian": "Даёт 1[ember] за каждую <b>Порчу</b> в колоде.",
-                "chinese_traditional": "牌庫中每有一張<b>禍害</b>牌，獲得 1[ember]。",
-                "japanese": "山札の<b>荒廃</b>1枚につき1[ember]を得る。",
-                "korean": "덱의 <b>저주</b> 카드 한 장당 1[ember]을 얻습니다."
+                "english": "Gain [trait2.power][ember] for every <b>Blight</b> and [junk] in your deck.",
+                "spanish": "Gana [trait2.power][ember] por cada <b>Ruina</b> y [junk] en tu mazo.",
+                "chinese": "牌库中每有一张<b>祸害</b>或[junk]牌，获得 [trait2.power][ember]。",
+                "chinese_traditional": "牌庫中每有一張<b>禍害</b>或[junk]牌，獲得 [trait2.power][ember]。",
+                "french": "Gagnez [trait2.power][ember] pour chaque <b>Fléau</b> et [junk] dans votre deck.",
+                "german": "Erhalte [trait2.power][ember] für jeden <b>Fluch</b> und jede [junk] in deinem Deck.",
+                "portuguese": "Ganhe [trait2.power][ember] para cada <b>Praga</b> e [junk] no seu deck.",
+                "russian": "Даёт [trait2.power][ember] за каждую <b>Порчу</b> и [junk] в колоде.",
+                "japanese": "デッキの<b>荒廃</b>と[junk]1枚につき[trait2.power][ember]を得る。",
+                "korean": "덱의 <b>저주</b> 및 [junk] 카드 한 장당 [trait2.power][ember]을 얻습니다."
             },
             "card_type": "spell",
             "rarity": "rare",

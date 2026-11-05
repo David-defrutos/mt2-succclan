@@ -6,6 +6,23 @@ Latest release in all ten game languages. Full history in English and Spanish.
 
 ## English
 
+### 0.1.14 — 2026-11-05 — ALPHA
+
+Thanks to **Brandon**, **Rratvar, the Untitled**, and **Sin1sT3r [PAL]** for the reports and suggestions, and to Brandon for the PR and technical guidance.
+
+- **Shadow Lady — Bloodthirsty:** size reduced from 3 to 2 at all three levels.
+- **New Curseguard Slab:** Accursed: gain Armor 10. Replaces Curseguard Stone in empowered Soul Savior unit shops.
+- **Plague Boost:** now grants ember for both Blights and Scourges in your deck.
+- **Pain and Pleasure / Arrogance Ghost:** fixed hand targeting when discarding Obsessing Sparks, including generated Sparks.
+- **Curseguard Stone:** fixed registration in standard and Soul Savior upgrade pools. Its Armor value now reflects modifiers.
+- **Shadow Lady — Plague:** the +1 ember per turn now appears in the ember gain preview.
+- **Power Siphon:** now displays its current damage, including Spell Power and Conduit bonuses.
+- **Vitality Extraction:** shows numerical Regen and Rage values so Doublestack upgrades are clearer.
+- **Flesh Ring:** added its missing activation message.
+- **Obsessing Spark:** fixed simultaneous Reserve resolution at the end of the turn.
+- Fixed identification of SuccClan cards and units for visual and sound effects, and improved compatibility with Trainworks.
+- Requires **Trainworks Reloaded 0.7.35** and **Conductor 0.5.17** or newer.
+
 ### 0.1.13 — 2026-10-27 — ALPHA
 
 - Reorganized the changelog by language, added navigation links and expanded its translations and Spanish history.
@@ -123,6 +140,23 @@ New translations are a first pass and have not been reviewed by native speakers 
 
 ## Spanish
 
+### 0.1.14 — 2026-11-05 — ALPHA
+
+Gracias a **Brandon**, **Rratvar, the Untitled** y **Sin1sT3r [PAL]** por los errores reportados y las sugerencias, y a Brandon por el PR y la ayuda técnica.
+
+- **Shadow Lady — Bloodthirsty:** tamaño reducido de 3 a 2 en los tres niveles.
+- **Nueva Curseguard Slab:** Accursed: obtiene Armadura 10. Sustituye a Curseguard Stone en las tiendas de unidades potenciadas de Soul Savior.
+- **Plague Boost:** ahora concede ember tanto por las Ruinas como por los Azotes de tu mazo.
+- **Pain and Pleasure / Arrogance Ghost:** corregida la selección de la mano al descartar Chispas obsesivas, incluidas las generadas.
+- **Curseguard Stone:** corregido su registro en los pools de mejoras normales y de Soul Savior. La cantidad de Armadura ahora refleja los modificadores.
+- **Shadow Lady — Plague:** el +1 ember por turno aparece en la previsión de ember.
+- **Power Siphon:** muestra su daño actual, incluidos los bonus de Poder mágico y Conduit.
+- **Vitality Extraction:** muestra las cantidades de Regeneración y Furia para aclarar el efecto de Doublestack.
+- **Flesh Ring:** añadido el mensaje de activación que faltaba.
+- **Obsessing Spark:** corregida la resolución simultánea de Reserva al final del turno.
+- Corregida la identificación de cartas y unidades SuccClan para los efectos visuales y de sonido; mejorada la compatibilidad con Trainworks.
+- Requiere **Trainworks Reloaded 0.7.35** y **Conductor 0.5.17** o posteriores.
+
 ### 0.1.13 — 2026-10-27 — ALPHA
 
 - Changelog reorganizado por idioma, con enlaces de navegación, traducciones ampliadas e historial español completado.
@@ -233,6 +267,23 @@ Las traducciones nuevas son una primera versión y aún no habían sido revisada
 
 ## French
 
+### 0.1.14 — 2026-11-05 — ALPHA
+
+Merci à **Brandon**, **Rratvar, the Untitled** et **Sin1sT3r [PAL]** pour leurs signalements et suggestions, et à Brandon pour le PR et ses conseils techniques.
+
+- **Shadow Lady — Bloodthirsty :** taille réduite de 3 à 2 aux trois niveaux.
+- **Nouvelle Curseguard Slab :** Accursed : gagne Armure 10. Remplace Curseguard Stone dans les boutiques d’unités renforcées de Soul Savior.
+- **Plague Boost :** accorde désormais des braises pour les Fléaux et les Plaies de votre deck.
+- **Pain and Pleasure / Arrogance Ghost :** correction du ciblage de la main pour défausser les Étincelles obsédantes, y compris celles générées.
+- **Curseguard Stone :** correction de son ajout aux réserves d’améliorations normales et de Soul Savior. La valeur d’Armure reflète les modificateurs.
+- **Shadow Lady — Plague :** le +1 braise par tour apparaît dans la prévision de braises.
+- **Power Siphon :** affiche les dégâts actuels, avec les bonus de puissance magique et de Conduit.
+- **Vitality Extraction :** affiche les valeurs numériques de Régénération et de Rage pour clarifier Doublestack.
+- **Flesh Ring :** ajout du message d’activation manquant.
+- **Obsessing Spark :** correction de la résolution simultanée de Réserve en fin de tour.
+- Correction de l’identification des cartes et unités SuccClan pour les effets visuels et sonores ; meilleure compatibilité avec Trainworks.
+- Nécessite **Trainworks Reloaded 0.7.35** et **Conductor 0.5.17** ou ultérieurs.
+
 ### 0.1.13 — 2026-10-27 — ALPHA
 
 - Changelog réorganisé par langue, avec liens de navigation, traductions enrichies et historique espagnol complété.
@@ -258,6 +309,23 @@ Merci à **Brandon et Rratvar** pour les bugs signalés et les améliorations pr
 - Nécessite **Trainworks Reloaded 0.7.33** et **Conductor 0.5.15** ou versions ultérieures.
 
 ## German
+
+### 0.1.14 — 2026-11-05 — ALPHA
+
+Danke an **Brandon**, **Rratvar, the Untitled** und **Sin1sT3r [PAL]** für Meldungen und Vorschläge sowie an Brandon für den PR und die technische Hilfe.
+
+- **Shadow Lady — Bloodthirsty:** Größe auf allen drei Stufen von 3 auf 2 reduziert.
+- **Neue Curseguard Slab:** Accursed: Erhalte Rüstung 10. Ersetzt Curseguard Stone in verstärkten Einheitenläden von Soul Savior.
+- **Plague Boost:** gewährt jetzt Glut für Flüche und Plagen in deinem Deck.
+- **Pain and Pleasure / Arrogance Ghost:** Handzielauswahl beim Abwerfen von Besessenheitsfunken korrigiert, einschließlich erzeugter Karten.
+- **Curseguard Stone:** Registrierung in normalen und Soul-Savior-Verbesserungspools korrigiert. Der Rüstungswert berücksichtigt Modifikatoren.
+- **Shadow Lady — Plague:** +1 Glut pro Zug wird in der Glutvorschau angezeigt.
+- **Power Siphon:** zeigt aktuellen Schaden einschließlich Magiekraft- und Conduit-Boni.
+- **Vitality Extraction:** zeigt Zahlenwerte für Regeneration und Wut, damit Doublestack verständlich ist.
+- **Flesh Ring:** fehlende Aktivierungsmeldung ergänzt.
+- **Obsessing Spark:** gleichzeitige Reserve-Auflösung am Zugende korrigiert.
+- Erkennung von SuccClan-Karten und -Einheiten für Bild- und Toneffekte korrigiert; Kompatibilität mit Trainworks verbessert.
+- Benötigt **Trainworks Reloaded 0.7.35** und **Conductor 0.5.17** oder neuer.
 
 ### 0.1.13 — 2026-10-27 — ALPHA
 
@@ -285,6 +353,23 @@ Danke an **Brandon und Rratvar** für die Fehlerberichte und Verbesserungsvorsch
 
 ## Russian
 
+### 0.1.14 — 2026-11-05 — ALPHA
+
+Спасибо **Brandon**, **Rratvar, the Untitled** и **Sin1sT3r [PAL]** за сообщения и предложения, а Brandon — также за PR и техническую помощь.
+
+- **Shadow Lady — Bloodthirsty:** размер уменьшен с 3 до 2 на всех трёх уровнях.
+- **Новая Curseguard Slab:** Accursed: даёт Броню 10. Заменяет Curseguard Stone в усиленных магазинах существ Soul Savior.
+- **Plague Boost:** теперь даёт угли за Порчу и Скверну в колоде.
+- **Pain and Pleasure / Arrogance Ghost:** исправлен выбор карт в руке при сбросе Искр одержимости, включая созданные карты.
+- **Curseguard Stone:** исправлено добавление в обычные наборы улучшений и наборы Soul Savior. Броня в описании учитывает модификаторы.
+- **Shadow Lady — Plague:** +1 уголь за ход отображается в прогнозе углей.
+- **Power Siphon:** отображает текущий урон с бонусами магической силы и Conduit.
+- **Vitality Extraction:** показывает численные значения Регенерации и Ярости для ясности улучшения Doublestack.
+- **Flesh Ring:** добавлено отсутствовавшее сообщение активации.
+- **Obsessing Spark:** исправлено одновременное срабатывание Резерва в конце хода.
+- Исправлено распознавание карт и существ SuccClan для визуальных и звуковых эффектов; улучшена совместимость с Trainworks.
+- Требуются **Trainworks Reloaded 0.7.35** и **Conductor 0.5.17** или новее.
+
 ### 0.1.13 — 2026-10-27 — ALPHA
 
 - Список изменений сгруппирован по языкам; добавлены ссылки навигации, расширены переводы и дополнена испанская история версий.
@@ -311,6 +396,23 @@ Danke an **Brandon und Rratvar** für die Fehlerberichte und Verbesserungsvorsch
 
 ## Portuguese Brazil
 
+### 0.1.14 — 2026-11-05 — ALPHA
+
+Obrigado a **Brandon**, **Rratvar, the Untitled** e **Sin1sT3r [PAL]** pelos relatos e sugestões, e a Brandon pelo PR e pela orientação técnica.
+
+- **Shadow Lady — Bloodthirsty:** tamanho reduzido de 3 para 2 nos três níveis.
+- **Nova Curseguard Slab:** Accursed: ganha Armadura 10. Substitui Curseguard Stone nas lojas de unidades aprimoradas de Soul Savior.
+- **Plague Boost:** agora concede brasas por Pragas e Flagelos no seu deck.
+- **Pain and Pleasure / Arrogance Ghost:** corrigida a seleção da mão ao descartar Centelhas Obsessivas, incluindo as geradas.
+- **Curseguard Stone:** corrigido o registro nas reservas de melhorias normais e de Soul Savior. O valor de Armadura reflete os modificadores.
+- **Shadow Lady — Plague:** +1 brasa por turno aparece na previsão de brasas.
+- **Power Siphon:** mostra o dano atual, incluindo bônus de Poder Mágico e Conduit.
+- **Vitality Extraction:** mostra valores numéricos de Regeneração e Fúria para esclarecer Doublestack.
+- **Flesh Ring:** adicionada a mensagem de ativação ausente.
+- **Obsessing Spark:** corrigida a resolução simultânea de Reserva no fim do turno.
+- Corrigida a identificação de cartas e unidades SuccClan para efeitos visuais e sonoros; melhorada a compatibilidade com Trainworks.
+- Requer **Trainworks Reloaded 0.7.35** e **Conductor 0.5.17** ou mais recentes.
+
 ### 0.1.13 — 2026-10-27 — ALPHA
 
 - Changelog reorganizado por idioma, com links de navegação, traduções ampliadas e histórico em espanhol completado.
@@ -336,6 +438,23 @@ Obrigado a **Brandon e Rratvar** pelos relatos de erros e sugestões de melhoria
 - Requer **Trainworks Reloaded 0.7.33** e **Conductor 0.5.15** ou mais recente.
 
 ## Chinese
+
+### 0.1.14 — 2026-11-05 — ALPHA
+
+感谢 **Brandon**、**Rratvar, the Untitled** 和 **Sin1sT3r [PAL]** 的问题报告与建议，也感谢 Brandon 提交 PR 并提供技术指导。
+
+- **Shadow Lady — Bloodthirsty：**三个等级的体型均从 3 降至 2。
+- **新增 Curseguard Slab：**被咒：获得护甲 10。在 Soul Savior 强化单位商店中替代 Curseguard Stone。
+- **Plague Boost：**现在根据牌库中的祸害牌和天灾牌获得余烬。
+- **Pain and Pleasure / Arrogance Ghost：**修复舍弃欲望碎片时的手牌选取，包括战斗中生成的卡牌。
+- **Curseguard Stone：**修复在普通模式与 Soul Savior 升级池中的注册。护甲数值现在会反映修正效果。
+- **Shadow Lady — Plague：**每回合 +1 余烬现在显示在余烬预览中。
+- **Power Siphon：**显示当前伤害，包括法术强度与 Conduit 加成。
+- **Vitality Extraction：**显示再生和狂怒的具体数值，明确 Doublestack 的效果。
+- **Flesh Ring：**补上缺失的触发提示。
+- **Obsessing Spark：**修复回合结束时保留效果的同时结算。
+- 修复视觉与音效对 SuccClan 卡牌和单位的识别，并改善 Trainworks 兼容性。
+- 需要 **Trainworks Reloaded 0.7.35** 和 **Conductor 0.5.17** 或更新版本。
 
 ### 0.1.13 — 2026-10-27 — ALPHA
 
@@ -389,6 +508,23 @@ Obrigado a **Brandon e Rratvar** pelos relatos de erros e sugestões de melhoria
 
 ## Chinese Traditional
 
+### 0.1.14 — 2026-11-05 — ALPHA
+
+感謝 **Brandon**、**Rratvar, the Untitled** 與 **Sin1sT3r [PAL]** 的問題回報和建議，也感謝 Brandon 提交 PR 並提供技術指導。
+
+- **Shadow Lady — Bloodthirsty：**三個等級的體型均由 3 降至 2。
+- **新增 Curseguard Slab：**詛咒：獲得護甲 10。在 Soul Savior 強化單位商店中取代 Curseguard Stone。
+- **Plague Boost：**現在根據牌庫中的禍害牌與災禍牌獲得餘燼。
+- **Pain and Pleasure / Arrogance Ghost：**修正棄掉執念火花時的手牌選取，包括戰鬥中產生的卡牌。
+- **Curseguard Stone：**修正一般模式與 Soul Savior 升級池中的註冊。護甲數值現在會反映修正效果。
+- **Shadow Lady — Plague：**每回合 +1 餘燼現在顯示於餘燼預覽中。
+- **Power Siphon：**顯示目前傷害，包括法術強度與 Conduit 加成。
+- **Vitality Extraction：**顯示再生與狂怒的具體數值，說明 Doublestack 的效果。
+- **Flesh Ring：**補上缺少的觸發提示。
+- **Obsessing Spark：**修正回合結束時保留效果的同時結算。
+- 修正視覺與音效對 SuccClan 卡牌和單位的辨識，並改善 Trainworks 相容性。
+- 需要 **Trainworks Reloaded 0.7.35** 與 **Conductor 0.5.17** 或更新版本。
+
 ### 0.1.13 — 2026-10-27 — ALPHA
 
 - 更新日誌依語言分組，加入導覽連結，擴充翻譯並補齊西班牙語版本歷史。
@@ -415,6 +551,23 @@ Obrigado a **Brandon e Rratvar** pelos relatos de erros e sugestões de melhoria
 
 ## Korean
 
+### 0.1.14 — 2026-11-05 — ALPHA
+
+문제 보고와 제안을 보내 준 **Brandon**, **Rratvar, the Untitled**, **Sin1sT3r [PAL]**, 그리고 PR과 기술적 도움을 제공한 Brandon에게 감사드립니다.
+
+- **Shadow Lady — Bloodthirsty:** 세 단계 모두 크기를 3에서 2로 줄였습니다.
+- **신규 Curseguard Slab:** Accursed: 방어도 10 획득. Soul Savior 강화 유닛 상점에서 Curseguard Stone을 대체합니다.
+- **Plague Boost:** 이제 덱의 저주와 재앙 카드 모두에 대해 잔불을 얻습니다.
+- **Pain and Pleasure / Arrogance Ghost:** 생성된 집착의 불꽃을 포함하여 카드를 버릴 때 손을 올바르게 선택합니다.
+- **Curseguard Stone:** 일반 및 Soul Savior 강화 목록 등록을 수정했습니다. 방어도 표시가 수치 변경 효과를 반영합니다.
+- **Shadow Lady — Plague:** 턴당 잔불 +1이 잔불 예측에 표시됩니다.
+- **Power Siphon:** 주문력 및 Conduit 보너스를 포함한 현재 피해를 표시합니다.
+- **Vitality Extraction:** 재생과 분노 수치를 표시하여 Doublestack 효과를 명확히 했습니다.
+- **Flesh Ring:** 누락된 발동 메시지를 추가했습니다.
+- **Obsessing Spark:** 턴 종료 시 비축 효과가 동시에 처리되도록 수정했습니다.
+- 시각 및 음향 효과의 SuccClan 카드와 유닛 인식을 수정하고 Trainworks 호환성을 개선했습니다.
+- **Trainworks Reloaded 0.7.35**, **Conductor 0.5.17** 이상이 필요합니다.
+
 ### 0.1.13 — 2026-10-27 — ALPHA
 
 - 변경 내역을 언어별로 정리하고 탐색 링크를 추가했으며, 번역과 스페인어 버전 기록을 보완했습니다.
@@ -440,6 +593,23 @@ Obrigado a **Brandon e Rratvar** pelos relatos de erros e sugestões de melhoria
 - **Trainworks Reloaded 0.7.33** 및 **Conductor 0.5.15** 이상이 필요합니다.
 
 ## Japanese
+
+### 0.1.14 — 2026-11-05 — ALPHA
+
+報告と提案を寄せてくれた **Brandon**、**Rratvar, the Untitled**、**Sin1sT3r [PAL]**、そしてPRと技術的な助言をくれたBrandonに感謝します。
+
+- **Shadow Lady — Bloodthirsty：**全3段階でサイズを3から2に減らしました。
+- **新しいCurseguard Slab：**Accursed：アーマー10を得る。Soul Saviorの強化ユニットショップでCurseguard Stoneに代わって登場します。
+- **Plague Boost：**デッキの荒廃と災厄の両方からエンバーを得るようになりました。
+- **Pain and Pleasure / Arrogance Ghost：**生成された執着の火花を含め、捨て札にする際の手札選択を修正しました。
+- **Curseguard Stone：**通常とSoul Saviorの強化候補への登録を修正。アーマーの表示が補正を反映します。
+- **Shadow Lady — Plague：**毎ターンのエンバー+1がエンバー予測に表示されます。
+- **Power Siphon：**魔力とConduitのボーナスを含む現在のダメージを表示します。
+- **Vitality Extraction：**再生とレイジの数値を表示し、Doublestackの効果を明確にしました。
+- **Flesh Ring：**欠けていた発動メッセージを追加しました。
+- **Obsessing Spark：**ターン終了時にリザーブが同時に処理されるよう修正しました。
+- 視覚・音響効果でのSuccClanのカードとユニットの識別を修正し、Trainworksとの互換性を改善しました。
+- **Trainworks Reloaded 0.7.35**、**Conductor 0.5.17**以降が必要です。
 
 ### 0.1.13 — 2026-10-27 — ALPHA
 
@@ -502,3 +672,5 @@ Obrigado a **Brandon e Rratvar** pelos relatos de erros e sugestões de melhoria
 <!-- 2026-10-27-2323||codex-succclan-targetless||CHANGELOG.md||Adoptar formato FreeCompany: índice de idiomas, secciones por idioma, última 0.1.12 en diez idiomas e historial EN/ES; preservar histórico chino -->
 
 <!-- 2026-10-27-2325||codex-succclan-targetless||CHANGELOG.md||Añadir 0.1.13 en diez idiomas con único cambio real frente a publicada: formato/navegación/traducción del changelog; conservar 0.1.12 e historial -->
+<!-- 2026-11-05-1735||codex-succclan-targetless||CHANGELOG.md||Añadir 0.1.14 en diez idiomas, con cambios reales y agradecimientos especificos a reporteros; conservar historial -->
+<!-- 2026-11-05-1806||codex-succclan-targetless||CHANGELOG.md||Añadir a 0.1.14 tamaño2 Bloodthirsty y nueva Slab Armor10 en las diez secciones de idioma -->

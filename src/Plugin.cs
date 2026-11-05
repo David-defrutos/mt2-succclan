@@ -164,3 +164,4 @@ namespace mt2_succclan.Plugin
         }
     }
 }
+// 2026-11-05-1726||codex-succclan-targetless||src\Plugin.cs||Integrar PR #4 de Brandon mediante API Roundhouse y referencias publicas; conservar codigo archivado

@@ -20,22 +20,9 @@ namespace mt2_succclan.Plugin
                 && !AllGameManagers.Instance.GetScreenManager().GetScreenActive(ScreenName.Compendium);
         }
 
-        private static bool IsClanCard(CardState? card)
-        {
-            //return card?.GetAssetName()?.BelongsToMod(MyPluginInfo.PLUGIN_GUID, TemplateConstants.Card) == true;
-            return card?.GetLinkedClassID() == Plugin.ClanInstance!.GetID();
-        }
+        private static bool IsClanCard(CardState? card) => SuccClanEffectContext.IsCard(card);
 
-        private static bool IsClanCharacter(CharacterState? character)
-        {
-            if (character == null || character.IsDestroyed)
-                return false;
-            if (IsClanCard(character.GetSpawnerCard()))
-                return true;
-            // if cardless and spawned w/o a backing spawner card (rare).
-            var fullyQualifiedID = character.GetSourceCharacterData()?.GetAssetKey();
-            return fullyQualifiedID?.BelongsToMod(MyPluginInfo.PLUGIN_GUID, TemplateConstants.Character) == true;
-        }
+        private static bool IsClanCharacter(CharacterState? character) => SuccClanEffectContext.IsCharacter(character);
 
         internal static bool IsClanContext(CardEffectState state, CardEffectParams parameters)
         {
@@ -135,3 +122,4 @@ namespace mt2_succclan.Plugin
     }
 }
 // 2026-10-27-1547||codex-succclan-targetless||src/code/SuccClanPresentation.cs||Retirar presentación de golpe Frantic sin uso; RunUnitTurn ya anima el ataque nativo
+// 2026-11-05-1726||codex-succclan-targetless||src\code\SuccClanPresentation.cs||Integrar PR #4 de Brandon mediante API Roundhouse y referencias publicas; conservar codigo archivado

@@ -82,9 +82,11 @@ def main():
         if not all(character.get(key) for key in ('attack_vfx', 'impact_vfx', 'death_vfx')):
             raise ValueError('Incomplete character presentation: ' + character['id'])
     for room in rooms:
-        if not room.get('triggered_vfx'):
+        # Passive native energy modifiers have no activation pulse.
+        if room.get('name') != 'RoomStateEnergyModifier' and room.get('id') != 'ObsessionVaultModifier' and not room.get('triggered_vfx'):
             raise ValueError('Missing room pulse: ' + room['id'])
-    unused = ids - {r[1:] for r in references}
+    # Preserve the retired Moonrise resource without using it at runtime.
+    unused = ids - {r[1:] for r in references} - {'SuccFXObsessionPulse'}
     if unused:
         raise ValueError('Unused VFX definitions: ' + ', '.join(sorted(unused)))
     for vfx in visual:
@@ -121,3 +123,5 @@ def main():
 
 if __name__ == '__main__':
     main()
+# 2026-11-05-1737||codex-succclan-targetless||tools/validate_audiovisual.py||Validar aura nativa de energia sin exigir pulso; reconocer VFX Moonrise archivado expresamente
+# 2026-11-05-1737||codex-succclan-targetless||tools/validate_audiovisual.py||Respetar retirada previa del pulso Moonrise en Obsession Vault

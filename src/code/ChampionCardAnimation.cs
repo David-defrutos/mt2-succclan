@@ -13,6 +13,7 @@ namespace mt2_succclan.Plugin
     {
         internal static void SetupCardArt(GameObject root)
         {
+            if (root == null) return;
             if (!TryProfile(root.name, out var hue, out var focus, out var secondFocus,
                 out float period, out float pulseSpeed)) return;
             var image = root.transform.Find("CardSprite")?.GetComponent<Image>();
@@ -194,3 +195,4 @@ namespace mt2_succclan.Plugin
         }
     }
 }
+// 2026-11-05-1726||codex-succclan-targetless||src\code\ChampionCardAnimation.cs||Integrar PR #4 de Brandon mediante API Roundhouse y referencias publicas; conservar codigo archivado

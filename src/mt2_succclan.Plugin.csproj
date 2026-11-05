@@ -6,7 +6,7 @@
     <Nullable>enable</Nullable>
     <RootNamespace>mt2_succclan.Plugin</RootNamespace>
     <LangVersion>latest</LangVersion>
-    <Version>0.1.13</Version>
+    <Version>0.1.14</Version>
   </PropertyGroup>
 
   <ItemGroup>
@@ -18,7 +18,7 @@
     <PackageReference Include="BepInEx.PluginInfoProps" Version="2.*" />
     <PackageReference Include="MonsterTrain2.Api" Version="4.10.22787024" />
     <PackageReference Include="TrainworksReloaded.Base" Version="0.7.35" />
-    <PackageReference Include="Conductor" Version="0.5.2" />
+    <PackageReference Include="Conductor" Version="0.5.17" />
   </ItemGroup>
 
   <!-- Sin reglas de copia de json/ ni textures/: en este repo cuelgan de la raiz
@@ -31,3 +31,5 @@
 <!-- 2026-10-27-2052||codex-succclan-targetless||src/mt2_succclan.Plugin.csproj||Versión compilación 0.1.11 a 0.1.12 -->
 
 <!-- 2026-10-27-2325||codex-succclan-targetless||src/mt2_succclan.Plugin.csproj||Versión de compilación 0.1.12 a 0.1.13 -->
+<!-- 2026-11-05-1726||codex-succclan-targetless||src\mt2_succclan.Plugin.csproj||Integrar PR #4 de Brandon mediante API Roundhouse y referencias publicas; conservar codigo archivado -->
+<!-- 2026-11-05-1735||codex-succclan-targetless||src\mt2_succclan.Plugin.csproj||Preparar metadatos de candidata 0.1.14 -->

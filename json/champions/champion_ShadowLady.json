@@ -116,20 +116,19 @@
             "id": "PlagueBasicPreCombat",
             "trigger": "pre_combat",
             "descriptions": {
-                "english": "Add 1 <b>Obsessing Spark</b> to your hand. +[effect1.power][ember].",
-                "chinese": "将 1 张<b>欲望碎片</b>加入手牌。+[effect1.power][ember]。",
-                "spanish": "Añade 1 <b>Chispa obsesiva</b> a tu mano. +[effect1.power][ember].",
-                "french": "Ajoutez 1 <b>Étincelle obsédante</b> à votre main. +[effect1.power][ember].",
-                "german": "Füge deiner Hand 1 <b>Besessenheitsfunke</b> hinzu. +[effect1.power][ember].",
-                "portuguese": "Adicione 1 <b>Centelha Obsessiva</b> à sua mão. +[effect1.power][ember].",
-                "russian": "Добавляет в руку 1 <b>Искра одержимости</b>. +[effect1.power][ember].",
-                "chinese_traditional": "將 1 張<b>執念火花</b>加入手牌。+[effect1.power][ember]。",
-                "japanese": "<b>執着の火花</b>を1枚手札に加える。+[effect1.power][ember]。",
-                "korean": "<b>집착의 불꽃</b> 1장을 손에 추가합니다. +[effect1.power][ember]."
+                "english": "Add 1 <b>Obsessing Spark</b> to your hand.",
+                "chinese": "将 1 张<b>欲望碎片</b>加入手牌。",
+                "spanish": "Añade 1 <b>Chispa obsesiva</b> a tu mano.",
+                "french": "Ajoutez 1 <b>Étincelle obsédante</b> à votre main.",
+                "german": "Füge deiner Hand 1 <b>Besessenheitsfunke</b> hinzu.",
+                "portuguese": "Adicione 1 <b>Centelha Obsessiva</b> à sua mão.",
+                "russian": "Добавляет в руку 1 <b>Искра одержимости</b>.",
+                "chinese_traditional": "將 1 張<b>執念火花</b>加入手牌。",
+                "japanese": "<b>執着の火花</b>を1枚手札に加える。",
+                "korean": "<b>집착의 불꽃</b> 1장을 손에 추가합니다."
             },
             "effects": [
-                "@PlagueBasicAddShard",
-                "@PlagueBasicEmber"
+                "@PlagueBasicAddShard"
             ]
         },
         {
@@ -159,20 +158,19 @@
             "id": "PlaguePrePreCombat",
             "trigger": "pre_combat",
             "descriptions": {
-                "english": "Add 1 <b>Obsessing Spark</b> to your hand. +[effect1.power][ember].",
-                "chinese": "将 1 张<b>欲望碎片</b>加入手牌。+[effect1.power][ember]。",
-                "spanish": "Añade 1 <b>Chispa obsesiva</b> a tu mano. +[effect1.power][ember].",
-                "french": "Ajoutez 1 <b>Étincelle obsédante</b> à votre main. +[effect1.power][ember].",
-                "german": "Füge deiner Hand 1 <b>Besessenheitsfunke</b> hinzu. +[effect1.power][ember].",
-                "portuguese": "Adicione 1 <b>Centelha Obsessiva</b> à sua mão. +[effect1.power][ember].",
-                "russian": "Добавляет в руку 1 <b>Искра одержимости</b>. +[effect1.power][ember].",
-                "chinese_traditional": "將 1 張<b>執念火花</b>加入手牌。+[effect1.power][ember]。",
-                "japanese": "<b>執着の火花</b>を1枚手札に加える。+[effect1.power][ember]。",
-                "korean": "<b>집착의 불꽃</b> 1장을 손에 추가합니다. +[effect1.power][ember]."
+                "english": "Add 1 <b>Obsessing Spark</b> to your hand.",
+                "chinese": "将 1 张<b>欲望碎片</b>加入手牌。",
+                "spanish": "Añade 1 <b>Chispa obsesiva</b> a tu mano.",
+                "french": "Ajoutez 1 <b>Étincelle obsédante</b> à votre main.",
+                "german": "Füge deiner Hand 1 <b>Besessenheitsfunke</b> hinzu.",
+                "portuguese": "Adicione 1 <b>Centelha Obsessiva</b> à sua mão.",
+                "russian": "Добавляет в руку 1 <b>Искра одержимости</b>.",
+                "chinese_traditional": "將 1 張<b>執念火花</b>加入手牌。",
+                "japanese": "<b>執着の火花</b>を1枚手札に加える。",
+                "korean": "<b>집착의 불꽃</b> 1장을 손에 추가합니다."
             },
             "effects": [
-                "@PlaguePreAddShard",
-                "@PlaguePreEmber"
+                "@PlaguePreAddShard"
             ]
         },
         {
@@ -202,20 +200,19 @@
             "id": "PlagueProPreCombat",
             "trigger": "pre_combat",
             "descriptions": {
-                "english": "Add 1 <b>Obsessing Spark</b> to your hand. +[effect1.power][ember].",
-                "chinese": "将 1 张<b>欲望碎片</b>加入手牌。+[effect1.power][ember]。",
-                "spanish": "Añade 1 <b>Chispa obsesiva</b> a tu mano. +[effect1.power][ember].",
-                "french": "Ajoutez 1 <b>Étincelle obsédante</b> à votre main. +[effect1.power][ember].",
-                "german": "Füge deiner Hand 1 <b>Besessenheitsfunke</b> hinzu. +[effect1.power][ember].",
-                "portuguese": "Adicione 1 <b>Centelha Obsessiva</b> à sua mão. +[effect1.power][ember].",
-                "russian": "Добавляет в руку 1 <b>Искра одержимости</b>. +[effect1.power][ember].",
-                "chinese_traditional": "將 1 張<b>執念火花</b>加入手牌。+[effect1.power][ember]。",
-                "japanese": "<b>執着の火花</b>を1枚手札に加える。+[effect1.power][ember]。",
-                "korean": "<b>집착의 불꽃</b> 1장을 손에 추가합니다. +[effect1.power][ember]."
+                "english": "Add 1 <b>Obsessing Spark</b> to your hand.",
+                "chinese": "将 1 张<b>欲望碎片</b>加入手牌。",
+                "spanish": "Añade 1 <b>Chispa obsesiva</b> a tu mano.",
+                "french": "Ajoutez 1 <b>Étincelle obsédante</b> à votre main.",
+                "german": "Füge deiner Hand 1 <b>Besessenheitsfunke</b> hinzu.",
+                "portuguese": "Adicione 1 <b>Centelha Obsessiva</b> à sua mão.",
+                "russian": "Добавляет в руку 1 <b>Искра одержимости</b>.",
+                "chinese_traditional": "將 1 張<b>執念火花</b>加入手牌。",
+                "japanese": "<b>執着の火花</b>を1枚手札に加える。",
+                "korean": "<b>집착의 불꽃</b> 1장을 손에 추가합니다."
             },
             "effects": [
-                "@PlagueProAddShard",
-                "@PlagueProEmber"
+                "@PlagueProAddShard"
             ]
         },
         {
@@ -540,7 +537,8 @@
             "use_upgrade_highlight_tags": true,
             "trigger_upgrades": [
                 "@BloodThirstyBasicTrigger"
-            ]
+            ],
+            "bonus_size": -1
         },
         {
             "id": "upg_BloodThirstyPre",
@@ -561,7 +559,8 @@
             "use_upgrade_highlight_tags": true,
             "trigger_upgrades": [
                 "@BloodThirstyPreTrigger"
-            ]
+            ],
+            "bonus_size": -1
         },
         {
             "id": "upg_BloodThirstyPro",
@@ -582,7 +581,8 @@
             "use_upgrade_highlight_tags": true,
             "trigger_upgrades": [
                 "@BloodThirstyProTrigger"
-            ]
+            ],
+            "bonus_size": -1
         },
         {
             "id": "upg_PlagueBasic",
@@ -604,6 +604,9 @@
             "trigger_upgrades": [
                 "@PlagueBasicPreCombat",
                 "@PlagueBasicAccursed"
+            ],
+            "room_modifier_upgrades": [
+                "@ShadowLadyPlagueEmber"
             ]
         },
         {
@@ -626,6 +629,9 @@
             "trigger_upgrades": [
                 "@PlaguePrePreCombat",
                 "@PlaguePreAccursed"
+            ],
+            "room_modifier_upgrades": [
+                "@ShadowLadyPlagueEmber"
             ]
         },
         {
@@ -648,6 +654,9 @@
             "trigger_upgrades": [
                 "@PlagueProPreCombat",
                 "@PlagueProAccursed"
+            ],
+            "room_modifier_upgrades": [
+                "@ShadowLadyPlagueEmber"
             ]
         },
         {
@@ -816,6 +825,25 @@
                         }
                     }
                 }
+            }
+        }
+    ],
+    "room_modifiers": [
+        {
+            "id": "ShadowLadyPlagueEmber",
+            "name": "RoomStateEnergyModifier",
+            "param_int": 1,
+            "descriptions": {
+                "english": "+[power][ember] per turn.",
+                "chinese": "每回合 +[power][ember]。",
+                "spanish": "+[power][ember] por turno.",
+                "french": "+[power][ember] par tour.",
+                "german": "+[power][ember] pro Zug.",
+                "portuguese": "+[power][ember] por turno.",
+                "russian": "+[power][ember] в ход.",
+                "chinese_traditional": "每回合+[power][ember]。",
+                "japanese": "ターンごとに+[power][ember]。",
+                "korean": "턴당 +[power][ember]."
             }
         }
     ]

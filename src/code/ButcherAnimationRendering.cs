@@ -183,3 +183,4 @@ namespace mt2_succclan.Plugin
 */
 
 // 2026-10-27-1536||codex-succclan-targetless||src/code/ButcherAnimationRendering.cs||Conservar animaciones archivadas pero no registrar sus cuatro parches globales mientras Butcher es estático
+// 2026-11-05-1726||codex-succclan-targetless||src\code\ButcherAnimationRendering.cs||Integrar PR #4 de Brandon mediante API Roundhouse y referencias publicas; conservar codigo archivado
