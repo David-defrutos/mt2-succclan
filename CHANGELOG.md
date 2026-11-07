@@ -6,7 +6,15 @@ Latest release in all ten game languages. Full history in English and Spanish.
 
 ## English
 
-### 0.1.14 — 2026-11-05 — ALPHA
+### 0.1.14 — 2026-11-07 — ALPHA
+
+- **Endless Shadow:** fixed the cumulative health loss in combat prediction so successive copies match actual combat.
+- **Abyss Princess / Lust Ghost / Chaos Creation essences:** clarified stack amounts and boss restrictions.
+
+- **Knightmare:** fixed the displayed Psionic Burst cost when using Abyss Crown.
+- **Desire Crystal:** added its missing activation message.
+- **Succubus Torturer:** corrected the essence name.
+- **Curseguard Stone / Slab:** added distinct upgrade icons.
 
 Thanks to **Brandon**, **Rratvar, the Untitled**, and **Sin1sT3r [PAL]** for the reports and suggestions, and to Brandon for the PR and technical guidance.
 
@@ -140,7 +148,15 @@ New translations are a first pass and have not been reviewed by native speakers 
 
 ## Spanish
 
-### 0.1.14 — 2026-11-05 — ALPHA
+### 0.1.14 — 2026-11-07 — ALPHA
+
+- **Endless Shadow:** corregida la pérdida acumulada de vida en la predicción para que las copias sucesivas coincidan con el combate real.
+- **Esencias de Abyss Princess / Lust Ghost / Chaos Creation:** aclaradas las cantidades y las restricciones contra jefes.
+
+- **Knightmare:** corregido el coste mostrado de Psionic Burst al usar Abyss Crown.
+- **Desire Crystal:** añadido el mensaje de activación que faltaba.
+- **Succubus Torturer:** corregido el nombre de su esencia.
+- **Curseguard Stone / Slab:** añadidos iconos propios para distinguir las mejoras.
 
 Gracias a **Brandon**, **Rratvar, the Untitled** y **Sin1sT3r [PAL]** por los errores reportados y las sugerencias, y a Brandon por el PR y la ayuda técnica.
 
@@ -267,7 +283,15 @@ Las traducciones nuevas son una primera versión y aún no habían sido revisada
 
 ## French
 
-### 0.1.14 — 2026-11-05 — ALPHA
+### 0.1.14 — 2026-11-07 — ALPHA
+
+- **Endless Shadow :** correction de la perte de vie cumulée dans la prédiction pour que les copies successives correspondent au combat réel.
+- **Essences d’Abyss Princess / Lust Ghost / Chaos Creation :** clarification des quantités et des restrictions contre les boss.
+
+- **Knightmare :** correction du coût affiché de Psionic Burst avec Abyss Crown.
+- **Desire Crystal :** ajout du message d’activation manquant.
+- **Succubus Torturer :** correction du nom de son essence.
+- **Curseguard Stone / Slab :** ajout d’icônes distinctes pour ces améliorations.
 
 Merci à **Brandon**, **Rratvar, the Untitled** et **Sin1sT3r [PAL]** pour leurs signalements et suggestions, et à Brandon pour le PR et ses conseils techniques.
 
@@ -310,7 +334,15 @@ Merci à **Brandon et Rratvar** pour les bugs signalés et les améliorations pr
 
 ## German
 
-### 0.1.14 — 2026-11-05 — ALPHA
+### 0.1.14 — 2026-11-07 — ALPHA
+
+- **Endless Shadow:** kumulativen Lebensverlust in der Kampfvorhersage korrigiert, sodass aufeinanderfolgende Kopien dem tatsächlichen Kampf entsprechen.
+- **Essenzen von Abyss Princess / Lust Ghost / Chaos Creation:** Stapelzahlen und Einschränkungen für Bosse klargestellt.
+
+- **Knightmare:** angezeigte Psionic-Burst-Kosten mit Abyss Crown korrigiert.
+- **Desire Crystal:** fehlende Aktivierungsnachricht ergänzt.
+- **Succubus Torturer:** Namen der Essenz korrigiert.
+- **Curseguard Stone / Slab:** eigene Symbole für beide Verbesserungen hinzugefügt.
 
 Danke an **Brandon**, **Rratvar, the Untitled** und **Sin1sT3r [PAL]** für Meldungen und Vorschläge sowie an Brandon für den PR und die technische Hilfe.
 
@@ -353,7 +385,15 @@ Danke an **Brandon und Rratvar** für die Fehlerberichte und Verbesserungsvorsch
 
 ## Russian
 
-### 0.1.14 — 2026-11-05 — ALPHA
+### 0.1.14 — 2026-11-07 — ALPHA
+
+- **Endless Shadow:** исправлена накопительная потеря здоровья в прогнозе боя, чтобы последовательные копии соответствовали реальному бою.
+- **Эссенции Abyss Princess / Lust Ghost / Chaos Creation:** уточнены количества эффектов и ограничения для боссов.
+
+- **Knightmare:** исправлена отображаемая стоимость Psionic Burst с Abyss Crown.
+- **Desire Crystal:** добавлено отсутствовавшее сообщение об активации.
+- **Succubus Torturer:** исправлено название эссенции.
+- **Curseguard Stone / Slab:** добавлены разные значки улучшений.
 
 Спасибо **Brandon**, **Rratvar, the Untitled** и **Sin1sT3r [PAL]** за сообщения и предложения, а Brandon — также за PR и техническую помощь.
 
@@ -396,7 +436,15 @@ Danke an **Brandon und Rratvar** für die Fehlerberichte und Verbesserungsvorsch
 
 ## Portuguese Brazil
 
-### 0.1.14 — 2026-11-05 — ALPHA
+### 0.1.14 — 2026-11-07 — ALPHA
+
+- **Endless Shadow:** corrigida a perda acumulada de vida na previsão para que as cópias sucessivas correspondam ao combate real.
+- **Essências de Abyss Princess / Lust Ghost / Chaos Creation:** esclarecidas as quantidades e as restrições contra chefes.
+
+- **Knightmare:** corrigido o custo exibido de Psionic Burst com Abyss Crown.
+- **Desire Crystal:** adicionada a mensagem de ativação que faltava.
+- **Succubus Torturer:** corrigido o nome da essência.
+- **Curseguard Stone / Slab:** adicionados ícones próprios para as melhorias.
 
 Obrigado a **Brandon**, **Rratvar, the Untitled** e **Sin1sT3r [PAL]** pelos relatos e sugestões, e a Brandon pelo PR e pela orientação técnica.
 
@@ -439,7 +487,15 @@ Obrigado a **Brandon e Rratvar** pelos relatos de erros e sugestões de melhoria
 
 ## Chinese
 
-### 0.1.14 — 2026-11-05 — ALPHA
+### 0.1.14 — 2026-11-07 — ALPHA
+
+- **Endless Shadow：**修正战斗预测中未累计的生命损失，使连续生成的复制体与实际战斗一致。
+- **Abyss Princess / Lust Ghost / Chaos Creation 精华：**明确状态层数及首领限制。
+
+- **Knightmare：**修正装备 Abyss Crown 时显示的 Psionic Burst 消耗。
+- **Desire Crystal：**补上缺失的触发提示。
+- **Succubus Torturer：**修正精华的名称。
+- **Curseguard Stone / Slab：**为两种升级添加不同的图标。
 
 感谢 **Brandon**、**Rratvar, the Untitled** 和 **Sin1sT3r [PAL]** 的问题报告与建议，也感谢 Brandon 提交 PR 并提供技术指导。
 
@@ -508,7 +564,15 @@ Obrigado a **Brandon e Rratvar** pelos relatos de erros e sugestões de melhoria
 
 ## Chinese Traditional
 
-### 0.1.14 — 2026-11-05 — ALPHA
+### 0.1.14 — 2026-11-07 — ALPHA
+
+- **Endless Shadow：**修正戰鬥預測中未累計的生命損失，使連續產生的複製體與實際戰鬥一致。
+- **Abyss Princess / Lust Ghost / Chaos Creation 精華：**明確標示狀態層數與首領限制。
+
+- **Knightmare：**修正裝備 Abyss Crown 時顯示的 Psionic Burst 消耗。
+- **Desire Crystal：**補上缺少的觸發提示。
+- **Succubus Torturer：**修正精華名稱。
+- **Curseguard Stone / Slab：**為兩種升級新增不同的圖示。
 
 感謝 **Brandon**、**Rratvar, the Untitled** 與 **Sin1sT3r [PAL]** 的問題回報和建議，也感謝 Brandon 提交 PR 並提供技術指導。
 
@@ -551,7 +615,15 @@ Obrigado a **Brandon e Rratvar** pelos relatos de erros e sugestões de melhoria
 
 ## Korean
 
-### 0.1.14 — 2026-11-05 — ALPHA
+### 0.1.14 — 2026-11-07 — ALPHA
+
+- **Endless Shadow:** 연속 복제본이 실제 전투와 일치하도록 전투 예측의 누적 체력 감소를 수정했습니다.
+- **Abyss Princess / Lust Ghost / Chaos Creation 정수:** 상태 중첩 수와 보스 제한을 명확히 했습니다.
+
+- **Knightmare:** Abyss Crown 사용 시 표시되는 Psionic Burst 비용을 수정했습니다.
+- **Desire Crystal:** 누락된 발동 메시지를 추가했습니다.
+- **Succubus Torturer:** 정수 이름을 수정했습니다.
+- **Curseguard Stone / Slab:** 각 강화에 고유 아이콘을 추가했습니다.
 
 문제 보고와 제안을 보내 준 **Brandon**, **Rratvar, the Untitled**, **Sin1sT3r [PAL]**, 그리고 PR과 기술적 도움을 제공한 Brandon에게 감사드립니다.
 
@@ -594,7 +666,15 @@ Obrigado a **Brandon e Rratvar** pelos relatos de erros e sugestões de melhoria
 
 ## Japanese
 
-### 0.1.14 — 2026-11-05 — ALPHA
+### 0.1.14 — 2026-11-07 — ALPHA
+
+- **Endless Shadow：**戦闘予測での累積体力減少を修正し、連続するコピーが実際の戦闘と一致するようにしました。
+- **Abyss Princess / Lust Ghost / Chaos Creationのエッセンス：**状態の付与数とボスへの制限を明確化。
+
+- **Knightmare：**Abyss Crown使用時のPsionic Burstの表示コストを修正。
+- **Desire Crystal：**欠けていた発動メッセージを追加。
+- **Succubus Torturer：**エッセンス名を修正。
+- **Curseguard Stone / Slab：**それぞれの強化に専用アイコンを追加。
 
 報告と提案を寄せてくれた **Brandon**、**Rratvar, the Untitled**、**Sin1sT3r [PAL]**、そしてPRと技術的な助言をくれたBrandonに感謝します。
 
@@ -674,3 +754,7 @@ Obrigado a **Brandon e Rratvar** pelos relatos de erros e sugestões de melhoria
 <!-- 2026-10-27-2325||codex-succclan-targetless||CHANGELOG.md||Añadir 0.1.13 en diez idiomas con único cambio real frente a publicada: formato/navegación/traducción del changelog; conservar 0.1.12 e historial -->
 <!-- 2026-11-05-1735||codex-succclan-targetless||CHANGELOG.md||Añadir 0.1.14 en diez idiomas, con cambios reales y agradecimientos especificos a reporteros; conservar historial -->
 <!-- 2026-11-05-1806||codex-succclan-targetless||CHANGELOG.md||Añadir a 0.1.14 tamaño2 Bloodthirsty y nueva Slab Armor10 en las diez secciones de idioma -->
+
+<!-- 2026-11-07-1144||codex-succclan-targetless||CHANGELOG.md||Incluir cuatro correcciones e iconos en 0.1.14; conservar historial y agradecimientos -->
+
+<!-- 2026-11-07-1155||codex-succclan-targetless||CHANGELOG.md||Añadir correccion de prediccion Shadow y claridad de tres esencias al changelog 0.1.14 -->

@@ -44,7 +44,7 @@ Validation: 241 assertions using engine substitutes and metadata contract
 checks against the installed MT2 DLL. These do not replace Unity playtests.
 Test full HP, all tiers, cost 2/3/4, save/reload, preview, equipment, Rage,
 Regeneration, Corruption, native Reanimate exhaustion, Recall and Reform.
-The attack-generation synergy with Whispering Blade still needs balance tests.
+Whispering Blade now applies Sap 2 to the rear enemy on Accursed; the former Psionic-generating Strike synergy has been removed.
 
 ## Endless Shadow
 
@@ -64,3 +64,16 @@ reference was in CheckForDeath; its exact null operand was not captured.
 The zero-health recursion path is fixed; in-game confirmation remains pending.
 
 <!-- 2026-10-27-1506||codex-succclan-targetless||DEATH-AND-REBIRTH.md||Sustituir explicación vigente de clonación por puente Reanimate nativo, prioridad y checklist de partida -->
+<!-- 2026-11-07-1141||codex-succclan-targetless||DEATH-AND-REBIRTH.md||Corregir referencia vigente a antigua sinergia Psionic de Whispering Blade -->
+
+## Endless Shadow: preview bookkeeping fix (2026-11-07)
+
+The native `CardEffectSpawnMonster` applies its -5 HP upgrade to the new character in both modes, but records it on the new card only outside preview. The custom death guard reads card health, so preview previously repeated 10-HP copies instead of 10, then 5, then stopping.
+
+`EndlessShadowPreviewUpgrade` supplies only the missing card bookkeeping. A scope surrounds the native spawner coroutine in preview. A prefix on `CharacterState.ApplyCardUpgrade` accepts only the expected upgrade, a character spawned in preview, a spawner card different from the dying source, and a non-spawn application. It adds the upgrade once to that temporary card before the native HP penalty can process another death. It never applies HP to the unit; native code does that. Inherited upgrades (`fromSpawn`) are excluded. Real combat goes directly through the native spawner. Finally cleanup removes the scope if prediction is cancelled or throws.
+
+The installed spawner is sealed, and neither its JSON nor its public API offers a switch for the preview-only card write. This limited connection preserves native spawning, equipment transfer and state rules; replacing it with Reanimate or Replicate would change the mechanic. No transpiler or duplicate spawner implementation was added.
+
+Regression harness: `D:/Juegos/MT2_mod/salidas/build/succclan-shadow-preview-2026-11-07-1154/Preview.csproj`. It links the actual mod source and models the native boundary: 95 assertions covering HP chains, original-card isolation, inherited/unrelated upgrades, duplicate bookkeeping and cancellation/exception cleanup. This is not a Unity playtest. Check equipment, deaths during OnSpawn and Relentless in game.
+
+<!-- 2026-11-07-1157||codex-succclan-targetless||DEATH-AND-REBIRTH.md||Documentar causa, correccion minima y pruebas de prediccion Endless Shadow -->

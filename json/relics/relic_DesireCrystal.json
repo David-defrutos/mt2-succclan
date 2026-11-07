@@ -1,4 +1,4 @@
-{
+﻿{
     "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
     "relics": [
         {
@@ -45,7 +45,19 @@
                         "unlock_level": 0
                     }
                 }
-            ]
+            ],
+            "relic_activated_texts": {
+                "english": "Draw 1 card. Gain 1 Ember.",
+                "chinese": "抽 1 张牌。获得 1 余烬。",
+                "spanish": "Roba 1 carta. Gana 1 ascua.",
+                "french": "Piochez 1 carte. Gagnez 1 braise.",
+                "german": "Ziehe 1 Karte. Erhalte 1 Glut.",
+                "portuguese": "Compre 1 carta. Ganhe 1 brasa.",
+                "russian": "Возьмите 1 карту. +1 уголь.",
+                "chinese_traditional": "抽 1 張牌。獲得 1 餘燼。",
+                "japanese": "カードを1枚引く。エンバー+1。",
+                "korean": "카드를 1장 뽑습니다. 잔불 +1."
+            }
         }
     ],
     "relic_effects": [

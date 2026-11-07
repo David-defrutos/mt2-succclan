@@ -295,8 +295,8 @@
                 "japanese": "<b>呪い</b>: [armor] [effect0.upgrade.charactertrigger0.effect0.status0.power]を得る。",
                 "korean": "<b>저주</b>: [armor] [effect0.upgrade.charactertrigger0.effect0.status0.power] 획득."
             },
-            "icon": "@ShadowCloakIcon",
-            "icon_small": "@ShadowCloakIconSmall",
+            "icon": "@CurseguardStoneIcon",
+            "icon_small": "@CurseguardStoneIconSmall",
             "relic_effects": [
                 "@CurseguardStoneApply"
             ]
@@ -340,8 +340,8 @@
                 "japanese": "<b>呪い</b>: [armor] [effect0.upgrade.charactertrigger0.effect0.status0.power]を得る。",
                 "korean": "<b>저주</b>: [armor] [effect0.upgrade.charactertrigger0.effect0.status0.power] 획득."
             },
-            "icon": "@ShadowCloakIcon",
-            "icon_small": "@ShadowCloakIconSmall",
+            "icon": "@CurseguardSlabIcon",
+            "icon_small": "@CurseguardSlabIconSmall",
             "relic_effects": [
                 "@CurseguardSlabApply"
             ]
@@ -431,6 +431,24 @@
                     "count": 10
                 }
             ]
+        }
+    ],
+    "sprites": [
+        {
+            "id": "CurseguardStoneIcon",
+            "path": "textures/RelicIcons/CurseguardStoneIcon.png"
+        },
+        {
+            "id": "CurseguardStoneIconSmall",
+            "path": "textures/RelicIcons/CurseguardStoneIconSmall.png"
+        },
+        {
+            "id": "CurseguardSlabIcon",
+            "path": "textures/RelicIcons/CurseguardSlabIcon.png"
+        },
+        {
+            "id": "CurseguardSlabIconSmall",
+            "path": "textures/RelicIcons/CurseguardSlabIconSmall.png"
         }
     ]
 }

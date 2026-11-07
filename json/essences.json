@@ -211,16 +211,16 @@
                 "korean": "색욕의 유령"
             },
             "descriptions": {
-                "english": "<b>Accursed</b>: apply <b>[mt2_succclan.Plugin_frantic]</b> to the back enemy unit.",
-                "chinese": "<b>被咒</b>：对后排敌方单位施加 <b>[mt2_succclan.Plugin_frantic]</b>。",
-                "spanish": "<b>Maldito</b>: Otorga <b>[mt2_succclan.Plugin_frantic]</b> a la unidad enemiga trasera.",
-                "french": "<b>Maudit</b>: Applique <b>[mt2_succclan.Plugin_frantic]</b> à l'unité ennemie en dernière ligne.",
-                "german": "<b>Verflucht</b>: Verleiht der hintersten feindlichen Einheit <b>[mt2_succclan.Plugin_frantic]</b>.",
-                "portuguese": "<b>Amaldiçoado</b>: Aplica <b>[mt2_succclan.Plugin_frantic]</b> à unidade inimiga de trás.",
-                "russian": "<b>Проклятие</b>: Даёт <b>[mt2_succclan.Plugin_frantic]</b> заднему врагу.",
-                "chinese_traditional": "<b>詛咒</b>: 對最後方的敵方單位施加 <b>[mt2_succclan.Plugin_frantic]</b>。",
-                "japanese": "<b>呪い</b>: 最後列の敵に<b>[mt2_succclan.Plugin_frantic]</b>を付与する。",
-                "korean": "<b>저주</b>: 맨 뒤 적에게 <b>[mt2_succclan.Plugin_frantic]</b>을 부여합니다."
+                "english": "<b>Accursed</b>: Apply <b>[mt2_succclan.Plugin_frantic] [charactertrigger0.effect0.status0.power]</b> to the rear enemy unit. Cannot target bosses.",
+                "spanish": "<b>Maldito</b>: Otorga <b>[mt2_succclan.Plugin_frantic] [charactertrigger0.effect0.status0.power]</b> a la unidad enemiga de retaguardia. No afecta a jefes.",
+                "french": "<b>Maudit</b> : Applique <b>[mt2_succclan.Plugin_frantic] [charactertrigger0.effect0.status0.power]</b> à l’unité ennemie arrière. Ne peut pas cibler les boss.",
+                "german": "<b>Verflucht</b>: Verleiht der hintersten feindlichen Einheit <b>[mt2_succclan.Plugin_frantic] [charactertrigger0.effect0.status0.power]</b>. Kann keine Bosse als Ziel wählen.",
+                "portuguese": "<b>Amaldiçoado</b>: Aplica <b>[mt2_succclan.Plugin_frantic] [charactertrigger0.effect0.status0.power]</b> à unidade inimiga da retaguarda. Não pode afetar chefes.",
+                "russian": "<b>Проклятие</b>: накладывает <b>[mt2_succclan.Plugin_frantic] [charactertrigger0.effect0.status0.power]</b> на заднего врага. Не действует на боссов.",
+                "chinese": "<b>被咒</b>：对最后方的敌方单位施加 <b>[mt2_succclan.Plugin_frantic] [charactertrigger0.effect0.status0.power]</b>。无法以首领为目标。",
+                "chinese_traditional": "<b>詛咒</b>：對最後方敵方單位施加 <b>[mt2_succclan.Plugin_frantic] [charactertrigger0.effect0.status0.power]</b>。無法以首領為目標。",
+                "japanese": "<b>呪い</b>：最後列の敵に<b>[mt2_succclan.Plugin_frantic] [charactertrigger0.effect0.status0.power]</b>を付与する。ボスは対象にできない。",
+                "korean": "<b>저주</b>: 후열 적에게 <b>[mt2_succclan.Plugin_frantic] [charactertrigger0.effect0.status0.power]</b>을 부여합니다. 보스는 대상으로 지정할 수 없습니다."
             },
             "use_upgrade_highlight_tags": true,
             "trigger_upgrades": [
@@ -304,16 +304,16 @@
                 "korean": "혼돈의 창조물"
             },
             "descriptions": {
-                "english": "<b>Revenge</b>: apply <b>[mt2_succclan.Plugin_frantic] 1</b> to the attacking enemy unit.",
-                "chinese": "<b>复仇</b>：对攻击的敌方单位施加 <b>[mt2_succclan.Plugin_frantic] 1</b>。",
-                "spanish": "<b>Represalia</b>: otorga <b>[mt2_succclan.Plugin_frantic] 1</b> a la unidad enemiga atacante.",
-                "french": "<b>Vengeance</b> : applique <b>[mt2_succclan.Plugin_frantic] 1</b> à l'unité ennemie attaquante.",
-                "german": "<b>Vergeltung</b>: Verleiht der angreifenden feindlichen Einheit <b>[mt2_succclan.Plugin_frantic] 1</b>.",
-                "portuguese": "<b>Vingança</b>: aplica <b>[mt2_succclan.Plugin_frantic] 1</b> à unidade inimiga atacante.",
-                "russian": "<b>Возмездие</b>: даёт атакующему врагу <b>[mt2_succclan.Plugin_frantic] 1</b>.",
-                "chinese_traditional": "<b>復仇</b>：對攻擊者施加 <b>[mt2_succclan.Plugin_frantic] 1</b>。",
-                "japanese": "<b>リベンジ</b>：攻撃してきた敵に<b>[mt2_succclan.Plugin_frantic] 1</b>を付与する。",
-                "korean": "<b>복수</b>: 공격한 적에게 <b>[mt2_succclan.Plugin_frantic] 1</b>을 부여합니다."
+                "english": "<b>Revenge</b>: Apply <b>[mt2_succclan.Plugin_frantic] [charactertrigger0.effect0.status0.power]</b> to the attacking enemy unit. Cannot target bosses.",
+                "spanish": "<b>Represalia</b>: Otorga <b>[mt2_succclan.Plugin_frantic] [charactertrigger0.effect0.status0.power]</b> a la unidad enemiga atacante. No afecta a jefes.",
+                "french": "<b>Vengeance</b>: Applique <b>[mt2_succclan.Plugin_frantic] [charactertrigger0.effect0.status0.power]</b> à l’unité ennemie attaquante. Ne peut pas cibler les boss.",
+                "german": "<b>Vergeltung</b>: Verleiht der angreifenden feindlichen Einheit <b>[mt2_succclan.Plugin_frantic] [charactertrigger0.effect0.status0.power]</b>. Kann keine Bosse als Ziel wählen.",
+                "portuguese": "<b>Vingança</b>: Aplica <b>[mt2_succclan.Plugin_frantic] [charactertrigger0.effect0.status0.power]</b> à unidade inimiga atacante. Não pode afetar chefes.",
+                "russian": "<b>Возмездие</b>: Накладывает <b>[mt2_succclan.Plugin_frantic] [charactertrigger0.effect0.status0.power]</b> на атакующего врага. Не действует на боссов.",
+                "chinese": "<b>复仇</b>: 对攻击者施加 <b>[mt2_succclan.Plugin_frantic] [charactertrigger0.effect0.status0.power]</b>。无法以首领为目标。",
+                "chinese_traditional": "<b>復仇</b>: 對攻擊者施加 <b>[mt2_succclan.Plugin_frantic] [charactertrigger0.effect0.status0.power]</b>。無法以首領為目標。",
+                "japanese": "<b>リベンジ</b>: 攻撃してきた敵に<b>[mt2_succclan.Plugin_frantic] [charactertrigger0.effect0.status0.power]</b>を付与する。ボスは対象にできない。",
+                "korean": "<b>복수</b>: 공격한 적에게 <b>[mt2_succclan.Plugin_frantic] [charactertrigger0.effect0.status0.power]</b>을 부여합니다. 보스는 대상으로 지정할 수 없습니다."
             },
             "use_upgrade_highlight_tags": true,
             "trigger_upgrades": [
@@ -390,7 +390,7 @@
         {
             "id": "EssenceSuccbusTorturer",
             "titles": {
-                "english": "Succbus Torturer",
+                "english": "Succubus Torturer",
                 "chinese": "魅魔拷打者",
                 "spanish": "Torturadora súcubo",
                 "french": "Tortionnaire succube",
@@ -504,16 +504,16 @@
                 "korean": "심연의 공주"
             },
             "descriptions": {
-                "english": "<b>Strike</b>: gain [sap] 3 and apply [rage] and <b>[mt2_succclan.Plugin_frantic]</b> to enemy units.",
-                "chinese": "<b>攻击</b>：获得[sap] 3，并对所有敌方单位施加[rage] 和 <b>[mt2_succclan.Plugin_frantic]</b>。",
-                "spanish": "<b>Golpe</b>: obtiene [sap] 3 y otorga [rage] y <b>[mt2_succclan.Plugin_frantic]</b> a las unidades enemigas.",
-                "french": "<b>Frappe</b> : gagne [sap] 3 et applique [rage] et <b>[mt2_succclan.Plugin_frantic]</b> aux unités ennemies.",
-                "german": "<b>Schlag</b>: Erhält [sap] 3 und verleiht feindlichen Einheiten [rage] und <b>[mt2_succclan.Plugin_frantic]</b>.",
-                "portuguese": "<b>Golpe</b>: ganha [sap] 3 e aplica [rage] e <b>[mt2_succclan.Plugin_frantic]</b> às unidades inimigas.",
-                "russian": "<b>Удар</b>: получает [sap] 3 и даёт врагам [rage] и <b>[mt2_succclan.Plugin_frantic]</b>.",
-                "chinese_traditional": "<b>打擊</b>：獲得 [sap] 3，並對敵方單位施加 [rage] 與 <b>[mt2_succclan.Plugin_frantic]</b>。",
-                "japanese": "<b>ストライク</b>：[sap] 3を得て、敵全員に[rage]と<b>[mt2_succclan.Plugin_frantic]</b>を付与する。",
-                "korean": "<b>타격</b>: [sap] 3을 얻고 적에게 [rage] 및 <b>[mt2_succclan.Plugin_frantic]</b>을 부여합니다."
+                "english": "<b>Strike</b>: Gain [sap] [charactertrigger0.effect0.status0.power]. Apply [rage] [charactertrigger0.effect1.status0.power] and <b>[mt2_succclan.Plugin_frantic] [charactertrigger0.effect2.status0.power]</b> to non-boss enemy units on this floor.",
+                "spanish": "<b>Golpe</b>: Obtiene [sap] [charactertrigger0.effect0.status0.power]. Otorga [rage] [charactertrigger0.effect1.status0.power] y <b>[mt2_succclan.Plugin_frantic] [charactertrigger0.effect2.status0.power]</b> a las unidades enemigas de este piso que no sean jefes.",
+                "french": "<b>Frappe</b> : Gagne [sap] [charactertrigger0.effect0.status0.power]. Applique [rage] [charactertrigger0.effect1.status0.power] et <b>[mt2_succclan.Plugin_frantic] [charactertrigger0.effect2.status0.power]</b> aux unités ennemies hors boss de cet étage.",
+                "german": "<b>Schlag</b>: Erhält [sap] [charactertrigger0.effect0.status0.power]. Verleiht feindlichen Einheiten auf dieser Etage außer Bossen [rage] [charactertrigger0.effect1.status0.power] und <b>[mt2_succclan.Plugin_frantic] [charactertrigger0.effect2.status0.power]</b>.",
+                "portuguese": "<b>Golpe</b>: Ganha [sap] [charactertrigger0.effect0.status0.power]. Aplica [rage] [charactertrigger0.effect1.status0.power] e <b>[mt2_succclan.Plugin_frantic] [charactertrigger0.effect2.status0.power]</b> às unidades inimigas deste andar, exceto chefes.",
+                "russian": "<b>Удар</b>: получает [sap] [charactertrigger0.effect0.status0.power]. Накладывает [rage] [charactertrigger0.effect1.status0.power] и <b>[mt2_succclan.Plugin_frantic] [charactertrigger0.effect2.status0.power]</b> на врагов на этом этаже, кроме боссов.",
+                "chinese": "<b>攻击</b>：获得 [sap] [charactertrigger0.effect0.status0.power]。对本层非首领敌方单位施加 [rage] [charactertrigger0.effect1.status0.power] 和 <b>[mt2_succclan.Plugin_frantic] [charactertrigger0.effect2.status0.power]</b>。",
+                "chinese_traditional": "<b>打擊</b>：獲得 [sap] [charactertrigger0.effect0.status0.power]。對本層非首領敵方單位施加 [rage] [charactertrigger0.effect1.status0.power] 與 <b>[mt2_succclan.Plugin_frantic] [charactertrigger0.effect2.status0.power]</b>。",
+                "japanese": "<b>ストライク</b>：[sap] [charactertrigger0.effect0.status0.power]を得る。この階のボス以外の敵全員に[rage] [charactertrigger0.effect1.status0.power]と<b>[mt2_succclan.Plugin_frantic] [charactertrigger0.effect2.status0.power]</b>を付与する。",
+                "korean": "<b>타격</b>: [sap] [charactertrigger0.effect0.status0.power]을 얻습니다. 이 층의 보스가 아닌 적에게 [rage] [charactertrigger0.effect1.status0.power] 및 <b>[mt2_succclan.Plugin_frantic] [charactertrigger0.effect2.status0.power]</b>을 부여합니다."
             },
             "use_upgrade_highlight_tags": true,
             "trigger_upgrades": [
@@ -614,16 +614,16 @@
             "id": "EssenceChaosOnHit",
             "trigger": "on_hit",
             "descriptions": {
-                "english": "Apply <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> to the attacking enemy unit.",
-                "chinese": "对攻击的敌方单位施加 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>。",
-                "spanish": "Otorga <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> a la unidad enemiga atacante.",
-                "french": "Applique <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> à l'unité ennemie attaquante.",
-                "german": "Verleiht der angreifenden feindlichen Einheit <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>.",
-                "portuguese": "Aplica <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> à unidade inimiga atacante.",
-                "russian": "Даёт атакующему врагу <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>.",
-                "chinese_traditional": "對攻擊者施加 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>。",
-                "japanese": "攻撃してきた敵に<b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>を付与する。",
-                "korean": "공격한 적에게 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>을 부여합니다."
+                "english": "Apply <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> to the attacking enemy unit. Cannot target bosses.",
+                "spanish": "Otorga <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> a la unidad enemiga atacante. No afecta a jefes.",
+                "french": "Applique <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> à l’unité ennemie attaquante. Ne peut pas cibler les boss.",
+                "german": "Verleiht der angreifenden feindlichen Einheit <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>. Kann keine Bosse als Ziel wählen.",
+                "portuguese": "Aplica <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> à unidade inimiga atacante. Não pode afetar chefes.",
+                "russian": "Накладывает <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> на атакующего врага. Не действует на боссов.",
+                "chinese": "对攻击者施加 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>。无法以首领为目标。",
+                "chinese_traditional": "對攻擊者施加 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>。無法以首領為目標。",
+                "japanese": "攻撃してきた敵に<b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>を付与する。ボスは対象にできない。",
+                "korean": "공격한 적에게 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>을 부여합니다. 보스는 대상으로 지정할 수 없습니다."
             },
             "effects": [
                 "@EssenceChaosFrantic"

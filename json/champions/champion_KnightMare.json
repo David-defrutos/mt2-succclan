@@ -366,7 +366,8 @@
                     "status": "@psionic",
                     "count": 2
                 }
-            ]
+            ],
+            "disallow_status_effect_stack_modifiers": true
         },
         {
             "id": "AbyssBasicRemove",
@@ -434,7 +435,8 @@
                     "status": "@psionic",
                     "count": 2
                 }
-            ]
+            ],
+            "disallow_status_effect_stack_modifiers": true
         },
         {
             "id": "AbyssPreRemove",
@@ -502,7 +504,8 @@
                     "status": "@psionic",
                     "count": 2
                 }
-            ]
+            ],
+            "disallow_status_effect_stack_modifiers": true
         },
         {
             "id": "AbyssProRemove",
@@ -570,7 +573,8 @@
                     "status": "@psionic",
                     "count": 4
                 }
-            ]
+            ],
+            "disallow_status_effect_stack_modifiers": true
         },
         {
             "id": "IllusionBasicRemove",
@@ -648,7 +652,8 @@
                     "status": "@psionic",
                     "count": 4
                 }
-            ]
+            ],
+            "disallow_status_effect_stack_modifiers": true
         },
         {
             "id": "IllusionPreRemove",
@@ -726,7 +731,8 @@
                     "status": "@psionic",
                     "count": 4
                 }
-            ]
+            ],
+            "disallow_status_effect_stack_modifiers": true
         },
         {
             "id": "IllusionProRemove",
