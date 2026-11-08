@@ -1,0 +1,6 @@
+<!-- Documento generado el 2026-11-07-1205 -->
+<!-- Documento generado el 2026-11-07-1154 -->
+<Project Sdk="Microsoft.NET.Sdk"><PropertyGroup><OutputType>Exe</OutputType><TargetFramework>net8.0</TargetFramework><ImplicitUsings>enable</ImplicitUsings><Nullable>enable</Nullable></PropertyGroup><ItemGroup><Compile Include="$(MSBuildThisFileDirectory)..\..\src\code\CardEffectEndlessShadowRebirth.cs" /></ItemGroup></Project>
+<!-- 2026-11-07-1154||codex-succclan-targetless||salidas\build\succclan-shadow-preview-2026-11-07-1154\Preview.csproj||Crear prueba del codigo real de preview, aislamiento y limpieza -->
+
+<!-- 2026-11-07-1205||codex-succclan-targetless||repos\MT2\variaciones-mias\mt2-succclan\tests\shadow-preview\Preview.csproj||Consolidar suite local enlazando fuente real del repositorio externo -->

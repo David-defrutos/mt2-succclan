@@ -25,7 +25,9 @@ namespace mt2_succclan.Plugin
             ICoreGameManagers core, RelicManager relics, SaveManager save, bool spawnEffect)
         {
             if (character == null || character.IsDestroyed || status.GetStatusId() != "mt2_succclan.Plugin_frantic") return;
-            character.AddStatusEffect("buff", 1, new CharacterState.AddStatusEffectParams { sourceRelicState = SourceRelicState });
+            var rage = SourceRelicEffectData.GetParamStatusEffects().FirstOrDefault(stack => stack.statusId == "buff");
+            if (rage == null) return;
+            character.AddStatusEffect("buff", rage.count, new CharacterState.AddStatusEffectParams { sourceRelicState = SourceRelicState });
         }
     }
 
@@ -65,3 +67,5 @@ namespace mt2_succclan.Plugin
 }
 // 2026-10-27-1456||codex-succclan-targetless||src/code/AuditedCardEffects.cs||Flare Ribbon observa resolución completa del ataque a Pira, sin acceso tras destrucción
 // 2026-10-27-1536||codex-succclan-targetless||src/code/AuditedCardEffects.cs||Retirar descarte duplicado y aplicar Armor a Pira con excepción de inmunidad usada por efecto nativo Pyre
+
+// 2026-11-07-1435||codex-succclan-targetless||repos\MT2\variaciones-mias\mt2-succclan\src\code\AuditedCardEffects.cs||Nether Blossom lee cantidad Rage del JSON sin cambiar estado, valor1 ni equipos

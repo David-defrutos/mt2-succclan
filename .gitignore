@@ -21,3 +21,12 @@ tools/localization/validation.json
 
 # Local DLL backup
 *.dll.old
+
+# Desarrollo fuera del juego
+.build/
+**/bin/
+**/obj/
+**/__pycache__/
+*.dll.old.backup-*
+
+# 2026-11-07-1325||codex-succclan-targetless||repos\MT2\variaciones-mias\mt2-succclan\.gitignore||Añadir trazabilidad del nuevo flujo y salidas ignoradas

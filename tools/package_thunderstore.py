@@ -29,7 +29,7 @@ def package(mod: Path, output: Path) -> Path:
                 assert len(ids) == len(set(ids)), (path, category, "duplicate id")
     runtime = [dll] + json_files + sorted((mod / "textures").rglob("*.png"))
     output.mkdir(parents=True, exist_ok=True)
-    target = output / f"{manifest['namespace']}-{manifest['name']}-{manifest['version_number']}-alpha.zip"
+    target = output / f"{manifest['namespace']}-{manifest['name']}-{manifest['version_number']}-beta.zip"
     with zipfile.ZipFile(target, "w", zipfile.ZIP_DEFLATED, compresslevel=7) as archive:
         for name in metadata:
             archive.write(mod / name, name)
@@ -54,3 +54,5 @@ if __name__ == "__main__":
     parser.add_argument("--output", type=Path, required=True)
     args = parser.parse_args()
     package(args.mod, args.output)
+
+# 2026-11-07-1431||codex-succclan-targetless||repos\MT2\variaciones-mias\mt2-succclan\tools\package_thunderstore.py||Usar sufijo beta en nombres de ZIP de la proxima subida

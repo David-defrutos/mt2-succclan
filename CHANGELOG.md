@@ -6,30 +6,47 @@ Latest release in all ten game languages. Full history in English and Spanish.
 
 ## English
 
-### 0.1.14 — 2026-11-07 — ALPHA
+### 0.2.0 — 2026-11-07 — BETA
 
-- **Endless Shadow:** fixed the cumulative health loss in combat prediction so successive copies match actual combat.
-- **Abyss Princess / Lust Ghost / Chaos Creation essences:** clarified stack amounts and boss restrictions.
+#### New content
 
-- **Knightmare:** fixed the displayed Psionic Burst cost when using Abyss Crown.
-- **Desire Crystal:** added its missing activation message.
-- **Succubus Torturer:** corrected the essence name.
-- **Curseguard Stone / Slab:** added distinct upgrade icons.
+- **New Curseguard Slab:** Accursed: gain Armor 10. Replaces Curseguard Stone in empowered Soul Savior unit shops.
 
-Thanks to **Brandon**, **Rratvar, the Untitled**, and **Sin1sT3r [PAL]** for the reports and suggestions, and to Brandon for the PR and technical guidance.
+#### Balance
 
 - **Shadow Lady — Bloodthirsty:** size reduced from 3 to 2 at all three levels.
-- **New Curseguard Slab:** Accursed: gain Armor 10. Replaces Curseguard Stone in empowered Soul Savior unit shops.
 - **Plague Boost:** now grants ember for both Blights and Scourges in your deck.
+
+#### Fixes
+
+- **Endless Shadow:** fixed the cumulative health loss in combat prediction so successive copies match actual combat.
 - **Pain and Pleasure / Arrogance Ghost:** fixed hand targeting when discarding Obsessing Sparks, including generated Sparks.
+- **Obsessing Spark:** fixed simultaneous Reserve resolution at the end of the turn.
 - **Curseguard Stone:** fixed registration in standard and Soul Savior upgrade pools. Its Armor value now reflects modifiers.
+
+#### Interface and text
+
+- **Knightmare:** fixed the displayed Psionic Burst cost when using Abyss Crown.
 - **Shadow Lady — Plague:** the +1 ember per turn now appears in the ember gain preview.
 - **Power Siphon:** now displays its current damage, including Spell Power and Conduit bonuses.
 - **Vitality Extraction:** shows numerical Regen and Rage values so Doublestack upgrades are clearer.
+- **Abyss Princess / Lust Ghost / Chaos Creation essences:** clarified stack amounts and boss restrictions.
+- **Succubus Torturer:** corrected the essence name.
+- **Illusion Twins / Pain and Pleasure / Arrogance Ghost:** Fixed Spanish number agreement.
+- **Curseguard Stone / Slab:** added distinct upgrade icons.
+- **Desire Crystal:** added its missing activation message.
 - **Flesh Ring:** added its missing activation message.
-- **Obsessing Spark:** fixed simultaneous Reserve resolution at the end of the turn.
-- Fixed identification of SuccClan cards and units for visual and sound effects, and improved compatibility with Trainworks.
-- Requires **Trainworks Reloaded 0.7.35** and **Conductor 0.5.17** or newer.
+
+#### Compatibility and requirements
+
+- **Visual and sound effects:** Fixed identification of SuccClan cards and units for visual and sound effects, and improved compatibility with Trainworks.
+- **Dependencies:** Requires **Trainworks Reloaded 0.7.35** and **Conductor 0.5.17** or newer.
+
+#### Acknowledgements
+
+Thanks to **Brandon**, **Rratvar, the Untitled**, and **Sin1sT3r [PAL]** for the reports and suggestions, and to Brandon for the PR and technical guidance.
+
+**Bug reports and balance suggestions are very welcome!** Share them in the [SuccClan Discord thread](https://discord.com/channels/336546996779483136/1563769828244725770).
 
 ### 0.1.13 — 2026-10-27 — ALPHA
 
@@ -148,30 +165,47 @@ New translations are a first pass and have not been reviewed by native speakers 
 
 ## Spanish
 
-### 0.1.14 — 2026-11-07 — ALPHA
+### 0.2.0 — 2026-11-07 — BETA
 
-- **Endless Shadow:** corregida la pérdida acumulada de vida en la predicción para que las copias sucesivas coincidan con el combate real.
-- **Esencias de Abyss Princess / Lust Ghost / Chaos Creation:** aclaradas las cantidades y las restricciones contra jefes.
+#### Contenido nuevo
+
+- **Curseguard Slab:** nueva mejora con Accursed: obtiene Armadura 10. Sustituye a Curseguard Stone en las tiendas de unidades potenciadas de Soul Savior.
+
+#### Balance
+
+- **Shadow Lady — Bloodthirsty:** tamaño reducido de 3 a 2 en los tres niveles.
+- **Plague Boost:** ahora concede ember tanto por los Blights como por los Scourges de tu mazo.
+
+#### Correcciones
+
+- **Endless Shadow:** corregida la pérdida acumulada de vida en la predicción de combate.
+- **Pain and Pleasure / Arrogance Ghost:** corregido el descarte de Obsessing Sparks de la mano, incluidas las generadas.
+- **Obsessing Spark:** corregida la resolución simultánea de Reserve al final del turno.
+- **Curseguard Stone:** corregida su disponibilidad en las tiendas de mejoras. Su descripción refleja los modificadores de Armadura.
+
+#### Interfaz y textos
 
 - **Knightmare:** corregido el coste mostrado de Psionic Burst al usar Abyss Crown.
-- **Desire Crystal:** añadido el mensaje de activación que faltaba.
+- **Shadow Lady — Plague:** el ember adicional aparece en la previsión de ember.
+- **Power Siphon:** muestra su daño actual, incluidos los modificadores de Poder mágico y Conduit.
+- **Vitality Extraction:** muestra las cantidades de Regen y Rage para aclarar su interacción con Doublestack.
+- **Esencias de Abyss Princess, Lust Ghost y Chaos Creation:** aclaradas las cantidades y las restricciones contra jefes.
 - **Succubus Torturer:** corregido el nombre de su esencia.
-- **Curseguard Stone / Slab:** añadidos iconos propios para distinguir las mejoras.
+- **Illusion Twins / Pain and Pleasure / Arrogance Ghost:** corregidas las concordancias de número en español.
+- **Curseguard Stone / Slab:** nuevos iconos propios.
+- **Desire Crystal:** añadido su mensaje de activación.
+- **Flesh Ring:** añadido su mensaje de activación.
+
+#### Compatibilidad y requisitos
+
+- **Efectos visuales y sonoros:** corregida la identificación de cartas y unidades SuccClan y mejorada la compatibilidad con Trainworks.
+- **Dependencias:** requiere Trainworks Reloaded **0.7.35** y Conductor **0.5.17** o posteriores.
+
+#### Agradecimientos
 
 Gracias a **Brandon**, **Rratvar, the Untitled** y **Sin1sT3r [PAL]** por los errores reportados y las sugerencias, y a Brandon por el PR y la ayuda técnica.
 
-- **Shadow Lady — Bloodthirsty:** tamaño reducido de 3 a 2 en los tres niveles.
-- **Nueva Curseguard Slab:** Accursed: obtiene Armadura 10. Sustituye a Curseguard Stone en las tiendas de unidades potenciadas de Soul Savior.
-- **Plague Boost:** ahora concede ember tanto por las Ruinas como por los Azotes de tu mazo.
-- **Pain and Pleasure / Arrogance Ghost:** corregida la selección de la mano al descartar Chispas obsesivas, incluidas las generadas.
-- **Curseguard Stone:** corregido su registro en los pools de mejoras normales y de Soul Savior. La cantidad de Armadura ahora refleja los modificadores.
-- **Shadow Lady — Plague:** el +1 ember por turno aparece en la previsión de ember.
-- **Power Siphon:** muestra su daño actual, incluidos los bonus de Poder mágico y Conduit.
-- **Vitality Extraction:** muestra las cantidades de Regeneración y Furia para aclarar el efecto de Doublestack.
-- **Flesh Ring:** añadido el mensaje de activación que faltaba.
-- **Obsessing Spark:** corregida la resolución simultánea de Reserva al final del turno.
-- Corregida la identificación de cartas y unidades SuccClan para los efectos visuales y de sonido; mejorada la compatibilidad con Trainworks.
-- Requiere **Trainworks Reloaded 0.7.35** y **Conductor 0.5.17** o posteriores.
+**¡Los reportes de errores y las recomendaciones de balance son muy bienvenidos!** Puedes compartirlos en el [hilo de Discord de SuccClan](https://discord.com/channels/336546996779483136/1563769828244725770).
 
 ### 0.1.13 — 2026-10-27 — ALPHA
 
@@ -283,30 +317,47 @@ Las traducciones nuevas son una primera versión y aún no habían sido revisada
 
 ## French
 
-### 0.1.14 — 2026-11-07 — ALPHA
+### 0.2.0 — 2026-11-07 — BETA
 
-- **Endless Shadow :** correction de la perte de vie cumulée dans la prédiction pour que les copies successives correspondent au combat réel.
-- **Essences d’Abyss Princess / Lust Ghost / Chaos Creation :** clarification des quantités et des restrictions contre les boss.
+#### Nouveau contenu
 
-- **Knightmare :** correction du coût affiché de Psionic Burst avec Abyss Crown.
-- **Desire Crystal :** ajout du message d’activation manquant.
-- **Succubus Torturer :** correction du nom de son essence.
-- **Curseguard Stone / Slab :** ajout d’icônes distinctes pour ces améliorations.
+- **Nouvelle Curseguard Slab :** Accursed : gagne Armure 10. Remplace Curseguard Stone dans les boutiques d’unités renforcées de Soul Savior.
 
-Merci à **Brandon**, **Rratvar, the Untitled** et **Sin1sT3r [PAL]** pour leurs signalements et suggestions, et à Brandon pour le PR et ses conseils techniques.
+#### Équilibrage
 
 - **Shadow Lady — Bloodthirsty :** taille réduite de 3 à 2 aux trois niveaux.
-- **Nouvelle Curseguard Slab :** Accursed : gagne Armure 10. Remplace Curseguard Stone dans les boutiques d’unités renforcées de Soul Savior.
 - **Plague Boost :** accorde désormais des braises pour les Fléaux et les Plaies de votre deck.
+
+#### Corrections
+
+- **Endless Shadow :** correction de la perte de vie cumulée dans la prédiction pour que les copies successives correspondent au combat réel.
 - **Pain and Pleasure / Arrogance Ghost :** correction du ciblage de la main pour défausser les Étincelles obsédantes, y compris celles générées.
+- **Obsessing Spark :** correction de la résolution simultanée de Réserve en fin de tour.
 - **Curseguard Stone :** correction de son ajout aux réserves d’améliorations normales et de Soul Savior. La valeur d’Armure reflète les modificateurs.
+
+#### Interface et textes
+
+- **Knightmare :** correction du coût affiché de Psionic Burst avec Abyss Crown.
 - **Shadow Lady — Plague :** le +1 braise par tour apparaît dans la prévision de braises.
 - **Power Siphon :** affiche les dégâts actuels, avec les bonus de puissance magique et de Conduit.
 - **Vitality Extraction :** affiche les valeurs numériques de Régénération et de Rage pour clarifier Doublestack.
+- **Essences d’Abyss Princess / Lust Ghost / Chaos Creation :** clarification des quantités et des restrictions contre les boss.
+- **Succubus Torturer :** correction du nom de son essence.
+- **Illusion Twins / Pain and Pleasure / Arrogance Ghost:** Correction des accords en nombre dans les textes espagnols.
+- **Curseguard Stone / Slab :** ajout d’icônes distinctes pour ces améliorations.
+- **Desire Crystal :** ajout du message d’activation manquant.
 - **Flesh Ring :** ajout du message d’activation manquant.
-- **Obsessing Spark :** correction de la résolution simultanée de Réserve en fin de tour.
-- Correction de l’identification des cartes et unités SuccClan pour les effets visuels et sonores ; meilleure compatibilité avec Trainworks.
-- Nécessite **Trainworks Reloaded 0.7.35** et **Conductor 0.5.17** ou ultérieurs.
+
+#### Compatibilité et prérequis
+
+- **Effets visuels et sonores:** Correction de l’identification des cartes et unités SuccClan pour les effets visuels et sonores ; meilleure compatibilité avec Trainworks.
+- **Dépendances:** Nécessite **Trainworks Reloaded 0.7.35** et **Conductor 0.5.17** ou ultérieurs.
+
+#### Remerciements
+
+Merci à **Brandon**, **Rratvar, the Untitled** et **Sin1sT3r [PAL]** pour leurs signalements et suggestions, et à Brandon pour le PR et ses conseils techniques.
+
+**Vos signalements de bugs et suggestions d’équilibrage sont les bienvenus !** Partagez-les dans le [fil Discord de SuccClan](https://discord.com/channels/336546996779483136/1563769828244725770).
 
 ### 0.1.13 — 2026-10-27 — ALPHA
 
@@ -334,30 +385,47 @@ Merci à **Brandon et Rratvar** pour les bugs signalés et les améliorations pr
 
 ## German
 
-### 0.1.14 — 2026-11-07 — ALPHA
+### 0.2.0 — 2026-11-07 — BETA
 
-- **Endless Shadow:** kumulativen Lebensverlust in der Kampfvorhersage korrigiert, sodass aufeinanderfolgende Kopien dem tatsächlichen Kampf entsprechen.
-- **Essenzen von Abyss Princess / Lust Ghost / Chaos Creation:** Stapelzahlen und Einschränkungen für Bosse klargestellt.
+#### Neue Inhalte
 
-- **Knightmare:** angezeigte Psionic-Burst-Kosten mit Abyss Crown korrigiert.
-- **Desire Crystal:** fehlende Aktivierungsnachricht ergänzt.
-- **Succubus Torturer:** Namen der Essenz korrigiert.
-- **Curseguard Stone / Slab:** eigene Symbole für beide Verbesserungen hinzugefügt.
+- **Neue Curseguard Slab:** Accursed: Erhalte Rüstung 10. Ersetzt Curseguard Stone in verstärkten Einheitenläden von Soul Savior.
 
-Danke an **Brandon**, **Rratvar, the Untitled** und **Sin1sT3r [PAL]** für Meldungen und Vorschläge sowie an Brandon für den PR und die technische Hilfe.
+#### Balance
 
 - **Shadow Lady — Bloodthirsty:** Größe auf allen drei Stufen von 3 auf 2 reduziert.
-- **Neue Curseguard Slab:** Accursed: Erhalte Rüstung 10. Ersetzt Curseguard Stone in verstärkten Einheitenläden von Soul Savior.
 - **Plague Boost:** gewährt jetzt Glut für Flüche und Plagen in deinem Deck.
+
+#### Fehlerbehebungen
+
+- **Endless Shadow:** kumulativen Lebensverlust in der Kampfvorhersage korrigiert, sodass aufeinanderfolgende Kopien dem tatsächlichen Kampf entsprechen.
 - **Pain and Pleasure / Arrogance Ghost:** Handzielauswahl beim Abwerfen von Besessenheitsfunken korrigiert, einschließlich erzeugter Karten.
+- **Obsessing Spark:** gleichzeitige Reserve-Auflösung am Zugende korrigiert.
 - **Curseguard Stone:** Registrierung in normalen und Soul-Savior-Verbesserungspools korrigiert. Der Rüstungswert berücksichtigt Modifikatoren.
+
+#### Oberfläche und Texte
+
+- **Knightmare:** angezeigte Psionic-Burst-Kosten mit Abyss Crown korrigiert.
 - **Shadow Lady — Plague:** +1 Glut pro Zug wird in der Glutvorschau angezeigt.
 - **Power Siphon:** zeigt aktuellen Schaden einschließlich Magiekraft- und Conduit-Boni.
 - **Vitality Extraction:** zeigt Zahlenwerte für Regeneration und Wut, damit Doublestack verständlich ist.
+- **Essenzen von Abyss Princess / Lust Ghost / Chaos Creation:** Stapelzahlen und Einschränkungen für Bosse klargestellt.
+- **Succubus Torturer:** Namen der Essenz korrigiert.
+- **Illusion Twins / Pain and Pleasure / Arrogance Ghost:** Zahlübereinstimmung in den spanischen Texten korrigiert.
+- **Curseguard Stone / Slab:** eigene Symbole für beide Verbesserungen hinzugefügt.
+- **Desire Crystal:** fehlende Aktivierungsnachricht ergänzt.
 - **Flesh Ring:** fehlende Aktivierungsmeldung ergänzt.
-- **Obsessing Spark:** gleichzeitige Reserve-Auflösung am Zugende korrigiert.
-- Erkennung von SuccClan-Karten und -Einheiten für Bild- und Toneffekte korrigiert; Kompatibilität mit Trainworks verbessert.
-- Benötigt **Trainworks Reloaded 0.7.35** und **Conductor 0.5.17** oder neuer.
+
+#### Kompatibilität und Voraussetzungen
+
+- **Bild- und Toneffekte:** Erkennung von SuccClan-Karten und -Einheiten für Bild- und Toneffekte korrigiert; Kompatibilität mit Trainworks verbessert.
+- **Abhängigkeiten:** Benötigt **Trainworks Reloaded 0.7.35** und **Conductor 0.5.17** oder neuer.
+
+#### Danksagungen
+
+Danke an **Brandon**, **Rratvar, the Untitled** und **Sin1sT3r [PAL]** für Meldungen und Vorschläge sowie an Brandon für den PR und die technische Hilfe.
+
+**Fehlermeldungen und Vorschläge zur Spielbalance sind sehr willkommen!** Teile sie im [Discord-Thread zu SuccClan](https://discord.com/channels/336546996779483136/1563769828244725770).
 
 ### 0.1.13 — 2026-10-27 — ALPHA
 
@@ -385,30 +453,47 @@ Danke an **Brandon und Rratvar** für die Fehlerberichte und Verbesserungsvorsch
 
 ## Russian
 
-### 0.1.14 — 2026-11-07 — ALPHA
+### 0.2.0 — 2026-11-07 — BETA
 
-- **Endless Shadow:** исправлена накопительная потеря здоровья в прогнозе боя, чтобы последовательные копии соответствовали реальному бою.
-- **Эссенции Abyss Princess / Lust Ghost / Chaos Creation:** уточнены количества эффектов и ограничения для боссов.
+#### Новый контент
 
-- **Knightmare:** исправлена отображаемая стоимость Psionic Burst с Abyss Crown.
-- **Desire Crystal:** добавлено отсутствовавшее сообщение об активации.
-- **Succubus Torturer:** исправлено название эссенции.
-- **Curseguard Stone / Slab:** добавлены разные значки улучшений.
+- **Новая Curseguard Slab:** Accursed: даёт Броню 10. Заменяет Curseguard Stone в усиленных магазинах существ Soul Savior.
 
-Спасибо **Brandon**, **Rratvar, the Untitled** и **Sin1sT3r [PAL]** за сообщения и предложения, а Brandon — также за PR и техническую помощь.
+#### Баланс
 
 - **Shadow Lady — Bloodthirsty:** размер уменьшен с 3 до 2 на всех трёх уровнях.
-- **Новая Curseguard Slab:** Accursed: даёт Броню 10. Заменяет Curseguard Stone в усиленных магазинах существ Soul Savior.
 - **Plague Boost:** теперь даёт угли за Порчу и Скверну в колоде.
+
+#### Исправления
+
+- **Endless Shadow:** исправлена накопительная потеря здоровья в прогнозе боя, чтобы последовательные копии соответствовали реальному бою.
 - **Pain and Pleasure / Arrogance Ghost:** исправлен выбор карт в руке при сбросе Искр одержимости, включая созданные карты.
+- **Obsessing Spark:** исправлено одновременное срабатывание Резерва в конце хода.
 - **Curseguard Stone:** исправлено добавление в обычные наборы улучшений и наборы Soul Savior. Броня в описании учитывает модификаторы.
+
+#### Интерфейс и тексты
+
+- **Knightmare:** исправлена отображаемая стоимость Psionic Burst с Abyss Crown.
 - **Shadow Lady — Plague:** +1 уголь за ход отображается в прогнозе углей.
 - **Power Siphon:** отображает текущий урон с бонусами магической силы и Conduit.
 - **Vitality Extraction:** показывает численные значения Регенерации и Ярости для ясности улучшения Doublestack.
+- **Эссенции Abyss Princess / Lust Ghost / Chaos Creation:** уточнены количества эффектов и ограничения для боссов.
+- **Succubus Torturer:** исправлено название эссенции.
+- **Illusion Twins / Pain and Pleasure / Arrogance Ghost:** Исправлено согласование числа в испанских текстах.
+- **Curseguard Stone / Slab:** добавлены разные значки улучшений.
+- **Desire Crystal:** добавлено отсутствовавшее сообщение об активации.
 - **Flesh Ring:** добавлено отсутствовавшее сообщение активации.
-- **Obsessing Spark:** исправлено одновременное срабатывание Резерва в конце хода.
-- Исправлено распознавание карт и существ SuccClan для визуальных и звуковых эффектов; улучшена совместимость с Trainworks.
-- Требуются **Trainworks Reloaded 0.7.35** и **Conductor 0.5.17** или новее.
+
+#### Совместимость и требования
+
+- **Визуальные и звуковые эффекты:** Исправлено распознавание карт и существ SuccClan для визуальных и звуковых эффектов; улучшена совместимость с Trainworks.
+- **Зависимости:** Требуются **Trainworks Reloaded 0.7.35** и **Conductor 0.5.17** или новее.
+
+#### Благодарности
+
+Спасибо **Brandon**, **Rratvar, the Untitled** и **Sin1sT3r [PAL]** за сообщения и предложения, а Brandon — также за PR и техническую помощь.
+
+**Сообщения об ошибках и предложения по балансу очень приветствуются!** Делитесь ими в [ветке SuccClan в Discord](https://discord.com/channels/336546996779483136/1563769828244725770).
 
 ### 0.1.13 — 2026-10-27 — ALPHA
 
@@ -436,30 +521,47 @@ Danke an **Brandon und Rratvar** für die Fehlerberichte und Verbesserungsvorsch
 
 ## Portuguese Brazil
 
-### 0.1.14 — 2026-11-07 — ALPHA
+### 0.2.0 — 2026-11-07 — BETA
 
-- **Endless Shadow:** corrigida a perda acumulada de vida na previsão para que as cópias sucessivas correspondam ao combate real.
-- **Essências de Abyss Princess / Lust Ghost / Chaos Creation:** esclarecidas as quantidades e as restrições contra chefes.
+#### Novo conteúdo
 
-- **Knightmare:** corrigido o custo exibido de Psionic Burst com Abyss Crown.
-- **Desire Crystal:** adicionada a mensagem de ativação que faltava.
-- **Succubus Torturer:** corrigido o nome da essência.
-- **Curseguard Stone / Slab:** adicionados ícones próprios para as melhorias.
+- **Nova Curseguard Slab:** Accursed: ganha Armadura 10. Substitui Curseguard Stone nas lojas de unidades aprimoradas de Soul Savior.
 
-Obrigado a **Brandon**, **Rratvar, the Untitled** e **Sin1sT3r [PAL]** pelos relatos e sugestões, e a Brandon pelo PR e pela orientação técnica.
+#### Balanceamento
 
 - **Shadow Lady — Bloodthirsty:** tamanho reduzido de 3 para 2 nos três níveis.
-- **Nova Curseguard Slab:** Accursed: ganha Armadura 10. Substitui Curseguard Stone nas lojas de unidades aprimoradas de Soul Savior.
 - **Plague Boost:** agora concede brasas por Pragas e Flagelos no seu deck.
+
+#### Correções
+
+- **Endless Shadow:** corrigida a perda acumulada de vida na previsão para que as cópias sucessivas correspondam ao combate real.
 - **Pain and Pleasure / Arrogance Ghost:** corrigida a seleção da mão ao descartar Centelhas Obsessivas, incluindo as geradas.
+- **Obsessing Spark:** corrigida a resolução simultânea de Reserva no fim do turno.
 - **Curseguard Stone:** corrigido o registro nas reservas de melhorias normais e de Soul Savior. O valor de Armadura reflete os modificadores.
+
+#### Interface e textos
+
+- **Knightmare:** corrigido o custo exibido de Psionic Burst com Abyss Crown.
 - **Shadow Lady — Plague:** +1 brasa por turno aparece na previsão de brasas.
 - **Power Siphon:** mostra o dano atual, incluindo bônus de Poder Mágico e Conduit.
 - **Vitality Extraction:** mostra valores numéricos de Regeneração e Fúria para esclarecer Doublestack.
+- **Essências de Abyss Princess / Lust Ghost / Chaos Creation:** esclarecidas as quantidades e as restrições contra chefes.
+- **Succubus Torturer:** corrigido o nome da essência.
+- **Illusion Twins / Pain and Pleasure / Arrogance Ghost:** Corrigida a concordância de número nos textos em espanhol.
+- **Curseguard Stone / Slab:** adicionados ícones próprios para as melhorias.
+- **Desire Crystal:** adicionada a mensagem de ativação que faltava.
 - **Flesh Ring:** adicionada a mensagem de ativação ausente.
-- **Obsessing Spark:** corrigida a resolução simultânea de Reserva no fim do turno.
-- Corrigida a identificação de cartas e unidades SuccClan para efeitos visuais e sonoros; melhorada a compatibilidade com Trainworks.
-- Requer **Trainworks Reloaded 0.7.35** e **Conductor 0.5.17** ou mais recentes.
+
+#### Compatibilidade e requisitos
+
+- **Efeitos visuais e sonoros:** Corrigida a identificação de cartas e unidades SuccClan para efeitos visuais e sonoros; melhorada a compatibilidade com Trainworks.
+- **Dependências:** Requer **Trainworks Reloaded 0.7.35** e **Conductor 0.5.17** ou mais recentes.
+
+#### Agradecimentos
+
+Obrigado a **Brandon**, **Rratvar, the Untitled** e **Sin1sT3r [PAL]** pelos relatos e sugestões, e a Brandon pelo PR e pela orientação técnica.
+
+**Relatos de bugs e sugestões de balanceamento são muito bem-vindos!** Compartilhe-os no [tópico de SuccClan no Discord](https://discord.com/channels/336546996779483136/1563769828244725770).
 
 ### 0.1.13 — 2026-10-27 — ALPHA
 
@@ -487,30 +589,47 @@ Obrigado a **Brandon e Rratvar** pelos relatos de erros e sugestões de melhoria
 
 ## Chinese
 
-### 0.1.14 — 2026-11-07 — ALPHA
+### 0.2.0 — 2026-11-07 — BETA
 
-- **Endless Shadow：**修正战斗预测中未累计的生命损失，使连续生成的复制体与实际战斗一致。
-- **Abyss Princess / Lust Ghost / Chaos Creation 精华：**明确状态层数及首领限制。
+#### 新增内容
 
-- **Knightmare：**修正装备 Abyss Crown 时显示的 Psionic Burst 消耗。
-- **Desire Crystal：**补上缺失的触发提示。
-- **Succubus Torturer：**修正精华的名称。
-- **Curseguard Stone / Slab：**为两种升级添加不同的图标。
+- **新增 Curseguard Slab：**被咒：获得护甲 10。在 Soul Savior 强化单位商店中替代 Curseguard Stone。
 
-感谢 **Brandon**、**Rratvar, the Untitled** 和 **Sin1sT3r [PAL]** 的问题报告与建议，也感谢 Brandon 提交 PR 并提供技术指导。
+#### 平衡调整
 
 - **Shadow Lady — Bloodthirsty：**三个等级的体型均从 3 降至 2。
-- **新增 Curseguard Slab：**被咒：获得护甲 10。在 Soul Savior 强化单位商店中替代 Curseguard Stone。
 - **Plague Boost：**现在根据牌库中的祸害牌和天灾牌获得余烬。
+
+#### 修复
+
+- **Endless Shadow：**修正战斗预测中未累计的生命损失，使连续生成的复制体与实际战斗一致。
 - **Pain and Pleasure / Arrogance Ghost：**修复舍弃欲望碎片时的手牌选取，包括战斗中生成的卡牌。
+- **Obsessing Spark：**修复回合结束时保留效果的同时结算。
 - **Curseguard Stone：**修复在普通模式与 Soul Savior 升级池中的注册。护甲数值现在会反映修正效果。
+
+#### 界面与文本
+
+- **Knightmare：**修正装备 Abyss Crown 时显示的 Psionic Burst 消耗。
 - **Shadow Lady — Plague：**每回合 +1 余烬现在显示在余烬预览中。
 - **Power Siphon：**显示当前伤害，包括法术强度与 Conduit 加成。
 - **Vitality Extraction：**显示再生和狂怒的具体数值，明确 Doublestack 的效果。
+- **Abyss Princess / Lust Ghost / Chaos Creation 精华：**明确状态层数及首领限制。
+- **Succubus Torturer：**修正精华的名称。
+- **Illusion Twins / Pain and Pleasure / Arrogance Ghost:** 修正西班牙语文本中的单复数语法。
+- **Curseguard Stone / Slab：**为两种升级添加不同的图标。
+- **Desire Crystal：**补上缺失的触发提示。
 - **Flesh Ring：**补上缺失的触发提示。
-- **Obsessing Spark：**修复回合结束时保留效果的同时结算。
-- 修复视觉与音效对 SuccClan 卡牌和单位的识别，并改善 Trainworks 兼容性。
-- 需要 **Trainworks Reloaded 0.7.35** 和 **Conductor 0.5.17** 或更新版本。
+
+#### 兼容性与依赖要求
+
+- **视觉与音效:** 修复视觉与音效对 SuccClan 卡牌和单位的识别，并改善 Trainworks 兼容性。
+- **依赖:** 需要 **Trainworks Reloaded 0.7.35** 和 **Conductor 0.5.17** 或更新版本。
+
+#### 致谢
+
+感谢 **Brandon**、**Rratvar, the Untitled** 和 **Sin1sT3r [PAL]** 的问题报告与建议，也感谢 Brandon 提交 PR 并提供技术指导。
+
+**非常欢迎大家反馈问题并提出平衡性建议！** 请在 [SuccClan 的 Discord 讨论串](https://discord.com/channels/336546996779483136/1563769828244725770)中分享。
 
 ### 0.1.13 — 2026-10-27 — ALPHA
 
@@ -564,30 +683,47 @@ Obrigado a **Brandon e Rratvar** pelos relatos de erros e sugestões de melhoria
 
 ## Chinese Traditional
 
-### 0.1.14 — 2026-11-07 — ALPHA
+### 0.2.0 — 2026-11-07 — BETA
 
-- **Endless Shadow：**修正戰鬥預測中未累計的生命損失，使連續產生的複製體與實際戰鬥一致。
-- **Abyss Princess / Lust Ghost / Chaos Creation 精華：**明確標示狀態層數與首領限制。
+#### 新增內容
 
-- **Knightmare：**修正裝備 Abyss Crown 時顯示的 Psionic Burst 消耗。
-- **Desire Crystal：**補上缺少的觸發提示。
-- **Succubus Torturer：**修正精華名稱。
-- **Curseguard Stone / Slab：**為兩種升級新增不同的圖示。
+- **新增 Curseguard Slab：**詛咒：獲得護甲 10。在 Soul Savior 強化單位商店中取代 Curseguard Stone。
 
-感謝 **Brandon**、**Rratvar, the Untitled** 與 **Sin1sT3r [PAL]** 的問題回報和建議，也感謝 Brandon 提交 PR 並提供技術指導。
+#### 平衡調整
 
 - **Shadow Lady — Bloodthirsty：**三個等級的體型均由 3 降至 2。
-- **新增 Curseguard Slab：**詛咒：獲得護甲 10。在 Soul Savior 強化單位商店中取代 Curseguard Stone。
 - **Plague Boost：**現在根據牌庫中的禍害牌與災禍牌獲得餘燼。
+
+#### 修正
+
+- **Endless Shadow：**修正戰鬥預測中未累計的生命損失，使連續產生的複製體與實際戰鬥一致。
 - **Pain and Pleasure / Arrogance Ghost：**修正棄掉執念火花時的手牌選取，包括戰鬥中產生的卡牌。
+- **Obsessing Spark：**修正回合結束時保留效果的同時結算。
 - **Curseguard Stone：**修正一般模式與 Soul Savior 升級池中的註冊。護甲數值現在會反映修正效果。
+
+#### 介面與文字
+
+- **Knightmare：**修正裝備 Abyss Crown 時顯示的 Psionic Burst 消耗。
 - **Shadow Lady — Plague：**每回合 +1 餘燼現在顯示於餘燼預覽中。
 - **Power Siphon：**顯示目前傷害，包括法術強度與 Conduit 加成。
 - **Vitality Extraction：**顯示再生與狂怒的具體數值，說明 Doublestack 的效果。
+- **Abyss Princess / Lust Ghost / Chaos Creation 精華：**明確標示狀態層數與首領限制。
+- **Succubus Torturer：**修正精華名稱。
+- **Illusion Twins / Pain and Pleasure / Arrogance Ghost:** 修正西班牙語文字中的單複數語法。
+- **Curseguard Stone / Slab：**為兩種升級新增不同的圖示。
+- **Desire Crystal：**補上缺少的觸發提示。
 - **Flesh Ring：**補上缺少的觸發提示。
-- **Obsessing Spark：**修正回合結束時保留效果的同時結算。
-- 修正視覺與音效對 SuccClan 卡牌和單位的辨識，並改善 Trainworks 相容性。
-- 需要 **Trainworks Reloaded 0.7.35** 與 **Conductor 0.5.17** 或更新版本。
+
+#### 相容性與依賴需求
+
+- **視覺與音效:** 修正視覺與音效對 SuccClan 卡牌和單位的辨識，並改善 Trainworks 相容性。
+- **依賴:** 需要 **Trainworks Reloaded 0.7.35** 與 **Conductor 0.5.17** 或更新版本。
+
+#### 致謝
+
+感謝 **Brandon**、**Rratvar, the Untitled** 與 **Sin1sT3r [PAL]** 的問題回報和建議，也感謝 Brandon 提交 PR 並提供技術指導。
+
+**非常歡迎大家回報問題並提出平衡性建議！** 請在 [SuccClan 的 Discord 討論串](https://discord.com/channels/336546996779483136/1563769828244725770)中分享。
 
 ### 0.1.13 — 2026-10-27 — ALPHA
 
@@ -615,30 +751,47 @@ Obrigado a **Brandon e Rratvar** pelos relatos de erros e sugestões de melhoria
 
 ## Korean
 
-### 0.1.14 — 2026-11-07 — ALPHA
+### 0.2.0 — 2026-11-07 — BETA
 
-- **Endless Shadow:** 연속 복제본이 실제 전투와 일치하도록 전투 예측의 누적 체력 감소를 수정했습니다.
-- **Abyss Princess / Lust Ghost / Chaos Creation 정수:** 상태 중첩 수와 보스 제한을 명확히 했습니다.
+#### 신규 콘텐츠
 
-- **Knightmare:** Abyss Crown 사용 시 표시되는 Psionic Burst 비용을 수정했습니다.
-- **Desire Crystal:** 누락된 발동 메시지를 추가했습니다.
-- **Succubus Torturer:** 정수 이름을 수정했습니다.
-- **Curseguard Stone / Slab:** 각 강화에 고유 아이콘을 추가했습니다.
+- **신규 Curseguard Slab:** Accursed: 방어도 10 획득. Soul Savior 강화 유닛 상점에서 Curseguard Stone을 대체합니다.
 
-문제 보고와 제안을 보내 준 **Brandon**, **Rratvar, the Untitled**, **Sin1sT3r [PAL]**, 그리고 PR과 기술적 도움을 제공한 Brandon에게 감사드립니다.
+#### 밸런스
 
 - **Shadow Lady — Bloodthirsty:** 세 단계 모두 크기를 3에서 2로 줄였습니다.
-- **신규 Curseguard Slab:** Accursed: 방어도 10 획득. Soul Savior 강화 유닛 상점에서 Curseguard Stone을 대체합니다.
 - **Plague Boost:** 이제 덱의 저주와 재앙 카드 모두에 대해 잔불을 얻습니다.
+
+#### 수정 사항
+
+- **Endless Shadow:** 연속 복제본이 실제 전투와 일치하도록 전투 예측의 누적 체력 감소를 수정했습니다.
 - **Pain and Pleasure / Arrogance Ghost:** 생성된 집착의 불꽃을 포함하여 카드를 버릴 때 손을 올바르게 선택합니다.
+- **Obsessing Spark:** 턴 종료 시 비축 효과가 동시에 처리되도록 수정했습니다.
 - **Curseguard Stone:** 일반 및 Soul Savior 강화 목록 등록을 수정했습니다. 방어도 표시가 수치 변경 효과를 반영합니다.
+
+#### 인터페이스 및 텍스트
+
+- **Knightmare:** Abyss Crown 사용 시 표시되는 Psionic Burst 비용을 수정했습니다.
 - **Shadow Lady — Plague:** 턴당 잔불 +1이 잔불 예측에 표시됩니다.
 - **Power Siphon:** 주문력 및 Conduit 보너스를 포함한 현재 피해를 표시합니다.
 - **Vitality Extraction:** 재생과 분노 수치를 표시하여 Doublestack 효과를 명확히 했습니다.
+- **Abyss Princess / Lust Ghost / Chaos Creation 정수:** 상태 중첩 수와 보스 제한을 명확히 했습니다.
+- **Succubus Torturer:** 정수 이름을 수정했습니다.
+- **Illusion Twins / Pain and Pleasure / Arrogance Ghost:** 스페인어 텍스트의 단수·복수 표현을 수정했습니다.
+- **Curseguard Stone / Slab:** 각 강화에 고유 아이콘을 추가했습니다.
+- **Desire Crystal:** 누락된 발동 메시지를 추가했습니다.
 - **Flesh Ring:** 누락된 발동 메시지를 추가했습니다.
-- **Obsessing Spark:** 턴 종료 시 비축 효과가 동시에 처리되도록 수정했습니다.
-- 시각 및 음향 효과의 SuccClan 카드와 유닛 인식을 수정하고 Trainworks 호환성을 개선했습니다.
-- **Trainworks Reloaded 0.7.35**, **Conductor 0.5.17** 이상이 필요합니다.
+
+#### 호환성 및 필수 모드
+
+- **시각 및 음향 효과:** 시각 및 음향 효과의 SuccClan 카드와 유닛 인식을 수정하고 Trainworks 호환성을 개선했습니다.
+- **필수 모드:** **Trainworks Reloaded 0.7.35**, **Conductor 0.5.17** 이상이 필요합니다.
+
+#### 감사의 말
+
+문제 보고와 제안을 보내 준 **Brandon**, **Rratvar, the Untitled**, **Sin1sT3r [PAL]**, 그리고 PR과 기술적 도움을 제공한 Brandon에게 감사드립니다.
+
+**버그 제보와 밸런스 제안은 언제나 환영합니다!** [SuccClan 디스코드 스레드](https://discord.com/channels/336546996779483136/1563769828244725770)에 남겨 주세요.
 
 ### 0.1.13 — 2026-10-27 — ALPHA
 
@@ -666,30 +819,47 @@ Obrigado a **Brandon e Rratvar** pelos relatos de erros e sugestões de melhoria
 
 ## Japanese
 
-### 0.1.14 — 2026-11-07 — ALPHA
+### 0.2.0 — 2026-11-07 — BETA
 
-- **Endless Shadow：**戦闘予測での累積体力減少を修正し、連続するコピーが実際の戦闘と一致するようにしました。
-- **Abyss Princess / Lust Ghost / Chaos Creationのエッセンス：**状態の付与数とボスへの制限を明確化。
+#### 新要素
 
-- **Knightmare：**Abyss Crown使用時のPsionic Burstの表示コストを修正。
-- **Desire Crystal：**欠けていた発動メッセージを追加。
-- **Succubus Torturer：**エッセンス名を修正。
-- **Curseguard Stone / Slab：**それぞれの強化に専用アイコンを追加。
+- **新しいCurseguard Slab：**Accursed：アーマー10を得る。Soul Saviorの強化ユニットショップでCurseguard Stoneに代わって登場します。
 
-報告と提案を寄せてくれた **Brandon**、**Rratvar, the Untitled**、**Sin1sT3r [PAL]**、そしてPRと技術的な助言をくれたBrandonに感謝します。
+#### バランス調整
 
 - **Shadow Lady — Bloodthirsty：**全3段階でサイズを3から2に減らしました。
-- **新しいCurseguard Slab：**Accursed：アーマー10を得る。Soul Saviorの強化ユニットショップでCurseguard Stoneに代わって登場します。
 - **Plague Boost：**デッキの荒廃と災厄の両方からエンバーを得るようになりました。
+
+#### 修正
+
+- **Endless Shadow：**戦闘予測での累積体力減少を修正し、連続するコピーが実際の戦闘と一致するようにしました。
 - **Pain and Pleasure / Arrogance Ghost：**生成された執着の火花を含め、捨て札にする際の手札選択を修正しました。
+- **Obsessing Spark：**ターン終了時にリザーブが同時に処理されるよう修正しました。
 - **Curseguard Stone：**通常とSoul Saviorの強化候補への登録を修正。アーマーの表示が補正を反映します。
+
+#### インターフェースとテキスト
+
+- **Knightmare：**Abyss Crown使用時のPsionic Burstの表示コストを修正。
 - **Shadow Lady — Plague：**毎ターンのエンバー+1がエンバー予測に表示されます。
 - **Power Siphon：**魔力とConduitのボーナスを含む現在のダメージを表示します。
 - **Vitality Extraction：**再生とレイジの数値を表示し、Doublestackの効果を明確にしました。
+- **Abyss Princess / Lust Ghost / Chaos Creationのエッセンス：**状態の付与数とボスへの制限を明確化。
+- **Succubus Torturer：**エッセンス名を修正。
+- **Illusion Twins / Pain and Pleasure / Arrogance Ghost:** スペイン語の単数・複数表記を修正。
+- **Curseguard Stone / Slab：**それぞれの強化に専用アイコンを追加。
+- **Desire Crystal：**欠けていた発動メッセージを追加。
 - **Flesh Ring：**欠けていた発動メッセージを追加しました。
-- **Obsessing Spark：**ターン終了時にリザーブが同時に処理されるよう修正しました。
-- 視覚・音響効果でのSuccClanのカードとユニットの識別を修正し、Trainworksとの互換性を改善しました。
-- **Trainworks Reloaded 0.7.35**、**Conductor 0.5.17**以降が必要です。
+
+#### 互換性と必要な依存MOD
+
+- **視覚・音響効果:** 視覚・音響効果でのSuccClanのカードとユニットの識別を修正し、Trainworksとの互換性を改善しました。
+- **依存MOD:** **Trainworks Reloaded 0.7.35**、**Conductor 0.5.17**以降が必要です。
+
+#### 謝辞
+
+報告と提案を寄せてくれた **Brandon**、**Rratvar, the Untitled**、**Sin1sT3r [PAL]**、そしてPRと技術的な助言をくれたBrandonに感謝します。
+
+**不具合の報告やバランス調整の提案を歓迎します！** [SuccClanのDiscordスレッド](https://discord.com/channels/336546996779483136/1563769828244725770)にお寄せください。
 
 ### 0.1.13 — 2026-10-27 — ALPHA
 
@@ -758,3 +928,15 @@ Obrigado a **Brandon e Rratvar** pelos relatos de erros e sugestões de melhoria
 <!-- 2026-11-07-1144||codex-succclan-targetless||CHANGELOG.md||Incluir cuatro correcciones e iconos en 0.1.14; conservar historial y agradecimientos -->
 
 <!-- 2026-11-07-1155||codex-succclan-targetless||CHANGELOG.md||Añadir correccion de prediccion Shadow y claridad de tres esencias al changelog 0.1.14 -->
+
+<!-- 2026-11-07-1431||codex-succclan-targetless||repos\MT2\variaciones-mias\mt2-succclan\CHANGELOG.md||Renombrar proxima subida 0.1.14 ALPHA a 0.2.0 BETA en diez secciones; conservar historial -->
+
+<!-- 2026-11-07-1435||codex-succclan-targetless||repos\MT2\variaciones-mias\mt2-succclan\CHANGELOG.md||Incluir correcciones gramaticales reales en las secciones de 0.2.0 BETA; conservar historial y gracias -->
+
+<!-- 2026-11-07-1448||codex-succclan-targetless||repos\MT2\variaciones-mias\mt2-succclan\CHANGELOG.md||Ordenar0.2.0 en diez idiomas: gracias primero y cinco grupos, conservar19 cambios por idioma e historial -->
+
+<!-- 2026-11-07-1453||codex-succclan-targetless||repos\MT2\variaciones-mias\mt2-succclan\CHANGELOG.md||Añadir bienvenida a reportes y balance en diez idiomas al cierre0.2.0; conservar enlace Free Company dado literalmente -->
+
+<!-- 2026-11-07-1531||codex-succclan-targetless||repos\MT2\variaciones-mias\mt2-succclan\CHANGELOG.md||Cambiar invitacion de feedback a hilo SuccClan1563769828244725770 en diez idiomas por aclaracion del usuario -->
+
+<!-- 2026-11-07-1535||codex-succclan-targetless||repos\MT2\variaciones-mias\mt2-succclan\CHANGELOG.md||Aplicar plantilla comun aprobada en diez idiomas; separar nuevo/balance, gracias y feedback al cierre, conservar historial -->

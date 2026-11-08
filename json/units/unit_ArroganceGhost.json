@@ -71,7 +71,7 @@
             "descriptions": {
                 "english": "Discard [effect0.power] <b>Obsessing Spark</b> from your hand. -[effect1.power][health].",
                 "chinese": "从手牌舍弃 [effect0.power] 张<b>欲望碎片</b>。-[effect1.power][health]。",
-                "spanish": "Descarta [effect0.power] <b>Chispa obsesiva</b> de tu mano. -[effect1.power][health].",
+                "spanish": "Descarta [effect0.power] <b>Chispas obsesivas</b> de tu mano. -[effect1.power][health].",
                 "french": "Défaussez [effect0.power] <b>Étincelle obsédante</b> de votre main. -[effect1.power][health].",
                 "german": "Wirf [effect0.power] <b>Besessenheitsfunke</b> von deiner Hand ab. -[effect1.power][health].",
                 "portuguese": "Descarte [effect0.power] <b>Centelha Obsessiva</b> da sua mão. -[effect1.power][health].",

@@ -1,4 +1,4 @@
-{
+﻿{
     "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
     "cards": [
         {
@@ -18,7 +18,7 @@
             "descriptions": {
                 "english": "Create [effect0.power] copy of a friendly unit with [fragile].",
                 "chinese": "复制 [effect0.power] 个指定的友方单位并附加[fragile]。",
-                "spanish": "Crea [effect0.power] copias de una unidad aliada con [fragile].",
+                "spanish": "Crea [effect0.power] copia de una unidad aliada con [fragile].",
                 "french": "Crée [effect0.power] copies d'une unité alliée avec [fragile].",
                 "german": "Erstellt [effect0.power] Kopien einer verbündeten Einheit mit [fragile].",
                 "portuguese": "Cria [effect0.power] cópias de uma unidade aliada com [fragile].",

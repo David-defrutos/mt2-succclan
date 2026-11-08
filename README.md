@@ -8,9 +8,9 @@ This is a port of [SuccClan for Monster Train 1 by CodePointer](https://github.c
 - **简体中文：**中文介绍在英文部分之后，请向下滚动阅读。
 - **Español:** la versión en español está más abajo, después de la sección en chino.
 
-## ⚠ ALPHA
+## ⚠ BETA
 
-This is a playable **ALPHA**. Expect bugs, rough balance and further changes.
+This is a playable **BETA**. Expect bugs, rough balance and further changes.
 
 ## Feedback and bug reports
 
@@ -76,9 +76,9 @@ Requires BepInExPack, Trainworks Reloaded and Conductor. Source and issues: [mt2
 
 本模组移植自 [CodePointer 为 Monster Train 1 制作的 SuccClan](https://github.com/CodePointer/SuccClan)，并已获得**原作者的许可**。原氏族、角色、卡牌概念与美术均由 CodePointer 创作。感谢原作者允许移植。原项目采用 MIT 许可证；署名详情见 [NOTICE.md](https://github.com/David-defrutos/mt2-succclan/blob/main/NOTICE.md) 与 [LICENSE](https://github.com/David-defrutos/mt2-succclan/blob/main/LICENSE)。
 
-## ⚠ ALPHA
+## ⚠ BETA
 
-这是可以游玩的 **ALPHA 测试版**。可能存在错误、尚未完善的平衡以及后续改动。
+这是可以游玩的 **BETA 测试版**。可能存在错误、尚未完善的平衡以及后续改动。
 
 ## 反馈与错误报告
 
@@ -123,9 +123,9 @@ Requires BepInExPack, Trainworks Reloaded and Conductor. Source and issues: [mt2
 
 Es un port del [SuccClan de Monster Train 1 creado por CodePointer](https://github.com/CodePointer/SuccClan), hecho **con permiso de su autor original**. CodePointer creó el clan original, los personajes, las ideas de las cartas y su arte. Gracias por permitir el port. El proyecto original usa la licencia MIT; los detalles están en [NOTICE.md](https://github.com/David-defrutos/mt2-succclan/blob/main/NOTICE.md) y [LICENSE](https://github.com/David-defrutos/mt2-succclan/blob/main/LICENSE).
 
-## ⚠ ALPHA
+## ⚠ BETA
 
-Esta versión **ALPHA** se puede jugar, pero puede tener fallos y un equilibrio sin pulir.
+Esta versión **BETA** se puede jugar, pero puede tener fallos y un equilibrio sin pulir.
 
 ## Comentarios y errores
 
@@ -188,3 +188,5 @@ Gracias a todas las personas que me han ayudado con cualquiera de mis clanes de 
 <!-- 2026-10-27-2301||codex-succclan-targetless||README.md||Alinear presentación Frantic con autoataque y carga conservada si no ataca; conservar agradecimientos nominales -->
 
 <!-- 2026-10-27-2305||codex-succclan-targetless||README.md||Mover agradecimientos a lista única final con siete nombres Discord e identificar CodePointer como autor original; preservar créditos iniciales -->
+
+<!-- 2026-11-07-1431||codex-succclan-targetless||repos\MT2\variaciones-mias\mt2-succclan\README.md||Cambiar solo etiqueta ALPHA por BETA en pagina EN chino ES; conservar resto del README -->

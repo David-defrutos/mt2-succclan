@@ -2,7 +2,7 @@
 
 # SuccClan: presentación audiovisual vigente
 
-Estado de la candidata 0.1.14. El historial de implementaciones retiradas está en el documento `archive/audiovisual-history-2026-11-07-1141.md` del repositorio fuente.
+Estado de la candidata 0.2.0 BETA. El historial de implementaciones retiradas está en el documento `archive/audiovisual-history-2026-11-07-1141.md` del repositorio fuente.
 
 ## Efectos y sonidos activos
 
@@ -35,3 +35,5 @@ La compilación, las comprobaciones de recursos y la inspección de los PNG no s
 <!-- 2026-11-07-1153||codex-succclan-targetless||AUDIOVISUAL.md||Evitar enlace relativo a archive que no se incluye en el ZIP -->
 
 <!-- 2026-11-07-1155||codex-succclan-targetless||AUDIOVISUAL.md||Actualizar estado de prediccion Shadow tras correccion; mantener limites de prueba Unity -->
+
+<!-- 2026-11-07-1431||codex-succclan-targetless||repos\MT2\variaciones-mias\mt2-succclan\AUDIOVISUAL.md||Actualizar version vigente de documento audiovisual a 0.2.0 BETA -->
