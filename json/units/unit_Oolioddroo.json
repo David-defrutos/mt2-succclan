@@ -1,4 +1,4 @@
-{
+﻿{
     "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
     "cards": [
         {
@@ -54,7 +54,7 @@
             "health": 30,
             "subtypes": [
                 "SubtypesData_BannerUnit",
-                "@Sub_Cubus"
+                "SubtypesData_Demon_fcebd195-f262-4d7a-ac9f-01ffa2007a12"
             ],
             "triggers": [
                 "@OolioddrooOnTurn"
@@ -66,7 +66,7 @@
             "id": "OolioddrooOnTurn",
             "trigger": "on_turn_begin",
             "descriptions": {
-                "english": "Deal damage equal to its [attack] to enemy units.",
+                "english": "Deal damage equal to this unit’s [attack] to enemy units.",
                 "chinese": "对所有敌方单位造成等同于自身[attack]的伤害。",
                 "spanish": "Inflige daño igual a su [attack] a las unidades enemigas.",
                 "french": "Inflige aux unités ennemies des dégâts égaux à son [attack].",

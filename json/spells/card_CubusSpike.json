@@ -16,16 +16,16 @@
                 "korean": "큐버스 스파이크"
             },
             "descriptions": {
-                "english": "Apply <b>[mt2_succclan.Plugin_frantic] X</b> to all enemy units on this floor, except bosses.",
-                "spanish": "Otorga <b>[mt2_succclan.Plugin_frantic] X</b> a todas las unidades enemigas de este piso, excepto a los jefes.",
-                "chinese": "对本层所有敌方单位施加 <b>[mt2_succclan.Plugin_frantic] X</b>，首领除外。",
-                "french": "Applique <b>[mt2_succclan.Plugin_frantic] X</b> à toutes les unités ennemies de cet étage, sauf aux boss.",
-                "german": "Verleiht allen feindlichen Einheiten auf dieser Etage außer Bossen <b>[mt2_succclan.Plugin_frantic] X</b>.",
-                "portuguese": "Aplica <b>[mt2_succclan.Plugin_frantic] X</b> a todas as unidades inimigas neste andar, exceto chefes.",
-                "russian": "Даёт <b>[mt2_succclan.Plugin_frantic] X</b> всем врагам на этом этаже, кроме боссов.",
-                "chinese_traditional": "對此樓層所有敵方單位施加 <b>[mt2_succclan.Plugin_frantic] X</b>，首領除外。",
-                "japanese": "この階のボス以外の敵全員に<b>[mt2_succclan.Plugin_frantic] X</b>を付与する。",
-                "korean": "이 층의 보스를 제외한 모든 적에게 <b>[mt2_succclan.Plugin_frantic] X</b>를 부여합니다."
+                "english": "Apply <b>[mt2_succclan.Plugin_frantic] X</b> to non-boss enemy units.",
+                "spanish": "Añade <b>[mt2_succclan.Plugin_frantic] X</b> a las unidades enemigas que no sean jefes.",
+                "french": "Applique <b>[mt2_succclan.Plugin_frantic] X</b> aux unités ennemies hors boss.",
+                "german": "Verleihe feindlichen Einheiten außer Bossen <b>[mt2_succclan.Plugin_frantic] X</b>.",
+                "russian": "Накладывает <b>[mt2_succclan.Plugin_frantic] X</b> на врагов, кроме боссов.",
+                "portuguese": "Aplica <b>[mt2_succclan.Plugin_frantic] X</b> aos inimigos que não sejam chefes.",
+                "chinese": "对非首领敌方单位施加<b>[mt2_succclan.Plugin_frantic] X</b>。",
+                "chinese_traditional": "對非首領敵方單位施加<b>[mt2_succclan.Plugin_frantic] X</b>。",
+                "korean": "보스가 아닌 적에게 <b>[mt2_succclan.Plugin_frantic] X</b>를 부여합니다.",
+                "japanese": "ボス以外の敵全員に<b>[mt2_succclan.Plugin_frantic] X</b>を付与する。"
             },
             "card_type": "spell",
             "rarity": "rare",

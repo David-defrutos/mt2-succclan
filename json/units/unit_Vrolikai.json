@@ -1,4 +1,4 @@
-{
+﻿{
     "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
     "cards": [
         {
@@ -50,10 +50,10 @@
             "character_art": "@VrolikaiCharacterArt",
             "size": 2,
             "attack_damage": 6,
-            "health": 6,
+            "health": 12,
             "subtypes": [
                 "SubtypesData_BannerUnit",
-                "@Sub_Cubus"
+                "@Sub_Naga"
             ],
             "starting_status_effects": [
                 {

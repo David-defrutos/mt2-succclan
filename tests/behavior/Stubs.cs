@@ -44,7 +44,7 @@ public class CharacterState {
 public class CardEffectParams { public CharacterState? selfTarget,dyingCharacter,overrideTargetCharacter,characterThatActivatedAbility;public CardState? playedCard;public SpawnPoint? dropLocation;public List<CharacterState> targets=new();public List<CardState> targetCards=new(); }
 public abstract class CardEffectBase {public virtual bool CanPlayAfterBossDead=>true;public virtual bool CanApplyInPreviewMode=>true;public virtual PropDescriptions CreateEditorInspectorDescriptions()=>new();public virtual bool TestEffect(CardEffectState e,CardEffectParams p,ICoreGameManagers c)=>true;public abstract IEnumerator ApplyEffect(CardEffectState e,CardEffectParams p,ICoreGameManagers c,ISystemManagers s);}
 public class CardEffectAddStatusEffect:CardEffectBase {public override IEnumerator ApplyEffect(CardEffectState e,CardEffectParams p,ICoreGameManagers c,ISystemManagers s){p.selfTarget!.Status["harvest"]=p.selfTarget.Status.GetValueOrDefault("harvest")+1;yield break;}}
-public class CardEffectState {public int Cost=2;public CardUpgradeData Upgrade=new();public CardEffectBase Effect=null!;public bool Ignore=true;public TargetMode Mode=TargetMode.DropTargetCharacter;public CardState? Card=new();public int GetParamInt()=>Cost;public int GetUnmodifiedParamInt()=>Cost;public CardUpgradeData GetParamCardUpgradeData()=>Upgrade;public CardEffectBase GetCardEffect()=>Effect;public bool GetTargetIgnoreBosses()=>Ignore;public CardState? GetParentCardState()=>Card;public TargetMode GetTargetMode()=>Mode;}
+public class CardEffectState {public CardEffectData SourceData=new();public CardEffectData GetSourceCardEffectData()=>SourceData;public int Cost=2;public CardUpgradeData Upgrade=new();public CardEffectBase Effect=null!;public bool Ignore=true;public TargetMode Mode=TargetMode.DropTargetCharacter;public CardState? Card=new();public int GetParamInt()=>Cost;public int GetUnmodifiedParamInt()=>Cost;public CardUpgradeData GetParamCardUpgradeData()=>Upgrade;public CardEffectBase GetCardEffect()=>Effect;public bool GetTargetIgnoreBosses()=>Ignore;public CardState? GetParentCardState()=>Card;public TargetMode GetTargetMode()=>Mode;}
 public abstract class StatusEffectState {
  public CharacterState? Associated; public string GetStatusId()=>"mt2_succclan.Plugin_frantic";public CharacterState? GetAssociatedCharacter()=>Associated;
  public class InputTriggerParams{public CharacterState? associatedCharacter;}public class OutputTriggerParams{public bool canAttackOrHeal=true;}
@@ -87,3 +87,11 @@ public static class LocalizeMock {public static string Localize(this string key)
 // 2026-11-05-1738||codex-succclan-targetless||salidas\build\succclan-bugfixes-2026-10-27\Stubs.cs||Contrastar sustituto BelongsToMod con API real y usar asset names separados de GUID
 
 // 2026-11-07-1205||codex-succclan-targetless||repos\MT2\variaciones-mias\mt2-succclan\tests\behavior\Stubs.cs||Consolidar suite local enlazando fuente real del repositorio externo
+
+public class CardEffectData {public AdditionalTooltipData[] Tooltips=Array.Empty<AdditionalTooltipData>();public CharacterTriggerData.Trigger Trigger;public AdditionalTooltipData[] GetAdditionalTooltips()=>Tooltips;public CharacterTriggerData.Trigger GetParamTrigger()=>Trigger;}
+public class AdditionalTooltipData {public string titleKey="";}
+public struct TooltipContent {public string tooltipId,title,body;}
+public class CardTooltipHelper {public static void GetCardEffectTooltipContents(){}}
+public class TooltipUI {public enum TitleStyle {Normal}}
+
+// 2026-11-09-2140||codex-succclan-targetless||repos/MT2/variaciones-mias/mt2-succclan/tests/behavior/Stubs.cs||Modelar solo estructuras de tooltip para probar aislamiento y disposicion de enumerador

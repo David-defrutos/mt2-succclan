@@ -33,10 +33,28 @@ for rel in ['json/spells/card_MindDomination.json','json/spells/card_ProfaneAsce
  check(gate['target_ignore_bosses'] and gate['should_fail_to_cast_if_test_fails'] and gate['should_cancel_subsequent_effects_if_test_fails'],'whole card rejects invalid target')
  check(bump['name']=='CardEffectBump' and bump['target_mode']=='last_targeted_characters','movement retains validated target')
  for desc in card['descriptions'].values():check('[effect2.status0.power]' in desc and '[effect3.power]' in desc,'shifted dynamic text indices')
-for rel,eid in [('json/spells/card_PainAndPleasure.json','PainAndPleasureDiscard'),('json/units/unit_ArroganceGhost.json','ArroganceGhostSpread')]:
+for rel,eid in [('json/spells/card_PainAndPleasure.json','PainAndPleasureDiscard')]:
  e=next(e for e in load(rel)['effects'] if e['id']==eid)
  check(e['name']=={'id':'@CardEffectRandomDiscardFromCardPile','mod_reference':'Conductor'},'library discard')
  check(e['target_mode']=='hand' and e['target_card_type']=='blight' and e['param_card_pool']=='@ObsessingShardPool' and e['param_int']==2,'exact Spark discard contract')
+
+arrogance=load('json/units/unit_ArroganceGhost.json'); body=arrogance['characters'][0]; whisper=next(c for c in arrogance['cards'] if c['id']=='ArroganceLastWhisper'); effects={e['id']:e for e in arrogance['effects']}; sequence=[effects[x[1:]] for x in whisper['effects']]
+check(body['ability']=='@ArroganceLastWhisper' and not body.get('triggers') and not arrogance.get('character_triggers'),'Arrogance replaces discard and Obsession with Last Whisper')
+check(whisper['is_an_ability'] and whisper['cost']==0 and whisper['cooldown']==1 and whisper['initial_cooldown']==0,'Last Whisper free once per turn and initially ready')
+check(len(sequence)==5 and all(e['name']=='CardEffectPlayUnitTrigger' and e['param_trigger']=={'id':'@Accursed','mod_reference':'Conductor'} for e in sequence[:3]),'three native Accursed activations before transfer and sacrifice')
+check(sequence[3]['name']=='CardEffectTransferAttackFromUnit' and sequence[3]['param_int']==1 and sequence[3]['param_int_2']==1,'gain target attack on ability user with native Grael effect')
+check(sequence[4]['name']=='CardEffectSacrifice' and sequence[4]['param_subtype']=='@Sub_Ghost','sacrifice after gaining attack')
+check(all(e['target_mode']=='drop_target_character' and e['target_team']=='monsters' and e['target_subtype']=='@Sub_Ghost' for e in sequence),'every step preserves selected allied Ghost independently of nested trigger targets')
+check(len(whisper['names'])==len(whisper['descriptions'])==10 and all('[attack]' in s for s in whisper['descriptions'].values()),'localized Last Whisper ability and attack icon')
+check(body['attack_damage']==0 and body['health']==40 and body['size']==1,'Arrogance body stats unchanged')
+
+check(all(e.get('additional_tooltips')==['@LastWhisperAccursedTooltip'] for e in sequence[:3]),'only Last Whisper trigger effects opt into the scoped tooltip repair')
+tip=arrogance['additional_tooltips'][0]
+check(tip['titles']['key']=='mt2_succclan_LastWhisper_Accursed_Title','stable localized marker independent of enum number and language')
+check(len(tip['descriptions'])==10 and all('[blight]' in x and '[junk]' in x for x in tip['descriptions'].values()),'Accursed tooltip explains Blight and Scourge in all languages')
+check('sacrifice' not in whisper['descriptions']['english'].lower() and sequence[-1]['param_subtype']=='@Sub_Ghost','native sacrifice trait remains visible without repeating it in override')
+
+
 pain=load('json/spells/card_PainAndPleasure.json');check(pain['effects'][1]['param_int']==3,'Pain still draws three')
 mutant=load('json/relics/relic_MutantElixirs.json');byid={e['id']:e for e in mutant['effects']};check(next(e for e in mutant['relic_effects'] if e['id']=='MutantElixirsGrant')['param_effects']==['@MutantGiveMark','@MutantGiveMultistrike'],'mutation order')
 check(byid['MutantGiveMark']['target_mode']=='random_in_room' and byid['MutantGiveMark']['param_status_effects']==[{'status':'@mutated','count':1}],'mark chosen unit')
@@ -62,6 +80,12 @@ for p in (mod/'src/code').glob('*.cs'):
  b=p.read_bytes()
  if b'2026-10-27' in b:check(not b.startswith(b'\xef\xbb\xbf') and b'\r\n' not in b,'C# LF no BOM')
 
+# Shop relic icons and applied card-upgrade icons are separate native fields.
+for prefix in ('CurseguardStone','CurseguardSlab'):
+ upgrade=next(x for x in load('json/plugin.json')['upgrades'] if x['id']==prefix+'Upgrade')
+ check(upgrade.get('icon')=='@'+prefix+'IconSmall','applied stone/slab has its own card icon')
+ check(upgrade.get('hide_icon_on_card') is False,'applied stone/slab icon visible on unit card')
+
 stone=next(x for x in load('json/plugin.json')['relics'] if x['id']=='CurseguardStone')
 check('pools' not in stone,'no ignored top-level enhancer pools')
 check(set(stone['extensions'][0]['enhancer']['pools'])=={'UnitUpgradePoolCommon','DraftUpgradePool','MalickaDraftUpgradePool'},'shop pools at path actually consumed by Trainworks')
@@ -84,9 +108,8 @@ check(next(x for x in plugin['effects'] if x['id']=='CurseguardSlabArmor')['para
 check(next(x for x in plugin['effects'] if x['id']=='CurseguardStoneArmor')['param_status_effects']==[{'status':'armor','count':5}],'Stone retains Armor5')
 check(next(x for x in plugin['upgrades'] if x['id']=='CurseguardSlabUpgrade')['trigger_upgrades']==['@CurseguardSlabAccursed'],'Slab upgrade links to native Accursed trigger')
 for x in shadow['upgrades']:
- if x['id'].startswith('upg_BloodThirsty'):check(x['bonus_size']==-1,'all Bloodthirsty tiers reduce size once')
- elif x['id'].startswith('upg_'):check(x.get('bonus_size',0)==0,'other paths keep size')
-check(shadow['characters'][0]['size']==3,'base size unchanged; native upgrade sets Bloodthirsty to two')
+ if x['id'].startswith('upg_'):check(x.get('bonus_size',0)==0,'all champion paths preserve base size, including mixed paths')
+check(shadow['characters'][0]['size']==2,'Shadow Lady base size two on every path and tier')
 # Native threshold flag prevents Crown from changing the displayed payment.
 thresholds=[e for e in load('json/champions/champion_KnightMare.json')['effects'] if isinstance(e.get('name'),dict) and e['name'].get('id')=='@CardEffectRequireStatusThreshold']
 check(len(thresholds)==6,'six native Burst thresholds')
@@ -122,3 +145,8 @@ print(json.dumps({'json_files':len(paths),'content_assertions':checks,'result':'
 # 2026-11-07-1155||codex-succclan-targetless||salidas\build\succclan-bugfixes-2026-10-27\ValidateContent.py||Validar cantidades dinamicas de tres esencias y restriccion del tooltip Chaos
 
 # 2026-11-07-1205||codex-succclan-targetless||repos\MT2\variaciones-mias\mt2-succclan\tests\validate_content.py||Consolidar contratos de contenido sobre el repositorio externo
+
+# 2026-11-08-2051||codex-succclan-targetless||repos\MT2\variaciones-mias\mt2-succclan\tests\validate_content.py||Actualizar contratos a tamaño2 en todas las sendas, sin reducciones acumulables al mezclar
+# 2026-11-08-2142||codex-succclan-targetless||repos/MT2/variaciones-mias/mt2-succclan/tests/validate_content.py||Actualizar contrato retirado de descarte Arrogance y comprobar nueva habilidad nativa, orden y Ghost objetivo
+# 2026-11-09-1910||codex-succclan-targetless||repos/MT2/variaciones-mias/mt2-succclan/tests/validate_content.py||Cubrir icono visible de mejora aplicada separado del icono de tienda para Stone y Slab
+# 2026-11-09-2141||codex-succclan-targetless||repos/MT2/variaciones-mias/mt2-succclan/tests/validate_content.py||Cubrir opt-in de tooltip Last Whisper, marcadores estables y sacrificio nativo sin duplicacion

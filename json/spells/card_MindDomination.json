@@ -16,9 +16,9 @@
                 "korean": "정신 지배"
             },
             "descriptions": {
-                "english": "<b>Descend</b> a unit, apply <b>[mt2_succclan.Plugin_frantic] [effect2.status0.power]</b> and heal it for [effect3.power][health]. Cannot target bosses.",
+                "english": "<b>Descend</b> a unit, apply <b>[mt2_succclan.Plugin_frantic] [effect2.status0.power]</b> and restore [effect3.power][health] to it. Cannot target bosses.",
                 "chinese": "使一个单位<b>下降</b>，施加 <b>[mt2_succclan.Plugin_frantic] [effect2.status0.power]</b>，并为其恢复 [effect3.power] 点[health]。 无法选择首领。",
-                "spanish": "<b>Desciende</b> una unidad, le otorga <b>[mt2_succclan.Plugin_frantic] [effect2.status0.power]</b> y le cura [effect3.power][health]. No puede seleccionar jefes.",
+                "spanish": "<b>Desciende</b> una unidad, le otorga <b>[mt2_succclan.Plugin_frantic] [effect2.status0.power]</b> y le restaura [effect3.power][health]. No puede seleccionar jefes.",
                 "french": "Fait <b>descendre</b> une unité, lui applique <b>[mt2_succclan.Plugin_frantic] [effect2.status0.power]</b> et lui restaure [effect3.power][health]. Ne peut pas cibler les boss.",
                 "german": "Lässt eine Einheit <b>absteigen</b>, verleiht ihr <b>[mt2_succclan.Plugin_frantic] [effect2.status0.power]</b> und heilt sie um [effect3.power][health]. Bosse können nicht als Ziel gewählt werden.",
                 "portuguese": "Faz uma unidade <b>descer</b>, aplica <b>[mt2_succclan.Plugin_frantic] [effect2.status0.power]</b> e cura [effect3.power][health]. Não pode selecionar chefes.",

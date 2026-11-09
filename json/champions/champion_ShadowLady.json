@@ -46,7 +46,7 @@
                 "korean": "그림자 여군주"
             },
             "character_art": "@ShadowLadyCharacterArt",
-            "size": 3,
+            "size": 2,
             "attack_damage": 10,
             "health": 30,
             "subtypes": [
@@ -59,16 +59,16 @@
             "id": "BloodThirstyBasicTrigger",
             "trigger": "on_turn_begin",
             "descriptions": {
-                "english": "Apply +[effect0.power][attack] to friendly and enemy units on this floor.",
-                "chinese": "对本层所有友方和敌方单位施加 +[effect0.power][attack]。",
-                "spanish": "Otorga +[effect0.power][attack] a las unidades aliadas y enemigas de este piso.",
-                "french": "Applique +[effect0.power][attack] aux unités alliées et ennemies de cet étage.",
-                "german": "Verleiht verbündeten und feindlichen Einheiten auf dieser Etage +[effect0.power][attack].",
-                "portuguese": "Concede +[effect0.power][attack] às unidades aliadas e inimigas neste andar.",
-                "russian": "Даёт +[effect0.power][attack] союзникам и врагам на этом этаже.",
-                "chinese_traditional": "此樓層的友方與敵方單位獲得 +[effect0.power][attack]。",
-                "japanese": "この階の味方と敵全員に+[effect0.power][attack]を付与する。",
-                "korean": "이 층의 아군과 적에게 +[effect0.power][attack]을 부여합니다."
+                "english": "Apply +[effect0.power][attack] to all units.",
+                "spanish": "Otorga +[effect0.power][attack] a todas las unidades.",
+                "french": "Applique +[effect0.power][attack] à toutes les unités.",
+                "german": "Verleihe allen Einheiten +[effect0.power][attack].",
+                "russian": "Даёт всем бойцам +[effect0.power][attack].",
+                "portuguese": "Concede +[effect0.power][attack] a todas as unidades.",
+                "chinese": "所有单位获得+[effect0.power][attack]。",
+                "chinese_traditional": "所有單位獲得+[effect0.power][attack]。",
+                "korean": "모든 유닛에게 +[effect0.power][attack]을 부여합니다.",
+                "japanese": "全ユニットに+[effect0.power][attack]を付与する。"
             },
             "effects": [
                 "@BloodThirstyBasicAttack"
@@ -78,16 +78,16 @@
             "id": "BloodThirstyPreTrigger",
             "trigger": "on_turn_begin",
             "descriptions": {
-                "english": "Apply +[effect0.power][attack] to friendly and enemy units on this floor.",
-                "chinese": "对本层所有友方和敌方单位施加 +[effect0.power][attack]。",
-                "spanish": "Otorga +[effect0.power][attack] a las unidades aliadas y enemigas de este piso.",
-                "french": "Applique +[effect0.power][attack] aux unités alliées et ennemies de cet étage.",
-                "german": "Verleiht verbündeten und feindlichen Einheiten auf dieser Etage +[effect0.power][attack].",
-                "portuguese": "Concede +[effect0.power][attack] às unidades aliadas e inimigas neste andar.",
-                "russian": "Даёт +[effect0.power][attack] союзникам и врагам на этом этаже.",
-                "chinese_traditional": "此樓層的友方與敵方單位獲得 +[effect0.power][attack]。",
-                "japanese": "この階の味方と敵全員に+[effect0.power][attack]を付与する。",
-                "korean": "이 층의 아군과 적에게 +[effect0.power][attack]을 부여합니다."
+                "english": "Apply +[effect0.power][attack] to all units.",
+                "spanish": "Otorga +[effect0.power][attack] a todas las unidades.",
+                "french": "Applique +[effect0.power][attack] à toutes les unités.",
+                "german": "Verleihe allen Einheiten +[effect0.power][attack].",
+                "russian": "Даёт всем бойцам +[effect0.power][attack].",
+                "portuguese": "Concede +[effect0.power][attack] a todas as unidades.",
+                "chinese": "所有单位获得+[effect0.power][attack]。",
+                "chinese_traditional": "所有單位獲得+[effect0.power][attack]。",
+                "korean": "모든 유닛에게 +[effect0.power][attack]을 부여합니다.",
+                "japanese": "全ユニットに+[effect0.power][attack]を付与する。"
             },
             "effects": [
                 "@BloodThirstyPreAttack"
@@ -97,16 +97,16 @@
             "id": "BloodThirstyProTrigger",
             "trigger": "on_turn_begin",
             "descriptions": {
-                "english": "Apply +[effect0.power][attack] to friendly and enemy units on this floor.",
-                "chinese": "对本层所有友方和敌方单位施加 +[effect0.power][attack]。",
-                "spanish": "Otorga +[effect0.power][attack] a las unidades aliadas y enemigas de este piso.",
-                "french": "Applique +[effect0.power][attack] aux unités alliées et ennemies de cet étage.",
-                "german": "Verleiht verbündeten und feindlichen Einheiten auf dieser Etage +[effect0.power][attack].",
-                "portuguese": "Concede +[effect0.power][attack] às unidades aliadas e inimigas neste andar.",
-                "russian": "Даёт +[effect0.power][attack] союзникам и врагам на этом этаже.",
-                "chinese_traditional": "此樓層的友方與敵方單位獲得 +[effect0.power][attack]。",
-                "japanese": "この階の味方と敵全員に+[effect0.power][attack]を付与する。",
-                "korean": "이 층의 아군과 적에게 +[effect0.power][attack]을 부여합니다."
+                "english": "Apply +[effect0.power][attack] to all units.",
+                "spanish": "Otorga +[effect0.power][attack] a todas las unidades.",
+                "french": "Applique +[effect0.power][attack] à toutes les unités.",
+                "german": "Verleihe allen Einheiten +[effect0.power][attack].",
+                "russian": "Даёт всем бойцам +[effect0.power][attack].",
+                "portuguese": "Concede +[effect0.power][attack] a todas as unidades.",
+                "chinese": "所有单位获得+[effect0.power][attack]。",
+                "chinese_traditional": "所有單位獲得+[effect0.power][attack]。",
+                "korean": "모든 유닛에게 +[effect0.power][attack]을 부여합니다.",
+                "japanese": "全ユニットに+[effect0.power][attack]を付与する。"
             },
             "effects": [
                 "@BloodThirstyProAttack"
@@ -242,16 +242,16 @@
             "id": "ProfanityBasicTrigger",
             "trigger": "on_attacking",
             "descriptions": {
-                "english": "Apply <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> and +[effect1.power][attack] to non-boss enemy units on this floor.",
-                "chinese": "对本层所有非首领敌方单位施加 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> 和 +[effect1.power][attack]。",
-                "spanish": "Otorga <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> y +[effect1.power][attack] a las unidades enemigas que no sean jefes de este piso.",
-                "french": "Applique <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> et +[effect1.power][attack] aux unités ennemies hors boss de cet étage.",
-                "german": "Verleiht feindlichen Einheiten außer Bossen auf dieser Etage <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> und +[effect1.power][attack].",
-                "portuguese": "Aplica <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> e +[effect1.power][attack] às unidades inimigas que não sejam chefes neste andar.",
-                "russian": "Даёт врагам, кроме боссов на этом этаже <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> и +[effect1.power][attack].",
-                "chinese_traditional": "此樓層的非首領敵方單位獲得 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> 與 +[effect1.power][attack]。",
-                "japanese": "この階のボス以外の敵全員に<b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>と+[effect1.power][attack]を付与する。",
-                "korean": "이 층의 보스가 아닌 적에게 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> 및 +[effect1.power][attack]을 부여합니다."
+                "english": "Apply <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> and +[effect1.power][attack] to non-boss enemy units.",
+                "chinese": "对所有非首领敌方单位施加 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> 和 +[effect1.power][attack]。",
+                "spanish": "Otorga <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> y +[effect1.power][attack] a las unidades enemigas que no sean jefes.",
+                "french": "Applique <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> et +[effect1.power][attack] aux unités ennemies hors boss.",
+                "german": "Verleiht feindlichen Einheiten außer Bossen <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> und +[effect1.power][attack].",
+                "portuguese": "Aplica <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> e +[effect1.power][attack] às unidades inimigas que não sejam chefes.",
+                "russian": "Даёт врагам, кроме боссов <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> и +[effect1.power][attack].",
+                "chinese_traditional": "非首領敵方單位獲得 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> 與 +[effect1.power][attack]。",
+                "japanese": "ボス以外の敵全員に<b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>と+[effect1.power][attack]を付与する。",
+                "korean": "보스가 아닌 적에게 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> 및 +[effect1.power][attack]을 부여합니다."
             },
             "effects": [
                 "@ProfanityBasicFrantic",
@@ -262,16 +262,16 @@
             "id": "ProfanityPreTrigger",
             "trigger": "on_attacking",
             "descriptions": {
-                "english": "Apply <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> and +[effect1.power][attack] to non-boss enemy units on this floor.",
-                "chinese": "对本层所有非首领敌方单位施加 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> 和 +[effect1.power][attack]。",
-                "spanish": "Otorga <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> y +[effect1.power][attack] a las unidades enemigas que no sean jefes de este piso.",
-                "french": "Applique <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> et +[effect1.power][attack] aux unités ennemies hors boss de cet étage.",
-                "german": "Verleiht feindlichen Einheiten außer Bossen auf dieser Etage <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> und +[effect1.power][attack].",
-                "portuguese": "Aplica <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> e +[effect1.power][attack] às unidades inimigas que não sejam chefes neste andar.",
-                "russian": "Даёт врагам, кроме боссов на этом этаже <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> и +[effect1.power][attack].",
-                "chinese_traditional": "此樓層的非首領敵方單位獲得 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> 與 +[effect1.power][attack]。",
-                "japanese": "この階のボス以外の敵全員に<b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>と+[effect1.power][attack]を付与する。",
-                "korean": "이 층의 보스가 아닌 적에게 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> 및 +[effect1.power][attack]을 부여합니다."
+                "english": "Apply <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> and +[effect1.power][attack] to non-boss enemy units.",
+                "chinese": "对所有非首领敌方单位施加 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> 和 +[effect1.power][attack]。",
+                "spanish": "Otorga <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> y +[effect1.power][attack] a las unidades enemigas que no sean jefes.",
+                "french": "Applique <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> et +[effect1.power][attack] aux unités ennemies hors boss.",
+                "german": "Verleiht feindlichen Einheiten außer Bossen <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> und +[effect1.power][attack].",
+                "portuguese": "Aplica <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> e +[effect1.power][attack] às unidades inimigas que não sejam chefes.",
+                "russian": "Даёт врагам, кроме боссов <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> и +[effect1.power][attack].",
+                "chinese_traditional": "非首領敵方單位獲得 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> 與 +[effect1.power][attack]。",
+                "japanese": "ボス以外の敵全員に<b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>と+[effect1.power][attack]を付与する。",
+                "korean": "보스가 아닌 적에게 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> 및 +[effect1.power][attack]을 부여합니다."
             },
             "effects": [
                 "@ProfanityPreFrantic",
@@ -282,16 +282,16 @@
             "id": "ProfanityProTrigger",
             "trigger": "on_attacking",
             "descriptions": {
-                "english": "Apply <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> and +[effect1.power][attack] to non-boss enemy units on this floor.",
-                "chinese": "对本层所有非首领敌方单位施加 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> 和 +[effect1.power][attack]。",
-                "spanish": "Otorga <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> y +[effect1.power][attack] a las unidades enemigas que no sean jefes de este piso.",
-                "french": "Applique <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> et +[effect1.power][attack] aux unités ennemies hors boss de cet étage.",
-                "german": "Verleiht feindlichen Einheiten außer Bossen auf dieser Etage <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> und +[effect1.power][attack].",
-                "portuguese": "Aplica <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> e +[effect1.power][attack] às unidades inimigas que não sejam chefes neste andar.",
-                "russian": "Даёт врагам, кроме боссов на этом этаже <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> и +[effect1.power][attack].",
-                "chinese_traditional": "此樓層的非首領敵方單位獲得 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> 與 +[effect1.power][attack]。",
-                "japanese": "この階のボス以外の敵全員に<b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>と+[effect1.power][attack]を付与する。",
-                "korean": "이 층의 보스가 아닌 적에게 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> 및 +[effect1.power][attack]을 부여합니다."
+                "english": "Apply <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> and +[effect1.power][attack] to non-boss enemy units.",
+                "chinese": "对所有非首领敌方单位施加 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> 和 +[effect1.power][attack]。",
+                "spanish": "Otorga <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> y +[effect1.power][attack] a las unidades enemigas que no sean jefes.",
+                "french": "Applique <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> et +[effect1.power][attack] aux unités ennemies hors boss.",
+                "german": "Verleiht feindlichen Einheiten außer Bossen <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> und +[effect1.power][attack].",
+                "portuguese": "Aplica <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> e +[effect1.power][attack] às unidades inimigas que não sejam chefes.",
+                "russian": "Даёт врагам, кроме боссов <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> и +[effect1.power][attack].",
+                "chinese_traditional": "非首領敵方單位獲得 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> 與 +[effect1.power][attack]。",
+                "japanese": "ボス以外の敵全員に<b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>と+[effect1.power][attack]を付与する。",
+                "korean": "보스가 아닌 적에게 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> 및 +[effect1.power][attack]을 부여합니다."
             },
             "effects": [
                 "@ProfanityProFrantic",
@@ -537,8 +537,7 @@
             "use_upgrade_highlight_tags": true,
             "trigger_upgrades": [
                 "@BloodThirstyBasicTrigger"
-            ],
-            "bonus_size": -1
+            ]
         },
         {
             "id": "upg_BloodThirstyPre",
@@ -559,8 +558,7 @@
             "use_upgrade_highlight_tags": true,
             "trigger_upgrades": [
                 "@BloodThirstyPreTrigger"
-            ],
-            "bonus_size": -1
+            ]
         },
         {
             "id": "upg_BloodThirstyPro",
@@ -581,8 +579,7 @@
             "use_upgrade_highlight_tags": true,
             "trigger_upgrades": [
                 "@BloodThirstyProTrigger"
-            ],
-            "bonus_size": -1
+            ]
         },
         {
             "id": "upg_PlagueBasic",

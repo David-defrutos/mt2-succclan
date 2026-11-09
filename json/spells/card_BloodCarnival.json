@@ -16,16 +16,16 @@
                 "korean": "피의 축제"
             },
             "descriptions": {
-                "english": "Give everyone +[effect0.power][attack].",
-                "chinese": "所有单位 +[effect0.power][attack]。",
+                "english": "Apply +[effect0.power][attack] to all units.",
                 "spanish": "Otorga +[effect0.power][attack] a todas las unidades.",
                 "french": "Applique +[effect0.power][attack] à toutes les unités.",
-                "german": "Verleiht allen Einheiten +[effect0.power][attack].",
+                "german": "Verleihe allen Einheiten +[effect0.power][attack].",
+                "russian": "Даёт всем бойцам +[effect0.power][attack].",
                 "portuguese": "Concede +[effect0.power][attack] a todas as unidades.",
-                "russian": "Даёт всем отрядам +[effect0.power][attack].",
-                "chinese_traditional": "所有單位獲得 +[effect0.power][attack]。",
-                "japanese": "全ユニットに+[effect0.power][attack]を付与する。",
-                "korean": "모든 유닛에게 +[effect0.power][attack]을 부여합니다."
+                "chinese": "所有单位获得+[effect0.power][attack]。",
+                "chinese_traditional": "所有單位獲得+[effect0.power][attack]。",
+                "korean": "모든 유닛에게 +[effect0.power][attack]을 부여합니다.",
+                "japanese": "全ユニットに+[effect0.power][attack]を付与する。"
             },
             "card_type": "spell",
             "rarity": "common",

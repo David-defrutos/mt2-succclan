@@ -53,7 +53,7 @@
             "health": 20,
             "subtypes": [
                 "SubtypesData_BannerUnit",
-                "@Sub_Cubus"
+                "@Sub_Faun"
             ],
             "starting_status_effects": [
                 {

@@ -16,16 +16,16 @@
                 "korean": "생명력 추출"
             },
             "descriptions": {
-                "english": "Friendly units gain [regen] [effect0.status0.power] and [rage] [effect2.status0.power] for each <b>[mt2_succclan.Plugin_frantic]</b> and <b>[mt2_succclan.Plugin_psionic]</b> in this room.",
-                "chinese": "本层每有一层<b>[mt2_succclan.Plugin_frantic]</b>或<b>[mt2_succclan.Plugin_psionic]</b>，友方单位获得[regen] [effect0.status0.power]和[rage] [effect2.status0.power]。",
-                "spanish": "Las unidades aliadas obtienen [regen] [effect0.status0.power] y [rage] [effect2.status0.power] por cada <b>[mt2_succclan.Plugin_frantic]</b> y <b>[mt2_succclan.Plugin_psionic]</b> en esta sala.",
-                "french": "Les unités alliées gagnent [regen] [effect0.status0.power] et [rage] [effect2.status0.power] pour chaque <b>[mt2_succclan.Plugin_frantic]</b> et <b>[mt2_succclan.Plugin_psionic]</b> dans cette salle.",
-                "german": "Verbündete Einheiten erhalten [regen] [effect0.status0.power] und [rage] [effect2.status0.power] pro Stapel <b>[mt2_succclan.Plugin_frantic]</b> und <b>[mt2_succclan.Plugin_psionic]</b> in diesem Raum.",
-                "portuguese": "As unidades aliadas ganham [regen] [effect0.status0.power] e [rage] [effect2.status0.power] por acúmulo de <b>[mt2_succclan.Plugin_frantic]</b> e <b>[mt2_succclan.Plugin_psionic]</b> nesta sala.",
-                "russian": "Союзники получают [regen] [effect0.status0.power] и [rage] [effect2.status0.power] за каждый заряд <b>[mt2_succclan.Plugin_frantic]</b> и <b>[mt2_succclan.Plugin_psionic]</b> в этой комнате.",
-                "chinese_traditional": "此房間每有一層<b>[mt2_succclan.Plugin_frantic]</b>或<b>[mt2_succclan.Plugin_psionic]</b>，友方單位獲得[regen] [effect0.status0.power]與[rage] [effect2.status0.power]。",
-                "japanese": "この部屋の<b>[mt2_succclan.Plugin_frantic]</b>と<b>[mt2_succclan.Plugin_psionic]</b>の合計スタック数につき、味方全員が[regen] [effect0.status0.power]と[rage] [effect2.status0.power]を得る。",
-                "korean": "이 방의 <b>[mt2_succclan.Plugin_frantic]</b> 및 <b>[mt2_succclan.Plugin_psionic]</b> 중첩 하나당 아군이 [regen] [effect0.status0.power] 및 [rage] [effect2.status0.power]을 얻습니다."
+                "english": "Friendly units gain [regen] [effect0.status0.power] and [rage] [effect2.status0.power] for each <b>[mt2_succclan.Plugin_frantic]</b> and <b>[mt2_succclan.Plugin_psionic]</b>.",
+                "chinese": "每有一层<b>[mt2_succclan.Plugin_frantic]</b>或<b>[mt2_succclan.Plugin_psionic]</b>，友方单位获得[regen] [effect0.status0.power]和[rage] [effect2.status0.power]。",
+                "spanish": "Las unidades aliadas obtienen [regen] [effect0.status0.power] y [rage] [effect2.status0.power] por cada <b>[mt2_succclan.Plugin_frantic]</b> y <b>[mt2_succclan.Plugin_psionic]</b>.",
+                "french": "Les unités alliées gagnent [regen] [effect0.status0.power] et [rage] [effect2.status0.power] pour chaque <b>[mt2_succclan.Plugin_frantic]</b> et <b>[mt2_succclan.Plugin_psionic]</b>.",
+                "german": "Verbündete Einheiten erhalten [regen] [effect0.status0.power] und [rage] [effect2.status0.power] pro Stapel <b>[mt2_succclan.Plugin_frantic]</b> und <b>[mt2_succclan.Plugin_psionic]</b>.",
+                "portuguese": "As unidades aliadas ganham [regen] [effect0.status0.power] e [rage] [effect2.status0.power] por acúmulo de <b>[mt2_succclan.Plugin_frantic]</b> e <b>[mt2_succclan.Plugin_psionic]</b>.",
+                "russian": "Союзники получают [regen] [effect0.status0.power] и [rage] [effect2.status0.power] за каждый заряд <b>[mt2_succclan.Plugin_frantic]</b> и <b>[mt2_succclan.Plugin_psionic]</b>.",
+                "chinese_traditional": "每有一層<b>[mt2_succclan.Plugin_frantic]</b>或<b>[mt2_succclan.Plugin_psionic]</b>，友方單位獲得[regen] [effect0.status0.power]與[rage] [effect2.status0.power]。",
+                "japanese": "<b>[mt2_succclan.Plugin_frantic]</b>と<b>[mt2_succclan.Plugin_psionic]</b>の合計スタック数につき、味方全員が[regen] [effect0.status0.power]と[rage] [effect2.status0.power]を得る。",
+                "korean": "<b>[mt2_succclan.Plugin_frantic]</b> 및 <b>[mt2_succclan.Plugin_psionic]</b> 중첩 하나당 아군이 [regen] [effect0.status0.power] 및 [rage] [effect2.status0.power]을 얻습니다."
             },
             "card_type": "spell",
             "rarity": "common",

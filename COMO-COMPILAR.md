@@ -49,3 +49,14 @@ Los actualizadores ya protegen este repositorio: avance rápido de rama activa, 
 La instalación selecciona la única copia existente con mt2_succclan.Plugin.dll ejecutable entre frutos-SuccClan y David-SuccClan_Custom. Nunca activa una DLL .old ni modifica mods.yml. Si no hay un único destino inequívoco, se detiene sin cambiar configuración. En esta consolidación se conserva la copia usada; descargar normalmente de Thunderstore y cambiar el estado desde el gestor sigue siendo decisión del usuario.
 
 <!-- 2026-11-07-1325||codex-succclan-targetless||repos\MT2\variaciones-mias\mt2-succclan\COMO-COMPILAR.md||Aclarar seleccion de copia usada sin activar alternativas y actualizar pruebas de aislamiento -->
+
+
+## Regla vigente de prueba local — 09-11-2026
+
+Cada cambio solicitado debe quedar disponible tambien en la copia donde juega David. No dar por terminado un cambio solo por editar fuentes o empaquetar. Desarrollar en este repositorio y desplegar al finalizar con el juego cerrado y respaldo previo; esta sincronizacion esta autorizada de forma persistente. Si el juego esta abierto, avisar y esperar a que cierre sin finalizarlo por nuestra cuenta. No hace falta nueva autorizacion para instalar cambios ya solicitados.
+
+Copia activa comprobada: `C:/Users/david/AppData/Roaming/Thunderstore Mod Manager/DataFolder/MonsterTrain2/profiles/Default/BepInEx/plugins/David-SuccClan_Custom`. El ejecutable vive en Steam, pero el log de BepInEx confirma carga desde Default de Thunderstore; Steam no tiene carpeta BepInEx/plugins. La copia frutos-SuccClan.old no se activa. Si cambia el perfil/copia ejecutable, volver a identificar el destino.
+
+Usar `tools/develop.py install` o instalar el mismo build ya validado mediante su funcion install, que verifica hash de entradas, juego cerrado, respaldo y bytes/mtime antes de sobrescribir. Validar y empaquetar siguen siendo acciones tecnicas independientes, pero preparar un cambio para pruebas incluye desplegarlo. No hacer commit, push ni publicar sin instruccion.
+
+<!-- 2026-11-09-1837||codex-succclan-targetless||repos/MT2/variaciones-mias/mt2-succclan/COMO-COMPILAR.md||Actualizar flujo: cambios autorizados se instalan tambien en copia activa de pruebas -->

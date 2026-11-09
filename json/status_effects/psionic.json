@@ -1,4 +1,4 @@
-{
+﻿{
     "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
     "status_effects": [
         {
@@ -31,28 +31,28 @@
                 "korean": "<nobr>사이오닉 {0}</nobr>"
             },
             "card_tooltips": {
-                "english": "Trigger additional effects for KnightMare.",
-                "chinese": "用于触发梦魇骑士的额外能力。",
-                "spanish": "Activa efectos adicionales de Knightmare.",
-                "french": "Déclenche des effets supplémentaires pour Knightmare.",
-                "german": "Löst zusätzliche Effekte für Knightmare aus.",
-                "portuguese": "Ativa efeitos adicionais de Knightmare.",
-                "russian": "Активирует дополнительные эффекты Knightmare.",
-                "chinese_traditional": "觸發 Knightmare 的額外效果。",
-                "japanese": "Knightmareの追加効果を発動する。",
-                "korean": "Knightmare의 추가 효과를 발동합니다."
+                "english": "Spent to trigger <b>Psionic Burst</b> effects.",
+                "spanish": "Se gasta para activar efectos de <b>Estallido psiónico</b>.",
+                "french": "Se dépense pour déclencher les effets de <b>Explosion psionique</b>.",
+                "german": "Wird verbraucht, um <b>Psionischer Ausbruch</b>-Effekte auszulösen.",
+                "russian": "Расходуется для активации эффектов <b>Псионический всплеск</b>.",
+                "portuguese": "É gasto para ativar efeitos de <b>Explosão Psiônica</b>.",
+                "chinese": "用于触发<b>灵能爆破</b>效果。",
+                "chinese_traditional": "用於觸發<b>靈能爆發</b>效果。",
+                "korean": "<b>사이오닉 폭발</b> 효과를 발동하는 데 소모됩니다.",
+                "japanese": "<b>サイオニックバースト</b>の効果を発動するために消費する。"
             },
             "character_tooltips": {
-                "english": "Trigger additional effects for KnightMare.",
-                "chinese": "用于触发梦魇骑士的额外能力。",
-                "spanish": "Activa efectos adicionales de Knightmare.",
-                "french": "Déclenche des effets supplémentaires pour Knightmare.",
-                "german": "Löst zusätzliche Effekte für Knightmare aus.",
-                "portuguese": "Ativa efeitos adicionais de Knightmare.",
-                "russian": "Активирует дополнительные эффекты Knightmare.",
-                "chinese_traditional": "觸發 Knightmare 的額外效果。",
-                "japanese": "Knightmareの追加効果を発動する。",
-                "korean": "Knightmare의 추가 효과를 발동합니다."
+                "english": "Spent to trigger <b>Psionic Burst</b> effects.",
+                "spanish": "Se gasta para activar efectos de <b>Estallido psiónico</b>.",
+                "french": "Se dépense pour déclencher les effets de <b>Explosion psionique</b>.",
+                "german": "Wird verbraucht, um <b>Psionischer Ausbruch</b>-Effekte auszulösen.",
+                "russian": "Расходуется для активации эффектов <b>Псионический всплеск</b>.",
+                "portuguese": "É gasto para ativar efeitos de <b>Explosão Psiônica</b>.",
+                "chinese": "用于触发<b>灵能爆破</b>效果。",
+                "chinese_traditional": "用於觸發<b>靈能爆發</b>效果。",
+                "korean": "<b>사이오닉 폭발</b> 효과를 발동하는 데 소모됩니다.",
+                "japanese": "<b>サイオニックバースト</b>の効果を発動するために消費する。"
             },
             "replacement_texts": {
                 "english": "<b>Psionic</b>",

@@ -6,6 +6,32 @@ Latest release in all ten game languages. Full history in English and Spanish.
 
 ## English
 
+### 0.2.1 — 2026-11-09 — BETA
+
+#### Balance
+
+- **Abyss Princess:** Health increased from 1 to 8.
+- **Arrogance Ghost:** Replaced its Spark-discarding Accursed and Obsession with Last Whisper: trigger a Ghost’s Accursed 3 times, gain its attack, then sacrifice it. Costs 0 ember; usable once per turn.
+- **Chaos Creation:** Health increased from 20 to 25.
+- **Depression Whisper:** Ember cost increased from 1 to 2.
+- **Endless Shadow:** Health increased from 15 to 20.
+- **Shadow Lady:** Plague and Profanity now occupy 2 spaces instead of 3 at every level. All paths and mixed builds occupy 2 spaces.
+- **Shadow Warrior:** Base attack/health increased from 5/10 to 10/20. Now starts with Stealth 2. Added Slay: gain Stealth 1.
+- **Sloth Ghost:** Accursed now applies Sap 1 to all enemy units on the floor instead of dealing 5 damage. Its essence changes accordingly.
+- **Unit subtypes:** Abyss Princess, Succubus Torturer and Vrolikai are now Nagas; Incubus Butcher and Shadow Warrior are Fauns. Endless Shadow is now a Ghost and benefits from Ghost-specific interactions. Demon Pioneer and Oolioddroo are now Demons.
+- **Vrolikai:** Health increased from 6 to 12.
+
+#### Fixes
+
+- **Arrogance Ghost / Last Whisper:** Replaced the broken Accursed tooltip and removed the duplicated sacrifice sentence from Last Whisper.
+
+#### Interface and text
+
+- **Curseguard Stone / Slab:** Fixed the missing upgrade icons on cards after applying Curseguard Stone or Curseguard Slab.
+- **Text and tooltips:** Revised card, champion, ability and essence descriptions. Standardized terminology, clarified targets, corrected grammar and replaced fixed quantities with dynamic values where supported. Removed redundant explanations of local-floor targeting. Inception now clearly grants all bonuses to its target, and Insanity Reach describes its effects in resolution order.
+
+**Bug reports and balance suggestions are very welcome!** Share them in the [SuccClan Discord thread](https://discord.com/channels/336546996779483136/1563769828244725770).
+
 ### 0.2.0 — 2026-11-07 — BETA
 
 #### New content
@@ -165,6 +191,32 @@ New translations are a first pass and have not been reviewed by native speakers 
 
 ## Spanish
 
+### 0.2.1 — 2026-11-09 — BETA
+
+#### Balance
+
+- **Abyss Princess:** Vida aumentada de 1 a 8.
+- **Arrogance Ghost:** Sustituye su Accursed de descarte de Sparks y Obsession por Último susurro: activa 3 veces el Accursed de un fantasma, obtiene su ataque y después lo sacrifica. Cuesta 0 ember y puede usarse una vez por turno.
+- **Chaos Creation:** Vida aumentada de 20 a 25.
+- **Depression Whisper:** Coste aumentado de 1 a 2 ember.
+- **Endless Shadow:** Vida aumentada de 15 a 20.
+- **Shadow Lady:** Plague y Profanity pasan de 3 a 2 espacios en todos los niveles. Todas las sendas y sus combinaciones ocupan 2 espacios.
+- **Shadow Warrior:** Ataque/vida base aumentados de 5/10 a 10/20. Ahora empieza con Stealth 2. Añadido Slay: obtiene Stealth 1.
+- **Sloth Ghost:** Accursed ahora aplica Sap 1 a todos los enemigos del piso en lugar de causar 5 de daño. Su esencia cambia también.
+- **Subtipos de unidades:** Abyss Princess, Succubus Torturer y Vrolikai pasan a ser Nagas; Incubus Butcher y Shadow Warrior, Faunos. Endless Shadow pasa a ser Fantasma y participa en las sinergias de Ghosts. Demon Pioneer y Oolioddroo pasan a ser Demonios.
+- **Vrolikai:** Vida aumentada de 6 a 12.
+
+#### Correcciones
+
+- **Arrogance Ghost / Last Whisper:** Sustituido el tooltip de Accursed que mostraba claves sin traducir y eliminada la frase de sacrificio duplicada en Último susurro.
+
+#### Interfaz y textos
+
+- **Curseguard Stone / Slab:** Corregidos los iconos de mejora que faltaban en las cartas tras aplicar Curseguard Stone o Curseguard Slab.
+- **Textos y tooltips:** Revisados los textos de cartas, campeones, habilidades y esencias: términos, objetivos y cantidades dinámicas coherentes, sin explicaciones redundantes del piso. Inception aclara que todos los bonos son para su objetivo e Insanity Reach describe los efectos en su orden de resolución.
+
+**¡Los reportes de errores y las recomendaciones de balance son muy bienvenidos!** Puedes compartirlos en el [hilo de Discord de SuccClan](https://discord.com/channels/336546996779483136/1563769828244725770).
+
 ### 0.2.0 — 2026-11-07 — BETA
 
 #### Contenido nuevo
@@ -317,6 +369,32 @@ Las traducciones nuevas son una primera versión y aún no habían sido revisada
 
 ## French
 
+### 0.2.1 — 2026-11-09 — BETA
+
+#### Équilibrage
+
+- **Abyss Princess:** PV augmentés de 1 à 8.
+- **Arrogance Ghost:** Remplace son Accursed de défausse et Obsession par Dernier murmure : déclenche 3 fois l’Accursed d’un fantôme, gagne son attaque, puis le sacrifie. Coûte 0 braise ; utilisable une fois par tour.
+- **Chaos Creation:** PV augmentés de 20 à 25.
+- **Depression Whisper:** Coût en braises augmenté de 1 à 2.
+- **Endless Shadow:** PV augmentés de 15 à 20.
+- **Shadow Lady :** Plague et Profanity passent de 3 à 2 places à tous les niveaux. Toutes les voies et leurs combinaisons occupent 2 places.
+- **Shadow Warrior:** Attaque/PV de base augmentés de 5/10 à 10/20. Commence désormais avec Furtivité 2. Ajout de Slay : gagne Furtivité 1.
+- **Sloth Ghost:** Accursed applique désormais Affaiblissement 1 à tous les ennemis de l’étage au lieu d’infliger 5 dégâts. Son essence change également.
+- **Sous-types :** Abyss Princess, Succubus Torturer et Vrolikai deviennent des Nagas ; Incubus Butcher et Shadow Warrior, des Faunes. Endless Shadow devient un Fantôme et bénéficie des synergies correspondantes. Demon Pioneer et Oolioddroo deviennent des Démons.
+- **Vrolikai:** PV augmentés de 6 à 12.
+
+#### Corrections
+
+- **Arrogance Ghost / Last Whisper:** Remplacement de l’infobulle Accursed défectueuse et suppression de la phrase de sacrifice répétée dans Dernier murmure.
+
+#### Interface et textes
+
+- **Curseguard Stone / Slab:** Correction des icônes d’amélioration absentes sur les cartes après application de Curseguard Stone ou Curseguard Slab.
+- **Textes et infobulles:** Textes des cartes, champions, capacités et essences clarifiés : mots-clés, cibles et valeurs dynamiques harmonisés, sans rappels inutiles de l’étage. Inception attribue clairement tous les bonus à sa cible et Insanity Reach respecte l’ordre de résolution.
+
+**Vos signalements de bugs et suggestions d’équilibrage sont les bienvenus !** Partagez-les dans le [fil Discord de SuccClan](https://discord.com/channels/336546996779483136/1563769828244725770).
+
 ### 0.2.0 — 2026-11-07 — BETA
 
 #### Nouveau contenu
@@ -384,6 +462,32 @@ Merci à **Brandon et Rratvar** pour les bugs signalés et les améliorations pr
 - Nécessite **Trainworks Reloaded 0.7.33** et **Conductor 0.5.15** ou versions ultérieures.
 
 ## German
+
+### 0.2.1 — 2026-11-09 — BETA
+
+#### Balance
+
+- **Abyss Princess:** Lebenspunkte von 1 auf 8 erhöht.
+- **Arrogance Ghost:** Ersetzt sein Abwurf-Accursed und Obsession durch Letztes Flüstern: Löst das Accursed eines Geists 3-mal aus, erhält seinen Angriff und opfert ihn danach. Kostet 0 Glut; einmal pro Zug nutzbar.
+- **Chaos Creation:** Lebenspunkte von 20 auf 25 erhöht.
+- **Depression Whisper:** Glutkosten von 1 auf 2 erhöht.
+- **Endless Shadow:** Lebenspunkte von 15 auf 20 erhöht.
+- **Shadow Lady:** Plague und Profanity belegen auf allen Stufen 2 statt 3 Plätze. Alle Pfade und Mischungen belegen 2 Plätze.
+- **Shadow Warrior:** Basisangriff/Lebenspunkte von 5/10 auf 10/20 erhöht. Beginnt jetzt mit Tarnung 2. Slay hinzugefügt: Erhält Tarnung 1.
+- **Sloth Ghost:** Accursed verleiht jetzt allen Gegnern auf der Ebene Schwächung 1, statt 5 Schaden zu verursachen. Seine Essenz ändert sich entsprechend.
+- **Einheiten-Untertypen:** Abyss Princess, Succubus Torturer und Vrolikai sind jetzt Nagas; Incubus Butcher und Shadow Warrior sind Faune. Endless Shadow ist jetzt ein Geist und profitiert von Geist-Synergien. Demon Pioneer und Oolioddroo sind jetzt Dämonen.
+- **Vrolikai:** Lebenspunkte von 6 auf 12 erhöht.
+
+#### Fehlerbehebungen
+
+- **Arrogance Ghost / Last Whisper:** Defekten Accursed-Tooltip ersetzt und doppelten Opfertext aus Letztes Flüstern entfernt.
+
+#### Oberfläche und Texte
+
+- **Curseguard Stone / Slab:** Fehlende Aufwertungssymbole auf Karten nach Anwendung von Curseguard Stone oder Curseguard Slab behoben.
+- **Texte und Tooltips:** Texte von Karten, Champions, Fähigkeiten und Essenzen präzisiert: Schlüsselwörter, Ziele und dynamische Werte vereinheitlicht sowie überflüssige Ebenenhinweise entfernt. Inception weist alle Boni dem Ziel zu; Insanity Reach beschreibt die Auflösungsreihenfolge.
+
+**Fehlermeldungen und Vorschläge zur Spielbalance sind sehr willkommen!** Teile sie im [Discord-Thread zu SuccClan](https://discord.com/channels/336546996779483136/1563769828244725770).
 
 ### 0.2.0 — 2026-11-07 — BETA
 
@@ -453,6 +557,32 @@ Danke an **Brandon und Rratvar** für die Fehlerberichte und Verbesserungsvorsch
 
 ## Russian
 
+### 0.2.1 — 2026-11-09 — BETA
+
+#### Баланс
+
+- **Abyss Princess:** Здоровье увеличено с 1 до 8.
+- **Arrogance Ghost:** Вместо сбрасывающего Sparks Accursed и Obsession получает «Последний шёпот»: активирует Accursed призрака 3 раза, получает его атаку и приносит его в жертву. Стоимость — 0 углей; раз за ход.
+- **Chaos Creation:** Здоровье увеличено с 20 до 25.
+- **Depression Whisper:** Стоимость увеличена с 1 до 2 углей.
+- **Endless Shadow:** Здоровье увеличено с 15 до 20.
+- **Shadow Lady:** Plague и Profanity теперь занимают 2 места вместо 3 на всех уровнях. Все пути и их сочетания занимают 2 места.
+- **Shadow Warrior:** Базовые атака/здоровье увеличены с 5/10 до 10/20. Теперь начинает с Незаметностью 2. Добавлено Slay: получает Незаметность 1.
+- **Sloth Ghost:** Accursed теперь накладывает Ослабление 1 на всех врагов на этаже вместо 5 урона. Эссенция изменена соответственно.
+- **Подтипы бойцов:** Abyss Princess, Succubus Torturer и Vrolikai теперь наги; Incubus Butcher и Shadow Warrior — фавны. Endless Shadow теперь призрак и участвует в синергиях призраков. Demon Pioneer и Oolioddroo теперь демоны.
+- **Vrolikai:** Здоровье увеличено с 6 до 12.
+
+#### Исправления
+
+- **Arrogance Ghost / Last Whisper:** Исправлена сломанная подсказка Accursed и убрана повторяющаяся фраза о жертве в «Последнем шёпоте».
+
+#### Интерфейс и тексты
+
+- **Curseguard Stone / Slab:** Исправлены отсутствующие значки улучшений на картах после применения Curseguard Stone или Curseguard Slab.
+- **Тексты и подсказки:** Уточнены тексты карт, героев, способностей и эссенций: согласованы ключевые слова, цели и динамические значения, убраны лишние пояснения этажа. Inception ясно указывает получателя бонусов, а Insanity Reach — порядок эффектов.
+
+**Сообщения об ошибках и предложения по балансу очень приветствуются!** Делитесь ими в [ветке SuccClan в Discord](https://discord.com/channels/336546996779483136/1563769828244725770).
+
 ### 0.2.0 — 2026-11-07 — BETA
 
 #### Новый контент
@@ -521,6 +651,32 @@ Danke an **Brandon und Rratvar** für die Fehlerberichte und Verbesserungsvorsch
 
 ## Portuguese Brazil
 
+### 0.2.1 — 2026-11-09 — BETA
+
+#### Balanceamento
+
+- **Abyss Princess:** Vida aumentada de 1 para 8.
+- **Arrogance Ghost:** Substitui o Accursed de descarte e Obsession por Último Sussurro: ativa o Accursed de um fantasma 3 vezes, recebe seu ataque e depois o sacrifica. Custa 0 brasa; uma vez por turno.
+- **Chaos Creation:** Vida aumentada de 20 para 25.
+- **Depression Whisper:** Custo aumentado de 1 para 2 brasas.
+- **Endless Shadow:** Vida aumentada de 15 para 20.
+- **Shadow Lady:** Plague e Profanity passam de 3 para 2 espaços em todos os níveis. Todos os caminhos e suas combinações ocupam 2 espaços.
+- **Shadow Warrior:** Ataque/vida base aumentados de 5/10 para 10/20. Agora começa com Furtividade 2. Adicionado Slay: ganha Furtividade 1.
+- **Sloth Ghost:** Accursed agora aplica Sap 1 a todos os inimigos do andar em vez de causar 5 de dano. Sua essência também muda.
+- **Subtipos:** Abyss Princess, Succubus Torturer e Vrolikai agora são Nagas; Incubus Butcher e Shadow Warrior são Faunos. Endless Shadow agora é Fantasma e participa das sinergias de fantasmas. Demon Pioneer e Oolioddroo agora são Demônios.
+- **Vrolikai:** Vida aumentada de 6 para 12.
+
+#### Correções
+
+- **Arrogance Ghost / Last Whisper:** Substituída a dica quebrada de Accursed e removida a frase de sacrifício duplicada em Último Sussurro.
+
+#### Interface e textos
+
+- **Curseguard Stone / Slab:** Corrigidos os ícones de melhoria ausentes nas cartas após aplicar Curseguard Stone ou Curseguard Slab.
+- **Textos e dicas:** Textos de cartas, campeões, habilidades e essências esclarecidos: termos, alvos e valores dinâmicos padronizados, sem explicações redundantes do andar. Inception indica o alvo dos bônus e Insanity Reach descreve a ordem de resolução.
+
+**Relatos de bugs e sugestões de balanceamento são muito bem-vindos!** Compartilhe-os no [tópico de SuccClan no Discord](https://discord.com/channels/336546996779483136/1563769828244725770).
+
 ### 0.2.0 — 2026-11-07 — BETA
 
 #### Novo conteúdo
@@ -588,6 +744,32 @@ Obrigado a **Brandon e Rratvar** pelos relatos de erros e sugestões de melhoria
 - Requer **Trainworks Reloaded 0.7.33** e **Conductor 0.5.15** ou mais recente.
 
 ## Chinese
+
+### 0.2.1 — 2026-11-09 — BETA
+
+#### 平衡调整
+
+- **Abyss Princess:** 生命值从1提高至8。
+- **Arrogance Ghost:** 以“最后的低语”替代弃牌Accursed和Obsession：触发一个幽魂的Accursed 3次，获得其攻击力，然后将其献祭。消耗0余烬，每回合可使用一次。
+- **Chaos Creation:** 生命值从20提高至25。
+- **Depression Whisper:** 余烬费用从1提高至2。
+- **Endless Shadow:** 生命值从15提高至20。
+- **Shadow Lady：**Plague 和 Profanity 各等级的占位由 3 降至 2。所有路线及混合路线均占 2 格。
+- **Shadow Warrior:** 基础攻击力/生命值从5/10提高至10/20。 现在初始拥有潜行2。 新增Slay：获得潜行1。
+- **Sloth Ghost:** Accursed改为对本层所有敌人施加弱化1，不再造成5点伤害。其精华同步调整。
+- **单位种族：**Abyss Princess、Succubus Torturer和Vrolikai改为娜迦；Incubus Butcher和Shadow Warrior改为羊人。Endless Shadow改为幽魂，可参与幽魂相关联动。 Demon Pioneer和Oolioddroo改为恶魔。
+- **Vrolikai:** 生命值从6提高至12。
+
+#### 修复
+
+- **Arrogance Ghost / Last Whisper:** 修复最后的低语中Accursed提示显示未翻译键名的问题，并移除重复的献祭描述。
+
+#### 界面与文本
+
+- **Curseguard Stone / Slab:** 修复使用Curseguard Stone或Curseguard Slab后卡牌上缺少升级图标的问题。
+- **文本与提示:** 修订卡牌、勇者、技能与精华文本，统一关键词、目标和动态数值，移除多余的本层说明。Inception明确所有加成都给予目标，Insanity Reach按结算顺序描述效果。
+
+**非常欢迎大家反馈问题并提出平衡性建议！** 请在 [SuccClan 的 Discord 讨论串](https://discord.com/channels/336546996779483136/1563769828244725770)中分享。
 
 ### 0.2.0 — 2026-11-07 — BETA
 
@@ -683,6 +865,32 @@ Obrigado a **Brandon e Rratvar** pelos relatos de erros e sugestões de melhoria
 
 ## Chinese Traditional
 
+### 0.2.1 — 2026-11-09 — BETA
+
+#### 平衡調整
+
+- **Abyss Princess:** 生命值由1提高至8。
+- **Arrogance Ghost:** 以「最後的低語」取代棄牌Accursed和Obsession：觸發一個幽靈的Accursed 3次，獲得其攻擊力，然後將其獻祭。消耗0餘燼，每回合可使用一次。
+- **Chaos Creation:** 生命值由20提高至25。
+- **Depression Whisper:** 餘燼費用由1提高至2。
+- **Endless Shadow:** 生命值由15提高至20。
+- **Shadow Lady：**Plague 與 Profanity 各等級的佔位由 3 降至 2。所有路線及混合路線均佔 2 格。
+- **Shadow Warrior:** 基礎攻擊力/生命值由5/10提高至10/20。 現在初始擁有潛行2。 新增Slay：獲得潛行1。
+- **Sloth Ghost:** Accursed改為對本層所有敵人施加弱化1，不再造成5點傷害。其精華同步調整。
+- **單位種族：**Abyss Princess、Succubus Torturer和Vrolikai改為娜迦；Incubus Butcher和Shadow Warrior改為羊人。Endless Shadow改為幽靈，可參與幽靈相關連動。 Demon Pioneer和Oolioddroo改為惡魔。
+- **Vrolikai:** 生命值由6提高至12。
+
+#### 修正
+
+- **Arrogance Ghost / Last Whisper:** 修正最後的低語中Accursed提示顯示未翻譯鍵名的問題，並移除重複的獻祭描述。
+
+#### 介面與文字
+
+- **Curseguard Stone / Slab:** 修正使用Curseguard Stone或Curseguard Slab後卡牌上缺少升級圖示的問題。
+- **文字與提示:** 修訂卡牌、勇士、技能與精華文本，統一關鍵詞、目標和動態數值，移除多餘的本層說明。Inception明確所有加成都給予目標，Insanity Reach按結算順序描述效果。
+
+**非常歡迎大家回報問題並提出平衡性建議！** 請在 [SuccClan 的 Discord 討論串](https://discord.com/channels/336546996779483136/1563769828244725770)中分享。
+
 ### 0.2.0 — 2026-11-07 — BETA
 
 #### 新增內容
@@ -751,6 +959,32 @@ Obrigado a **Brandon e Rratvar** pelos relatos de erros e sugestões de melhoria
 
 ## Korean
 
+### 0.2.1 — 2026-11-09 — BETA
+
+#### 밸런스
+
+- **Abyss Princess:** 체력을 1에서 8로 증가시켰습니다.
+- **Arrogance Ghost:** 불꽃을 버리는 Accursed와 Obsession을 마지막 속삭임으로 교체합니다. 유령의 Accursed를 3번 발동하고 공격력을 획득한 후 희생시킵니다. 잉걸불 비용 0, 턴마다 한 번 사용 가능합니다.
+- **Chaos Creation:** 체력을 20에서 25로 증가시켰습니다.
+- **Depression Whisper:** 잉걸불 비용을 1에서 2로 증가시켰습니다.
+- **Endless Shadow:** 체력을 15에서 20으로 증가시켰습니다.
+- **Shadow Lady:** Plague와 Profanity의 모든 단계에서 크기를 3에서 2로 줄였습니다. 모든 경로와 혼합 경로가 2칸을 차지합니다.
+- **Shadow Warrior:** 기본 공격력/체력을 5/10에서 10/20으로 증가시켰습니다. 이제 은신 2를 지닌 채 시작합니다. Slay 추가: 은신 1을 얻습니다.
+- **Sloth Ghost:** Accursed가 층의 모든 적에게 피해 5 대신 약화 1을 부여합니다. 정수도 동일하게 변경됩니다.
+- **유닛 하위 유형:** Abyss Princess, Succubus Torturer, Vrolikai는 나가로, Incubus Butcher와 Shadow Warrior는 파우누스로 변경됩니다. Endless Shadow는 유령으로 변경되어 유령 시너지를 받습니다. Demon Pioneer와 Oolioddroo는 악마로 변경됩니다.
+- **Vrolikai:** 체력을 6에서 12로 증가시켰습니다.
+
+#### 오류 수정
+
+- **Arrogance Ghost / Last Whisper:** 마지막 속삭임의 Accursed 툴팁 오류를 수정하고 중복된 희생 문구를 제거했습니다.
+
+#### 인터페이스 및 텍스트
+
+- **Curseguard Stone / Slab:** Curseguard Stone 또는 Curseguard Slab 적용 후 카드에 강화 아이콘이 표시되지 않던 문제를 수정했습니다.
+- **텍스트 및 툴팁:** 카드, 영웅, 능력 및 정수의 문구를 정리하고 용어, 대상과 동적 수치를 통일했습니다. 불필요한 층 설명을 제거했습니다. Inception의 보너스 대상과 Insanity Reach의 효과 처리 순서를 명확히 했습니다.
+
+**버그 제보와 밸런스 제안은 언제나 환영합니다!** [SuccClan 디스코드 스레드](https://discord.com/channels/336546996779483136/1563769828244725770)에 남겨 주세요.
+
 ### 0.2.0 — 2026-11-07 — BETA
 
 #### 신규 콘텐츠
@@ -818,6 +1052,32 @@ Obrigado a **Brandon e Rratvar** pelos relatos de erros e sugestões de melhoria
 - **Trainworks Reloaded 0.7.33** 및 **Conductor 0.5.15** 이상이 필요합니다.
 
 ## Japanese
+
+### 0.2.1 — 2026-11-09 — BETA
+
+#### バランス調整
+
+- **Abyss Princess:** 体力を1から8に増加。
+- **Arrogance Ghost:** 火花を捨てるAccursedとObsessionを「最後の囁き」に変更。ゴーストのAccursedを3回発動し、攻撃力を得てから生贄に捧げる。エンバーコスト0、毎ターン1回使用可能。
+- **Chaos Creation:** 体力を20から25に増加。
+- **Depression Whisper:** エンバーコストを1から2に増加。
+- **Endless Shadow:** 体力を15から20に増加。
+- **Shadow Lady：**PlagueとProfanityの全段階でサイズを3から2に変更。すべての系統と混合ビルドが2スペースを使用します。
+- **Shadow Warrior:** 基本攻撃力/体力を5/10から10/20に増加。 初期状態でステルス2を持つように変更。 Slayを追加：ステルス1を得る。
+- **Sloth Ghost:** Accursedを、その階の敵全員に5ダメージを与える効果から弱体1を付与する効果に変更。エッセンスも同様に変更。
+- **ユニット種族：**Abyss Princess、Succubus Torturer、Vrolikaiをナーガに、Incubus ButcherとShadow Warriorをファウヌスに変更。Endless Shadowを幽霊に変更し、幽霊向けのシナジーが適用されます。 Demon PioneerとOolioddrooを悪魔に変更。
+- **Vrolikai:** 体力を6から12に増加。
+
+#### 修正
+
+- **Arrogance Ghost / Last Whisper:** 最後の囁きのAccursedツールチップの不具合を修正し、重複する生贄の説明を削除。
+
+#### インターフェースとテキスト
+
+- **Curseguard Stone / Slab:** Curseguard StoneまたはCurseguard Slab適用後、カードにアップグレードアイコンが表示されない問題を修正。
+- **テキストとツールチップ:** カード、チャンピオン、アビリティ、エッセンスの文言を整理。キーワード、対象、動的数値を統一し、不要な階の説明を削除。Inceptionのボーナス対象とInsanity Reachの処理順を明確化。
+
+**不具合の報告やバランス調整の提案を歓迎します！** [SuccClanのDiscordスレッド](https://discord.com/channels/336546996779483136/1563769828244725770)にお寄せください。
 
 ### 0.2.0 — 2026-11-07 — BETA
 
@@ -940,3 +1200,39 @@ Obrigado a **Brandon e Rratvar** pelos relatos de erros e sugestões de melhoria
 <!-- 2026-11-07-1531||codex-succclan-targetless||repos\MT2\variaciones-mias\mt2-succclan\CHANGELOG.md||Cambiar invitacion de feedback a hilo SuccClan1563769828244725770 en diez idiomas por aclaracion del usuario -->
 
 <!-- 2026-11-07-1535||codex-succclan-targetless||repos\MT2\variaciones-mias\mt2-succclan\CHANGELOG.md||Aplicar plantilla comun aprobada en diez idiomas; separar nuevo/balance, gracias y feedback al cierre, conservar historial -->
+
+<!-- 2026-11-08-2051||codex-succclan-targetless||repos\MT2\variaciones-mias\mt2-succclan\CHANGELOG.md||Añadir correccion tamaño Shadow Lady pendiente en diez idiomas; preservar historial publicado0.2.0 -->
+
+<!-- 2026-11-08-2143||codex-succclan-targetless||repos/MT2/variaciones-mias/mt2-succclan/CHANGELOG.md||Anadir Last Whisper a Sin publicar en diez idiomas; conservar historial y cambio Shadow Lady -->
+
+<!-- 2026-11-08-2146||codex-succclan-targetless||repos/MT2/variaciones-mias/mt2-succclan/CHANGELOG.md||Anadir tres aumentos de estadisticas a Sin publicar en diez idiomas sin alterar historial -->
+
+<!-- 2026-11-08-2150||codex-succclan-targetless||repos/MT2/variaciones-mias/mt2-succclan/CHANGELOG.md||Anadir cambio de subtipos a Sin publicar en diez idiomas -->
+
+<!-- 2026-11-08-2157||codex-succclan-targetless||repos/MT2/variaciones-mias/mt2-succclan/CHANGELOG.md||Ampliar cambio de subtipos con Demon Pioneer y Oolioddroo Demon en diez idiomas -->
+
+<!-- 2026-11-08-2205||codex-succclan-targetless||repos/MT2/variaciones-mias/mt2-succclan/CHANGELOG.md||Anadir Vrolikai vida6->12 a Sin publicar en diez idiomas -->
+
+<!-- 2026-11-08-2207||codex-succclan-targetless||repos/MT2/variaciones-mias/mt2-succclan/CHANGELOG.md||Anadir Stealth2 inicial de Shadow Warrior al changelog pendiente en diez idiomas -->
+
+<!-- 2026-11-08-2209||codex-succclan-targetless||repos/MT2/variaciones-mias/mt2-succclan/CHANGELOG.md||Anadir Celebrate Stealth1 permanente de Shadow Warrior al changelog en diez idiomas -->
+
+<!-- 2026-11-08-2209||codex-succclan-targetless||repos/MT2/variaciones-mias/mt2-succclan/CHANGELOG.md||Anadir Chaos Creation vida20->25 a Sin publicar en diez idiomas -->
+
+<!-- 2026-11-08-2212||codex-succclan-targetless||repos/MT2/variaciones-mias/mt2-succclan/CHANGELOG.md||Anadir Sloth Ghost Accursed Sap1 en lugar de dano5 a Sin publicar en diez idiomas -->
+
+<!-- 2026-11-08-2214||codex-succclan-targetless||repos/MT2/variaciones-mias/mt2-succclan/CHANGELOG.md||Anadir Depression Whisper coste1->2 a Sin publicar en diez idiomas -->
+
+<!-- 2026-11-08-2247||codex-succclan-targetless||repos/MT2/variaciones-mias/mt2-succclan/CHANGELOG.md||Reemplazar Celebrate permanente por Slay Stealth1 en changelog pendiente de diez idiomas -->
+
+<!-- 2026-11-09-1813||codex-succclan-targetless||repos/MT2/variaciones-mias/mt2-succclan/CHANGELOG.md||Preparar0.2.1 BETA09nov: ordenar alfabeticamente diez traducciones sin alterar historial publicado -->
+
+<!-- 2026-11-09-1910||codex-succclan-targetless||repos/MT2/variaciones-mias/mt2-succclan/CHANGELOG.md||Anadir correccion de iconos Curseguard aplicados al changelog0.2.1 en diez idiomas -->
+
+<!-- 2026-11-09-2043||codex-succclan-targetless||repos/MT2/variaciones-mias/mt2-succclan/CHANGELOG.md||Anadir revision editorial a interfaz/textos de0.2.1 en orden alfabetico y diez idiomas -->
+
+<!-- 2026-11-09-2141||codex-succclan-targetless||repos/MT2/variaciones-mias/mt2-succclan/CHANGELOG.md||Anadir correccion Last Whisper a0.2.1 desde ultima publicada0.2.0; diez idiomas y orden alfabetico -->
+
+<!-- 2026-11-09-2154||codex-succclan-targetless||repos/MT2/variaciones-mias/mt2-succclan/CHANGELOG.md||Expandir Text and tooltips en17 entradas alfabeticas con cartas concretas y traducciones equivalentes -->
+
+<!-- 2026-11-09-2214||codex-succclan-targetless||repos/MT2/variaciones-mias/mt2-succclan/CHANGELOG.md||Restaurar entrada resumida Text and tooltips preferida por usuario y traducciones; retirar desglose de17 entradas -->

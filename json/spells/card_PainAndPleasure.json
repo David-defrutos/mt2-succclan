@@ -16,9 +16,9 @@
                 "korean": "고통과 쾌락"
             },
             "descriptions": {
-                "english": "Requires [effect0.power] <b>Obsessing Spark</b> in hand. Discard them and draw [effect1.power] cards.",
+                "english": "Requires [effect0.power] <b>Obsessing Sparks</b> in hand. Discard them and draw [effect1.power].",
                 "chinese": "需要手牌中有 [effect0.power] 张<b>欲望碎片</b>。舍弃这些牌并抽 [effect1.power] 张牌。",
-                "spanish": "Requiere [effect0.power] <b>Chispas obsesivas</b> en la mano. Descártalas y roba [effect1.power] cartas.",
+                "spanish": "Requiere [effect0.power] <b>Chispas obsesivas</b> en la mano. Descártalas y roba [effect1.power].",
                 "french": "Nécessite [effect0.power] <b>Étincelle obsédante</b> en main. Défaussez-les et piochez [effect1.power] cartes.",
                 "german": "Benötigt [effect0.power] <b>Besessenheitsfunke</b> auf der Hand. Wirf sie ab und ziehe [effect1.power] Karten.",
                 "portuguese": "Requer [effect0.power] <b>Centelha Obsessiva</b> na mão. Descarte-as e compre [effect1.power] cartas.",

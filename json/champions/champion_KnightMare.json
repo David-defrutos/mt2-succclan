@@ -103,7 +103,7 @@
                 "mod_reference": "Conductor"
             },
             "descriptions": {
-                "english": "All friendly units +[effect0.power][attack] and +[effect1.power][health]. <b>Psionic Burst [effect2.status0.power]</b>: draw 1 card and gain 1[ember].",
+                "english": "Apply +[effect0.power][attack] and +[effect1.power][health] to friendly units. <b>Psionic Burst [effect2.status0.power]</b>: Draw 1 and gain 1[ember].",
                 "chinese": "所有友方单位 +[effect0.power][attack]，+[effect1.power][health]。<b>灵能爆破 [effect2.status0.power]</b>：抽 1 张牌并获得 1[ember]。",
                 "spanish": "Todas las unidades aliadas obtienen +[effect0.power][attack] y +[effect1.power][health]. <b>Estallido psiónico [effect2.status0.power]</b>: roba 1 carta y gana 1[ember].",
                 "french": "Toutes les unités alliées gagnent +[effect0.power][attack] et +[effect1.power][health]. <b>Explosion psionique [effect2.status0.power]</b> : piochez 1 carte et gagnez 1[ember].",
@@ -130,7 +130,7 @@
                 "mod_reference": "Conductor"
             },
             "descriptions": {
-                "english": "All friendly units +[effect0.power][attack] and +[effect1.power][health]. <b>Psionic Burst [effect2.status0.power]</b>: draw 1 card and gain 1[ember].",
+                "english": "Apply +[effect0.power][attack] and +[effect1.power][health] to friendly units. <b>Psionic Burst [effect2.status0.power]</b>: Draw 1 and gain 1[ember].",
                 "chinese": "所有友方单位 +[effect0.power][attack]，+[effect1.power][health]。<b>灵能爆破 [effect2.status0.power]</b>：抽 1 张牌并获得 1[ember]。",
                 "spanish": "Todas las unidades aliadas obtienen +[effect0.power][attack] y +[effect1.power][health]. <b>Estallido psiónico [effect2.status0.power]</b>: roba 1 carta y gana 1[ember].",
                 "french": "Toutes les unités alliées gagnent +[effect0.power][attack] et +[effect1.power][health]. <b>Explosion psionique [effect2.status0.power]</b> : piochez 1 carte et gagnez 1[ember].",
@@ -157,7 +157,7 @@
                 "mod_reference": "Conductor"
             },
             "descriptions": {
-                "english": "All friendly units +[effect0.power][attack] and +[effect1.power][health]. <b>Psionic Burst [effect2.status0.power]</b>: draw 1 card and gain 1[ember].",
+                "english": "Apply +[effect0.power][attack] and +[effect1.power][health] to friendly units. <b>Psionic Burst [effect2.status0.power]</b>: Draw 1 and gain 1[ember].",
                 "chinese": "所有友方单位 +[effect0.power][attack]，+[effect1.power][health]。<b>灵能爆破 [effect2.status0.power]</b>：抽 1 张牌并获得 1[ember]。",
                 "spanish": "Todas las unidades aliadas obtienen +[effect0.power][attack] y +[effect1.power][health]. <b>Estallido psiónico [effect2.status0.power]</b>: roba 1 carta y gana 1[ember].",
                 "french": "Toutes les unités alliées gagnent +[effect0.power][attack] et +[effect1.power][health]. <b>Explosion psionique [effect2.status0.power]</b> : piochez 1 carte et gagnez 1[ember].",
@@ -181,7 +181,7 @@
             "id": "EndlessBasicTrigger",
             "trigger": "on_death",
             "descriptions": {
-                "english": "<b>Psionic Burst [effect0.power]</b>: respawn with full health and gain [multistrike] 1, +1[attack] and +1[health]. Each respawn increases the Psionic cost by 1.",
+                "english": "<b>Psionic Burst [effect0.power]</b>: Respawn with full health and gain [multistrike] 1, +1[attack] and +1[health]. Each respawn increases the Psionic cost by 1.",
                 "spanish": "<b>Estallido psiónico [effect0.power]</b>: reaparece con toda la vida y obtiene [multistrike] 1, +1[attack] y +1[health]. Cada reaparición aumenta el coste de Psionic en 1.",
                 "chinese": "<b>灵能爆破 [effect0.power]</b>：以满生命值重生，获得[multistrike] 1、+1[attack]和+1[health]。每次重生使灵能消耗增加1。",
                 "chinese_traditional": "<b>靈能爆發 [effect0.power]</b>：以滿生命值重生，獲得[multistrike] 1、+1[attack]和+1[health]。每次重生使靈能消耗增加1。",
@@ -200,7 +200,7 @@
             "id": "EndlessPreTrigger",
             "trigger": "on_death",
             "descriptions": {
-                "english": "<b>Psionic Burst [effect0.power]</b>: respawn with full health and gain [multistrike] 1, +2[attack] and +2[health]. Each respawn increases the Psionic cost by 1.",
+                "english": "<b>Psionic Burst [effect0.power]</b>: Respawn with full health and gain [multistrike] 1, +2[attack] and +2[health]. Each respawn increases the Psionic cost by 1.",
                 "spanish": "<b>Estallido psiónico [effect0.power]</b>: reaparece con toda la vida y obtiene [multistrike] 1, +2[attack] y +2[health]. Cada reaparición aumenta el coste de Psionic en 1.",
                 "chinese": "<b>灵能爆破 [effect0.power]</b>：以满生命值重生，获得[multistrike] 1、+2[attack]和+2[health]。每次重生使灵能消耗增加1。",
                 "chinese_traditional": "<b>靈能爆發 [effect0.power]</b>：以滿生命值重生，獲得[multistrike] 1、+2[attack]和+2[health]。每次重生使靈能消耗增加1。",
@@ -219,7 +219,7 @@
             "id": "EndlessProTrigger",
             "trigger": "on_death",
             "descriptions": {
-                "english": "<b>Psionic Burst [effect0.power]</b>: respawn with full health and gain [multistrike] 1, +3[attack] and +3[health]. Each respawn increases the Psionic cost by 1.",
+                "english": "<b>Psionic Burst [effect0.power]</b>: Respawn with full health and gain [multistrike] 1, +3[attack] and +3[health]. Each respawn increases the Psionic cost by 1.",
                 "spanish": "<b>Estallido psiónico [effect0.power]</b>: reaparece con toda la vida y obtiene [multistrike] 1, +3[attack] y +3[health]. Cada reaparición aumenta el coste de Psionic en 1.",
                 "chinese": "<b>灵能爆破 [effect0.power]</b>：以满生命值重生，获得[multistrike] 1、+3[attack]和+3[health]。每次重生使灵能消耗增加1。",
                 "chinese_traditional": "<b>靈能爆發 [effect0.power]</b>：以滿生命值重生，獲得[multistrike] 1、+3[attack]和+3[health]。每次重生使靈能消耗增加1。",
@@ -238,7 +238,7 @@
             "id": "IllusionBasicTrigger",
             "trigger": "on_hit",
             "descriptions": {
-                "english": "Gain +[effect0.power][attack] and +[effect1.power][health]. <b>Psionic Burst [effect2.status0.power]</b>: gain [lifesteal] [effect4.status0.power] and [spikes] [effect5.status0.power].",
+                "english": "Gain +[effect0.power][attack] and +[effect1.power][health]. <b>Psionic Burst [effect2.status0.power]</b>: Gain [lifesteal] [effect4.status0.power] and [spikes] [effect5.status0.power].",
                 "chinese": "获得 +[effect0.power][attack]，+[effect1.power][health]。<b>灵能爆破 [effect2.status0.power]</b>：获得[lifesteal] [effect4.status0.power]和[spikes] [effect5.status0.power]。",
                 "spanish": "Obtiene +[effect0.power][attack] y +[effect1.power][health]. <b>Estallido psiónico [effect2.status0.power]</b>: obtiene [lifesteal] [effect4.status0.power] y [spikes] [effect5.status0.power].",
                 "french": "Gagne +[effect0.power][attack] et +[effect1.power][health]. <b>Explosion psionique [effect2.status0.power]</b> : gagne [lifesteal] [effect4.status0.power] et [spikes] [effect5.status0.power].",
@@ -262,7 +262,7 @@
             "id": "IllusionPreTrigger",
             "trigger": "on_hit",
             "descriptions": {
-                "english": "Gain +[effect0.power][attack] and +[effect1.power][health]. <b>Psionic Burst [effect2.status0.power]</b>: gain [lifesteal] [effect4.status0.power] and [spikes] [effect5.status0.power].",
+                "english": "Gain +[effect0.power][attack] and +[effect1.power][health]. <b>Psionic Burst [effect2.status0.power]</b>: Gain [lifesteal] [effect4.status0.power] and [spikes] [effect5.status0.power].",
                 "chinese": "获得 +[effect0.power][attack]，+[effect1.power][health]。<b>灵能爆破 [effect2.status0.power]</b>：获得[lifesteal] [effect4.status0.power]和[spikes] [effect5.status0.power]。",
                 "spanish": "Obtiene +[effect0.power][attack] y +[effect1.power][health]. <b>Estallido psiónico [effect2.status0.power]</b>: obtiene [lifesteal] [effect4.status0.power] y [spikes] [effect5.status0.power].",
                 "french": "Gagne +[effect0.power][attack] et +[effect1.power][health]. <b>Explosion psionique [effect2.status0.power]</b> : gagne [lifesteal] [effect4.status0.power] et [spikes] [effect5.status0.power].",
@@ -286,7 +286,7 @@
             "id": "IllusionProTrigger",
             "trigger": "on_hit",
             "descriptions": {
-                "english": "Gain +[effect0.power][attack] and +[effect1.power][health]. <b>Psionic Burst [effect2.status0.power]</b>: gain [lifesteal] [effect4.status0.power] and [spikes] [effect5.status0.power].",
+                "english": "Gain +[effect0.power][attack] and +[effect1.power][health]. <b>Psionic Burst [effect2.status0.power]</b>: Gain [lifesteal] [effect4.status0.power] and [spikes] [effect5.status0.power].",
                 "chinese": "获得 +[effect0.power][attack]，+[effect1.power][health]。<b>灵能爆破 [effect2.status0.power]</b>：获得[lifesteal] [effect4.status0.power]和[spikes] [effect5.status0.power]。",
                 "spanish": "Obtiene +[effect0.power][attack] y +[effect1.power][health]. <b>Estallido psiónico [effect2.status0.power]</b>: obtiene [lifesteal] [effect4.status0.power] y [spikes] [effect5.status0.power].",
                 "french": "Gagne +[effect0.power][attack] et +[effect1.power][health]. <b>Explosion psionique [effect2.status0.power]</b> : gagne [lifesteal] [effect4.status0.power] et [spikes] [effect5.status0.power].",
@@ -310,16 +310,16 @@
             "id": "KnightMareHarvest",
             "trigger": "on_any_unit_death_on_floor",
             "descriptions": {
-                "english": "Gain <b>[mt2_succclan.Plugin_psionic] [effect0.status0.power]</b> when another unit dies.",
-                "spanish": "Obtiene <b>[mt2_succclan.Plugin_psionic] [effect0.status0.power]</b> cuando muere otra unidad.",
-                "chinese": "其他单位死亡时，获得<b>[mt2_succclan.Plugin_psionic] [effect0.status0.power]</b>。",
-                "chinese_traditional": "其他單位死亡時，獲得<b>[mt2_succclan.Plugin_psionic] [effect0.status0.power]</b>。",
-                "french": "Gagne <b>[mt2_succclan.Plugin_psionic] [effect0.status0.power]</b> lorsqu’une autre unité meurt.",
-                "german": "Erhält <b>[mt2_succclan.Plugin_psionic] [effect0.status0.power]</b>, wenn eine andere Einheit stirbt.",
-                "portuguese": "Ganha <b>[mt2_succclan.Plugin_psionic] [effect0.status0.power]</b> quando outra unidade morre.",
-                "russian": "Получает <b>[mt2_succclan.Plugin_psionic] [effect0.status0.power]</b>, когда погибает другой отряд.",
-                "japanese": "他のユニットが死亡すると<b>[mt2_succclan.Plugin_psionic] [effect0.status0.power]</b>を得る。",
-                "korean": "다른 유닛이 죽으면 <b>[mt2_succclan.Plugin_psionic] [effect0.status0.power]</b>을 얻습니다."
+                "english": "Gain <b>[mt2_succclan.Plugin_psionic] [effect0.status0.power]</b>.",
+                "spanish": "Añade <b>[mt2_succclan.Plugin_psionic] [effect0.status0.power]</b>.",
+                "french": "Gagne <b>[mt2_succclan.Plugin_psionic] [effect0.status0.power]</b>.",
+                "german": "Erhalte <b>[mt2_succclan.Plugin_psionic] [effect0.status0.power]</b>.",
+                "russian": "Получает <b>[mt2_succclan.Plugin_psionic] [effect0.status0.power]</b>.",
+                "portuguese": "Ganha <b>[mt2_succclan.Plugin_psionic] [effect0.status0.power]</b>.",
+                "chinese": "获得<b>[mt2_succclan.Plugin_psionic] [effect0.status0.power]</b>。",
+                "chinese_traditional": "獲得<b>[mt2_succclan.Plugin_psionic] [effect0.status0.power]</b>。",
+                "korean": "<b>[mt2_succclan.Plugin_psionic] [effect0.status0.power]</b>을 얻습니다.",
+                "japanese": "<b>[mt2_succclan.Plugin_psionic] [effect0.status0.power]</b>を得る。"
             },
             "effects": [
                 "@KnightMareGainPsionic"

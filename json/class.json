@@ -1,4 +1,4 @@
-{
+﻿{
     "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
     "classes": [
         {
@@ -161,6 +161,36 @@
                 "chinese_traditional": "幽靈",
                 "japanese": "幽霊",
                 "korean": "유령"
+            }
+        },
+        {
+            "id": "Sub_Naga",
+            "names": {
+                "english": "Naga",
+                "chinese": "娜迦",
+                "spanish": "Naga",
+                "french": "Naga",
+                "german": "Naga",
+                "portuguese": "Naga",
+                "russian": "Нага",
+                "chinese_traditional": "娜迦",
+                "japanese": "ナーガ",
+                "korean": "나가"
+            }
+        },
+        {
+            "id": "Sub_Faun",
+            "names": {
+                "english": "Faun",
+                "chinese": "羊人",
+                "spanish": "Fauno",
+                "french": "Faune",
+                "german": "Faun",
+                "portuguese": "Fauno",
+                "russian": "Фавн",
+                "chinese_traditional": "羊人",
+                "japanese": "ファウヌス",
+                "korean": "파우누스"
             }
         }
     ],

@@ -4,7 +4,7 @@
     <TargetFramework>netstandard2.1</TargetFramework>
     <AssemblyName>mt2_succclan.Plugin</AssemblyName>
     <RootNamespace>mt2_succclan.Plugin</RootNamespace>
-    <Version>0.2.0</Version>
+    <Version>0.2.1</Version>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <LangVersion>latest</LangVersion>
@@ -426,7 +426,12 @@
   <ItemGroup><Compile Include="$(MSBuildThisFileDirectory)..\..\src\code\ButcherAnimationRendering.cs" /></ItemGroup>
 <ItemGroup><Compile Include="$(MSBuildThisFileDirectory)..\..\src\code\CardEffectEndlessShadowRebirth.cs" /></ItemGroup>
 <ItemGroup><Compile Include="$(MSBuildThisFileDirectory)..\..\src\code\NonBossTargeting.cs" /></ItemGroup>
+<ItemGroup><Compile Include="$(MSBuildThisFileDirectory)..\..\src\code\LastWhisperTooltips.cs" /></ItemGroup>
 </Project>
 <!-- 2026-11-07-1205||codex-succclan-targetless||repos\MT2\variaciones-mias\mt2-succclan\tools\local-build\SuccClan.Local.csproj||Añadir proyecto local autocontenido con fuentes relativas y DLL de Default -->
 
 <!-- 2026-11-07-1431||codex-succclan-targetless||repos\MT2\variaciones-mias\mt2-succclan\tools\local-build\SuccClan.Local.csproj||Cambiar version de compilacion 0.1.14 a 0.2.0 -->
+
+<!-- 2026-11-09-1812||codex-succclan-targetless||repos/MT2/variaciones-mias/mt2-succclan/tools/local-build/SuccClan.Local.csproj||Preparar version0.2.1 BETA; alinear metadatos de paquete y compilacion -->
+
+<!-- 2026-11-09-2140||codex-succclan-targetless||repos/MT2/variaciones-mias/mt2-succclan/tools/local-build/SuccClan.Local.csproj||Compilar arreglo acotado de tooltip Last Whisper en build local -->

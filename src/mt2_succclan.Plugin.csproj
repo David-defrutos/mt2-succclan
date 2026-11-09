@@ -6,7 +6,7 @@
     <Nullable>enable</Nullable>
     <RootNamespace>mt2_succclan.Plugin</RootNamespace>
     <LangVersion>latest</LangVersion>
-    <Version>0.2.0</Version>
+    <Version>0.2.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
@@ -36,3 +36,5 @@
 <!-- 2026-11-05-1829||codex-succclan-targetless||src/mt2_succclan.Plugin.csproj||Alinear MonsterTrain2.Api 4.10.22787024 a 4.11.22787024 requerido por Conductor 0.5.17; resolver NU1605 en CI -->
 
 <!-- 2026-11-07-1431||codex-succclan-targetless||repos\MT2\variaciones-mias\mt2-succclan\src\mt2_succclan.Plugin.csproj||Cambiar version de compilacion 0.1.14 a 0.2.0 -->
+
+<!-- 2026-11-09-1812||codex-succclan-targetless||repos/MT2/variaciones-mias/mt2-succclan/src/mt2_succclan.Plugin.csproj||Preparar version0.2.1 BETA; alinear metadatos de paquete y compilacion -->

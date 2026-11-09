@@ -1,4 +1,4 @@
-{
+﻿{
     "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
     "cards": [
         {
@@ -71,7 +71,7 @@
             "descriptions": {
                 "english": "Apply [regen] [effect0.status0.power] to friendly units.",
                 "chinese": "友方单位获得[regen] [effect0.status0.power]。",
-                "spanish": "Otorga [regen] [effect0.status0.power] a las unidades aliadas.",
+                "spanish": "Añade [regen] [effect0.status0.power] a las unidades aliadas.",
                 "french": "Applique [regen] [effect0.status0.power] aux unités alliées.",
                 "german": "Verleiht verbündeten Einheiten [regen] [effect0.status0.power].",
                 "portuguese": "Concede [regen] [effect0.status0.power] às unidades aliadas.",

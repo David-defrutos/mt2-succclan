@@ -17,7 +17,7 @@
                 "korean": "심연의 왕관"
             },
             "descriptions": {
-                "english": "Apply [effect0.status0.power] extra stack of <b>[mt2_succclan.Plugin_psionic]</b> every time it is applied.",
+                "english": "Apply [effect0.status0.power] additional stack of <b>[mt2_succclan.Plugin_psionic]</b> whenever it is applied.",
                 "chinese": "每次施加 <b>[mt2_succclan.Plugin_psionic]</b> 时，额外施加 [effect0.status0.power] 层。",
                 "spanish": "Cada vez que se aplica <b>[mt2_succclan.Plugin_psionic]</b>, aplica [effect0.status0.power] carga adicional.",
                 "french": "Chaque application de <b>[mt2_succclan.Plugin_psionic]</b> ajoute [effect0.status0.power] charge supplémentaire.",

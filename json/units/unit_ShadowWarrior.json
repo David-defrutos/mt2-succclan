@@ -49,14 +49,21 @@
             },
             "character_art": "@ShadowWarriorCharacterArt",
             "size": 2,
-            "attack_damage": 5,
-            "health": 10,
+            "attack_damage": 10,
+            "health": 20,
+            "starting_status_effects": [
+                {
+                    "status": "stealth",
+                    "count": 2
+                }
+            ],
             "subtypes": [
                 "SubtypesData_BannerUnit",
-                "@Sub_Cubus"
+                "@Sub_Faun"
             ],
             "triggers": [
-                "@ShadowWarriorAccursed"
+                "@ShadowWarriorAccursed",
+                "@ShadowWarriorSlay"
             ]
         }
     ],
@@ -82,6 +89,25 @@
             "effects": [
                 "@ShadowWarriorBuff"
             ]
+        },
+        {
+            "id": "ShadowWarriorSlay",
+            "trigger": "on_kill",
+            "descriptions": {
+                "english": "Gain [stealth] [effect0.status0.power].",
+                "spanish": "Añade [stealth] [effect0.status0.power].",
+                "french": "Gagne [stealth] [effect0.status0.power].",
+                "german": "Erhalte [stealth] [effect0.status0.power].",
+                "russian": "Получает [stealth] [effect0.status0.power].",
+                "portuguese": "Ganha [stealth] [effect0.status0.power].",
+                "chinese": "获得[stealth] [effect0.status0.power]。",
+                "chinese_traditional": "獲得[stealth] [effect0.status0.power]。",
+                "korean": "[stealth] [effect0.status0.power]을 얻습니다.",
+                "japanese": "[stealth] [effect0.status0.power]を得る。"
+            },
+            "effects": [
+                "@ShadowWarriorSlayStealth"
+            ]
         }
     ],
     "effects": [
@@ -99,6 +125,18 @@
             "target_team": "monsters",
             "param_upgrade": "@ShadowWarriorPermanentAttack",
             "param_int_3": 2
+        },
+        {
+            "id": "ShadowWarriorSlayStealth",
+            "name": "CardEffectAddStatusEffect",
+            "target_mode": "self",
+            "target_team": "monsters",
+            "param_status_effects": [
+                {
+                    "status": "stealth",
+                    "count": 1
+                }
+            ]
         }
     ],
     "sprites": [

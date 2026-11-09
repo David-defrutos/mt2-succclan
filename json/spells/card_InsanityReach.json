@@ -16,16 +16,16 @@
                 "korean": "광기의 손길"
             },
             "descriptions": {
-                "english": "<b>Ascend</b> non-boss enemy units on this floor and apply +[effect0.power][attack] and <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b>.",
-                "chinese": "使本层所有非首领敌方单位上升，并施加 +[effect0.power][attack] 和 <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b>。",
-                "spanish": "<b>Asciende</b> a las unidades enemigas que no sean jefes de este piso y les otorga +[effect0.power][attack] y <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b>.",
-                "french": "Fait <b>monter</b> les unités ennemies hors boss de cet étage et leur applique +[effect0.power][attack] et <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b>.",
-                "german": "Lässt feindliche Einheiten außer Bossen auf dieser Etage <b>aufsteigen</b> und verleiht ihnen +[effect0.power][attack] und <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b>.",
-                "portuguese": "Faz as unidades inimigas que não sejam chefes neste andar <b>subirem</b> e aplica +[effect0.power][attack] e <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b>.",
-                "russian": "<b>Поднимает</b> врагов, кроме боссов на этом этаже и даёт им +[effect0.power][attack] и <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b>.",
-                "chinese_traditional": "使此樓層非首領敵方單位<b>上升</b>，並施加 +[effect0.power][attack] 與 <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b>。",
-                "japanese": "この階のボス以外の敵全員を<b>上昇</b>させ、+[effect0.power][attack]と<b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b>を付与する。",
-                "korean": "이 층의 보스가 아닌 적을 <b>상승</b>시키고 +[effect0.power][attack] 및 <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b>을 부여합니다."
+                "english": "Apply +[effect0.power][attack] and <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b> to non-boss enemy units, then <b>Ascend</b> them.",
+                "spanish": "Otorga +[effect0.power][attack] y <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b> a las unidades enemigas que no sean jefes y después las <b>Asciende</b>.",
+                "french": "Applique +[effect0.power][attack] et <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b> aux ennemis hors boss, puis les fait <b>monter</b>.",
+                "german": "Verleihe feindlichen Einheiten außer Bossen +[effect0.power][attack] und <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b> und lasse sie dann <b>aufsteigen</b>.",
+                "russian": "Даёт врагам, кроме боссов, +[effect0.power][attack] и <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b>, затем <b>поднимает</b> их.",
+                "portuguese": "Concede +[effect0.power][attack] e <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b> aos inimigos que não sejam chefes e depois os faz <b>subir</b>.",
+                "chinese": "对非首领敌方单位施加+[effect0.power][attack]和<b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b>，然后使其<b>上升</b>。",
+                "chinese_traditional": "對非首領敵方單位施加+[effect0.power][attack]和<b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b>，然後使其<b>上升</b>。",
+                "korean": "보스가 아닌 적에게 +[effect0.power][attack] 및 <b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b>을 부여한 후 <b>상승</b>시킵니다.",
+                "japanese": "ボス以外の敵に+[effect0.power][attack]と<b>[mt2_succclan.Plugin_frantic] [effect1.status0.power]</b>を付与し、その後<b>上昇</b>させる。"
             },
             "card_type": "spell",
             "rarity": "rare",

@@ -69,7 +69,7 @@
                 "mod_reference": "Conductor"
             },
             "descriptions": {
-                "english": "Apply <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> to the back enemy unit. Cannot target bosses.",
+                "english": "Apply <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> to the rear enemy unit. Cannot target bosses.",
                 "chinese": "对后排敌方单位施加 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>。 无法选择首领。",
                 "spanish": "Otorga <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> a la unidad enemiga trasera. No puede seleccionar jefes.",
                 "french": "Applique <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> à l'unité ennemie en dernière ligne. Ne peut pas cibler les boss.",

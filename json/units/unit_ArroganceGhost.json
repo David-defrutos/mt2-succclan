@@ -27,6 +27,47 @@
             "effects": [
                 "@SpawnArroganceGhost"
             ]
+        },
+        {
+            "id": "ArroganceLastWhisper",
+            "names": {
+                "english": "Last Whisper",
+                "spanish": "Último susurro",
+                "french": "Dernier murmure",
+                "german": "Letztes Flüstern",
+                "russian": "Последний шёпот",
+                "portuguese": "Último Sussurro",
+                "chinese": "最后的低语",
+                "chinese_traditional": "最後的低語",
+                "korean": "마지막 속삭임",
+                "japanese": "最後の囁き"
+            },
+            "descriptions": {
+                "english": "Trigger a Ghost’s <b>Accursed</b> ability 3 times. Gain their [attack].",
+                "spanish": "Activa 3 veces la habilidad <b>Maldito</b> de un fantasma. Obtiene su [attack].",
+                "french": "Déclenchez 3 fois la capacité <b>Maudit</b> d’un fantôme. Gagnez son [attack].",
+                "german": "Löse die <b>Verflucht</b>-Fähigkeit eines Geists 3-mal aus. Erhalte seinen [attack].",
+                "russian": "Активирует способность <b>Проклятие</b> призрака 3 раза. Получает его [attack].",
+                "portuguese": "Ative a habilidade <b>Amaldiçoado</b> de um fantasma 3 vezes. Receba o [attack] dele.",
+                "chinese": "触发一个幽魂的<b>被咒</b>能力3次。获得其[attack]。",
+                "chinese_traditional": "觸發一個幽靈的<b>詛咒</b>能力3次。獲得其[attack]。",
+                "korean": "유령의 <b>저주</b> 능력을 3번 발동합니다. 그 유닛의 [attack]을 획득합니다.",
+                "japanese": "ゴーストの<b>呪い</b>アビリティを3回発動する。対象の[attack]を得る。"
+            },
+            "card_art": "@ArroganceGhostCardArt",
+            "card_type": "spell",
+            "is_an_ability": true,
+            "cost": 0,
+            "cooldown": 1,
+            "initial_cooldown": 0,
+            "initial_keyboard_target": "front_friendly",
+            "effects": [
+                "@ArroganceLastWhisperTrigger1",
+                "@ArroganceLastWhisperTrigger2",
+                "@ArroganceLastWhisperTrigger3",
+                "@ArroganceLastWhisperAttack",
+                "@ArroganceLastWhisperSacrifice"
+            ]
         }
     ],
     "characters": [
@@ -55,35 +96,7 @@
             "subtypes": [
                 "@Sub_Ghost"
             ],
-            "triggers": [
-                "@ArroganceGhostAccursed"
-            ],
-            "ability": "@GhostObsession"
-        }
-    ],
-    "character_triggers": [
-        {
-            "id": "ArroganceGhostAccursed",
-            "trigger": {
-                "id": "@Accursed",
-                "mod_reference": "Conductor"
-            },
-            "descriptions": {
-                "english": "Discard [effect0.power] <b>Obsessing Spark</b> from your hand. -[effect1.power][health].",
-                "chinese": "从手牌舍弃 [effect0.power] 张<b>欲望碎片</b>。-[effect1.power][health]。",
-                "spanish": "Descarta [effect0.power] <b>Chispas obsesivas</b> de tu mano. -[effect1.power][health].",
-                "french": "Défaussez [effect0.power] <b>Étincelle obsédante</b> de votre main. -[effect1.power][health].",
-                "german": "Wirf [effect0.power] <b>Besessenheitsfunke</b> von deiner Hand ab. -[effect1.power][health].",
-                "portuguese": "Descarte [effect0.power] <b>Centelha Obsessiva</b> da sua mão. -[effect1.power][health].",
-                "russian": "Сбрасывает [effect0.power] <b>Искра одержимости</b> из руки. -[effect1.power][health].",
-                "chinese_traditional": "棄掉手牌中的 [effect0.power] 張<b>執念火花</b>。-[effect1.power][health]。",
-                "japanese": "手札の<b>執着の火花</b>を[effect0.power]枚捨てる。-[effect1.power][health]。",
-                "korean": "손의 <b>집착의 불꽃</b> [effect0.power]장을 버립니다. -[effect1.power][health]."
-            },
-            "effects": [
-                "@ArroganceGhostSpread",
-                "@ArroganceGhostSelfHarm"
-            ]
+            "ability": "@ArroganceLastWhisper"
         }
     ],
     "effects": [
@@ -94,23 +107,63 @@
             "param_character": "@ArroganceGhost"
         },
         {
-            "id": "ArroganceGhostSpread",
-            "name": {
-                "id": "@CardEffectRandomDiscardFromCardPile",
+            "id": "ArroganceLastWhisperTrigger1",
+            "name": "CardEffectPlayUnitTrigger",
+            "target_mode": "drop_target_character",
+            "target_team": "monsters",
+            "target_subtype": "@Sub_Ghost",
+            "param_trigger": {
+                "id": "@Accursed",
                 "mod_reference": "Conductor"
             },
-            "target_mode": "hand",
-            "target_card_type": "blight",
-            "param_int": 2,
-            "param_card_pool": "@ObsessingShardPool"
+            "additional_tooltips": [
+                "@LastWhisperAccursedTooltip"
+            ]
         },
         {
-            "id": "ArroganceGhostSelfHarm",
-            "applied_vfx": "@SuccFXShadowImpact",
-            "name": "CardEffectDebuffMaxHealth",
-            "target_mode": "self",
+            "id": "ArroganceLastWhisperTrigger2",
+            "name": "CardEffectPlayUnitTrigger",
+            "target_mode": "drop_target_character",
             "target_team": "monsters",
-            "param_int": 2
+            "target_subtype": "@Sub_Ghost",
+            "param_trigger": {
+                "id": "@Accursed",
+                "mod_reference": "Conductor"
+            },
+            "additional_tooltips": [
+                "@LastWhisperAccursedTooltip"
+            ]
+        },
+        {
+            "id": "ArroganceLastWhisperTrigger3",
+            "name": "CardEffectPlayUnitTrigger",
+            "target_mode": "drop_target_character",
+            "target_team": "monsters",
+            "target_subtype": "@Sub_Ghost",
+            "param_trigger": {
+                "id": "@Accursed",
+                "mod_reference": "Conductor"
+            },
+            "additional_tooltips": [
+                "@LastWhisperAccursedTooltip"
+            ]
+        },
+        {
+            "id": "ArroganceLastWhisperAttack",
+            "name": "CardEffectTransferAttackFromUnit",
+            "target_mode": "drop_target_character",
+            "target_team": "monsters",
+            "target_subtype": "@Sub_Ghost",
+            "param_int": 1,
+            "param_int_2": 1
+        },
+        {
+            "id": "ArroganceLastWhisperSacrifice",
+            "name": "CardEffectSacrifice",
+            "target_mode": "drop_target_character",
+            "target_team": "monsters",
+            "target_subtype": "@Sub_Ghost",
+            "param_subtype": "@Sub_Ghost"
         }
     ],
     "sprites": [
@@ -152,6 +205,36 @@
                         }
                     }
                 }
+            }
+        }
+    ],
+    "additional_tooltips": [
+        {
+            "id": "LastWhisperAccursedTooltip",
+            "titles": {
+                "key": "mt2_succclan_LastWhisper_Accursed_Title",
+                "english": "Accursed",
+                "chinese": "被咒",
+                "spanish": "Maldito",
+                "french": "Maudit",
+                "german": "Verflucht",
+                "portuguese": "Amaldiçoado",
+                "russian": "Проклятие",
+                "chinese_traditional": "詛咒",
+                "japanese": "呪い",
+                "korean": "저주"
+            },
+            "descriptions": {
+                "english": "Triggers when a [blight] or [junk] is played or discarded during your turn.",
+                "spanish": "Se activa al jugar o descartar una carta [blight] o [junk] durante tu turno.",
+                "french": "Se déclenche quand vous jouez ou défaussez une carte [blight] ou [junk] pendant votre tour.",
+                "german": "Wird ausgelöst, wenn während deines Zuges ein [blight] oder [junk] gespielt oder abgeworfen wird.",
+                "russian": "Срабатывает, когда во время вашего хода разыгрывается или сбрасывается [blight] или [junk].",
+                "portuguese": "Ativa quando uma [blight] ou [junk] é jogada ou descartada durante seu turno.",
+                "chinese": "在你的回合中打出或舍弃[blight]或[junk]时触发。",
+                "chinese_traditional": "在你的回合中打出或棄掉[blight]或[junk]時觸發。",
+                "korean": "내 턴에 [blight] 또는 [junk] 카드를 사용하거나 버릴 때 발동합니다.",
+                "japanese": "自分のターン中に[blight]または[junk]をプレイするか捨てたときに発動する。"
             }
         }
     ]

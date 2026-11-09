@@ -117,6 +117,8 @@
         },
         {
             "id": "CurseguardStoneUpgrade",
+            "icon": "@CurseguardStoneIconSmall",
+            "hide_icon_on_card": false,
             "titles": {
                 "english": "Curseguard Stone",
                 "spanish": "Piedra de guardia maldita",
@@ -137,7 +139,7 @@
             ],
             "descriptions": {
                 "english": "<b>Accursed</b>: Gain [armor] [charactertrigger0.effect0.status0.power].",
-                "spanish": "<b>Maldito</b>: Obtiene [armor] [charactertrigger0.effect0.status0.power].",
+                "spanish": "<b>Maldito</b>: Añade [armor] [charactertrigger0.effect0.status0.power].",
                 "chinese": "<b>被咒</b>: 获得[armor] [charactertrigger0.effect0.status0.power]。",
                 "chinese_traditional": "<b>詛咒</b>: 獲得[armor] [charactertrigger0.effect0.status0.power]。",
                 "french": "<b>Maudit</b>: Gagne [armor] [charactertrigger0.effect0.status0.power].",
@@ -150,6 +152,8 @@
         },
         {
             "id": "CurseguardSlabUpgrade",
+            "icon": "@CurseguardSlabIconSmall",
+            "hide_icon_on_card": false,
             "titles": {
                 "english": "Curseguard Slab",
                 "spanish": "Losa de guardia maldita",
@@ -170,7 +174,7 @@
             ],
             "descriptions": {
                 "english": "<b>Accursed</b>: Gain [armor] [charactertrigger0.effect0.status0.power].",
-                "spanish": "<b>Maldito</b>: Obtiene [armor] [charactertrigger0.effect0.status0.power].",
+                "spanish": "<b>Maldito</b>: Añade [armor] [charactertrigger0.effect0.status0.power].",
                 "chinese": "<b>被咒</b>: 获得[armor] [charactertrigger0.effect0.status0.power]。",
                 "chinese_traditional": "<b>詛咒</b>: 獲得[armor] [charactertrigger0.effect0.status0.power]。",
                 "french": "<b>Maudit</b>: Gagne [armor] [charactertrigger0.effect0.status0.power].",
@@ -198,16 +202,16 @@
                 "korean": "사이오닉 폭발"
             },
             "descriptions": {
-                "english": "Reduce <b>Psionic</b> for additional ability.",
-                "chinese": "消耗相应层数的 <b>灵能</b> 以触发额外效果。",
-                "spanish": "Consume <b>Psiónico</b> para activar un efecto adicional.",
-                "french": "Consomme <b>Psionique</b> pour déclencher un effet supplémentaire.",
-                "german": "Verbraucht <b>Psionik</b>, um einen zusätzlichen Effekt auszulösen.",
-                "portuguese": "Consome <b>Psiônico</b> para ativar um efeito adicional.",
-                "russian": "Расходует <b>Псионика</b> для дополнительного эффекта.",
+                "english": "Spend <b>Psionic</b> to trigger additional effects.",
+                "spanish": "Gasta <b>Psiónico</b> para activar efectos adicionales.",
+                "french": "Dépense <b>Psionique</b> pour déclencher des effets supplémentaires.",
+                "german": "Verbraucht <b>Psionik</b>, um zusätzliche Effekte auszulösen.",
+                "russian": "Расходует <b>Псионику</b> для активации дополнительных эффектов.",
+                "portuguese": "Gasta <b>Psiônico</b> para ativar efeitos adicionais.",
+                "chinese": "消耗<b>灵能</b>以触发额外效果。",
                 "chinese_traditional": "消耗<b>靈能</b>以觸發額外效果。",
-                "japanese": "<b>サイオニック</b>を消費して追加効果を発動する。",
-                "korean": "<b>사이오닉</b>을 소모해 추가 효과를 발동합니다."
+                "korean": "<b>사이오닉</b>을 소모하여 추가 효과를 발동합니다.",
+                "japanese": "<b>サイオニック</b>を消費して追加効果を発動する。"
             },
             "style": "keyword",
             "allow_secondary_placement": true
@@ -285,7 +289,7 @@
             },
             "descriptions": {
                 "english": "<b>Accursed</b>: Gain [armor] [effect0.upgrade.charactertrigger0.effect0.status0.power].",
-                "spanish": "<b>Maldito</b>: Obtiene [armor] [effect0.upgrade.charactertrigger0.effect0.status0.power].",
+                "spanish": "<b>Maldito</b>: Añade [armor] [effect0.upgrade.charactertrigger0.effect0.status0.power].",
                 "chinese": "<b>被咒</b>: 获得[armor] [effect0.upgrade.charactertrigger0.effect0.status0.power]。",
                 "chinese_traditional": "<b>詛咒</b>: 獲得[armor] [effect0.upgrade.charactertrigger0.effect0.status0.power]。",
                 "french": "<b>Maudit</b>: Gagne [armor] [effect0.upgrade.charactertrigger0.effect0.status0.power].",
@@ -330,7 +334,7 @@
             },
             "descriptions": {
                 "english": "<b>Accursed</b>: Gain [armor] [effect0.upgrade.charactertrigger0.effect0.status0.power].",
-                "spanish": "<b>Maldito</b>: Obtiene [armor] [effect0.upgrade.charactertrigger0.effect0.status0.power].",
+                "spanish": "<b>Maldito</b>: Añade [armor] [effect0.upgrade.charactertrigger0.effect0.status0.power].",
                 "chinese": "<b>被咒</b>: 获得[armor] [effect0.upgrade.charactertrigger0.effect0.status0.power]。",
                 "chinese_traditional": "<b>詛咒</b>: 獲得[armor] [effect0.upgrade.charactertrigger0.effect0.status0.power]。",
                 "french": "<b>Maudit</b>: Gagne [armor] [effect0.upgrade.charactertrigger0.effect0.status0.power].",
@@ -370,7 +374,7 @@
             },
             "descriptions": {
                 "english": "Gain [armor] [effect0.status0.power].",
-                "spanish": "Obtiene [armor] [effect0.status0.power].",
+                "spanish": "Añade [armor] [effect0.status0.power].",
                 "chinese": "获得[armor] [effect0.status0.power]。",
                 "chinese_traditional": "獲得[armor] [effect0.status0.power]。",
                 "french": "Gagne [armor] [effect0.status0.power].",
@@ -392,7 +396,7 @@
             },
             "descriptions": {
                 "english": "Gain [armor] [effect0.status0.power].",
-                "spanish": "Obtiene [armor] [effect0.status0.power].",
+                "spanish": "Añade [armor] [effect0.status0.power].",
                 "chinese": "获得[armor] [effect0.status0.power]。",
                 "chinese_traditional": "獲得[armor] [effect0.status0.power]。",
                 "french": "Gagne [armor] [effect0.status0.power].",

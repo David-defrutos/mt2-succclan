@@ -1,4 +1,4 @@
-{
+﻿{
     "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
     "cards": [
         {
@@ -31,7 +31,7 @@
             "rarity": "rare",
             "class": "@ClassSuccubus",
             "card_art": "@DepressionWhisperArt",
-            "cost": 1,
+            "cost": 2,
             "targets_room": true,
             "targetless": true,
             "pools": [

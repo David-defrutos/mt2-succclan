@@ -27,3 +27,12 @@ Change the baseline commit when auditing a later translation-only update. Backup
 - Fixed quantities verified with language-aware counter normalization.
 - IDs, effect references, targets, stats and other gameplay configuration match 0.1.0.
 - Local DLL build: zero errors and zero warnings. The only code metadata change is version 0.1.1.
+
+
+## Current maintenance — 2026-11-09
+
+The 0.1.1 counts and translation-only baseline above are historical. The current JSON contains 265 localized dictionaries in ten languages. Card text follows the workspace editorial guide: concise actions, native trigger and ability labels, explicit exceptional conditions, correct targets, and dynamic effect/upgrade quantities where supported. The November revision changes localization fields only, verified against the installed 0.2.1 gameplay data.
+
+The legacy TSV/source-list generator describes the first translation pass and is not synchronized with all later JSON edits. Do not regenerate current content from those tables or use the old 0.1.0 baseline as a current validator. Review the current JSON directly, check all language keys, token parity and balanced markup, and compare non-localization data with the pre-edit runtime or a current snapshot. Linguistic review focuses on English and Spanish; structural validation of the other translations does not replace native-speaker review or in-game layout checks.
+
+<!-- 2026-11-09-2043||codex-succclan-targetless||repos/MT2/variaciones-mias/mt2-succclan/LOCALIZATION.md||Actualizar limites de mantenimiento y validador historico;265 campos actuales y revision editorial solo texto -->

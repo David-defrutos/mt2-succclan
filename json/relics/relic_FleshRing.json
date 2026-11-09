@@ -18,7 +18,7 @@
             },
             "descriptions": {
                 "english": "The first <b>Blight</b> you play each turn draws you [effect0.power] card.",
-                "chinese": "每回合首次打出[blight]牌时，抽 [effect0.power] 张牌。",
+                "chinese": "每回合首次打出<b>灾祸</b>牌时，抽 [effect0.power] 张牌。",
                 "spanish": "La primera <b>Ruina</b> que juegas cada turno te hace robar [effect0.power] cartas.",
                 "french": "Le premier <b>Fléau</b> joué chaque tour vous fait piocher [effect0.power] cartes.",
                 "german": "Der erste <b>Fluch</b>, den du in jedem Zug spielst, lässt dich [effect0.power] Karten ziehen.",

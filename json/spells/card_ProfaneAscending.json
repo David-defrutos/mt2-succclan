@@ -16,9 +16,9 @@
                 "korean": "불경한 상승"
             },
             "descriptions": {
-                "english": "<b>Ascend</b> an enemy unit. Apply <b>[mt2_succclan.Plugin_frantic] [effect2.status0.power]</b> and heal it for [effect3.power][health]. Cannot target bosses.",
+                "english": "<b>Ascend</b> an enemy unit. Apply <b>[mt2_succclan.Plugin_frantic] [effect2.status0.power]</b> and restore [effect3.power][health] to it. Cannot target bosses.",
                 "chinese": "使一个敌方单位<b>上升</b>一层，施加 <b>[mt2_succclan.Plugin_frantic] [effect2.status0.power]</b>，并为其恢复 [effect3.power] 点[health]。 无法选择首领。",
-                "spanish": "<b>Asciende</b> una unidad enemiga. Le otorga <b>[mt2_succclan.Plugin_frantic] [effect2.status0.power]</b> y le cura [effect3.power][health]. No puede seleccionar jefes.",
+                "spanish": "<b>Asciende</b> una unidad enemiga. Le otorga <b>[mt2_succclan.Plugin_frantic] [effect2.status0.power]</b> y le restaura [effect3.power][health]. No puede seleccionar jefes.",
                 "french": "Fait <b>monter</b> une unité ennemie. Lui applique <b>[mt2_succclan.Plugin_frantic] [effect2.status0.power]</b> et lui restaure [effect3.power][health]. Ne peut pas cibler les boss.",
                 "german": "Lässt eine feindliche Einheit <b>aufsteigen</b>. Verleiht ihr <b>[mt2_succclan.Plugin_frantic] [effect2.status0.power]</b> und heilt sie um [effect3.power][health]. Bosse können nicht als Ziel gewählt werden.",
                 "portuguese": "Faz uma unidade inimiga <b>subir</b>. Aplica <b>[mt2_succclan.Plugin_frantic] [effect2.status0.power]</b> e cura [effect3.power][health]. Não pode selecionar chefes.",

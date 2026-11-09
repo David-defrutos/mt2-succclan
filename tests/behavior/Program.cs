@@ -73,6 +73,23 @@ class Program {
  core.Cards.Hand=new(){new CardState{Type=CardType.Blight},new CardState{Type=CardType.Blight},new CardState{Type=CardType.Junk}};int discarded=0;core.Cards.OnDiscard=_=>{discarded++;core.Cards.Hand.Add(new CardState{Type=CardType.Blight});};
  Drain(new CardEffectDiscardAllBlights().ApplyEffect(new(),new(){playedCard=card},core,null!));Check(discarded==2,"discard snapshots original Blights");Check(core.Cards.Hand.Count(c=>c.Type==CardType.Blight)==2,"Accursed generated Sparks retained");Check(core.Cards.Hand.Any(c=>c.Type==CardType.Junk),"Scourges not discarded by Power Siphon");AllGameManagers.Instance=null;
 }
+// The source is lazy; dropping the bad native trigger must preserve other items and disposal.
+{
+ var original=new[]{new TooltipContent{tooltipId="75",title="bad"},new TooltipContent{tooltipId=LastWhisperTooltips.TitleKey,title="Accursed"},new TooltipContent{tooltipId="armor",title="Armor"}};
+ var data=new CardEffectData{Trigger=(CharacterTriggerData.Trigger)75};
+ Check(ReferenceEquals(original,LastWhisperTooltips.Rewrite(original,data)),"unmarked effects unchanged by reference");
+ data.Tooltips=new[]{new AdditionalTooltipData{titleKey=LastWhisperTooltips.TitleKey}};
+ var fixedItems=LastWhisperTooltips.Rewrite(original,data).ToArray();
+ Check(fixedItems.Length==2&&fixedItems[0].title=="Accursed"&&fixedItems[1].title=="Armor","only broken generated trigger removed; custom and native status preserved");
+ data.Trigger=(CharacterTriggerData.Trigger)143;
+ var moved=new[]{new TooltipContent{tooltipId="143"},new TooltipContent{tooltipId="75"}};
+ Check(LastWhisperTooltips.Rewrite(moved,data).Single().tooltipId=="75","trigger numeric identity is dynamic, not hardcoded75");
+ bool started=false,disposed=false;
+ IEnumerable<TooltipContent> Lazy(){try{started=true;yield return new TooltipContent{tooltipId="143"};yield return new TooltipContent{tooltipId="keep"};yield return new TooltipContent{tooltipId="later"};}finally{disposed=true;}}
+ var lazy=LastWhisperTooltips.Rewrite(Lazy(),data);Check(!started,"filter does not eagerly enumerate native tooltip generator");
+ using(var iterator=lazy.GetEnumerator()){Check(iterator.MoveNext()&&iterator.Current.tooltipId=="keep","filter preserves native sequence order");}
+ Check(disposed,"early cancellation disposes native tooltip iterator");
+}
 Console.WriteLine($"PASS {checks} behavioral assertions against actual patch source. Engine lifecycle is simulated, not a Unity playtest.");
  }
 }
@@ -87,3 +104,5 @@ Console.WriteLine($"PASS {checks} behavioral assertions against actual patch sou
 // 2026-11-05-1734||codex-succclan-targetless||salidas/build/succclan-bugfixes-2026-10-27/Program.cs||Cubrir daño y preview con 0/1/3 Blights, bonus unico, mapa y descarte seguro frente a generacion Accursed
 
 // 2026-11-07-1205||codex-succclan-targetless||repos\MT2\variaciones-mias\mt2-succclan\tests\behavior\Program.cs||Consolidar suite local enlazando fuente real del repositorio externo
+
+// 2026-11-09-2140||codex-succclan-targetless||repos/MT2/variaciones-mias/mt2-succclan/tests/behavior/Program.cs||Cubrir tooltip no marcado, enum cambiado, otros tooltips, evaluacion diferida y cancelacion
