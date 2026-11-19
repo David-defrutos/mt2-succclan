@@ -73,7 +73,7 @@
             "name": "CardEffectDamage",
             "target_mode": "drop_target_character",
             "target_team": "both",
-            "param_int": 2
+            "param_int": 6
         },
         {
             "id": "DreadShotFrantic",

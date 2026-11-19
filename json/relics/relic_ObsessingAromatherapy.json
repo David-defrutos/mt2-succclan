@@ -1,4 +1,4 @@
-{
+﻿{
     "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
     "relics": [
         {
@@ -17,16 +17,16 @@
                 "korean": "집착의 아로마 요법"
             },
             "descriptions": {
-                "english": "Enemy units gain <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> when they enter the train.",
-                "chinese": "敌方单位进入列车时，获得 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>。",
-                "spanish": "Las unidades enemigas obtienen <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> al entrar en el tren.",
-                "french": "Les unités ennemies gagnent <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> en entrant dans le train.",
-                "german": "Feindliche Einheiten erhalten beim Betreten des Zuges <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>.",
-                "portuguese": "As unidades inimigas ganham <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> ao entrar no trem.",
-                "russian": "Враги получают <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b> при входе в поезд.",
-                "chinese_traditional": "敵方單位進入列車時獲得 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>。",
-                "japanese": "敵ユニットは列車に入ると<b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>を得る。",
-                "korean": "적은 열차에 들어올 때 <b>[mt2_succclan.Plugin_frantic] [effect0.status0.power]</b>을 얻습니다."
+                "english": "[effect0.power]% chance to apply [mt2_succclan.Plugin_frantic] [effect0.effect0.status0.power] when an enemy unit enters your train.",
+                "chinese": "当敌方单位进入火车时，有 [effect0.power]% 的几率对其施加[mt2_succclan.Plugin_frantic] [effect0.effect0.status0.power]。",
+                "spanish": "[effect0.power] % de probabilidad de añadir [mt2_succclan.Plugin_frantic] [effect0.effect0.status0.power] cuando un enemigo entra en tu tren.",
+                "french": "<nobr>[effect0.power] %</nobr> de chances d'infliger [mt2_succclan.Plugin_frantic] [effect0.effect0.status0.power] lorsqu'un ennemi entre dans le train.",
+                "german": "Chance von [effect0.power] %, einer gegnerischen Einheit [mt2_succclan.Plugin_frantic] [effect0.effect0.status0.power] zuzufügen, wenn sie deinen Zug betritt.",
+                "portuguese": "[effect0.power]% de chance de aplicar [mt2_succclan.Plugin_frantic] [effect0.effect0.status0.power] quando uma unidade inimiga entrar no seu trem.",
+                "russian": "На бойцов врага при входе с [effect0.power]% вероятностью накладывается [mt2_succclan.Plugin_frantic] х[effect0.effect0.status0.power].",
+                "chinese_traditional": "[effect0.power]%機率在敵方單位進入你的列車時施加[mt2_succclan.Plugin_frantic][effect0.effect0.status0.power]。",
+                "japanese": "敵ユニットが列車に侵入した際に、[effect0.power]%の確率で[mt2_succclan.Plugin_frantic] [effect0.effect0.status0.power]を付与する。",
+                "korean": "적 유닛이 열차에 진입하면 [effect0.power]% 확률로 [mt2_succclan.Plugin_frantic] [effect0.effect0.status0.power] 효과를 적용합니다."
             },
             "disallow_in_deployment": false,
             "relic_effects": [
@@ -51,13 +51,11 @@
     "relic_effects": [
         {
             "id": "ObsessingAromatherapyEffect",
-            "name": "RelicEffectAddStatusEffectOnSpawn",
+            "name": "RelicEffectChanceAddEffectAfterSpawn",
             "source_team": "heroes",
-            "param_status_effects": [
-                {
-                    "status": "@frantic",
-                    "count": 1
-                }
+            "param_int": 25,
+            "param_effects": [
+                "@ObsessingAromatherapyFrantic"
             ]
         }
     ],
@@ -69,6 +67,19 @@
         {
             "id": "ObsessingAromatherapyIconSmall",
             "path": "textures/RelicIcons/ObsessingAromatherapyIconSmall.png"
+        }
+    ],
+    "effects": [
+        {
+            "id": "ObsessingAromatherapyFrantic",
+            "name": "CardEffectAddStatusEffect",
+            "target_mode": "self",
+            "param_status_effects": [
+                {
+                    "status": "@frantic",
+                    "count": 1
+                }
+            ]
         }
     ]
 }
