@@ -30,7 +30,7 @@ Usa staging y DLL recién compilada, `salidas/thunderstore/<fecha-Madrid>/<ejecu
 
 ## Build y comprobaciones
 
-Python con Pillow y dotnet. Proyecto autocontenido tools/local-build/SuccClan.Local.csproj con DLL instaladas de BepInEx, TW0.7.35, Conductor0.5.17 y Managed del juego. Restore sin feeds con tools/local-build/NuGet.Config. Fuentes y tests enlazan src/ del mismo repositorio, nunca Default. Al cambiar versión, alinear manifest, proyecto principal, proyecto local y tools/local-build/MyPluginInfo.cs. Los62 JSON cargados están registrados explícitamente en src/Plugin.cs.
+Python con Pillow y dotnet. Proyecto autocontenido tools/local-build/SuccClan.Local.csproj con DLL instaladas de BepInEx, TW0.7.35, Conductor0.6.0 y Managed del juego. Restore sin feeds con tools/local-build/NuGet.Config. Fuentes y tests enlazan src/ del mismo repositorio, nunca Default. Al cambiar versión, alinear manifest, proyecto principal, proyecto local y tools/local-build/MyPluginInfo.cs. Los62 JSON cargados están registrados explícitamente en src/Plugin.cs.
 
 Validate ejecuta 778 contratos de contenido,292 pruebas simuladas existentes,95 de Shadow,79 de API nativa,6 pruebas de instalación aislada y validación audiovisual. Las suites y fuentes están dentro de tests/ y tools/. Las salidas .build/, bin/, obj/ y caches quedan ignoradas. Las pruebas aisladas no sustituyen Unity.
 
@@ -60,3 +60,6 @@ Copia activa comprobada: `C:/Users/david/AppData/Roaming/Thunderstore Mod Manage
 Usar `tools/develop.py install` o instalar el mismo build ya validado mediante su funcion install, que verifica hash de entradas, juego cerrado, respaldo y bytes/mtime antes de sobrescribir. Validar y empaquetar siguen siendo acciones tecnicas independientes, pero preparar un cambio para pruebas incluye desplegarlo. No hacer commit, push ni publicar sin instruccion.
 
 <!-- 2026-11-09-1837||codex-succclan-targetless||repos/MT2/variaciones-mias/mt2-succclan/COMO-COMPILAR.md||Actualizar flujo: cambios autorizados se instalan tambien en copia activa de pruebas -->
+
+El proyecto NuGet usa Conductor.MonsterTrain2 0.6.0 y MonsterTrain2.Api 5.*, conforme al proyecto de la dependencia. La copia instalada de Conductor0.6.0 proporciona la recogida de objetivos Hand; SuccClan no la intercepta.
+<!-- 2026-11-17-1957||codex-succclan-targetless||repos/MT2/variaciones-mias/mt2-succclan/COMO-COMPILAR.md||Actualizar dependencias de compilacion y propiedad del selector Hand -->

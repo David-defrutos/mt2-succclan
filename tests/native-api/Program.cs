@@ -28,6 +28,28 @@ foreach(var type in Types(plugin))foreach(var annotation in type.CustomAttribute
  }
 }
 
+// UI tooltips must come from existing effects, not broad UI interception or
+// reflection delegates initialized when a UI-facing type is first accessed.
+var forbiddenUiTargets=new[]{"CardTooltipContainer","CharacterTooltipHelper"};
+Check(!Types(plugin).SelectMany(t=>t.CustomAttributes).Where(a=>a.AttributeType.FullName=="HarmonyLib.HarmonyPatch")
+ .SelectMany(a=>a.ConstructorArguments).Any(a=>a.Value is TypeReference type&&forbiddenUiTargets.Contains(type.FullName)),
+ "no broad CardTooltipContainer/CharacterTooltipHelper patches");
+Check(!Types(plugin).SelectMany(t=>t.Methods).Where(m=>m.Name==".cctor"&&m.HasBody)
+ .SelectMany(m=>m.Body.Instructions).Any(i=>i.Operand is MethodReference method&&method.Name is "CreateDelegate" or "MethodDelegate" or "HarmonyDelegate"),
+ "no private-method reflection delegates bound by static type initialization");
+IEnumerable<MethodDefinition> IteratorBody(string typeName,string methodName){
+ var type=Types(game).Single(t=>t.FullName==typeName);
+ foreach(var factory in type.Methods.Where(m=>m.Name==methodName)){
+  var attr=factory.CustomAttributes.FirstOrDefault(a=>a.AttributeType.Name=="IteratorStateMachineAttribute");
+  if(attr?.ConstructorArguments.FirstOrDefault().Value is TypeReference state)
+   foreach(var method in Types(game).Single(t=>t.FullName==state.FullName).Methods.Where(m=>m.Name=="MoveNext"))yield return method;
+ }
+}
+bool HasCall(IEnumerable<MethodDefinition> methods,string type,string name)=>methods.Any(m=>m.HasBody&&m.Body.Instructions.Any(i=>i.Operand is MethodReference r&&r.DeclaringType.FullName==type&&r.Name==name));
+Check(HasCall(IteratorBody("CharacterTooltipHelper","GetAbilityTooltipsImpl"),"CardTooltipHelper","GetCardEffectTooltipContents"),"unit ability effects use the native effect tooltip route");
+Check(HasCall(IteratorBody("CharacterTooltipHelper","GetTooltipContentsImpl"),"CharacterTriggerState","ShouldDisplayOnCharacterTooltips"),"native character visibility gate retained before trigger tooltips");
+Check(HasCall(IteratorBody("CharacterTooltipHelper","GetTooltipContentsImpl"),"CardTooltipHelper","GetCardEffectTooltipContents"),"unit trigger effects use native effect tooltip route");
+
 if(args.Length>2){
  using var conductor=ModuleDefinition.ReadModule(args[2]);
  var discard=Types(conductor).Single(t=>t.FullName=="Conductor.CardEffects.CardEffectRandomDiscardFromCardPile");
@@ -39,8 +61,13 @@ if(args.Length>2){
  Check(Calls(move,discard.FullName,"FilterTargetCards"),"execution filters same card pool");
  Check(Calls(move,"CardManager","DiscardCard"),"Conductor delegates discard to native CardManager");
  Check(Calls(move,"CardEffectState","GetIntInRange"),"execution respects configured discard count");
- var targets=Types(game).Single(t=>t.FullName=="TargetHelper");var collect=targets.Methods.Single(m=>m.Name=="CollectCardTargets");
- Check(!Calls(collect,"CardManager","GetHand"),"installed collector still needs scoped Hand bridge");
+ var handPatch=Types(conductor).Single(t=>t.FullName=="Conductor.Patches.CustomTargetModes_CardTargetsPatch");
+ var handCollect=handPatch.Methods.Single(m=>m.Name=="Postfix");
+ Check(Calls(handCollect,"CardManager","GetHand"),"installed Conductor collects Hand cards");
+ Check(handPatch.CustomAttributes.Any(a=>a.AttributeType.FullName=="HarmonyLib.HarmonyPatch"&&a.ConstructorArguments.Any(arg=>arg.Value is string name&&name=="CollectCardTargets")),"Conductor Hand collection patches native card collector");
+ Check(handCollect.Body.Instructions.Any(i=>i.Operand is FieldReference f&&f.Name=="targetMode")&&handCollect.Body.Instructions.Any(i=>i.Operand is MethodReference r&&r.Name=="get_Count"),"Conductor guards Hand mode and existing targets");
+ Check(handCollect.Body.Instructions.Any(i=>i.Operand is MethodReference r&&r.Name=="AddRange"),"Conductor passes hand cards to existing discard filters");
+ Check(!Types(plugin).Any(t=>t.Name=="SuccClanHandCardTargetsPatch"),"redundant SuccClan Hand bridge removed");
  var manager=Types(game).Single(t=>t.FullName=="CombatManager");
  Check(manager.Methods.Where(m=>m.Name=="TestEffects").Any(m=>Calls(m,"CardEffectData","GetShouldFailToCastIfTestFails")),"native whole-card rejection flag exists");
  var status=Types(game).Single(t=>t.FullName=="CardEffectAddStatusEffect");
@@ -85,3 +112,5 @@ Console.WriteLine($"PASS {checks} native Harmony target, result, field and param
 // 2026-11-07-1205||codex-succclan-targetless||repos\MT2\variaciones-mias\mt2-succclan\tests\native-api\Program.cs||Consolidar suite local enlazando fuente real del repositorio externo
 
 // 2026-11-07-1318||codex-succclan-targetless||repos\MT2\variaciones-mias\mt2-succclan\tests\native-api\Program.cs||Permitir comparar firmas e IL ejecutable de DLL candidata con rebuild desde ruta externa
+// 2026-11-12-0917||codex-succclan-targetless||repos/MT2/variaciones-mias/mt2-succclan/tests/native-api/Program.cs||Cubrir ausencia de parches UI amplios/delegados privados estaticos y rutas nativas de tooltip habilidad/unidad frente a DLL actual
+// 2026-11-17-1957||codex-succclan-targetless||repos/MT2/variaciones-mias/mt2-succclan/tests/native-api/Program.cs||Verificar postfix real de Conductor para mano y ausencia de parche duplicado

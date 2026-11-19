@@ -88,27 +88,10 @@ namespace mt2_succclan.Plugin
                 || IsCharacter(parameters.characterThatActivatedAbility);
     }
 
-    // Conductor owns pool filtering, random selection, count validation and
-    // discard. MT2's collector omits Hand, so only provide that missing input.
-    [HarmonyPatch(typeof(TargetHelper), nameof(TargetHelper.CollectTargets),
-        new Type[] { typeof(CardEffectState), typeof(CardEffectParams), typeof(ICoreGameManagers), typeof(bool) })]
-    internal static class SuccClanHandCardTargetsPatch
-    {
-        [HarmonyPrefix]
-        private static bool Before(CardEffectState effectState, CardEffectParams cardEffectParams,
-            ICoreGameManagers coreGameManagers)
-        {
-            if (coreGameManagers == null || effectState == null || effectState.GetTargetMode() != TargetMode.Hand
-                || effectState.GetCardEffect()?.GetType().FullName != "Conductor.CardEffects.CardEffectRandomDiscardFromCardPile"
-                || !SuccClanEffectContext.IsOwn(effectState, cardEffectParams)) return true;
-            cardEffectParams.targets.Clear();
-            cardEffectParams.targetCards.Clear();
-            cardEffectParams.targetCards.AddRange(coreGameManagers.GetCardManager().GetHand());
-            return false;
-        }
-    }
+
 }
 // 2026-10-27-1540||codex-succclan-targetless||src/code/NonBossTargeting.cs||Conectar mano nativa con descarte Conductor solo para SuccClan y compartir comprobación segura de contexto
 // 2026-10-27-1545||codex-succclan-targetless||src\code\NonBossTargeting.cs||Retirar parche global de TestEffect: validación sustituida por CardEffectNULL nativo
 // 2026-10-27-1547||codex-succclan-targetless||src/code/NonBossTargeting.cs||Mantener comprobación de contexto nulo en puente nativo de mano
 // 2026-11-05-1726||codex-succclan-targetless||src\code\NonBossTargeting.cs||Identificar clan por clase y asset key, nunca por prefijos de GUID; corregir mano y filtro de bosses
+// 2026-11-17-1957||codex-succclan-targetless||repos/MT2/variaciones-mias/mt2-succclan/src/code/NonBossTargeting.cs||Retirar SuccClanHandCardTargetsPatch: Conductor0.6.0 ya recoge Hand; conservar contexto y filtros de bosses

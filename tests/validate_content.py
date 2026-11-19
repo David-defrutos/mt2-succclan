@@ -66,6 +66,16 @@ for e in load('json/champions/champion_KnightMare.json')['character_triggers']:
   for text in e['descriptions'].values():check('[effect0.power]' in text,'dynamic rebirth cost')
 inception=load('json/spells/card_Inception.json')['cards'][0];check(inception['cost']==1 and inception['effects']==['@InceptionPsionic','@InceptionAttack','@InceptionHealth'],'Inception unchanged')
 check(load('json/status_effects/psionic.json')['status_effects'][0]['trigger_stage']=='none','no Psionic redesign')
+
+# Burst tooltips belong to already-existing effects at each level; no UI-only
+# trigger, state or upgrade is needed, including mixed-path champions.
+knight=load('json/champions/champion_KnightMare.json');keffects={e['id']:e for e in knight['effects']}
+for path in ('Abyss','Illusion','Endless'):
+ for tier in ('Basic','Pre','Pro'):
+  trigger=next(x for x in knight['character_triggers'] if x['id']==path+tier+'Trigger')
+  check(any('@PsionicBurstTooltip' in keffects[e[1:]].get('additional_tooltips',[]) for e in trigger['effects']),'Burst tooltip is linked through an existing effect at every champion level')
+  check(not trigger.get('hide_visual_and_ignore_silence',False),'tooltip attachment does not change trigger silence or visibility behavior')
+
 check('animations' not in load('json/units/unit_IncubusButcher.json')['game_objects'][1]['extensions']['character_art'],'Butcher static')
 profane=load('json/spells/card_ProfaneAscending.json');byid={e['id']:e for e in profane['effects']}
 check(all(byid[x]['target_team']=='heroes' for x in ['ProfaneAscendingValidTarget','PABump','PAFrantic','PAHeal']),'Profane is enemy-only throughout validation and resolution')
@@ -75,7 +85,7 @@ check(frantic['card_tooltips']==frantic['character_tooltips'] and len(frantic['c
 check('possibly itself' in frantic['card_tooltips']['english'] and 'si ataca' in frantic['card_tooltips']['spanish'],'self-target and retained charges explained')
 blade=load('json/equipment/equip_WhisperingBlade.json');check(blade['character_triggers'][0]['trigger']=={'id':'@Accursed','mod_reference':'Conductor'},'Whispering Blade Accursed')
 check(blade['effects'][1]['target_mode']=='back_in_room' and blade['effects'][1]['target_team']=='heroes' and blade['effects'][1]['param_status_effects']==[{'status':'debuff','count':2}],'Whispering Blade native Sap2 rear enemy')
-manifest=load('manifest.json');check('Conductor-Conductor-0.5.17' in manifest['dependencies'] and 'MT2-Trainworks_Reloaded-0.7.35' in manifest['dependencies'],'runtime supports pool filter')
+manifest=load('manifest.json');check('Conductor-Conductor-0.6.0' in manifest['dependencies'] and 'MT2-Trainworks_Reloaded-0.7.35' in manifest['dependencies'],'runtime includes Conductor Hand collection and pool filter')
 for p in (mod/'src/code').glob('*.cs'):
  b=p.read_bytes()
  if b'2026-10-27' in b:check(not b.startswith(b'\xef\xbb\xbf') and b'\r\n' not in b,'C# LF no BOM')
@@ -150,3 +160,5 @@ print(json.dumps({'json_files':len(paths),'content_assertions':checks,'result':'
 # 2026-11-08-2142||codex-succclan-targetless||repos/MT2/variaciones-mias/mt2-succclan/tests/validate_content.py||Actualizar contrato retirado de descarte Arrogance y comprobar nueva habilidad nativa, orden y Ghost objetivo
 # 2026-11-09-1910||codex-succclan-targetless||repos/MT2/variaciones-mias/mt2-succclan/tests/validate_content.py||Cubrir icono visible de mejora aplicada separado del icono de tienda para Stone y Slab
 # 2026-11-09-2141||codex-succclan-targetless||repos/MT2/variaciones-mias/mt2-succclan/tests/validate_content.py||Cubrir opt-in de tooltip Last Whisper, marcadores estables y sacrificio nativo sin duplicacion
+# 2026-11-12-0917||codex-succclan-targetless||repos/MT2/variaciones-mias/mt2-succclan/tests/validate_content.py||Cubrir tooltips Psionic Burst via efectos existentes en nueve niveles sin ignorar silencio
+# 2026-11-17-1957||codex-succclan-targetless||repos/MT2/variaciones-mias/mt2-succclan/tests/validate_content.py||Exigir Conductor0.6.0 en contrato de dependencias

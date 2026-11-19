@@ -16,9 +16,9 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="BepInEx.PluginInfoProps" Version="2.*" />
-    <PackageReference Include="MonsterTrain2.Api" Version="4.11.22787024" />
+    <PackageReference Include="MonsterTrain2.Api" Version="5.*" />
     <PackageReference Include="TrainworksReloaded.Base" Version="0.7.35" />
-    <PackageReference Include="Conductor" Version="0.5.17" />
+    <PackageReference Include="Conductor.MonsterTrain2" Version="0.6.0" />
   </ItemGroup>
 
   <!-- Sin reglas de copia de json/ ni textures/: en este repo cuelgan de la raiz
@@ -38,3 +38,4 @@
 <!-- 2026-11-07-1431||codex-succclan-targetless||repos\MT2\variaciones-mias\mt2-succclan\src\mt2_succclan.Plugin.csproj||Cambiar version de compilacion 0.1.14 a 0.2.0 -->
 
 <!-- 2026-11-09-1812||codex-succclan-targetless||repos/MT2/variaciones-mias/mt2-succclan/src/mt2_succclan.Plugin.csproj||Preparar version0.2.1 BETA; alinear metadatos de paquete y compilacion -->
+<!-- 2026-11-17-1957||codex-succclan-targetless||repos/MT2/variaciones-mias/mt2-succclan/src/mt2_succclan.Plugin.csproj||Usar paquete Conductor.MonsterTrain2 0.6.0 y API5 requerida por su proyecto -->
